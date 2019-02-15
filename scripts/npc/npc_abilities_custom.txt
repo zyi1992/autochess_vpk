@@ -8693,7 +8693,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"35"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9004,7 +9004,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"duration"	"3"
+				"duration"	"4"
 			}
 		}
 	}
@@ -9189,7 +9189,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"precache"
 		{
-			"particle"	"particles/generic_gameplay/generic_disarm.vpcf"
+			"particle"	"particles/generic_gameplay/generic_silenced.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9212,7 +9212,7 @@
 							{
 								"Target"	"TARGET"
 								"ModifierName"	"modifier_is_human_buff_2"
-								"Duration"	"3"
+								"Duration"	"5"
 							}
 						}
 						"Chance"	"20"
@@ -9221,13 +9221,13 @@
 			}
 			"modifier_is_human_buff_2"
 			{
-				"Duration"	"3"
+				"Duration"	"4"
 				"IsHidden"	"1"
 				"States"
 				{
-					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"EffectName"	"particles/generic_gameplay/generic_disarm.vpcf"
+				"EffectName"	"particles/generic_gameplay/generic_silenced.vpcf"
 				"EffectAttachType"	"follow_overhead"
 			}
 		}
@@ -9242,7 +9242,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"precache"
 		{
-			"particle"	"particles/generic_gameplay/generic_disarm.vpcf"
+			"particle"	"particles/generic_gameplay/generic_silenced.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9265,7 +9265,7 @@
 							{
 								"Target"	"TARGET"
 								"ModifierName"	"modifier_is_human_buff_2"
-								"Duration"	"3"
+								"Duration"	"4"
 							}
 						}
 						"Chance"	"30"
@@ -9274,13 +9274,13 @@
 			}
 			"modifier_is_human_buff_2_plus"
 			{
-				"Duration"	"3"
+				"Duration"	"4"
 				"IsHidden"	"1"
 				"States"
 				{
-					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"EffectName"	"particles/generic_gameplay/generic_disarm.vpcf"
+				"EffectName"	"particles/generic_gameplay/generic_silenced.vpcf"
 				"EffectAttachType"	"follow_overhead"
 			}
 		}
@@ -9295,7 +9295,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"precache"
 		{
-			"particle"	"particles/generic_gameplay/generic_disarm.vpcf"
+			"particle"	"particles/generic_gameplay/generic_silenced.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9318,7 +9318,7 @@
 							{
 								"Target"	"TARGET"
 								"ModifierName"	"modifier_is_human_buff_2"
-								"Duration"	"3"
+								"Duration"	"4"
 							}
 						}
 						"Chance"	"40"
@@ -9327,13 +9327,13 @@
 			}
 			"modifier_is_human_buff_2_plus_plus"
 			{
-				"Duration"	"3"
+				"Duration"	"4"
 				"IsHidden"	"1"
 				"States"
 				{
-					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"EffectName"	"particles/generic_gameplay/generic_disarm.vpcf"
+				"EffectName"	"particles/generic_gameplay/generic_silenced.vpcf"
 				"EffectAttachType"	"follow_overhead"
 			}
 		}
@@ -13878,6 +13878,66 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"speed"	"50 75 100"
+			}
+		}
+	}
+
+	"nevermore_necromastery"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"ID"	"5062"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"necromastery_damage_per_soul"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_nevermore_1"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"necromastery_max_souls"	"12 20 28 36"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"necromastery_soul_release"	"0.5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"necromastery_souls_hero_bonus"	"11"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"necromastery_max_souls_scepter"	"22 30 38 46"
+			}
+		}
+		"OnCastbar"	"0"
+		"HasScepterUpgrade"	"1"
+	}
+
+	"courier_fly"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_courier_fly"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_VISUAL_Z_DELTA"	"100"
+				}
 			}
 		}
 	}

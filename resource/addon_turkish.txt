@@ -1,6 +1,6 @@
 "lang"
 {
-	"Language"	"turkish"
+	"Language"	"Turkish"
 	"Tokens"
 	{
 		"addon_game_name"	"DOTA AUTO CHESS"
@@ -1205,5 +1205,22 @@
 		"gametip16"	"Tips: x64 system, 16:9 and left minimap are recommended."
 		"gametip17"	"Tips: Couriers with effect and in use cannot exchange."
 		"gametip18"	"Tips: Your courier will expand after win streak and fly up after 10-round win."
+		"DOTA_Tooltip_ability_item_tiaodao"	"<font color=\"#4444ff\">Blink Dagger</font>"
+		"DOTA_Tooltip_ability_item_tiaodao_Description"	"Blink to the farthest available grid in this column."
+
+		"DOTA_Tooltip_ability_item_tiaodao"	"<font color=\"#4444ff\">Blink Dagger</font>"
+		"DOTA_Tooltip_ability_item_tiaodao_Description"	"Blink to the farthest available grid in this column."
+		"DOTA_Tooltip_ability_is_human_Lore"	"<font color=\"#bbbbbb\">Species Combo: Silence</font>\nActive when there are at least (N) different human chess pieces on the chessboard.\n\n(2) Humans: All friendly humans have 20% chance to silence target for 4s when attacking.\n(4) Humans: All friendly humans have an additional 25% chance to silence target for 4s when attacking.\n(6) Humans: All friendly humans have an additional 30% chance to silence target for 4s when attacking."
+		"DOTA_Tooltip_modifier_is_human_buff_Description"	"+20% Chance to silence target for 4s."
+		"DOTA_Tooltip_modifier_is_human_buff_plus_Description"	"30% chance to silence target for 4s."
+		"DOTA_Tooltip_modifier_is_human_buff_plus_plus_Description"	"40% chance to silence target for 4s."
+		"DOTA_Tooltip_ability_is_element_Lore"	"<font color=\"#bbbbbb\">Species Combo: Elemental Resistance</font>\nActive when there are at least (N) different element chess pieces on the chessboard.\n\n(2) Elementals: All friendly elements have 30% chance to turn attacker into stone for 4s when attacked by melee chesses.\n(4) Elementals: All allies have 30% chance to turn attacker into stone for 4s when attacked by melee chesses."
+		"DOTA_Tooltip_modifier_is_element_buff_Description"	"have 30% chance to turn attacker into stone for 4s when attacked by melee chesses."
+		"DOTA_Tooltip_ability_is_troll_Lore"	"<font color=\"#bbbbbb\">Species Combo: Voodoo Frenzy</font>\nActive when there are at least (N) different troll chess pieces on the chessboard.\n(2) Trolls: Attack speed increased by 35 for all friendly trolls.\n(4) Trolls: Attack speed increased by 30 for all allies."
+		"DOTA_Tooltip_modifier_is_troll_buff_Description"	"+35 Attack speed"
+		"DOTA_Tooltip_modifier_is_troll_buff_plus_Description"	"+30 Attack speed"
+		"DOTA_Tooltip_modifier_is_human_buff"	"Silence"
+		"DOTA_Tooltip_modifier_is_human_buff_plus"	"Silence"
+		"DOTA_Tooltip_modifier_is_human_buff_plus_plus"	"Silence"
 	}
 }
