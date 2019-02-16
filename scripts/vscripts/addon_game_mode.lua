@@ -591,14 +591,22 @@ function DAC:InitGameMode()
 	}
 
 	SetTeamCustomHealthbarColor(DOTA_TEAM_NEUTRALS, 255,0,0)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 0,192,0)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,128,128)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 255,255,192)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_4, 255,192,64)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_5, 17,232,234)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_6, 255,100,200)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_7, 255,156,156)
-	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_8, 255,0,255)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 0,192,0)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,128,128)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 255,255,192)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_4, 255,192,64)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_5, 17,232,234)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_6, 255,100,200)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_7, 255,156,156)
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_8, 255,0,255)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_4, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_5, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_6, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_7, 128,255,128)
+	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_8, 128,255,128)
 
     ListenToGameEvent("player_connect_full", Dynamic_Wrap(DAC,"OnPlayerConnectFull" ),self)
     ListenToGameEvent("player_disconnect", Dynamic_Wrap(DAC, "OnPlayerDisconnect"), self)
@@ -2540,10 +2548,10 @@ function ClearARound(teamid)
 			v:RemoveModifierByName('modifier_slark_shadow_dance')
 
 			Timers:CreateTimer(RandomFloat(0.1,0.3),function()
-				SaveItem(teamid,v:entindex())
-				Timers:CreateTimer(RandomFloat(0.1,0.3),function()
+				SaveItem(teamid,v:entindex(),function()
 					v:Destroy()
 				end)
+				
 			end)
 		end
 	end
@@ -2556,7 +2564,7 @@ function ClearARound(teamid)
 		hero.mirror_chesser = nil
 	end
 end
-function SaveItem(teamid,uindex)
+function SaveItem(teamid,uindex,cb)
 	local thischess = nil
 	if uindex == nil then
 		return
@@ -2582,6 +2590,10 @@ function SaveItem(teamid,uindex)
 				end
 			end
 		end
+	end
+
+	if cb~=nil then
+		cb()
 	end
 	--跟lastitem比较是否有新物品
 	-- local new_item = {}
@@ -2736,6 +2748,8 @@ function DAC:OnEntityKilled(keys)
 		if u.at_team_id ~= nil then
 			AddStat(TeamId2Hero(u.at_team_id):GetPlayerID(),'kills')
 		end
+
+
 	end
 end
 --游戏循环1.2——抽卡
@@ -4166,12 +4180,12 @@ function StartAPVPRound()
 	for i,v in pairs (GameRules:GetGameModeEntity().counterpart) do
 		if v ~= -1 then
 			local h = TeamId2Hero(i)
-			if h.hand_entities ~= nil then
-				for _,ent in pairs(h.hand_entities) do
-					AddAbilityAndSetLevel(ent,'outofgame',1)
-				end
-			end
-			CheckChess(i)
+			-- if h.hand_entities ~= nil then
+			-- 	for _,ent in pairs(h.hand_entities) do
+			-- 		AddAbilityAndSetLevel(ent,'outofgame',1)
+			-- 	end
+			-- end
+			--CheckChess(i)
 			CancelPickChess(h)
 			if PlayerResource:GetPlayerCount() == 1 and GameRules:GetGameModeEntity().cloudlineup[''..GameRules:GetGameModeEntity().battle_round] ~= nil then
 				local chesses = nil
@@ -5076,8 +5090,14 @@ function ChessAI(u)
 			AddAbilityAndSetLevel(u,"nevermore_necromastery")		
 			u:FindModifierByName("modifier_nevermore_necromastery"):SetStackCount(20)
 		end
+		RemoveAbilityAndModifier(u,'jiaoxie_wudi')
+
 		u.aitimer = Timers:CreateTimer(RandomFloat(0.5,2),function()
-			RemoveAbilityAndModifier(u,'jiaoxie_wudi')
+			--容错
+			if u:FindAbilityByName('modifier_no_hp_bar') ~= nil or u:FindAbilityByName('modifier_jiaoxie_wudi') ~= nil then
+				u:Destroy()
+				return
+			end
 
 			if u == nil or u:IsNull() == true or u:IsAlive() == false or u.alreadywon == true then
 				return
@@ -5579,23 +5599,26 @@ function FindEmptyGridAtUnit(u)
 	local forward_v  = u:GetAbsOrigin() + u:GetForwardVector():Normalized()*128
 	local forward_x = Vector2X(forward_v,team_id)
 	local forward_y = Vector2Y(forward_v,team_id)
-	if IsBlocked(forward_x,forward_y,team_id) == false then
+	if IsIn8x8(forward_x,forward_y) == true and IsEmptyGrid(team_id,forward_x,forward_y) == true then
+		debug('FindEmptyGridAtUnit选中x='..forward_x..',y='..forward_y)
 		return XY2Vector(forward_x,forward_y,team_id)
 	end
 
 	--遍历身边的格子
 	for x = -1,1 do
 		for y = -1,1 do
-			if IsBlocked(u.x+x,u.y+y,team_id) == false then
+			if IsIn8x8(u.x+x,u.y+y) == true and IsEmptyGrid(team_id,u.x+x,u.y+y) == true then
+				debug('FindEmptyGridAtUnit选中x='..(u.x+x)..',y='..(u.y+y))
 				return XY2Vector(u.x+x,u.y+y,team_id)
 			end
 		end
 	end
 
-	for x = -2,2 do
-		for y = -2,2 do
-			if IsBlocked(u.x+x,u.y+y,team_id) == false then
-				return XY2Vector(u.x+x,u.y+y,team_id)
+	for xx = -2,2 do
+		for yy = -2,2 do
+			if IsIn8x8(u.x+xx,u.y+yy) == true and IsEmptyGrid(team_id,u.x+xx,u.y+yy) == true then
+				debug('FindEmptyGridAtUnit选中x='..(u.xx+x)..',y='..(u.y+yy))
+				return XY2Vector(u.x+xx,u.y+yy,team_id)
 			end
 		end
 	end
@@ -5837,14 +5860,30 @@ function CenterVector(team_id)
 end
 --通用方法之位置判断
 function IsInMap(x,y)
+	--格子是否在防守场地
 	if x<1 or x>8 or y<1 or y>4 then
 		return false
 	else
 		return true
 	end
 end
+function IsInDefendArea(x,y)
+	if x>=1 and x<=8 and y>=1 and y<=4 then
+		return true
+	else
+		return false
+	end
+end
 function IsInAttackArea(x,y)
-	if x>=1 and x<=8 and y>4 and y<=8 then
+	--格子是否在进攻场地
+	if x>=1 and x<=8 and y>=5 and y<=8 then
+		return true
+	else
+		return false
+	end
+end
+function IsIn8x8(x,y)
+	if x>=1 and x<=8 and y>=1 and y<=8 then
 		return true
 	else
 		return false
@@ -6000,6 +6039,11 @@ function SetLordAbilityEnable(hero,b)
 end
 function prt(t)
 	GameRules:SendCustomMessage(''..t,0,0)
+end
+function debug(t)
+	if GameRules:GetGameModeEntity().is_debug == true then
+		GameRules:SendCustomMessage(''..t,0,0)
+	end
 end
 function unit2text(u)
 	local id1 = u.team_id or 'X'
@@ -6441,13 +6485,22 @@ function DAC:OnPlayerChat(keys)
 		GameRules:GetGameModeEntity().show_damage = false
 	end
 
-	if tokens[1] == '-catch' and GameRules:GetGameModeEntity().myself == true then
-		prt('CATCH CRAB')
-		DAC:OnCatchCrab({
-			url=tokens[2],
-			cb='aaa'
-		})
+	if tokens[1] == '-debug' and GameRules:GetGameModeEntity().myself == true then
+		prt('DEBUG ON!')
+		GameRules:GetGameModeEntity().is_debug = true
 	end
+	if tokens[1] == '-undebug' and GameRules:GetGameModeEntity().myself == true then
+		prt('DEBUG OFF!')
+		GameRules:GetGameModeEntity().is_debug = false
+	end
+
+	-- if tokens[1] == '-catch' and GameRules:GetGameModeEntity().myself == true then
+	-- 	prt('CATCH CRAB')
+	-- 	DAC:OnCatchCrab({
+	-- 		url=tokens[2],
+	-- 		cb='aaa'
+	-- 	})
+	-- end
 
 	
 
@@ -7185,7 +7238,7 @@ function ChessTechBomb(keys)
 	local x = Vector2X(p,at_team)
 
 	if (GameRules:GetGameModeEntity().unit[at_team][y..'_'..x] ~= nil) then
-		-- prt('DEBUG: 炸药桶的位置不是空格子')
+		debug('炸药桶的位置不是空格子')
 		return
 	end
 
@@ -7912,7 +7965,7 @@ function TinyTouzhi(keys)
 	local x = Vector2X(v,team_id)
 	local stun_duration = ((v-target:GetAbsOrigin()):Length2D()/1000)
 
-	Timers:CreateTimer(stun_duration,function()
+	Timers:CreateTimer(stun_duration+0.3,function()
 		ApplyDamageInRadius({
 			caster = caster,
 			team = 2,
