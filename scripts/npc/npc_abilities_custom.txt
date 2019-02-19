@@ -9374,7 +9374,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2"
 							}
 						}
-						"Chance"	"25"
+						"Chance"	"30"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9434,7 +9434,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus"
 							}
 						}
-						"Chance"	"35"
+						"Chance"	"30"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -13608,6 +13608,7 @@
 	"outofgame"
 	{
 		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"abyssal_underlord_dark_rift"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"Modifiers"
 		{

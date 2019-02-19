@@ -590,7 +590,10 @@ function DAC:InitGameMode()
 		[13] = {r=255,g=0,b=255},
 	}
 
-	SetTeamCustomHealthbarColor(DOTA_TEAM_NEUTRALS, 255,0,0)
+	-- PlayerResource:SetCustomPlayerColor(0, 0,0,255)
+	-- PlayerResource:SetCustomPlayerColor(1, 0,0,255)
+
+	-- SetTeamCustomHealthbarColor(DOTA_TEAM_NEUTRALS, 255,0,0)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 0,192,0)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,128,128)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 255,255,192)
@@ -599,6 +602,7 @@ function DAC:InitGameMode()
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_6, 255,100,200)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_7, 255,156,156)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_8, 255,0,255)
+	
 	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 128,255,128)
 	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,255,128)
 	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 128,255,128)
@@ -614,6 +618,7 @@ function DAC:InitGameMode()
     ListenToGameEvent("dota_player_pick_hero",Dynamic_Wrap(DAC,"OnPlayerPickHero"),self)
     ListenToGameEvent("entity_killed", Dynamic_Wrap(DAC, "OnEntityKilled"), self)
     ListenToGameEvent("dota_player_gained_level", Dynamic_Wrap(DAC,"OnPlayerGainedLevel"), self)
+    ListenToGameEvent("match_details_updated", Dynamic_Wrap(DAC,"OnMatchDetailsUpdated"), self)
 
     --CustomGameEventManager:RegisterListener("gather_steam_ids", Dynamic_Wrap(DAC, "OnGatherSteamIds") )
     CustomGameEventManager:RegisterListener("dac_pick_chess", Dynamic_Wrap(DAC, "OnKeyboardPickChess") )
@@ -621,8 +626,6 @@ function DAC:InitGameMode()
     CustomGameEventManager:RegisterListener("select_chess", Dynamic_Wrap(DAC, "OnChessSelected") )
     CustomGameEventManager:RegisterListener("pick_chess_position", Dynamic_Wrap(DAC, "OnPickChessPosition") )
     CustomGameEventManager:RegisterListener("cancel_pick_chess_position", Dynamic_Wrap(DAC, "OnCancelPickChessPosition") )
-
-    CustomGameEventManager:RegisterListener("match_details_updated", Dynamic_Wrap(DAC, "OnMatchDetailsUpdated") )
 
     CustomGameEventManager:RegisterListener("dac_refresh_chess", Dynamic_Wrap(DAC, "OnRefreshChess") )
     CustomGameEventManager:RegisterListener("catch_crab", Dynamic_Wrap(DAC, "OnCatchCrab") )
@@ -712,6 +715,7 @@ function DAC:InitGameMode()
 			[1] = {x=4,y=7,enemy='pve_roshan'},
 		},
 	}
+	GameRules:GetGameModeEntity():SetPauseEnabled(false)
     GameRules:GetGameModeEntity():SetFogOfWarDisabled(true)
     GameRules:GetGameModeEntity():SetBuybackEnabled(false)
     GameRules:GetGameModeEntity().heroindex2steamid = {}
@@ -2894,7 +2898,6 @@ function DAC:OnChessSelected(keys)
 		--添加战斗技能
 		if GameRules:GetGameModeEntity().chess_ability_list[x:GetUnitName()] ~= nil then
 			local a = GameRules:GetGameModeEntity().chess_ability_list[x:GetUnitName()]
-			print(a)
 			if x:FindAbilityByName(a) == nil then
 				AddAbilityAndSetLevel(x,a,0)
 			end
@@ -2959,7 +2962,10 @@ function RecallChess(keys)
 	local origin_y = picked_chess.y
 
 	--TODO: 判断此时是什么阶段，准备阶段才允许撤回
-
+	
+	if picked_chess.is_removing == true then
+		return
+	end
 
 	CancelPickChess(caster)
 
@@ -3718,7 +3724,15 @@ function SyncHP(hero)
 							Timers:CreateTimer(3,function()
 								GameRules:SetGameWinner(last_hero:GetTeam())
 							end)
-							SendMaxData(t,dur)
+							Timers:CreateTimer(RandomFloat(0.1,1),function()
+								SendMaxData(t,dur)
+							end)
+							-- Timers:CreateTimer(RandomFloat(0.1,1),function()
+							-- 	SendYingdiData(t,dur)
+							-- end)
+							-- Timers:CreateTimer(RandomFloat(0.1,1),function()
+							-- 	SendPWData(t,dur)
+							-- end)
 						else
 							prt('POST GAME ERROR : '..t.err)
 							PostGame()
@@ -3890,8 +3904,9 @@ function StartAPVERound()
 	end
 	for m,n in pairs (GameRules:GetGameModeEntity().to_be_destory_list) do
 		if table.maxn(n) > 0 then
-			GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count + 1
 			SaveMaxObj(m)
+			GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count + 1
+			
 			Timers:CreateTimer(function()
 				if GameRules:GetGameModeEntity().battle_timer <= 0 then
 					GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
@@ -4180,12 +4195,12 @@ function StartAPVPRound()
 	for i,v in pairs (GameRules:GetGameModeEntity().counterpart) do
 		if v ~= -1 then
 			local h = TeamId2Hero(i)
-			-- if h.hand_entities ~= nil then
-			-- 	for _,ent in pairs(h.hand_entities) do
-			-- 		AddAbilityAndSetLevel(ent,'outofgame',1)
-			-- 	end
-			-- end
-			--CheckChess(i)
+			if h.hand_entities ~= nil then
+				for _,ent in pairs(h.hand_entities) do
+					AddAbilityAndSetLevel(ent,'outofgame',1)
+				end
+			end
+			CheckChess(i)
 			CancelPickChess(h)
 			if PlayerResource:GetPlayerCount() == 1 and GameRules:GetGameModeEntity().cloudlineup[''..GameRules:GetGameModeEntity().battle_round] ~= nil then
 				local chesses = nil
@@ -4257,9 +4272,9 @@ function StartAPVPRound()
 	Timers:CreateTimer(2,function()
 		for team = 6,13 do
 			if GameRules:GetGameModeEntity().counterpart[team] ~= nil then
+				SaveMaxObj(team)
 				GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count + 1
 				StartWinLoseDrawTimerForTeam(team)
-				SaveMaxObj(team)
 			end
 		end
 	end)
@@ -5093,13 +5108,13 @@ function ChessAI(u)
 		RemoveAbilityAndModifier(u,'jiaoxie_wudi')
 
 		u.aitimer = Timers:CreateTimer(RandomFloat(0.5,2),function()
-			--容错
-			if u:FindAbilityByName('modifier_no_hp_bar') ~= nil or u:FindAbilityByName('modifier_jiaoxie_wudi') ~= nil then
-				u:Destroy()
+			if u == nil or u:IsNull() == true or u:IsAlive() == false or u.alreadywon == true then
 				return
 			end
 
-			if u == nil or u:IsNull() == true or u:IsAlive() == false or u.alreadywon == true then
+			--容错
+			if u:FindAbilityByName('modifier_no_hp_bar') ~= nil or u:FindAbilityByName('modifier_jiaoxie_wudi') ~= nil then
+				u:Destroy()
 				return
 			end
 
@@ -5674,7 +5689,7 @@ function FindUnluckyDogRandom(u)
 	while unluckydog == nil and try_count < 10000 do
 		local random = RandomInt(1,table.maxn(GameRules:GetGameModeEntity().to_be_destory_list))
 		local unit = GameRules:GetGameModeEntity().to_be_destory_list[random]
-		if unit.team_id ~= u.team_id and unit:IsInvisible() == false then
+		if unit ~= nil and unit.y_x and unit:IsNull() == false and unit:IsAlive()==true and unit.team_id ~= u.team_id and unit:IsInvisible() == false then
 			unluckydog = unit
 		end
 		try_count = try_count + 1
@@ -7355,9 +7370,6 @@ function FurTree(keys)
 	local level = ability:GetLevel() or 1
 	local p = keys.target_points[1]
 
-	print(caster:GetAbsOrigin())
-	print(p)
-
 	Timers:CreateTimer(0.1,function()
 		local w = SummonOneMinion(caster, 'fur_tree'..level, p)
 		ExtendBeastBuff(w,caster)
@@ -8019,8 +8031,8 @@ function QiquWaibiao(keys)
 	if attacker:Script_GetAttackRange() < 250 then  
 		--近战
 		EmitSoundOn("Hero_Tiny.CraggyExterior",attacker)
-		attacker:AddNewModifier(attacker,nil,"modifier_stunned",{ duration = 2 })
-		attacker:AddNewModifier(attacker,nil,"modifier_medusa_stone_gaze_stone",{ duration = 2 })
+		attacker:AddNewModifier(attacker,nil,"modifier_stunned",{ duration = duration })
+		attacker:AddNewModifier(attacker,nil,"modifier_medusa_stone_gaze_stone",{ duration = duration })
 	end
 end
 
@@ -8164,11 +8176,56 @@ function DAC:OnPreviewEffect(keys)
 		end)
 	end)
 end
+function SendYingdiData(t,dur)
+	print('------------------SendyingdiData-----------------------')
+	DeepPrintTable(t)
+	local yingdi_url = "http://iyingdi.gonlan.com/tool/autochess/record/match"
+	local yingdi_data = {
+	    end_time=t.end_time,
+	    duration=dur,
+	    players={},
+	    chess_detail=GameRules:GetGameModeEntity().upload_detail_stat,
+	}
 
+	for user,data in pairs(t.mmr_info) do
+	    local insertdata = {}
+	    insertdata["account_id"] = user
+	    insertdata["rank"] = data.rank
+	    insertdata["total"] = data.total
+	    insertdata["level"] = data.level
+	    insertdata["chess"] = GameRules:GetGameModeEntity().stat_info[user]['chess_lineup']
+	    table.insert(yingdi_data['players'],insertdata)
+	end
+	DeepPrintTable(yingdi_data)
+	SendHTTPPost(yingdi_url,yingdi_data)
+end
+function SendPWData(t,dur)
+	print('------------------SendPWData-----------------------')
+	DeepPrintTable(t)
+	local pw_url = "http://52.81.131.74:5140"
+	local pw_data = {
+	    end_time=t.end_time,
+	    duration=dur,
+	    players={},
+	    chess_detail=GameRules:GetGameModeEntity().upload_detail_stat,
+	}
+
+	for user,data in pairs(t.mmr_info) do
+	    local insertdata = {}
+	    insertdata["account_id"] = user
+	    insertdata["rank"] = data.rank
+	    insertdata["total"] = data.total
+	    insertdata["level"] = data.level
+	    insertdata["chess"] = GameRules:GetGameModeEntity().stat_info[user]['chess_lineup']
+	    table.insert(pw_data['players'],insertdata)
+	end
+	DeepPrintTable(pw_data)
+	SendHTTPPost(pw_url,pw_data)
+end
 function SendMaxData(t,dur)
 	print('------------------SendMaxData-----------------------')
 	DeepPrintTable(t)
-	local max_url = "http://api.maxjia.com/api/rpg/autochess/upload/?apikey=69f395b2-f7e8-4032-bd0c-41200cfe9dad"
+	local max_url = "http://api.xiaoheihe.cn/api/rpg/autochess/upload/?apikey=69f395b2-f7e8-4032-bd0c-41200cfe9dad"
 	local max_data = {
 	    key=GetDedicatedServerKey('max'),
 	    version="1.0",
