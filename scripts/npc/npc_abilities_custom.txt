@@ -166,58 +166,6 @@
 		}
 	}
 
-	"lycan_shapeshift"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"20"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"Target"	"CASTER"
-				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"LycSummonWolf"
-			}
-		}
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"18"
-				"LinkedSpecialBonus"	"special_bonus_unique_lycan_1"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"speed"	"650"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"bonus_night_vision"	"1000"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"transformation_time"	"1"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"crit_chance"	"90"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"crit_multiplier"	"250 350 450"
-			}
-		}
-	}
-
 	"axe_berserkers_call"
 	{
 		"MaxLevel"	"3"
@@ -242,44 +190,6 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"duration"	"2 3 4"
-			}
-		}
-	}
-
-	"ogre_magi_ignite"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.5"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"5"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"10"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"burn_damage"	"30 60 90"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"slow_movement_speed_pct"	"-20"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"projectile_speed"	"1000"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"multicast_delay"	"0.5"
 			}
 		}
 	}
@@ -769,60 +679,6 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"attack_speed"	"100 150 200"
-			}
-		}
-	}
-
-	"venomancer_poison_nova"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"10"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"600 700 800"
-				"LinkedSpecialBonus"	"special_bonus_unique_venomancer_6"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"start_radius"	"255 255 255"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"10"
-				"LinkedSpecialBonus"	"special_bonus_unique_venomancer_4"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage"	"60 90 120"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"cooldown_scepter"	"140.0 120.0 60.0"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration_scepter"	"18"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage_scepter"	"100 150 200"
-			}
-			"08"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"speed"	"500"
 			}
 		}
 	}
@@ -10710,110 +10566,6 @@
 		}
 	}
 
-	"troll_warlord_whirling_axes_melee"
-	{
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"5"
-		"AbilityManaCost"	"0"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage"	"100 150 200"
-				"LinkedSpecialBonus"	"special_bonus_unique_troll_warlord_3"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"hit_radius"	"100"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"max_range"	"450.0"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"axe_movement_speed"	"1250"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"blind_duration"	"5"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"blind_pct"	"60"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"whirl_duration"	"3.0"
-			}
-		}
-	}
-
-	"troll_warlord_whirling_axes_ranged"
-	{
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_TARGET"
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"5"
-		"AbilityManaCost"	"0"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"axe_width"	"100"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"axe_speed"	"1500.0"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"axe_range"	"1000.0"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"axe_damage"	"75"
-				"LinkedSpecialBonus"	"special_bonus_unique_troll_warlord_3"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"axe_slow_duration"	"2.5 3 3.5"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"movement_speed"	"40"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"axe_spread"	"25"
-			}
-			"08"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"axe_count"	"5"
-			}
-		}
-	}
-
 	"troll_warlord_fervor"
 	{
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
@@ -11916,42 +11668,6 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
-			}
-		}
-	}
-
-	"batrider_firefly"
-	{
-		"MaxLevel"	"3"
-		"AbilityCooldown"	"10"
-		"AbilityManaCost"	"0"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage_per_second"	"20 30 40"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"200 200 200"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"15"
-				"LinkedSpecialBonus"	"special_bonus_unique_batrider_1"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"tick_interval"	"0.5 0.5 0.5 0.5"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"tree_radius"	"100 100 100 100"
 			}
 		}
 	}

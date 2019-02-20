@@ -479,6 +479,7 @@ function Precache( context )
 		"models/items/courier/nian_courier/nian_courier.vmdl",
 		"models/items/courier/nilbog/nilbog.vmdl",
 		"particles/items_fx/blink_dagger_end.vpcf",
+		"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts",
 	} 
     print("Precache...")
 	local t=table.maxn(mxx)
@@ -593,7 +594,7 @@ function DAC:InitGameMode()
 	-- PlayerResource:SetCustomPlayerColor(0, 0,0,255)
 	-- PlayerResource:SetCustomPlayerColor(1, 0,0,255)
 
-	-- SetTeamCustomHealthbarColor(DOTA_TEAM_NEUTRALS, 255,0,0)
+	
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 0,192,0)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,128,128)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 255,255,192)
@@ -603,6 +604,7 @@ function DAC:InitGameMode()
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_7, 255,156,156)
 	-- SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_8, 255,0,255)
 	
+	SetTeamCustomHealthbarColor(DOTA_TEAM_NEUTRALS, 255,0,0)
 	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_1, 128,255,128)
 	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_2, 128,255,128)
 	SetTeamCustomHealthbarColor(DOTA_TEAM_CUSTOM_3, 128,255,128)
@@ -1729,6 +1731,7 @@ function InitHeros()
 					kills = 0,
 					deaths = 0,
 					mmr_level = user_info.mmr_level,
+					queen_rank = user_info.queen_rank,
 					chess_lineup = '',
 					candy = 0,
 				}
@@ -1848,6 +1851,7 @@ function InitHeros()
 					kills = 0,
 					deaths = 0,
 					mmr_level = user_info.mmr_level,
+					queen_rank = user_info.queen_rank,
 					chess_lineup = '',
 					candy = 0,
 				}
@@ -1939,6 +1943,7 @@ function InitHeros()
 				kills = 0,
 				deaths = 0,
 				mmr_level = user_info.mmr_level,
+				queen_rank = user_info.queen_rank,
 				chess_lineup = '',
 				candy = 0,
 			}
@@ -3715,6 +3720,7 @@ function SyncHP(hero)
 							prt('POST GAME OK!')
 							for u,v in pairs(t.mmr_info) do
 								GameRules:GetGameModeEntity().stat_info[u]['mmr_level'] = v.level
+								GameRules:GetGameModeEntity().stat_info[u]['queen_rank'] = v.queen_rank
 								GameRules:GetGameModeEntity().stat_info[u]['candy'] = v.candy or 0
 							end
 							print('POST GAME OK!')
@@ -3727,12 +3733,12 @@ function SyncHP(hero)
 							Timers:CreateTimer(RandomFloat(0.1,1),function()
 								SendMaxData(t,dur)
 							end)
-							-- Timers:CreateTimer(RandomFloat(0.1,1),function()
-							-- 	SendYingdiData(t,dur)
-							-- end)
-							-- Timers:CreateTimer(RandomFloat(0.1,1),function()
-							-- 	SendPWData(t,dur)
-							-- end)
+							Timers:CreateTimer(RandomFloat(0.1,1),function()
+								SendYingdiData(t,dur)
+							end)
+							Timers:CreateTimer(RandomFloat(0.1,1),function()
+								SendPWData(t,dur)
+							end)
 						else
 							prt('POST GAME ERROR : '..t.err)
 							PostGame()
@@ -5763,6 +5769,31 @@ function FindNeedHealFriend(u)
 	end
 	return unluckydog
 end
+--为TB换血寻找最佳队友
+function FindBestSunderFriend(u)
+	local unluckydog = u
+	local hp_per_best = 0
+	local hp_best = 0
+	for _,unit in pairs (GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if unit.team_id == u.team_id and unit:entindex() ~= u:entindex() then
+			local hp = unit:GetHealth()
+			local hp_max = unit:GetMaxHealth()
+			local per = 1.0*hp/hp_max*100
+
+			if per > hp_per_best then
+				unluckydog = unit
+				hp_per_best = per
+				hp_per = hp
+			end
+			if per == hp_per_best and hp < hp_best then
+				unluckydog = unit
+				hp_per_best = per
+				hp_per = hp
+			end
+		end
+	end
+	return unluckydog
+end
 
 --沙王用：寻找一个最远的能打到敌人的离我最远的格子，（戳过去！）
 function FindFarthestCanAttackEnemyEmptyGrid(u)
@@ -7339,6 +7370,33 @@ function TbMohua(keys)
 		caster:SetOriginalModel(shift_model)
 		caster:SetModel(shift_model)
 	end
+
+	--附加灵魂隔断效果：
+
+	--（1）找一个倒霉蛋队友
+	local unluckydog = FindBestSunderFriend(caster)
+	if unluckydog ~= nil then
+		--（2）交换血量百分比
+		local hp1 = caster:GetHealth()
+		local hp_max1 = caster:GetMaxHealth()
+		local per1 = 1.0*hp1/hp_max1
+		local hp2 = unluckydog:GetHealth()
+		local hp_max2 = unluckydog:GetMaxHealth()
+		local per2 = 1.0*hp2/hp_max2
+		caster:SetHealth(caster:GetMaxHealth()*per2)
+		unluckydog:SetHealth(unluckydog:GetMaxHealth()*per1)
+		--（3）播放特效音效 
+		local pp = ParticleManager:CreateParticle("particles/units/heroes/hero_terrorblade/terrorblade_sunder.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+		ParticleManager:SetParticleControl(pp,0,caster:GetAbsOrigin())
+		ParticleManager:SetParticleControl(pp,1,unluckydog:GetAbsOrigin())
+		Timers:CreateTimer(2,function()
+			if pp ~= nil then
+				ParticleManager:DestroyParticle(pp,true)
+			end
+		end)
+		EmitSoundOn("Hero_Terrorblade.Sunder.Cast",caster)
+		EmitSoundOn("Hero_Terrorblade.Sunder.Target",unluckydog)
+	end
 end
 
 function VenoSummonWard(keys)
@@ -7977,7 +8035,7 @@ function TinyTouzhi(keys)
 	local x = Vector2X(v,team_id)
 	local stun_duration = ((v-target:GetAbsOrigin()):Length2D()/1000)
 
-	Timers:CreateTimer(stun_duration+0.3,function()
+	Timers:CreateTimer(stun_duration+0.1,function()
 		ApplyDamageInRadius({
 			caster = caster,
 			team = 2,
@@ -8064,6 +8122,9 @@ function ChangeFlyingCourierModel(opp_model)
 	end
 	if opp_model == "models/props_gameplay/donkey.vmdl" then
 		new_m = "models/props_gameplay/donkey_wings.vmdl"
+	end
+	if opp_model == "models/courier/juggernaut_dog/juggernaut_dog.vmdl" then
+		new_m = "models/courier/juggernaut_dog/juggernaut_dog_wings.vmdl"
 	end
 	if opp_model == "models/items/juggernaut/ward/fortunes_tout/fortunes_tout.vmdl" then
 		new_m = opp_model
@@ -8250,7 +8311,8 @@ function SendMaxData(t,dur)
 end
 
 function SendHTTPPost(url,game_data)
-    local req = CreateHTTPRequestScriptVM("POST",url.."&from=SendHTTPPost")
+    local req = CreateHTTPRequestScriptVM("POST",url)
+    req:SetHTTPRequestHeaderValue("Content-Type", "application/json;charset=UTF-8")
     -- ScoreSystemUpdateCount = ScoreSystemUpdateCount + 1
     req:SetHTTPRequestGetOrPostParameter("data",json.encode(game_data))
     req:Send(function(res)
