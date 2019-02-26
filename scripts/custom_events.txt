@@ -90,5 +90,16 @@
 	{
 		"id" 		"short"
 	}
+	"show_liuju"
+	{
+	}
+	"hide_liuju"
+	{
+	}
+	"update_liuju"
+	{
+		"count"		"short"
+		"total"		"short"
+	}
 }
 

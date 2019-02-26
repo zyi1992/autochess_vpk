@@ -32,8 +32,13 @@ function modifier_jump:OnCreated(kv)
         self.flDistance        = (self.vTargetPosition - self.vStartPosition):Length2D() + self.flHorizontalSpeed
         self.leap_traveled = 0
         --self:GetParent():SetForwardVector(self.vDirection)
+
+        self.sound = kv.sound or "Ability.TossThrow"
         -- 创建开始的特效和音效
-        EmitSoundOn("Ability.TossThrow", self:GetParent())
+        EmitSoundOn(self.sound, self:GetParent())
+
+        self.animation = kv.animation or ACT_DOTA_FLAIL
+
     end
 end
 
@@ -65,7 +70,7 @@ function modifier_jump:CheckState()
 end
 
 function modifier_jump:GetOverrideAnimation()
-    return ACT_DOTA_FLAIL
+    return self.animation or ACT_DOTA_FLAIL
 end
 
 function modifier_jump:UpdateHorizontalMotion(me, dt)
