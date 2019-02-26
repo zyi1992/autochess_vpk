@@ -8467,7 +8467,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"15"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8497,7 +8497,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"20"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8527,7 +8527,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"25"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"40"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -13767,7 +13767,7 @@
 			{
 				"Target"	"TARGET"
 				"EffectName"	"effect/pom_arrow_far/arrow.vpcf"
-				"MoveSpeed"	"800"
+				"MoveSpeed"	"1200"
 			}
 			"RunScript"
 			{
