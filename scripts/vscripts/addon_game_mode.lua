@@ -632,15 +632,10 @@ function DAC:InitGameMode()
     ListenToGameEvent("dota_player_pick_hero",Dynamic_Wrap(DAC,"OnPlayerPickHero"),self)
     ListenToGameEvent("entity_killed", Dynamic_Wrap(DAC, "OnEntityKilled"), self)
     ListenToGameEvent("dota_player_gained_level", Dynamic_Wrap(DAC,"OnPlayerGainedLevel"), self)
-    ListenToGameEvent("match_details_updated", Dynamic_Wrap(DAC,"OnMatchDetailsUpdated"), self)
 
-    --CustomGameEventManager:RegisterListener("gather_steam_ids", Dynamic_Wrap(DAC, "OnGatherSteamIds") )
-    CustomGameEventManager:RegisterListener("dac_pick_chess", Dynamic_Wrap(DAC, "OnKeyboardPickChess") )
-    CustomGameEventManager:RegisterListener("battle_deck", Dynamic_Wrap(DAC, "OnDeckReiceived") )
     CustomGameEventManager:RegisterListener("select_chess", Dynamic_Wrap(DAC, "OnChessSelected") )
     CustomGameEventManager:RegisterListener("pick_chess_position", Dynamic_Wrap(DAC, "OnPickChessPosition") )
     CustomGameEventManager:RegisterListener("cancel_pick_chess_position", Dynamic_Wrap(DAC, "OnCancelPickChessPosition") )
-
     CustomGameEventManager:RegisterListener("dac_refresh_chess", Dynamic_Wrap(DAC, "OnRefreshChess") )
     CustomGameEventManager:RegisterListener("dac_report", Dynamic_Wrap(DAC, "OnReport") )
     CustomGameEventManager:RegisterListener("catch_crab", Dynamic_Wrap(DAC, "OnCatchCrab") )
@@ -809,12 +804,6 @@ function DAC:InitGameMode()
 		[4] = 3,
 		[5] = 2,
 	}
-
-
-    print("InitGameMode")
-
-    CustomNetTables:SetTableValue( "dac_table", "curtain_tips", { text = "正在初始化地图", hehe = RandomInt(1,1000)})
-
 
     GameRules:GetGameModeEntity().hero = {}
     GameRules:GetGameModeEntity().battleid = nil
@@ -2213,120 +2202,7 @@ function DAC:OnPlayerDisconnect(keys)
 		-- })
 	end
 end
---暂时不用了
-function DAC:OnDeckReiceived(keys)
-	if keys.deck == nil then
-		keys.deck = GameRules:GetGameModeEntity().steamid2deck2cards[keys.steam_id][keys.deck_id]
-	end
 
-	local heroindex_old = tonumber(GameRules:GetGameModeEntity().steamid2heroindex[keys.steam_id])
-	local hero = EntIndexToHScript(heroindex_old)
-
-	if hero.is_ready == true then
-		return
-	end
-
-	local id = hero:GetPlayerID()
-	local steam_id = keys.steam_id
-	local team_old = hero.team
-
-	keys.hero = GameRules:GetGameModeEntity().HEROS[keys.hero] or keys.hero
-
-	PrecacheUnitByNameAsync( keys.hero, function()
-
-		local hero_new = PlayerResource:ReplaceHeroWith(id,keys.hero,PlayerResource:GetGold(id),0)
-
-		hero_new.steam_id = steam_id
-		hero_new.droping = false
-		hero_new.drawing = false
-		hero_new.team = team_old
-		heroindex = hero_new:GetEntityIndex()
-		GameRules:GetGameModeEntity().heroindex2steamid[heroindex_old] = nil
-		GameRules:GetGameModeEntity().steamid2heroindex[keys.steam_id] = heroindex
-		GameRules:GetGameModeEntity().heroindex2steamid[heroindex] = keys.steam_id
-
-		GameRules:GetGameModeEntity().hero[heroindex_old] = nil
-		GameRules:GetGameModeEntity().hero[hero_new:GetEntityIndex()] = hero_new
-
-		hero_new.is_ready = true
-		
-		--填充手牌
-		hero_new.deck = {}
-		for u,v in pairs(keys.deck) do
-			table.insert(hero_new.deck, v)
-		end
-
-
-		if DEFAULT_DECK ~= nil then
-			hero_new.deck = DEFAULT_DECK
-		end
-
-		--送tp问题
-		for slot=0,8 do
-			if hero_new:GetItemInSlot(slot)~= nil then
-				hero_new:RemoveItem(hero_new:GetItemInSlot(slot))
-			end
-		end
-
-		if hero_new:GetModelScale() < 0.1 then
-			hero_new:SetModelScale(0.9)
-		    local children = hero_new:GetChildren()
-		    for k,child in pairs(children) do
-		       if child:GetClassname() == "dota_item_wearable" then
-		           child:RemoveSelf()
-		       end
-		    end
-		end
-		hero_new.hand = {}
-
-		--触发战吼？
-		if hero_new:GetUnitName() == "npc_dota_hero_alchemist" then
-			hero_new:AddAbility("zibao")
-			hero_new:FindAbilityByName("zibao"):SetLevel(1)
-			Timers:CreateTimer(0.2,function()
-				local newOrder = {
-			 		UnitIndex = hero_new:entindex(), 
-			 		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
-			 		TargetIndex = nil, 
-			 		AbilityIndex = hero_new:FindAbilityByName("zibao"):entindex(), 
-			 		Position = nil, 
-			 		Queue = 0 
-			 	}
-				ExecuteOrderFromTable(newOrder)
-
-				Timers:CreateTimer(9.8,function()
-					hero_new:RemoveAbility("zibao")
-				end)
-			end)
-		end
-
-		if hero_new:GetUnitName() == "npc_dota_hero_invoker" then
-			hero_new:AddAbility("no_duplicate")
-			hero_new:FindAbilityByName("no_duplicate"):SetLevel(1)
-		end
-		hero_new:SetMana(0)
-
-		
-
-		--是否全部ready
-		local readyplayercount = 0
-	    for i,vi in pairs(GameRules:GetGameModeEntity().hero) do
-	    	if vi.is_ready == true then
-	    		readyplayercount = readyplayercount +1
-	    	end
-	    end
-
-	    -- 通知pui游戏开始
-	    if readyplayercount == PlayerResource:GetPlayerCount() then
-	    	if GameRules:GetGameModeEntity().is_game_started == true then
-				return
-			end
-	    	GameRules:GetGameModeEntity().is_game_started = true
-	    	Ready2StartGame()
-	    end 
-
-	end, id)
-end
 --游戏循环1——开始一轮准备回合
 function StartAPrepareRound()
 	-- StatChess()
@@ -2576,8 +2452,13 @@ function StartAPrepareRound()
 	end)
 end
 function DAC:OnSuggestLiuju(keys)
-	local player_id = keys.player_id
+	local player_id = keys.PlayerID
 	local hero = PlayerId2Hero(player_id)
+
+	if keys.player_id ~= keys.PlayerID then
+		hero.is_banned = true
+		return
+	end
 
 	if hero == nil or hero:IsNull() == true then
 		return
@@ -7895,27 +7776,6 @@ function RemoveWinStreak(team)
 	hero:SetModelScale(hero.init_model_scale or 1)
 end
 
-function DAC:OnKeyboardPickChess(keys)
-	if keys.team ~= nil and TeamId2Hero(keys.team) ~= nil and TeamId2Hero(keys.team).hand_entities ~= nil and TeamId2Hero(keys.team).hand_entities[keys.chess_index] ~= nil then
-		-- PickChess({
-		-- 	target = TeamId2Hero(keys.team).hand_entities[keys.chess_index],
-		-- 	caster = TeamId2Hero(keys.team),
-		-- })
-
-		local hero = TeamId2Hero(keys.team)
-		local chess = TeamId2Hero(keys.team).hand_entities[keys.chess_index]
-
-		local newOrder = {
-	 		UnitIndex = hero:entindex(), 
-	 		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
-	 		TargetIndex = chess:entindex(), 
-	 		AbilityIndex = hero:FindAbilityByName("pick_chess"):entindex(), 
-	 		Position = nil, 
-	 		Queue = 0 
-	 	}
-		ExecuteOrderFromTable(newOrder)
-	end
-end
 
 --调用寻路算法
 function FindPath(p1,p2,team)
@@ -8481,7 +8341,7 @@ function ShowCombat(keys)
 end
 
 function DAC:OnChangeOndutyHero(keys)
-	local player_id = keys.player_id
+	local player_id = keys.PlayerID
 	local onduty_hero_new = keys.onduty_hero_new
 
 	local onduty_hero = string.split(onduty_hero_new,'_')[1]
@@ -8489,6 +8349,10 @@ function DAC:OnChangeOndutyHero(keys)
 	local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
 
 	local hero = PlayerId2Hero(player_id)
+	if keys.player_id ~= keys.PlayerID then
+		hero.is_banned = true
+		return
+	end
 
 	hero:SetOriginalModel(onduty_hero_model)
 	hero:SetModel(onduty_hero_model)
@@ -8648,17 +8512,6 @@ function SendHTTPPost(url,game_data)
         --     success_cb(obj)
         -- end
     end)
-end
-
-function DAC:OnMatchDetailsUpdated(keys)
-	print("OnMatchDetailsUpdated------------------")
-	for k,v in pairs(keys) do
-		print(k)
-	end
-	DeepPrintTable(keys)
-	for k,v in pairs(keys) do
-		prt(k..'='..v)
-	end
 end
 
 function HideBench(team)
@@ -8841,7 +8694,9 @@ function FindSlarkJumpUnluckyDogClosest(u)
 	return unluckydog
 end
 function DAC:OnReport(keys)
-	local report_str = keys.cheatuser..'_'..keys.reporter
+	local steam_id = GameRules:GetGameModeEntity().playerid2steamid[keys.PlayerID]
+
+	local report_str = keys.cheatuser..'_'..steam_id
 	if GameRules:GetGameModeEntity().reportinfo[report_str] == nil and string.find(GameRules:GetGameModeEntity().steamidlist,keys.cheatuser) then
 		SendHTTP('http://autochess.ppbizon.com/cheat/report?hehe='..RandomInt(1,10000)..'&cheatuser='..keys.cheatuser..'&reporter='..keys.reporter,function()
 			end
