@@ -1290,9 +1290,9 @@ function DAC:InitGameMode()
 		--种族技能
 		is_troll = { ability = 'is_troll_buff', condition = 2, type = 1 },
 		is_troll1 = { ability = 'is_troll_buff_plus', condition = 4, type = 2 },
-		is_beast = { ability = 'is_beast_buff', condition = 3, type = 2 },
-		is_beast1 = { ability = 'is_beast_buff_plus', condition = 6, type = 2 },
-		-- is_beast11 = { ability = 'is_beast_buff_plus_plus', condition = 6, type = 2 },
+		is_beast = { ability = 'is_beast_buff', condition = 2, type = 2 },
+		is_beast1 = { ability = 'is_beast_buff_plus', condition = 4, type = 2 },
+		is_beast11 = { ability = 'is_beast_buff_plus_plus', condition = 6, type = 2 },
 		is_elf = { ability = 'is_elf_buff', condition = 3, type = 1 },
 		is_elf1 = { ability = 'is_elf_buff_plus', condition = 6, type = 1 },
 		is_elf11 = { ability = 'is_elf_buff_plus_plus', condition = 9, type = 1 },
@@ -1710,7 +1710,7 @@ function InitHeros()
 		end)
 	end
 	--从服务器获取玩家信息
-	local url = "http://autochess.ppbizon.com/game/new/@"..GameRules:GetGameModeEntity().steamidlist_heroindex.."?hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('dac')
+	local url = "http://autochess.ppbizon.com/game/new/@"..GameRules:GetGameModeEntity().steamidlist_heroindex.."?hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('drodo')
 	SendHTTP(url.."&from=InitHeros", function(t)
 		if t.err == 0 then
 			prt('CONNECT SERVER OK!')
@@ -2373,7 +2373,7 @@ function StartAPrepareRound()
 					v:ForceKill(false)
 					GameRules:GetGameModeEntity().counterpart[v:GetTeam()] = -1
 					SyncHP(v)
-					local url_up = "http://autochess.ppbizon.com/user/thunder?user="..v.steam_id.."&hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('dac')
+					local url_up = "http://autochess.ppbizon.com/user/thunder?user="..v.steam_id.."&hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('drodo')
 					local req_up = CreateHTTPRequestScriptVM("GET", url_up)
 					req_up:SetHTTPRequestAbsoluteTimeoutMS(20000)
 					req_up:Send(function (result)
@@ -3809,7 +3809,7 @@ function SyncHP(hero)
 				prt('END GAME')
 				GameRules:GetGameModeEntity().death_stack = GameRules:GetGameModeEntity().last_player_steamid..','..GameRules:GetGameModeEntity().death_stack
 				if GetMapName() ~= 'practice' then 
-					local url = "http://autochess.ppbizon.com/game/post/@"..GameRules:GetGameModeEntity().death_stack.."?hehe="..RandomInt(1,10000).."&winner_lineup="..lineup.."&duration="..dur.."&key="..GetDedicatedServerKey('dac')
+					local url = "http://autochess.ppbizon.com/game/post/@"..GameRules:GetGameModeEntity().death_stack.."?hehe="..RandomInt(1,10000).."&winner_lineup="..lineup.."&duration="..dur.."&key="..GetDedicatedServerKey('drodo')
 					SendHTTP(url.."&from=SyncHP", function(t)
 						if t.err == 0 then
 							prt('POST GAME OK!')
@@ -3825,17 +3825,14 @@ function SyncHP(hero)
 							Timers:CreateTimer(3,function()
 								GameRules:SetGameWinner(last_hero:GetTeam())
 							end)
-							Timers:CreateTimer(RandomFloat(0.1,2),function()
+							Timers:CreateTimer(RandomFloat(0,1),function()
 								SendMaxData(t,dur)
 							end)
-							Timers:CreateTimer(RandomFloat(0.1,2),function()
+							Timers:CreateTimer(RandomFloat(1,2),function()
 								SendYingdiData(t,dur)
 							end)
-							Timers:CreateTimer(RandomFloat(0.1,2),function()
+							Timers:CreateTimer(RandomFloat(2,3),function()
 								SendPWData(t,dur)
-							end)
-							Timers:CreateTimer(RandomFloat(0.1,2),function()
-								SendVarenaData(t,dur)
 							end)
 						else
 							prt('POST GAME ERROR : '..t.err)
@@ -3868,7 +3865,7 @@ function SyncHP(hero)
 						str = str..json.encode(v)..'|'
 					end
 					str = string.sub(str,1,-2)
-					local url_up = "http://autochess.ppbizon.com/lineup/add?lineups="..str.."&hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('dac')
+					local url_up = "http://autochess.ppbizon.com/lineup/add?lineups="..str.."&hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('drodo')
 					local req_up = CreateHTTPRequestScriptVM("GET", url_up)
 					req_up:SetHTTPRequestAbsoluteTimeoutMS(20000)
 					req_up:Send(function (result)
@@ -6524,7 +6521,7 @@ function DAC:OnPlayerChat(keys)
 	end
 	
 
-	--测试
+	--测试命令
 	-- if string.find(keys.text,"^e%w%w%w$") ~= nil and GameRules:GetGameModeEntity().myself then
 	-- 	if hero.effect ~= nil then
 	-- 		hero:RemoveAbility(hero.effect)
@@ -8017,7 +8014,12 @@ end
 
 --辅助功能——捕捉一只螃蟹，发回pui
 function DAC:OnCatchCrab(keys)
-	local url = keys.url.."&key="..GetDedicatedServerKey('dac').."&from=OnCatchCrab"
+	local url = keys.url
+	if string.sub(url,1,29) ~= "http://autochess.ppbizon.com/" then
+		return
+	end
+
+	url = keys.url.."&key="..GetDedicatedServerKey('drodo').."&from=OnCatchCrab"
 	local cb = keys.cb
 	if url == nil or cb == nil then
 		return
@@ -8361,26 +8363,7 @@ function DAC:OnPreviewEffect(keys)
 		h.is_banned = true
 	end
 end
-function SendVarenaData()
-	local varena_url = "http://upload.data.vpgame.com/data/autochess/upload"
-	local varena_data = {
-	    end_time=t.end_time,
-	    duration=dur,
-	    players={},
-	    chess_detail=GameRules:GetGameModeEntity().upload_detail_stat,
-	}
 
-	for user,data in pairs(t.mmr_info) do
-	    local insertdata = {}
-	    insertdata["account_id"] = user
-	    insertdata["rank"] = data.rank
-	    insertdata["total"] = data.total
-	    insertdata["level"] = data.level
-	    insertdata["chess"] = GameRules:GetGameModeEntity().stat_info[user]['chess_lineup']
-	    table.insert(varena_data['players'],insertdata)
-	end
-	SendHTTPPost(varena_url,varena_data)
-end
 function SendYingdiData(t,dur)
 	local yingdi_url = "http://iyingdi.gonlan.com/tool/autochess/record/match"
 	local yingdi_data = {
