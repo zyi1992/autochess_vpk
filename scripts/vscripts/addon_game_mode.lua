@@ -1715,7 +1715,6 @@ function InitHeros()
 		if t.err == 0 then
 			prt('CONNECT SERVER OK!')
 			for steam_id,user_info in pairs(t.user_info) do
-				DeepPrintTable(user_info)
 				local hero_index = user_info.hero_index
 				local hero = EntIndexToHScript(hero_index)
 				local player_id = hero:GetPlayerID()
@@ -1917,7 +1916,7 @@ function InitHeros()
 			CustomNetTables:SetTableValue( "dac_table", "player_info", { info = user_info_table, hehe = RandomInt(1,1000)})
 			StartGame()
 		end
-	end, function()
+	end, function(t)
 		--连接服务器失败了，用默认信使玩
 		prt('CONNECT SERVER ERROR : '..t.err)
 
@@ -4326,7 +4325,7 @@ function StartAPVPRound()
 	GameRules:GetGameModeEntity().battle_count = 0
 
 	--添加战斗技能和棋子AI（延时1秒）
-	Timers:CreateTimer(1,function()
+	Timers:CreateTimer(1.5,function()
 		for t = 6,13 do
 			for _,v in pairs(GameRules:GetGameModeEntity().to_be_destory_list[t]) do
 				if GameRules:GetGameModeEntity().chess_ability_list[v:GetUnitName()] ~= nil then
@@ -4815,12 +4814,12 @@ function AddComboAbility(teamid)
 					opp = teama
 				end
 			end
-			if opp ~= 0 and GameRules:GetGameModeEntity().stat_info[TeamId2Hero(vw.at_team_id).steam_id]['hp'] < GameRules:GetGameModeEntity().stat_info[TeamId2Hero(opp).steam_id]['hp'] then
-				leading_team = opp
-			end
-			if leading_team == teamid and TeamId2Hero(vw.at_team_id) ~= nil and TeamId2Hero(vw.at_team_id):FindAbilityByName('h405_ability') ~= nil then
-				AddAbilityAndSetLevel(vw,'h405_ability_inchess')
-			end
+			-- if opp ~= 0 and GameRules:GetGameModeEntity().stat_info[TeamId2Hero(vw.at_team_id).steam_id]['hp'] < GameRules:GetGameModeEntity().stat_info[TeamId2Hero(opp).steam_id]['hp'] then
+			-- 	leading_team = opp
+			-- end
+			-- if leading_team == teamid and TeamId2Hero(vw.at_team_id) ~= nil and TeamId2Hero(vw.at_team_id):FindAbilityByName('h405_ability') ~= nil then
+			-- 	AddAbilityAndSetLevel(vw,'h405_ability_inchess')
+			-- end
 			for k,vk in pairs(GameRules:GetGameModeEntity().combo_ability_type) do
 				if combo_chess_table_enemy[k] == nil then
 					combo_chess_table_enemy[k] = {}
@@ -5092,7 +5091,7 @@ function MirrorARound(teamid)
 					end
 				end
 			end
-			Timers:CreateTimer(1,function()
+			Timers:CreateTimer(0.8,function()
 				AddComboAbility(teamid)
 			end)
 		end
@@ -5100,7 +5099,7 @@ function MirrorARound(teamid)
 end
 
 function MirrorAChess(teamid,i,j,opp)
-	Timers:CreateTimer(RandomFloat(0.1,0.5),function()
+	Timers:CreateTimer(RandomFloat(0.1,0.3),function()
 		local x = CreateUnitByName(GameRules:GetGameModeEntity().mychess[teamid][i..'_'..j].chess,XY2Vector(9-j,9-i,opp),true,nil,nil,DOTA_TEAM_NEUTRALS)
 		MakeTiny(x)
 		x:SetForwardVector(Vector(0,-1,0))
@@ -6522,147 +6521,147 @@ function DAC:OnPlayerChat(keys)
 	
 
 	--测试命令
-	-- if string.find(keys.text,"^e%w%w%w$") ~= nil and GameRules:GetGameModeEntity().myself then
-	-- 	if hero.effect ~= nil then
-	-- 		hero:RemoveAbility(hero.effect)
-	-- 		hero:RemoveModifierByName('modifier_texiao_star')
-	-- 	end
-	-- 	hero:AddAbility(keys.text)
-	-- 	hero:FindAbilityByName(keys.text):SetLevel(1)
-	-- 	hero.effect = keys.text
-	-- end
+	if string.find(keys.text,"^e%w%w%w$") ~= nil and GameRules:GetGameModeEntity().myself then
+		if hero.effect ~= nil then
+			hero:RemoveAbility(hero.effect)
+			hero:RemoveModifierByName('modifier_texiao_star')
+		end
+		hero:AddAbility(keys.text)
+		hero:FindAbilityByName(keys.text):SetLevel(1)
+		hero.effect = keys.text
+	end
 
-	-- if tokens[1] == '-chesspool' and GameRules:GetGameModeEntity().myself then
-	-- 	PrintChessPool()
-	-- end
-	-- if tokens[1] == '-crab' and GameRules:GetGameModeEntity().myself == true then
-	-- 	GameRules:GetGameModeEntity().next_crab = 'chess_'..tokens[2]
-	-- 	for i=1,3 do
-	-- 		local x = nil
-	-- 		local this_chess = nil
-	-- 		if i == 1 then
-	-- 			this_chess = GameRules:GetGameModeEntity().next_crab
-	-- 		elseif i == 2 then
-	-- 			this_chess = GameRules:GetGameModeEntity().next_crab..'1'
-	-- 		elseif i == 3 then
-	-- 			this_chess = GameRules:GetGameModeEntity().next_crab..'11'
-	-- 		end
-	-- 		x = CreateUnitByName(this_chess,HandIndex2Vector(hero:GetTeam(),i),true,nil,nil,hero:GetTeam())
-	-- 		MakeTiny(x)
-	-- 		PlayChessDialogue(x,'spawn')
+	if tokens[1] == '-chesspool' and GameRules:GetGameModeEntity().myself then
+		PrintChessPool()
+	end
+	if tokens[1] == '-crab' and GameRules:GetGameModeEntity().myself == true then
+		GameRules:GetGameModeEntity().next_crab = 'chess_'..tokens[2]
+		for i=1,3 do
+			local x = nil
+			local this_chess = nil
+			if i == 1 then
+				this_chess = GameRules:GetGameModeEntity().next_crab
+			elseif i == 2 then
+				this_chess = GameRules:GetGameModeEntity().next_crab..'1'
+			elseif i == 3 then
+				this_chess = GameRules:GetGameModeEntity().next_crab..'11'
+			end
+			x = CreateUnitByName(this_chess,HandIndex2Vector(hero:GetTeam(),i),true,nil,nil,hero:GetTeam())
+			MakeTiny(x)
+			PlayChessDialogue(x,'spawn')
 
 			
 
-	-- 		GameRules:GetGameModeEntity().hand[hero:GetTeam()][i] = 1
-	-- 		if hero.hand_entities == nil then
-	-- 			hero.hand_entities = {}
-	-- 		end
+			GameRules:GetGameModeEntity().hand[hero:GetTeam()][i] = 1
+			if hero.hand_entities == nil then
+				hero.hand_entities = {}
+			end
 
-	-- 		hero.hand_entities[i] = x
+			hero.hand_entities[i] = x
 
-	-- 		x:SetForwardVector(Vector(0,1,0))
-	-- 		x.hand_index = i
-	-- 		x.team_id = hero:GetTeam()
-	-- 		x.owner_player_id = GameRules:GetGameModeEntity().team2playerid[hero:GetTeam()]
+			x:SetForwardVector(Vector(0,1,0))
+			x.hand_index = i
+			x.team_id = hero:GetTeam()
+			x.owner_player_id = GameRules:GetGameModeEntity().team2playerid[hero:GetTeam()]
 			
-	-- 		AddAbilityAndSetLevel(x,'root_self')
-	-- 		AddAbilityAndSetLevel(x,'jiaoxie_wudi')
+			AddAbilityAndSetLevel(x,'root_self')
+			AddAbilityAndSetLevel(x,'jiaoxie_wudi')
 
-	-- 		play_particle("particles/econ/items/antimage/antimage_ti7/antimage_blink_start_ti7_ribbon_bright.vpcf",PATTACH_ABSORIGIN_FOLLOW,x,5)
-	-- 	end
-	-- 	GameRules:GetGameModeEntity().next_crab = nil
-	-- end
-	-- if tokens[1] == '-drop' and GameRules:GetGameModeEntity().myself == true then
-	-- 	local i = 'item_'..tokens[2]
-	-- 	local newItem = CreateItem( i, hero, hero )
-	-- 	local drop = CreateItemOnPositionForLaunch(hero:GetAbsOrigin(), newItem )
-	-- 	local dropRadius = RandomFloat( 50, 200 )
-	-- 	newItem:LaunchLootInitialHeight( false, 0, 200, 0.75, hero:GetAbsOrigin() + RandomVector(dropRadius ))
-	-- end
-	-- if tokens[1] == "-stub" and GameRules:GetGameModeEntity().myself == true then
-	-- 	local team_id = hero:GetTeam()
-	-- 	Timers:CreateTimer(function()
-	-- 		local grid = GameRules:GetGameModeEntity().unit[team_id]
-	-- 		for i,iv in pairs(grid) do
-	-- 			if iv == 1 then
-	-- 				local x = string.split(i,'_')[2]
-	-- 				local y = string.split(i,'_')[1]
-	-- 				local u = CreateUnitByName("stub",XY2Vector(x,y,team_id),true,nil,nil,DOTA_TEAM_BADGUYS)
-	-- 				u:SetHullRadius(1)
-	-- 				u:SetForwardVector(Vector(-1,-1,0))
-	-- 				AddAbilityAndSetLevel(u,'jiaoxie_wudi')
-	-- 				Timers:CreateTimer(0.5,function()
-	-- 					u:Destroy()
-	-- 				end)
-	-- 			end
-	-- 		end
-	-- 		return 0.5
-	-- 	end)
+			play_particle("particles/econ/items/antimage/antimage_ti7/antimage_blink_start_ti7_ribbon_bright.vpcf",PATTACH_ABSORIGIN_FOLLOW,x,5)
+		end
+		GameRules:GetGameModeEntity().next_crab = nil
+	end
+	if tokens[1] == '-drop' and GameRules:GetGameModeEntity().myself == true then
+		local i = 'item_'..tokens[2]
+		local newItem = CreateItem( i, hero, hero )
+		local drop = CreateItemOnPositionForLaunch(hero:GetAbsOrigin(), newItem )
+		local dropRadius = RandomFloat( 50, 200 )
+		newItem:LaunchLootInitialHeight( false, 0, 200, 0.75, hero:GetAbsOrigin() + RandomVector(dropRadius ))
+	end
+	if tokens[1] == "-stub" and GameRules:GetGameModeEntity().myself == true then
+		local team_id = hero:GetTeam()
+		Timers:CreateTimer(function()
+			local grid = GameRules:GetGameModeEntity().unit[team_id]
+			for i,iv in pairs(grid) do
+				if iv == 1 then
+					local x = string.split(i,'_')[2]
+					local y = string.split(i,'_')[1]
+					local u = CreateUnitByName("stub",XY2Vector(x,y,team_id),true,nil,nil,DOTA_TEAM_BADGUYS)
+					u:SetHullRadius(1)
+					u:SetForwardVector(Vector(-1,-1,0))
+					AddAbilityAndSetLevel(u,'jiaoxie_wudi')
+					Timers:CreateTimer(0.5,function()
+						u:Destroy()
+					end)
+				end
+			end
+			return 0.5
+		end)
 			
-	-- 	prt('add test stub.')
-	-- end
-	-- if tokens[1] == "-choose" and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('choose round: '..tokens[2] )
-	-- 	GameRules:GetGameModeEntity().battle_round = tonumber(tokens[2])
-	-- end
-	-- if tokens[1] == '-mana' and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('MANA!!!')
-	-- 	AddMana(hero, 100)
-	-- end
-	-- if tokens[1] == '-win' and GameRules:GetGameModeEntity().myself == true then
-	-- 	local win_count = tonumber(tokens[2] or '1')
-	-- 	prt('WIN!!!')
-	-- 	for i=1,win_count do
-	-- 		AddWinStreak(hero:GetTeam())
-	-- 	end
-	-- end
-	-- if tokens[1] == "-a" and GameRules:GetGameModeEntity().myself == true then
-	-- 	local level = tonumber(tokens[3]) or 4
-	-- 	hero:AddAbility(tokens[2])
-	-- 	hero:FindAbilityByName(tokens[2]):SetLevel(level)
-	-- end
-	-- if tokens[1] == "-hero" and GameRules:GetGameModeEntity().myself == true then
-	-- 	local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[tokens[2]]
-	-- 	hero:SetOriginalModel(onduty_hero_model)
-	-- 	hero:SetModel(onduty_hero_model)
-	-- 	hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[tokens[2]] or 1
-	-- 	hero:SetModelScale(hero.init_model_scale)
-	-- 	hero.ori_model = onduty_hero_model
-	-- 	prt('更换信使：'..tokens[2]..', 初始大小：'..hero.init_model_scale)
-	-- end
-	-- if tokens[1] == "-size" and GameRules:GetGameModeEntity().myself == true then
-	-- 	hero.init_model_scale = tokens[2]+0
-	-- 	hero:SetModelScale(hero.init_model_scale)
-	-- 	prt('更换信使大小：'..tokens[2])
-	-- end
-	-- if tokens[1] == '-hand' and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('显示玩家'..player..'(team='..team..')的手牌：')
-	-- 	for i=1,8 do
-	-- 		local unitname = ''
-	-- 		if hero.hand_entities[i] ~= nil then
-	-- 			unitname = hero.hand_entities[i]:GetUnitName()
-	-- 		else
-	-- 			unitname = '空的'
-	-- 		end
-	-- 		prt('#'..i..'-->'..GameRules:GetGameModeEntity().hand[team][i]..'('..unitname..')')
-	-- 	end
-	-- end
-	-- if tokens[1] == '-damage' and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('SHOW DAMAGE')
-	-- 	GameRules:GetGameModeEntity().show_damage = true
-	-- end
-	-- if tokens[1] == '-undamage' and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('HIDE DAMAGE')
-	-- 	GameRules:GetGameModeEntity().show_damage = false
-	-- end
-	-- if tokens[1] == '-debug' and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('DEBUG ON!')
-	-- 	GameRules:GetGameModeEntity().is_debug = true
-	-- end
-	-- if tokens[1] == '-undebug' and GameRules:GetGameModeEntity().myself == true then
-	-- 	prt('DEBUG OFF!')
-	-- 	GameRules:GetGameModeEntity().is_debug = false
-	-- end
+		prt('add test stub.')
+	end
+	if tokens[1] == "-choose" and GameRules:GetGameModeEntity().myself == true then
+		prt('choose round: '..tokens[2] )
+		GameRules:GetGameModeEntity().battle_round = tonumber(tokens[2])
+	end
+	if tokens[1] == '-mana' and GameRules:GetGameModeEntity().myself == true then
+		prt('MANA!!!')
+		AddMana(hero, 100)
+	end
+	if tokens[1] == '-win' and GameRules:GetGameModeEntity().myself == true then
+		local win_count = tonumber(tokens[2] or '1')
+		prt('WIN!!!')
+		for i=1,win_count do
+			AddWinStreak(hero:GetTeam())
+		end
+	end
+	if tokens[1] == "-a" and GameRules:GetGameModeEntity().myself == true then
+		local level = tonumber(tokens[3]) or 4
+		hero:AddAbility(tokens[2])
+		hero:FindAbilityByName(tokens[2]):SetLevel(level)
+	end
+	if tokens[1] == "-hero" and GameRules:GetGameModeEntity().myself == true then
+		local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[tokens[2]]
+		hero:SetOriginalModel(onduty_hero_model)
+		hero:SetModel(onduty_hero_model)
+		hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[tokens[2]] or 1
+		hero:SetModelScale(hero.init_model_scale)
+		hero.ori_model = onduty_hero_model
+		prt('更换信使：'..tokens[2]..', 初始大小：'..hero.init_model_scale)
+	end
+	if tokens[1] == "-size" and GameRules:GetGameModeEntity().myself == true then
+		hero.init_model_scale = tokens[2]+0
+		hero:SetModelScale(hero.init_model_scale)
+		prt('更换信使大小：'..tokens[2])
+	end
+	if tokens[1] == '-hand' and GameRules:GetGameModeEntity().myself == true then
+		prt('显示玩家'..player..'(team='..team..')的手牌：')
+		for i=1,8 do
+			local unitname = ''
+			if hero.hand_entities[i] ~= nil then
+				unitname = hero.hand_entities[i]:GetUnitName()
+			else
+				unitname = '空的'
+			end
+			prt('#'..i..'-->'..GameRules:GetGameModeEntity().hand[team][i]..'('..unitname..')')
+		end
+	end
+	if tokens[1] == '-damage' and GameRules:GetGameModeEntity().myself == true then
+		prt('SHOW DAMAGE')
+		GameRules:GetGameModeEntity().show_damage = true
+	end
+	if tokens[1] == '-undamage' and GameRules:GetGameModeEntity().myself == true then
+		prt('HIDE DAMAGE')
+		GameRules:GetGameModeEntity().show_damage = false
+	end
+	if tokens[1] == '-debug' and GameRules:GetGameModeEntity().myself == true then
+		prt('DEBUG ON!')
+		GameRules:GetGameModeEntity().is_debug = true
+	end
+	if tokens[1] == '-undebug' and GameRules:GetGameModeEntity().myself == true then
+		prt('DEBUG OFF!')
+		GameRules:GetGameModeEntity().is_debug = false
+	end
 
 	--发弹幕
 	CustomGameEventManager:Send_ServerToAllClients("bullet",{
@@ -6936,7 +6935,7 @@ end
 function RenJia(keys)
 	local caster = keys.caster
 	local attacker = keys.attacker
-	local damage = math.floor(keys.DamageTaken*0.1)
+	local damage = math.floor(keys.DamageTaken*0.2)
 	if damage <= 0 then
 		return
 	end
@@ -8632,5 +8631,13 @@ function DAC:OnReport(keys)
 		SendHTTP('http://autochess.ppbizon.com/cheat/report?hehe='..RandomInt(1,10000)..'&cheatuser='..keys.cheatuser..'&reporter='..keys.reporter,function()
 			end
 		)
+	end
+end
+
+function SilenceChess(keys)
+	if keys.caster:GetUnitName() == 'npc_dota_hero_wisp' then
+		keys.caster:RemoveModifierByName("modifier_silence")
+	else
+		keys.caster:AddNewModifier(keys.caster,nil,"modifier_silence",{})
 	end
 end

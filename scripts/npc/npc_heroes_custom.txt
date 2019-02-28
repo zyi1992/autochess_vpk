@@ -68,5 +68,7 @@
 		"SoundSet"	"Hero_DragonKnight"
 		"RingRadius"	"60"
 		"IsAncient"	"1"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		"IsNeutralUnitType"	"0"
 	}
 }

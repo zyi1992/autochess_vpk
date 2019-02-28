@@ -13075,7 +13075,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
 		"AttackDamageMax"	"60"
-		"AttackRate"	"1"
+		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -13199,7 +13199,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"120"
-		"AttackRate"	"1"
+		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -13323,7 +13323,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
 		"AttackDamageMax"	"240"
-		"AttackRate"	"1"
+		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -20206,7 +20206,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"70"
+		"AttackDamageMax"	"80"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -20342,7 +20342,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"140"
+		"AttackDamageMax"	"160"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -20388,6 +20388,10 @@
 				"Wearable10"
 				{
 					"ItemDef"	"123"
+				}
+				"Wearable11"
+				{
+					"ItemDef"	"5341"
 				}
 			}
 		}
@@ -20482,7 +20486,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"280"
+		"AttackDamageMax"	"320"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -22437,8 +22441,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"40"
-		"AttackDamageMax"	"50"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"60"
 		"AttackRate"	"1.4"
 		"AttackRange"	"400"
 		"Creature"
@@ -22557,8 +22561,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"80"
-		"AttackDamageMax"	"100"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"120"
 		"AttackRate"	"1.4"
 		"AttackRange"	"400"
 		"Creature"
@@ -22685,8 +22689,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"160"
-		"AttackDamageMax"	"200"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"240"
 		"AttackRate"	"1.4"
 		"AttackRange"	"400"
 		"Creature"
@@ -24196,7 +24200,7 @@
 	"veno_ward1"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
+		"Ability1"	"shebang_poison"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -24249,7 +24253,7 @@
 	"veno_ward2"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
+		"Ability1"	"shebang_poison"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -24302,7 +24306,7 @@
 	"veno_ward3"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
+		"Ability1"	"shebang_poison"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
