@@ -1,6 +1,6 @@
 "03"
         {
-            "Key"       "2"
+            "Key"       "1"
             "Command"   "+Select1"
             "Name"      "Select1"
         }

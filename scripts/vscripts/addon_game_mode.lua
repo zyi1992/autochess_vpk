@@ -1816,8 +1816,17 @@ function InitHeros()
 					GameRules:GetGameModeEntity().CHESS_INIT_COUNT[5] = t.chess_pool.chess_init_5
 				end
 			end
-
 			StartGame()
+			Timers:CreateTimer(3,function()
+				local heiheurl = 'http://api.xiaoheihe.cn/api/rpg/autochess/report_match_start/?apikey=69f395b2-f7e8-4032-bd0c-41200cfe9dad'
+				local heihedata = {
+					steamids = GameRules:GetGameModeEntity().steamidlist,
+				  	version = '1.0',
+				  	key = GetDedicatedServerKey('max'),
+				  	key2 = GetDedicatedServerKey('heihe'),
+				}
+				SendHTTPPost(heiheurl,heihedata)
+			end)
 		elseif t.err == 1100 then
 			prt('对不起，有玩家没有获得内测资格，游戏无法开始。')
 			Timers:CreateTimer(30,function()
@@ -1916,9 +1925,9 @@ function InitHeros()
 			CustomNetTables:SetTableValue( "dac_table", "player_info", { info = user_info_table, hehe = RandomInt(1,1000)})
 			StartGame()
 		end
-	end, function(t)
+	end, function()
 		--连接服务器失败了，用默认信使玩
-		prt('CONNECT SERVER ERROR : '..t.err)
+		prt('CONNECT SERVER ERROR')
 
 		local user_info_table = {}
 		is_game_can_start = true
@@ -2453,6 +2462,10 @@ end
 function DAC:OnSuggestLiuju(keys)
 	local player_id = keys.PlayerID
 	local hero = PlayerId2Hero(player_id)
+
+	if GameRules:GetGameModeEntity().battle_round > 3 then
+		return
+	end
 
 	if keys.player_id ~= keys.PlayerID then
 		hero.is_banned = true
@@ -7863,16 +7876,16 @@ function AddAChessToChessPool(chess)
 		return
 	end
 	local maxcount = 1
-	if string.find(chess,'11') ~= nil and (string.find(chess,'tp') ~= nil or string.find(chess,'eh') ~= nil) then
-		chess = string.sub(chess,1,-2)
+	if string.find(chess,'11') ~= nil and (string.find(chess,'tp') ~= nil or string.find(chess,'eh') ~= nil or string.find(chess,'ld') ~= nil or string.find(chess,'fur') ~= nil) then
+		chess = string.sub(chess,1,-3)
 		maxcount = 4
 	end
-	if string.find(chess,'1') ~= nil and (string.find(chess,'tp') ~= nil or string.find(chess,'eh') ~= nil) then
+	if string.find(chess,'1') ~= nil and (string.find(chess,'tp') ~= nil or string.find(chess,'eh') ~= nil or string.find(chess,'ld') ~= nil or string.find(chess,'fur') ~= nil) then
 		chess = string.sub(chess,1,-2)
 		maxcount = 2
 	end
 	if string.find(chess,'11') ~= nil then
-		chess = string.sub(chess,1,-2)
+		chess = string.sub(chess,1,-3)
 		maxcount = 9
 	end
 	if string.find(chess,'1') ~= nil then
@@ -8013,32 +8026,39 @@ end
 
 --辅助功能——捕捉一只螃蟹，发回pui
 function DAC:OnCatchCrab(keys)
-	local url = keys.url
-	if string.sub(url,1,29) ~= "http://autochess.ppbizon.com/" then
-		return
+	local player_id = keys.PlayerID
+	local urls = {
+		ranking_top = 'http://autochess.ppbizon.com/ranking/top',
+		refresh_shop = 'http://autochess.ppbizon.com/shop/get',
+		buy_effect = 'http://autochess.ppbizon.com/shop/effect',
+		choose_hero = 'http://autochess.ppbizon.com/courier/change',
+		lottery_go = 'http://autochess.ppbizon.com/shop/lottery',
+		recycle_hero = 'http://autochess.ppbizon.com/courier/recycle',
+		activate_cdkey = 'http://autochess.ppbizon.com/cdkey/act',
+		jihuan_hero = 'http://autochess.ppbizon.com/shop/collect',
+	}
+	if urls[keys.event] ~= nil then
+		local send_url = urls[keys.event]
+		if keys.user_specific == 1 then
+			send_url = send_url..'/@'..GameRules:GetGameModeEntity().playerid2steamid[keys.PlayerID]
+		end
+		if keys.event == 'buy_effect' or keys.event == 'choose_hero' or keys.event == 'recycle_hero' or keys.event == 'activate_cdkey' or keys.event == 'jihuan_hero' then
+			send_url = send_url..'@'..keys.params['hero']
+		end
+		send_url = send_url..'?hehe='..RandomInt(1,10000)
+		for i,v in pairs(keys.params) do
+			send_url = send_url..'&'..i..'='..v
+		end
+		send_url = send_url..'&key='..GetDedicatedServerKey('drodo')
+		Timers:CreateTimer(RandomFloat(0,1),function()
+			SendHTTP(send_url,function(t)
+				CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(player_id),'send_http_cb',{
+					event = keys.cb,
+					data = json.encode(t),
+				})
+			end)
+	    end)
 	end
-
-	url = keys.url.."&key="..GetDedicatedServerKey('drodo').."&from=OnCatchCrab"
-	local cb = keys.cb
-	if url == nil or cb == nil then
-		return
-	end
-	local player_id = keys.player_id
-	local steam_id = GameRules:GetGameModeEntity().playerid2steamid[player_id]
-
-	if string.find(url,'ranking/add') then
-		return
-	end
-
-	Timers:CreateTimer(RandomFloat(0,1),function()
-		SendHTTP(url, function(t)
-			CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(player_id),'send_http_cb',{
-				event = cb,
-				data = json.encode(t),
-				hehe = RandomInt(1,100000),
-			})
-		end)
-    end)
 end
 function DAC:OnUnlockChess(keys)
 	local player_team = GameRules:GetGameModeEntity().playerid2team[keys.PlayerID]
@@ -8364,7 +8384,7 @@ function DAC:OnPreviewEffect(keys)
 end
 
 function SendYingdiData(t,dur)
-	local yingdi_url = "http://iyingdi.gonlan.com/tool/autochess/record/match"
+	local yingdi_url = "http://www.iyingdi.com/tool/autochess/record/match/product"
 	local yingdi_data = {
 	    end_time=t.end_time,
 	    duration=dur,
@@ -8407,6 +8427,7 @@ function SendMaxData(t,dur)
 	local max_url = "http://api.xiaoheihe.cn/api/rpg/autochess/upload/?apikey=69f395b2-f7e8-4032-bd0c-41200cfe9dad"
 	local max_data = {
 	    key=GetDedicatedServerKey('max'),
+	    key2=GetDedicatedServerKey('heihe'),
 	    version="1.0",
 	    match_id=t.end_time,
 	    end_time=t.end_time,
