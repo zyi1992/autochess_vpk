@@ -384,7 +384,7 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
 		"Modifiers"
 		{
-			"modifier_item_xuwubaoshi"
+			"modifier_item_kuojian"
 			{
 				"Passive"	"1"
 				"Properties"
@@ -1356,6 +1356,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"15"
 		"ID"	"1542"
 		"ItemQuality"	"common"
 		"Model"	"models/props_winter/present.vmdl"
@@ -1406,6 +1407,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"12"
 		"ID"	"1543"
 		"ItemQuality"	"rare"
 		"Model"	"models/props_winter/present.vmdl"
@@ -1456,6 +1458,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"9"
 		"ID"	"1544"
 		"ItemQuality"	"secret_shop"
 		"Model"	"models/props_winter/present.vmdl"
@@ -1506,6 +1509,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"6"
 		"ID"	"1545"
 		"ItemQuality"	"epic"
 		"Model"	"models/props_winter/present.vmdl"
@@ -1556,6 +1560,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"3"
 		"ID"	"1546"
 		"ItemQuality"	"artifact"
 		"Model"	"models/props_winter/present.vmdl"
@@ -2189,6 +2194,76 @@
 		}
 	}
 
+	"item_kuangzhanfu"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_bfury"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"ID"	"1548"
+		"ItemQuality"	"artifact"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_magnataur/magnataur_empower.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_kuangzhanfu"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+				}
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"States"	{}
+				"EffectName"	"particles/units/heroes/hero_magnataur/magnataur_empower.vpcf"
+				"EffectAttachType"	"attach_attack"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"CleaveAttack"
+						"damage"	"%attack_damage"
+						"cleave_per"	"%cleave_per"
+						"cleave_radius"	"%cleave_radius"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"cleave_per"	"50"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"cleave_radius"	"300"
+			}
+		}
+	}
+
 	"item_duangun"
 	{
 		"BaseClass"	"item_datadriven"
@@ -2591,6 +2666,19 @@
 		"ItemRequirements"
 		{
 			"01"	"item_molifazhang;item_hongzhang_4"
+		}
+	}
+
+	"item_recipe_kuangzhanfu"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3025"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_kuangzhanfu"
+		"ItemRequirements"
+		{
+			"01"	"item_jianrenqiu;item_emodaofeng"
 		}
 	}
 }

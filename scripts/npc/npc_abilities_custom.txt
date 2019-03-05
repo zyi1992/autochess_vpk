@@ -7581,9 +7581,10 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
-		"MaxLevel"	"1"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"0.2"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"1"
+		"AbilityCastPoint"	"0.2"
+		"AbilityCooldown"	"0.3"
 		"AbilityManaCost"	"2"
 		"OnSpellStart"
 		{
@@ -7592,6 +7593,34 @@
 				"Target"	"TARGET"
 				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 				"Function"	"SummonHero"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"per_cost_1"	"100 70 60 50 40 33 30 24 22 19"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"per_cost_2"	"0 30 35 35 35 30 30 30 30 25"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"per_cost_3"	"0 0 5 15 23 30 30 30 25 25"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"per_cost_4"	"0 0 0 0 2 7 10 15 20 25"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"per_cost_5"	"0 0 0 0 0 0 0 1 3 6"
 			}
 		}
 	}
@@ -8379,7 +8408,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"25"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8843,7 +8872,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8903,7 +8932,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -11136,7 +11165,7 @@
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"splash_damage_percent"	"75"
+				"splash_damage_percent"	"50"
 				"LinkedSpecialBonus"	"special_bonus_unique_dragon_knight_6"
 			}
 			"09"
@@ -11271,7 +11300,7 @@
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_physical_damage"	"30"
+				"bonus_physical_damage"	"20"
 			}
 		}
 	}
@@ -11483,6 +11512,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11499,6 +11529,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11515,6 +11546,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11531,6 +11563,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11547,6 +11580,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11563,6 +11597,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11579,6 +11614,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11595,6 +11631,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11611,6 +11648,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -11627,6 +11665,7 @@
 			{
 				"Passive"	"1"
 				"TextureName"	"custom/zhugong_chou"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -13731,7 +13770,7 @@
 			}
 		}
 		"AbilitySound"	"Hero_Riki.Smoke_Screen"
-		"AbilityDuration"	"3 4 5"
+		"AbilityDuration"	"4 5 6"
 	}
 
 	"death_prophet_exorcism"
@@ -13889,7 +13928,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"10 8 6"
+		"AbilityCooldown"	"8 6 4"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"99999"
 		"OnSpellStart"
@@ -13913,7 +13952,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"disarm_duration"	"3 5 7"
+				"disarm_duration"	"5"
 			}
 		}
 	}
@@ -13969,5 +14008,358 @@
 			}
 		}
 		"AbilitySound"	"Hero_Alchemist.ChemicalRage.Cast"
+	}
+
+	"show_combo"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"attribute_bonus"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_show_combo_is_human"
+			{
+				"TextureName"	"silencer_curse_of_the_silent"
+				"IsBuff"	"0"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_orc"
+			{
+				"TextureName"	"beastmaster_primal_roar"
+				"IsBuff"	"0"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_elf"
+			{
+				"TextureName"	"wisp_overcharge"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_troll"
+			{
+				"TextureName"	"huskar_berserkers_blood"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_undead"
+			{
+				"IsDebuff"	"1"
+				"TextureName"	"arc_warden_spark_wraith"
+			}
+			"modifier_show_combo_is_goblin"
+			{
+				"IsDebuff"	"1"
+				"TextureName"	"techies_minefield_sign_swine"
+			}
+			"modifier_show_combo_is_naga"
+			{
+				"TextureName"	"lion_voodoo_fish"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_beast"
+			{
+				"TextureName"	"beastmaster_greater_boar_poison"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_demon"
+			{
+				"TextureName"	"nevermore_dark_lord_demon"
+				"Passive"	"0"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_dragon"
+			{
+				"TextureName"	"lina_dragon_slave_alt1"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_element"
+			{
+				"TextureName"	"brewmaster_primal_split"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_dwarf"
+			{
+				"TextureName"	"sniper_take_aim"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_ogre"
+			{
+				"TextureName"	"ogre_magi_multicast"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_satyr"
+			{
+				"TextureName"	"riki_permanent_invisibility"
+				"IsDebuff"	"1"
+			}
+			"modifier_show_combo_is_mage"
+			{
+				"TextureName"	"crystal_maiden_brilliance_aura"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_warlock"
+			{
+				"TextureName"	"warlock_upheaval"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_mech"
+			{
+				"TextureName"	"rattletrap_power_cogs"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_assassin"
+			{
+				"TextureName"	"silencer_gaives_of_wisdom"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_knight"
+			{
+				"TextureName"	"chaos_knight_phantasm"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_hunter"
+			{
+				"TextureName"	"drow_ranger_marksmanship"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_druid"
+			{
+				"TextureName"	"lone_druid_spirit_bear_entangle"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_shaman"
+			{
+				"TextureName"	"disruptor_thunder_strike"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_demonhunter"
+			{
+				"TextureName"	"terrorblade_metamorphosis_alt1"
+				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_warrior"
+			{
+				"TextureName"	"dragon_knight_dragon_tail"
+				"IsBuff"	"1"
+			}
+		}
+	}
+
+	"e450"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e451"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/red/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/red/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e452"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/orange/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/orange/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e453"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/yellow/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/yellow/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e454"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/green/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/green/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e455"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/cyan/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/cyan/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e456"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/blue/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/blue/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e457"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/purple/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/purple/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e458"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/white/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/white/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e459"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/pink/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/pink/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
 	}
 }

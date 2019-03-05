@@ -877,6 +877,8 @@ function DAC:InitGameMode()
 		[12] = {},
 		[13] = {},
 	}
+	GameRules:GetGameModeEntity().effect_list = "e103,e107,e111,e113,e114,e202,e205,e213,e214,e301,e304,e305,e312,e313,e319,e321,e401,e403,e404,e406,e407,e408,e409"
+
 	GameRules:GetGameModeEntity().chess_list_by_mana = {
 		[1] = {'chess_tusk','chess_axe','chess_eh','chess_om','chess_clock','chess_ss','chess_bh','chess_bat','chess_dr','chess_tk','chess_am','chess_tiny'},
 		[2] = {'chess_bm','chess_jugg','chess_shredder','chess_puck','chess_ck','chess_slardar','chess_luna','chess_tp','chess_qop','chess_wd','chess_cm','chess_fur','chess_morph','chess_slark'},
@@ -1308,7 +1310,7 @@ function DAC:InitGameMode()
 		is_naga = { ability = 'is_naga_buff', condition = 2, type = 2 },
 		is_naga1 = { ability = 'is_naga_buff_plus', condition = 4, type = 2 },
 		is_goblin = { ability = 'is_goblin_buff', condition = 3, type = 4 },
-		is_goblin1 = { ability = 'is_goblin_buff', condition = 6, type = 1 },
+		is_goblin1 = { ability = 'is_goblin_buff', condition = 6, type = 2 },
 		is_element = { ability = 'is_element_buff', condition = 2, type = 1 },
 		is_element1 = { ability = 'is_element_buff', condition = 4, type = 2 },
 		is_demon = { ability = 'is_demon_buff', condition = 0, type = 1 },
@@ -1316,6 +1318,34 @@ function DAC:InitGameMode()
 		is_ogre = { ability = 'is_ogre_buff', condition = 1, type = 1 },
 		is_dragon = {condition = 3 , type = 1},
 		is_druid = {condition = 2, type = 1 },
+	}
+
+	GameRules:GetGameModeEntity().class_type = {
+		[201] = 'is_warrior',
+		[202] = 'is_mage',
+		[203] = 'is_warlock',
+		[204] = 'is_mech',
+		[205] = 'is_assassin',
+		[206] = 'is_hunter',
+		[207] = 'is_knight',
+		[208] = 'is_shaman',
+		[209] = 'is_demonhunter',
+
+		[101] = 'is_troll',
+		[102] = 'is_beast',
+		[103] = 'is_elf',
+		[104] = 'is_human',
+		[105] = 'is_undead',
+		[106] = 'is_orc',
+		[107] = 'is_naga',
+		[108] = 'is_goblin',
+		[109] = 'is_element',
+		[110] = 'is_demon',
+		[111] = 'is_dwarf',
+		[112] = 'is_ogre',
+		[113] = 'is_dragon',
+		[114] = 'is_druid',
+		[115] = 'is_satyr',
 	}
 
 	GameRules:GetGameModeEntity().sm_hero_list = {
@@ -1541,7 +1571,7 @@ function DAC:InitGameMode()
 
 		h211 = 1.2,
 		h212 = 1.1,
-		h213 = 1.1,
+		h213 = 1,
 		h214 = 1.25,
 		h215 = 1.2,
 		h216 = 1.25,
@@ -1710,7 +1740,7 @@ function InitHeros()
 		end)
 	end
 	--从服务器获取玩家信息
-	local url = "http://autochess.ppbizon.com/game/new/@"..GameRules:GetGameModeEntity().steamidlist_heroindex.."?hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('drodo')
+	local url = "http://autochess.ppbizon.com/game/new/@"..GameRules:GetGameModeEntity().steamidlist_heroindex.."?hehe="..RandomInt(1,10000)..GetSendKey()
 	SendHTTP(url.."&from=InitHeros", function(t)
 		if t.err == 0 then
 			prt('CONNECT SERVER OK!')
@@ -1718,6 +1748,7 @@ function InitHeros()
 				local hero_index = user_info.hero_index
 				local hero = EntIndexToHScript(hero_index)
 				local player_id = hero:GetPlayerID()
+
 				if user_info.mmr_level < 19 then
 					hero.notbishop = true
 				end
@@ -2089,14 +2120,14 @@ function DAC:OnPlayerGainedLevel(keys)
 		if hero ~= nil then 
 			hero:SetAbilityPoints(0)
 			local level = hero:GetLevel()
-			for j=1,10 do
-				if hero:FindAbilityByName('hero_level_'..j) ~= nil then
-					hero:RemoveAbility('hero_level_'..j)
-					hero:RemoveModifierByName('modifier_hero_level'..j)
-				end
-			end
+			-- for j=1,10 do
+			-- 	if hero:FindAbilityByName('hero_level_'..j) ~= nil then
+			-- 		hero:RemoveAbility('hero_level_'..j)
+			-- 		hero:RemoveModifierByName('modifier_hero_level'..j)
+			-- 	end
+			-- end
 
-			AddAbilityAndSetLevel(hero,'hero_level_'..level,level)
+			AddAbilityAndSetLevel(hero,'summon_hero',level)
 		end
 
 		--同步ui人口
@@ -2381,7 +2412,7 @@ function StartAPrepareRound()
 					v:ForceKill(false)
 					GameRules:GetGameModeEntity().counterpart[v:GetTeam()] = -1
 					SyncHP(v)
-					local url_up = "http://autochess.ppbizon.com/user/thunder?user="..v.steam_id.."&hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('drodo')
+					local url_up = "http://autochess.ppbizon.com/user/thunder?user="..v.steam_id.."&hehe="..RandomInt(1,10000)..GetSendKey()
 					local req_up = CreateHTTPRequestScriptVM("GET", url_up)
 					req_up:SetHTTPRequestAbsoluteTimeoutMS(20000)
 					req_up:Send(function (result)
@@ -2397,14 +2428,14 @@ function StartAPrepareRound()
 				
 				if v ~= nil then 
 					local level = v:GetLevel()
-					for j=1,10 do
-						if v:FindAbilityByName('hero_level_'..j) ~= nil then
-							v:RemoveAbility('hero_level_'..j)
-							v:RemoveModifierByName('modifier_hero_level'..j)
-						end
-					end
+					-- for j=1,10 do
+					-- 	if v:FindAbilityByName('hero_level_'..j) ~= nil then
+					-- 		v:RemoveAbility('hero_level_'..j)
+					-- 		v:RemoveModifierByName('modifier_hero_level'..j)
+					-- 	end
+					-- end
 
-					AddAbilityAndSetLevel(v,'hero_level_'..level,level)
+					AddAbilityAndSetLevel(hero,'summon_hero',level)
 				end
 
 				--给蓝
@@ -3086,6 +3117,8 @@ function RecallChess(keys)
 	CustomGameEventManager:Send_ServerToTeam(team_id,"show_is_hand_full",{
 		is_hand_full = IsHandFull(team_id)
 	})
+
+	StatClassCount(team_id)
 end
 --多余的滚回去
 function RandomRecallChess()
@@ -3304,6 +3337,8 @@ function DAC:OnPickChessPosition(keys)
 		CustomGameEventManager:Send_ServerToTeam(team_id,"show_is_hand_full",{
 			is_hand_full = IsHandFull(team_id)
 		})
+
+		StatClassCount(team_id)
 	else
 		--要跳到场上
 		if IsInAttackArea(Vector2X(p,team_id),Vector2Y(p,team_id)) == true then
@@ -3379,6 +3414,8 @@ function DAC:OnPickChessPosition(keys)
 				max_count = GameRules:GetGameModeEntity().population_max[team_id],
 				count = GameRules:GetGameModeEntity().population[team_id],
 			})
+
+			StatClassCount(team_id)
 			-- setHandStatus(team_id)
 		else
 			--是场上的牌
@@ -3406,6 +3443,8 @@ function DAC:OnPickChessPosition(keys)
 			})
 		end)
 	end
+
+	
 end
 function BlinkChessX(keys)
 	local caster = keys.caster
@@ -3516,6 +3555,7 @@ function RemoveChess(keys)
     	-- 	EmitSoundOn("General.CoinsBig",caster)
     	-- else
     		AddMana(caster, target:GetLevel())
+    		GameRules:GetGameModeEntity().stat_info[caster.steam_id]['gold'] = GameRules:GetGameModeEntity().stat_info[caster.steam_id]['gold'] - target:GetLevel()	
     	-- end
 	    
 	    CustomGameEventManager:Send_ServerToTeam(team_id,"show_gold",{
@@ -3523,6 +3563,8 @@ function RemoveChess(keys)
 			lose_streak = caster.lose_streak or 0,
 			win_streak = caster.win_streak or 0,
 		})
+
+
 	-- end
 	for slot=0,8 do
 		if target:GetItemInSlot(slot)~= nil then
@@ -3547,6 +3589,8 @@ function RemoveChess(keys)
 	CustomGameEventManager:Send_ServerToTeam(team_id,"show_is_hand_full",{
 		is_hand_full = IsHandFull(team_id)
 	})
+
+	StatClassCount(team_id)
 end
 --触发team_id的场地中i,j这个格子的棋子合成
 function TriggerChessCombineAtGrid(i,j,team_id)
@@ -3821,7 +3865,7 @@ function SyncHP(hero)
 				prt('END GAME')
 				GameRules:GetGameModeEntity().death_stack = GameRules:GetGameModeEntity().last_player_steamid..','..GameRules:GetGameModeEntity().death_stack
 				if GetMapName() ~= 'practice' then 
-					local url = "http://autochess.ppbizon.com/game/post/@"..GameRules:GetGameModeEntity().death_stack.."?hehe="..RandomInt(1,10000).."&winner_lineup="..lineup.."&duration="..dur.."&key="..GetDedicatedServerKey('drodo')
+					local url = "http://autochess.ppbizon.com/game/post/@"..GameRules:GetGameModeEntity().death_stack.."?hehe="..RandomInt(1,10000).."&winner_lineup="..lineup.."&duration="..dur..GetSendKey()
 					SendHTTP(url.."&from=SyncHP", function(t)
 						if t.err == 0 then
 							prt('POST GAME OK!')
@@ -3877,7 +3921,7 @@ function SyncHP(hero)
 						str = str..json.encode(v)..'|'
 					end
 					str = string.sub(str,1,-2)
-					local url_up = "http://autochess.ppbizon.com/lineup/add?lineups="..str.."&hehe="..RandomInt(1,10000).."&key="..GetDedicatedServerKey('drodo')
+					local url_up = "http://autochess.ppbizon.com/lineup/add?lineups="..str.."&hehe="..RandomInt(1,10000)..GetSendKey()
 					local req_up = CreateHTTPRequestScriptVM("GET", url_up)
 					req_up:SetHTTPRequestAbsoluteTimeoutMS(20000)
 					req_up:Send(function (result)
@@ -4003,6 +4047,7 @@ function StartAPVERound()
 			local h = TeamId2Hero(i)
 			CheckChess(i)
 			CancelPickChess(h)
+			StatClassCount(i)
 			LoadPVEEnemy(GameRules:GetGameModeEntity().battle_round,i)
 			local mana = h:GetMana()
 			if mana>5 then
@@ -4309,6 +4354,7 @@ function StartAPVPRound()
 			end
 			CheckChess(i)
 			CancelPickChess(h)
+			StatClassCount(i)
 			if PlayerResource:GetPlayerCount() == 1 and GameRules:GetGameModeEntity().cloudlineup[''..GameRules:GetGameModeEntity().battle_round] ~= nil then
 				local chesses = nil
 				for _,data in pairs(GameRules:GetGameModeEntity().cloudlineup[''..GameRules:GetGameModeEntity().battle_round]) do
@@ -4732,7 +4778,6 @@ function GetMyHostEnemyTeam(t)
 	return GameRules:GetGameModeEntity().counterpart[t]
 end
 function GetMyGuestEnemyTeam(t)
-	DeepPrintTable(GameRules:GetGameModeEntity().counterpart)
 	for i,v in pairs(GameRules:GetGameModeEntity().counterpart) do
 		if v == t then
 			print('findguestenemy'..t)
@@ -6226,7 +6271,9 @@ function AddAbilityAndSetLevel(u,a,l)
 	end
 	if u:FindAbilityByName(a) == nil then
 		u:AddAbility(a)
-		u:FindAbilityByName(a):SetLevel(l)
+		if u:FindAbilityByName(a) ~= nil then
+			u:FindAbilityByName(a):SetLevel(l)
+		end
 	else
 		u:FindAbilityByName(a):SetLevel(l)
 	end
@@ -6675,6 +6722,22 @@ function DAC:OnPlayerChat(keys)
 		prt('DEBUG OFF!')
 		GameRules:GetGameModeEntity().is_debug = false
 	end
+	if tokens[1] == '-c' and GameRules:GetGameModeEntity().myself == true then
+		if tokens[2] == nil then
+			for _,k in pairs(GameRules:GetGameModeEntity().class_type) do
+				hero:RemoveModifierByName('modifier_show_combo_'..k)
+			end
+		else
+			AddAbilityAndSetLevel(hero,'show_combo')
+			local ability = hero:FindAbilityByName('show_combo')
+			local modifier_name = "modifier_show_combo_is_"..tokens[2]
+			ability:ApplyDataDrivenModifier(hero,hero,modifier_name,{})
+			if hero:FindModifierByName(modifier_name) ~= nil then
+				hero:FindModifierByName(modifier_name):SetStackCount(tonumber(tokens[3]))
+			end
+		end
+	end
+
 
 	--发弹幕
 	CustomGameEventManager:Send_ServerToAllClients("bullet",{
@@ -6901,7 +6964,7 @@ function show_damage(keys)
 		if attacker:FindModifierByName("modifier_item_xuwubaoshi") ~= nil or attacker:FindModifierByName("modifier_item_yangdao") ~= nil or caster:FindModifierByName("modifier_item_shenmifazhang") ~= nil then
 			mana_get = math.floor(mana_get * 2)
 		end
-		if attacker:FindModifierByName("modifier_item_jianrenqiu") ~= nil then
+		if attacker:FindModifierByName("modifier_item_jianrenqiu") ~= nil or attacker:FindModifierByName("modifier_item_kuangzhanfu") ~= nil then
 			mana_get = math.floor(mana_get * 2)
 		end
 		if attacker:FindModifierByName("modifier_item_shuaxinqiu") ~= nil then
@@ -7365,7 +7428,7 @@ function TriggerDagon(u)
 			local name_table = string.split(name,'_')
 			local dog = FindUnluckyDog(u)
 			if dog ~= nil and name_table[2] == 'hongzhang' and ability:IsCooldownReady() == true then
-				ability:StartCooldown(30)
+				ability:StartCooldown(18-tonumber(name_table[3])*3)
 				EmitSoundOn("DOTA_Item.Dagon.Activate",u)
 				local victim = dog
 				local info = {
@@ -8049,7 +8112,7 @@ function DAC:OnCatchCrab(keys)
 		for i,v in pairs(keys.params) do
 			send_url = send_url..'&'..i..'='..v
 		end
-		send_url = send_url..'&key='..GetDedicatedServerKey('drodo')
+		send_url = send_url..GetSendKey()
 		Timers:CreateTimer(RandomFloat(0,1),function()
 			SendHTTP(send_url,function(t)
 				CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(player_id),'send_http_cb',{
@@ -8323,9 +8386,14 @@ function DAC:OnChangeOndutyHero(keys)
 		return
 	end
 
+	if hero.is_changed_hero == true then
+		hero.is_banned = true
+	end
+
 	hero:SetOriginalModel(onduty_hero_model)
 	hero:SetModel(onduty_hero_model)
 	hero.ori_model = onduty_hero_model
+	hero.is_changed_hero = true
 
 	--换特效
 	if hero.effect ~= nil then
@@ -8334,10 +8402,16 @@ function DAC:OnChangeOndutyHero(keys)
 	end
 	hero.effect = onduty_hero_effect
 	if onduty_hero_effect ~= 'e000' then
-		hero:AddAbility(onduty_hero_effect)
-		hero:FindAbilityByName(onduty_hero_effect):SetLevel(1)
+		if string.find(GameRules:GetGameModeEntity().effect_list,onduty_hero_effect) then
+			hero:AddAbility(onduty_hero_effect)
+			hero:FindAbilityByName(onduty_hero_effect):SetLevel(1)
+			
+		else
+			hero.is_banned = true
+			return
+		end
 	end
-
+	
 	local steam_id = hero.steam_id
 
 	GameRules:GetGameModeEntity().stat_info[steam_id]['zhugong'] = onduty_hero
@@ -8358,8 +8432,7 @@ function DAC:OnPreviewEffect(keys)
 	h.is_preview_cd = true
 	local e = keys.effect
 
-	local effect_list = "e103,e107,e111,e113,e114,e202,e205,e213,e214,e301,e304,e305,e312,e313,e319,e321,e401,e403,e404,e406,e407,e408,e409"
-	if string.find(effect_list,e) then
+	if string.find(GameRules:GetGameModeEntity().effect_list,e) then
 		if h.effect ~= nil then
 			h:RemoveAbility(h.effect)
 			h:RemoveModifierByName('modifier_texiao_star')
@@ -8386,6 +8459,7 @@ end
 function SendYingdiData(t,dur)
 	local yingdi_url = "http://www.iyingdi.com/tool/autochess/record/match/product"
 	local yingdi_data = {
+		key=GetDedicatedServerKey('yingdi'),
 	    end_time=t.end_time,
 	    duration=dur,
 	    players={},
@@ -8406,6 +8480,7 @@ end
 function SendPWData(t,dur)
 	local pw_url = "http://52.81.131.74:5140"
 	local pw_data = {
+		key=GetDedicatedServerKey('perfectworld'),
 	    end_time=t.end_time,
 	    duration=dur,
 	    players={},
@@ -8454,7 +8529,6 @@ function SendHTTPPost(url,game_data)
     -- ScoreSystemUpdateCount = ScoreSystemUpdateCount + 1
     req:SetHTTPRequestGetOrPostParameter("data",json.encode(game_data))
     req:Send(function(res)
-    	DeepPrintTable(res)
         if res.StatusCode ~= 200 or not res.Body then
             return
         end
@@ -8661,4 +8735,133 @@ function SilenceChess(keys)
 	else
 		keys.caster:AddNewModifier(keys.caster,nil,"modifier_silence",{})
 	end
+end
+
+function CleaveAttack( keys )
+    local caster = keys.caster
+    local target = keys.target
+    local damage = keys.damage
+    local cleave_per = keys.cleave_per
+    local cleave_radius = keys.cleave_radius
+
+    --远程无效
+    if caster:Script_GetAttackRange() > 300 then
+    	return
+    end
+
+    local cleave_units = FindUnitsInRadiusByTeam({
+		team = target:GetTeam(),
+		role = 1,
+		position = target:GetAbsOrigin(),
+		radius = cleave_radius,
+	})
+
+	for _,unit in pairs(cleave_units) do
+	    local attack_damage = damage*cleave_per/100
+	    local damage_table = {
+	    	victim = unit,
+	    	attacker = caster,
+	    	damage_type = DAMAGE_TYPE_PURE,
+	    	damage = attack_damage
+	    }
+	    ApplyDamage(damage_table)
+	end
+end
+
+function ShowCombo(keys)
+	local team_id = keys.team_id
+	local hero = TeamId2Hero(team_id)
+	local combo_table = keys.combo_table
+
+	AddAbilityAndSetLevel(hero,'show_combo')
+	local ability = hero:FindAbilityByName('show_combo')
+
+	for _,k in pairs(GameRules:GetGameModeEntity().class_type) do
+		hero:RemoveModifierByName('modifier_show_combo_'..k)
+	end
+
+	local combo_array = {}
+	for m,s in pairs(combo_table) do
+		local sc = 0
+		for score1,k in pairs(GameRules:GetGameModeEntity().class_type) do
+			if k == m then
+				sc = score1
+			end
+		end
+
+		table.insert(combo_array,{
+			m = m,
+			s = s,
+			score = s*10000 + sc
+		})
+	end
+
+	table.sort(combo_array,function(a,b)
+		return a.score > b.score
+	end)
+
+	for i = 1,table.maxn(combo_array) do
+		local mm = combo_array[i]
+		local modifier_name = 'modifier_show_combo_'..mm.m
+		-- Timers:CreateTimer(i/100.0,function()
+			ability:ApplyDataDrivenModifier(hero,hero,modifier_name,{})
+			if hero:FindModifierByName(modifier_name) ~= nil then
+				hero:FindModifierByName(modifier_name):SetStackCount(mm.s)
+			end
+		-- end)
+	end
+end
+
+function StatClassCount(team_id)
+	--通用技能
+	local combo_chess_table_self = {}
+	local combo_count_table_self = {}
+
+	--第一次循环：棋子分组
+	for w,vw in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team_id]) do
+		if vw.team_id == team_id then --我的棋子
+			for _,k in pairs(GameRules:GetGameModeEntity().class_type) do
+				if combo_chess_table_self[k] == nil then
+					combo_chess_table_self[k] = {}
+				end
+				if vw:FindAbilityByName(k) ~= nil then
+					table.insert(combo_chess_table_self[k],vw)
+				end
+			end
+		end
+	end
+
+	--第二次循环：计数
+	for k,vk in pairs(combo_chess_table_self) do
+		--统计不同的种类数
+		local diff_count = 0
+		local diff_string = ''
+		for _,chess in pairs(combo_chess_table_self[k]) do
+			--去掉等级变量
+			local find_name = chess:GetUnitName()
+			if string.find(find_name,'11') ~= nil then
+				find_name = string.sub(find_name,1,-3)
+			end
+			if string.find(find_name,'1') ~= nil then
+				find_name = string.sub(find_name,1,-2)
+			end
+			--搜索是否重复了
+			if string.find(diff_string,find_name) == nil then
+				diff_count = diff_count + 1
+				diff_string = diff_string..'-'..find_name
+			end
+		end
+		if diff_count > 0 then
+			combo_count_table_self[k] = diff_count
+		end
+	end
+
+	ShowCombo({
+		team_id = team_id,
+		combo_table = combo_count_table_self
+	})
+end
+
+function GetSendKey()
+	return "&key="..GetDedicatedServerKey('drodo').."&key2="..GetDedicatedServerKey('zzwdjs').."&key3="..GetDedicatedServerKey('xgnb').."&key4="..GetDedicatedServerKey('fgnb')
 end
