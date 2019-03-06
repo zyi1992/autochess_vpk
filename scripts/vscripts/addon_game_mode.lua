@@ -877,7 +877,7 @@ function DAC:InitGameMode()
 		[12] = {},
 		[13] = {},
 	}
-	GameRules:GetGameModeEntity().effect_list = "e103,e107,e111,e113,e114,e202,e205,e213,e214,e301,e304,e305,e312,e313,e319,e321,e401,e403,e404,e406,e407,e408,e409"
+	GameRules:GetGameModeEntity().effect_list = "e101,e102,e103,e104,e107,e108,e111,e112,e113,e114,e202,e203,e205,e210,e213,e214,e301,e302,e303,e304,e305,e306,e308,e309,e311,e312,e313,e315,e317,e319,e320,e321,e401,e402,e403,e404,e405,e406,e407,e408,e409,e410,e451,e452,e453,e454,e455,e456,e457,e458,e459"
 
 	GameRules:GetGameModeEntity().chess_list_by_mana = {
 		[1] = {'chess_tusk','chess_axe','chess_eh','chess_om','chess_clock','chess_ss','chess_bh','chess_bat','chess_dr','chess_tk','chess_am','chess_tiny'},
@@ -8386,9 +8386,9 @@ function DAC:OnChangeOndutyHero(keys)
 		return
 	end
 
-	if hero.is_changed_hero == true then
-		hero.is_banned = true
-	end
+	-- if hero.is_changed_hero == true then
+	-- 	hero.is_banned = true
+	-- end
 
 	hero:SetOriginalModel(onduty_hero_model)
 	hero:SetModel(onduty_hero_model)
