@@ -2838,7 +2838,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/rattletrap/rattletrap.vmdl"
-		"ModelScale"	"1"
+		"ModelScale"	"1..05"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -4631,27 +4631,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"367"
+					"ItemDef"	"20940"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"463"
+					"ItemDef"	"7972"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9266"
+					"ItemDef"	"7968"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9265"
+					"ItemDef"	"7969"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"466"
+					"ItemDef"	"7970"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9268"
+					"ItemDef"	"7967"
 				}
 			}
 		}
@@ -23079,31 +23079,35 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12847"
+					"ItemDef"	"9961"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12846"
+					"ItemDef"	"9963"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12845"
+					"ItemDef"	"9964"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12844"
+					"ItemDef"	"9966"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12843"
+					"ItemDef"	"9962"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12842"
+					"ItemDef"	"9960"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"12841"
+					"ItemDef"	"9965"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"21211"
 				}
 			}
 		}

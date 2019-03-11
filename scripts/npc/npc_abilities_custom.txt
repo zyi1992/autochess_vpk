@@ -4158,8 +4158,20 @@
 			"RunScript"
 			{
 				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"RandomMissile"
+				"Function"	"RandomMissileStart"
+				"Target"	"CASTER"
 			}
+		}
+		"OnProjectileHitUnit"
+		{
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"RandomMissileDamage"
+				"damage_per_missile"	"%damage_per_missile"
+			}
+			"DeleteOnHit"	"1"
 		}
 		"AbilitySpecial"
 		{
