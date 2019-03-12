@@ -2319,10 +2319,13 @@ function StartAPrepareRound()
 
 	GameRules:GetGameModeEntity().prepare_timer = 35
 	
-	CustomGameEventManager:Send_ServerToAllClients("battle_info",{
-		type = "prepare",
-		round = GameRules:GetGameModeEntity().battle_round,
-	})
+	for team_i=6,13 do
+		CustomGameEventManager:Send_ServerToTeam(team_i,"battle_info",{
+			key = GetClientKey(team_i),
+			type = "prepare",
+			round = GameRules:GetGameModeEntity().battle_round,
+		})
+	end
 
 	local alldead = true
 	for i,v in pairs (GameRules:GetGameModeEntity().counterpart) do
@@ -2383,19 +2386,25 @@ function StartAPrepareRound()
 			local center_index = ''..Entities:FindByName(nil,"center0"):entindex()..','..Entities:FindByName(nil,"center1"):entindex()..','..Entities:FindByName(nil,"center2"):entindex()..','..Entities:FindByName(nil,"center3"):entindex()..','..Entities:FindByName(nil,"center4"):entindex()..','..Entities:FindByName(nil,"center5"):entindex()..','..Entities:FindByName(nil,"center6"):entindex()..','..Entities:FindByName(nil,"center7"):entindex()
 			--发送当前游戏时间给客户端
 			if GameRules:GetGameModeEntity().prepare_timer > 5 then
-				CustomGameEventManager:Send_ServerToAllClients("show_time",{
-					timer_round = GameRules:GetGameModeEntity().prepare_timer - 5,
-					round_status = "prepare",
-					total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
-					center_index = center_index,
-				})
+				for team_i=6,13 do
+					CustomGameEventManager:Send_ServerToTeam(team_i,"show_time",{
+						key = GetClientKey(team_i),
+						timer_round = GameRules:GetGameModeEntity().prepare_timer - 5,
+						round_status = "prepare",
+						total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
+						center_index = center_index,
+					})
+				end
 			else
-				CustomGameEventManager:Send_ServerToAllClients("show_time",{
-					timer_round = GameRules:GetGameModeEntity().prepare_timer,
-					round_status = "ready",
-					total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
-					center_index = center_index,
-				})
+				for team_i=6,13 do
+					CustomGameEventManager:Send_ServerToTeam(team_i,"show_time",{
+						key = GetClientKey(team_i),
+						timer_round = GameRules:GetGameModeEntity().prepare_timer,
+						round_status = "ready",
+						total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
+						center_index = center_index,
+					})
+				end
 			end
 			GameRules:GetGameModeEntity().prepare_timer = GameRules:GetGameModeEntity().prepare_timer - 1
 			return 1
@@ -2404,7 +2413,12 @@ function StartAPrepareRound()
 	Timers:CreateTimer(0.3,function()
 		if GameRules:GetGameModeEntity().battle_round == 1 then
 			--第1回合显示退出按钮
-			CustomGameEventManager:Send_ServerToAllClients("show_liuju",{ hehe = RandomInt(1,100000) })
+			for team_i=6,13 do
+				CustomGameEventManager:Send_ServerToTeam(team_i,"show_liuju",{
+					key = GetClientKey(team_i),
+					hehe = RandomInt(1,100000)
+				})
+			end
 		end
 		--第2-3回合判断流局
 		if GameRules:GetGameModeEntity().battle_round == 2 or GameRules:GetGameModeEntity().battle_round == 3 then
@@ -2427,7 +2441,12 @@ function StartAPrepareRound()
 		end
 		if GameRules:GetGameModeEntity().battle_round == 3 then
 			--第3回合移除退出按钮
-			CustomGameEventManager:Send_ServerToAllClients("hide_liuju",{ hehe = RandomInt(1,100000) })
+			for team_i=6,13 do
+				CustomGameEventManager:Send_ServerToTeam(team_i,"hide_liuju",{
+					key = GetClientKey(team_i),
+					hehe = RandomInt(1,100000)
+				})
+			end
 		end
 		for i,v in pairs(GameRules:GetGameModeEntity().hero) do
 			if v ~= nil and v:IsNull() == false and v:IsAlive() == true and v.is_banned == true then
@@ -2545,12 +2564,15 @@ function DAC:OnSuggestLiuju(keys)
 			end
 		end
 
-		CustomGameEventManager:Send_ServerToAllClients("update_liuju",
-		{
-			count = liuju_player_count,
-			total = PlayerResource:GetPlayerCount(),
-			hehe = RandomInt(1,100000) 
-		})		
+		for team_i=6,13 do
+			CustomGameEventManager:Send_ServerToTeam(team_i,"update_liuju",{
+				key = GetClientKey(team_i),
+				count = liuju_player_count,
+				total = PlayerResource:GetPlayerCount(),
+				hehe = RandomInt(1,100000) 
+			})
+		end
+	
 		if liuju_player_count >= PlayerResource:GetPlayerCount()/2.0 then
 			--流局
 			prt('#txt_liuju_go')
@@ -3376,6 +3398,7 @@ function DAC:OnPickChessPosition(keys)
 	local origin_y = Vector2Y(origin_p,caster:GetTeam())
 	
 	CustomGameEventManager:Send_ServerToTeam(team_id,"close_draw_card",{
+		key = GetClientKey(team_id),
 		cards = cards
 	})
 	if origin_x == x and origin_y == y then
@@ -4141,11 +4164,14 @@ end
 function StartAPVERound()
 	GameRules:GetGameModeEntity().battle_count = 0
 
-	CustomGameEventManager:Send_ServerToAllClients("battle_info",{
-		type = "pve",
-		text = ''..GameRules:GetGameModeEntity().battle_round,
-		round = GameRules:GetGameModeEntity().battle_round,
-	})
+	for team_i=6,13 do
+		CustomGameEventManager:Send_ServerToTeam(team_i,"battle_info",{
+			key = GetClientKey(team_i),
+			type = "pve",
+			text = ''..GameRules:GetGameModeEntity().battle_round,
+			round = GameRules:GetGameModeEntity().battle_round,
+		})
+	end
 
 	for i,v in pairs (GameRules:GetGameModeEntity().counterpart) do
 		if v ~= -1 then
@@ -4352,12 +4378,16 @@ function StartAPVERound()
 		else
 			local center_index = ''..Entities:FindByName(nil,"center0"):entindex()..','..Entities:FindByName(nil,"center1"):entindex()..','..Entities:FindByName(nil,"center2"):entindex()..','..Entities:FindByName(nil,"center3"):entindex()..','..Entities:FindByName(nil,"center4"):entindex()..','..Entities:FindByName(nil,"center5"):entindex()..','..Entities:FindByName(nil,"center6"):entindex()..','..Entities:FindByName(nil,"center7"):entindex()
 			--发送当前游戏时间给客户端
-			CustomGameEventManager:Send_ServerToAllClients("show_time",{
-				timer_round = GameRules:GetGameModeEntity().battle_timer,
-				round_status = "battle",
-				total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
-				center_index = center_index,
-			})
+			for team_i=6,13 do
+				CustomGameEventManager:Send_ServerToTeam(team_i,"show_time",{
+					key = GetClientKey(team_i),
+					timer_round = GameRules:GetGameModeEntity().battle_timer,
+					round_status = "battle",
+					total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
+					center_index = center_index,
+				})
+			end
+
 			GameRules:GetGameModeEntity().battle_timer = GameRules:GetGameModeEntity().battle_timer - 1
 			return 1
 		end
@@ -4467,21 +4497,27 @@ function StartAPVPRound()
 					chesses = json.decode(data)
 				end
 				--打云玩家
-				CustomGameEventManager:Send_ServerToAllClients("battle_info",{
+				CustomGameEventManager:Send_ServerToTeam(v,"battle_info",{
+					key = GetClientKey(v),
 					type = "cloud",
 					text = chesses.owner,
 					round = GameRules:GetGameModeEntity().battle_round,
 				})
+
 				LoadCloudEnemy(GameRules:GetGameModeEntity().battle_round,i)
 				h.cloud_opp_name = chesses.owner
 			else
 				--打pvp敌人
 				local enemy_id = TeamId2Hero(v):GetPlayerID()
+
 				CustomGameEventManager:Send_ServerToTeam(i,"battle_info",{
+					key = GetClientKey(i),
 					type = "pvp",
 					text = enemy_id,
 					round = GameRules:GetGameModeEntity().battle_round,
 				})
+
+
 				MirrorARound(i)
 				h.cloud_opp_name = nil
 			end
@@ -4555,12 +4591,16 @@ function StartAPVPRound()
 			--还有正在战斗的，发送时间给客户端
 			local center_index = ''..Entities:FindByName(nil,"center0"):entindex()..','..Entities:FindByName(nil,"center1"):entindex()..','..Entities:FindByName(nil,"center2"):entindex()..','..Entities:FindByName(nil,"center3"):entindex()..','..Entities:FindByName(nil,"center4"):entindex()..','..Entities:FindByName(nil,"center5"):entindex()..','..Entities:FindByName(nil,"center6"):entindex()..','..Entities:FindByName(nil,"center7"):entindex()
 			--发送当前游戏时间给客户端
-			CustomGameEventManager:Send_ServerToAllClients("show_time",{
-				timer_round = GameRules:GetGameModeEntity().battle_timer,
-				round_status = "battle",
-				total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
-				center_index = center_index
-			})
+			for team_i=6,13 do
+				CustomGameEventManager:Send_ServerToTeam(team_i,"show_time",{
+					key = GetClientKey(team_i),
+					timer_round = GameRules:GetGameModeEntity().battle_timer,
+					round_status = "battle",
+					total_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME),
+					center_index = center_index
+				})
+			end
+
 			GameRules:GetGameModeEntity().battle_timer = GameRules:GetGameModeEntity().battle_timer - 1
 			return 1
 		end
@@ -4881,7 +4921,6 @@ end
 function GetMyGuestEnemyTeam(t)
 	for i,v in pairs(GameRules:GetGameModeEntity().counterpart) do
 		if v == t then
-			print('findguestenemy'..t)
 			return i
 		end
 	end
@@ -7316,7 +7355,9 @@ function AddMana(unit, mana)
 	if mana == nil or mana <= 0 then
 		return
 	end
-	unit:SetMana(unit:GetMana()+mana)
+
+	local mana_result = math.floor(unit:GetMana()+mana+0.5)
+	unit:SetMana(mana_result)
 	AMHC:CreateParticle("particles/generic_gameplay/rune_bounty_owner.vpcf",PATTACH_OVERHEAD_FOLLOW,false,unit,5)
 	if mana >= 10 then
 		EmitSoundOn("General.CoinsBig",unit)
@@ -7328,7 +7369,7 @@ function AddMana(unit, mana)
 
 	CustomGameEventManager:Send_ServerToTeam(unit:GetTeam(),"show_gold",{
 		key = GetClientKey(unit:GetTeam()),
-		gold = unit:GetMana(),
+		gold = mana_result,
 		lose_streak = unit.lose_streak or 0,
 		win_streak = unit.win_streak or 0,
 	})
@@ -7877,10 +7918,13 @@ function AddWinStreak(team)
 	end
 	hero:SetModelScale(sca)
 	if hero.win_streak == 5 or hero.win_streak == 8 or hero.win_streak == 10 then
-		CustomGameEventManager:Send_ServerToAllClients("win_streak",{
-			player_id = hero:GetPlayerID(),
+		for i=6,13 do
+			CustomGameEventManager:Send_ServerToTeam(i,"win_streak",{
+				key = GetClientKey(i),
+				player_id = hero:GetPlayerID(),
 			streak = hero.win_streak,
-		})
+			})
+		end
 	end
 end
 function RemoveWinStreak(team)
@@ -8226,6 +8270,7 @@ function DAC:OnCatchCrab(keys)
 		Timers:CreateTimer(RandomFloat(0,1),function()
 			SendHTTP(send_url,function(t)
 				CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(player_id),'send_http_cb',{
+					key = GetClientKey(GameRules:GetGameModeEntity().playerid2team[player_id]),
 					event = keys.cb,
 					data = json.encode(t),
 				})
@@ -8748,9 +8793,9 @@ function FindPOMTargetEnemy(u)
 			local find_team = GetMyHostEnemyTeam(u.at_team_id)
 			if RandomInt(1,100)<20 then
 				--20%概率随机找敌人
-				return FindARandomDogInAtTeam(find_team,true)
+				return FindARandomDogInAtTeam(find_team,false)
 			else
-				return FindAHighLevelDogInAtTeam(find_team,true)
+				return FindAHighLevelDogInAtTeam(find_team,false)
 			end
 		end
 	end
