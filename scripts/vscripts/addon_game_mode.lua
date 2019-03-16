@@ -494,6 +494,7 @@ function Precache( context )
 		"models/items/courier/krobeling_gold/krobeling_gold_flying.vmdl",
 		"effect/jin_dp/courier_krobeling_gold_ambient.vpcf",
 		"effect/nianshou/courier_nian_ambient.vpcf",
+		"soundevents/game_sounds.vsndevts",
 	} 
     print("Precache...")
 	local t=table.maxn(mxx)
@@ -1875,9 +1876,10 @@ function InitHeros()
 				local heiheurl = 'http://api.xiaoheihe.cn/api/rpg/autochess/report_match_start/?apikey=69f395b2-f7e8-4032-bd0c-41200cfe9dad'
 				local heihedata = {
 					steamids = GameRules:GetGameModeEntity().steamidlist,
-				  	version = '1.0',
+				  	version = '2.0',
 				  	key = GetDedicatedServerKey('max'),
 				  	key2 = GetDedicatedServerKey('heihe'),
+				  	key3 = GetDedicatedServerKeyV2('heihe'),
 				}
 				SendHTTPPost(heiheurl,heihedata)
 			end)
@@ -2607,8 +2609,12 @@ function RestoreARound(teamid)
 	ClearARound(teamid)
 
 	Timers:CreateTimer(RandomFloat(0.5,1),function()
+		local prepare_riki = false
 		for _,v in pairs(GameRules:GetGameModeEntity().mychess[teamid]) do
 			local x = CreateUnitByName(v.chess,XY2Vector(v.x,v.y,teamid),true,nil,nil,teamid)
+			if string.find(v.chess,'riki') ~= nil then
+				prepare_riki = true
+			end
 			MakeTiny(x)
 			table.insert(GameRules:GetGameModeEntity().to_be_destory_list[teamid],x)
 			x:SetForwardVector(Vector(0,1,0))
@@ -2636,6 +2642,9 @@ function RestoreARound(teamid)
 					AddAbilityAndSetLevel(x,a,0)
 				end
 			end
+		end
+		if prepare_riki == true then
+			HidePrepare(teamid)
 		end
 	end)
 	
@@ -3032,8 +3041,6 @@ function DAC:OnRequestBuyChess(keys)
 		return
 	end
 	if h == nil or h.curr_chess_table == nil or h.curr_chess_table[buy_index + 1] == nil then
-		print('request buy #'..(buy_index + 1)..' failed')
-		DeepPrintTable(h.curr_chess_table)
 		return
 	end
 	local chess = h.curr_chess_table[buy_index + 1]
@@ -3094,21 +3101,7 @@ function DAC:OnRequestBuyChess(keys)
 			AddAbilityAndSetLevel(x,a,0)
 		end
 	end
-
-	--riki隐藏手牌
-	local hand_riki = false
-	if h.hand_entities ~= nil then
-		for _,ent in pairs(h.hand_entities) do
-			if ent:FindAbilityByName('is_satyr') ~= nil then
-				hand_riki = true
-			end
-		end
-	end
-	if hand_riki == true then
-		HideBench(team_id)
-	end
-
-	
+	FindRikiAndToggle(x)
 end
 
 
@@ -3221,18 +3214,7 @@ function RecallChess(keys)
 	GameRules:GetGameModeEntity().population[team_id] = GameRules:GetGameModeEntity().population[team_id] - 1
 
 	--隐藏手牌
-	local hand_riki = false
-	if TeamId2Hero(team_id).hand_entities ~= nil then
-		for _,ent in pairs(TeamId2Hero(team_id).hand_entities) do
-			if ent:FindAbilityByName('is_satyr') ~= nil then
-				hand_riki = true
-			end
-		end
-	end
-	if hand_riki == true then
-		HideBench(team_id)
-		picked_chess:AddNewModifier(picked_chess,nil,"modifier_invisible",nil)
-	end
+	FindRikiAndToggle(picked_chess)
 	--同步ui人口
 	CustomGameEventManager:Send_ServerToTeam(team_id,"population",{
 		key = GetClientKey(team_id),
@@ -3446,18 +3428,7 @@ function DAC:OnPickChessPosition(keys)
 		GameRules:GetGameModeEntity().population[team_id] = GameRules:GetGameModeEntity().population[team_id] - 1
 
 		--隐藏手牌
-		local hand_riki = false
-		if TeamId2Hero(team_id).hand_entities ~= nil then
-			for _,ent in pairs(TeamId2Hero(team_id).hand_entities) do
-				if ent:FindAbilityByName('is_satyr') ~= nil then
-					hand_riki = true
-				end
-			end
-		end
-		if hand_riki == true then
-			HideBench(team_id)
-			picked_chess:AddNewModifier(picked_chess,nil,"modifier_invisible",nil)
-		end
+		FindRikiAndToggle(picked_chess)
 		--同步ui人口
 		CustomGameEventManager:Send_ServerToTeam(team_id,"population",{
 			key = GetClientKey(team_id),
@@ -3548,7 +3519,22 @@ function DAC:OnPickChessPosition(keys)
 					ShowBench(team_id)
 				end
 			end
-			picked_chess:RemoveModifierByName('modifier_invisible')
+			AddAbilityAndSetLevel(picked_chess,"invisible_to_enemy")
+			local prepare_riki = false
+			if GameRules:GetGameModeEntity().to_be_destory_list[team_id] ~= nil then
+				for _,ent in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team_id]) do
+					if ent:FindAbilityByName('is_satyr') ~= nil then
+						prepare_riki = true
+					end
+				end
+			end
+			if prepare_riki == true then
+				HidePrepare(team_id)
+				AddAbilityAndSetLevel(picked_chess,"invisible_to_enemy")
+			else
+				ShowPrepare(team_id)
+				RemoveAbilityAndModifier(picked_chess,'invisible_to_enemy')
+			end
 			--同步ui人口
 			CustomGameEventManager:Send_ServerToTeam(team_id,"population",{
 				key = GetClientKey(team_id),
@@ -3660,20 +3646,7 @@ function RemoveChess(keys)
 	if target.y_x ~= nil then
 		GameRules:GetGameModeEntity().unit[team_id][target.y_x] = nil
 	end
-	--显示手牌
-	if target:FindAbilityByName('is_satyr') ~= nil then
-		local hand_riki = false
-		if TeamId2Hero(team_id).hand_entities ~= nil then
-			for _,ent in pairs(TeamId2Hero(team_id).hand_entities) do
-				if ent:FindAbilityByName('is_satyr') ~= nil then
-					hand_riki = true
-				end
-			end
-		end
-		if hand_riki == false then
-			ShowBench(team_id)
-		end
-	end
+	FindRikiAndToggle(target)
 	CancelPickChess(caster)
 
 	AddAChessToChessPool(target:GetUnitName())
@@ -3845,6 +3818,8 @@ function CombineChess(u0,u1,u2)
 		uu.y = y
 		uu.x = x
 		uu.team_id = team_id
+
+		FindRikiAndToggle(uu)
 
 		uu:SetForwardVector(Vector(0,1,0))
 		--添加装备
@@ -4835,7 +4810,9 @@ function GetHitDamage(u)
 end
 --游戏循环2——开始一轮战斗回合（包括回合结果判断）
 function StartABattleRound()
-
+	for i = 6,13 do
+		ShowPrepare(i)
+	end
 	CustomNetTables:SetTableValue( "dac_table", "hide_damage_stat", 
 		{ 
 			hehe = RandomInt(1,100000) 
@@ -5411,7 +5388,12 @@ function ChessAI(u)
 		end
 		RemoveAbilityAndModifier(u,'jiaoxie_wudi')
 
-		u.aitimer = Timers:CreateTimer(RandomFloat(0.5,2),function()
+		local start_delay = 0
+		if u:FindAbilityByName('is_assassin') ~= nil and GameRules:GetGameModeEntity().chess_ability_list[u:GetUnitName()] ~= nil then
+			start_delay = 1
+		end
+
+		u.aitimer = Timers:CreateTimer(RandomFloat(0.2,1)+start_delay, function()
 			if u == nil or u:IsNull() == true or u:IsAlive() == false or u.alreadywon == true then
 				return
 			end
@@ -7357,6 +7339,9 @@ function AddMana(unit, mana)
 	end
 
 	local mana_result = math.floor(unit:GetMana()+mana+0.5)
+	if mana_result > 100 then
+		mana_result = 100
+	end
 	unit:SetMana(mana_result)
 	AMHC:CreateParticle("particles/generic_gameplay/rune_bounty_owner.vpcf",PATTACH_OVERHEAD_FOLLOW,false,unit,5)
 	if mana >= 10 then
@@ -8622,6 +8607,8 @@ function SendYingdiData(t,dur)
 	local yingdi_url = "http://www.iyingdi.com/tool/autochess/record/match/product"
 	local yingdi_data = {
 		key=GetDedicatedServerKey('yingdi'),
+		key2=GetDedicatedServerKeyV2('yingdi'),
+		version = '2.0',
 	    end_time=t.end_time,
 	    duration=dur,
 	    players={},
@@ -8643,6 +8630,8 @@ function SendPWData(t,dur)
 	local pw_url = "http://52.81.131.74:5140"
 	local pw_data = {
 		key=GetDedicatedServerKey('perfectworld'),
+		key2=GetDedicatedServerKeyV2('perfectworld'),
+		version = '2.0',
 	    end_time=t.end_time,
 	    duration=dur,
 	    players={},
@@ -8665,7 +8654,8 @@ function SendMaxData(t,dur)
 	local max_data = {
 	    key=GetDedicatedServerKey('max'),
 	    key2=GetDedicatedServerKey('heihe'),
-	    version="1.0",
+	    key3=GetDedicatedServerKeyV2('heihe'),
+	    version="2.0",
 	    match_id=t.end_time,
 	    end_time=t.end_time,
 	    duration=dur,
@@ -8708,19 +8698,69 @@ function SendHTTPPost(url,game_data)
     end)
 end
 
+function FindRikiAndToggle(chess)
+	if chess == nil or chess:GetTeam() == nil then
+		return
+	end
+	local team = chess:GetTeam()
+
+	local hand_riki = false
+	if TeamId2Hero(team).hand_entities ~= nil then
+		for _,ent in pairs(TeamId2Hero(team).hand_entities) do
+			if ent:FindAbilityByName('is_satyr') ~= nil then
+				hand_riki = true
+			end
+		end
+	end
+	if hand_riki == true then
+		HideBench(team)
+		AddAbilityAndSetLevel(thischess,"invisible_to_enemy")
+	else
+		ShowBench(team)
+		RemoveAbilityAndModifier(thischess,'invisible_to_enemy')
+	end
+
+	local prepare_riki = false
+	if GameRules:GetGameModeEntity().to_be_destory_list[team] ~= nil then
+		for _,ent in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team]) do
+			if ent:FindAbilityByName('is_satyr') ~= nil then
+				prepare_riki = true
+			end
+		end
+	end
+	if prepare_riki == true and GameRules:GetGameModeEntity().game_status == 1 then
+		HidePrepare(team)
+		AddAbilityAndSetLevel(thischess,"invisible_to_enemy")
+	else
+		ShowPrepare(team)
+		RemoveAbilityAndModifier(thischess,'invisible_to_enemy')
+	end
+end
 function HideBench(team)
 	if TeamId2Hero(team).hand_entities ~= nil then
 		for _,ent in pairs(TeamId2Hero(team).hand_entities) do
-			if ent:FindModifierByName('modifier_invisible') == nil then
-				ent:AddNewModifier(ent,nil,"modifier_invisible",nil)
-			end
+			AddAbilityAndSetLevel(ent,'invisible_to_enemy')
 		end
 	end
 end
 function ShowBench(team)
 	if TeamId2Hero(team).hand_entities ~= nil then
 		for _,ent in pairs(TeamId2Hero(team).hand_entities) do
-			ent:RemoveModifierByName("modifier_invisible")
+			RemoveAbilityAndModifier(ent,'invisible_to_enemy')
+		end
+	end
+end
+function HidePrepare(team)
+	if GameRules:GetGameModeEntity().to_be_destory_list[team] ~= nil then
+		for _,ent in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team]) do
+			AddAbilityAndSetLevel(ent,'invisible_to_enemy')
+		end
+	end
+end
+function ShowPrepare(team)
+	if GameRules:GetGameModeEntity().to_be_destory_list[team] ~= nil then
+		for _,ent in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team]) do
+			RemoveAbilityAndModifier(ent,'invisible_to_enemy')
 		end
 	end
 end
@@ -8879,7 +8919,7 @@ function SlarkJump(keys)
 			local damageTable = {
 		    	victim=target,
 		    	attacker=caster,
-		    	damage_type=DAMAGE_TYPE_PHYSICAL,
+		    	damage_type=DAMAGE_TYPE_PURE,
 		    	damage=damage
 		    }
 		    ApplyDamage(damageTable)
@@ -9077,5 +9117,9 @@ function GetClientKey(team)
 	return GameRules:GetGameModeEntity().client_key[team]
 end
 function GetSendKey()
-	return "&key="..GetDedicatedServerKey('drodo').."&key2="..GetDedicatedServerKey('zzwdjs').."&key3="..GetDedicatedServerKey('xgnb').."&key4="..GetDedicatedServerKey('fgnb')
+	return "&key="..GetDedicatedServerKey('drodo').."&key2="..GetDedicatedServerKeyV2('zzwdjs').."&key3="..GetDedicatedServerKeyV2('xgnb').."&key4="..GetDedicatedServerKeyV2('fgnb').."&key5="..GetDedicatedServerKeyV2('bsl,bgbxh')
 end
+
+-- function Shanbi(keys)
+-- 	prt('闪避！')
+-- end
