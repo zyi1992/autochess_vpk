@@ -409,7 +409,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"heal"	"200 300 400"
+				"heal"	"250 350 450"
 				"LinkedSpecialBonus"	"special_bonus_unique_omniknight_1"
 			}
 			"02"
@@ -520,7 +520,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"20"
+				"duration"	"10 15 20"
 			}
 			"02"
 			{
@@ -550,7 +550,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"10"
+		"AbilityCooldown"	"15 12 9"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -9456,7 +9456,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"10"
+						"Chance"	"15"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 						"OnSuccess"
 						{
@@ -9624,7 +9624,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"20"
+						"Chance"	"15"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 						"OnSuccess"
 						{
@@ -9884,6 +9884,16 @@
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"ogre_magi_multicast"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+	}
+
+	"is_god"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -11388,7 +11398,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stone_duration"	"2 3 4"
+				"stone_duration"	"2 2.5 3"
 			}
 			"05"
 			{
@@ -11454,10 +11464,10 @@
 	"alchemist_acid_spray"
 	{
 		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
+		"AbilityCastPoint"	"0"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"10"
-		"AbilityManaCost"	"100"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
 		{
@@ -11469,17 +11479,17 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"10"
+				"duration"	"15"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"15 25 35"
+				"damage"	"0"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_reduction"	"5 8 11"
+				"armor_reduction"	"4 7 10"
 				"LinkedSpecialBonus"	"special_bonus_unique_alchemist_5"
 			}
 			"05"
@@ -13963,7 +13973,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"10 8 6"
+		"AbilityCooldown"	"8 6 4"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"99999"
 		"precache"
@@ -14085,7 +14095,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"60"
+				"duration"	"15"
 			}
 			"02"
 			{
@@ -14118,6 +14128,16 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"bonus_movespeed"	"0 0 0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor_reduce"	"4 7 10"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"acid_duration"	"15"
 			}
 		}
 		"AbilitySound"	"Hero_Alchemist.ChemicalRage.Cast"

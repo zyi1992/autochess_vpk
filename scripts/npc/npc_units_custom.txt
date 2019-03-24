@@ -7218,7 +7218,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"70"
-		"AttackDamageMax"	"90"
+		"AttackDamageMax"	"110"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -7338,7 +7338,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"140"
-		"AttackDamageMax"	"180"
+		"AttackDamageMax"	"220"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -7458,7 +7458,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"280"
-		"AttackDamageMax"	"360"
+		"AttackDamageMax"	"440"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -9227,7 +9227,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"500"
+		"StatusHealth"	"550"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9351,7 +9351,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1000"
+		"StatusHealth"	"1100"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9475,7 +9475,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2000"
+		"StatusHealth"	"2200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -12191,7 +12191,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"550"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
@@ -12431,7 +12431,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1100"
+		"StatusHealth"	"1200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
@@ -12551,7 +12551,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2200"
+		"StatusHealth"	"2400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
@@ -16363,7 +16363,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"75"
 		"AttackDamageMax"	"90"
-		"AttackRate"	"1.4"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -16487,7 +16487,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"150"
 		"AttackDamageMax"	"180"
-		"AttackRate"	"1.4"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -16619,7 +16619,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"300"
 		"AttackDamageMax"	"360"
-		"AttackRate"	"1.4"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -19042,7 +19042,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"60"
+		"AttackDamageMax"	"70"
 		"AttackRate"	"1"
 		"AttackRange"	"600"
 		"Creature"
@@ -19166,7 +19166,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"120"
+		"AttackDamageMax"	"140"
 		"AttackRate"	"1"
 		"AttackRange"	"600"
 		"Creature"
@@ -19294,7 +19294,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"240"
+		"AttackDamageMax"	"280"
 		"AttackRate"	"1"
 		"AttackRange"	"600"
 		"Creature"
@@ -20767,27 +20767,35 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5968"
+					"ItemDef"	"8632"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"131"
+					"ItemDef"	"527"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"176"
+					"ItemDef"	"8385"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5967"
+					"ItemDef"	"8383"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"178"
+					"ItemDef"	"5967"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"5971"
+					"ItemDef"	"6965"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"131"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"8381"
 				}
 			}
 		}
@@ -20891,27 +20899,39 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9571"
+					"ItemDef"	"8203"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"131"
+					"ItemDef"	"9140"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9577"
+					"ItemDef"	"527"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9428"
+					"ItemDef"	"9141"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9578"
+					"ItemDef"	"9829"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9579"
+					"ItemDef"	"5971"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"131"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"9828"
+				}
+				"Wearable9"
+				{
+					"ItemDef"	"9428"
 				}
 			}
 		}
