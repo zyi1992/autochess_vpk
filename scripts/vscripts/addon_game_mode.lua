@@ -2907,9 +2907,15 @@ function DAC:OnEntityKilled(keys)
 	if attacker == nil then
 		return
 	end
+	if string.find(attacker:GetUnitName(),'pve') ~= nil then
+		return
+	end
+	if string.find(u:GetUnitName(),'pve') ~= nil then
+		return
+	end
 
 	--连杀数
-	if attacker.killing_spree_time == nil or GameRules:GetGameTime() - attacker.killing_spree_time < 5 then
+	if attacker.killing_spree_time == nil or GameRules:GetGameTime() - attacker.killing_spree_time < 3 then
 		attacker.killing_spree_time = GameRules:GetGameTime()
 		-- +1
 		if attacker.killing_spree_count == nil then
