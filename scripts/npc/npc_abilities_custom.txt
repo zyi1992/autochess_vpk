@@ -7929,6 +7929,32 @@
 		}
 	}
 
+	"act_thunder"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/zeus/victory/victory.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_act_thunder"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"OverrideAnimation"	"ACT_DOTA_VICTORY"
+				"States"
+				{
+					"MODIFIER_STATE_UNSELECTABLE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"Properties"	{}
+				"EffectName"	"effect/zeus/victory/victory.vpcf"
+				"EffectAttachType"	"follow_overhead"
+			}
+		}
+	}
+
 	"is_warrior"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -7959,7 +7985,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -7987,7 +8013,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"8"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -8042,7 +8068,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-40"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/items2_fx/veil_of_discord_debuff.vpcf"
@@ -8070,7 +8096,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-40"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-45"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/items2_fx/veil_of_discord_debuff.vpcf"
@@ -8182,7 +8208,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"40"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_siren/naga_siren_song_debuff_b.vpcf"
@@ -8632,7 +8658,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"15"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8983,6 +9009,58 @@
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_mirana/mirana_moonlight_owner.vpcf"
 				"EffectAttachType"	"follow_overhead"
+			}
+		}
+	}
+
+	"is_god_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_god_buff_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff_plus"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"75"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
 		}
 	}
@@ -9475,7 +9553,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"300"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"350"
 				}
 				"OnAttackLanded"
 				{
@@ -9540,7 +9618,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"15"
+						"Chance"	"20"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 						"OnSuccess"
 						{
@@ -9559,7 +9637,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"400"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"450"
 				}
 				"OnAttackLanded"
 				{
@@ -13973,7 +14051,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"8 6 4"
+		"AbilityCooldown"	"10 8 6"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"99999"
 		"precache"
@@ -14273,6 +14351,12 @@
 				"TextureName"	"dragon_knight_dragon_tail"
 				"IsBuff"	"1"
 			}
+			"modifier_show_combo_is_god"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsBuff"	"0"
+				"IsDebuff"	"1"
+			}
 		}
 	}
 
@@ -14492,6 +14576,210 @@
 				"EffectName"	"effect/xuwuzhiyan/pink/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"zeus_thunder"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_thundergods_wrath"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_5"
+		"AbilityCooldown"	"15 12 9"
+		"AbilityManaCost"	"100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ZeusThunder"
+				"damage"	"%damage"
+				"damage_per"	"%damage_per"
+				"damage_courier_per"	"%damage_courier_per"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"300 400 500"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_per"	"15 25 35"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_courier_per"	"15 25 35"
+			}
+		}
+	}
+
+	"zeus_thunder_courier"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_thundergods_wrath"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"999"
+		"AbilityManaCost"	"0"
+		"precache"
+		{
+			"particle"	"particles/econ/items/zeus/zeus_ti8_immortal_arms/zeus_ti8_immortal_arc.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"TrackingProjectile"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"particles/econ/items/zeus/zeus_ti8_immortal_arms/zeus_ti8_immortal_arc.vpcf"
+				"MoveSpeed"	"3000"
+			}
+		}
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"1"
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ZeusThunderCourierHit"
+				"damage_courier_per"	"%damage_courier_per"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_courier_per"	"10 15 20"
+			}
+		}
+	}
+
+	"mars_bulwark"
+	{
+		"AbilityTextureName"	"mars_bulwark"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"	"3"
+		"AbilityCooldown"	"8"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"physical_damage_reduction"	"30 50 70"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"forward_angle"	"90"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"physical_damage_reduction_side"	"15 25 35"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"side_angle"	"180"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shield_bash_radius"	"200"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shield_bash_damage"	"150 300 450"
+			}
+		}
+	}
+
+	"mars_shield_passive"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"mars_gods_rebuke"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_mars_shield"
+			{
+				"Passive"	"1"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"MarsShield"
+					}
+				}
+				"ThinkInterval"	"5"
+				"TextureName"	"mars_gods_rebuke"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"mars_shield"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"mars_gods_rebuke"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_mars/mars_shield_bash.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"DelayedAction"
+			{
+				"Action"
+				{
+					"FireEffect"
+					{
+						"Target"	"CASTER"
+						"ControlPoints"	{}
+						"ControlPointEntities"	{}
+						"EffectName"	"particles/units/heroes/hero_mars/mars_shield_bash.vpcf"
+						"EffectAttachType"	"follow_origin"
+					}
+					"FireSound"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"Hero_Mars.Shield.Cast"
+					}
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"MarsShieldDamage"
+					}
+				}
+				"Delay"	"0.01"
 			}
 		}
 	}
