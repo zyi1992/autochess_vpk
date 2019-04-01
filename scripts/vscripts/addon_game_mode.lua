@@ -1890,6 +1890,11 @@ function InitHeros()
 				hero.onduty_hero = onduty_hero
 				hero.steam_id = steam_id
 
+				if user_info.is_crown == true then
+					hero.crown = true
+					ShowCrown(hero,1)
+				end
+
 				hero:MoveToPosition(hero:GetAbsOrigin())
 				AddAbilityAndSetLevel(hero,'pick_chess')
 				AddAbilityAndSetLevel(hero,'recall_chess')
@@ -5518,7 +5523,7 @@ function AddComboAbility(teamid)
 		end
 	end
 	--神族
-	if combo_count_table_self['is_god'] >= 1 and combo_count_race == 0 then
+	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] >= 1 and combo_count_race == 0 then
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == teamid then
@@ -5530,7 +5535,7 @@ function AddComboAbility(teamid)
 			end
 		end
 	end
-	if combo_count_table_self['is_god'] == 2 and combo_count_race == 0 then
+	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 2 and combo_count_race == 0 then
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == teamid then
@@ -5643,7 +5648,7 @@ function AddComboAbility(teamid)
 			end
 		end
 	end
-	if combo_count_table_enemy['is_god'] >= 1 and combo_count_race == 0 then
+	if combo_count_table_enemy['is_god'] ~= nil and combo_count_table_enemy['is_god'] >= 1 and combo_count_race == 0 then
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == 4 then
@@ -5655,7 +5660,7 @@ function AddComboAbility(teamid)
 			end
 		end
 	end
-	if combo_count_table_self['is_god'] == 2 and combo_count_race == 0 then
+	if combo_count_table_enemy['is_god'] ~= nil and combo_count_table_enemy['is_god'] == 2 and combo_count_race == 0 then
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == 4 then
@@ -7227,6 +7232,12 @@ function DAC:OnPlayerChat(keys)
 		hero:SetModelScale(hero.init_model_scale)
 		prt('TEST CODE: COURIER SIZE = '..tokens[2])
 	end
+	if tokens[1] == "-crown" and GameRules:GetGameModeEntity().myself == true then
+		local crown_level = tonumber(tokens[2] or 1)
+		prt('TEST CODE: CROWN = '..crown_level)
+		hero.is_crown = true
+		ShowCrown(hero,crown_level)
+	end
 	if tokens[1] == '-damage' and GameRules:GetGameModeEntity().myself == true then
 		prt('TEST CODE: SHOW DAMAGE')
 		GameRules:GetGameModeEntity().show_damage = true
@@ -7300,19 +7311,23 @@ function PlayParticleOnUnitUntilDeath(keys)
 	end
 	local pos = keys.pos or PATTACH_ABSORIGIN_FOLLOW
 	local pp = ParticleManager:CreateParticle(p, pos, u)
-	ParticleManager:SetParticleControlEnt( pp, 0, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
-	ParticleManager:SetParticleControlEnt( pp, 1, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
-	ParticleManager:SetParticleControlEnt( pp, 2, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
-	ParticleManager:SetParticleControlEnt( pp, 3, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
-	ParticleManager:SetParticleControlEnt( pp, 4, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
-	ParticleManager:SetParticleControlEnt( pp, 5, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
-	ParticleManager:SetParticleControlEnt( pp, 6, u, PATTACH_ABSORIGIN_FOLLOW, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 0, u, pos, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 1, u, pos, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 2, u, pos, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 3, u, pos, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 4, u, pos, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 5, u, pos, nil, u:GetOrigin(), true );
+	ParticleManager:SetParticleControlEnt( pp, 6, u, pos, nil, u:GetOrigin(), true );
 
 	Timers:CreateTimer(0.1,function()
 		if u == nil or u:IsNull() == true or u:IsAlive() == false then
 			if pp ~= nil then
 				ParticleManager:DestroyParticle(pp,true)
 			end
+			return
+		end
+		if pp == nil then
+			return
 		end
 		return 0.1
 	end)
@@ -8367,8 +8382,11 @@ function AddWinStreak(team)
 			CustomGameEventManager:Send_ServerToTeam(i,"win_streak",{
 				key = GetClientKey(i),
 				player_id = hero:GetPlayerID(),
-			streak = hero.win_streak,
+				streak = hero.win_streak,
 			})
+		end
+		if hero.is_crown == true then
+			ShowCrown(hero,2)
 		end
 	end
 end
@@ -8389,6 +8407,9 @@ function RemoveWinStreak(team)
 
 		if hero.flyup_effect ~= nil then
 			ParticleManager:DestroyParticle(hero.flyup_effect,true)
+		end
+		if hero.is_crown == true then
+			ShowCrown(hero,1)
 		end
 	end
 	hero.win_streak = 0
@@ -9848,5 +9869,34 @@ function StartMarsShieldCD(caster)
 		else
 			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8)
 		end
+	end
+end
+
+function ShowCrown(hero,crown_level)
+	if crown_level == nil then
+		crown_level = 1
+	end
+	if not IsUnitExist(hero) then
+		return
+	end
+	if hero.crown_p ~= nil then
+		ParticleManager:DestroyParticle(hero.crown_p,true)
+	end
+	if hero.is_crown ~= true then
+		return
+	end
+	if crown_level == 1 then
+		hero.crown_p = PlayParticleOnUnitUntilDeath({
+			caster = hero,
+			p = "effect/crown/1.vpcf",
+			pos = PATTACH_ABSORIGIN_FOLLOW,
+		})
+	end
+	if crown_level == 2 then
+		hero.crown_p = PlayParticleOnUnitUntilDeath({
+			caster = hero,
+			p = "effect/crown/2.vpcf",
+			pos = PATTACH_OVERHEAD_FOLLOW,
+		})
 	end
 end

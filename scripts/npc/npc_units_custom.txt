@@ -9839,7 +9839,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2900"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9903,7 +9903,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.6"
 		"HasInventory"	"1"
-		"Level"	"7"
+		"Level"	"6"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -12156,7 +12156,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_assassin"
 		// Ability 3.
@@ -12276,7 +12276,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_assassin"
 		// Ability 3.
@@ -12396,7 +12396,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_assassin"
 		// Ability 3.
@@ -12516,7 +12516,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_assassin"
 		// Ability 3.

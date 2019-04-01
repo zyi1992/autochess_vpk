@@ -13511,6 +13511,28 @@
 		}
 	}
 
+	"e999"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/crown/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_crown"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/crown/1.vpcf"
+				"EffectAttachType"	"follow_head"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
 	"outofgame"
 	{
 		"BaseClass"	"ability_datadriven"
