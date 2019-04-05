@@ -9618,7 +9618,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"20"
+						"Chance"	"15"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 						"OnSuccess"
 						{
@@ -11598,7 +11598,7 @@
 			"ApplyModifier"
 			{
 				"Target"	"TARGET"
-				"Duration"	"5"
+				"Duration"	"8"
 				"ModifierName"	"modifier_shadow_shaman_voodoo"
 			}
 			"FireSound"
@@ -13715,7 +13715,7 @@
 				"Target"	"POINT"
 				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 				"Function"	"TinyTouzhi"
-				"radius"	"%radius"
+				"radius"	"%damage_radius"
 				"damage"	"%damage"
 				"stun"	"%stun_duration"
 			}

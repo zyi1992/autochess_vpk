@@ -920,7 +920,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"0.5"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"1"
 					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
 				}
 				"IsHidden"	"1"
@@ -932,7 +932,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"1000"
+						"hp"	"1200"
 					}
 				}
 				"EffectName"	"effect/longxin/1.vpcf"
@@ -944,7 +944,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"UnAddMaxHP"
-						"hp"	"1000"
+						"hp"	"1200"
 					}
 				}
 			}
@@ -2254,7 +2254,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"cleave_per"	"50"
+				"cleave_per"	"30"
 			}
 			"02"
 			{

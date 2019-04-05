@@ -85,6 +85,8 @@
 		"type"		"string"
 		"text"		"string"
 		"round"		"short"
+		"host_oppo_id"		"short"
+		"guest_oppo_id"		"short"
 	}
 	"player_reconnect"
 	{

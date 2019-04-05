@@ -518,71 +518,294 @@ function Precache( context )
 			PrecacheResource( "soundfile",  mxx[i], context)
 		end
     end
-    PrecacheUnitByNameSync("chess_tusk", context)
-    PrecacheUnitByNameSync("chess_cm", context)
-    PrecacheUnitByNameSync("chess_axe", context)
-    PrecacheUnitByNameSync("chess_eh", context)
-    PrecacheUnitByNameSync("chess_om", context)
-    PrecacheUnitByNameSync("chess_am", context)
-    PrecacheUnitByNameSync("chess_clock", context)
-    PrecacheUnitByNameSync("chess_ss", context)
-    PrecacheUnitByNameSync("chess_bh", context)
-    PrecacheUnitByNameSync("chess_wd", context)
-    PrecacheUnitByNameSync("chess_bat", context)
-    PrecacheUnitByNameSync("chess_tk", context)
-    PrecacheUnitByNameSync("chess_bm", context)
-    PrecacheUnitByNameSync("chess_jugg", context)
-    PrecacheUnitByNameSync("chess_lyc", context)
-    PrecacheUnitByNameSync("chess_shredder", context)
-    PrecacheUnitByNameSync("chess_pa", context)
-    PrecacheUnitByNameSync("chess_puck", context)
-    PrecacheUnitByNameSync("chess_slardar", context)
-    PrecacheUnitByNameSync("chess_ck", context)
-    PrecacheUnitByNameSync("chess_luna", context)
-    PrecacheUnitByNameSync("chess_tp", context)
-    PrecacheUnitByNameSync("chess_dr", context)
-    PrecacheUnitByNameSync("chess_light", context)
-    PrecacheUnitByNameSync("chess_razor", context)
-    PrecacheUnitByNameSync("chess_ok", context)
-    PrecacheUnitByNameSync("chess_wr", context)
-    PrecacheUnitByNameSync("chess_sk", context)
-    PrecacheUnitByNameSync("chess_abaddon", context)
-    PrecacheUnitByNameSync("chess_slark", context)
-    PrecacheUnitByNameSync("chess_sniper", context)
-    PrecacheUnitByNameSync("chess_sf", context)
-    PrecacheUnitByNameSync("chess_dk", context)
-    PrecacheUnitByNameSync("chess_viper", context)
-    PrecacheUnitByNameSync("chess_kunkka", context)
-    PrecacheUnitByNameSync("chess_doom", context)
-    PrecacheUnitByNameSync("chess_lina", context)
-    PrecacheUnitByNameSync("chess_troll", context)
-    PrecacheUnitByNameSync("chess_veno", context)
-    PrecacheUnitByNameSync("chess_nec", context)
-    PrecacheUnitByNameSync("chess_ta", context)
-    PrecacheUnitByNameSync("chess_medusa", context)
-    PrecacheUnitByNameSync("chess_disruptor", context)
-    PrecacheUnitByNameSync("chess_ga", context)
-    PrecacheUnitByNameSync("chess_gyro", context)
-    PrecacheUnitByNameSync("chess_lich", context)
-    PrecacheUnitByNameSync("chess_qop", context)
-    PrecacheUnitByNameSync("chess_th", context)
-    PrecacheUnitByNameSync("chess_enigma", context)
-    PrecacheUnitByNameSync("chess_tech", context)
-    PrecacheUnitByNameSync("chess_ld", context)
-    PrecacheUnitByNameSync("chess_fur", context)
+    -- PrecacheUnitByNameSync("chess_tusk", context)
+    -- PrecacheUnitByNameSync("chess_cm", context)
+    -- PrecacheUnitByNameSync("chess_axe", context)
+    -- PrecacheUnitByNameSync("chess_eh", context)
+    -- PrecacheUnitByNameSync("chess_om", context)
+    -- PrecacheUnitByNameSync("chess_am", context)
+    -- PrecacheUnitByNameSync("chess_clock", context)
+    -- PrecacheUnitByNameSync("chess_ss", context)
+    -- PrecacheUnitByNameSync("chess_bh", context)
+    -- PrecacheUnitByNameSync("chess_wd", context)
+    -- PrecacheUnitByNameSync("chess_bat", context)
+    -- PrecacheUnitByNameSync("chess_tk", context)
+    -- PrecacheUnitByNameSync("chess_bm", context)
+    -- PrecacheUnitByNameSync("chess_jugg", context)
+    -- PrecacheUnitByNameSync("chess_lyc", context)
+    -- PrecacheUnitByNameSync("chess_shredder", context)
+    -- PrecacheUnitByNameSync("chess_pa", context)
+    -- PrecacheUnitByNameSync("chess_puck", context)
+    -- PrecacheUnitByNameSync("chess_slardar", context)
+    -- PrecacheUnitByNameSync("chess_ck", context)
+    -- PrecacheUnitByNameSync("chess_luna", context)
+    -- PrecacheUnitByNameSync("chess_tp", context)
+    -- PrecacheUnitByNameSync("chess_dr", context)
+    -- PrecacheUnitByNameSync("chess_light", context)
+    -- PrecacheUnitByNameSync("chess_razor", context)
+    -- PrecacheUnitByNameSync("chess_ok", context)
+    -- PrecacheUnitByNameSync("chess_wr", context)
+    -- PrecacheUnitByNameSync("chess_sk", context)
+    -- PrecacheUnitByNameSync("chess_abaddon", context)
+    -- PrecacheUnitByNameSync("chess_slark", context)
+    -- PrecacheUnitByNameSync("chess_sniper", context)
+    -- PrecacheUnitByNameSync("chess_sf", context)
+    -- PrecacheUnitByNameSync("chess_dk", context)
+    -- PrecacheUnitByNameSync("chess_viper", context)
+    -- PrecacheUnitByNameSync("chess_kunkka", context)
+    -- PrecacheUnitByNameSync("chess_doom", context)
+    -- PrecacheUnitByNameSync("chess_lina", context)
+    -- PrecacheUnitByNameSync("chess_troll", context)
+    -- PrecacheUnitByNameSync("chess_veno", context)
+    -- PrecacheUnitByNameSync("chess_nec", context)
+    -- PrecacheUnitByNameSync("chess_ta", context)
+    -- PrecacheUnitByNameSync("chess_medusa", context)
+    -- PrecacheUnitByNameSync("chess_disruptor", context)
+    -- PrecacheUnitByNameSync("chess_ga", context)
+    -- PrecacheUnitByNameSync("chess_gyro", context)
+    -- PrecacheUnitByNameSync("chess_lich", context)
+    -- PrecacheUnitByNameSync("chess_qop", context)
+    -- PrecacheUnitByNameSync("chess_th", context)
+    -- PrecacheUnitByNameSync("chess_enigma", context)
+    -- PrecacheUnitByNameSync("chess_tech", context)
+    -- PrecacheUnitByNameSync("chess_ld", context)
+    -- PrecacheUnitByNameSync("chess_fur", context)
 
-    PrecacheUnitByNameSync("chess_tiny", context)
-    PrecacheUnitByNameSync("chess_morph", context)
-    PrecacheUnitByNameSync("chess_tb", context)
-    PrecacheUnitByNameSync("chess_nec_ssr", context)
-    PrecacheUnitByNameSync("chess_ck_ssr", context)
+    -- PrecacheUnitByNameSync("chess_tiny", context)
+    -- PrecacheUnitByNameSync("chess_morph", context)
+    -- PrecacheUnitByNameSync("chess_tb", context)
+    -- PrecacheUnitByNameSync("chess_nec_ssr", context)
+    -- PrecacheUnitByNameSync("chess_ck_ssr", context)
 
-    PrecacheUnitByNameSync("chess_riki", context)
+    -- PrecacheUnitByNameSync("chess_riki", context)
 
-    PrecacheUnitByNameSync("chess_kael", context)
-    PrecacheUnitByNameSync("chess_zeus", context)
-    PrecacheUnitByNameSync("chess_sven", context)
-    PrecacheUnitByNameSync("chess_mars", context)
+    -- PrecacheUnitByNameSync("chess_kael", context)
+    -- PrecacheUnitByNameSync("chess_zeus", context)
+    -- PrecacheUnitByNameSync("chess_sven", context)
+    -- PrecacheUnitByNameSync("chess_mars", context)
+
+    local precache_list = {
+		chess_cm = 'cm_mana_aura',
+		chess_axe = 'axe_berserkers_call',
+		chess_dr = 'shooter_aura',
+		chess_eh = 'enchantress_natures_attendants',
+		chess_om = 'ogre_magi_bloodlust',
+		chess_tusk = 'tusk_walrus_punch',
+		chess_bm = 'beastmaster_wild_axes',
+		chess_jugg = 'juggernaut_blade_fury',
+		chess_lyc = 'lyc_wolf',
+		chess_shredder = 'shredder_whirling_death',
+		chess_tk = 'a108',
+		chess_light = 'keeper_of_the_light_illuminate',
+		chess_ok = 'omniknight_purification',
+		chess_razor = 'razor_plasma_field',
+		chess_wr = 'windrunner_powershot',
+		chess_doom = 'doom_bringer_doom',
+		chess_kunkka = 'kunkka_ghostship',
+		chess_lina = 'lina_laguna_blade',
+		chess_troll = 'troll_warlord_fervor',
+		chess_veno = 'veno_ward',
+		chess_gyro = 'gyrocopter_call_down',
+		chess_jakiro = 'jakiro_macropyre',
+		chess_lich = 'lich_chain_frost',
+		chess_qop = 'queenofpain_scream_of_pain',
+		chess_th = 'tidehunter_ravage',
+		--
+		chess_am = 'antimage_mana_break',
+		chess_bh = 'bounty_hunter_shuriken_toss',
+		chess_wd = 'witch_doctor_paralyzing_cask',
+		chess_clock = 'rattletrap_battery_assault',
+		chess_ss = 'shadow_shaman_voodoo',
+		chess_pa = 'phantom_assassin_coup_de_grace',
+		chess_puck = 'puck_illusory_orb',
+		chess_slardar = 'slardar_amplify_damage',
+		chess_ck = 'chaos_knight_chaos_bolt',
+		chess_abaddon = 'abaddon_aphotic_shield',
+		chess_sk = 'sandking_burrowstrike',
+		chess_slark = 'slark_jump',
+		chess_sniper = 'sniper_assassinate',
+		chess_nec = 'necrolyte_death_pulse',
+		chess_ta = 'templar_assassin_refraction',
+		chess_enigma = 'enigma_midnight_pulse',
+		--
+		chess_bat = 'batrider_sticky_napalm',
+		chess_luna = 'luna_moon_glaive',
+		chess_tp = 'treant_leech_seed',
+		chess_sf = 'nevermore_requiem',
+		chess_dk = 'dragon_knight_elder_dragon_form',
+		chess_viper = 'viper_viper_strike',
+		chess_medusa = 'medusa_stone_gaze',
+		chess_disruptor = 'disruptor_static_storm',
+		chess_ga = 'alchemist_chemical_rage',
+		chess_tech = 'chess_tech_bomb',
+		--
+		chess_fur = 'fur_tree',
+		chess_ld = 'ld_bear',
+		--
+		chess_nec_ssr = 'nec_ssr_scythe',
+		chess_morph = 'morphling_waveform',
+		chess_tb = 'tb_mohua',
+		chess_tiny = 'tiny_touzhi',
+		--
+		chess_riki = 'riki_smoke_screen',
+		chess_pom = 'pom_arrow_far',
+		chess_dp = 'death_prophet_exorcism',
+		--
+		chess_fv = 'faceless_void_chronosphere',
+		chess_kael = 'kael_???',
+		--
+		chess_zeus = 'zeus_thunder',
+		chess_mars = 'mars_bulwark',
+
+		chess_cm1 = 'cm_mana_aura',
+		chess_axe1 = 'axe_berserkers_call',
+		chess_dr1 = 'shooter_aura',
+		chess_eh1 = 'enchantress_natures_attendants',
+		chess_om1 = 'ogre_magi_bloodlust',
+		chess_tusk1 = 'tusk_walrus_punch',
+		chess_bm1 = 'beastmaster_wild_axes',
+		chess_jugg1 = 'juggernaut_blade_fury',
+		chess_lyc1 = 'lyc_wolf',
+		chess_shredder1 = 'shredder_whirling_death',
+		chess_tk1 = 'a108',
+		chess_light1 = 'keeper_of_the_light_illuminate',
+		chess_ok1 = 'omniknight_purification',
+		chess_razor1 = 'razor_plasma_field',
+		chess_wr1 = 'windrunner_powershot',
+		chess_doom1 = 'doom_bringer_doom',
+		chess_kunkka1 = 'kunkka_ghostship',
+		chess_lina1 = 'lina_laguna_blade',
+		chess_troll1 = 'troll_warlord_fervor',
+		chess_veno1 = 'veno_ward',
+		chess_gyro1 = 'gyrocopter_call_down',
+		chess_jakiro1 = 'jakiro_macropyre',
+		chess_lich1 = 'lich_chain_frost',
+		chess_qop1 = 'queenofpain_scream_of_pain',
+		chess_th1 = 'tidehunter_ravage',
+		--
+		chess_am1 = 'antimage_mana_break',
+		chess_bh1 = 'bounty_hunter_shuriken_toss',
+		chess_wd1 = 'witch_doctor_paralyzing_cask',
+		chess_clock1 = 'rattletrap_battery_assault',
+		chess_ss1 = 'shadow_shaman_voodoo',
+		chess_pa1 = 'phantom_assassin_coup_de_grace',
+		chess_puck1 = 'puck_illusory_orb',
+		chess_slardar1 = 'slardar_amplify_damage',
+		chess_ck1 = 'chaos_knight_chaos_bolt',
+		chess_abaddon1 = 'abaddon_aphotic_shield',
+		chess_sk1 = 'sandking_burrowstrike',
+		chess_slark1 = 'slark_jump',
+		chess_sniper1 = 'sniper_assassinate',
+		chess_nec1 = 'necrolyte_death_pulse',
+		chess_ta1 = 'templar_assassin_refraction',
+		chess_enigma1 = 'enigma_midnight_pulse',
+		--
+		chess_bat1 = 'batrider_sticky_napalm',
+		chess_luna1 = 'luna_moon_glaive',
+		chess_tp1 = 'treant_leech_seed',
+		chess_sf1 = 'nevermore_requiem',
+		chess_dk1 = 'dragon_knight_elder_dragon_form',
+		chess_viper1 = 'viper_viper_strike',
+		chess_medusa1 = 'medusa_stone_gaze',
+		chess_disruptor1 = 'disruptor_static_storm',
+		chess_ga1 = 'alchemist_chemical_rage',
+		chess_tech1 = 'chess_tech_bomb',
+		--
+		chess_fur1 = 'fur_tree',
+		chess_ld1 = 'ld_bear',
+		--
+		chess_morph1 = 'morphling_waveform',
+		chess_tb1 = 'tb_mohua',
+		chess_tiny1 = 'tiny_touzhi',
+		--
+		chess_riki1 = 'riki_smoke_screen',
+		chess_pom1 = 'pom_arrow_far',
+		chess_dp1 = 'death_prophet_exorcism',
+		--
+		chess_fv1 = 'faceless_void_chronosphere',
+		chess_kael1 = 'kael_???',
+		--
+		chess_zeus1 = 'zeus_thunder',
+		chess_mars1 = 'mars_bulwark',
+
+
+		chess_cm11 = 'cm_mana_aura',
+		chess_axe11 = 'axe_berserkers_call',
+		chess_dr11 = 'shooter_aura',
+		chess_eh11 = 'enchantress_natures_attendants',
+		chess_om11 = 'ogre_magi_bloodlust',
+		chess_tusk11 = 'tusk_walrus_punch',
+		chess_bm11 = 'beastmaster_wild_axes',
+		chess_jugg11 = 'juggernaut_blade_fury',
+		chess_lyc11 = 'lyc_wolf',
+		chess_shredder11 = 'shredder_whirling_death',
+		chess_tk11 = 'a108',
+		chess_light11 = 'keeper_of_the_light_illuminate',
+		chess_ok11 = 'omniknight_purification',
+		chess_razor11 = 'razor_plasma_field',
+		chess_wr11 = 'windrunner_powershot',
+		chess_doom11 = 'doom_bringer_doom',
+		chess_kunkka11 = 'kunkka_ghostship',
+		chess_lina11 = 'lina_laguna_blade',
+		chess_troll11 = 'troll_warlord_fervor',
+		chess_veno11 = 'veno_ward',
+		chess_gyro11 = 'gyrocopter_call_down',
+		chess_jakiro11 = 'jakiro_macropyre',
+		chess_lich11 = 'lich_chain_frost',
+		chess_qop11 = 'queenofpain_scream_of_pain',
+		chess_th11 = 'tidehunter_ravage',
+		--
+		chess_am11 = 'antimage_mana_break',
+		chess_bh11 = 'bounty_hunter_shuriken_toss',
+		chess_wd11 = 'witch_doctor_paralyzing_cask',
+		chess_clock11 = 'rattletrap_battery_assault',
+		chess_ss11 = 'shadow_shaman_voodoo',
+		chess_pa11 = 'phantom_assassin_coup_de_grace',
+		chess_puck11 = 'puck_illusory_orb',
+		chess_slardar11 = 'slardar_amplify_damage',
+		chess_ck11 = 'chaos_knight_chaos_bolt',
+		chess_abaddon11 = 'abaddon_aphotic_shield',
+		chess_sk11 = 'sandking_burrowstrike',
+		chess_slark11 = 'slark_jump',
+		chess_sniper11 = 'sniper_assassinate',
+		chess_nec11 = 'necrolyte_death_pulse',
+		chess_ta11 = 'templar_assassin_refraction',
+		chess_enigma11 = 'enigma_midnight_pulse',
+		--
+		chess_bat11 = 'batrider_sticky_napalm',
+		chess_luna11 = 'luna_moon_glaive',
+		chess_tp11 = 'treant_leech_seed',
+		chess_sf11 = 'nevermore_requiem',
+		chess_dk11 = 'dragon_knight_elder_dragon_form',
+		chess_viper11 = 'viper_viper_strike',
+		chess_medusa11 = 'medusa_stone_gaze',
+		chess_disruptor11 = 'disruptor_static_storm',
+		chess_ga11 = 'alchemist_chemical_rage',
+		chess_tech11 = 'chess_tech_bomb',
+		--
+		chess_fur11 = 'fur_tree',
+		chess_ld11 = 'ld_bear',
+		--
+		chess_morph11 = 'morphling_waveform',
+		chess_tb11 = 'tb_mohua',
+		chess_tiny11 = 'tiny_touzhi',
+		--
+		chess_riki11 = 'riki_smoke_screen',
+		chess_pom11 = 'pom_arrow_far',
+		chess_dp11 = 'death_prophet_exorcism',
+		--
+		chess_fv11 = 'faceless_void_chronosphere',
+		chess_kael11 = 'kael_???',
+		--
+		chess_zeus11 = 'zeus_thunder',
+		chess_mars11 = 'mars_bulwark',
+
+		chess_ck_ssr = 'ck_illusion',
+	}
+
+	for u,_ in pairs(precache_list) do
+		PrecacheUnitByNameSync(u, context)
+	end
 
 
     print("Precache OK")
@@ -1462,6 +1685,8 @@ function DAC:InitGameMode()
 		h134 = "models/items/courier/mole_messenger/mole_messenger.vmdl",--1级矿车老鼠
 		h135 = "models/items/courier/jumo_dire/jumo_dire.vmdl",
 
+		h199 = "models/gezi/ge.vmdl",
+
 		--小英雄信使 ameteur
 		h201 = "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl",
 		h202 = "models/courier/huntling/huntling.vmdl",
@@ -1503,6 +1728,8 @@ function DAC:InitGameMode()
 		h236 = "models/items/courier/flightless_dod/flightless_dod.vmdl", --嘟嘟鸟
 		h237 = "models/items/courier/frostivus2018_courier_serac_the_seal/frostivus2018_courier_serac_the_seal.vmdl",
 		h238 = "models/items/courier/pangolier_squire/pangolier_squire.vmdl",
+
+		h239 = "models/hujing_wangyu/hujing.vmdl",
 
 		--珍藏信使 pro
 		h301 = "models/items/courier/bookwyrm/bookwyrm.vmdl",
@@ -1594,6 +1821,11 @@ function DAC:InitGameMode()
 		h499 = "effect/jin_dp/courier_krobeling_gold_ambient.vpcf",
 		h399 = "effect/jiangbing/1.vpcf",
 		h308 = "effect/drodo/1.vpcf",
+		h199 = "effect/gewugu/2.vpcf",
+		h239 = "effect/wangyu/1.vpcf",
+	}
+	GameRules:GetGameModeEntity().courier_ground_effect_list = {
+		h199 = "effect/gewugu/2.vpcf",
 	}
 
 	GameRules:GetGameModeEntity().sm_hero_size = {
@@ -1638,6 +1870,7 @@ function DAC:InitGameMode()
 		h134 = 1.1,--1级矿车老鼠
 		h135 = 1.1,
 
+		h199 = 1.5,
 		--小英雄信使 ameteur
 		h201 = 1.2,
 		h202 = 1.2,
@@ -1679,6 +1912,7 @@ function DAC:InitGameMode()
 		h236 = 1.2, --嘟嘟鸟
 		h237 = 1.2,
 		h238 = 0.8,
+		h239 = 1.4,
 
 		--珍藏信使 pro
 		h301 = 1.3,
@@ -1889,6 +2123,7 @@ function InitHeros()
 
 				hero.onduty_hero = onduty_hero
 				hero.steam_id = steam_id
+				ShowCourierEffect(hero,1)
 
 				if user_info.is_crown == true then
 					hero.crown = true
@@ -2279,6 +2514,8 @@ function DAC:OnPlayerConnectFull(keys)
 					player_id = hero:GetPlayerID(),
 					hp = hero:GetHealth(),
 					hp_max = hero:GetMaxHealth(),
+					mp = hero:GetMana(),
+					level = hero:GetLevel(),
 				})
 			end)
 		end)
@@ -2296,6 +2533,14 @@ function DAC:OnPlayerConnectFull(keys)
 				gold = hero:GetMana(),
 				lose_streak = hero.lose_streak or 0,
 				win_streak = hero.win_streak or 0,
+			})
+			--同步ui血量
+			CustomGameEventManager:Send_ServerToAllClients("sync_hp",{
+				player_id = hero:GetPlayerID(),
+				hp = hero:GetHealth(),
+				hp_max = hero:GetMaxHealth(),
+				mp = hero:GetMana(),
+				level = hero:GetLevel(),
 			})
 		end)
 		Timers:CreateTimer(RandomFloat(0.1,0.5),function()
@@ -2322,12 +2567,16 @@ function DAC:OnPlayerConnectFull(keys)
 						player_id = i,
 						hp = h:GetHealth(),
 						hp_max = h:GetMaxHealth(),
+						mp = h:GetMana(),
+						level = h:GetLevel(),
 					})
 				else
 					CustomGameEventManager:Send_ServerToTeam(hero:GetTeam(),"sync_hp",{
 						player_id = i,
 						hp = 0,
 						hp_max = 100,
+						mp = h:GetMana(),
+						level = h:GetLevel(),
 					})
 				end
 			end
@@ -2625,6 +2874,10 @@ function DAC:OnSuggestLiuju(keys)
 	local player_id = keys.PlayerID
 	local hero = PlayerId2Hero(player_id)
 
+	if hero == nil then
+		return
+	end
+
 	if GameRules:GetGameModeEntity().battle_round > 3 then
 		return
 	end
@@ -2693,7 +2946,27 @@ end
 function RestoreARound(teamid)
 	ClearARound(teamid)
 
-	Timers:CreateTimer(RandomFloat(0.5,1),function()
+	--重置英雄身上的装备，使他们归属自己
+	-- local restore_items = {}
+	local hero = TeamId2Hero(teamid)
+	for slot=0,8 do
+		if hero:GetItemInSlot(slot)~= nil then
+			-- local name = hero:GetItemInSlot(slot):GetAbilityName()
+			-- table.insert(restore_items,name)
+			-- hero:RemoveItem(hero:GetItemInSlot(slot))
+			if hero:GetItemInSlot(slot):GetPurchaser():entindex() ~= hero:entindex() then
+				local name = hero:GetItemInSlot(slot):GetAbilityName()
+				hero:RemoveItem(hero:GetItemInSlot(slot))
+				hero:AddItemByName(name)
+			end
+			-- hero:GetItemInSlot(slot):SetPurchaser(hero)
+		end
+	end
+	-- for _,v in pairs(restore_items) do
+	-- 	
+	-- end
+	
+	Timers:CreateTimer(RandomFloat(0.5,1.5),function()
 		local prepare_riki = false
 		for _,v in pairs(GameRules:GetGameModeEntity().mychess[teamid]) do
 			local x = CreateUnitByName(v.chess,XY2Vector(v.x,v.y,teamid),true,nil,nil,teamid)
@@ -4216,6 +4489,8 @@ function SyncHP(hero)
 		player_id = hero:GetPlayerID(),
 		hp = hero:GetHealth(),
 		hp_max = hero:GetMaxHealth(),
+		mp = hero:GetMana(),
+		level = hero:GetLevel(),
 	})
 
 	if GameRules:GetGameModeEntity().START_TIME == nil then
@@ -4229,11 +4504,23 @@ function SyncHP(hero)
 		--保存最终阵容
 		local lineup = ''
 		local lineup_count = 0
+
+		--统计这个死亡的玩家都有哪些装备
+		local gg_items = {}
+
 		for _,v in pairs(GameRules:GetGameModeEntity().mychess[hero:GetTeam()]) do
 			if v ~= nil and v.chess ~= nil and lineup_count < hero:GetLevel() then 
 				lineup = lineup..v.chess..','
 				AddAChessToChessPool(v.chess)
 				lineup_count = lineup_count + 1
+
+				if v.lastitem ~= nil then
+					for _,i in pairs(v.lastitem) do
+						if i ~= nil then
+							table.insert(gg_items,i)
+						end
+					end
+				end
 			end
 		end
 
@@ -4246,10 +4533,45 @@ function SyncHP(hero)
 				if hero.hand_entities[i] ~= nil then
 					unitname = hero.hand_entities[i]:GetUnitName()
 					AddAChessToChessPool(unitname)
+
+					for slot=0,8 do
+						if hero.hand_entities[i]:GetItemInSlot(slot)~= nil then
+							local name = hero.hand_entities[i]:GetItemInSlot(slot):GetAbilityName()
+							table.insert(gg_items,name)
+						end
+					end								
 				end
 			end
 		end
 		SetStat(hero:GetPlayerID(), 'chess_lineup',lineup)
+
+		for slot=0,8 do
+			if hero:GetItemInSlot(slot)~= nil then
+				local name = hero:GetItemInSlot(slot):GetAbilityName()
+				table.insert(gg_items,name)
+			end
+		end	
+
+		--遗产
+		local gg_item_count = 0
+		for _,gg_item in pairs(gg_items) do
+			if RandomInt(1,100) > 50 then
+				gg_item_count = gg_item_count + 1
+				local newItem = CreateItem( gg_item, hero, hero )
+				local drop = CreateItemOnPositionForLaunch(hero:GetAbsOrigin(), newItem )
+
+				local gg_item_v = CenterVector(RandomInt(6,13)) + Vector(RandomInt(-768,768),RandomInt(-768,768),0)
+				-- local gg_item_v = Vector(RandomInt(-2800,2800),RandomInt(-2800,2800),0)
+				local gg_item_dis = (gg_item_v-hero:GetAbsOrigin()):Length2D()
+				local gg_item_t = gg_item_dis/1000
+				newItem:LaunchLootInitialHeight( false, 0, 400, gg_item_t, gg_item_v)
+			end
+		end
+		ShowCombat({
+			t = 'player_dead',
+			player = hero:GetPlayerID(),
+			num = gg_item_count,
+		})
 		
 		hero:ForceKill(false)
 		if GameRules:GetGameModeEntity().death_stack == nil then
@@ -4259,6 +4581,8 @@ function SyncHP(hero)
 				GameRules:GetGameModeEntity().death_stack = hero.steam_id..','..GameRules:GetGameModeEntity().death_stack
 			end
 		end
+
+		
 
 		--统计还有多少活着的玩家
 		local live_count = 0
@@ -4808,12 +5132,21 @@ function StartAPVPRound()
 				h.cloud_opp_name = chesses.owner
 			else
 				--打pvp敌人
+				
+				local g = GetMyGuestEnemyTeam(i)
+				--i = 我的teamid
+				--v = 我的主场对手的teamid
+				--g = 我的客场对手的teamid
+
 				local enemy_id = TeamId2Hero(v):GetPlayerID()
+				local guest_oppo_id = TeamId2Hero(g):GetPlayerID()
 
 				CustomGameEventManager:Send_ServerToTeam(i,"battle_info",{
 					key = GetClientKey(i),
 					type = "pvp",
 					text = enemy_id,
+					host_oppo_id = enemy_id,
+					guest_oppo_id = guest_oppo_id,
 					round = GameRules:GetGameModeEntity().battle_round,
 				})
 
@@ -4825,7 +5158,7 @@ function StartAPVPRound()
 	end
 	GameRules:GetGameModeEntity().battle_count = 0
 
-	--添加战斗技能和棋子AI（延时1秒）
+	--添加战斗技能和棋子AI（延时1.5秒）
 	Timers:CreateTimer(1.5,function()
 		for t = 6,13 do
 			for _,v in pairs(GameRules:GetGameModeEntity().to_be_destory_list[t]) do
@@ -5708,7 +6041,7 @@ function MirrorARound(teamid)
 					end
 				end
 			end
-			Timers:CreateTimer(0.8,function()
+			Timers:CreateTimer(0.9,function()
 				AddComboAbility(teamid)
 			end)
 		end
@@ -5716,7 +6049,7 @@ function MirrorARound(teamid)
 end
 
 function MirrorAChess(teamid,i,j,opp)
-	Timers:CreateTimer(RandomFloat(0.1,0.3),function()
+	Timers:CreateTimer(RandomFloat(0.1,0.7),function()
 		local x = CreateUnitByName(GameRules:GetGameModeEntity().mychess[teamid][i..'_'..j].chess,XY2Vector(9-j,9-i,opp),true,nil,nil,DOTA_TEAM_NEUTRALS)
 		MakeTiny(x)
 		MakeMars(x)
@@ -5920,27 +6253,33 @@ function ChessAI(u)
 						end
 					elseif GameRules:GetGameModeEntity().ability_behavior_list[a] == 2 then
 						--无目标
-						local newOrder = {
-					 		UnitIndex = u:entindex(), 
-					 		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
-					 		TargetIndex = nil, --Optional.  Only used when targeting units
-					 		AbilityIndex = u:FindAbilityByName(a):entindex(), --Optional.  Only used when casting abilities
-					 		Position = nil, --Optional.  Only used when targeting the ground
-					 		Queue = 0 --Optional.  Used for queueing up abilities
-					 	}
-						ExecuteOrderFromTable(newOrder)
-
-						if a == 'alchemist_chemical_rage' then
-							AcidSpray({
-								caster = u,
-								ability_level = u:FindAbilityByName(a):GetLevel(),
-							})
+						local unluckydog = nil
+						if a == 'tiny_touzhi' then
+							unluckydog = FindUnluckyDog190(u)
 						end
+						if unluckydog ~= nil or a ~= 'tiny_touzhi' then
+							local newOrder = {
+						 		UnitIndex = u:entindex(), 
+						 		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+						 		TargetIndex = nil, --Optional.  Only used when targeting units
+						 		AbilityIndex = u:FindAbilityByName(a):entindex(), --Optional.  Only used when casting abilities
+						 		Position = nil, --Optional.  Only used when targeting the ground
+						 		Queue = 0 --Optional.  Used for queueing up abilities
+						 	}
+							ExecuteOrderFromTable(newOrder)
 
-						return RandomFloat(0.5,2) + ai_delay
+							if a == 'alchemist_chemical_rage' then
+								AcidSpray({
+									caster = u,
+									ability_level = u:FindAbilityByName(a):GetLevel(),
+								})
+							end
+
+							return RandomFloat(0.5,2) + ai_delay
+						end
 					elseif GameRules:GetGameModeEntity().ability_behavior_list[a] == 4 then
 						--单位目标
-						local unluckydog = u
+						local unluckydog = u 
 						if unluckydog ~= nil then
 							local newOrder = {
 						 		UnitIndex = u:entindex(), 
@@ -6513,8 +6852,8 @@ function FindUnluckyDogRandom(u)
 	local try_count = 0 
 
 	while unluckydog == nil and try_count < 10000 do
-		local random = RandomInt(1,table.maxn(GameRules:GetGameModeEntity().to_be_destory_list))
-		local unit = GameRules:GetGameModeEntity().to_be_destory_list[random]
+		local random = RandomInt(1,table.maxn(GameRules:GetGameModeEntity().to_be_destory_list[team]))
+		local unit = GameRules:GetGameModeEntity().to_be_destory_list[team][random]
 		if unit ~= nil and unit.y_x and unit:IsNull() == false and unit:IsAlive()==true and unit.team_id ~= u.team_id and unit:IsInvisible() == false then
 			if unluckydog == nil then
 				unluckydog = unit
@@ -7379,6 +7718,8 @@ function ApplyDamageInRadius(keys)
 	local radius = keys.radius or 500
 	local damage_type = keys.damage_type or DAMAGE_TYPE_MAGICAL
 	local delay = keys.delay or 0
+	local stun_duration = keys.stun_duration or 0
+	local stun_partical = keys.stun_partical
 
 	Timers:CreateTimer(delay,function()
 		local unlucky_dogs = FindUnitsInRadiusByTeam({
@@ -7395,6 +7736,12 @@ function ApplyDamageInRadius(keys)
 					damage_type = damage_type,
 					damage = damage
 				})
+				if stun_duration > 0 then
+					u:AddNewModifier(u,nil,"modifier_stunned",{ duration = stun_duration })
+				end
+				if stun_partical ~= nil then
+					play_particle(stun_partical,PATTACH_ABSORIGIN_FOLLOW,u,3)
+				end
 			end
 		end 
 	end)
@@ -7747,6 +8094,14 @@ function SummonHero(keys)
 		lose_streak = caster.lose_streak or 0,
 		win_streak = caster.win_streak or 0,
 	})
+	--同步ui血量
+	CustomGameEventManager:Send_ServerToAllClients("sync_hp",{
+		player_id = caster:GetPlayerID(),
+		hp = caster:GetHealth(),
+		hp_max = caster:GetMaxHealth(),
+		mp = caster:GetMana(),
+		level = caster:GetLevel(),
+	})
 end
 
 function ExpBook(keys)
@@ -7766,6 +8121,14 @@ function ExpBook(keys)
 		gold = caster:GetMana(),
 		lose_streak = caster.lose_streak or 0,
 		win_streak = caster.win_streak or 0,
+	})
+	--同步ui血量
+	CustomGameEventManager:Send_ServerToAllClients("sync_hp",{
+		player_id = caster:GetPlayerID(),
+		hp = caster:GetHealth(),
+		hp_max = caster:GetMaxHealth(),
+		mp = caster:GetMana(),
+		level = caster:GetLevel(),
 	})
 end
 
@@ -7794,6 +8157,14 @@ function AddMana(unit, mana)
 		lose_streak = unit.lose_streak or 0,
 		win_streak = unit.win_streak or 0,
 	})
+	--同步ui血量
+	CustomGameEventManager:Send_ServerToAllClients("sync_hp",{
+		player_id = unit:GetPlayerID(),
+		hp = unit:GetHealth(),
+		hp_max = unit:GetMaxHealth(),
+		mp = unit:GetMana(),
+		level = unit:GetLevel(),
+	})
 end
 
 function CostMana(unit, mana)
@@ -7807,6 +8178,14 @@ function CostMana(unit, mana)
 		gold = unit:GetMana(),
 		lose_streak = unit.lose_streak or 0,
 		win_streak = unit.win_streak or 0,
+	})
+	--同步ui血量
+	CustomGameEventManager:Send_ServerToAllClients("sync_hp",{
+		player_id = unit:GetPlayerID(),
+		hp = unit:GetHealth(),
+		hp_max = unit:GetMaxHealth(),
+		mp = unit:GetMana(),
+		level = unit:GetLevel(),
 	})
 end
 
@@ -8030,8 +8409,7 @@ function ChessTechBomb(keys)
 	local x = Vector2X(p,at_team)
 
 	if (GameRules:GetGameModeEntity().unit[at_team][y..'_'..x] ~= nil) then
-		debug('炸药桶的位置不是空格子')
-		return
+		p = FindEmptyGridAtUnit(caster)
 	end
 
 	--创建一个炸弹
@@ -8363,18 +8741,7 @@ function AddWinStreak(team)
 		hero:SetModel(new_m)
 		AddAbilityAndSetLevel(hero,'courier_fly')
 
-		if hero.onduty_hero ~= nil and GameRules:GetGameModeEntity().courier_flyup_effect_list[hero.onduty_hero] ~= nil then
-			
-			--飞行特效（用于小虚空等特殊信使）
-			if hero.flyup_effect ~= nil then
-				ParticleManager:DestroyParticle(hero.flyup_effect,true)
-			end
-			local flyup_effect = GameRules:GetGameModeEntity().courier_flyup_effect_list[hero.onduty_hero]
-			hero.flyup_effect = PlayParticleOnUnitUntilDeath({
-				caster = hero,
-				p = flyup_effect,
-			})
-		end
+		ShowCourierEffect(hero,2)
 	end
 	hero:SetModelScale(sca)
 	if hero.win_streak == 5 or hero.win_streak == 8 or hero.win_streak == 10 then
@@ -8405,9 +8772,7 @@ function RemoveWinStreak(team)
 		hero:SetModel(hero.ori_model)
 		RemoveAbilityAndModifier(hero,'courier_fly')
 
-		if hero.flyup_effect ~= nil then
-			ParticleManager:DestroyParticle(hero.flyup_effect,true)
-		end
+		ShowCourierEffect(hero,1)
 		if hero.is_crown == true then
 			ShowCrown(hero,1)
 		end
@@ -8857,7 +9222,6 @@ function TinyTouzhi(keys)
 	local ability = keys.ability
 	local level = ability:GetLevel()
 	
-	
 	local radius = keys.radius or 200
 	local damage = keys.damage or 100
 	local stun = keys.stun or 2
@@ -8868,7 +9232,11 @@ function TinyTouzhi(keys)
 	end
 
 	local team_id = target.at_team_id or target.team_id
-	local v = FindFarthestEmptyGrid(target)
+	local v = FindFarthestCanAttackEnemyEmptyGrid(caster)
+	if v == nil or (v-target:GetAbsOrigin()):Length2D() < 400 then
+		v = FindFarthestEmptyGrid(target)
+	end
+
 	local yy = target.y
 	local xx = target.x
 
@@ -8879,12 +9247,14 @@ function TinyTouzhi(keys)
 	Timers:CreateTimer(stun_duration+0.1,function()
 		ApplyDamageInRadius({
 			caster = caster,
-			team = 2,
+			team = caster.team_id,
 			radius = radius,
 			role = 2,
 			position = target:GetAbsOrigin(),
 			damage = damage,
 			damage_type = DAMAGE_TYPE_PHYSICAL,
+			stun_duration = stun_duration+stun,
+			stun_partical = "particles/units/heroes/hero_tiny/tiny_toss_impact.vpcf",
 		})
 		play_particle("particles/units/heroes/hero_tiny/tiny_toss_impact.vpcf",PATTACH_ABSORIGIN_FOLLOW,target,3)
 		EmitSoundOn('Ability.TossImpact',target)
@@ -9043,6 +9413,10 @@ function DAC:OnChangeOndutyHero(keys)
 	hero.ori_model = onduty_hero_model
 	hero.is_changed_hero = true
 	hero.onduty_hero = onduty_hero
+	ShowCourierEffect(hero,1)
+
+	hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[onduty_hero] or 1
+	hero:SetModelScale(hero.init_model_scale)
 
 	--换特效
 	if hero.effect ~= nil then
@@ -9129,7 +9503,14 @@ function SendYingdiData(t,dur)
 	    insertdata["total"] = data.total
 	    insertdata["level"] = data.level
 	    insertdata["chess"] = GameRules:GetGameModeEntity().stat_info[user]['chess_lineup']
-	    table.insert(yingdi_data['players'],insertdata)
+	    insertdata["win_round"] = GameRules:GetGameModeEntity().stat_info[user]['win_round']
+	    insertdata["lose_round"] = GameRules:GetGameModeEntity().stat_info[user]['lose_round']
+	    insertdata["kills"] = GameRules:GetGameModeEntity().stat_info[user]['kills']
+	    insertdata["deaths"] = GameRules:GetGameModeEntity().stat_info[user]['deaths']
+	    insertdata["gold"] = GameRules:GetGameModeEntity().stat_info[user]['gold']
+	    insertdata["candy"] = GameRules:GetGameModeEntity().stat_info[user]['candy']
+	    insertdata["duration"] = GameRules:GetGameModeEntity().stat_info[user]['duration']
+	    table.insert(max_data['players'],insertdata)
 	end
 	SendHTTPPost(yingdi_url,yingdi_data)
 end
@@ -9152,7 +9533,14 @@ function SendPWData(t,dur)
 	    insertdata["total"] = data.total
 	    insertdata["level"] = data.level
 	    insertdata["chess"] = GameRules:GetGameModeEntity().stat_info[user]['chess_lineup']
-	    table.insert(pw_data['players'],insertdata)
+	    insertdata["win_round"] = GameRules:GetGameModeEntity().stat_info[user]['win_round']
+	    insertdata["lose_round"] = GameRules:GetGameModeEntity().stat_info[user]['lose_round']
+	    insertdata["kills"] = GameRules:GetGameModeEntity().stat_info[user]['kills']
+	    insertdata["deaths"] = GameRules:GetGameModeEntity().stat_info[user]['deaths']
+	    insertdata["gold"] = GameRules:GetGameModeEntity().stat_info[user]['gold']
+	    insertdata["candy"] = GameRules:GetGameModeEntity().stat_info[user]['candy']
+	    insertdata["duration"] = GameRules:GetGameModeEntity().stat_info[user]['duration']
+	    table.insert(max_data['players'],insertdata)
 	end
 	SendHTTPPost(pw_url,pw_data)
 end
@@ -9738,6 +10126,7 @@ function ZeusThunder(keys)
 					victim = v,
 					damage = math.floor(v:GetHealth()*damage_per/100 + damage),
 				})
+				thunder_count = thunder_count + 1
 			end
 		end
 	end
@@ -9898,5 +10287,44 @@ function ShowCrown(hero,crown_level)
 			p = "effect/crown/2.vpcf",
 			pos = PATTACH_OVERHEAD_FOLLOW,
 		})
+	end
+end
+
+function JoinTableString(t)
+	local str = ''
+	for _,v in pairs(t) do
+		str = str..v..','
+	end
+	return str
+end
+
+function ShowCourierEffect(hero,type)
+	if hero.flyup_effect ~= nil then
+		ParticleManager:DestroyParticle(hero.flyup_effect,true)
+	end
+	if hero.ground_effect ~= nil then
+		ParticleManager:DestroyParticle(hero.ground_effect,true)
+	end
+	if type == 1 then
+		--陆地特效
+		if hero.onduty_hero ~= nil and GameRules:GetGameModeEntity().courier_ground_effect_list[hero.onduty_hero] ~= nil then
+			--陆地特效
+			local ground_effect = GameRules:GetGameModeEntity().courier_ground_effect_list[hero.onduty_hero]
+			hero.ground_effect = PlayParticleOnUnitUntilDeath({
+				caster = hero,
+				p = ground_effect,
+			})
+		end
+	end
+	if type == 2 then
+		--飞行特效
+		if hero.onduty_hero ~= nil and GameRules:GetGameModeEntity().courier_flyup_effect_list[hero.onduty_hero] ~= nil then
+			--飞行特效
+			local flyup_effect = GameRules:GetGameModeEntity().courier_flyup_effect_list[hero.onduty_hero]
+			hero.flyup_effect = PlayParticleOnUnitUntilDeath({
+				caster = hero,
+				p = flyup_effect,
+			})
+		end
 	end
 end
