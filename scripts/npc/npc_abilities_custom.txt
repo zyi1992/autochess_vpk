@@ -633,6 +633,16 @@
 				"var_type"	"FIELD_FLOAT"
 				"damage_delay"	"0.25"
 			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"fiery_soul_duration"	"30"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"fiery_soul_attack_speed_bonus"	"40 60 80"
+			}
 		}
 	}
 
@@ -14802,6 +14812,47 @@
 					}
 				}
 				"Delay"	"0.01"
+			}
+		}
+	}
+
+	"give_fiery_soul"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"lina_fiery_soul"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_lina/lina_fiery_soul.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"Duration"	"30"
+				"ModifierName"	"modifier_give_fiery_soul"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_give_fiery_soul"
+			{
+				"TextureName"	"lina_fiery_soul"
+				"EffectName"	"particles/units/heroes/hero_lina/lina_fiery_soul.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"40 60 80"
+				}
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"IsBuff"	"1"
 			}
 		}
 	}

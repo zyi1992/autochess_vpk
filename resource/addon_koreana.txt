@@ -1133,7 +1133,6 @@
 		"DOTA_Tooltip_ability_doom_bringer_doom"	"파멸"
 		"DOTA_Tooltip_ability_doom_bringer_doom_Description"	"적 체스 유닛에게 저주를 걸어 지속 피해를 주는 동시에 주문과 아이템을 사용하지 못하게 합니다."
 		"DOTA_Tooltip_ability_lina_laguna_blade"	"라구나 블레이드"
-		"DOTA_Tooltip_ability_lina_laguna_blade_Description"	"단일 적을 대상으로 번갯불을 발사해 커다란 피해를 줍니다."
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance"	"열정"
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_Description"	"같은 대상을 반복 공격할 때마다 공격 속도가 증가합니다. 대상을 변경하면 효과의 중첩 수는 초기화 됩니다."
 		"DOTA_Tooltip_ability_troll_warlord_battle_trance_Lore"	"처음에 성공 못 하면, 치고 또 치십시오."
@@ -1478,5 +1477,12 @@
 		"DOTA_Tooltip_ability_is_assassin_Lore"	"<font color=\"#bbbbbb\">직업 특성: 기습</font>\n아군 필드에 서로 다른 암살자 체스말 (N)개가 존재할 때 발동합니다.\n\n(3) 암살자: 모든 아군 암살자들이 15%의 확률로 3.5배 데미지를 줍니다.\n(6) 암살자: 모든 아군 암살자들이 15%의 확률로 4.5배 데미지를 줍니다.\n"
 		"DOTA_Tooltip_modifier_is_assassin_buff_plus_Description"	"공격시 15%% 확률로 4.5배 데미지"
 		"text_combat_event_player_dead"	"{s:player_name} 님이 전사하셨습니다! 총 {d:int_value} 개의 아이템이 유물로 전장에 뿌려집니다!"
+		
+		"DOTA_Tooltip_ability_lina_laguna_blade_Description"	"단일 적을 대상으로 번갯불을 발사해 커다란 피해를 주고 리나 자신은 스킬을 시전할 때마다 불타는 영혼 효과로 인하여 공격속도가 빨라집니다(중첩가능)."
+		"DOTA_Tooltip_ability_lina_laguna_blade_fiery_soul_duration"	"불타는 영혼 지속시간"
+		"DOTA_Tooltip_ability_lina_laguna_blade_fiery_soul_attack_speed_bonus"	"공격 속도 보너스"
+		"DOTA_Tooltip_modifier_give_fiery_soul"	"불타는 영혼"
+		"DOTA_Tooltip_modifier_give_fiery_soul_Description"	"공격속도 증가"
+		"DOTA_Tooltip_ability_veno_ward_Description"	"마법 면역의 역병 와드 하나를 소환하여 적을 공격하고 중독된 적은 공격 속도가 0.3 감소합니다."
 	}
 }

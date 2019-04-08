@@ -3287,35 +3287,35 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8341"
+					"ItemDef"	"8632"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9884"
+					"ItemDef"	"12419"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9885"
+					"ItemDef"	"251"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9886"
+					"ItemDef"	"9908"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6915"
+					"ItemDef"	"9909"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"251"
+					"ItemDef"	"5507"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9906"
+					"ItemDef"	"9904"
 				}
 				"Wearable8"
 				{
-					"ItemDef"	"9794"
+					"ItemDef"	"9907"
 				}
 			}
 		}
@@ -3667,27 +3667,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7861"
+					"ItemDef"	"4469"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7862"
+					"ItemDef"	"8009"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7863"
+					"ItemDef"	"5096"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7864"
+					"ItemDef"	"564"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8009"
+					"ItemDef"	"4452"
 				}
 				"Wearable6"
 				{
 					"ItemDef"	"7866"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"7864"
 				}
 			}
 		}
@@ -3911,7 +3915,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"4707"
+					"ItemDef"	"6951"
 				}
 				"Wearable2"
 				{
@@ -3927,11 +3931,11 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"602"
+					"ItemDef"	"4711"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"4711"
+					"ItemDef"	"7380"
 				}
 			}
 		}
@@ -4035,27 +4039,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8267"
+					"ItemDef"	"9374"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7551"
+					"ItemDef"	"9679"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8071"
+					"ItemDef"	"9384"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7553"
+					"ItemDef"	"9382"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"602"
+					"ItemDef"	"12328"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7554"
+					"ItemDef"	"7380"
 				}
 			}
 		}
@@ -8187,7 +8191,7 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8789"
+					"ItemDef"	"7506"
 				}
 				"Wearable5"
 				{
@@ -8535,23 +8539,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8289"
+					"ItemDef"	"7740"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8297"
+					"ItemDef"	"7792"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7740"
+					"ItemDef"	"7790"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5173"
+					"ItemDef"	"7878"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8309"
+					"ItemDef"	"8739"
 				}
 			}
 		}
@@ -17015,31 +17019,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6873"
+					"ItemDef"	"9741"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7649"
+					"ItemDef"	"6888"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7648"
+					"ItemDef"	"6822"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9741"
+					"ItemDef"	"6887"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7646"
+					"ItemDef"	"6873"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"6888"
+					"ItemDef"	"6821"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"7645"
+					"ItemDef"	"6947"
 				}
 			}
 		}
@@ -17623,19 +17627,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7867"
+					"ItemDef"	"9677"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7873"
+					"ItemDef"	"12561"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7875"
+					"ItemDef"	"7867"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9677"
+					"ItemDef"	"7875"
 				}
 			}
 		}
@@ -17739,19 +17743,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9595"
+					"ItemDef"	"12559"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9596"
+					"ItemDef"	"7818"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7818"
+					"ItemDef"	"12562"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9676"
+					"ItemDef"	"12560"
 				}
 			}
 		}
@@ -18931,19 +18935,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8278"
+					"ItemDef"	"8331"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8280"
+					"ItemDef"	"9318"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8287"
+					"ItemDef"	"5302"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9318"
+					"ItemDef"	"8329"
 				}
 				"Wearable5"
 				{
@@ -19687,27 +19691,27 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"4449"
+					"ItemDef"	"9084"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4450"
+					"ItemDef"	"8131"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8131"
+					"ItemDef"	"9380"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"4456"
+					"ItemDef"	"4466"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"4466"
+					"ItemDef"	"525"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"525"
+					"ItemDef"	"6460"
 				}
 			}
 		}
@@ -22723,35 +22727,39 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6694"
+					"ItemDef"	"8632"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12741"
+					"ItemDef"	"8566"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12742"
+					"ItemDef"	"6694"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12739"
+					"ItemDef"	"8802"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"505"
+					"ItemDef"	"9257"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12738"
+					"ItemDef"	"505"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"12743"
+					"ItemDef"	"568"
 				}
 				"Wearable8"
 				{
-					"ItemDef"	"9260"
+					"ItemDef"	"12743"
+				}
+				"Wearable9"
+				{
+					"ItemDef"	"6047"
 				}
 			}
 		}
@@ -24250,7 +24258,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"200"
+		"StatusHealth"	"250"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -24303,7 +24311,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"300"
+		"StatusHealth"	"400"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -24356,7 +24364,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"400"
+		"StatusHealth"	"550"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
