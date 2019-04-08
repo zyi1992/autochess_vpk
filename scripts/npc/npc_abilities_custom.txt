@@ -8267,7 +8267,6 @@
 		"precache"
 		{
 			"particle"	"effect/shushi/bloodseeker/warlock_shadow_word_debuff_j.vpcf"
-			"particle"	"particles/generic_gameplay/generic_lifesteal.vpcf"
 		}
 		"Modifiers"
 		{
@@ -8278,23 +8277,6 @@
 				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
-				"OnAttackLanded"
-				{
-					"AttachEffect"
-					{
-						"Target"	"ATTACKER"
-						"EffectAttachType"	"follow_overhead"
-						"EffectName"	"particles/generic_gameplay/generic_lifesteal.vpcf"
-					}
-					"RunScript"
-					{
-						"Target"	"ATTACKER"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"AttackHeal"
-						"damage"	"%attack_damage"
-						"per"	"0.20"
-					}
-				}
 				"Passive"	"1"
 				"EffectName"	"effect/shushi/bloodseeker/warlock_shadow_word_debuff_j.vpcf"
 				"EffectAttachType"	"follow_origin"
@@ -8312,7 +8294,6 @@
 		"precache"
 		{
 			"particle"	"effect/shushi/bloodseeker/warlock_shadow_word_debuff_j.vpcf"
-			"particle"	"particles/generic_gameplay/generic_lifesteal.vpcf"
 		}
 		"Modifiers"
 		{
@@ -8323,23 +8304,6 @@
 				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
-				"OnAttackLanded"
-				{
-					"AttachEffect"
-					{
-						"Target"	"ATTACKER"
-						"EffectAttachType"	"follow_overhead"
-						"EffectName"	"particles/generic_gameplay/generic_lifesteal.vpcf"
-					}
-					"RunScript"
-					{
-						"Target"	"ATTACKER"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"AttackHeal"
-						"damage"	"%attack_damage"
-						"per"	"0.30"
-					}
-				}
 				"Passive"	"1"
 				"EffectName"	"effect/shushi/bloodseeker/warlock_shadow_word_debuff_j.vpcf"
 				"EffectAttachType"	"follow_origin"

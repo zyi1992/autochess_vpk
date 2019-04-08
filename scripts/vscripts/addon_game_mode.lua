@@ -1418,7 +1418,7 @@ function DAC:InitGameMode()
 		is_warrior11 = { ability = 'is_warrior_buff_plus_plus', condition = 9, type = 1 },
 		is_mage = { ability = 'is_mage_buff', condition = 3, type = 3 },
 		is_mage1 = { ability = 'is_mage_buff_plus', condition = 6, type = 3 },
-		is_warlock = { ability = 'is_warlock_buff', condition = 3, type = 2 },
+		is_warlock = { ability = 'is_warlock_buff', condition = 3, type = 1 },
 		is_warlock1 = { ability = 'is_warlock_buff_plus', condition = 6, type = 2 },
 		is_mech = { ability = 'is_mech_buff', condition = 2, type = 1 },
 		is_mech1 = { ability = 'is_mech_buff_plus', condition = 4, type = 1 },
@@ -4090,8 +4090,9 @@ function RemoveChess(keys)
 	if keys.is_sell == nil or keys.is_sell == true then
 		play_particle("particles/units/heroes/hero_shadowshaman/shadowshaman_voodoo.vpcf",PATTACH_ABSORIGIN_FOLLOW,target,3)
 		EmitSoundOn("Hero_Lion.Voodoo",caster)
-	end
 
+		AddAChessToChessPool(target:GetUnitName())
+	end
 
 	local is_removing_hand = false
 	if target.hand_index == nil then
@@ -4119,8 +4120,6 @@ function RemoveChess(keys)
 	end
 	FindRikiAndToggle(target)
 	CancelPickChess(caster)
-
-	AddAChessToChessPool(target:GetUnitName())
 
 	local children = target:GetChildren()
     for k,child in pairs(children) do
@@ -4522,6 +4521,11 @@ function SyncHP(hero)
 							Timers:CreateTimer(RandomFloat(2,3),function()
 								SendPWData(t,dur)
 							end)
+							if t.is_repost == true then
+								Timers:CreateTimer(RandomFloat(3,4),function()
+									SendRepost(t,dur)
+								end)
+							end
 						else
 							prt('POST GAME ERROR : '..t.err)
 							PostGame()
@@ -5920,7 +5924,7 @@ function MirrorARound(teamid)
 					end
 				end
 			end
-			Timers:CreateTimer(0.9,function()
+			Timers:CreateTimer(1.1,function()
 				AddComboAbility(teamid)
 			end)
 		end
@@ -7765,6 +7769,25 @@ function show_damage(keys)
 		attacker:SetMana(attacker:GetMana()+mana_get)
 	end
 
+	--术士吸血
+	if attacker ~= nil then
+		if attacker:FindModifierByName("modifier_is_warlock_buff") ~= nil then
+			AttackHeal({
+				attacker = attacker,
+				damage = damage,
+				per = 0.2,
+			})
+			play_particle("particles/generic_gameplay/generic_lifesteal.vpcf",PATTACH_OVERHEAD_FOLLOW,attacker,2)
+		end
+		if attacker:FindModifierByName("modifier_is_warlock_buff_plus") ~= nil then
+			AttackHeal({
+				attacker = attacker,
+				damage = damage,
+				per = 0.2,
+			})
+		end
+	end
+
 	if GameRules:GetGameModeEntity().show_damage == true then
 		if attacker:GetTeam() == 4 then
 			AMHC:CreateNumberEffect(caster,damage,2,AMHC.MSG_DAMAGE,"red",9)
@@ -9439,6 +9462,37 @@ function SendMaxData(t,dur)
 	    key=GetDedicatedServerKey('max'),
 	    key2=GetDedicatedServerKey('heihe'),
 	    key3=GetDedicatedServerKeyV2('heihe'),
+	    version="2.0",
+	    match_id=t.end_time,
+	    end_time=t.end_time,
+	    duration=dur,
+	    players={},
+	    chess_detail=GameRules:GetGameModeEntity().upload_detail_stat,
+	}
+
+	for user,data in pairs(t.mmr_info) do
+	    local insertdata = {}
+	    insertdata["account_id"] = user
+	    insertdata["rank"] = data.rank
+	    insertdata["total"] = data.total
+	    insertdata["level"] = data.level
+	    insertdata["chess"] = GameRules:GetGameModeEntity().stat_info[user]['chess_lineup']
+	    insertdata["win_round"] = GameRules:GetGameModeEntity().stat_info[user]['win_round']
+	    insertdata["lose_round"] = GameRules:GetGameModeEntity().stat_info[user]['lose_round']
+	    insertdata["kills"] = GameRules:GetGameModeEntity().stat_info[user]['kills']
+	    insertdata["deaths"] = GameRules:GetGameModeEntity().stat_info[user]['deaths']
+	    insertdata["gold"] = GameRules:GetGameModeEntity().stat_info[user]['gold']
+	    insertdata["candy"] = GameRules:GetGameModeEntity().stat_info[user]['candy']
+	    insertdata["duration"] = GameRules:GetGameModeEntity().stat_info[user]['duration']
+	    table.insert(max_data['players'],insertdata)
+	end
+	SendHTTPPost(max_url,max_data)
+end
+
+function SendRepost(t,dur)
+	local max_url = "http://repost.ppbizon.com/postdata"
+	local max_data = {
+	    key=GetDedicatedServerKeyV2('repost'),
 	    version="2.0",
 	    match_id=t.end_time,
 	    end_time=t.end_time,
