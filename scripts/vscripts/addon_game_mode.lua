@@ -1418,7 +1418,7 @@ function DAC:InitGameMode()
 		is_warrior11 = { ability = 'is_warrior_buff_plus_plus', condition = 9, type = 1 },
 		is_mage = { ability = 'is_mage_buff', condition = 3, type = 3 },
 		is_mage1 = { ability = 'is_mage_buff_plus', condition = 6, type = 3 },
-		is_warlock = { ability = 'is_warlock_buff', condition = 3, type = 1 },
+		is_warlock = { ability = 'is_warlock_buff', condition = 3, type = 2 },
 		is_warlock1 = { ability = 'is_warlock_buff_plus', condition = 6, type = 2 },
 		is_mech = { ability = 'is_mech_buff', condition = 2, type = 1 },
 		is_mech1 = { ability = 'is_mech_buff_plus', condition = 4, type = 1 },
@@ -4509,7 +4509,7 @@ function SyncHP(hero)
 							
 							--展示结束面板，结束游戏！
 							PostGame()
-							Timers:CreateTimer(3,function()
+							Timers:CreateTimer(5,function()
 								GameRules:SetGameWinner(last_hero:GetTeam())
 							end)
 							Timers:CreateTimer(RandomFloat(0,1),function()
@@ -4544,7 +4544,7 @@ function SyncHP(hero)
 					end)
 				else
 					PostGame()
-					Timers:CreateTimer(3,function()
+					Timers:CreateTimer(5,function()
 						GameRules:SetGameWinner(last_hero:GetTeam())
 						
 					end)
@@ -7775,7 +7775,7 @@ function show_damage(keys)
 			AttackHeal({
 				attacker = attacker,
 				damage = damage,
-				per = 0.2,
+				per = 0.1,
 			})
 			play_particle("particles/generic_gameplay/generic_lifesteal.vpcf",PATTACH_OVERHEAD_FOLLOW,attacker,2)
 		end
@@ -7829,12 +7829,14 @@ function RenJia(keys)
 	if damage <= 0 then
 		return
 	end
-    ApplyDamage({
-    	victim=attacker,
-    	attacker=caster,
-    	damage_type=DAMAGE_TYPE_PURE,
-    	damage=damage
-    })
+	Timers:CreateTimer(0.05,function()
+		ApplyDamage({
+	    	victim=attacker,
+	    	attacker=caster,
+	    	damage_type=DAMAGE_TYPE_PURE,
+	    	damage=damage
+	    })
+	end)
 end
 --电锤技能
 function DianChui(event)
