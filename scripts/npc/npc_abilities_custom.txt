@@ -8218,7 +8218,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"40"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"35"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_siren/naga_siren_song_debuff_b.vpcf"
@@ -8247,7 +8247,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"35"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_siren/naga_siren_song_debuff_b.vpcf"
@@ -8707,7 +8707,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"200"
+						"hp"	"250"
 					}
 				}
 			}
@@ -8748,7 +8748,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"300"
+						"hp"	"350"
 					}
 				}
 			}
@@ -8789,7 +8789,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"400"
+						"hp"	"450"
 					}
 				}
 			}
@@ -9310,7 +9310,7 @@
 		"precache"
 		{
 			"particle"	"effect/qishi/1.vpcf"
-			"particle"	"particles/econ/items/omniknight/omni_ti8_head/omniknight_repel_buff_ti8.vpcf"
+			"particle"	"effect/knight/1.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9352,10 +9352,19 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
 				}
 				"States"	{}
-				"EffectName"	"particles/econ/items/omniknight/omni_ti8_head/omniknight_repel_buff_ti8.vpcf"
+				"EffectName"	"effect/knight/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"IsHidden"	"1"
 				"IsBuff"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"OnKnightBuffCreate"
+					}
+				}
 			}
 		}
 	}
@@ -9370,7 +9379,7 @@
 		"precache"
 		{
 			"particle"	"effect/qishi/1.vpcf"
-			"particle"	"particles/econ/items/omniknight/omni_ti8_head/omniknight_repel_buff_ti8.vpcf"
+			"particle"	"effect/knight/1.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9412,10 +9421,19 @@
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"75"
 				}
 				"States"	{}
-				"EffectName"	"particles/econ/items/omniknight/omni_ti8_head/omniknight_repel_buff_ti8.vpcf"
+				"EffectName"	"effect/knight/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"IsHidden"	"1"
 				"IsBuff"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"OnKnightBuffCreate"
+					}
+				}
 			}
 		}
 	}
@@ -9430,7 +9448,7 @@
 		"precache"
 		{
 			"particle"	"effect/qishi/1.vpcf"
-			"particle"	"particles/econ/items/omniknight/omni_ti8_head/omniknight_repel_buff_ti8.vpcf"
+			"particle"	"effect/knight/1.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9472,10 +9490,19 @@
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"75"
 				}
 				"States"	{}
-				"EffectName"	"particles/econ/items/omniknight/omni_ti8_head/omniknight_repel_buff_ti8.vpcf"
+				"EffectName"	"effect/knight/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"IsHidden"	"1"
 				"IsBuff"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"OnKnightBuffCreate"
+					}
+				}
 			}
 		}
 	}
@@ -10011,6 +10038,15 @@
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilityCastRange"	"9999"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"TriggerHex"
+			}
+		}
 		"AbilitySpecial"
 		{
 			"01"
@@ -11580,6 +11616,12 @@
 				"Target"	"CASTER"
 				"EffectName"	"Hero_Lion.Voodoo"
 			}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"TriggerHex"
+			}
 		}
 	}
 
@@ -11610,6 +11652,12 @@
 			{
 				"Target"	"TARGET"
 				"EffectName"	"Hero_Lion.Voodoo"
+			}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"TriggerHex"
 			}
 		}
 	}
@@ -12644,14 +12692,14 @@
 		"HotKeyOverride"	"L"
 		"precache"
 		{
-			"particle"	"sm/bingxueecon/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
+			"particle"	"effect/snow2012/1econ/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
 		}
 		"Modifiers"
 		{
 			"modifier_texiao_star"
 			{
 				"Passive"	"1"
-				"EffectName"	"sm/bingxueecon/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
+				"EffectName"	"effect/snow2012/1econ/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
 				"EffectAttachType"	"attach_origin"
 				"IsHidden"	"1"
 			}
@@ -13414,6 +13462,28 @@
 				"Passive"	"1"
 				"EffectName"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
 				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e322"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"HotKeyOverride"	"L"
+		"precache"
+		{
+			"particle"	"effect/gewugu/flyup/ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/gewugu/flyup/ambient.vpcf"
+				"EffectAttachType"	"follow_origin"
 				"IsHidden"	"1"
 			}
 		}

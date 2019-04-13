@@ -2437,31 +2437,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5396"
+					"ItemDef"	"8729"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"4769"
+					"ItemDef"	"8733"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8534"
+					"ItemDef"	"5395"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8543"
+					"ItemDef"	"8731"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8535"
+					"ItemDef"	"5396"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"5395"
+					"ItemDef"	"8730"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"8536"
+					"ItemDef"	"5636"
 				}
 			}
 		}
@@ -2563,31 +2563,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7277"
+					"ItemDef"	"8729"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"5636"
+					"ItemDef"	"8733"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9729"
+					"ItemDef"	"7276"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9723"
+					"ItemDef"	"8731"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9726"
+					"ItemDef"	"7277"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7276"
+					"ItemDef"	"9457"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9725"
+					"ItemDef"	"8732"
 				}
 			}
 		}
@@ -7222,7 +7222,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"70"
-		"AttackDamageMax"	"110"
+		"AttackDamageMax"	"100"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -7342,7 +7342,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"140"
-		"AttackDamageMax"	"220"
+		"AttackDamageMax"	"200"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -7462,7 +7462,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"280"
-		"AttackDamageMax"	"440"
+		"AttackDamageMax"	"400"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -8059,19 +8059,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8980"
+					"ItemDef"	"12663"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"4922"
+					"ItemDef"	"12664"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4923"
+					"ItemDef"	"12662"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"4924"
+					"ItemDef"	"12661"
 				}
 				"Wearable5"
 				{
@@ -8659,23 +8659,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7789"
+					"ItemDef"	"7740"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7790"
+					"ItemDef"	"7947"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7791"
+					"ItemDef"	"5337"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7792"
+					"ItemDef"	"7878"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7793"
+					"ItemDef"	"7950"
 				}
 			}
 		}
@@ -8779,23 +8779,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7789"
+					"ItemDef"	"7740"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7790"
+					"ItemDef"	"7947"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7791"
+					"ItemDef"	"5337"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7792"
+					"ItemDef"	"7878"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7793"
+					"ItemDef"	"7950"
 				}
 			}
 		}
@@ -14558,6 +14558,7 @@
 		"SoundSet"	"Hero_DragonKnight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"ProjectileSpeed"	"800"
 	}
 
 	// 4
@@ -14647,31 +14648,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7416"
+					"ItemDef"	"8963"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7417"
+					"ItemDef"	"8974"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7418"
+					"ItemDef"	"8975"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7419"
+					"ItemDef"	"8978"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7420"
+					"ItemDef"	"7671"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7421"
+					"ItemDef"	"8976"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9644"
+					"ItemDef"	"8977"
 				}
 			}
 		}
@@ -14686,6 +14687,7 @@
 		"SoundSet"	"Hero_DragonKnight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"ProjectileSpeed"	"800"
 	}
 
 	// 4
@@ -14775,31 +14777,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6787"
+					"ItemDef"	"8799"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"6788"
+					"ItemDef"	"7419"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"6789"
+					"ItemDef"	"7438"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"6790"
+					"ItemDef"	"9135"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6791"
+					"ItemDef"	"7671"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"6792"
+					"ItemDef"	"9134"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"7671"
+					"ItemDef"	"6925"
 				}
 			}
 		}
@@ -14814,6 +14816,7 @@
 		"SoundSet"	"Hero_DragonKnight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"ProjectileSpeed"	"800"
 	}
 
 	// 4
@@ -16111,35 +16114,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8871"
+					"ItemDef"	"8866"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8870"
+					"ItemDef"	"8869"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8869"
+					"ItemDef"	"8871"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8866"
+					"ItemDef"	"8865"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8865"
+					"ItemDef"	"4764"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8864"
+					"ItemDef"	"8870"
 				}
 				"Wearable7"
 				{
 					"ItemDef"	"8863"
-				}
-				"Wearable8"
-				{
-					"ItemDef"	"5105"
 				}
 			}
 		}
@@ -16247,31 +16246,31 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12879"
+					"ItemDef"	"12886"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12880"
+					"ItemDef"	"12884"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12882"
+					"ItemDef"	"12880"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12883"
+					"ItemDef"	"12882"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12884"
+					"ItemDef"	"4764"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"12885"
+					"ItemDef"	"12879"
 				}
 				"Wearable8"
 				{
-					"ItemDef"	"12886"
+					"ItemDef"	"12883"
 				}
 			}
 		}

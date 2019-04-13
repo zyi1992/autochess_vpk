@@ -1509,6 +1509,6 @@
                 "DOTA_Tooltip_modifier_show_combo_is_assassin_Description"        "このクラスの異なる駒を(N)個配置している場合に発動します。<br>(3) アサシン：味方のアサシンが通常攻撃時に15%%の確率で3.5倍ダメージのクリティカル攻撃を行います。<br>(6) アサシン：味方のアサシンが通常攻撃時に15%%の確率で4.5倍ダメージのクリティカル攻撃を行います。"
                 "DOTA_Tooltip_ability_is_assassin_Lore"        "<font color=\"#bbbbbb\">クラススキル：会心の一撃</font>\nこのクラスの異なる駒を(N)個配置している場合に発動します。\n\n(3) アサシン：味方のアサシンが通常攻撃時に15%%の確率で3.5倍ダメージのクリティカル攻撃を行います。\n(6) アサシン：味方のアサシンが通常攻撃時に15%%の確率で4.5倍ダメージのクリティカル攻撃を行います。"
                 "DOTA_Tooltip_modifier_is_assassin_buff_plus_Description"        "通常攻撃時に15%%の確率で4.5倍ダメージのクリティカル攻撃を行う。"
-                "脱落者が出ています。"        "{s:player_name}は無念、敗退しました。{d:int_value}個のアイテムが島中へと飛び散って行きます！"
+                "text_combat_event_player_dead"        "{s:player_name}は無念、敗退しました。{d:int_value}個のアイテムが島中へと飛び散って行きます！"
         }
 }
