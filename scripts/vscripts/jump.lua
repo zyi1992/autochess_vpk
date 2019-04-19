@@ -1,5 +1,7 @@
 modifier_jump = class({})
 
+animation = ACT_DOTA_FLAIL
+
 function modifier_jump:IsStunDebuff()
     return true
 end
@@ -38,7 +40,6 @@ function modifier_jump:OnCreated(kv)
         EmitSoundOn(self.sound, self:GetParent())
 
         self.animation = kv.animation or ACT_DOTA_FLAIL
-
     end
 end
 
@@ -70,7 +71,7 @@ function modifier_jump:CheckState()
 end
 
 function modifier_jump:GetOverrideAnimation()
-    return self.animation or ACT_DOTA_FLAIL
+    return animation or ACT_DOTA_FLAIL
 end
 
 function modifier_jump:UpdateHorizontalMotion(me, dt)
@@ -93,9 +94,11 @@ end
 
 function modifier_jump:UpdateVerticalMotion(me, dt)
     if IsServer() then
-        if self.flDistance > 200 then
+        if self.flDistance > 300 then
             local z = math.sin(self.leap_traveled/self.flDistance*3.1415926)*2*self.flDistance/3.1415926
             me:SetAbsOrigin(GetGroundPosition(me:GetAbsOrigin(), me) + Vector(0,0,z/2))
+        -- else
+        --     self.animation = ACT_DOTA_RUN
         end
     end
 end

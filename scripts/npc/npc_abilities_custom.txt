@@ -11925,7 +11925,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"5"
+		"AbilityCooldown"	"5 4 3"
 		"AbilityManaCost"	"100"
 		"OnSpellStart"
 		{

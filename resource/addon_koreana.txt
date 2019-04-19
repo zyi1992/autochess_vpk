@@ -587,7 +587,6 @@
 		"tips_icon-list_title"	"유닛 리스트"
 		"chesslist_title"	"유닛 리스트(57)"
 		"tips_icon-ranking_title"	"랭킹"
-		"ranking_title"	"랭킹"
 		"tips_title_image_refresh"	"다시 섞기"
 		"tips_image_refresh"	"플레이어 레벨에 따른 다섯개의 체스말을 다시 한번 섞어서 선택할 수 있게 합니다."
 		"player_image"	"플레이어 상대"
@@ -1486,5 +1485,8 @@
 		"DOTA_Tooltip_ability_is_knight_Note0"	"신성 보호는 3초마다 발동합니다."
 		"DOTA_Tooltip_ability_is_knight_Note1"	"변이 상태의 기사는 신성 보호를 시전할 수 없습니다."
 		"e322"		"계란 후라이"
+		
+		"ranking_title"	"랭킹 - 비밀의 시즌"
+		"ranking_desc"	"● 다다섬체스룸의 정식 시즌 기간은 2개월입니다.시즌중에는 랭킹게임을 통해 자신의 솜씨에 걸맞은 티어를 획득할 수 있고 온라인 대회에 참가하는 방식으로 더 많은 명예와 보상을 취득할 수 있습니다!<br>● 체스룸은 매 시즌의 마감일에는 정검시간을 가지고 해당 시즌중 멋진 모습을 보여주었던 플레이어들한테 티어별로 시즌 보상을 지급합니다! <br><br><font color='#bbbbbb'>S0비밀의 시즌</font>: <font color='#ffffff'>2019-01-01 ~ 2019-04-30</font><br><font color='#ff8888'>S1크랩의 시즌</font>: <font color='#ffffff'>2019-05-01 ~ 2019-06-30</font>"
 	}
 }

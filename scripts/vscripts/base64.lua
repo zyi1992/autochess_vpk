@@ -1,91 +1,124 @@
--- Base64-encoding
--- Sourced from http://en.wikipedia.org/wiki/Base64
+local base64 = {}
 
-local __author__ = 'Daniel Lindsley'
-local __version__ = 'scm-1'
-local __license__ = 'BSD'
-
-
-local index_table = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-
-
-function to_binary(integer)
-    local remaining = tonumber(integer)
-    local bin_bits = ''
-
-    for i = 7, 0, -1 do
-        local current_power = 2 ^ i
-
-        if remaining >= current_power then
-            bin_bits = bin_bits .. '1'
-            remaining = remaining - current_power
-        else
-            bin_bits = bin_bits .. '0'
-        end
-    end
-
-    return bin_bits
-end
-
-function from_binary(bin_bits)
-    return tonumber(bin_bits, 2)
+local extract = _G.bit32 and _G.bit32.extract
+if not extract then
+	if _G.bit then
+		local shl, shr, band = _G.bit.lshift, _G.bit.rshift, _G.bit.band
+		extract = function( v, from, width )
+			return band( shr( v, from ), shl( 1, width ) - 1 )
+		end
+	elseif _G._VERSION >= "Lua 5.3" then
+		extract = load[[return function( v, from, width )
+			return ( v >> from ) & ((1 << width) - 1)
+		end]]()
+	else
+		extract = function( v, from, width )
+			local w = 0
+			local flag = 2^from
+			for i = 0, width-1 do
+				local flag2 = flag + flag
+				if v % flag2 >= flag then
+					w = w + 2^i
+				end
+				flag = flag2
+			end
+			return w
+		end
+	end
 end
 
 
-function to_base64(to_encode)
-    local bit_pattern = ''
-    local encoded = ''
-    local trailing = ''
-
-    for i = 1, string.len(to_encode) do
-        bit_pattern = bit_pattern .. to_binary(string.byte(string.sub(to_encode, i, i)))
-    end
-
-    -- Check the number of bytes. If it's not evenly divisible by three,
-    -- zero-pad the ending & append on the correct number of ``=``s.
-    if string.len(bit_pattern) % 3 == 2 then
-        trailing = '=='
-        bit_pattern = bit_pattern .. '0000000000000000'
-    elseif string.len(bit_pattern) % 3 == 1 then
-        trailing = '='
-        bit_pattern = bit_pattern .. '00000000'
-    end
-
-    for i = 1, string.len(bit_pattern), 6 do
-        local byte = string.sub(bit_pattern, i, i+5)
-        local offset = tonumber(from_binary(byte))
-        encoded = encoded .. string.sub(index_table, offset+1, offset+1)
-    end
-
-    return string.sub(encoded, 1, -1 - string.len(trailing)) .. trailing
+function base64.makeencoder( s62, s63, spad )
+	local encoder = {}
+	for b64code, char in pairs{[0]='A','B','C','D','E','F','G','H','I','J',
+		'K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y',
+		'Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n',
+		'o','p','q','r','s','t','u','v','w','x','y','z','0','1','2',
+		'3','4','5','6','7','8','9',s62 or '+',s63 or'/',spad or'='} do
+		encoder[b64code] = char:byte()
+	end
+	return encoder
 end
 
-
-function from_base64(to_decode)
-    local padded = to_decode:gsub("%s", "")
-    local unpadded = padded:gsub("=", "")
-    local bit_pattern = ''
-    local decoded = ''
-
-    for i = 1, string.len(unpadded) do
-        local char = string.sub(to_decode, i, i)
-        local offset, _ = string.find(index_table, char)
-        if offset == nil then
-             error("Invalid character '" .. char .. "' found.")
-        end
-
-        bit_pattern = bit_pattern .. string.sub(to_binary(offset-1), 3)
-    end
-
-    for i = 1, string.len(bit_pattern), 8 do
-        local byte = string.sub(bit_pattern, i, i+7)
-        decoded = decoded .. string.char(from_binary(byte))
-    end
-
-    local padding_length = padded:len()-unpadded:len()
-
-    if (padding_length == 1 or padding_length == 2) then
-        decoded = decoded:sub(1,-2)
-    end
-    return decoded
+function base64.makedecoder( s62, s63, spad )
+	local decoder = {}
+	for b64code, charcode in pairs( base64.makeencoder( s62, s63, spad )) do
+		decoder[charcode] = b64code
+	end
+	return decoder
 end
+
+local DEFAULT_ENCODER = base64.makeencoder()
+local DEFAULT_DECODER = base64.makedecoder()
+
+local char, concat = string.char, table.concat
+
+function base64.encode( str, encoder, usecaching )
+	encoder = encoder or DEFAULT_ENCODER
+	local t, k, n = {}, 1, #str
+	local lastn = n % 3
+	local cache = {}
+	for i = 1, n-lastn, 3 do
+		local a, b, c = str:byte( i, i+2 )
+		local v = a*0x10000 + b*0x100 + c
+		local s
+		if usecaching then
+			s = cache[v]
+			if not s then
+				s = char(encoder[extract(v,18,6)], encoder[extract(v,12,6)], encoder[extract(v,6,6)], encoder[extract(v,0,6)])
+				cache[v] = s
+			end
+		else
+			s = char(encoder[extract(v,18,6)], encoder[extract(v,12,6)], encoder[extract(v,6,6)], encoder[extract(v,0,6)])
+		end
+		t[k] = s
+		k = k + 1
+	end
+	if lastn == 2 then
+		local a, b = str:byte( n-1, n )
+		local v = a*0x10000 + b*0x100
+		t[k] = char(encoder[extract(v,18,6)], encoder[extract(v,12,6)], encoder[extract(v,6,6)], encoder[64])
+	elseif lastn == 1 then
+		local v = str:byte( n )*0x10000
+		t[k] = char(encoder[extract(v,18,6)], encoder[extract(v,12,6)], encoder[64], encoder[64])
+	end
+	return concat( t )
+end
+
+function base64.decode( b64, decoder, usecaching )
+	decoder = decoder or DEFAULT_DECODER
+	local cache = usecaching and {}
+	local t, k = {}, 1
+	local n = #b64
+	local padding = b64:sub(-2) == '==' and 2 or b64:sub(-1) == '=' and 1 or 0
+	for i = 1, padding > 0 and n-4 or n, 4 do
+		local a, b, c, d = b64:byte( i, i+3 )
+		local s
+		if usecaching then
+			local v0 = a*0x1000000 + b*0x10000 + c*0x100 + d
+			s = cache[v0]
+			if not s then
+				local v = decoder[a]*0x40000 + decoder[b]*0x1000 + decoder[c]*0x40 + decoder[d]
+				s = char( extract(v,16,8), extract(v,8,8), extract(v,0,8))
+				cache[v0] = s
+			end
+		else
+			local v = decoder[a]*0x40000 + decoder[b]*0x1000 + decoder[c]*0x40 + decoder[d]
+			s = char( extract(v,16,8), extract(v,8,8), extract(v,0,8))
+		end
+		t[k] = s
+		k = k + 1
+	end
+	if padding == 1 then
+		local a, b, c = b64:byte( n-3, n-1 )
+		local v = decoder[a]*0x40000 + decoder[b]*0x1000 + decoder[c]*0x40
+		t[k] = char( extract(v,16,8), extract(v,8,8))
+	elseif padding == 2 then
+		local a, b = b64:byte( n-3, n-2 )
+		local v = decoder[a]*0x40000 + decoder[b]*0x1000
+		t[k] = char( extract(v,16,8))
+	end
+	return concat( t )
+end
+
+return base64
