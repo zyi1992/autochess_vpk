@@ -8059,19 +8059,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12663"
+					"ItemDef"	"8792"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12664"
+					"ItemDef"	"8791"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12662"
+					"ItemDef"	"8790"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12661"
+					"ItemDef"	"5074"
 				}
 				"Wearable5"
 				{
@@ -8179,15 +8179,15 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8792"
+					"ItemDef"	"12663"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8791"
+					"ItemDef"	"12664"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8790"
+					"ItemDef"	"12662"
 				}
 				"Wearable4"
 				{
@@ -21905,6 +21905,134 @@
 
 	// 5
 	"chess_lich11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/lich/lich.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_mage"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"300"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"5"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"160"
+		"AttackDamageMax"	"180"
+		"AttackRate"	"1.5"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"12796"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"7576"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"9756"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"571"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"12792"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"12794"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"12797"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_lich/lich_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.460000"
+		"HasInventory"	"1"
+		"Level"	"9"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Lich"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+	}
+
+	// 5
+	"chess_lich_ssr"
 	{
 		// General
 		//

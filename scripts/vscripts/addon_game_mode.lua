@@ -743,6 +743,7 @@ function DAC:InitGameMode()
     CustomGameEventManager:RegisterListener("suggest_liuju", Dynamic_Wrap(DAC, "OnSuggestLiuju") )
     CustomGameEventManager:RegisterListener("set_auto_combine", Dynamic_Wrap(DAC, "OnSetAutoCombine") )
     CustomGameEventManager:RegisterListener("select_difficulty", Dynamic_Wrap(DAC, "OnSelectDifficulty") )
+    CustomGameEventManager:RegisterListener("request_pause_game", Dynamic_Wrap(DAC, "OnPauseGame") )
 
     GameRules:GetGameModeEntity().battle_round = 1
     GameRules:GetGameModeEntity().difficulty = 2
@@ -1085,6 +1086,7 @@ function DAC:InitGameMode()
 		chess_mars = 1,
 		chess_gs = 3,
 		chess_ss_ssr = 8,
+		chess_lich_ssr = 6,
 	}
 	GameRules:GetGameModeEntity().chess_pool = {
 		[1] = {},
@@ -1339,6 +1341,7 @@ function DAC:InitGameMode()
 		chess_gs11 = 'grimstroke_soul_chain',
 
 		chess_ck_ssr = 'ck_illusion',
+		chess_lich_ssr = 'lich_evil_sacrifice',
 	}
 	--释放技能：0=被动技能，1=单位目标，2=无目标，3=点目标，4=自己目标，5=近身单位目标，6=先知周边树人，7=随机友军目标（嗜血术），8=随机周围空地目标（炸弹人），9=血量百分比最低的队友，10=等级最高的敌人（末日），11=沙王穿刺, 14=pom的特殊目标，15=小鱼人跳
 	GameRules:GetGameModeEntity().ability_behavior_list = {
@@ -2102,7 +2105,7 @@ function InitHeros()
 			end)
 		elseif t.err == 1100 then
 			prt('对不起，有玩家没有获得内测资格，游戏无法开始。')
-			Timers:CreateTimer(30,function()
+			Timers:CreateTimer(3,function()
 				GameRules:SetGameWinner(DOTA_TEAM_BADGUYS)
 			end)
 			return
@@ -2587,6 +2590,9 @@ function StartAPrepareRound()
 
 		if GameRules:GetGameModeEntity().prepare_timer <= 5 then
 			if GameRules:GetGameModeEntity().prepare_timer == 5 then
+				-- for team_i=6,13 do
+				-- 	ShowStarsOnAllChess(team_i)
+				-- end
 				EmitGlobalSound("GameStart.RadiantAncient")
 
 				if GameRules:GetGameModeEntity().battle_boss[GameRules:GetGameModeEntity().battle_round] ~= nil then
@@ -3489,7 +3495,8 @@ function DAC:OnRequestBuyChess(keys)
 			EmitSoundOn("Loot_Drop_Stinger_Rare",uu)
 			GiveItems2Unit(items_table,uu)
 			--添加星星特效
-			play_particle('effect/arrow/star2.vpcf',PATTACH_OVERHEAD_FOLLOW,uu,5)
+			-- play_particle('effect/arrow/star2.vpcf',PATTACH_OVERHEAD_FOLLOW,uu,5)
+			ShowStarsOnChess(uu)
 			--发弹幕
 			CustomGameEventManager:Send_ServerToAllClients("bullet",{
 				player_id = TeamId2Hero(team_id):GetPlayerID(),
@@ -3526,11 +3533,12 @@ function TriggerCombineHand(h,chess)
 			EmitSoundOn("Loot_Drop_Stinger_Rare",uu)
 			GiveItems2Unit(items_table,uuu)
 			--添加星星特效
-			if string.find(advance_unit_name,'11') ~= nil then
-				play_particle('effect/arrow/star3.vpcf',PATTACH_OVERHEAD_FOLLOW,uuu,5)
-			elseif string.find(advance_unit_name,'1') ~= nil then 
-				play_particle('effect/arrow/star2.vpcf',PATTACH_OVERHEAD_FOLLOW,uuu,5)
-			end
+			ShowStarsOnChess(uuu)
+			-- if string.find(advance_unit_name,'11') ~= nil then
+			-- 	play_particle('effect/arrow/star3.vpcf',PATTACH_OVERHEAD_FOLLOW,uuu,5)
+			-- elseif string.find(advance_unit_name,'1') ~= nil then 
+			-- 	play_particle('effect/arrow/star2.vpcf',PATTACH_OVERHEAD_FOLLOW,uuu,5)
+			-- end
 			--发弹幕
 			CustomGameEventManager:Send_ServerToAllClients("bullet",{
 				player_id = h:GetPlayerID(),
@@ -4295,11 +4303,12 @@ function CombineChess(u0,u1,u2)
 		end
 
 		--添加星星特效
-		if string.find(advance_unit_name,'11') ~= nil then
-			play_particle('effect/arrow/star3.vpcf',PATTACH_OVERHEAD_FOLLOW,uu,5)
-		elseif string.find(advance_unit_name,'1') ~= nil then 
-			play_particle('effect/arrow/star2.vpcf',PATTACH_OVERHEAD_FOLLOW,uu,5)
-		end
+		ShowStarsOnChess(uu)
+		-- if string.find(advance_unit_name,'11') ~= nil then
+		-- 	play_particle('effect/arrow/star3.vpcf',PATTACH_OVERHEAD_FOLLOW,uu,5)
+		-- elseif string.find(advance_unit_name,'1') ~= nil then 
+		-- 	play_particle('effect/arrow/star2.vpcf',PATTACH_OVERHEAD_FOLLOW,uu,5)
+		-- end
 
 		table.insert(GameRules:GetGameModeEntity().to_be_destory_list[team_id],uu)
 		GameRules:GetGameModeEntity().mychess[team_id][''..y..'_'..x] = {
@@ -6043,6 +6052,7 @@ function LoadCloudEnemy(wave,team)
 end
 --游戏循环2.3——自走！
 function ChessAI(u)
+
 	if u.aitimer == nil or Timers.timers[u.aitimer] == nil then
 		if u:GetUnitName() == 'chess_sf' then
 			AddAbilityAndSetLevel(u,"nevermore_necromastery")		
@@ -6075,8 +6085,9 @@ function ChessAI(u)
 		if u:FindAbilityByName('is_assassin') ~= nil and GameRules:GetGameModeEntity().chess_ability_list[u:GetUnitName()] ~= nil then
 			start_delay = 0.5
 		end
-
-		u.aitimer = Timers:CreateTimer(RandomFloat(0.5,2)+start_delay, function()
+		local delay = RandomFloat(0.5,2)+start_delay
+		-- ShowStarsOnChess(u,delay+1)
+		u.aitimer = Timers:CreateTimer(delay, function()
 			if u == nil or u:IsNull() == true or u:IsAlive() == false or u.alreadywon == true then
 				return
 			end
@@ -7531,6 +7542,14 @@ function DAC:OnPlayerChat(keys)
 		prt('TEST CODE: DEBUG OFF!')
 		GameRules:GetGameModeEntity().is_debug = false
 	end
+	if tokens[1] == '-pause' and GameRules:GetGameModeEntity().myself == true then
+		PauseGame(not GameRules:IsGamePaused())
+	end
+	if tokens[1] == '-star' and GameRules:GetGameModeEntity().myself == true then
+		ShowStarsOnAllChess(hero:GetTeam())
+	end
+
+	
 
 	if tokens[1] == "-stub" and GameRules:GetGameModeEntity().myself == true then
 		local team_id = hero:GetTeam()
@@ -9030,13 +9049,13 @@ function DAC:OnCatchCrab(keys)
 	local player_id = keys.PlayerID
 	local urls = {
 		ranking_top = 'https://autochess.ppbizon.com/ranking/top',
-		refresh_shop = 'https://autochess.ppbizon.com/shop/get',
-		buy_effect = 'https://autochess.ppbizon.com/shop/effect',
+		refresh_shop = 'https://autochess.ppbizon.com/shop/v2/get',
+		buy_effect = 'https://autochess.ppbizon.com/shop/v2/effect',
 		choose_hero = 'https://autochess.ppbizon.com/courier/change',
 		lottery_go = 'https://autochess.ppbizon.com/shop/lottery',
 		recycle_hero = 'https://autochess.ppbizon.com/courier/recycle',
 		activate_cdkey = 'https://autochess.ppbizon.com/cdkey/act',
-		jihuan_hero = 'https://autochess.ppbizon.com/shop/collect',
+		jihuan_hero = 'https://autochess.ppbizon.com/shop/v2/collect',
 	}
 	if urls[keys.event] ~= nil then
 		local send_url = urls[keys.event]
@@ -10431,14 +10450,14 @@ function SendAmazonData(ctx,amzdate,datestamp)
 	local body_data = json.encode(data)
 	local method = 'POST'
 	local service = 'kinesis'
-	local host = 'kinesis.us-east-2.amazonaws.com'
-	local region = 'us-east-2'
-	local endpoint = 'https://kinesis.us-east-2.amazonaws.com'
+	local host = 'kinesis.cn-north-1.amazonaws.com.cn'
+	local region = 'cn-north-1'
+	local endpoint = 'https://kinesis.cn-north-1.amazonaws.com.cn'
 	local request_parameters = ""
-	local enc_AWS_ACCESS_KEY_ID = "0FC19BD8AA2A5FD04DF93D159A20B029DBD77C91B4FCD06984977EA16CACA29C"
+	local enc_AWS_ACCESS_KEY_ID = "25E104260341F0B8192CCFA4A909572DCE0898BE77EF35E955F70D67AB5491C5"
 	local AWS_ACCESS_KEY_ID = aeslua.decrypt(GetDedicatedServerKeyV2('bsl,bgbxh'),string.fromhex(enc_AWS_ACCESS_KEY_ID))
 	local access_key = AWS_ACCESS_KEY_ID
-	local enc_AWS_SECRET_ACCESS_KEY = '71EE3307D3409C93596E9E0D6B1BDE66808D6BC503F2F9196E8AEE19F499418E6BC870F3E4DCE981A327EDB3F416B1A4'
+	local enc_AWS_SECRET_ACCESS_KEY = '1321E5E71E43988F4F0CD5A14D15FCD658C2262EE44B2D7007BEA27A6D4A4ECD90FB0A6CAEA410DAD933F423FD9E8EAD'
 	local AWS_SECRET_ACCESS_KEY = aeslua.decrypt(GetDedicatedServerKeyV2('bsl,bgbxh'),string.fromhex(enc_AWS_SECRET_ACCESS_KEY))
 	local secret_key = AWS_SECRET_ACCESS_KEY
 
@@ -10471,4 +10490,83 @@ function SendAmazonData(ctx,amzdate,datestamp)
             return
         end
     end)
+end
+
+function DAC:OnPauseGame(keys)
+	local player_id = keys.playerid
+	local hero = GameRules:GetGameModeEntity().playerid2hero[player_id]
+
+	if IsUnitExist(hero) == false then
+		return
+	end
+	if GameRules:IsGamePaused() then
+		PauseGame(false)
+		CustomGameEventManager:Send_ServerToAllClients("bullet",{
+			player_id = player_id,
+			text = '#text_unpause_game'
+		})
+		return
+	end
+
+	if GameRules:GetGameModeEntity().START_TIME == nil then
+		return
+	end
+
+	local pause_time = math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME)
+	if hero.last_pause_time == nil then
+		PauseGame(true)
+		CustomGameEventManager:Send_ServerToAllClients("bullet",{
+			player_id = player_id,
+			text = '#text_pause_game'
+		})
+		hero.last_pause_time = pause_time
+	else
+		if pause_time - hero.last_pause_time > 300 then
+			PauseGame(true)
+			CustomGameEventManager:Send_ServerToAllClients("bullet",{
+				player_id = player_id,
+				text = '#text_pause_game'
+			})
+			hero.last_pause_time = pause_time
+		else
+			-- prt('你'..(300-pause_time +hero.last_pause_time)..'秒后才能暂停')
+			return
+		end
+	end
+
+	
+
+end
+
+function ShowStarsOnAllChess(team)
+	for _,u in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team]) do
+		ShowStarsOnChess(u)
+	end
+end
+
+function ShowStarsOnChess(unit,duration)
+	local unit_name = unit:GetUnitName()
+	if duration == nil then
+		duration = 5
+	end
+	local star = 1
+	if string.find(unit_name,'11') ~= nil then
+		unit_name = string.sub(unit_name,1,-3)
+		star = 3
+	end
+	if string.find(unit_name,'1') ~= nil then
+		unit_name = string.sub(unit_name,1,-2)
+		star = 2
+	end
+
+	local cost = GameRules:GetGameModeEntity().chess_2_mana[unit_name]
+
+	if cost == nil then
+		return
+	end
+	if cost > 5 then
+		play_particle('effect/arrow/ssr/star1.vpcf',PATTACH_OVERHEAD_FOLLOW,unit,duration)
+	else
+		play_particle('effect/arrow/'..cost..'/star'..star..'.vpcf',PATTACH_OVERHEAD_FOLLOW,unit,duration)
+	end
 end

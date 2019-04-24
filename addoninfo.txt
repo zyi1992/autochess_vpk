@@ -26,5 +26,11 @@
             "Command"   "+TogglePanel"
             "Name"      "TogglePanel"
         }
+        "12"
+        {
+            "Key"       "F9"
+            "Command"   "+ToggleF9"
+            "Name"      "ToggleF9"
+        }
     }
 }

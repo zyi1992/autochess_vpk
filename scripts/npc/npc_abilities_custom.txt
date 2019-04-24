@@ -450,6 +450,21 @@
 				// 1.2 second to reach radius
 				"speed"	"636"
 			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow_min"				"0"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow_max"				"0"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_duration"				"0"
+			}
 		}
 	}
 
@@ -10710,6 +10725,7 @@
 		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
+		"AbilityDamage"					"50 75 100"
 		"AbilitySpecial"
 		{
 			"01"
@@ -11123,6 +11139,36 @@
 		"AbilityCooldown"	"5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"modelscale"		"25"
+			}	
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"		"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"30 40 50"
+				"LinkedSpecialBonus"	"special_bonus_unique_ogre_magi"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"self_bonus"	"30 50 70"
+				"LinkedSpecialBonus"	"special_bonus_unique_ogre_magi"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"30"
+			}
+		}
 	}
 
 	"batrider_sticky_napalm"
