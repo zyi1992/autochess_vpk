@@ -86,7 +86,7 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-15"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-10"
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-10"
 				}
 				"IsHidden"	"1"
@@ -97,7 +97,7 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
 				}
 				"IsHidden"	"1"
@@ -559,7 +559,7 @@
 				"States"	{}
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"40"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -1253,7 +1253,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityCooldown"	"30"
+		"AbilityCooldown"	"15"
 		"ID"	"1540"
 		"ItemQuality"	"common"
 		"Model"	"models/props_winter/present.vmdl"
@@ -1648,7 +1648,7 @@
 				"Duration"	"5"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-20"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
 				}
 			}
 		}
@@ -1711,6 +1711,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"30"
 		"ID"	"1521"
 		"ItemQuality"	"rare"
 		"Model"	"models/props_winter/present.vmdl"
@@ -1743,7 +1744,7 @@
 					{
 						"Target"	"ATTACKER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"RenJia"
+						"Function"	"RenJiaDamaged"
 						"DamageTaken"	"%attack_damage"
 					}
 				}

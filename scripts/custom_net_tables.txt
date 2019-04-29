@@ -4,7 +4,7 @@
 	custom_net_tables =
 	[
 		"dac_table",
-		"end_table",
+		"player_info_table",
 		"ranking_top_table",
 	]
 }

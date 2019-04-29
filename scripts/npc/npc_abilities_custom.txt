@@ -452,18 +452,18 @@
 			}
 			"05"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"slow_min"				"0"
+				"var_type"	"FIELD_INTEGER"
+				"slow_min"	"0"
 			}
 			"06"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"slow_max"				"0"
+				"var_type"	"FIELD_INTEGER"
+				"slow_max"	"0"
 			}
 			"07"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"slow_duration"				"0"
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"0"
 			}
 		}
 	}
@@ -8957,14 +8957,14 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHPPer"
-						"per"	"10"
+						"per"	"5"
 					}
 					"RunScript"
 					{
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"ChangeModelScale"
-						"x"	"1.2"
+						"x"	"1.1"
 					}
 				}
 				"EffectAttachType"	"attach_origin"
@@ -9350,7 +9350,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"40"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9419,7 +9419,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"35"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9488,7 +9488,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus_plus"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"40"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9892,6 +9892,77 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"MaxLevel"	"1"
+	}
+
+	"is_priest"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"rubick_fade_bolt"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+	}
+
+	"is_priest_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"courier_shield"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+		"precache"
+		{
+			"particle"	"effect/priest/shield.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_priest_buff"
+			{
+				"EffectName"	"effect/priest/shield.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Passive"	"1"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"dazzle_bozang"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"dazzle_shallow_grave"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_SHALLOW_GRAVE"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ShallowGrave"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"count"	"1 2 3"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"4"
+			}
+		}
 	}
 
 	"is_demon"
@@ -10670,7 +10741,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_percent"	"5 7 9"
+				"damage_percent"	"6 9 12"
 			}
 			"03"
 			{
@@ -10725,7 +10796,6 @@
 		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
-		"AbilityDamage"					"50 75 100"
 		"AbilitySpecial"
 		{
 			"01"
@@ -10770,6 +10840,7 @@
 				"LinkedSpecialBonus"	"special_bonus_unique_witch_doctor_3"
 			}
 		}
+		"AbilityDamage"	"50 75 100"
 	}
 
 	"troll_warlord_fervor"
@@ -11143,30 +11214,30 @@
 		{
 			"01"
 			{
-				"var_type"			"FIELD_FLOAT"
-				"modelscale"		"25"
-			}	
+				"var_type"	"FIELD_FLOAT"
+				"modelscale"	"25"
+			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"		"0"
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"0"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_INTEGER"
+				"var_type"	"FIELD_INTEGER"
 				"bonus_attack_speed"	"30 40 50"
 				"LinkedSpecialBonus"	"special_bonus_unique_ogre_magi"
 			}
 			"04"
 			{
-				"var_type"				"FIELD_INTEGER"
+				"var_type"	"FIELD_INTEGER"
 				"self_bonus"	"30 50 70"
 				"LinkedSpecialBonus"	"special_bonus_unique_ogre_magi"
 			}
 			"05"
 			{
-				"var_type"			"FIELD_FLOAT"
-				"duration"			"30"
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"30"
 			}
 		}
 	}
@@ -11543,7 +11614,7 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				// 85 degree cone
-				"vision_cone"	"0.08715"
+				"vision_cone"	"0.5"
 			}
 			"07"
 			{
@@ -12928,14 +12999,14 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"precache"
 		{
-			"particle"	"particles/econ/items/silencer/silencer_ti6/silencer_last_word_status_ti6.vpcf"
+			"particle"	"effect/emengchanrao/1.vpcf"
 		}
 		"Modifiers"
 		{
 			"modifier_texiao_star"
 			{
 				"Passive"	"1"
-				"EffectName"	"particles/econ/items/silencer/silencer_ti6/silencer_last_word_status_ti6.vpcf"
+				"EffectName"	"effect/emengchanrao/1.vpcf"
 				"EffectAttachType"	"attach_origin"
 				"IsHidden"	"1"
 			}
@@ -14469,6 +14540,11 @@
 				"IsBuff"	"0"
 				"IsDebuff"	"1"
 			}
+			"modifier_show_combo_is_priest"
+			{
+				"TextureName"	"rubick_fade_bolt"
+				"IsBuff"	"1"
+			}
 		}
 	}
 
@@ -14935,5 +15011,60 @@
 				"IsBuff"	"1"
 			}
 		}
+	}
+
+	"give_renjia_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_renjia_buff"
+				"Duration"	"5"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_renjia_buff"
+			{
+				"EffectName"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Passive"	"0"
+				"TextureName"	"nyx_assassin_spiked_carapace"
+				"IsBuff"	"1"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"Target"	"ATTACKER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RenJia"
+						"damage"	"%attack_damage"
+					}
+				}
+			}
+		}
+	}
+
+	"wisp_wildcard"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_spirits_out"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"	"2"
 	}
 }

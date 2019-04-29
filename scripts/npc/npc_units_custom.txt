@@ -8259,7 +8259,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -8379,7 +8379,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -8499,7 +8499,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -8619,7 +8619,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14216,7 +14216,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/dazzle/dazzle.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.78"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -14295,23 +14295,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6353"
+					"ItemDef"	"4681"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"6354"
+					"ItemDef"	"4682"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"6355"
+					"ItemDef"	"4683"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"6356"
+					"ItemDef"	"4684"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6359"
+					"ItemDef"	"4685"
 				}
 			}
 		}
@@ -14423,15 +14423,15 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8034"
+					"ItemDef"	"7358"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7358"
+					"ItemDef"	"7937"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7361"
+					"ItemDef"	"8040"
 				}
 			}
 		}
@@ -15598,7 +15598,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"650"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -15718,7 +15718,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1300"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -15842,7 +15842,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2600"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -18526,7 +18526,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"500"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -18646,7 +18646,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1000"
+		"StatusHealth"	"1200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -18766,7 +18766,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2000"
+		"StatusHealth"	"2400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -19313,6 +19313,222 @@
 		"SoundSet"	"Hero_Necrolyte"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
+	}
+
+	// 1
+	"chess_io"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/wisp/wisp.vmdl"
+		"ModelScale"	"0.75"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_elf"
+		// Ability 2.
+		"Ability2"	""
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"0"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"300"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"700"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"0"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"40"
+		"AttackDamageMax"	"60"
+		"AttackRate"	"1.3"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"536"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"639"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_wisp/wisp_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.15"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Wisp"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
+	}
+
+	// 1
+	"chess_io1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/wisp/wisp.vmdl"
+		"ModelScale"	"1.1"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_elf"
+		// Ability 2.
+		"Ability2"	""
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"0"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"300"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"0"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"120"
+		"AttackRate"	"1.3"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"536"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"9235"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_wisp/wisp_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.15"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Wisp"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
 	}
 
 	// 4
@@ -20857,9 +21073,9 @@
 		// Ability 1.
 		"Ability1"	"is_goblin"
 		// Ability 2.
-		"Ability2"	"is_warlock"
+		"Ability2"	"is_ogre"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"is_warlock"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -20993,9 +21209,9 @@
 		// Ability 1.
 		"Ability1"	"is_goblin"
 		// Ability 2.
-		"Ability2"	"is_warlock"
+		"Ability2"	"is_ogre"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"is_warlock"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -21137,9 +21353,9 @@
 		// Ability 1.
 		"Ability1"	"is_goblin"
 		// Ability 2.
-		"Ability2"	"is_warlock"
+		"Ability2"	"is_ogre"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"is_warlock"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
