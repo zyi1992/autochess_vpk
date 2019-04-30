@@ -757,7 +757,7 @@ function DAC:InitGameMode()
     CustomGameEventManager:RegisterListener("request_pause_game", Dynamic_Wrap(DAC, "OnPauseGame") )
 
     GameRules:GetGameModeEntity().battle_round = 1
-    GameRules:GetGameModeEntity().pilao_round = 51
+    GameRules:GetGameModeEntity().pilao_round = 50
     GameRules:GetGameModeEntity().difficulty = 2
     GameRules:GetGameModeEntity().steamidlist = ''
     GameRules:GetGameModeEntity().steamidlist_heroindex = ''
@@ -2594,7 +2594,7 @@ function StartAPrepareRound()
 	end
 
 	--50回合以后，疲劳
-	if GameRules:GetGameModeEntity().battle_round >= GameRules:GetGameModeEntity().pilao_round then
+	if GameRules:GetGameModeEntity().battle_round > GameRules:GetGameModeEntity().pilao_round then
 		for _,heroent in pairs (GameRules:GetGameModeEntity().hero) do
 			if heroent ~= nil and heroent:IsNull() == false and heroent:IsAlive() == true then
 				local bite_hp = math.floor(heroent:GetHealth() / 2) --GameRules:GetGameModeEntity().battle_round - 50
@@ -4675,7 +4675,7 @@ function SyncHP(hero)
 
 		--决赛提醒
 		if live_count == 2 and PlayerResource:GetPlayerCount() > 2 then
-			GameRules:GetGameModeEntity().pilao_round = GameRules:GetGameModeEntity().battle_round + 5
+			GameRules:GetGameModeEntity().pilao_round = GameRules:GetGameModeEntity().battle_round + 6 --野怪关不算
 			prt('#text_grand_final_start')
 			-- EmitGlobalSound("diretide_eventstart_Stinger")
 			EmitGlobalSound("diretide_sugarrush_Stinger")
