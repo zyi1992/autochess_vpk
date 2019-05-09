@@ -10139,7 +10139,7 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4595"
+					"ItemDef"	"5386"
 				}
 				"Wearable4"
 				{
@@ -10263,7 +10263,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"5386"
+					"ItemDef"	"12946"
 				}
 				"Wearable3"
 				{
@@ -14216,7 +14216,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/dazzle/dazzle.vmdl"
-		"ModelScale"	"0.78"
+		"ModelScale"	"0.7"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -14295,23 +14295,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"4681"
+					"ItemDef"	"12973"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"4682"
+					"ItemDef"	"12974"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4683"
+					"ItemDef"	"12975"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"4684"
+					"ItemDef"	"12976"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"4685"
+					"ItemDef"	"12977"
 				}
 			}
 		}
@@ -23666,15 +23666,19 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8803"
+					"ItemDef"	"9257"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8804"
+					"ItemDef"	"568"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"5093"
+					"ItemDef"	"8567"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"8795"
 				}
 			}
 		}
@@ -23794,7 +23798,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9257"
+					"ItemDef"	"12931"
 				}
 				"Wearable6"
 				{

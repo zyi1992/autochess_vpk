@@ -9419,7 +9419,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus"
 							}
 						}
-						"Chance"	"35"
+						"Chance"	"40"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -10746,7 +10746,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"10"
+				"duration"	"8"
 			}
 		}
 	}
@@ -14011,7 +14011,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"50 100 200"
+				"damage"	"100 150 200"
 			}
 			"02"
 			{
@@ -15034,7 +15034,7 @@
 			{
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_renjia_buff"
-				"Duration"	"5"
+				"Duration"	"4"
 			}
 		}
 		"Modifiers"
@@ -15060,11 +15060,87 @@
 		}
 	}
 
+	"give_bkb_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"omniknight_repel"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"particles/items_fx/black_king_bar_avatar.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_bkb_buff"
+				"Duration"	"8"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_bkb_buff"
+			{
+				"EffectName"	"particles/items_fx/black_king_bar_avatar.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Passive"	"0"
+				"TextureName"	"omniknight_repel"
+				"IsBuff"	"1"
+				"States"
+				{
+					"MODIFIER_STATE_MAGIC_IMMUNE"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"100"
+				}
+			}
+		}
+	}
+
 	"wisp_wildcard"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"wisp_spirits_out"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"	"2"
+	}
+
+	"lich_frost_armor"
+	{
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"8 6 4"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor_bonus"	"4 6 8"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"2.0 2.0 2.0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slow_movement_speed"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slow_attack_speed"	"-20 -30 -40"
+			}
+		}
 	}
 }

@@ -921,7 +921,6 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"1"
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -932,21 +931,18 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"1200"
+						"hp"	"1000"
 					}
-				}
-				"EffectName"	"effect/longxin/1.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"OnDestroy"
-				{
 					"RunScript"
 					{
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"UnAddMaxHP"
-						"hp"	"1200"
+						"Function"	"AddMaxHPPer"
+						"per"	"30"
 					}
 				}
+				"EffectName"	"effect/longxin/1.vpcf"
+				"EffectAttachType"	"attach_origin"
 			}
 		}
 	}
@@ -977,10 +973,7 @@
 			"modifier_item_dafu"
 			{
 				"Passive"	"1"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
-				}
+				"Properties"	{}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"OnCreated"
@@ -992,15 +985,53 @@
 						"Function"	"AddMaxHP"
 						"hp"	"500"
 					}
+					"RunScript"
+					{
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"AddMaxHPPer"
+						"per"	"15"
+					}
 				}
-				"OnDestroy"
+			}
+		}
+	}
+
+	"item_xiaofu"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ogre_axe"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ID"	"1549"
+		"ItemQuality"	"epic"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_xiaofu"
+			{
+				"Passive"	"1"
+				"Properties"	{}
+				"IsHidden"	"1"
+				"OnCreated"
 				{
 					"RunScript"
 					{
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"UnAddMaxHP"
-						"hp"	"500"
+						"Function"	"AddMaxHPPer"
+						"per"	"15"
 					}
 				}
 			}
@@ -1746,6 +1777,63 @@
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"RenJiaDamaged"
 						"DamageTaken"	"%attack_damage"
+					}
+				}
+			}
+		}
+	}
+
+	"item_bkb"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_black_king_bar"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"30"
+		"ID"	"1550"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_bkb"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"15"
+				}
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"Target"	"ATTACKER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RenJiaDamaged"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"AddMaxHPPer"
+						"per"	"15"
 					}
 				}
 			}
@@ -2680,6 +2768,19 @@
 		"ItemRequirements"
 		{
 			"01"	"item_jianrenqiu;item_emodaofeng"
+		}
+	}
+
+	"item_recipe_bkb"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3026"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_bkb"
+		"ItemRequirements"
+		{
+			"01"	"item_xiaofu;item_miyinchui"
 		}
 	}
 }
