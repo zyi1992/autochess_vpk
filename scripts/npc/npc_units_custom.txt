@@ -772,9 +772,9 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/axe/axe.vmdl"
-		"ModelScale"	"0.6"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+		"Model"	"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
+		"ModelScale"	"0.67"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_axe.vsndevts"
 		// Abilities
 		// ----------------------------------------------------------------
@@ -854,19 +854,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"2"
+					"ItemDef"	"12964"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"3"
+					"ItemDef"	"12965"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4"
+					"ItemDef"	"12966"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5"
+					"ItemDef"	"12968"
 				}
 			}
 		}
@@ -878,7 +878,7 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Axe"
+		"SoundSet"	"Hero_Tusk"
 	}
 
 	// 1
@@ -2917,27 +2917,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9207"
+					"ItemDef"	"12733"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9506"
+					"ItemDef"	"7466"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9507"
+					"ItemDef"	"12734"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9508"
+					"ItemDef"	"8068"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7466"
+					"ItemDef"	"12735"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9509"
+					"ItemDef"	"12737"
 				}
 			}
 		}
@@ -10052,7 +10052,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/drow/drow_base.vmdl"
-		"ModelScale"	"0.85"
+		"ModelScale"	"0.88"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -10131,31 +10131,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8148"
+					"ItemDef"	"7242"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8006"
+					"ItemDef"	"7243"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5386"
+					"ItemDef"	"7246"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8146"
+					"ItemDef"	"7232"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8152"
+					"ItemDef"	"7244"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8151"
+					"ItemDef"	"5386"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"8150"
+					"ItemDef"	"7245"
 				}
 			}
 		}
@@ -10259,31 +10259,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7242"
+					"ItemDef"	"12908"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12946"
+					"ItemDef"	"8035"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7232"
+					"ItemDef"	"12902"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7246"
+					"ItemDef"	"12905"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7244"
+					"ItemDef"	"12903"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"6785"
+					"ItemDef"	"12946"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"8037"
+					"ItemDef"	"6785"
 				}
 			}
 		}
@@ -16126,7 +16126,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9230"
+					"ItemDef"	"7995"
 				}
 				"Wearable3"
 				{
@@ -16242,15 +16242,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9233"
-				}
-				"Wearable3"
-				{
 					"ItemDef"	"7811"
-				}
-				"Wearable4"
-				{
-					"ItemDef"	"9758"
 				}
 			}
 		}
@@ -24513,6 +24505,8 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_melee_good_mega"
@@ -24560,6 +24554,8 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_stone_a"
@@ -24607,6 +24603,8 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_stone_b"
@@ -24654,6 +24652,8 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_wolf_big"
@@ -24705,6 +24705,8 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_wolf_small"
@@ -24757,6 +24759,8 @@
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_ranged_good"
@@ -24809,6 +24813,8 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"lyc_wolf1"
@@ -24860,8 +24866,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"lyc_wolf2"
@@ -24913,8 +24920,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"lyc_wolf3"
@@ -24966,8 +24974,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"fur_tree1"
@@ -25019,8 +25028,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"fur_tree2"
@@ -25072,8 +25082,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"fur_tree3"
@@ -25125,8 +25136,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"ld_bear1"
@@ -25178,8 +25190,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"ld_bear2"
@@ -25231,8 +25244,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"ld_bear3"
@@ -25284,8 +25298,9 @@
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"veno_ward1"
@@ -25337,8 +25352,9 @@
 		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"veno_ward2"
@@ -25390,8 +25406,9 @@
 		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"veno_ward3"
@@ -25443,8 +25460,9 @@
 		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
-		"AutoAttacksByDefault"	"0"
+		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
 	"pve_bear_a"
@@ -25494,6 +25512,8 @@
 		"AttackAnimationPoint"	"0.3"
 		"SoundSet"	"Hero_OgreMagi"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_bear_b"
@@ -25543,6 +25563,8 @@
 		"AttackAnimationPoint"	"0.3"
 		"SoundSet"	"Hero_OgreMagi"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_vulture_a"
@@ -25594,6 +25616,8 @@
 		"ProjectileModel"	"particles/econ/items/invoker/invoker_ti6/invoker_tornado_ti6_funnel.vpcf"
 		"ProjectileSpeed"	"1200"
 		"RingRadius"	"60"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_vulture_b"
@@ -25645,6 +25669,8 @@
 		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_tornado_funnel.vpcf"
 		"ProjectileSpeed"	"1200"
 		"RingRadius"	"60"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_leishou_a"
@@ -25694,6 +25720,8 @@
 		"AttackAnimationPoint"	"0.3"
 		"ProjectileModel"	"particles/econ/items/razor/razor_ti6/razor_base_attack_ti6.vpcf"
 		"ProjectileSpeed"	"600"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_leishou_b"
@@ -25743,6 +25771,8 @@
 		"AttackAnimationPoint"	"0.3"
 		"ProjectileModel"	"particles/econ/items/razor/razor_ti6/razor_base_attack_ti6.vpcf"
 		"ProjectileSpeed"	"600"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_black_dragon"
@@ -25792,6 +25822,8 @@
 		"AttackAnimationPoint"	"0.3"
 		"ProjectileModel"	"particles/econ/items/vengeful/vs_ti8_immortal_shoulder/vs_ti8_immortal_magic_missle.vpcf"
 		"ProjectileSpeed"	"600"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_troll_dark_a"
@@ -25843,6 +25875,8 @@
 		"ProjectileModel"	"particles/econ/items/alchemist/alchemist_smooth_criminal/alchemist_smooth_criminal_unstable_concoction_projectile.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_troll_dark_b"
@@ -25894,6 +25928,8 @@
 		"ProjectileModel"	"particles/econ/items/clinkz/clinkz_maraxiform/clinkz_maraxiform_searing_arrow_deso.vpcf"
 		"ProjectileSpeed"	"600"
 		"RingRadius"	"60"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_troll_dark_c"
@@ -25945,6 +25981,8 @@
 		"ProjectileModel"	"particles/items2_fx/skadi_projectile.vpcf"
 		"ProjectileSpeed"	"600"
 		"RingRadius"	"60"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_nian"
@@ -25996,6 +26034,8 @@
 		"ProjectileModel"	"particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave.vpcf"
 		"ProjectileSpeed"	"1000"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"pve_roshan"
@@ -26047,6 +26087,8 @@
 		"ProjectileModel"	"particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave.vpcf"
 		"ProjectileSpeed"	"1000"
 		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
 	}
 
 	"player_image"
@@ -30995,7 +31037,7 @@
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"AttackRate"	"1.4"
-		"AttackRange"	"250"
+		"AttackRange"	"205"
 		"Creature"
 		{
 			"AttachWearables"
@@ -31118,7 +31160,7 @@
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"AttackRate"	"1.4"
-		"AttackRange"	"250"
+		"AttackRange"	"205"
 		"Creature"
 		{
 			"AttachWearables"
@@ -31239,7 +31281,7 @@
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"AttackRate"	"1.4"
-		"AttackRange"	"250"
+		"AttackRange"	"205"
 		"Creature"
 		{
 			"AttachWearables"

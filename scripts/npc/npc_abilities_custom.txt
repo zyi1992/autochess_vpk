@@ -10546,6 +10546,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
 		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100"
@@ -13904,7 +13905,7 @@
 	"morphling_waveform"
 	{
 		"AbilityTextureName"	"morphling_waveform"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.25"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
