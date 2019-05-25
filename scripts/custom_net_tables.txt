@@ -6,5 +6,6 @@
 		"dac_table",
 		"player_info_table",
 		"ranking_top_table",
+		"setting_table",
 	]
 }

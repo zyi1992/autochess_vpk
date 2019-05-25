@@ -598,7 +598,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stun_duration"	"1.4 1.7 2"
+				"stun_duration"	"1 1.5 2"
 			}
 			"07"
 			{
@@ -9363,8 +9363,8 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"75"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"35"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9432,8 +9432,8 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"75"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"35"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9501,8 +9501,8 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"75"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"35"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -10544,9 +10544,9 @@
 
 	"sniper_assassinate"
 	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"1"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
 		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100"
@@ -11593,7 +11593,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"4 5 6"
+				"duration"	"3 4 5"
 				"LinkedSpecialBonus"	"special_bonus_unique_medusa"
 			}
 			"03"
@@ -15114,34 +15114,305 @@
 		"MaxLevel"	"2"
 	}
 
-	"lich_frost_armor"
+	"sven_gods_strength"
 	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"8 6 4"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_OVERRIDE_ABILITY_4"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"100"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_bonus"	"4 6 8"
+				"gods_strength_damage"	"100 200 300"
 			}
 			"02"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"slow_duration"	"2.0 2.0 2.0"
+				"var_type"	"FIELD_INTEGER"
+				"gods_strength_bonus_str"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_2"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"slow_movement_speed"	"0"
+				"radius_scepter"	"1200"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"slow_attack_speed"	"-20 -30 -40"
+				"gods_strength_damage_scepter"	"100 200 300"
 			}
 		}
+		"AbilitySound"	"Hero_Sven.GodsStrength"
+		"AbilityCastGestureSlot"	"DEFAULT"
+		"AbilityDuration"	"60.0"
+	}
+
+	"lich_frost_shield"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_reduction"	"0"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movement_slow"	"0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"20 30 40"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"interval"	"1"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"600"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_lich_4"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"AbilitySound"	"Hero_Lich.FrostArmor"
+	}
+
+	"lich_bingjia"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"lich_frost_shield"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"10 8 6"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"LichBingjia"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor_add"	"10 15 20"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed_slow"	"-30 -45 -60"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"2"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"20 30 40"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"interval"	"1"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"600"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_lich_4"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"AbilitySound"	"Hero_Lich.FrostArmor"
+	}
+
+	// 给冰霜魔盾的目标附加一个冰霜护甲效果（敌人攻击会被减攻速）
+	"give_bingjia"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"lich_frost_shield"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_give_bingjia"
+				"Duration"	"6"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_give_bingjia"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor"
+				}
+				"OnAttacked"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"ATTACKER"
+						"ModifierName"	"modifier_give_bingjia_debuff"
+						"Duration"	"2"
+					}
+				}
+				"Duration"	"6"
+				"IsHidden"	"1"
+			}
+			"modifier_give_bingjia_debuff"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed"
+				}
+				"IsDebuff"	"1"
+				"Duration"	"2"
+				"IsHidden"	"1"
+				"EffectName"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+				"StatusEffectName"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed"	"-30 -45 -60"
+				"LinkedSpecialBonus"	"special_bonus_unique_lich_4"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor"	"10 15 20"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"AbilitySound"	"Hero_Lich.FrostArmor"
+	}
+
+	// 给恶魔 神力
+	"give_shenli"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"lich_frost_shield"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"particles/econ/items/sven/sven_warcry_ti5/sven_spell_warcry_ti_5.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_shenli"
+				"Duration"	"60"
+			}
+			"FireEffect"
+			{
+				"Target"	"TARGET"
+				"EffectAttachType"	"follow_origin"
+				"EffectName"	"particles/econ/items/sven/sven_warcry_ti5/sven_spell_warcry_ti_5.vpcf"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_shenli"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%attack_bonus"
+				}
+				"Duration"	"60"
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_bonus"	"100 200 300"
+				"LinkedSpecialBonus"	"special_bonus_unique_lich_4"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+		"AbilitySound"	"Hero_Lich.FrostArmor"
 	}
 }
