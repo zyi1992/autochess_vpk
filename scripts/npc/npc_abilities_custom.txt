@@ -234,7 +234,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"axe_damage"	"60 100 140"
+				"axe_damage"	"80 120 160"
 				"LinkedSpecialBonus"	"special_bonus_unique_beastmaster"
 			}
 			"05"
@@ -628,7 +628,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.2"
-		"AbilityCooldown"	"10 8 6"
+		"AbilityCooldown"	"10 7.5 5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -9364,7 +9364,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"35"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9432,7 +9432,7 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"35"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
 				}
 				"States"	{}
@@ -9501,7 +9501,7 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"35"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
 				}
 				"States"	{}
@@ -9784,6 +9784,16 @@
 		"MaxLevel"	"1"
 	}
 
+	"is_wizard"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"grimstroke_ink_creature"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+	}
+
 	"is_warlock"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -9897,7 +9907,17 @@
 	"is_priest"
 	{
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"rubick_fade_bolt"
+		"AbilityTextureName"	"skywrath_mage_ancient_seal"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+	}
+
+	"rubick_qiequ"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"rubick_spell_steal"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -10120,7 +10140,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
 		"AbilityCastAnimation"	"ACT_DOTA_RUN"
-		"AbilityCooldown"	"10"
+		"AbilityCooldown"	"10 9 8"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilityCastRange"	"9999"
@@ -10546,7 +10566,7 @@
 	{
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"MaxLevel"	"3"
-		"AbilityCastPoint"	"1"
+		"AbilityCastPoint"	"0.5"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
 		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100"
@@ -10566,7 +10586,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"total_cast_time_tooltip"	"1"
+				"total_cast_time_tooltip"	"0.5"
 				"LinkedSpecialBonus"	"special_bonus_unique_sniper_4"
 				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
 			}
@@ -11028,7 +11048,7 @@
 	"cm_mana_aura"
 	{
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"crystal_maiden_brilliance_aura"
+		"AbilityTextureName"	"crystal_maiden_crystal_nova"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"	"3"
 		"Modifiers"
@@ -11652,12 +11672,12 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"2 3 4"
+				"duration"	"2.5 3.5 4.5"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration_scepter"	"2 3 4"
+				"duration_scepter"	"2.5 3.5 4.5"
 			}
 			"06"
 			{
@@ -13937,7 +13957,7 @@
 		"AbilitySound"	"Hero_Morphling.Waveform"
 		// Damage.
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"	"150 250 350"
+		"AbilityDamage"	"200 300 400"
 	}
 
 	"nec_ssr_scythe"
@@ -14543,8 +14563,13 @@
 			}
 			"modifier_show_combo_is_priest"
 			{
-				"TextureName"	"rubick_fade_bolt"
+				"TextureName"	"skywrath_mage_ancient_seal"
 				"IsBuff"	"1"
+			}
+			"modifier_show_combo_is_wizard"
+			{
+				"IsBuff"	"1"
+				"TextureName"	"grimstroke_ink_creature"
 			}
 		}
 	}
@@ -15129,7 +15154,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"gods_strength_damage"	"100 200 300"
+				"gods_strength_damage"	"100 150 200"
 			}
 			"02"
 			{
@@ -15145,7 +15170,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"gods_strength_damage_scepter"	"100 200 300"
+				"gods_strength_damage_scepter"	"100 150 200"
 			}
 		}
 		"AbilitySound"	"Hero_Sven.GodsStrength"
@@ -15217,6 +15242,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
@@ -15397,7 +15423,7 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%attack_bonus"
+					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"	"%attack_bonus"
 				}
 				"Duration"	"60"
 				"IsHidden"	"1"
@@ -15408,11 +15434,326 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_bonus"	"100 200 300"
+				"attack_bonus"	"100 150 200"
 				"LinkedSpecialBonus"	"special_bonus_unique_lich_4"
 			}
 		}
 		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
 		"AbilitySound"	"Hero_Lich.FrostArmor"
+	}
+
+	"winter_wyvern_winters_curse"
+	{
+		"AbilityTextureName"	"winter_wyvern_winters_curse"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AOERadius"	"250"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"250"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_reduction"	"50"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_amplification"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attack_speed"	"60"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"3 4 5"
+			}
+		}
+		"AbilitySound"	"Hero_WinterWyvern.WintersCurse.Target"
+	}
+
+	"winter_wyvern_cold_embrace"
+	{
+		"AbilityTextureName"	"winter_wyvern_cold_embrace"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"15 12 9"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"2 3 4"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"heal_additive"	"20"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"heal_percentage"	"10"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_NO"
+		"AbilitySound"	"Hero_Winter_Wyvern.ColdEmbrace"
+	}
+
+	"grimstroke_dark_artistry"
+	{
+		"AbilityTextureName"	"grimstroke_dark_artistry"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"1400"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"start_radius"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"end_radius"	"200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"projectile_speed"	"2400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"150 250 350"
+				"LinkedSpecialBonus"	"special_bonus_unique_grimstroke_2"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_per_target"	"15 25 35"
+				"LinkedSpecialBonus"	"special_bonus_unique_grimstroke_2"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movement_slow_pct"	"50 60 70"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"1.5"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"vision_duration"	"2.0"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"range_tooltip"	"1400"
+				"LinkedSpecialBonus"	"special_bonus_unique_grimstroke_3"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+	}
+
+	"gs_moji"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"grimstroke_dark_artistry"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.8"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"20 15 10"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"OnSpellStart"
+		{
+			"LinearProjectile"
+			{
+				"Target"	"POINT"
+				"MoveSpeed"	"%projectile_speed"
+				"StartRadius"	"%start_radius"
+				"EndRadius"	"%end_radius"
+				"FixedDistance"	"1400"
+				"TargetTeams"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+				"TargetTypes"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"TargetFlags"	"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+			}
+			"RunScript"
+			{
+				"Target"	"POINT"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"GsMoji"
+			}
+		}
+		"OnProjectileHitUnit"
+		{
+			"RunScript"
+			{
+				"Target"	"UNIT"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"GsMojiHit"
+			}
+			"DeleteOnHit"	"0"
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"start_radius"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"end_radius"	"200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"projectile_speed"	"2400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"100 150 200"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_per_target"	"30 45 60"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movement_slow_pct"	"0"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"vision_duration"	"2.0"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"range_tooltip"	"9999"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+	}
+
+	"gs_give_fuhun"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"grimstroke_dark_artistry"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_grimstroke/grimstroke_loadout_arc_pnt.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_gs_give_fuhun"
+				"Duration"	"%moji_duration"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_gs_give_fuhun"
+			{
+				"IsDebuff"	"1"
+				"TextureName"	"grimstroke_soul_chain"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"AddFuhunDebuffParticle"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RemoveFuhunDebuffParticle"
+					}
+					"AttachEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/units/heroes/hero_grimstroke/grimstroke_loadout_arc_pnt.vpcf"
+						"EffectAttachType"	"follow_origin"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"moji_duration"	"10 15 20"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
 	}
 }
