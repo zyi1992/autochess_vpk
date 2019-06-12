@@ -17369,7 +17369,7 @@
 		"AttackDamageMin"	"40"
 		"AttackDamageMax"	"60"
 		"AttackRate"	"1.4"
-		"AttackRange"	"400"
+		"AttackRange"	"205"
 		"Creature"
 		{
 			"AttachWearables"
@@ -17489,7 +17489,7 @@
 		"AttackDamageMin"	"80"
 		"AttackDamageMax"	"120"
 		"AttackRate"	"1.4"
-		"AttackRange"	"400"
+		"AttackRange"	"205"
 		"Creature"
 		{
 			"AttachWearables"
@@ -17613,7 +17613,7 @@
 		"AttackDamageMin"	"160"
 		"AttackDamageMax"	"240"
 		"AttackRate"	"1.4"
-		"AttackRange"	"400"
+		"AttackRange"	"205"
 		"Creature"
 		{
 			"AttachWearables"
@@ -24680,15 +24680,15 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13022"
+					"ItemDef"	"9288"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13023"
+					"ItemDef"	"9290"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13021"
+					"ItemDef"	"9289"
 				}
 			}
 		}

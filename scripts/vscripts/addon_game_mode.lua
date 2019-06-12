@@ -1414,7 +1414,7 @@ function DAC:InitGameMode()
 			windrunner_powershot = 3,
 			doom_bringer_doom = 10,
 			kunkka_ghostship = 3,
-			lina_laguna_blade = 1,
+			lina_laguna_blade = 17,
 			troll_warlord_whirling_axes_melee = 2,
 			troll_warlord_whirling_axes_ranged = 1,
 			troll_warlord_fervor = 0,
@@ -1437,7 +1437,7 @@ function DAC:InitGameMode()
 			abaddon_aphotic_shield = 16,
 			bump = 11,
 			slark_shadow_dance = 2,
-			sniper_assassinate = 1,
+			sniper_assassinate = 17,
 			necrolyte_death_pulse = 2,
 			templar_assassin_refraction = 2,
 			enigma_midnight_pulse = 3,
@@ -6615,6 +6615,13 @@ function ChessAI(u)
 				end
 			end
 			if steal_chess ~= nil and not string.find(steal_chess,'chess_rubick') then
+				if steal_chess_unit:Script_GetAttackRange() > 210 then
+					if steal_chess_unit:Script_GetAttackRange() > 410 then
+						AddAbilityAndSetLevel(u,'attackrange_600',1)
+					else
+						AddAbilityAndSetLevel(u,'attackrange_400',1)
+					end
+				end
 				local a = GameRules:GetGameModeEntity().chess_ability_list[steal_chess]
 				if a ~= nil then
 					u.steal_ability = a
@@ -6651,28 +6658,6 @@ function ChessAI(u)
 				end
 			end
 		end
-		-- if u:GetUnitName() == 'chess_sf' then
-		-- 	AddAbilityAndSetLevel(u,"nevermore_necromastery")		
-		-- 	u:FindModifierByName("modifier_nevermore_necromastery"):SetStackCount(12)
-		-- end
-		-- if u:GetUnitName() == 'chess_sf1' then
-		-- 	AddAbilityAndSetLevel(u,"nevermore_necromastery")			
-		-- 	u:FindModifierByName("modifier_nevermore_necromastery"):SetStackCount(16)
-		-- end
-		-- if u:GetUnitName() == 'chess_sf11' then
-		-- 	AddAbilityAndSetLevel(u,"nevermore_necromastery")		
-		-- 	u:FindModifierByName("modifier_nevermore_necromastery"):SetStackCount(20)
-		-- end
-
-		-- if u:GetUnitName() == 'chess_sven' then
-		-- 	AddAbilityAndSetLevel(u,"sven_great_cleave")
-		-- end
-		-- if u:GetUnitName() == 'chess_sven1' then
-		-- 	AddAbilityAndSetLevel(u,"sven_great_cleave")
-		-- end
-		-- if u:GetUnitName() == 'chess_sven11' then
-		-- 	AddAbilityAndSetLevel(u,"sven_great_cleave")
-		-- end
 
 		--以技能名和棋子星级做判断来增加魂数，确保拉比克释放影魔技能时有伤害
 		if u:HasAbility('nevermore_requiem') and string.find(u:GetUnitName(), '11') then
@@ -7129,6 +7114,33 @@ function ChessAI(u)
 						 		Queue = 0 --Optional.  Used for queueing up abilities
 						 	}
 							ExecuteOrderFromTable(newOrder)
+							return RandomFloat(0.5,2) + ai_delay
+						end
+					elseif GameRules:GetGameModeEntity().ability_behavior_list[a] == 17 then
+						local unluckydog = FindUnluckyDogByAbilityDamage(u,a)
+						if unluckydog ~= nil then
+							local newOrder = {
+						 		UnitIndex = u:entindex(), 
+						 		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
+						 		TargetIndex = unluckydog:entindex(), --Optional.  Only used when targeting units
+						 		AbilityIndex = u:FindAbilityByName(a):entindex(), --Optional.  Only used when casting abilities
+						 		Position = nil, --Optional.  Only used when targeting the ground
+						 		Queue = 0 --Optional.  Used for queueing up abilities
+						 	}
+							ExecuteOrderFromTable(newOrder)
+							if a == 'lina_laguna_blade' then
+								local level = u:FindAbilityByName('lina_laguna_blade'):GetLevel()
+								InvisibleUnitCast({
+									caster = u,
+									ability = 'give_fiery_soul',
+									level = level,
+									unluckydog = u,
+								})
+							end
+							if unluckydog:FindModifierByName('modifier_gs_give_fuhun') ~= nil then
+								CopyAbility2FuhunUnit(u,unluckydog,a)
+							end
+
 							return RandomFloat(0.5,2) + ai_delay
 						end
 					else
@@ -7961,6 +7973,31 @@ function AttackHeal(keys)
 	local damage = keys.damage
 	local per = keys.per
 	target:Heal(damage*per, target)
+end
+function ModMaxHP(keys)
+	local caster = keys.caster
+	if caster:IsAncient() == true then
+		--信使无效
+		return
+	end
+
+	if not caster.hp_basic then
+		caster.hp_basic = caster:GetMaxHealth()
+	end
+
+	local per = tonumber(keys.per or 0)
+	local const = tonumber(keys.const or 0)
+	caster.hp_per = tonumber(caster.hp_per or 0) + per
+	caster.hp_const = tonumber(caster.hp_const or 0) + const
+
+	local hp_result_max = math.floor((caster.hp_basic + caster.hp_const) * (100+caster.hp_per)/100)
+
+	local hp_per_now = caster:GetHealth()/caster:GetMaxHealth()
+	local hp_result = hp_result_max * hp_per_now
+
+	caster:SetBaseMaxHealth(hp_result_max)
+	caster:SetMaxHealth(hp_result_max)
+	caster:SetHealth(hp_result)
 end
 function AddMaxHPPer(keys)
 	local caster = keys.caster
@@ -11641,4 +11678,29 @@ function CopyAbility2FuhunUnit(unit,unluckydog,ability)
 			end)
 		end
 	end
+end
+
+--寻找血量与技能伤害量最相近的棋子
+function FindUnluckyDogByAbilityDamage(u,ability)
+	local unluckydog = nil
+	local hp_abs = 9999
+	local hp_estimate = u:FindAbilityByName(ability):GetAbilityDamage()
+	for _,unit in pairs (GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if unit.team_id ~= u.team_id and unit:IsNull() == false and unit:IsAlive() == true then
+			--魔法伤害，引入魔抗系数进行计算
+			if u:FindAbilityByName(ability):GetAbilityDamageType() == 2 then
+				if math.abs(unit:GetHealth() - hp_estimate * (1 - unit:GetBaseMagicalResistanceValue())) < hp_abs then
+					unluckydog = unit
+					hp_abs = math.abs(unit:GetHealth() - hp_estimate * (1 - unit:GetBaseMagicalResistanceValue()))
+				end
+			--物理及纯粹伤害
+			else
+				if math.abs(unit:GetHealth() - hp_estimate) < hp_abs then
+					unluckydog = unit
+					hp_abs = math.abs(unit:GetHealth() - hp_estimate)
+				end
+			end
+		end
+	end
+	return unluckydog
 end

@@ -15756,4 +15756,45 @@
 		}
 		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
 	}
+
+	"attackrange_400"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"Modifiers"
+		{
+			"modifier_attackrange_400"
+			{
+				"Passive"	"1"
+				"States"	{}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"191"
+				}
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"attackrange_600"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"Modifiers"
+		{
+			"modifier_attackrange_600"
+			{
+				"Passive"	"1"
+				"States"	{}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"391"
+				}
+				"IsHidden"	"1"
+			}
+		}
+	}
 }
