@@ -7542,28 +7542,6 @@
 		}
 	}
 
-	"pick_chess_position"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"custom/move_chess"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"MaxLevel"	"1"
-		"AbilityCastAnimation"	"ACT_DOTA_TELEPORT"
-		"AbilityCooldown"	"0.2"
-		"AbilityManaCost"	"0"
-		"AbilityCastRange"	"999"
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"Target"	"POINT"
-				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"PickChessPosition"
-			}
-		}
-	}
-
 	"recall_chess"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -7781,6 +7759,29 @@
 				"Target"	"TARGET"
 				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 				"Function"	"RemoveChess"
+			}
+		}
+	}
+
+	"transfer_chess"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/zhugong_song"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"0.2"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"500"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"TransferChess"
 			}
 		}
 	}
@@ -9017,6 +9018,84 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"40"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_god_buff_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff_plus"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"64"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_god_buff_plus_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff_plus_plus"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"78"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_god_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
 					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
 				}
 				"IsBuff"	"1"
@@ -9922,6 +10001,14 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"MaxLevel"	"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ability_level"	"1 2 3"
+			}
+		}
 	}
 
 	"is_priest_buff"
@@ -12134,6 +12221,44 @@
 			{
 				"Target"	"CASTER"
 				"EffectName"	"Hero_LoneDruid.SpiritBear.Cast"
+			}
+		}
+	}
+
+	"bm_beast"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"beastmaster_call_of_the_wild_boar"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"100"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
+			"particle"	"particles/units/heroes/hero_beastmaster/beastmaster_call_boar.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"BmBeast"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"Hero_Beastmaster.Call.Boar"
+			}
+			"FireEffect"
+			{
+				"Target"	"CASTER"
+				"EffectAttachType"	"follow_overhead"
+				"EffectName"	"particles/units/heroes/hero_beastmaster/beastmaster_call_boar.vpcf"
 			}
 		}
 	}
@@ -15680,7 +15805,12 @@
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"range_tooltip"	"9999"
+				"range_tooltip"	"1400"
+			}
+			"10"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"fuhun_duration"	"10 15 20"
 			}
 		}
 		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"

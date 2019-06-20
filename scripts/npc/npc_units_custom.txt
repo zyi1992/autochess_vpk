@@ -9615,7 +9615,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9731,7 +9731,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9847,7 +9847,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2900"
+		"StatusHealth"	"2700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -12967,27 +12967,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9203"
+					"ItemDef"	"13460"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8741"
+					"ItemDef"	"13461"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9493"
+					"ItemDef"	"13459"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9490"
+					"ItemDef"	"13458"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8749"
+					"ItemDef"	"13457"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9492"
+					"ItemDef"	"522"
 				}
 			}
 		}
@@ -14299,23 +14299,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12973"
+					"ItemDef"	"13471"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12974"
+					"ItemDef"	"13469"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12975"
+					"ItemDef"	"13466"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12976"
+					"ItemDef"	"13468"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12977"
+					"ItemDef"	"13467"
 				}
 			}
 		}
@@ -15141,31 +15141,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8799"
+					"ItemDef"	"13324"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7419"
+					"ItemDef"	"13325"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7438"
+					"ItemDef"	"13330"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9135"
+					"ItemDef"	"9134"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7671"
+					"ItemDef"	"13329"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9134"
+					"ItemDef"	"13327"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"6925"
+					"ItemDef"	"13328"
 				}
 			}
 		}
@@ -17781,7 +17781,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/grimstroke/grimstroke.vmdl"
-		"ModelScale"	"0.55"
+		"ModelScale"	"0.5"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -17860,7 +17860,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13062"
+					"ItemDef"	"664"
 				}
 				"Wearable2"
 				{
@@ -17897,7 +17897,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/grimstroke/grimstroke.vmdl"
-		"ModelScale"	"0.7"
+		"ModelScale"	"0.65"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -17976,19 +17976,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13062"
+					"ItemDef"	"13060"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13060"
+					"ItemDef"	"13061"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13064"
+					"ItemDef"	"13062"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13061"
+					"ItemDef"	"13064"
 				}
 			}
 		}
@@ -22024,7 +22024,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9084"
+					"ItemDef"	"13204"
 				}
 				"Wearable2"
 				{
@@ -22032,11 +22032,11 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9087"
+					"ItemDef"	"13200"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9083"
+					"ItemDef"	"13201"
 				}
 				"Wearable5"
 				{
@@ -22048,7 +22048,7 @@
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9086"
+					"ItemDef"	"13202"
 				}
 			}
 		}
@@ -24957,7 +24957,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/death_prophet/death_prophet.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -25036,15 +25036,15 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9258"
+					"ItemDef"	"13099"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9259"
+					"ItemDef"	"13102"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9257"
+					"ItemDef"	"13104"
 				}
 				"Wearable4"
 				{
@@ -25056,11 +25056,11 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8029"
+					"ItemDef"	"13100"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9263"
+					"ItemDef"	"13103"
 				}
 			}
 		}
@@ -26394,7 +26394,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"300"
+		"StatusHealth"	"400"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -26448,7 +26448,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"500"
+		"StatusHealth"	"600"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -26502,7 +26502,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"700"
+		"StatusHealth"	"800"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -26516,6 +26516,168 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
+		"MovementSpeed"	"150"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"bm_beast1"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/heroes/beastmaster/beastmaster_beast.vmdl"
+		"ModelScale"	"0.6"
+		"Level"	"2"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"500"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"100"
+		"AttackRate"	"1.2"
+		"AttackRange"	"400"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"5"
+		"MovementSpeed"	"150"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/units/heroes/hero_beastmaster/beastmaster_boar_attack.vpcf"
+		"ProjectileSpeed"	"1200"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.633"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"bm_beast2"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/beastmaster/hawk/fotw_eagle/fotw_eagle.vmdl"
+		"ModelScale"	"1.8"
+		"Level"	"2"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"800"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"150"
+		"AttackRate"	"1.2"
+		"AttackRange"	"600"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"5"
+		"MovementSpeed"	"150"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"256"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/units/heroes/hero_disruptor/disruptor_thunder_strike_bolt.vpcf"
+		"ProjectileSpeed"	"2000"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"bm_beast3"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/lone_druid/bear/dark_wood_bear/dark_wood_bear.vmdl"
+		"ModelScale"	"0.95"
+		"Level"	"2"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1800"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"150"
+		"AttackDamageMax"	"200"
+		"AttackRate"	"1.2"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"15"
 		"MovementSpeed"	"150"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
