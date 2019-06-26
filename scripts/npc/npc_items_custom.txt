@@ -491,7 +491,7 @@
 					"Lifesteal"
 					{
 						"Target"	"ATTACKER"
-						"LifestealPercent"	"5"
+						"LifestealPercent"	"10"
 					}
 					"AttachEffect"
 					{
@@ -512,6 +512,7 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"CastFilterRejectCaster"	"0"
+		"AbilityCooldown"	"20"
 		"ID"	"1532"
 		"ItemQuality"	"rare"
 		"Model"	"models/props_winter/present.vmdl"
@@ -550,26 +551,6 @@
 						"Target"	"ATTACKER"
 						"EffectName"	"particles/generic_gameplay/generic_lifesteal.vpcf"
 						"EffectAttachType"	"follow_overhead"
-					}
-				}
-			}
-			"modifier_item_fengkuangmianju_buff"
-			{
-				"States"	{}
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
-				}
-				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"Passive"	"1"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"Target"	"CASTER"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"SilenceChess"
 					}
 				}
 			}

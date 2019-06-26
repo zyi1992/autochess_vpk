@@ -164,7 +164,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"2 3 4"
+				"duration"	"2.5 3.5 4.5"
 			}
 		}
 	}
@@ -8122,7 +8122,35 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-45"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
+				}
+				"Passive"	"1"
+				"EffectName"	"particles/items2_fx/veil_of_discord_debuff.vpcf"
+				"EffectAttachType"	"follow_overhead"
+			}
+		}
+	}
+
+	"is_mage_buff_plus_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"crystal_maiden_brilliance_aura"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"precache"
+		{
+			"particle"	"particles/items2_fx/veil_of_discord_debuff.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_mage_buff_plus_plus"
+			{
+				"TextureName"	"crystal_maiden_brilliance_aura"
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/items2_fx/veil_of_discord_debuff.vpcf"
@@ -8206,7 +8234,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-8"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -8263,7 +8291,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"35"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"45"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_siren/naga_siren_song_debuff_b.vpcf"
@@ -8314,6 +8342,33 @@
 		"Modifiers"
 		{
 			"modifier_is_warlock_buff_plus"
+			{
+				"TextureName"	"warlock_upheaval"
+				"IsDebuff"	"0"
+				"Properties"	{}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectName"	"effect/shushi/bloodseeker/warlock_shadow_word_debuff_j.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+		}
+	}
+
+	"is_warlock_buff_plus_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"warlock_upheaval"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"precache"
+		{
+			"particle"	"effect/shushi/bloodseeker/warlock_shadow_word_debuff_j.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_warlock_buff_plus_plus"
 			{
 				"TextureName"	"warlock_upheaval"
 				"IsDebuff"	"0"
@@ -8387,6 +8442,36 @@
 		}
 	}
 
+	"is_mech_buff_plus_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"rattletrap_power_cogs"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"precache"
+		{
+			"particle"	"particles/items_fx/healing_flask.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_mech_buff_plus_plus"
+			{
+				"TextureName"	"rattletrap_power_cogs"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"35"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectName"	"particles/items_fx/healing_flask.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+		}
+	}
+
 	"is_hunter_buff"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -8427,7 +8512,7 @@
 								"ModifierName"	"modifier_is_hunter_buff_jingzhun"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"60"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -8441,11 +8526,6 @@
 				}
 				"OnAttackLanded"
 				{
-					"RemoveModifier"
-					{
-						"Target"	"CASTER"
-						"ModifierName"	"modifier_is_hunter_buff_jingzhun"
-					}
 					"FireEffect"
 					{
 						"Target"	"TARGET"
@@ -8456,6 +8536,11 @@
 					{
 						"Target"	"TARGET"
 						"EffectName"	"Damage_Projectile.Player"
+					}
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_is_hunter_buff_jingzhun"
 					}
 				}
 				"IsHidden"	"1"
@@ -8484,7 +8569,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"40"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"50"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8503,7 +8588,7 @@
 								"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus"
 							}
 						}
-						"Chance"	"40"
+						"Chance"	"100"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -8517,11 +8602,6 @@
 				}
 				"OnAttackLanded"
 				{
-					"RemoveModifier"
-					{
-						"Target"	"CASTER"
-						"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus"
-					}
 					"FireEffect"
 					{
 						"Target"	"TARGET"
@@ -8532,6 +8612,11 @@
 					{
 						"Target"	"TARGET"
 						"EffectName"	"Damage_Projectile.Player"
+					}
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus"
 					}
 				}
 				"IsHidden"	"1"
@@ -8678,7 +8763,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"20"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9018,6 +9103,58 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_god_buff_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff_plus"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"75"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_god_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_god_buff"
+			{
+				"TextureName"	"zuus_static_field_alt1"
+				"IsDebuff"	"0"
+				"Properties"
+				{
 					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"40"
 				}
 				"IsBuff"	"1"
@@ -9025,6 +9162,42 @@
 				"Passive"	"1"
 				"EffectAttachType"	"follow_overhead"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
+	"is_wizard_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"grimstroke_ink_creature"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti7/hero_levelup_ti7_flash_hit_magic.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_wizard_buff"
+			{
+				"TextureName"	"grimstroke_ink_creature"
+				"IsDebuff"	"0"
+				"Properties"	{}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+				"EffectName"	"particles/econ/events/ti7/hero_levelup_ti7_flash_hit_magic.vpcf"
+				"OnCreated"
+				{
+					"FireSound"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"wizard.buff"
+					}
+				}
 			}
 		}
 	}
@@ -9071,58 +9244,6 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"78"
-				}
-				"IsBuff"	"1"
-				"States"	{}
-				"Passive"	"1"
-				"EffectAttachType"	"follow_overhead"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-			}
-		}
-	}
-
-	"is_god_buff"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"zuus_static_field_alt1"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"Modifiers"
-		{
-			"modifier_is_god_buff"
-			{
-				"TextureName"	"zuus_static_field_alt1"
-				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
-				}
-				"IsBuff"	"1"
-				"States"	{}
-				"Passive"	"1"
-				"EffectAttachType"	"follow_overhead"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-			}
-		}
-	}
-
-	"is_god_buff_plus"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"zuus_static_field_alt1"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"Modifiers"
-		{
-			"modifier_is_god_buff_plus"
-			{
-				"TextureName"	"zuus_static_field_alt1"
-				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"75"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -15022,7 +15143,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"physical_damage_reduction"	"30 50 70"
+				"physical_damage_reduction"	"30 45 60"
 			}
 			"02"
 			{
@@ -15032,7 +15153,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"physical_damage_reduction_side"	"15 25 35"
+				"physical_damage_reduction_side"	"15 23 30"
 			}
 			"04"
 			{
@@ -15887,6 +16008,59 @@
 		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
 	}
 
+	"give_fengkuangmianju_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"1"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_items.vsndevts"
+			"particle"	"particles/items2_fx/mask_of_madness.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_fengkuangmianju"
+				"Duration"	"8"
+			}
+			"FireSound"
+			{
+				"EffectName"	"DOTA_Item.MaskOfMadness.Activate"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_fengkuangmianju"
+			{
+				"IsDebuff"	"0"
+				"IsBuff"	"1"
+				"IsHidden"	"1"
+				"EffectName"	"particles/items2_fx/mask_of_madness.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"80"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-8"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+		}
+	}
+
 	"attackrange_400"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -15924,6 +16098,82 @@
 					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"391"
 				}
 				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"lightning_attack"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"harpy_storm_chain_lightning"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
+		}
+		"Modifiers"
+		{
+			"modifier_lightning_attack"
+			{
+				"Passive"	"1"
+				"OnAttackStart"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_lightning_attack_animation"
+						"Duration"	"2"
+					}
+					"FireSound"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"Hero_Disruptor.ThunderStrike.Cast"
+					}
+				}
+				"IsHidden"	"1"
+				"Properties"	{}
+			}
+			"modifier_lightning_attack_animation"
+			{
+				"OverrideAnimation"	"ACT_DOTA_SPAWN"
+				"Properties"	{}
+			}
+		}
+	}
+
+	"bm_bear_taunt"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"modifier_cny_beast_aegis"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"MaxLevel"	"1"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"0"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
+			"particle"	"particles/units/heroes/hero_beastmaster/beastmaster_primal_roar.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"BmBearTaunt"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"Hero_Beastmaster.Primal_Roar"
+			}
+			"FireEffect"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"particles/units/heroes/hero_beastmaster/beastmaster_primal_roar.vpcf"
+				"EffectAttachType"	"follow_overhead"
 			}
 		}
 	}

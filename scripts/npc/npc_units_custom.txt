@@ -772,8 +772,8 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/items/axe/ti9_jungle_axe/axe_bare.vmdl"
-		"ModelScale"	"0.67"
+		"Model"	"models/heroes/axe/axe.vmdl"
+		"ModelScale"	"0.6"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_axe.vsndevts"
 		// Abilities
@@ -854,19 +854,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12964"
+					"ItemDef"	"2"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12965"
+					"ItemDef"	"3"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12966"
+					"ItemDef"	"4"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12968"
+					"ItemDef"	"5"
 				}
 			}
 		}
@@ -7854,6 +7854,402 @@
 		"SoundSet"	"Hero_Puck"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_puck.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_puck.vsndevts"
+	}
+
+	// 2
+	"chess_pudge"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/pudge/pudge.vmdl"
+		"ModelScale"	"0.6"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_warrior"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"300"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"850"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"70"
+		"AttackDamageMax"	"110"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"47"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"258"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"259"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"260"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"261"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"262"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"391"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"470"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.5"
+		"HasInventory"	"1"
+		"Level"	"2"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Pudge"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
+		"ProjectileSpeed"	"800"
+		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+	}
+
+	// 2
+	"chess_pudge1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/pudge/pudge.vmdl"
+		"ModelScale"	"0.75"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_warrior"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"300"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1700"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"140"
+		"AttackDamageMax"	"220"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"9192"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"391"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"6115"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"6204"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"4007"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"6212"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"6202"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"6203"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.5"
+		"HasInventory"	"1"
+		"Level"	"4"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Pudge"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
+		"ProjectileSpeed"	"800"
+		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+	}
+
+	// 2
+	"chess_pudge11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/pudge/pudge.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_warrior"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"300"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"280"
+		"AttackDamageMax"	"440"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"9252"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"391"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"7756"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"6299"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"8038"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"6226"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"5949"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"7742"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.5"
+		"HasInventory"	"1"
+		"Level"	"6"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Pudge"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
+		"ProjectileSpeed"	"800"
+		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 	}
 
 	// 2
@@ -26588,7 +26984,7 @@
 	"bm_beast2"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
+		"Ability1"	"lightning_attack"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -26642,7 +27038,7 @@
 	"bm_beast3"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
+		"Ability1"	"bm_bear_taunt"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
