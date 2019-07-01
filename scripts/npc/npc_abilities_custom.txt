@@ -401,7 +401,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"10"
+		"AbilityCooldown"	"12 10 8"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -409,7 +409,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"heal"	"250 350 450"
+				"heal"	"250 400 550"
 				"LinkedSpecialBonus"	"special_bonus_unique_omniknight_1"
 			}
 			"02"
@@ -424,7 +424,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"10"
+		"AbilityCooldown"	"15 12 9"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -442,7 +442,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"400 450 500"
+				"radius"	"450"
 			}
 			"04"
 			{
@@ -8512,7 +8512,7 @@
 								"ModifierName"	"modifier_is_hunter_buff_jingzhun"
 							}
 						}
-						"Chance"	"60"
+						"Chance"	"45"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -8588,7 +8588,7 @@
 								"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus"
 							}
 						}
-						"Chance"	"100"
+						"Chance"	"75"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -8890,7 +8890,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"450"
+						"hp"	"400"
 					}
 				}
 			}
@@ -9103,59 +9103,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
-				}
-				"IsBuff"	"1"
-				"States"	{}
-				"Passive"	"1"
-				"EffectAttachType"	"follow_overhead"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-			}
-		}
-	}
-
-	"is_god_buff_plus"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"zuus_static_field_alt1"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"Modifiers"
-		{
-			"modifier_is_god_buff_plus"
-			{
-				"TextureName"	"zuus_static_field_alt1"
-				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"75"
-				}
-				"IsBuff"	"1"
-				"States"	{}
-				"Passive"	"1"
-				"EffectAttachType"	"follow_overhead"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-			}
-		}
-	}
-
-	"is_god_buff"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"zuus_static_field_alt1"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"Modifiers"
-		{
-			"modifier_is_god_buff"
-			{
-				"TextureName"	"zuus_static_field_alt1"
-				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"40"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9217,7 +9165,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"64"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"58"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9243,7 +9191,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"78"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"79"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -10166,7 +10114,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_SHALLOW_GRAVE"
-		"AbilityCooldown"	"15"
+		"AbilityCooldown"	"14 16 18"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"OnSpellStart"
@@ -10759,13 +10707,13 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_absorb"	"100 150 200"
+				"damage_absorb"	"150 300 450"
 				"LinkedSpecialBonus"	"special_bonus_unique_abaddon"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"400"
+				"radius"	"300"
 			}
 		}
 	}
@@ -10984,7 +10932,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"5"
+		"AbilityCooldown"	"9 7 5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -10998,7 +10946,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"speed"	"1000 1000 1000"
+				"speed"	"800"
 			}
 			"03"
 			{
@@ -11055,7 +11003,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"speed"	"1000"
+				"speed"	"800"
 			}
 			"07"
 			{
@@ -11693,12 +11641,12 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_attack_damage"	"100 150 200"
+				"bonus_attack_damage"	"150 150 150"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"corrosive_breath_damage"	"30 30 30"
+				"corrosive_breath_damage"	"10"
 			}
 			"06"
 			{
@@ -11719,13 +11667,13 @@
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"frost_bonus_movement_speed"	"-30"
+				"frost_bonus_movement_speed"	"-40"
 				"LinkedSpecialBonus"	"special_bonus_unique_dragon_knight_5"
 			}
 			"10"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"frost_bonus_attack_speed"	"-30"
+				"frost_bonus_attack_speed"	"-40"
 				"LinkedSpecialBonus"	"special_bonus_unique_dragon_knight_5"
 			}
 			"11"
@@ -14288,7 +14236,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"speed"	"50 75 100"
+				"speed"	"40 60 80"
 			}
 		}
 	}
@@ -14429,7 +14377,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityCooldown"	"20 15 10"
+		"AbilityCooldown"	"12 10 8"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -14487,7 +14435,7 @@
 			}
 		}
 		"AbilitySound"	"Hero_DeathProphet.Exorcism.Cast"
-		"AbilityDuration"	"10"
+		"AbilityDuration"	"8"
 	}
 
 	"pom_arrow_far"

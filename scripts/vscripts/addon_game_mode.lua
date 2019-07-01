@@ -540,6 +540,8 @@ function Precache( context )
 		"particles/econ/events/ti9/ti9_drums_musicnotes.vpcf",
 		"particles/econ/events/ti9/ti9_drums_musicnotes_b.vpcf",
  		"particles/econ/events/ti9/shovel/shovel_baby_roshan_spawn.vpcf",
+ 		"effect/yuhuofenshen/1_2_embers.vpcf",
+ 		"effect/winaround/1/shovel_baby_roshan_spawn.vpcf",
 	} 
     print("Precache...")
 	local t=table.maxn(mxx)
@@ -1859,11 +1861,13 @@ function DAC:InitGameMode()
 		h441 = "effect/liansai_dog2/1.vpcf",
 		h446 = "effect/wabbit/lvl3.vpcf",
 		h244 = "effect/chongya/1econ/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf",
+		h425 = "effect/xiexiaowo_guanjundun/1.vpcf",
 		-- h245 = "effect/xiaoxiang/pnt.vpcf",
 	}
 	GameRules:GetGameModeEntity().courier_ground_effect_list = {
 		h199 = "effect/gewugu/2.vpcf",
 		h303 = "particles/gem/brewmaster_drunken_haze_debuff_bubbles_2.vpcf",
+		h425 = "effect/yuhuofenshen/1_2_embers.vpcf",
 	}
 
 	GameRules:GetGameModeEntity().sm_hero_list_skin = {
@@ -2079,7 +2083,7 @@ function DAC:InitGameMode()
 		h422 = 1.4, --小飞侠
 		h423 = 1.3, --螃蟹7
 		h424 = 1.3, --螃蟹8
-		h425 = 1.3, --螃蟹9
+		h425 = 1.35, --螃蟹9
 
 		h426 = 1.1,--绽放树精new
 		h427 = 1.55,
@@ -2304,6 +2308,7 @@ function InitHeros()
 					hero_level = 0,
 					buff = '',
 					hero_damage = 0,
+					hero_damaged = 0,
 					is_vip = hero.is_vip or false,
 					is_author = hero.is_author or false,
 					p2team = nil,
@@ -2312,7 +2317,7 @@ function InitHeros()
 				hero.steam_id = steam_id
 				hero.onduty_hero_effect = onduty_hero_effect
 
-				if user_info.is_crown ~= nil then
+				if user_info.is_crown_s2 ~= nil then
 					hero.is_crown = true
 					ShowCrown(hero,1)
 				end
@@ -2489,6 +2494,7 @@ function InitHeros()
 					hero_level = 0,
 					buff = '',
 					hero_damage = 0,
+					hero_damaged = 0,
 					p2team = nil,
 				}
 
@@ -2584,6 +2590,7 @@ function InitHeros()
 				hero_level = 0,
 				buff = '',
 				hero_damage = 0,
+				hero_damaged = 0,
 				p2team = nil,
 			}
 
@@ -2855,11 +2862,49 @@ function CheckP2Status()
 		end
 	end
 end
+function CheckEndingStatus()
+	local live_count = 0
+	local last_hero = nil
+	for i,v in pairs (GameRules:GetGameModeEntity().hero) do
+		if v ~= nil and v:IsNull() ~= true and v:IsAlive() == true then
+			last_hero = v
+			live_count = live_count + 1
+			GameRules:GetGameModeEntity().last_player_steamid = v.steam_id
+			GameRules:GetGameModeEntity().last_player_hero = v
+		end
+	end
+	if PlayerResource:GetPlayerCount() > 1 then
+		if GameRules:GetGameModeEntity().p2_mode ~= true and live_count <= 1 and last_hero ~= nil then
+			prt('1P ready for end')
+			SetRankingState(last_hero)
+			Timers:CreateTimer(0.5,function()
+				DealFuneralAffairs(last_hero)
+			end)
+		end
+		if GameRules:GetGameModeEntity().p2_mode == true and GetP2TeamAliveCount() <= 1 then
+			prt('2P ready for end')
+			if last_hero ~= nil then
+				SetRankingState(last_hero)
+				Timers:CreateTimer(0.5,function()
+					DealFuneralAffairs(last_hero)
+				end)
+				if GetP2Ally(last_hero:GetTeam()) ~= nil and TeamId2Hero(GetP2Ally(last_hero:GetTeam())) ~= nil then
+					local hh = TeamId2Hero(GetP2Ally(last_hero:GetTeam()))
+					SetRankingState(hh)
+					Timers:CreateTimer(0.5,function()
+						DealFuneralAffairs(hh)
+					end)
+				end
+			end
+		end
+	end
+end
 --游戏循环1——开始一轮准备回合
 function StartAPrepareRound()
 	if GameRules:GetGameModeEntity().is_game_ended == true then
 		return
 	end
+	CheckEndingStatus()
 	CheckP2Status()
 	-- StatChess()
 	PostPlayerInfo()
@@ -2915,6 +2960,9 @@ function StartAPrepareRound()
 	GameRules:GetGameModeEntity().game_status = 1
 
 	GameRules:GetGameModeEntity().prepare_timer = 35
+	if GetMapName() == 'casual_2x4' or GetMapName() == 'ranked_2x4' then
+		GameRules:GetGameModeEntity().prepare_timer = 40
+	end
 	
 	for team_i=6,13 do
 		CustomGameEventManager:Send_ServerToTeam(team_i,"battle_info",{
@@ -3915,6 +3963,9 @@ function RecallChess(keys)
 	--撤回手牌
 	local picked_chess = keys.target
 	local caster = keys.caster
+	if IsUnitExist(picked_chess) == false then
+		return
+	end
 	local team_id = picked_chess.team_id
 	local origin_x = picked_chess.x
 	local origin_y = picked_chess.y
@@ -4004,6 +4055,7 @@ end
 --多余的滚回去
 function RandomRecallChess()
 	for i=6,13 do
+		CheckChess(i)
 		local teamcount = GameRules:GetGameModeEntity().population[i]
 		local teammax = GameRules:GetGameModeEntity().population_max[i]
 		if teamcount > 0 and teammax < teamcount then
@@ -4017,8 +4069,8 @@ function RandomRecallChess()
 			local recalled = 0
 			Timers:CreateTimer(function()
 				if recalled < recall_amount then
-					local smallest_chess = nil
-					local smallest_level = 3
+					local smallest_chess = GameRules:GetGameModeEntity().to_be_destory_list[1]
+					local smallest_level = 4
 					for k,v in pairs(GameRules:GetGameModeEntity().to_be_destory_list[i]) do
 						local a_level = 1
 						if string.find(v:GetUnitName(),'1') then
@@ -4115,7 +4167,6 @@ function DAC:OnCancelPickChessPosition(keys)
 	CancelPickChess(caster)
 end
 function DAC:OnPickChessPosition(keys)
-
 	local p = Vector(keys.x,keys.y,keys.z)
 	local caster = PlayerId2Hero(keys.PlayerID)
 	local is_move = false
@@ -4860,10 +4911,14 @@ function PostOneToServer(hero,steamid,rank,mode)
 		url = url..'&mode=p2&settings='..json.encode(GameRules:GetGameModeEntity().user_setting[steamid])
 	end
 	local tt = GameRules:GetGameModeEntity().stat_info[steamid]
+	local total_team = PlayerResource:GetPlayerCount()
+	if GameRules:GetGameModeEntity().p2_mode == true then
+		total_team = math.floor(PlayerResource:GetPlayerCount()/2)
+	end
 	GameRules:GetGameModeEntity().send_info[steamid] = {
 		account_id = steamid,
 		rank = rank,
-		total = PlayerResource:GetPlayerCount(),
+		total = total_team,
 		level = tt['mmr_level'],
 		candy = 0,
 		chess = tt['chess_lineup'],
@@ -5177,6 +5232,9 @@ end
 
 --根据玩家存活情况结算刚刚战败的玩家hero
 function SetRankingState(hero)
+	if GameRules:GetGameModeEntity().p2_mode == true and FindValueInTable(GameRules:GetGameModeEntity().p2_death_table,hero.p2team) == false then
+		table.insert(GameRules:GetGameModeEntity().p2_death_table,hero.p2team)
+	end
 	GameRules:GetGameModeEntity().counterpart[hero:GetTeam()] = -1
 	-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 	--hero是刚刚战败的玩家
@@ -5691,9 +5749,12 @@ function CheckChess(team_id)
 	local index_table = {}
 	local dup_table = {}
 	local chess_count = 0
+	if TeamId2Hero(team_id) == nil then
+		return
+	end
 	local hero_level = TeamId2Hero(team_id):GetLevel()
 	for y_x,obj in pairs(GameRules:GetGameModeEntity().mychess[team_id]) do
-		if FindValueInTable(index_table,obj.index) == true then
+		if FindValueInTable(index_table,obj.index) == true and string.find(obj.chess,'11') then
 			--重复了
 			table.insert(dup_table,y_x)
 		else
@@ -5704,7 +5765,7 @@ function CheckChess(team_id)
 	GameRules:GetGameModeEntity().population[team_id] = chess_count
 	GameRules:GetGameModeEntity().population_max[team_id] = hero_level
 	
-	if chess_count > hero_level and table.maxn(dup_table) > 0 then
+	if table.maxn(dup_table) > 0 then
 		for _,y_x in pairs(dup_table) do
 			GameRules:GetGameModeEntity().mychess[team_id][y_x] = nil
 		end
@@ -5941,7 +6002,7 @@ function WinARound(team,mychess,my_last_chess)
 	if hero == nil or hero:IsNull() == true or hero:IsAlive() == false then
 		return
 	end
-	play_particle("particles/econ/events/ti9/shovel/shovel_baby_roshan_spawn.vpcf",PATTACH_ABSORIGIN_FOLLOW,hero,3)
+	play_particle("effect/winaround/1/shovel_baby_roshan_spawn.vpcf",PATTACH_ABSORIGIN_FOLLOW,hero,3)
 
 
 	GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
@@ -6076,12 +6137,6 @@ function LoseARound(team,enemychess_new)
 			damage_all = 1
 		end
 	end
-	if GameRules:GetGameModeEntity().p2_mode == true then
-		damage_all = math.floor(damage_all/2+0.5)
-		if damage_all == 0 then
-			damage_all = 1
-		end
-	end
 
 	Timers:CreateTimer(delay_time,function()
 		if is_have_thunder == true then
@@ -6092,10 +6147,22 @@ function LoseARound(team,enemychess_new)
 				p = "particles/econ/items/zeus/arcana_chariot/zeus_arcana_thundergods_wrath_start_bolt_parent.vpcf",
 			})
 		end
-		DamageTeam(team, damage_all)
+		
 		if GameRules:GetGameModeEntity().p2_mode == true and GetP2Ally(team) ~= nil then
 			--2P模式，队友分担伤害
-			DamageTeam(GetP2Ally(team), damage_all)
+			local damage_all_2p = math.floor(damage_all/2+0.5)
+			if damage_all_2p == 0 then
+				damage_all_2p = 1
+			end
+			DamageTeam(team, damage_all_2p)
+			DamageTeam(GetP2Ally(team), damage_all_2p)
+
+			GameRules:GetGameModeEntity().stat_info[TeamId2Hero(team).steam_id]['hero_damaged'] = GameRules:GetGameModeEntity().stat_info[TeamId2Hero(team).steam_id]['hero_damaged'] + damage_all
+		else
+			--1P模式，正常伤害
+			DamageTeam(team, damage_all)
+
+			GameRules:GetGameModeEntity().stat_info[TeamId2Hero(team).steam_id]['hero_damaged'] = GameRules:GetGameModeEntity().stat_info[TeamId2Hero(team).steam_id]['hero_damaged'] + damage_all
 		end
 	end)
 
@@ -7062,8 +7129,8 @@ function ChessAI(u)
 				ai_delay = u:FindModifierByName('modifier_batrider_sticky_napalm'):GetStackCount()
 			end
 
-			if u:IsStunned() == true then
-				return 1
+			if u:IsStunned() == true or u.is_moving == true then
+				return 0.1
 			end
 
 
@@ -7107,9 +7174,6 @@ function ChessAI(u)
 			if fenglian_result ~= nil and fenglian_result > 0 then
 				return fenglian_result + ai_delay
 			end
-
-			
-
 			
 			--释放技能：11=新沙王，0=被动技能，1=单位目标，2=无目标，3=点目标，4=自己目标，5=近身单位目标，6=先知在地图边缘招树人，7=随机友军目标（嗜血术），8=随机周围空地目标（炸弹人），9=血量百分比最低的队友，10=等级最高的敌人（末日），11=沙王戳最远的能打到敌人的格子，12=小小投掷身边的敌人到最远的格子，13=自己为中心的点目标,14=pom特殊目标
 			local a = nil
@@ -7553,7 +7617,7 @@ function ChessAI(u)
 					blink_type = 'jump'
 				else
 					find_ok = FindNextSkipPosition(u)
-					if find_ok ~= nil and (find_ok-u:GetAbsOrigin()):Length2D() > 300 then
+					if find_ok ~= nil and (find_ok-u:GetAbsOrigin()):Length2D() > 512 then
 						blink_type = 'jump'
 					end
 				end
@@ -7566,6 +7630,7 @@ function ChessAI(u)
 					local yy = u.y
 					GameRules:GetGameModeEntity().unit[u.at_team_id or u.team_id][y..'_'..x] = 1
 					u:SetForwardVector((find_ok - u:GetAbsOrigin()):Normalized())
+					u.is_moving = true
 					BlinkChessX({
 						p = find_ok,
 						caster = u,
@@ -7576,13 +7641,13 @@ function ChessAI(u)
 					u.x = x
 					GameRules:GetGameModeEntity().unit[u.at_team_id or u.team_id][yy..'_'..xx] = nil
 
-					--计算需要跳多久
-					local jump_time = (find_ok - u:GetAbsOrigin()):Length2D() / 500
-					if blink_type == 'jump' then
-						jump_time = (find_ok - u:GetAbsOrigin()):Length2D() / 1000
-					end
+					-- --计算需要跳多久
+					-- local jump_time = (find_ok - u:GetAbsOrigin()):Length2D() / 500
+					-- if blink_type == 'jump' then
+					-- 	jump_time = (find_ok - u:GetAbsOrigin()):Length2D() / 1000
+					-- end
 
-					return RandomFloat(jump_time+0.1,jump_time+0.2) + ai_delay
+					return 0.1
 				end
 				return RandomFloat(0.1,0.2) + ai_delay
 			else
@@ -8566,10 +8631,10 @@ function AddStat(id,prop)
 		return
 	end
 	GameRules:GetGameModeEntity().stat_info[hero.steam_id][prop] = GameRules:GetGameModeEntity().stat_info[hero.steam_id][prop] + 1
-	if prop == 'kills' then
+	if prop == 'hero_damage' then
 		PlayerResource:IncrementLastHits(id)
 	end
-	if prop == 'deaths' then
+	if prop == 'hero_damaged' then
 		PlayerResource:IncrementDenies(id)
 	end
 
@@ -9643,21 +9708,24 @@ function TriggerSheepStick(u)
 			if name == 'item_yangdao' and ability:IsCooldownReady() == true then
 				if u:FindAbilityByName("crab_voodoo") == nil then
 					AddAbilityAndSetLevel(u,'crab_voodoo')
-				else
-					local dog = FindHighLevelUnluckyDog(u)
-					if u:IsNull() ~= true and dog ~= nil and dog:IsNull() ~= true then
-						ability:StartCooldown(15)
-						local newOrder = {
-					 		UnitIndex = u:entindex(), 
-					 		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
-					 		TargetIndex = dog:entindex(), 
-					 		AbilityIndex = u:FindAbilityByName("crab_voodoo"):entindex(), 
-					 		Position = nil, 
-					 		Queue = 0 
-					 	}
-						ExecuteOrderFromTable(newOrder)
-						RemoveAllKnightBuff(dog)
-					end
+				end
+				local dog = FindHighLevelUnluckyDog(u)
+				if u:IsNull() ~= true and dog ~= nil and dog:IsNull() ~= true then
+					local newOrder = {
+				 		UnitIndex = u:entindex(), 
+				 		OrderType = DOTA_UNIT_ORDER_CAST_TARGET,
+				 		TargetIndex = dog:entindex(), 
+				 		AbilityIndex = u:FindAbilityByName("crab_voodoo"):entindex(), 
+				 		Position = nil, 
+				 		Queue = 0 
+				 	}
+					ExecuteOrderFromTable(newOrder)
+					Timers:CreateTimer(0.3,function()
+						if dog:HasModifier('modifier_shadow_shaman_voodoo') then
+							ability:StartCooldown(15)
+							RemoveAllKnightBuff(dog)
+						end
+					end)
 				end
 				return 1
 			end
@@ -10676,6 +10744,7 @@ function DAC:OnCatchCrab(keys)
 		activate_cdkey = 'https://autochess.ppbizon.com/cdkey/act',
 		jihuan_hero = 'https://autochess.ppbizon.com/shop/v2/collect',
 		request_vote_chess = 'https://autochess.ppbizon.com/vip/vote',
+		get_season_award = 'https://autochess.ppbizon.com/award/get',
 	}
 	if urls[keys.event] ~= nil then
 		local send_url = urls[keys.event]
@@ -10691,9 +10760,11 @@ function DAC:OnCatchCrab(keys)
 		for i,v in pairs(keys.params) do
 			send_url = send_url..'&'..i..'='..v
 		end
+
 		send_url = send_url..GetSendKey()
 		Timers:CreateTimer(RandomFloat(0,1),function()
 			SendHTTP(send_url,function(t)
+				print(json.encode(t))
 				CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(player_id),'send_http_cb',{
 					key = GetClientKey(GameRules:GetGameModeEntity().playerid2team[player_id]),
 					event = keys.cb,
@@ -11756,11 +11827,11 @@ end
 function StartMarsShieldCD(caster)
 	if caster:HasAbility("mars_bulwark") then
 		if caster:HasAbility('is_god_buff_plus_plus') then
-			caster:FindAbilityByName("mars_bulwark"):StartCooldown(1.76)
+			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.21)
 		elseif caster:HasAbility('is_god_buff_plus') then
-			caster:FindAbilityByName("mars_bulwark"):StartCooldown(2.88)
+			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.42)
 		elseif caster:HasAbility('is_god_buff') then
-			caster:FindAbilityByName("mars_bulwark"):StartCooldown(4.8)
+			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.7)
 		else
 			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8)
 		end
@@ -11787,17 +11858,31 @@ function ShowCrown(hero,crown_level)
 	if hero.is_crown ~= true then
 		return
 	end
+	-- if crown_level == 1 then
+	-- 	hero.crown_p = PlayParticleOnUnitUntilDeath({
+	-- 		caster = hero,
+	-- 		p = "effect/crown/1.vpcf",
+	-- 		pos = PATTACH_ABSORIGIN_FOLLOW,
+	-- 	})
+	-- end
+	-- if crown_level == 2 then
+	-- 	hero.crown_p = PlayParticleOnUnitUntilDeath({
+	-- 		caster = hero,
+	-- 		p = "effect/crown/2.vpcf",
+	-- 		pos = PATTACH_OVERHEAD_FOLLOW,
+	-- 	})
+	-- end
 	if crown_level == 1 then
 		hero.crown_p = PlayParticleOnUnitUntilDeath({
 			caster = hero,
-			p = "effect/crown/1.vpcf",
-			pos = PATTACH_ABSORIGIN_FOLLOW,
+			p = "effect/crown_s2/1.vpcf",
+			pos = PATTACH_OVERHEAD_FOLLOW,
 		})
 	end
 	if crown_level == 2 then
 		hero.crown_p = PlayParticleOnUnitUntilDeath({
 			caster = hero,
-			p = "effect/crown/2.vpcf",
+			p = "effect/crown_s2/2.vpcf",
 			pos = PATTACH_OVERHEAD_FOLLOW,
 		})
 	end
@@ -12196,6 +12281,7 @@ function SetCourier(hero, onduty_hero, onduty_hero_effect)
 	hero:SetModelScale(hero.init_model_scale)
 	hero.ori_model = onduty_hero_model
 	hero.ori_skin = onduty_hero_skin
+	hero.onduty_hero = onduty_hero
 	if hero.effect ~= nil then
 		hero:RemoveAbility(hero.effect)
 		hero:RemoveModifierByName('modifier_texiao_star')
@@ -12349,7 +12435,7 @@ function FindUnluckyDogByAbilityDamage(u,ability)
 		if unit.team_id ~= u.team_id and unit:IsNull() == false and unit:IsAlive() == true then
 			--魔法伤害，引入魔抗系数进行计算
 			if u:FindAbilityByName(ability):GetAbilityDamageType() == 2 then
-				if math.abs(unit:GetHealth() - hp_estimate * (1 - unit:GetMagicalArmorValue())) < hp_abs then
+				if math.abs(unit:GetHealth() - hp_estimate * (1 - unit:GetMagicalArmorValue())) < hp_abs and unit:GetMagicalArmorValue() < 1 then
 					unluckydog = unit
 					hp_abs = math.abs(unit:GetHealth() - hp_estimate * (1 - unit:GetMagicalArmorValue()))
 				end

@@ -9110,7 +9110,7 @@
 			}
 		}
 	}
-	"models/huyazhu/modle/huya.vmdl"
+	"models/hy/huya.vmdl"
 	{
 		"PortraitLightPosition"		"202.70 -23.15 308.17"
 		"PortraitLightAngles"		"54.79 171.70 0.00"
@@ -9142,7 +9142,7 @@
 			}
 		}
 	}
-	"models/huyazhu/modle/huya_flying.vmdl"
+	"models/hy/huya_flying.vmdl"
 	{
 		"PortraitLightPosition"		"202.70 -23.15 308.17"
 		"PortraitLightAngles"		"54.79 171.70 0.00"
@@ -9238,5 +9238,68 @@
 			}
 		}
 	}
+	"models/daxiang/daxiang.vmdl"
+	{
+		"PortraitLightPosition"		"202.70 -23.15 308.17"
+		"PortraitLightAngles"		"54.79 171.70 0.00"
+		"PortraitLightFOV"		"88"
+		"PortraitLightDistance"		"343"
+		"PortraitLightColor"		"190 190 190"
+		"PortraitShadowColor"		"74 74 74"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"79 108 108"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_moon.vmat"
+		"PortraitBackgroundColor1"		"1 1 1"
+		"PortraitBackgroundColor2"		"1 1 1"
+		"PortraitBackgroundColor3"		"1 1 1"
+		"PortraitBackgroundColor4"		"1 1 1"
+		"PortraitLightScale"		"4.500000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-79.070 -84.150 -25.320"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"600.000000 -98.000000 205.000000"
+				"PortraitAngles"		"10.600006 172.000000 0.000000"
+				"PortraitFOV"		"21.500000"
+				"PortraitFar"		"1000.000000"
+			}
+		}
+	}
+	"models/daxiang/daxiang_flying.vmdl"
+	{
+		"PortraitLightPosition"		"202.70 -23.15 308.17"
+		"PortraitLightAngles"		"54.79 171.70 0.00"
+		"PortraitLightFOV"		"88"
+		"PortraitLightDistance"		"343"
+		"PortraitLightColor"		"190 190 190"
+		"PortraitShadowColor"		"74 74 74"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"79 108 108"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_moon.vmat"
+		"PortraitBackgroundColor1"		"1 1 1"
+		"PortraitBackgroundColor2"		"1 1 1"
+		"PortraitBackgroundColor3"		"1 1 1"
+		"PortraitBackgroundColor4"		"1 1 1"
+		"PortraitLightScale"		"4.500000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-79.070 -84.150 -25.320"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"600.000000 -98.000000 255.000000"
+				"PortraitAngles"		"10.600006 172.000000 0.000000"
+				"PortraitFOV"		"21.500000"
+				"PortraitFar"		"1000.000000"
+			}
+		}
+	}
 }
-

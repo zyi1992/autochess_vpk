@@ -85,6 +85,7 @@ function modifier_jump:UpdateHorizontalMotion(me, dt)
         else
             --到终点了
             me:SetAbsOrigin(self.vTargetPosition)
+            me.is_moving = false
             me:InterruptMotionControllers(true)
             play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)

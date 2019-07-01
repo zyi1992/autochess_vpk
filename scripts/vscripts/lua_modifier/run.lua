@@ -30,7 +30,7 @@ function modifier_run:OnCreated(kv)
         self.vTargetPosition   = Vector(kv.vx,kv.vy,128)
 
         self.vDirection        = (self.vTargetPosition - self.vStartPosition):Normalized()
-        self.flHorizontalSpeed = 500.0/30
+        self.flHorizontalSpeed = 600.0/30
         self.flDistance        = (self.vTargetPosition - self.vStartPosition):Length2D() + self.flHorizontalSpeed
         self.leap_traveled = 0
         --self:GetParent():SetForwardVector(self.vDirection)
@@ -84,6 +84,7 @@ function modifier_run:UpdateHorizontalMotion(me, dt)
         else
             --到终点了
             me:SetAbsOrigin(self.vTargetPosition)
+            me.is_moving = false
             me:InterruptMotionControllers(true)
             -- play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             -- EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)
