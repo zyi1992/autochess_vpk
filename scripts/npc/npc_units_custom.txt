@@ -814,7 +814,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"700"
+		"StatusHealth"	"750"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -930,7 +930,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1500"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -1054,7 +1054,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2800"
+		"StatusHealth"	"3000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -5060,7 +5060,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/furion/furion.vmdl"
-		"ModelScale"	"0.85"
+		"ModelScale"	"0.84"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -5231,7 +5231,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"600"
+		"StatusHealth"	"650"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -5349,7 +5349,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1200"
+		"StatusHealth"	"1300"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -5467,7 +5467,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2400"
+		"StatusHealth"	"2600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -7030,7 +7030,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/shredder/shredder.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.88"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -7109,31 +7109,35 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7430"
+					"ItemDef"	"8020"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7431"
+					"ItemDef"	"7744"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7744"
+					"ItemDef"	"537"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8018"
+					"ItemDef"	"8019"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8019"
+					"ItemDef"	"7430"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7581"
+					"ItemDef"	"12927"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"402"
+					"ItemDef"	"7581"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"400"
 				}
 			}
 		}
@@ -9555,7 +9559,7 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5945"
+					"ItemDef"	"13524"
 				}
 				"Wearable4"
 				{
@@ -14699,7 +14703,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13469"
+					"ItemDef"	"12925"
 				}
 				"Wearable3"
 				{
@@ -18256,7 +18260,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"664"
+					"ItemDef"	"13062"
 				}
 				"Wearable2"
 				{
@@ -18383,6 +18387,10 @@
 					"ItemDef"	"13062"
 				}
 				"Wearable4"
+				{
+					"ItemDef"	"12939"
+				}
+				"Wearable5"
 				{
 					"ItemDef"	"13064"
 				}
@@ -18657,7 +18665,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/lone_druid/lone_druid.vmdl"
-		"ModelScale"	"0.95"
+		"ModelScale"	"0.9"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -26785,12 +26793,12 @@
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
 		"Model"	"models/heroes/furion/treant.vmdl"
-		"ModelScale"	"0.55"
+		"ModelScale"	"0.6"
 		"Level"	"1"
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"400"
+		"StatusHealth"	"300"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -26844,15 +26852,15 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"600"
+		"StatusHealth"	"300"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"80"
+		"AttackDamageMin"	"40"
+		"AttackDamageMax"	"60"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -26893,20 +26901,20 @@
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
 		"Model"	"models/items/furion/treant/defender_of_the_jungle_lakad_coconut/defender_of_the_jungle_lakad_coconut.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.8"
 		"Level"	"1"
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"800"
+		"StatusHealth"	"450"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"80"
-		"AttackDamageMax"	"100"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"80"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"

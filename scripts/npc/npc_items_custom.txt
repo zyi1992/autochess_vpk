@@ -2549,6 +2549,45 @@
 		}
 	}
 
+	"item_baoxiang"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_present"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_TREE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"50"
+		"ID"	"1553"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/treasure_chest_gold.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"1"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+			}
+		}
+	}
+
 	"item_recipe_fengkuangmianju"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2871,6 +2910,116 @@
 		"ItemRequirements"
 		{
 			"01"	"item_xiaofu;item_miyinchui"
+		}
+	}
+
+
+	"item_recipe_banjia"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3027"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_banjia"
+		"ItemRequirements"
+		{
+			"01"	"item_suozijia;item_suozijia"
+		}
+	}
+	"item_recipe_zhiliaozhihuan"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3028"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_zhiliaozhihuan"
+		"ItemRequirements"
+		{
+			"01"	"item_huifuzhihuan;item_huifuzhihuan"
+		}
+	}
+	"item_recipe_biaoqiang"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3029"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_biaoqiang"
+		"ItemRequirements"
+		{
+			"01"	"item_gongjizhizhua;item_gongjizhizhua"
+		}
+	}
+	"item_recipe_emodaofeng"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3030"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_emodaofeng"
+		"ItemRequirements"
+		{
+			"01"	"item_biaoqiang;item_biaoqiang"
+		}
+	}
+	"item_recipe_shengzheyiwu"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3031"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_shengzheyiwu"
+		"ItemRequirements"
+		{
+			"01"	"item_kuojian;item_kuojian;item_kuojian"
+		}
+	}
+	"item_recipe_molifazhang"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3032"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_molifazhang"
+		"ItemRequirements"
+		{
+			"01"	"item_fashichangpao;item_fashichangpao"
+		}
+	}
+	"item_recipe_shenmifazhang"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3033"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_shenmifazhang"
+		"ItemRequirements"
+		{
+			"01"	"item_molifazhang;item_xuwubaoshi;"
+		}
+	}
+	"item_recipe_jixianfaqiu"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3034"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_jixianfaqiu"
+		"ItemRequirements"
+		{
+			"01"	"item_huoliqiu;item_wangguan;"
+		}
+	}
+	"item_recipe_dafu"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3035"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_dafu"
+		"ItemRequirements"
+		{
+			"01"	"item_xiaofu;item_xiaofu;"
 		}
 	}
 }
