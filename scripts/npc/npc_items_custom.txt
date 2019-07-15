@@ -2549,21 +2549,142 @@
 		}
 	}
 
-	"item_baoxiang"
+	"item_lootbox_lv2"
 	{
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_present"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_TREE"
+		"AbilityTextureName"	"custom/lootbox_lv2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
 		"AbilityCooldown"	"3"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
+		"AbilityChannelTime"	"1"
 		"ID"	"1553"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_gameplay/treasure_chest_gold.vmdl"
+		"Model"	"models/props_winter/present.vmdl"
+		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+				"lv"	"2"
+			}
+		}
+	}
+
+	"item_lootbox_lv3"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"custom/lootbox_lv2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"50"
+		"AbilityChannelTime"	"1"
+		"ID"	"1560"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_winter/present.vmdl"
+		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+				"lv"	"3"
+			}
+		}
+	}
+
+	"item_lootbox_lv1"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"custom/lootbox_lv2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"50"
+		"AbilityChannelTime"	"1"
+		"ID"	"1561"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_winter/present.vmdl"
+		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+				"lv"	"1"
+			}
+		}
+	}
+
+	"item_suduzhixue"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_boots"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"ID"	"1554"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_winter/present.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2586,6 +2707,211 @@
 				"Function"	"ItemBaoxiang"
 			}
 		}
+	}
+
+	"item_xiwa"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_shivas_guard"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"0"
+		"ID"	"1555"
+		"ItemQuality"	"epic"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_xiwa"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
+				}
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RenJiaDamaged"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+			}
+		}
+	}
+
+	"item_zhaohuanshenshi"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"custom/zhaohuanshenshi"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"ID"	"1556"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"1"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_zhaohuanshenshi"
+			{
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"250"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"-250"
+					}
+				}
+				"IsHidden"	"1"
+				"Passive"	"1"
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"TARGET"
+						"Duration"	"5"
+						"ModifierName"	"modifier_item_zhaohuanshenshi_debuff"
+					}
+				}
+			}
+			"modifier_item_zhaohuanshenshi_debuff"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-3"
+				}
+				"EffectName"	"particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"IsDebuff"	"1"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"item_nengliangqiu"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_energy_booster"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"ID"	"1557"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"1"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	}
+
+	"item_aoshuxie"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_arcane_boots"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"ID"	"1558"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"1"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	}
+
+	"item_yuanxingxie"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_travel_boots"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"ID"	"1559"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"1"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 	}
 
 	"item_recipe_fengkuangmianju"
@@ -2913,7 +3239,6 @@
 		}
 	}
 
-
 	"item_recipe_banjia"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2926,6 +3251,7 @@
 			"01"	"item_suozijia;item_suozijia"
 		}
 	}
+
 	"item_recipe_zhiliaozhihuan"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2938,6 +3264,7 @@
 			"01"	"item_huifuzhihuan;item_huifuzhihuan"
 		}
 	}
+
 	"item_recipe_biaoqiang"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2950,6 +3277,7 @@
 			"01"	"item_gongjizhizhua;item_gongjizhizhua"
 		}
 	}
+
 	"item_recipe_emodaofeng"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2962,6 +3290,7 @@
 			"01"	"item_biaoqiang;item_biaoqiang"
 		}
 	}
+
 	"item_recipe_shengzheyiwu"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2974,6 +3303,7 @@
 			"01"	"item_kuojian;item_kuojian;item_kuojian"
 		}
 	}
+
 	"item_recipe_molifazhang"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2986,6 +3316,7 @@
 			"01"	"item_fashichangpao;item_fashichangpao"
 		}
 	}
+
 	"item_recipe_shenmifazhang"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -2998,6 +3329,7 @@
 			"01"	"item_molifazhang;item_xuwubaoshi;"
 		}
 	}
+
 	"item_recipe_jixianfaqiu"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -3010,6 +3342,7 @@
 			"01"	"item_huoliqiu;item_wangguan;"
 		}
 	}
+
 	"item_recipe_dafu"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -3019,7 +3352,33 @@
 		"ItemResult"	"item_dafu"
 		"ItemRequirements"
 		{
-			"01"	"item_xiaofu;item_xiaofu;"
+			"01"	"item_xiaofu;item_xiaofu;item_xiaofu;"
+		}
+	}
+
+	"item_recipe_xiwa"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3036"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_xiwa"
+		"ItemRequirements"
+		{
+			"01"	"item_banjia;item_shenmifazhang;"
+		}
+	}
+
+	"item_recipe_zhaohuanshenshi"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3037"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_zhaohuanshenshi"
+		"ItemRequirements"
+		{
+			"01"	"item_huoliqiu;item_kuweishi;item_kuweishi;"
 		}
 	}
 }

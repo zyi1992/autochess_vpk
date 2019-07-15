@@ -2484,7 +2484,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/antimage/antimage.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.85"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -4413,7 +4413,7 @@
 		}
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -5769,6 +5769,10 @@
 				{
 					"ItemDef"	"7080"
 				}
+				"Wearable7"
+				{
+					"ItemDef"	"4884"
+				}
 			}
 		}
 		"AttackAnimationPoint"	"0.330000"
@@ -5869,27 +5873,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9059"
+					"ItemDef"	"13496"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12296"
+					"ItemDef"	"9059"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4884"
+					"ItemDef"	"13491"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8982"
+					"ItemDef"	"13495"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8985"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"560"
+					"ItemDef"	"12296"
 				}
 			}
 		}
@@ -6995,7 +6995,7 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9547"
+					"ItemDef"	"12927"
 				}
 				"Wearable5"
 				{
@@ -7129,7 +7129,7 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12927"
+					"ItemDef"	"13523"
 				}
 				"Wearable7"
 				{
@@ -13615,27 +13615,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7974"
+					"ItemDef"	"538"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7710"
+					"ItemDef"	"7711"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7711"
+					"ItemDef"	"7713"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7712"
+					"ItemDef"	"8316"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7713"
+					"ItemDef"	"7710"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"538"
+					"ItemDef"	"7409"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"7712"
 				}
 			}
 		}
@@ -13739,27 +13743,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5262"
+					"ItemDef"	"538"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7400"
+					"ItemDef"	"13313"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5263"
+					"ItemDef"	"13315"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5264"
+					"ItemDef"	"8316"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9164"
+					"ItemDef"	"13317"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"538"
+					"ItemDef"	"8002"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"13314"
 				}
 			}
 		}
@@ -14339,19 +14347,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9019"
+					"ItemDef"	"9495"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9020"
+					"ItemDef"	"9021"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9021"
+					"ItemDef"	"509"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"509"
+					"ItemDef"	"9020"
 				}
 			}
 		}
@@ -14455,27 +14463,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9494"
+					"ItemDef"	"8259"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9495"
+					"ItemDef"	"6996"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9496"
+					"ItemDef"	"509"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"509"
+					"ItemDef"	"13507"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8259"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"6996"
+					"ItemDef"	"13505"
 				}
 			}
 		}
@@ -20765,7 +20769,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/necrolyte/necrolyte.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.7"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -20848,23 +20852,23 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8475"
+					"ItemDef"	"13069"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9840"
+					"ItemDef"	"13067"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"4686"
+					"ItemDef"	"13066"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8477"
+					"ItemDef"	"13065"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8474"
+					"ItemDef"	"13068"
 				}
 			}
 		}
@@ -21096,7 +21100,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8475"
+					"ItemDef"	"9484"
 				}
 				"Wearable3"
 				{
@@ -21108,11 +21112,11 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8477"
+					"ItemDef"	"9482"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8474"
+					"ItemDef"	"9483"
 				}
 			}
 		}
@@ -26477,7 +26481,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"2500"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -27550,7 +27554,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"4500"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -27603,7 +27607,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"4500"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -27809,7 +27813,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"6000"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -27862,7 +27866,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"5000"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -27915,7 +27919,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"5000"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -27968,7 +27972,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"20000"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -28021,7 +28025,7 @@
 		"BountyGoldMax"	"0"
 		"StatusHealth"	"40000"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
