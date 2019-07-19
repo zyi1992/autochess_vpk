@@ -2724,7 +2724,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/rattletrap/rattletrap.vmdl"
-		"ModelScale"	"0.85"
+		"ModelScale"	"0.87"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -2838,7 +2838,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/rattletrap/rattletrap.vmdl"
-		"ModelScale"	"1..05"
+		"ModelScale"	"1.02"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -2917,27 +2917,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12733"
+					"ItemDef"	"7466"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7466"
+					"ItemDef"	"13295"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12734"
+					"ItemDef"	"12737"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8068"
-				}
-				"Wearable5"
-				{
-					"ItemDef"	"12735"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"12737"
+					"ItemDef"	"13296"
 				}
 			}
 		}
@@ -4779,13 +4771,9 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"515"
-				}
-				"Wearable7"
-				{
 					"ItemDef"	"466"
 				}
-				"Wearable8"
+				"Wearable7"
 				{
 					"ItemDef"	"9267"
 				}
@@ -5643,10 +5631,6 @@
 				{
 					"ItemDef"	"62"
 				}
-				"Wearable6"
-				{
-					"ItemDef"	"560"
-				}
 			}
 		}
 		"AttackAnimationPoint"	"0.330000"
@@ -5668,7 +5652,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/juggernaut/juggernaut.vmdl"
-		"ModelScale"	"0.8"
+		"ModelScale"	"0.76"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -5747,31 +5731,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7079"
+					"ItemDef"	"13496"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7481"
+					"ItemDef"	"13492"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7077"
+					"ItemDef"	"13491"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7075"
+					"ItemDef"	"13495"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7164"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"7080"
-				}
-				"Wearable7"
-				{
-					"ItemDef"	"4884"
+					"ItemDef"	"13494"
 				}
 			}
 		}
@@ -5873,7 +5849,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13496"
+					"ItemDef"	"8985"
 				}
 				"Wearable2"
 				{
@@ -5881,11 +5857,11 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13491"
+					"ItemDef"	"8982"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13495"
+					"ItemDef"	"4884"
 				}
 				"Wearable5"
 				{
@@ -13455,7 +13431,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -13579,7 +13555,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"10"
 		// Base mana.
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -13707,7 +13683,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"15"
 		// Base mana.
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -17821,7 +17797,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/rubick/rubick.vmdl"
-		"ModelScale"	"0.55"
+		"ModelScale"	"0.56"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -17904,7 +17880,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8396"
+					"ItemDef"	"13265"
 				}
 				"Wearable3"
 				{
@@ -17912,11 +17888,11 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12427"
+					"ItemDef"	"674"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8393"
+					"ItemDef"	"9504"
 				}
 				"Wearable6"
 				{
@@ -26408,7 +26384,7 @@
 	"pve_stone_b"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
+		"Ability1"	"is_element"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -26439,7 +26415,7 @@
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"150"
-		"AttackRate"	"0.9"
+		"AttackRate"	"1"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
@@ -27428,7 +27404,7 @@
 	"pve_bear_a"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ogre"
+		"Ability1"	""
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -27479,7 +27455,7 @@
 	"pve_bear_b"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ogre"
+		"Ability1"	""
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -27666,7 +27642,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"1000"
+		"AttackDamageMax"	"800"
 		"AttackRate"	"0.8"
 		"AttackRange"	"600"
 		"AttackRangeBuffer"	"50"
@@ -27717,7 +27693,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"800"
+		"AttackDamageMax"	"1000"
 		"AttackRate"	"0.8"
 		"AttackRange"	"600"
 		"AttackRangeBuffer"	"50"
@@ -27739,7 +27715,7 @@
 	{
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"sven_great_cleave"
-		"Ability2"	""
+		"Ability2"	"is_dragon"
 		"Ability3"	""
 		"Ability4"	""
 		"Ability5"	""
@@ -27949,7 +27925,7 @@
 	{
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"sven_great_cleave"
-		"Ability2"	""
+		"Ability2"	"is_beast"
 		"Ability3"	""
 		"Ability4"	""
 		"Ability5"	""
@@ -28002,7 +27978,7 @@
 	{
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"sven_great_cleave"
-		"Ability2"	""
+		"Ability2"	"is_demon"
 		"Ability3"	""
 		"Ability4"	""
 		"Ability5"	""

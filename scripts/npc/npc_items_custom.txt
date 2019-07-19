@@ -1889,6 +1889,53 @@
 		}
 	}
 
+	"item_dongchayandou"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_pipe"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"0"
+		"ID"	"1562"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_dongchayandou"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+				}
+				"IsHidden"	"1"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RenJiaDamaged"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+			}
+		}
+	}
+
 	"item_huifuzhihuan"
 	{
 		"BaseClass"	"item_datadriven"
@@ -3379,6 +3426,19 @@
 		"ItemRequirements"
 		{
 			"01"	"item_huoliqiu;item_kuweishi;item_kuweishi;"
+		}
+	}
+
+	"item_recipe_dongchayandou"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3038"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_dongchayandou"
+		"ItemRequirements"
+		{
+			"01"	"item_tiaozhantoujin;item_huifuzhihuan;item_kangmodoupeng;"
 		}
 	}
 }

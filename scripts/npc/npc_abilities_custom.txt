@@ -254,7 +254,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"12"
+		"AbilityCooldown"	"15"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -272,7 +272,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"blade_fury_damage"	"50 100 150"
+				"blade_fury_damage"	"75 150 225"
 				"LinkedSpecialBonus"	"special_bonus_unique_juggernaut_3"
 			}
 			"04"
@@ -7151,6 +7151,15 @@
 					}
 				}
 				"EffectAttachType"	"follow_origin"
+				"OnAttackFailed"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ShowMiss"
+					}
+				}
 			}
 		}
 	}
@@ -9460,12 +9469,13 @@
 								"ModifierName"	"modifier_is_knight_buff_2"
 							}
 						}
-						"Chance"	"40"
+						"Chance"	"30"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"ThinkInterval"	"3"
+				"IsHidden"	"1"
 			}
 			"modifier_is_knight_buff_2"
 			{
@@ -9473,13 +9483,12 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-40"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
 				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"IsBuff"	"1"
 				"OnCreated"
 				{
@@ -9535,6 +9544,7 @@
 				"EffectName"	"effect/qishi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"ThinkInterval"	"3"
+				"IsHidden"	"1"
 			}
 			"modifier_is_knight_buff_2_plus"
 			{
@@ -9542,13 +9552,12 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-40"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
 				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"IsBuff"	"1"
 				"OnCreated"
 				{
@@ -9598,12 +9607,13 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus_plus"
 							}
 						}
-						"Chance"	"40"
+						"Chance"	"50"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"ThinkInterval"	"3"
+				"IsHidden"	"1"
 			}
 			"modifier_is_knight_buff_2_plus_plus"
 			{
@@ -9611,13 +9621,12 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"80"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-40"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
 				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"IsBuff"	"1"
 				"OnCreated"
 				{
@@ -9679,7 +9688,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"350"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"300"
 				}
 				"OnAttackLanded"
 				{
@@ -9847,7 +9856,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"500"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"600"
 				}
 				"OnAttackLanded"
 				{
@@ -15956,7 +15965,7 @@
 			{
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_shiva_debuff"
-				"Duration"	"5"
+				"Duration"	"4"
 			}
 		}
 		"Modifiers"
@@ -15971,6 +15980,51 @@
 				}
 				"EffectName"	"particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_frostbite_snow_base.vpcf"
 				"EffectAttachType"	"attach_origin"
+			}
+		}
+	}
+
+	"give_pipe_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"grimstroke_dark_artistry"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ALLIES_YES"
+		"MaxLevel"	"1"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"effect/pipe/1.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_pipe_buff"
+				"Duration"	"10"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_pipe_buff"
+			{
+				"IsDebuff"	"0"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+				}
+				"EffectName"	"effect/pipe/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsBuff"	"1"
 			}
 		}
 	}
