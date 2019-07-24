@@ -9607,7 +9607,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus_plus"
 							}
 						}
-						"Chance"	"50"
+						"Chance"	"40"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9772,7 +9772,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"450"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"500"
 				}
 				"OnAttackLanded"
 				{
@@ -9856,7 +9856,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"600"
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"700"
 				}
 				"OnAttackLanded"
 				{
@@ -16374,6 +16374,88 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"max_stack_count"	"30"
+			}
+		}
+	}
+
+	"batrider_firefly"
+	{
+		"MaxLevel"	"3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCastPoint"				"0"
+		"AbilityCooldown"				"20 15 10"
+		"AbilityManaCost"				"100"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_per_second"		"20 30 40"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed"		"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"10"
+				"LinkedSpecialBonus"	"special_bonus_unique_batrider_1"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_interval"			"0.5"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tree_radius"			"200 200 200"
+			}
+		}
+	}
+
+	"spell_attack"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"harpy_storm_chain_lightning"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
+		}
+		"Modifiers"
+		{
+			"modifier_lightning_attack"
+			{
+				"Passive"	"1"
+				"OnAttackStart"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_lightning_attack_animation"
+						"Duration"	"2"
+					}
+					"FireSound"
+					{
+						"Target"	"CASTER"
+						"EffectName"	"Hero_Disruptor.ThunderStrike.Cast"
+					}
+				}
+				"IsHidden"	"1"
+				"Properties"	{}
+			}
+			"modifier_lightning_attack_animation"
+			{
+				"OverrideAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+				"Properties"	{}
 			}
 		}
 	}

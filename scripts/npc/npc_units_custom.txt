@@ -4084,7 +4084,7 @@
 		// Ability 2.
 		"Ability2"	"is_knight"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"spell_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -4192,7 +4192,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/batrider/batrider.vmdl"
-		"ModelScale"	"0.65"
+		"ModelScale"	"0.6"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -4200,7 +4200,7 @@
 		// Ability 2.
 		"Ability2"	"is_knight"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"spell_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -4308,7 +4308,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/batrider/batrider.vmdl"
-		"ModelScale"	"0.8"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -4316,7 +4316,7 @@
 		// Ability 2.
 		"Ability2"	"is_knight"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"spell_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -16321,7 +16321,7 @@
 		// Ability 3.
 		"Ability3"	"is_hunter"
 		// Ability 4.
-		"Ability4"	""
+		"Ability4"	"spell_attack"
 		// Ability 5.
 		"Ability5"	""
 		// Ability 6 - Extra.
@@ -16435,7 +16435,7 @@
 		// Ability 3.
 		"Ability3"	"is_hunter"
 		// Ability 4.
-		"Ability4"	""
+		"Ability4"	"spell_attack"
 		// Ability 5.
 		"Ability5"	""
 		// Ability 6 - Extra.
@@ -16549,7 +16549,7 @@
 		// Ability 3.
 		"Ability3"	"is_hunter"
 		// Ability 4.
-		"Ability4"	""
+		"Ability4"	"spell_attack"
 		// Ability 5.
 		"Ability5"	""
 		// Ability 6 - Extra.

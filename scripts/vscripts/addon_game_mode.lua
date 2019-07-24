@@ -628,92 +628,92 @@ function Precache( context )
     -- PrecacheUnitByNameSync("chess_sven", context)
     -- PrecacheUnitByNameSync("chess_mars", context)
 
- --    local precache_list = {
-	-- 	chess_cm = 'cm_mana_aura',
-	-- 	chess_axe = 'axe_berserkers_call',
-	-- 	chess_dr = 'shooter_aura',
-	-- 	chess_eh = 'enchantress_natures_attendants',
-	-- 	chess_om = 'ogre_magi_bloodlust',
-	-- 	chess_tusk = 'tusk_walrus_punch',
-	-- 	chess_bm = 'bm_beast',
-	-- 	chess_jugg = 'juggernaut_blade_fury',
-	-- 	chess_lyc = 'lyc_wolf',
-	-- 	chess_shredder = 'shredder_whirling_death',
-	-- 	chess_tk = 'a108',
-	-- 	chess_light = 'keeper_of_the_light_illuminate',
-	-- 	chess_ok = 'omniknight_purification',
-	-- 	chess_razor = 'razor_plasma_field',
-	-- 	chess_wr = 'windrunner_powershot',
-	-- 	chess_doom = 'doom_bringer_doom',
-	-- 	chess_kunkka = 'kunkka_ghostship',
-	-- 	chess_lina = 'lina_laguna_blade',
-	-- 	chess_troll = 'troll_warlord_fervor',
-	-- 	chess_veno = 'veno_ward',
-	-- 	chess_gyro = 'gyrocopter_call_down',
-	-- 	chess_jakiro = 'jakiro_macropyre',
-	-- 	chess_lich = 'lich_bingjia',
-	-- 	chess_qop = 'queenofpain_scream_of_pain',
-	-- 	chess_th = 'tidehunter_ravage',
-	-- 	--
-	-- 	chess_am = 'antimage_mana_break',
-	-- 	chess_bh = 'bounty_hunter_shuriken_toss',
-	-- 	chess_wd = 'witch_doctor_paralyzing_cask',
-	-- 	chess_clock = 'rattletrap_battery_assault',
-	-- 	chess_ss = 'shadow_shaman_voodoo',
-	-- 	chess_pa = 'phantom_assassin_coup_de_grace',
-	-- 	chess_puck = 'puck_illusory_orb',
-	-- 	chess_slardar = 'slardar_amplify_damage',
-	-- 	chess_ck = 'chaos_knight_chaos_bolt',
-	-- 	chess_abaddon = 'abaddon_aphotic_shield',
-	-- 	chess_sk = 'sandking_burrowstrike',
-	-- 	chess_slark = 'slark_nengliangzhuanyi',
-	-- 	chess_sniper = 'sniper_assassinate',
-	-- 	chess_nec = 'necrolyte_death_pulse',
-	-- 	chess_ta = 'templar_assassin_refraction',
-	-- 	chess_enigma = 'enigma_midnight_pulse',
-	-- 	--
-	-- 	chess_bat = 'batrider_sticky_napalm',
-	-- 	chess_luna = 'luna_moon_glaive',
-	-- 	chess_tp = 'treant_leech_seed',
-	-- 	chess_sf = 'nevermore_requiem',
-	-- 	chess_dk = 'dragon_knight_elder_dragon_form',
-	-- 	chess_viper = 'viper_viper_strike',
-	-- 	chess_medusa = 'medusa_stone_gaze',
-	-- 	chess_disruptor = 'disruptor_static_storm',
-	-- 	chess_ga = 'alchemist_chemical_rage',
-	-- 	chess_tech = 'chess_tech_bomb',
-	-- 	--
-	-- 	chess_fur = 'fur_tree',
-	-- 	chess_ld = 'ld_bear',
-	-- 	--
-	-- 	chess_nec_ssr = 'nec_ssr_scythe',
-	-- 	chess_morph = 'morphling_waveform',
-	-- 	chess_tb = 'tb_mohua',
-	-- 	chess_tiny = 'tiny_touzhi',
-	-- 	--
-	-- 	chess_riki = 'riki_smoke_screen',
-	-- 	chess_pom = 'pom_arrow_far',
-	-- 	chess_dp = 'death_prophet_exorcism',
-	-- 	--
-	-- 	chess_fv = 'faceless_void_chronosphere',
-	-- 	chess_kael = 'kael_???',
-	-- 	--
-	-- 	chess_zeus = 'zeus_thunder',
-	-- 	chess_mars = 'mars_bulwark',
-	-- 	chess_gs = 'gs_moji',
+    local precache_list = {
+		chess_cm = 'cm_mana_aura',
+		chess_axe = 'axe_berserkers_call',
+		chess_dr = 'shooter_aura',
+		chess_eh = 'enchantress_natures_attendants',
+		chess_om = 'ogre_magi_bloodlust',
+		chess_tusk = 'tusk_walrus_punch',
+		chess_bm = 'bm_beast',
+		chess_jugg = 'juggernaut_blade_fury',
+		chess_lyc = 'lyc_wolf',
+		chess_shredder = 'shredder_whirling_death',
+		chess_tk = 'a108',
+		chess_light = 'keeper_of_the_light_illuminate',
+		chess_ok = 'omniknight_purification',
+		chess_razor = 'razor_plasma_field',
+		chess_wr = 'windrunner_powershot',
+		chess_doom = 'doom_bringer_doom',
+		chess_kunkka = 'kunkka_ghostship',
+		chess_lina = 'lina_laguna_blade',
+		chess_troll = 'troll_warlord_fervor',
+		chess_veno = 'veno_ward',
+		chess_gyro = 'gyrocopter_call_down',
+		chess_jakiro = 'jakiro_macropyre',
+		chess_lich = 'lich_bingjia',
+		chess_qop = 'queenofpain_scream_of_pain',
+		chess_th = 'tidehunter_ravage',
+		--
+		chess_am = 'antimage_mana_break',
+		chess_bh = 'bounty_hunter_shuriken_toss',
+		chess_wd = 'witch_doctor_paralyzing_cask',
+		chess_clock = 'rattletrap_battery_assault',
+		chess_ss = 'shadow_shaman_voodoo',
+		chess_pa = 'phantom_assassin_coup_de_grace',
+		chess_puck = 'puck_illusory_orb',
+		chess_slardar = 'slardar_amplify_damage',
+		chess_ck = 'chaos_knight_chaos_bolt',
+		chess_abaddon = 'abaddon_aphotic_shield',
+		chess_sk = 'sandking_burrowstrike',
+		chess_slark = 'slark_nengliangzhuanyi',
+		chess_sniper = 'sniper_assassinate',
+		chess_nec = 'necrolyte_death_pulse',
+		chess_ta = 'templar_assassin_refraction',
+		chess_enigma = 'enigma_midnight_pulse',
+		--
+		chess_bat = 'batrider_sticky_napalm',
+		chess_luna = 'luna_moon_glaive',
+		chess_tp = 'treant_leech_seed',
+		chess_sf = 'nevermore_requiem',
+		chess_dk = 'dragon_knight_elder_dragon_form',
+		chess_viper = 'viper_viper_strike',
+		chess_medusa = 'medusa_stone_gaze',
+		chess_disruptor = 'disruptor_static_storm',
+		chess_ga = 'alchemist_chemical_rage',
+		chess_tech = 'chess_tech_bomb',
+		--
+		chess_fur = 'fur_tree',
+		chess_ld = 'ld_bear',
+		--
+		chess_nec_ssr = 'nec_ssr_scythe',
+		chess_morph = 'morphling_waveform',
+		chess_tb = 'tb_mohua',
+		chess_tiny = 'tiny_touzhi',
+		--
+		chess_riki = 'riki_smoke_screen',
+		chess_pom = 'pom_arrow_far',
+		chess_dp = 'death_prophet_exorcism',
+		--
+		chess_fv = 'faceless_void_chronosphere',
+		chess_kael = 'kael_???',
+		--
+		chess_zeus = 'zeus_thunder',
+		chess_mars = 'mars_bulwark',
+		chess_gs = 'gs_moji',
 
-	-- 	chess_dazzle = 'dazzle_bozang',
-	-- 	chess_io = 'wisp_wildcard',
-	-- 	chess_sven = 'sven_gods_strength',
-	-- 	chess_ww = 'winter_wyvern_cold_embrace',
-	-- 	chess_rubick = '2',
-	-- 	chess_gs = '1',
-	-- }
+		chess_dazzle = 'dazzle_bozang',
+		chess_io = 'wisp_wildcard',
+		chess_sven = 'sven_gods_strength',
+		chess_ww = 'winter_wyvern_cold_embrace',
+		chess_rubick = '2',
+		chess_gs = '1',
+	}
 
-	-- for u,_ in pairs(precache_list) do
-	-- 	PrecacheUnitByNameSync(u, context)
-	-- 	-- PrecacheUnitByNameSync(u..'1', context)
-	-- end
+	for u,_ in pairs(precache_list) do
+		PrecacheUnitByNameSync(u, context)
+		PrecacheUnitByNameSync(u..'1', context)
+	end
 
     print("Precache OK")
 end
@@ -1521,6 +1521,7 @@ function DAC:InitGameMode()
 		chess_ta = 'templar_assassin_refraction',
 		chess_enigma = 'enigma_midnight_pulse',
 		--
+		--chess_bat = 'batrider_firefly',
 		chess_bat = 'batrider_sticky_napalm',
 		chess_luna = 'luna_moon_glaive',
 		chess_tp = 'treant_leech_seed',
@@ -1598,6 +1599,7 @@ function DAC:InitGameMode()
 		chess_ta1 = 'templar_assassin_refraction',
 		chess_enigma1 = 'enigma_midnight_pulse',
 		--
+		--chess_bat1 = 'batrider_firefly',
 		chess_bat1 = 'batrider_sticky_napalm',
 		chess_luna1 = 'luna_moon_glaive',
 		chess_tp1 = 'treant_leech_seed',
@@ -1675,6 +1677,7 @@ function DAC:InitGameMode()
 		chess_ta11 = 'templar_assassin_refraction',
 		chess_enigma11 = 'enigma_midnight_pulse',
 		--
+		--chess_bat11 = 'batrider_firefly',
 		chess_bat11 = 'batrider_sticky_napalm',
 		chess_luna11 = 'luna_moon_glaive',
 		chess_tp11 = 'treant_leech_seed',
@@ -1804,6 +1807,7 @@ function DAC:InitGameMode()
 			wisp_wildcard = 0,
 			sven_gods_strength = 2,
 			winter_wyvern_cold_embrace = 9,
+			batrider_firefly = 19,
 		}
 	
 	--组合技技能ability
@@ -5450,7 +5454,7 @@ function PostOneToServer(hero,steamid,rank,mode)
 								end
 							end)
 						end
-						--展示结束面板，结束游戏！
+						-- 展示结束面板，结束游戏！
 						Timers:CreateTimer(8,function()
 							GameRules:SetGameWinner(hero:GetTeam())
 							GameRules:GetGameModeEntity().setwin = 1
@@ -8030,6 +8034,42 @@ function ChessAI(u)
 							end
 
 							return RandomFloat(0.5,2) + ai_delay
+						end
+					elseif GameRules:GetGameModeEntity().ability_behavior_list[a] == 19 then
+						-- 蝙蝠火
+						local unluckypoint = FindFarthestCanAttackEnemyEmptyGrid(u)
+						if unluckypoint ~= nil then
+							local newOrder = {
+						 		UnitIndex = u:entindex(), 
+						 		OrderType = DOTA_UNIT_ORDER_CAST_NO_TARGET,
+						 		TargetIndex = nil, --Optional.  Only used when targeting units
+						 		AbilityIndex = u:FindAbilityByName(a):entindex(), --Optional.  Only used when casting abilities
+						 		Position = nil, --Optional.  Only used when targeting the ground
+						 		Queue = 0 --Optional.  Used for queueing up abilities
+						 	}
+							ExecuteOrderFromTable(newOrder)
+
+							-- 跳跃
+							Timers:CreateTimer(1,function()
+								local target_x = Vector2X(unluckypoint,u.at_team_id or u.team_id)
+								local target_y = Vector2Y(unluckypoint,u.at_team_id or u.team_id)
+								local xx = u.x
+								local yy = u.y
+								GameRules:GetGameModeEntity().unit[u.at_team_id or u.team_id][yy..'_'..xx] = nil
+								GameRules:GetGameModeEntity().unit[u.at_team_id or u.team_id][target_x..'_'..target_y] = 1
+								u:SetForwardVector((unluckypoint - u:GetAbsOrigin()):Normalized())
+								u.is_moving = true
+								BlinkChessX({
+									p = unluckypoint,
+									caster = u,
+									blink_type = 'run',
+								})
+								u.y_x = target_y..'_'..target_x
+								u.y = target_y
+								u.x = target_x
+							end)
+							
+							return 2 + ai_delay
 						end
 					else
 						--点目标
