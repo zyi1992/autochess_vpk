@@ -14053,9 +14053,16 @@ function ShowBattleInfo()
 						local enemy_id = TeamId2Hero(v):GetPlayerID()
 						local guest_oppo_id = TeamId2Hero(g):GetPlayerID()
 						local buffs = nil
+						local is_chesses_same_star = 0
+
 						if GameRules:GetGameModeEntity().stat_info[TeamId2Hero(v).steam_id] ~= nil then
 							buffs = GameRules:GetGameModeEntity().stat_info[TeamId2Hero(v).steam_id]['buff']
+							if GameRules:GetGameModeEntity().stat_info[TeamId2Hero(v).steam_id]['check_stars'] == 1 then
+								is_chesses_same_star = 1
+							end
 						end
+						
+						
 						CustomGameEventManager:Send_ServerToTeam(i,"battle_info",{
 							key = GetClientKey(i),
 							type = "pvp",
@@ -14065,7 +14072,8 @@ function ShowBattleInfo()
 							round = GameRules:GetGameModeEntity().battle_round,
 							history_win = GetHistoryWin(i,v),
 	            			history_lose = GetHistoryLose(i,v),
-	            			buffs = buffs
+	            			buffs = buffs,
+	            			is_chesses_same_star = is_chesses_same_star,
 						})
 
 						battle_table[i] = {

@@ -8198,7 +8198,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"35"
 				}
 				"Passive"	"1"
 				"EffectAttachType"	"follow_overhead"
