@@ -32,7 +32,6 @@ LinkLuaModifier("modifier_run", "lua_modifier/run.lua", LUA_MODIFIER_MOTION_BOTH
 LinkLuaModifier("modifier_teleport", "lua_modifier/teleport.lua", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_spawn", "lua_modifier/spawn.lua", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_ready", "lua_modifier/ready.lua", LUA_MODIFIER_MOTION_BOTH)
-
 LinkLuaModifier("modifier_status_resistance", "status_resistance.lua", LUA_MODIFIER_MOTION_NONE)
 
 function Precache( context )
@@ -668,6 +667,64 @@ end
 --1、初始化变量和监听
 function DAC:InitGameMode()
 	AMHCInit()
+	GameRules:GetGameModeEntity().quest_init = {
+		q001 = false,--rank_1x8
+		q002 = false,--rank_2x4
+		q003 = false,--$5 level2
+		q004 = false,--$4 level3
+		q005 = false,--rampage
+		q006 = false,--round 35
+		q007 = false,--100 gold
+		q008 = true,--<=20 gold
+		q009 = false,-- hp>=30 
+		q010 = true,--hp 100 15 round
+		q011 = false,--$1 level3 x4
+		q012 = false,--win streak 10
+		q013 = false,--10 pieces
+		q014 = false,--a >=6 synergy
+		q015 = false,-->=6 synergies
+		q016 = false,--dps > 300
+		q017 = true,--defeat neutrals
+		q018 = false,--transfer >=5 pieces
+		q019 = false,--love effect
+		q020 = false,--150 damage
+	}
+	GameRules:GetGameModeEntity().level3pieces = {
+		[6] = 0,
+		[7] = 0,
+		[8] = 0,
+		[9] = 0,
+		[10] = 0,
+		[11] = 0,
+		[12] = 0,
+		[13] = 0,
+	}
+	GameRules:GetGameModeEntity().quest_status = {
+		[6] = 0,
+		[7] = 0,
+		[8] = 0,
+		[9] = 0,
+		[10] = 0,
+		[11] = 0,
+		[12] = 0,
+		[13] = 0,
+	}
+	GameRules:GetGameModeEntity().quest_14_buff_list = {
+		is_troll = 6,
+		is_beast = 6,
+		is_elf = 9,
+		is_human = 6,
+		is_undead = 6,
+		is_goblin = 6,
+		is_orc = 6,
+		is_warrior = 9,
+		is_mage = 9,
+		is_warlock = 6,
+		is_mech = 6,
+		is_assassin = 6,
+		is_hunter = 6,
+		is_knight = 6,
+	}
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 0 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )
 	GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_CUSTOM_1, 1 )
@@ -2095,6 +2152,8 @@ function DAC:InitGameMode()
 		h445 = "models/items/courier/wabbit_the_mighty_courier_of_heroes/wabbit_the_mighty_courier_of_heroes.vmdl",
 		h446 = "models/items/courier/wabbit_the_mighty_courier_of_heroes/wabbit_the_mighty_courier_of_heroes.vmdl",
 		h447 = "models/jieke/jieke.vmdl",
+		h398 = "models/guge/guge.vmdl",
+		h397 = "models/guge/guge.vmdl",
 	}
 
 	GameRules:GetGameModeEntity().courier_flyup_effect_list = {
@@ -2163,6 +2222,7 @@ function DAC:InitGameMode()
 		h443 = 1,
 		h439 = 1,
 		h356 = 1,
+		h397 = 1,
 	}
 
 	GameRules:GetGameModeEntity().sm_hero_size = {
@@ -2373,6 +2433,8 @@ function DAC:InitGameMode()
 		h436 = 1.4,
 		h437 = 1.4,
 		h447 = 1.2,
+		h398 = 1.15,
+		h397 = 1.15,
 	}
 	GameRules:GetGameModeEntity().combined_items = {
 		[1] = 'item_fengkuangmianju',
@@ -2503,6 +2565,7 @@ function InitHeros()
 			prt('CONNECT SERVER OK!')
 
 			for steam_id,user_info in pairs(t.user_info) do
+				GameRules:GetGameModeEntity().egg_quest = user_info['egg_quest']
 				table.insert(GameRules:GetGameModeEntity().user_md5_table,steam_id)
 				local hero_index = user_info.hero_index
 				local hero = EntIndexToHScript(hero_index)
@@ -2618,6 +2681,10 @@ function InitHeros()
 				hero:MoveToPosition(hero:GetAbsOrigin())
 				
 			end
+			for kk,vv in pairs(GameRules:GetGameModeEntity().quest_status) do
+				GameRules:GetGameModeEntity().quest_status[kk] = GameRules:GetGameModeEntity().quest_init[GameRules:GetGameModeEntity().egg_quest or false]
+			end
+			ShowQuest()
 			GameRules:GetGameModeEntity().user_info = t.user_info
 			CustomNetTables:SetTableValue( "dac_table", "player_info", { info = t.user_info, hehe = RandomInt(1,1000)})
 			
@@ -2750,7 +2817,6 @@ function InitHeros()
 
 				user_info['onduty_hero'] = onduty_hero
 				user_info['onduty_hero_effect'] = onduty_hero_effect
-
 				AddAbilityAndSetLevel(hero,'pick_chess')
 				AddAbilityAndSetLevel(hero,'recall_chess')
 			    AddAbilityAndSetLevel(hero,'remove_chess')
@@ -2938,8 +3004,6 @@ function InitHeros()
 end
 --2、自动选英雄后给主公加技能
 function DAC:OnPlayerPickHero(keys)
-
-	-- prt('[OnPlayerPickHero] player='..keys.player..', heroindex='..keys.heroindex)
 	if IsServer() == true then
 		local player = EntIndexToHScript(keys.player)
 	    local hero = EntIndexToHScript(keys.heroindex)
@@ -3008,6 +3072,9 @@ function DAC:OnPlayerGainedLevel(keys)
 	local i = 0
 	for i = 6, 13 do
 		GameRules:GetGameModeEntity().population_max[i] = GetMaxChessCount(i)
+		if GameRules:GetGameModeEntity().egg_quest == 'q013' and GameRules:GetGameModeEntity().population_max[i] >= 10 then
+			SetQuest(i,true)
+		end
 
 		local hero = TeamId2Hero(i)
 
@@ -3256,12 +3323,14 @@ function StartAPrepareRound()
 			EmitGlobalSound('warning.wolf')
 		end)
 	end
-
 	--50回合以后，疲劳
 	if GameRules:GetGameModeEntity().battle_round > GameRules:GetGameModeEntity().pilao_round then
 		for _,heroent in pairs (GameRules:GetGameModeEntity().hero) do
 			if heroent ~= nil and heroent:IsNull() == false and heroent:IsAlive() == true then
-				local bite_hp = math.floor(heroent:GetHealth() / 2) --GameRules:GetGameModeEntity().battle_round - 50
+				if GameRules:GetGameModeEntity().battle_round >= 35 and GameRules:GetGameModeEntity().egg_quest == 'q006' then
+					SetQuest(hero.team_id,true)
+				end
+				local bite_hp = math.floor(heroent:GetHealth() / 2)
 				local after_hp = heroent:GetHealth() - bite_hp
 				if after_hp <= 0 then
 					after_hp = 0
@@ -3624,6 +3693,13 @@ function AddPickAndRemoveAbility(v)
 end
 --游戏循环1.1——清理战斗场地并重新摆上自己的随从
 function ShowDamageStatOfTeam(teamid)
+	if GameRules:GetGameModeEntity().egg_quest == 'q016' then
+		for i,v in pairs(GameRules:GetGameModeEntity().damage_stat[teamid]) do
+			if v/(51 - GameRules:GetGameModeEntity().battle_timer) >= 300 then
+				SetQuest(teamid,true)
+			end
+		end
+	end
 	--显示伤害统计
 	CustomGameEventManager:Send_ServerToTeam(teamid,"show_damage_stat",{
 		key = GetClientKey(teamid),
@@ -4022,6 +4098,17 @@ function DAC:OnEntityKilled(keys)
 	end 
 
 	if attacker.killing_spree_count > 5 then
+		local chess_team = attacker.team_id
+		if chess_team == 4 then
+			if attacker.from_team_id ~= nil then
+				chess_team = attacker.from_team_id
+			else
+				chess_team = nil
+			end
+		end
+		if GameRules:GetGameModeEntity().egg_quest == 'q005' and chess_team ~= nil then
+			SetQuest(chess_team,true)
+		end
 		--暴走
 		play_particle("effect/5sha/vr_killbanner_rampage.vpcf",PATTACH_OVERHEAD_FOLLOW,attacker,5)
 		EmitSoundOn("announcer_killing_spree_announcer_kill_rampage_01",attacker)
@@ -5064,7 +5151,7 @@ function TriggerChessCombineAtGrid(i,j,team_id,is_move)
 		end
 	end
 	local druid_count = GetDruidCount(team_id)
-	if wizard_count == 2 and druid_count >= 3 then
+	if wizard_count >= 2 and druid_count >= 3 then
 		druid_count = druid_count + 1
 	end
 
@@ -5292,14 +5379,16 @@ function GetDruidCount(team_id)
 end
 
 --结算一名玩家，兼容1P和2P的模式
-function PostOneToServer(hero,steamid,rank,mode)
-	-- prt(steamid..' post rank '..rank)
+function PostOneToServer(hero,steamid,rank,mode,quest)
 	local url = "https://autochess.ppbizon.com/game/post/one/@"..GameRules:GetGameModeEntity().steamidlist.."@"..steamid.."@"..rank.."?hehe="..RandomInt(1,10000).."&duration="..math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME)..GetSendKey()..'&map='..GetMapName()
 
 	if mode == 'p1' then
 		url = url..'&settings='..json.encode(GameRules:GetGameModeEntity().user_setting[steamid])
 	else
 		url = url..'&mode=p2&teammate='..TeamId2Hero(GetP2Ally(hero:GetTeam())).steam_id..'&settings='..json.encode(GameRules:GetGameModeEntity().user_setting[steamid])
+	end
+	if quest ~= nil then
+		url = url..'&finish_quest=1'
 	end
 	local tt = GameRules:GetGameModeEntity().stat_info[steamid]
 	local total_team = PlayerResource:GetPlayerCount()
@@ -5346,7 +5435,6 @@ function PostOneToServer(hero,steamid,rank,mode)
 					second = t.second,
 				}
 				if rank ~= 1 then
-					-- prt('rank '..rank..' settled')
 					local totalrank = 1
 					if mode == 'p1' then
 						totalrank = PlayerResource:GetPlayerCount()
@@ -5366,7 +5454,6 @@ function PostOneToServer(hero,steamid,rank,mode)
 						mode = mode,
 					})
 				elseif mode == 'p1' and rank == 1 then
-					-- prt('rank 1 settled!!!!!')
 					local dur = GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME+3
 					if hero == nil then
 						prt ('hero nil')
@@ -5387,11 +5474,9 @@ function PostOneToServer(hero,steamid,rank,mode)
 						for y,z in pairs(GameRules:GetGameModeEntity().send_info) do
 							if z.rank == 1 then
 								ready_1_post = true
-								-- prt('ready_1_post')
 							end
 							if z.rank == 2 then
 								ready_2_post = true
-								-- prt('ready_2_post')
 							end
 						end
 						--展示结束面板，结束游戏！
@@ -5520,6 +5605,9 @@ function PostOneToServer(hero,steamid,rank,mode)
 end
 function SyncHP(hero)
 	GameRules:GetGameModeEntity().stat_info[hero.steam_id]['hp'] = hero:GetHealth()
+	if hero:GetHealth() < 100 and GameRules:GetGameModeEntity().battle_round <= 10 and GameRules:GetGameModeEntity().egg_quest == 'q010' then
+		SetQuest(hero.team_id,false)
+	end
 	CustomNetTables:SetTableValue( "dac_table", "user_panel_ranking", {table = GameRules:GetGameModeEntity().stat_info, hehe = RandomInt(1,1000)})
 
 	--同步ui血量
@@ -5666,12 +5754,10 @@ function SetRankingState(hero)
 		if team_rank ~= nil then
 			if FindValueInTable(GameRules:GetGameModeEntity().send_status,hero.steam_id) == true then
 				RemoveTableItem(GameRules:GetGameModeEntity().send_status,hero.steam_id)
-				-- prt(hero:GetTeam()..' in team '..hero.p2team..' ranked '..team_rank)
 				PostOneToServer(hero,hero.steam_id,team_rank,'p2')
 				local teammate = TeamId2Hero(GetP2Ally(hero:GetTeam()))
 				if teammate ~= nil and FindValueInTable(GameRules:GetGameModeEntity().send_status,teammate.steam_id) == true then
 					RemoveTableItem(GameRules:GetGameModeEntity().send_status,teammate.steam_id)
-					-- prt(teammate:GetTeam()..' in team '..teammate.p2team..' ranked '..team_rank)
 					PostOneToServer(teammate,teammate.steam_id,team_rank,'p2')
 				end
 			end
@@ -5690,15 +5776,28 @@ function SetRankingState(hero)
 				local steamid_2 = GameRules:GetGameModeEntity().send_status[2]
 				RemoveTableItem(GameRules:GetGameModeEntity().send_status,steamid_2)
 				local h_2 = PlayerId2Hero(GameRules:GetGameModeEntity().steamid2playerid[steamid_2])
-				-- prt(h_2:GetTeam()..' in team '..h_2.p2team..' ranked 1~~')
-				PostOneToServer(h_2,steamid_2,1,'p2')
+				--GameRules:GetGameModeEntity().egg_quest == 'q002' and 
+				if GetMapName() == 'ranked_2x4' then
+					SetQuest(h_2.team_id,true)
+				end
+				--and GameRules:GetGameModeEntity().egg_quest == 'q009' 
+				if h_2:GetHealth() >= 30 then
+					SetQuest(h_2.team_id,false)
+				end
+				PostOneToServer(h_2,steamid_2,1,'p2',GameRules:GetGameModeEntity().quest_status[h_2:GetTeam()])
 			end
 			if GameRules:GetGameModeEntity().send_status[1] ~= nil then
 				local steamid_1 = GameRules:GetGameModeEntity().send_status[1]
 				RemoveTableItem(GameRules:GetGameModeEntity().send_status,steamid_1)
 				local h_1 = PlayerId2Hero(GameRules:GetGameModeEntity().steamid2playerid[steamid_1])
-				-- prt(h_1:GetTeam()..' in team '..h_1.p2team..' ranked 1~~')
-				PostOneToServer(h_1,steamid_1,1,'p2')
+				if GameRules:GetGameModeEntity().egg_quest == 'q002' and GetMapName() == 'ranked_2x4' then
+					SetQuest(h_1.team_id,true)
+				end
+				--and GameRules:GetGameModeEntity().egg_quest == 'q009' 
+				if h_1:GetHealth() >= 30 then
+					SetQuest(h_1.team_id,false)
+				end
+				PostOneToServer(h_1,steamid_1,1,'p2',GameRules:GetGameModeEntity().quest_status[h_1:GetTeam()])
 			end
 		end
 	end
@@ -5715,8 +5814,15 @@ function SetRankingState(hero)
 		--1P第一名
 		if GetAlivePlayerCount() == 1 then
 			local last_steamid = GameRules:GetGameModeEntity().send_status[1]
+			local last_hero = PlayerId2Hero(GameRules:GetGameModeEntity().steamid2playerid[last_steamid])
 			RemoveTableItem(GameRules:GetGameModeEntity().send_status,last_steamid)
-			PostOneToServer(PlayerId2Hero(GameRules:GetGameModeEntity().steamid2playerid[last_steamid]),last_steamid,1,'p1')
+			if GameRules:GetGameModeEntity().egg_quest == 'q001' and GetMapName() == 'ranked_1x8' then
+				SetQuest(last_hero.team_id,true)
+			end
+			if last_hero:GetHealth() >= 30 and GameRules:GetGameModeEntity().egg_quest == 'q009' then
+				SetQuest(last_hero.team_id,false)
+			end
+			PostOneToServer(last_hero,last_steamid,1,'p1',GameRules:GetGameModeEntity().quest_status[last_hero:GetTeam()])
 		end
 		--为防止发送失败了，30秒后自动结束游戏
 		Timers:CreateTimer(30,function()
@@ -5735,7 +5841,6 @@ function PostPlayerInfo()
 	CustomNetTables:SetTableValue( "player_info_table", "player_info", { data = GameRules:GetGameModeEntity().stat_info, hehe = RandomInt(1,100000)})
 end
 function LoadPVEEnemy(wave,team)
-	-- prt('LoadPVEEnemy'..' wave'..wave..' team'..team)
 	if GameRules:GetGameModeEntity().battle_boss[wave] ~= nil then
 		for _,vi in pairs(GameRules:GetGameModeEntity().battle_boss[wave]) do
 			LoadOnePVEEnemy(vi,team)
@@ -5856,7 +5961,6 @@ function StartAPVERound()
 				Timers:CreateTimer(function()
 					if GameRules:GetGameModeEntity().battle_timer <= 0 then
 						GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-						-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 						EmitSoundOn("dac.round.win",TeamId2Hero(m))
 						AddStat(TeamId2Hero(m):GetPlayerID(),'draw_round')
 						ShowCombat({
@@ -5883,7 +5987,6 @@ function StartAPVERound()
 						end
 						if enemychess == 0 then
 							GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-							-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 							for a,b in pairs(n) do
 								AddAbilityAndSetLevel(b,'act_victory')
 								b.alreadywon = true
@@ -5923,7 +6026,6 @@ function StartAPVERound()
 								end
 								if enemychess_new == 0 then
 									GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-									-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 									for a,b in pairs(n) do
 										AddAbilityAndSetLevel(b,'act_victory')
 										b.alreadywon = true
@@ -5947,9 +6049,10 @@ function StartAPVERound()
 									EmitSoundOn("dac.round.win",TeamId2Hero(m))
 									AddStat(TeamId2Hero(m):GetPlayerID(),'draw_round')
 								else
+									if GameRules:GetGameModeEntity().egg_quest == 'q017' then
+										SetQuest(m,false)
+									end
 									GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-
-									-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 
 									local hero = TeamId2Hero(m)
 									local curr_hp = hero:GetHealth()
@@ -6378,7 +6481,6 @@ function DrawARound(team)
 	end
 	
 	GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-	-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 
 	if TeamId2Hero(team).cloud_opp_name ~= nil then
 		ShowCombat({
@@ -6411,7 +6513,6 @@ function WinARound(team,mychess,my_last_chess)
 	play_particle("particles/units/heroes/hero_legion_commander/legion_commander_duel_victory.vpcf",PATTACH_OVERHEAD_FOLLOW,hero,3)
 
 	GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-	-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 
 	--显示胜利！
 	local alive_units = GameRules:GetGameModeEntity().to_be_destory_list[team]
@@ -6484,7 +6585,6 @@ end
 function LoseARound(team,enemychess_new)
 	
 	GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-	-- prt('battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 
 	local hero = TeamId2Hero(team)
 	if hero == nil or hero:IsNull() == true or hero:IsAlive() == false then
@@ -6591,6 +6691,9 @@ function LoseARound(team,enemychess_new)
 		})
 
 		GameRules:GetGameModeEntity().stat_info[TeamId2Hero(GameRules:GetGameModeEntity().counterpart[team]).steam_id]['hero_damage'] = GameRules:GetGameModeEntity().stat_info[TeamId2Hero(GameRules:GetGameModeEntity().counterpart[team]).steam_id]['hero_damage'] + damage_all
+		if GameRules:GetGameModeEntity().egg_quest == 'q020' and GameRules:GetGameModeEntity().stat_info[TeamId2Hero(GameRules:GetGameModeEntity().counterpart[team]).steam_id]['hero_damage'] >= 150 then
+			SetQuest(team,true)
+		end
 	end
 	
 	EmitSoundOn("dac.round.lose",hero)
@@ -6984,6 +7087,16 @@ function AddComboAbility(teamid)
 		end
 		combo_count_table_self[k] = diff_count
 	end
+	if GameRules:GetGameModeEntity().egg_quest == 'q014' then
+		for pp,qq in pairs(combo_count_table_self) do
+			if combo_count_table_self['is_wizard'] >= 2 then
+				qq = qq + 1
+			end
+			if GameRules:GetGameModeEntity().quest_14_buff_list[pp] ~= nil and qq >= GameRules:GetGameModeEntity().quest_14_buff_list[pp] then
+				SetQuest(teamid,true)
+			end
+		end
+	end
 	for k,vk in pairs(combo_chess_table_enemy) do
 		--统计不同的种类数
 		local diff_count = 0
@@ -7005,9 +7118,23 @@ function AddComboAbility(teamid)
 		end
 		combo_count_table_enemy[k] = diff_count
 	end
+	
 	--第三次循环：添加技能
 	local combo_count_race = 0
-	local dragon_sound = false
+	local dragon_sound = false --龙战吼的声音是否触发过（只吼一次，否则声音太吵了）
+	local combo_type_table = {} --用来统计combo种类数（比如3猎人和猎人6算1个combo_type）
+	for s,x in pairs(combo_count_table_self) do
+		local condition = GameRules:GetGameModeEntity().combo_ability_type[s]['condition']
+		local is_race = GameRules:GetGameModeEntity().combo_ability_type[s]['is_race']
+		if combo_count_table_self['is_wizard'] >= 2 and condition >= 4 then
+			condition = condition - 1
+		end
+		if x >= condition and is_race ~= true then
+			for m,n in pairs(combo_chess_table_self[s]) do
+				n.class = 1
+			end
+		end
+	end
 	for p,vp in pairs(combo_chess_table_self) do
 		local shaman_gua = false
 		local type1 = GameRules:GetGameModeEntity().combo_ability_type[p]['type']
@@ -7018,7 +7145,9 @@ function AddComboAbility(teamid)
 			condition = condition - 1
 		end
 		if condition == 0 then
+			--恶魔
 			if combo_count_table_self[p] == 1 and combo_count_table_enemy['is_demonhunter'] == 0 then
+				SAdd(combo_type_table,p)
 				for _,chess in pairs(vp) do
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
@@ -7027,8 +7156,8 @@ function AddComboAbility(teamid)
 						end
 					end
 				end
-			end
-			if combo_count_table_self['is_demonhunter'] == 2 then
+			elseif combo_count_table_self['is_demonhunter'] == 2 then
+				SAdd(combo_type_table,p)
 				for _,chess in pairs(vp) do
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
@@ -7043,6 +7172,7 @@ function AddComboAbility(teamid)
 				if is_race == true then
 					combo_count_race = combo_count_race + 1
 				end
+				SAdd(combo_type_table,p)
 				local troll_level = 0
 				for _,chess in pairs(combo_chess_table_self[p]) do
 					if p == 'is_troll11' then
@@ -7075,45 +7205,11 @@ function AddComboAbility(teamid)
 					end
 					if p == 'is_dragon1' then
 						if combo_count_table_self[p] >= condition then
-							local star_level = 0
-							local check_star = true
-							for kkk,vvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-								--随机战吼
-								-- if vvv.team_id == teamid and vvv:FindAbilityByName('is_dragon') == nil then
-								-- 	if RandomInt(0,100) > 0 then
-								-- 		vvv.is_dragon_zhanhou = true
-								-- 		vvv:SetMana(100)
-								-- 		play_particle("particles/units/heroes/hero_monkey_king/monkey_king_fur_army_positions_ring_dragon.vpcf",PATTACH_OVERHEAD_FOLLOW,vvv,5)
-								-- 	else
-								-- 		vvv.is_dragon_zhanhou = false
-								-- 		vvv:SetMana(0)
-								-- 	end
-								-- end
-								--检测星级
-								if vvv.team_id == teamid and vvv:FindAbilityByName('is_dragon') == nil then
-									local level = 1
-									if string.find(vvv:GetUnitName(),'11') ~= nil then
-										level = 3
-									elseif string.find(vvv:GetUnitName(),'1') ~= nil then
-										level = 2
-									end
-									if star_level == 0 then
-										star_level = level
-									end
-									if star_level ~= level then
-										check_star = false
-										break
-									end
-								end
-							end
-							
-							if check_star == true then
-								for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-									if vvvv.team_id == teamid then
-										vvvv.is_dragon_zhanhou = true
-										vvvv:SetMana(100)
-										play_particle("particles/units/heroes/hero_monkey_king/monkey_king_fur_army_positions_ring_dragon.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
-									end
+							for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+								if vvvv.team_id == teamid and vvvv:FindAbilityByName('is_priest') == nil and vvvv.class ~= 1 then
+									vvvv.is_dragon_zhanhou = true
+									vvvv:SetMana(100)
+									play_particle("particles/units/heroes/hero_monkey_king/monkey_king_fur_army_positions_ring_dragon.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
 								end
 							end
 						end
@@ -7180,6 +7276,7 @@ function AddComboAbility(teamid)
 	end
 	--神族
 	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 1 and combo_count_race == 0 then
+		SAdd(combo_type_table,'is_god')
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == teamid then
@@ -7192,6 +7289,7 @@ function AddComboAbility(teamid)
 		end
 	end
 	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 2 and combo_count_race == 0 then
+		SAdd(combo_type_table,'is_god')
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == teamid then
@@ -7204,6 +7302,7 @@ function AddComboAbility(teamid)
 		end
 	end
 	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 3 and combo_count_race == 0 then
+		SAdd(combo_type_table,'is_god')
 		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
 			--是友军
 			if chess.team_id == teamid then
@@ -7217,13 +7316,30 @@ function AddComboAbility(teamid)
 	end
 	--priest
 	if combo_count_table_self['is_priest'] ~= nil and combo_count_table_self['is_priest'] >= 1 then
+		SAdd(combo_type_table,'is_priest')
 		local courier = TeamId2Hero(teamid)
 		AddAbilityAndSetLevelDelay(courier,'is_priest_buff')
 		EmitSoundOn('Hero_Dark_Seer.Ion_Shield_Start',courier)
 	end
+	
+	if GameRules:GetGameModeEntity().egg_quest == 'q015' and table.maxn(combo_type_table) >= 6 then
+		SetQuest(teamid,true)
+	end
 
 	local combo_count_race = 0
 	local dragon_sound_enemy = false
+	for s,x in pairs(combo_count_table_enemy) do
+		local condition = GameRules:GetGameModeEntity().combo_ability_type[s]['condition']
+		local is_race = GameRules:GetGameModeEntity().combo_ability_type[s]['is_race']
+		if combo_count_table_enemy['is_wizard'] >= 2 and condition >= 4 then
+			condition = condition - 1
+		end
+		if x >= condition and is_race ~= true then
+			for m,n in pairs(combo_chess_table_enemy[s]) do
+				n.class = 1
+			end
+		end
+	end
 	for p,vp in pairs(combo_chess_table_enemy) do
 		local shaman_guagua = false
 		local type1 = GameRules:GetGameModeEntity().combo_ability_type[p]['type']
@@ -7245,8 +7361,7 @@ function AddComboAbility(teamid)
 						end
 					end
 				end
-			end
-			if combo_count_table_enemy['is_demonhunter'] == 2 then
+			elseif combo_count_table_enemy['is_demonhunter'] == 2 then
 				for _,chess in pairs(vp) do
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
@@ -7293,33 +7408,11 @@ function AddComboAbility(teamid)
 					end
 					if p == 'is_dragon1' then
 						if combo_count_table_enemy[p] >= condition then
-							local star_levels = 0
-							local check_stars = true
-							for kk,vv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-								if vv.team_id == 4 and vv:FindAbilityByName('is_dragon') == nil then
-									--检测星级
-									local levels = 1
-									if string.find(vv:GetUnitName(),'11') ~= nil then
-										levels = 3
-									elseif string.find(vv:GetUnitName(),'1') ~= nil then
-										levels = 2
-									end
-									if star_levels == 0 then
-										star_levels = levels
-									end
-									if star_levels ~= levels then
-										check_stars = false
-										break
-									end
-								end
-							end
-							if check_stars == true then
-								for ks,vs in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-									if vs.team_id == 4 then
-										vs.is_dragon_zhanhou = true
-										vs:SetMana(100)
-										play_particle("particles/units/heroes/hero_monkey_king/monkey_king_fur_army_positions_ring_dragon.vpcf",PATTACH_OVERHEAD_FOLLOW,vs,5)
-									end
+							for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+								if vvvv.team_id == 4 and vvvv:FindAbilityByName('is_priest') == nil and vvvv.class ~= 1 then
+									vvvv.is_dragon_zhanhou = true
+									vvvv:SetMana(100)
+									play_particle("particles/units/heroes/hero_monkey_king/monkey_king_fur_army_positions_ring_dragon.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
 								end
 							end
 						end
@@ -8278,6 +8371,10 @@ function ChessAI(u)
 						 		Queue = 0
 						 	}
 							ExecuteOrderFromTable(newOrder)
+
+							Timers:CreateTimer((u:GetAbsOrigin() - unluckydog:GetAbsOrigin()):Length2D() / 800 + 0.4,function()
+								unluckydog.stop_moving = nil
+							end)
 
 							unluckydog.hook_cb = (function(uuu)
 								if IsUnitExist(uuu.hook_unluckydog) == true then
@@ -9563,14 +9660,12 @@ function DAC:OnPlayerChat(keys)
 			SetStat(hero:GetPlayerID(), 'round', GameRules:GetGameModeEntity().battle_round)
 			Timers:CreateTimer(0.5,function()
 				GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-				-- prt('dead battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 				DamageTeam(team, 999)
 				if GameRules:GetGameModeEntity().p2_mode == true and GetP2Ally(team) ~= nil then
 					--2P模式，队友分担伤害
 					SetStat(TeamId2Hero(GetP2Ally(team)):GetPlayerID(), 'duration', dur)
 					SetStat(TeamId2Hero(GetP2Ally(team)):GetPlayerID(), 'round', GameRules:GetGameModeEntity().battle_round)
 					GameRules:GetGameModeEntity().battle_count = GameRules:GetGameModeEntity().battle_count - 1
-					-- prt('dead battle count decreased to '..GameRules:GetGameModeEntity().battle_count)
 					DamageTeam(GetP2Ally(team), 999)
 				end
 			end)
@@ -9765,6 +9860,10 @@ function DAC:OnPlayerChat(keys)
 		UpdatePlayerWorldPanel({
 			[6] = { steam_id = hero.steam_id, oppo_steam_id = '76561198101849234' },
 		})
+	end
+	if tokens[1] == '-go' and GameRules:GetGameModeEntity().myself == true then
+		prt('TEST CODE: GO!')
+		GameRules:GetGameModeEntity().prepare_timer = 6
 	end
 
 	
@@ -10416,6 +10515,12 @@ function AddMana(unit, mana)
 	if mana_result > 100 then
 		mana_result = 100
 	end
+	if mana_result >= 80 and GameRules:GetGameModeEntity().egg_quest == 'q007' then
+		SetQuest(unit:GetTeam(),true)
+	end
+	if mana_result >= 30 and GameRules:GetGameModeEntity().egg_quest == 'q008' then
+		SetQuest(unit:GetTeam(),false)
+	end
 	unit:SetMana(mana_result)
 	AMHC:CreateParticle("particles/generic_gameplay/rune_bounty_owner.vpcf",PATTACH_OVERHEAD_FOLLOW,false,unit,5)
 	if mana >= 10 then
@@ -11049,7 +11154,7 @@ function VenoSummonWard(keys)
 	end)
 	if level == 3 then
 		Timers:CreateTimer(0.6,function()
-			local w = SummonOneMinion(caster,'veno_ward'..level, p)
+			local w = SummonOneMinion(caster,'veno_ward'..level)
 			ExtendBeastBuff(w,caster)
 		end)
 	end
@@ -11366,6 +11471,9 @@ function AddWinStreak(team)
 	if sca >= (hero.init_model_scale or 1) + 1 then
 		sca = (hero.init_model_scale or 1) + 1
 		--起飞！
+		if GameRules:GetGameModeEntity().egg_quest == 'q012' then
+			SetQuest(hero.team_id,true)
+		end
 		play_particle("particles/units/heroes/hero_shadowshaman/shadowshaman_voodoo.vpcf",PATTACH_ABSORIGIN_FOLLOW,hero,3)
 		local new_m = ChangeFlyingCourierModel(hero.ori_model)
 		hero:SetOriginalModel(new_m)
@@ -12479,7 +12587,6 @@ function ShowCombo(keys)
 	local team_id = keys.team_id
 	local hero = TeamId2Hero(team_id)
 	local combo_table = keys.combo_table
-	local check_stars = keys.check_stars
 
 	AddAbilityAndSetLevel(hero,'show_combo')
 	local ability = hero:FindAbilityByName('show_combo')
@@ -12526,7 +12633,6 @@ function ShowCombo(keys)
 	-- combo_buff_str = combo_buff_str..m..':'..s
 
 	GameRules:GetGameModeEntity().stat_info[hero.steam_id]['buff'] = combo_buff_str
-	GameRules:GetGameModeEntity().stat_info[hero.steam_id]['check_stars'] = check_stars
 end
 
 function StatClassCount(team_id)
@@ -12572,31 +12678,9 @@ function StatClassCount(team_id)
 			combo_count_table_self[k] = diff_count
 		end
 	end
-	-- 星级检测
-	local star_levels = 0
-	local check_stars = 1
-	for kk,vv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[team_id]) do
-		if vv.team_id == team_id and vv:FindAbilityByName('is_dragon') == nil then
-			--检测星级
-			local levels = 1
-			if string.find(vv:GetUnitName(),'11') ~= nil then
-				levels = 3
-			elseif string.find(vv:GetUnitName(),'1') ~= nil then
-				levels = 2
-			end
-			if star_levels == 0 then
-				star_levels = levels
-			end
-			if star_levels ~= levels then
-				check_stars = 0
-				break
-			end
-		end
-	end
 	ShowCombo({
 		team_id = team_id,
 		combo_table = combo_count_table_self,
-		check_stars = check_stars,
 	})
 
 	--统计所有buff
@@ -13187,7 +13271,6 @@ function DAC:OnPauseGame(keys)
 			})
 			hero.last_pause_time = pause_time
 		else
-			-- prt('你'..(300-pause_time +hero.last_pause_time)..'秒后才能暂停')
 			return
 		end
 	end
@@ -13449,7 +13532,6 @@ function AddFuhunDebuffParticle(keys)
 		l = 4
 	end
 	u:FindModifierByName("modifier_gs_give_fuhun"):SetStackCount(l)
-	-- prt('缚魂层数：'..l)
 end
 function RemoveFuhunDebuffParticle(keys)
 	local target = keys.target
@@ -13475,7 +13557,6 @@ function CopyAbility2FuhunUnit(unit,unluckydog,ability)
 					u:RemoveModifierByName('modifier_gs_give_fuhun')
 				else
 					u:FindModifierByName("modifier_gs_give_fuhun"):SetStackCount(l)
-					-- prt('缚魂层数：'..l)
 				end
 			end)
 		end
@@ -13571,7 +13652,6 @@ function ExtraAttack(keys)
 	--实测效果不稳定
 	local caster = keys.caster
 	local target = keys.target
-	-- prt('额外攻击'..caster:GetUnitName()..'-->'..target:GetUnitName())
 	caster:PerformAttack(target, true, true, true, false, false, false, true)
 end
 
@@ -13635,6 +13715,7 @@ function CombineChessPlus(units, advance_unit_name)
 
 	advance_unit_name = advance_unit_name or (units[1]:GetUnitName()..'1')
 
+
 	if advance_unit_name == nil or advance_unit_name == 'chess_io11' then
 		return
 	end
@@ -13682,7 +13763,7 @@ function CombineChessPlus(units, advance_unit_name)
 
 	local wizard_count = GetWizardCount(team_id)
 	local druid_count = GetDruidCount(team_id)
-	if wizard_count == 2 and druid_count >= 3 then
+	if wizard_count >= 2 and druid_count >= 3 then
 		druid_count = druid_count + 1
 	end
 
@@ -13716,8 +13797,26 @@ function CombineChessPlus(units, advance_unit_name)
 		end
 	end
 
-
-
+	if string.find(advance_unit_name,'11') ~= nil then
+		GameRules:GetGameModeEntity().level3pieces[team_id] = GameRules:GetGameModeEntity().level3pieces[team_id] + 1
+	end
+	local chess_price = 1
+	for k1,v1 in pairs(GameRules:GetGameModeEntity().chess_list_by_mana) do
+		for k2,v2 in pairs(v1) do
+			if string.find(advance_unit_name,v2) ~= nil then
+				chess_price = k1
+			end
+		end
+	end
+	if GameRules:GetGameModeEntity().egg_quest == 'q003' and string.find(advance_unit_name,'1') ~= nil and chess_price == 5 then
+		SetQuest(team_id,true)
+	end
+	if GameRules:GetGameModeEntity().egg_quest == 'q004' and string.find(advance_unit_name,'11') ~= nil and chess_price == 4 then
+		SetQuest(team_id,true)
+	end
+	if GameRules:GetGameModeEntity().egg_quest == 'q011' and GameRules:GetGameModeEntity().level3pieces[team_id] >= 4 then
+		SetQuest(team_id,true)
+	end
 	--=====================================================
 	--至此已经确定了所有配件棋子，以及最终的合成品。可以开始合成了
 	
@@ -13870,6 +13969,7 @@ end
 function GetWizardCount(team_id)
 	local rubick = 0
 	local gs = 0
+	local lion = 0
 	for x,y in pairs(GameRules:GetGameModeEntity().mychess[team_id]) do
 		if string.find(y.chess,'chess_rubick') ~= nil then
 			rubick = 1
@@ -13944,6 +14044,7 @@ function CourierCP(c1,c2)
 		h436 = 15, h437 = 15,
 		h226 = 16, h227 = 16, h228 = 16, h324 = 16, h325 = 16, h326 = 16, h423 = 16, h424 = 16, h425 = 16,
 		h399 = 17, h433 = 17,
+		h397 = 18, h398 = 18,
 	}
 	local h1 = c1.onduty_hero
 	local h2 = c2.onduty_hero
@@ -13971,9 +14072,17 @@ function CourierCP(c1,c2)
 		cp_level = cp_level + 1
 	end
 	if c1.cp_exp >= 5 or c2.cp_exp >= 5 then
+		if GameRules:GetGameModeEntity().egg_quest == 'q018' then
+			SetQuest(h1:GetTeam(),true)
+			SetQuest(h2:GetTeam(),true)
+		end
 		cp_level = cp_level + 1
 	end
 	if cp_level >= 0 then
+		if GameRules:GetGameModeEntity().egg_quest == 'q019' then
+			SetQuest(h1:GetTeam(),true)
+			SetQuest(h2:GetTeam(),true)
+		end
 		EmitSoundOn("dac.cpsound",c1)
 		EmitSoundOn("dac.cpsound",c2)
 		play_particle("effect/cp_heart/"..cp_level..".vpcf",PATTACH_OVERHEAD_FOLLOW,c1,6)
@@ -14053,13 +14162,9 @@ function ShowBattleInfo()
 						local enemy_id = TeamId2Hero(v):GetPlayerID()
 						local guest_oppo_id = TeamId2Hero(g):GetPlayerID()
 						local buffs = nil
-						local is_chesses_same_star = 0
 
 						if GameRules:GetGameModeEntity().stat_info[TeamId2Hero(v).steam_id] ~= nil then
 							buffs = GameRules:GetGameModeEntity().stat_info[TeamId2Hero(v).steam_id]['buff']
-							if GameRules:GetGameModeEntity().stat_info[TeamId2Hero(v).steam_id]['check_stars'] == 1 then
-								is_chesses_same_star = 1
-							end
 						end
 						
 						
@@ -14073,7 +14178,6 @@ function ShowBattleInfo()
 							history_win = GetHistoryWin(i,v),
 	            			history_lose = GetHistoryLose(i,v),
 	            			buffs = buffs,
-	            			is_chesses_same_star = is_chesses_same_star,
 						})
 
 						battle_table[i] = {
@@ -14152,7 +14256,6 @@ function ItemPipe(keys)
 	})
 	
 	for _,unluckydog in pairs(units) do
-		-- prt(unluckydog:GetUnitName())
 		InvisibleUnitCast({
 			caster = caster,
 			ability = 'give_pipe_buff',
@@ -14167,7 +14270,6 @@ function DAC:OnRequestChooseLoot(keys)
 	local loot_index = keys.loot_index
 	local hero = PlayerId2Hero(player_id)
 	if hero.loot_table == nil or hero.loot_table[loot_index] == nil then
-		-- prt('ChooseLoot失败')
 	end
 
 	hero:AddItemByName(hero.loot_table[loot_index])
@@ -14309,7 +14411,6 @@ end
 function GiveALootBox(hero)
 	local item_name = GameRules:GetGameModeEntity().wave_2_lootbox[GameRules:GetGameModeEntity().battle_round - 1]
 	if item_name == nil then
-		-- prt('木有战利品'..(GameRules:GetGameModeEntity().battle_round - 1))
 		return
 	end
 
@@ -14441,19 +14542,16 @@ function AllocateABattleRoundV3()
 				-- finished = not (IsValueInTable(v, GameRules:GetGameModeEntity().last_round) or IsValueInTable(v, GameRules:GetGameModeEntity().last_2nd_round) or IsValueInTable(v, GameRules:GetGameModeEntity().last_3rd_round))
 				if IsValueInTable(v, GameRules:GetGameModeEntity().last_round) == true or IsValueInTable(v, GameRules:GetGameModeEntity().last_2nd_round) == true or IsValueInTable(v, GameRules:GetGameModeEntity().last_3rd_round) == true then
 					finished = false
-					-- prt('Conflict: '..v)
 				end
 			elseif alive_player_count >= 5 then 
 				-- finished = not (IsValueInTable(v, GameRules:GetGameModeEntity().last_round) or IsValueInTable(v, GameRules:GetGameModeEntity().last_2nd_round))
 				if IsValueInTable(v, GameRules:GetGameModeEntity().last_round) == true or IsValueInTable(v, GameRules:GetGameModeEntity().last_2nd_round) == true then
 					finished = false
-					-- prt('Conflict: '..v)
 				end
 			elseif alive_player_count >= 3 then 
 				-- finished = not (IsValueInTable(v, GameRules:GetGameModeEntity().last_round))
 				if IsValueInTable(v, GameRules:GetGameModeEntity().last_round) == true then
 					finished = false
-					-- prt('Conflict: '..v)
 				end
 			elseif alive_player_count >= 1 then 
 				finished = true
@@ -14480,28 +14578,6 @@ function AllocateABattleRoundV3()
 			table.sort(GameRules:GetGameModeEntity().alive_player_table)
 		end
 	end
-
-	-- local round_info = ''
-	-- for i, v in pairs(GameRules:GetGameModeEntity().last_3rd_round) do
-	-- 	round_info = round_info..v..'  '
-	-- end
-	-- prt('LAST 3RD ROUND: '..round_info)
-	-- local round_info = ''
-	-- for i, v in pairs(GameRules:GetGameModeEntity().last_2nd_round) do
-	-- 	round_info = round_info..v..'  '
-	-- end
-	-- prt('LAST 2ND ROUND: '..round_info)
-	-- local round_info = ''
-	-- for i, v in pairs(GameRules:GetGameModeEntity().last_round) do
-	-- 	round_info = round_info..v..'  '
-	-- end
-	-- prt('LAST ROUND: '..round_info)
-	-- round_info = ''
-	-- for i, v in pairs(GameRules:GetGameModeEntity().current_round) do
-	-- 	round_info = round_info..v..'  '
-	-- end
-	-- prt('CURRENT ROUND: '..round_info)
-	-- prt('Trytime: '..trytime..'    Alive Player Count: '..alive_player_count)
 end
 
 function IsValueInTable(value, table)
@@ -14619,13 +14695,11 @@ function LionManaDrainEnd(keys)
 					caster:SetMana(0)
 
 					if IsUnitExist(luckydog_1) == true then
-						-- prt('1')
 						luckydog_1:GiveMana(give_mana)
 						ReduceChessAbilityCD(luckydog_1,cd_reduce)
 						AMHC:CreateNumberEffect(luckydog_1,give_mana,2,AMHC.MSG_MISS,{128,128,255},0)
 					end
 					if IsUnitExist(luckydog_2) == true then
-						-- prt('2')
 						local pp2 = ParticleManager:CreateParticle('particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_chakra_magic.vpcf', PATTACH_ABSORIGIN_FOLLOW, luckydog_2)
 						ParticleManager:SetParticleControlEnt( pp2, 0, luckydog_2, PATTACH_ABSORIGIN_FOLLOW, nil, luckydog_2:GetOrigin(), true );
 						ParticleManager:SetParticleControlEnt( pp2, 1, luckydog_2, PATTACH_ABSORIGIN_FOLLOW, nil, luckydog_2:GetOrigin(), true );
@@ -14640,7 +14714,6 @@ function LionManaDrainEnd(keys)
 						AMHC:CreateNumberEffect(luckydog_2,give_mana,2,AMHC.MSG_MISS,{128,128,255},0)
 					end
 					if IsUnitExist(luckydog_3) == true then
-						-- prt('3')
 						local pp3 = ParticleManager:CreateParticle('particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_chakra_magic.vpcf', PATTACH_ABSORIGIN_FOLLOW, luckydog_3)
 						ParticleManager:SetParticleControlEnt( pp3, 0, luckydog_3, PATTACH_ABSORIGIN_FOLLOW, nil, luckydog_3:GetOrigin(), true );
 						ParticleManager:SetParticleControlEnt( pp3, 1, luckydog_3, PATTACH_ABSORIGIN_FOLLOW, nil, luckydog_3:GetOrigin(), true );
@@ -14726,7 +14799,46 @@ function UpdatePlayerWorldPanel(battle_table)
 			end
 		end
 	end
+	if GameRules:GetGameModeEntity().battle_boss[GameRules:GetGameModeEntity().battle_round] ~= nil then
+		battle_table['pve_round'] = GameRules:GetGameModeEntity().battle_round
+	end
 	for i=6,13 do
 		CustomGameEventManager:Send_ServerToTeam(i,"update_player_worldpanel",battle_table)
+	end
+end
+function ShowQuest()
+	CustomNetTables:SetTableValue( "quest_table", "show_quest", {quest = GameRules:GetGameModeEntity().egg_quest,status = GameRules:GetGameModeEntity().quest_status})
+end
+function SetQuest(team,tf)
+	local hero = TeamId2Hero(team)
+	local steam_id = hero.steam_id
+	local player_name = GameRules:GetGameModeEntity().steamid2name[steam_id] or '未知玩家'
+
+	GameRules:GetGameModeEntity().quest_status[team] = tf
+
+	ShowQuest()
+end
+
+function TeamId2PlayerName(team)
+	local hero = TeamId2Hero(team)
+	local steam_id = hero.steam_id
+	local player_name = GameRules:GetGameModeEntity().steamid2name[steam_id] or '未知玩家'
+	return player_name
+end
+
+--向table中添加一个内容（去重,后面的11和1会被去掉）
+function SAdd(t, v)
+	if string.find(v,'11') ~= nil then
+		v = string.sub(v,1,-3)
+	end
+	if string.find(v,'1') ~= nil then
+		v = string.sub(v,1,-2)
+	end
+	if FindValueInTable(t, v) == true then
+		return table.maxn(t)
+	else
+		table.insert(t, v)
+		-- DeepPrintTable(t)
+		return table.maxn(t)
 	end
 end

@@ -482,7 +482,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"chill_duration"	"6 8 10"
+				"chill_duration"	"4 6 8"
 			}
 			"02"
 			{
@@ -492,7 +492,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attackspeed_bonus"	"40 60 80"
+				"attackspeed_bonus"	"30 40 50"
 			}
 		}
 	}
@@ -8048,7 +8048,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
 				}
 				"Passive"	"1"
 			}
@@ -8070,7 +8070,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
 				}
 				"Passive"	"1"
 			}
@@ -8092,7 +8092,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-40"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-45"
 				}
 				"Passive"	"1"
 			}
@@ -8489,7 +8489,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"45"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"40"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9502,7 +9502,8 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-40"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"70"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9557,7 +9558,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus"
 							}
 						}
-						"Chance"	"40"
+						"Chance"	"30"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9571,7 +9572,8 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-40"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"70"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9626,7 +9628,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus_plus"
 							}
 						}
-						"Chance"	"40"
+						"Chance"	"30"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9640,7 +9642,8 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-40"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"70"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -12142,7 +12145,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"hp_per"	"20 30 40"
+				"hp_per"	"20 30 50"
 			}
 		}
 	}
@@ -16511,12 +16514,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"steal_duration"	"6 8 10"
+				"steal_duration"	"4 6 8"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"steal_attack_speed"	"40 60 80"
+				"steal_attack_speed"	"30 40 50"
 			}
 			"04"
 			{
