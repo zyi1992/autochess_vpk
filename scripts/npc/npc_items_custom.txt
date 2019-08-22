@@ -2739,19 +2739,16 @@
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
 		"ItemPermanent"	"0"
-		"ItemRequiresCharges"	"1"
-		"ItemInitialCharges"	"1"
-		"ItemStackable"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"OnSpellStart"
+		"Modifiers"
 		{
-			"SpendCharge"	{}
-			"RunScript"
+			"modifier_item_suduzhixue"
 			{
-				"Target"	"TARGET"
-				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"ItemBaoxiang"
+				"IsHidden"	"1"
+				"Passive"	"1"
 			}
 		}
 	}
@@ -2900,11 +2897,18 @@
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
 		"ItemPermanent"	"0"
-		"ItemRequiresCharges"	"1"
-		"ItemInitialCharges"	"1"
-		"ItemStackable"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_nengliangqiu"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+			}
+		}
 	}
 
 	"item_aoshuxie"
@@ -2915,7 +2919,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"30"
 		"AbilityManaCost"	"0"
 		"ID"	"1558"
 		"ItemQuality"	"rare"
@@ -2927,11 +2931,58 @@
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
 		"ItemPermanent"	"0"
-		"ItemRequiresCharges"	"1"
-		"ItemInitialCharges"	"1"
-		"ItemStackable"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_aoshuxie"
+			{
+				"Passive"	"1"
+				"IsDebuff"	"0"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"item_jingmixie"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_tranquil_boots"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"0"
+		"ID"	"1563"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_jingmixie"
+			{
+				"Passive"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"30"
+				}
+				"IsHidden"	"1"
+			}
+		}
 	}
 
 	"item_yuanxingxie"
@@ -2954,9 +3005,8 @@
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
 		"ItemPermanent"	"0"
-		"ItemRequiresCharges"	"1"
-		"ItemInitialCharges"	"1"
-		"ItemStackable"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 	}
@@ -3425,7 +3475,7 @@
 		"ItemResult"	"item_zhaohuanshenshi"
 		"ItemRequirements"
 		{
-			"01"	"item_huoliqiu;item_kuweishi;item_kuweishi;"
+			"01"	"item_huoliqiu;item_kuweishi;"
 		}
 	}
 
@@ -3438,7 +3488,7 @@
 		"ItemResult"	"item_dongchayandou"
 		"ItemRequirements"
 		{
-			"01"	"item_tiaozhantoujin;item_huifuzhihuan;item_kangmodoupeng;"
+			"01"	"item_tiaozhantoujin;item_kangmodoupeng;"
 		}
 	}
 }

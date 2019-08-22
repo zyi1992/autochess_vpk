@@ -263,6 +263,7 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"blade_fury_damage_tick"	"0.3"
+				"CalculateSpellDamageTooltip"	"0"
 			}
 			"02"
 			{
@@ -278,7 +279,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"5"
+				"duration"	"5.0"
 				"LinkedSpecialBonus"	"special_bonus_unique_juggernaut"
 			}
 		}
@@ -416,6 +417,7 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"radius"	"260"
+				"LinkedSpecialBonus"	"special_bonus_unique_omniknight_4"
 			}
 		}
 	}
@@ -606,45 +608,51 @@
 			}
 			"02"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"ghostship_distance"	"2000"
+				"var_type"	"FIELD_FLOAT"
+				"scepter_tooltip_delay"	"1.55"
+				"RequiresScepter"	"1"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ghostship_width"	"425 425 425"
+				"ghostship_distance"	"2000"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"movespeed_bonus"	"10 10 10"
+				"ghostship_width"	"425 425 425"
 			}
 			"05"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"buff_duration"	"0"
+				"var_type"	"FIELD_INTEGER"
+				"movespeed_bonus"	"0"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stun_duration"	"1 1.5 2.5"
+				"buff_duration"	"10"
 			}
 			"07"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"ghostship_speed"	"650"
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1 1.5 2.5"
 			}
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ghostship_speed_scepter"	"650"
+				"ghostship_speed"	"650"
 			}
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ghostship_width_scepter"	"200"
+				"ghostship_speed_scepter"	"650"
 			}
 			"10"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ghostship_width_scepter"	"200"
+			}
+			"11"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"ghostship_absorb"	"0"
@@ -4742,7 +4750,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"MaxLevel"	"1"
 		"AbilityCastPoint"	"0.3"
-		"AbilityManaCost"	"1"
+		"AbilityManaCost"	"0.1"
 		"AbilityCastRange"	"704"
 		"precache"
 		{
@@ -10840,12 +10848,14 @@
 				"var_type"	"FIELD_INTEGER"
 				"max_distance"	"800"
 				"LinkedSpecialBonus"	"special_bonus_unique_puck"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"orb_speed"	"651"
 				"LinkedSpecialBonus"	"special_bonus_unique_puck"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
 			}
 			"04"
 			{
@@ -10855,7 +10865,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"vision_duration"	"3"
+				"vision_duration"	"3.34 3.34 3.34"
 			}
 		}
 		"AbilityDamage"	"150 200 275"
@@ -16656,14 +16666,14 @@
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"10 7 4"
+		"AbilityCooldown"	"8 6 4"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"10"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"	"9999"
-		"AbilityChannelTime"	"5.1"
+		"AbilityChannelTime"	"4.1 3.1 2.1"
 		// Precache
 		// -------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -16769,12 +16779,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"5.0"
+				"duration"	"4 3 2"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"mana_per_second"	"10 15 20"
+				"mana_per_second"	"15 25 45"
 			}
 			"03"
 			{
@@ -16963,7 +16973,7 @@
 	"keeper_of_the_light_chakra_magic"
 	{
 		"MaxLevel"	"3"
-		"AbilityCastPoint"	"1"
+		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
 		"AbilityCooldown"	"0"
 		"AbilityManaCost"	"0"
@@ -16990,6 +17000,54 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"duration"	"5"
+			}
+		}
+	}
+
+	"nyx_assassin_spiked_carapace"
+	{
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0 0 0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"15 12 9"
+		"AbilityManaCost"	"100"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"reflect_duration"	"2 3 4"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.5 2 3"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"0"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"0"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"burrow_aoe"	"300"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_reflect_pct"	"100"
+				"LinkedSpecialBonus"	"special_bonus_unique_nyx"
 			}
 		}
 	}
