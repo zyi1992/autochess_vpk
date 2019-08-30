@@ -46,7 +46,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -174,7 +174,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -220,27 +220,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9607"
+					"ItemDef"	"13093"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9608"
+					"ItemDef"	"9613"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9609"
+					"ItemDef"	"9607"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9610"
+					"ItemDef"	"9608"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9611"
+					"ItemDef"	"9609"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9612"
+					"ItemDef"	"9011"
 				}
 				"Wearable7"
 				{
@@ -248,7 +248,7 @@
 				}
 				"Wearable8"
 				{
-					"ItemDef"	"9613"
+					"ItemDef"	"9610"
 				}
 			}
 		}
@@ -306,7 +306,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -352,31 +352,35 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9698"
+					"ItemDef"	"9701"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9699"
+					"ItemDef"	"5938"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9700"
+					"ItemDef"	"9822"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9701"
+					"ItemDef"	"9012"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7375"
+					"ItemDef"	"13668"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9703"
+					"ItemDef"	"7375"
 				}
 				"Wearable7"
 				{
 					"ItemDef"	"541"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"5767"
 				}
 			}
 		}
@@ -434,7 +438,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -558,7 +562,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -616,7 +620,7 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5737"
+					"ItemDef"	"6784"
 				}
 				"Wearable5"
 				{
@@ -682,7 +686,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -728,7 +732,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5070"
+					"ItemDef"	"13669"
 				}
 				"Wearable2"
 				{
@@ -808,7 +812,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -924,7 +928,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1044,7 +1048,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1164,7 +1168,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1284,7 +1288,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1326,9 +1330,7 @@
 		"AttackRange"	"205"
 		"Creature"
 		{
-			"AttachWearables"
-			{
-			}
+			"AttachWearables"	{}
 		}
 		"ProjectileModel"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
@@ -1384,7 +1386,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1426,9 +1428,7 @@
 		"AttackRange"	"205"
 		"Creature"
 		{
-			"AttachWearables"
-			{
-			}
+			"AttachWearables"	{}
 		}
 		"ProjectileModel"	"particles/units/heroes/hero_crystalmaiden/maiden_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
@@ -1482,7 +1482,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1602,7 +1602,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1722,7 +1722,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1842,7 +1842,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -1964,7 +1964,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2086,7 +2086,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2208,7 +2208,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2334,7 +2334,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2460,7 +2460,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2586,7 +2586,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2700,7 +2700,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2814,7 +2814,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -2928,7 +2928,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3048,7 +3048,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3168,7 +3168,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3288,7 +3288,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3412,7 +3412,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3536,7 +3536,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3668,7 +3668,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3792,7 +3792,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3916,7 +3916,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -3978,7 +3978,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"4452"
+					"ItemDef"	"13081"
 				}
 				"Wearable6"
 				{
@@ -4044,7 +4044,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4164,7 +4164,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4288,7 +4288,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4412,7 +4412,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4528,7 +4528,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4644,7 +4644,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4760,7 +4760,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -4884,7 +4884,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5008,7 +5008,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5136,7 +5136,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5260,7 +5260,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5306,19 +5306,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5797"
+					"ItemDef"	"6743"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"5798"
+					"ItemDef"	"6776"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5799"
+					"ItemDef"	"6746"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5800"
+					"ItemDef"	"6747"
 				}
 				"Wearable5"
 				{
@@ -5326,7 +5326,7 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"5803"
+					"ItemDef"	"6748"
 				}
 			}
 		}
@@ -5384,7 +5384,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5430,35 +5430,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7213"
+					"ItemDef"	"9001"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"6849"
+					"ItemDef"	"9018"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"4064"
+					"ItemDef"	"9003"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"6851"
+					"ItemDef"	"8999"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6852"
+					"ItemDef"	"13534"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"6853"
+					"ItemDef"	"7213"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"4031"
-				}
-				"Wearable8"
-				{
-					"ItemDef"	"12492"
+					"ItemDef"	"9002"
 				}
 			}
 		}
@@ -5516,7 +5512,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5634,7 +5630,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5752,7 +5748,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5870,7 +5866,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -5988,7 +5984,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6106,7 +6102,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6224,7 +6220,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6346,7 +6342,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6472,7 +6468,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6594,7 +6590,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6716,7 +6712,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6834,7 +6830,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -6960,7 +6956,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7090,7 +7086,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7216,7 +7212,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7342,7 +7338,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7472,7 +7468,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7592,7 +7588,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7712,7 +7708,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7832,7 +7828,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -7948,7 +7944,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8064,7 +8060,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8139,6 +8135,366 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_puck.vsndevts"
 	}
 
+	// 2
+	"chess_oracle"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/oracle/oracle.vmdl"
+		"ModelScale"	"0.6"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_god"
+		// Ability 2.
+		"Ability2"	"is_priest"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"500"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"40"
+		"AttackDamageMax"	"50"
+		"AttackRate"	"1.6"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"550"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"547"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"548"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"546"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"549"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_oracle/oracle_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.3"
+		"HasInventory"	"1"
+		"Level"	"2"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Oracle"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
+	}
+
+	// 2
+	"chess_oracle1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/oracle/oracle.vmdl"
+		"ModelScale"	"0.75"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_god"
+		// Ability 2.
+		"Ability2"	"is_priest"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"100"
+		"AttackRate"	"1.6"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"550"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"12603"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"12601"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"12602"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"13422"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_oracle/oracle_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.3"
+		"HasInventory"	"1"
+		"Level"	"4"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Oracle"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
+	}
+
+	// 2
+	"chess_oracle11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/oracle/oracle.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_god"
+		// Ability 2.
+		"Ability2"	"is_priest"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"160"
+		"AttackDamageMax"	"200"
+		"AttackRate"	"1.6"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"550"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"13425"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"13424"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"13423"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"9232"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_oracle/oracle_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.3"
+		"HasInventory"	"1"
+		"Level"	"6"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Oracle"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
+	}
+
 	// 3
 	"chess_pudge"
 	{
@@ -8180,7 +8536,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8312,7 +8668,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8444,7 +8800,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8576,7 +8932,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8696,7 +9052,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8816,7 +9172,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -8936,7 +9292,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9056,7 +9412,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9176,7 +9532,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9238,7 +9594,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8739"
+					"ItemDef"	"13561"
 				}
 			}
 		}
@@ -9296,7 +9652,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9416,7 +9772,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9536,7 +9892,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9660,7 +10016,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9784,7 +10140,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -9908,7 +10264,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10032,7 +10388,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10156,7 +10512,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10288,7 +10644,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10404,7 +10760,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10520,7 +10876,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10640,7 +10996,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10768,7 +11124,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -10896,7 +11252,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11024,7 +11380,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11144,7 +11500,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11264,7 +11620,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11384,7 +11740,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11508,7 +11864,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11632,7 +11988,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11756,7 +12112,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -11880,7 +12236,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12004,7 +12360,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12128,7 +12484,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12248,7 +12604,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12368,7 +12724,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12488,7 +12844,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12616,7 +12972,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12744,7 +13100,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12872,7 +13228,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -12981,7 +13337,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -12992,7 +13348,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13101,7 +13457,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -13112,7 +13468,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13221,7 +13577,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -13232,7 +13588,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13352,7 +13708,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13389,8 +13745,8 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"45"
-		"AttackDamageMax"	"60"
-		"AttackRate"	"1.4"
+		"AttackDamageMax"	"70"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -13418,7 +13774,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.53"
 		"HasInventory"	"1"
-		"Level"	"3"
+		"Level"	"2"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -13468,7 +13824,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13504,9 +13860,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"45"
-		"AttackDamageMax"	"60"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"90"
+		"AttackDamageMax"	"140"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -13584,7 +13940,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13620,9 +13976,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"45"
-		"AttackDamageMax"	"60"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"180"
+		"AttackDamageMax"	"280"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -13700,7 +14056,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13824,7 +14180,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -13948,7 +14304,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14072,7 +14428,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14196,7 +14552,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14324,7 +14680,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14452,7 +14808,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14572,7 +14928,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14692,7 +15048,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14812,7 +15168,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -14928,7 +15284,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15044,7 +15400,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15164,7 +15520,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15284,7 +15640,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15404,7 +15760,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15524,7 +15880,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15656,7 +16012,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15788,7 +16144,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -15920,7 +16276,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16045,7 +16401,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16174,7 +16530,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16303,7 +16659,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16427,7 +16783,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16551,7 +16907,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16675,7 +17031,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16795,7 +17151,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -16919,7 +17275,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -17043,7 +17399,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17157,7 +17513,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17271,7 +17627,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17383,7 +17739,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17437,7 +17793,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17491,7 +17847,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17547,7 +17903,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17657,7 +18013,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17767,7 +18123,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17877,7 +18233,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -17995,7 +18351,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -18113,7 +18469,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
@@ -18231,7 +18587,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -18347,7 +18703,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -18463,7 +18819,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -18571,7 +18927,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -18691,7 +19047,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -18815,7 +19171,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -18939,7 +19295,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19055,7 +19411,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19171,7 +19527,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19291,7 +19647,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19411,7 +19767,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19539,7 +19895,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19671,7 +20027,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19795,7 +20151,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -19927,7 +20283,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20059,7 +20415,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20187,7 +20543,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20315,7 +20671,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20443,7 +20799,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20563,7 +20919,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20683,7 +21039,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20803,7 +21159,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -20923,7 +21279,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21039,7 +21395,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21126,7 +21482,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_warlock"
 		// Ability 3.
@@ -21155,7 +21511,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21250,7 +21606,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_warlock"
 		// Ability 3.
@@ -21279,7 +21635,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21370,7 +21726,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"is_beast"
+		"Ability1"	"is_aqir"
 		// Ability 2.
 		"Ability2"	"is_warlock"
 		// Ability 3.
@@ -21399,7 +21755,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21519,7 +21875,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21639,7 +21995,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21763,7 +22119,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -21887,7 +22243,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22011,7 +22367,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22119,7 +22475,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22227,7 +22583,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22347,7 +22703,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22393,19 +22749,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"4670"
+					"ItemDef"	"8331"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"5302"
+					"ItemDef"	"603"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8331"
+					"ItemDef"	"4669"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"603"
+					"ItemDef"	"4670"
 				}
 				"Wearable5"
 				{
@@ -22467,7 +22823,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22513,7 +22869,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8331"
+					"ItemDef"	"13539"
 				}
 				"Wearable2"
 				{
@@ -22591,7 +22947,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22715,7 +23071,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22843,7 +23199,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -22967,7 +23323,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23095,7 +23451,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23223,7 +23579,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23351,7 +23707,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23479,7 +23835,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23607,7 +23963,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23735,7 +24091,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -23871,7 +24227,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24015,7 +24371,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24159,7 +24515,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24283,7 +24639,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24415,7 +24771,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24551,7 +24907,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24671,7 +25027,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24795,7 +25151,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -24919,7 +25275,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25047,7 +25403,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25163,7 +25519,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25279,7 +25635,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25395,7 +25751,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25519,7 +25875,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25643,7 +25999,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25767,7 +26123,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25875,7 +26231,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -25991,7 +26347,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26115,7 +26471,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26235,7 +26591,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26363,7 +26719,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26499,7 +26855,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26619,7 +26975,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26747,7 +27103,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -26793,35 +27149,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9961"
+					"ItemDef"	"13548"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9963"
+					"ItemDef"	"13530"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9964"
+					"ItemDef"	"13666"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9966"
+					"ItemDef"	"13527"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9962"
+					"ItemDef"	"13528"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9960"
+					"ItemDef"	"13529"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9965"
-				}
-				"Wearable8"
-				{
-					"ItemDef"	"21211"
+					"ItemDef"	"13526"
 				}
 			}
 		}
@@ -26879,7 +27231,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -27131,7 +27483,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27183,7 +27535,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27232,7 +27584,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27281,7 +27633,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27330,7 +27682,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"10"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27383,7 +27735,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27437,7 +27789,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -27491,7 +27843,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27545,7 +27897,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27599,10 +27951,172 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"aqir_lv1"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/broodmother/spiderling/perceptive_spiderling/perceptive_spiderling.vmdl"
+		"ModelScale"	"0.8"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"300"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1.2"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"5"
+		"MovementSpeed"	"500"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"aqir_lv2"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/broodmother/spiderling/perceptive_spiderling/perceptive_spiderling.vmdl"
+		"ModelScale"	"1"
+		"Level"	"2"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"600"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1.2"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"5"
+		"MovementSpeed"	"500"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"aqir_lv3"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/broodmother/spiderling/perceptive_spiderling/perceptive_spiderling.vmdl"
+		"ModelScale"	"1.2"
+		"Level"	"3"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1200"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1.2"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"5"
+		"MovementSpeed"	"500"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
 		"SoundSet"	"Hero_OgreMagi"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
@@ -27653,7 +28167,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27707,7 +28221,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27761,7 +28275,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27815,7 +28329,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -27869,7 +28383,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"256"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -27923,7 +28437,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"15"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -27977,7 +28491,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -28031,7 +28545,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -28085,7 +28599,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -28228,7 +28742,7 @@
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
 		"Model"	"models/items/venomancer/ward/chomper_ward/chomper_ward.vmdl"
-		"ModelScale"	"1"
+		"ModelScale"	"0.95"
 		"Level"	"1"
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
@@ -28240,7 +28754,7 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"150"
+		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"200"
 		"AttackRate"	"1.4"
 		"AttackRange"	"900"
@@ -28301,7 +28815,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -28352,7 +28866,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -28403,7 +28917,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"25"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28456,7 +28970,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"25"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28509,7 +29023,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28560,7 +29074,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28611,7 +29125,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28662,7 +29176,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -28715,7 +29229,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28768,7 +29282,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
 		"ArmorPhysical"	"5"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28821,7 +29335,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
 		"ArmorPhysical"	"20"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28874,7 +29388,7 @@
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"30"
 		"ArmorPhysical"	"30"
-		"MovementSpeed"	"150"
+		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -33411,7 +33925,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -33539,7 +34053,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -33667,7 +34181,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -33795,7 +34309,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -33918,7 +34432,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status
@@ -34039,7 +34553,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"300"
+		"MovementSpeed"	"500"
 		// Turning rate.
 		"MovementTurnRate"	"10"
 		// Status

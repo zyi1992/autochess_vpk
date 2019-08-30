@@ -100,6 +100,8 @@ local sha2 = require('sha2')
 local LibDeflate = require("LibDeflate")
 LinkLuaModifier("modifier_jump", "lua_modifier/jump.lua", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_run", "lua_modifier/run.lua", LUA_MODIFIER_MOTION_BOTH)
+LinkLuaModifier("modifier_blink", "lua_modifier/blink.lua", LUA_MODIFIER_MOTION_BOTH)
+
 LinkLuaModifier("modifier_teleport", "lua_modifier/teleport.lua", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_spawn", "lua_modifier/spawn.lua", LUA_MODIFIER_MOTION_BOTH)
 LinkLuaModifier("modifier_ready", "lua_modifier/ready.lua", LUA_MODIFIER_MOTION_BOTH)
@@ -619,6 +621,7 @@ function Precache( context )
  		"particles/units/heroes/hero_windrunner/windrunner_spell_powershot_channel.vpcf",
  		"effect/pipe/1.vpcf",
  		"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts",
+ 		"soundevents/game_sounds_heroes/game_sounds_clinkz.vsndevts",
 	} 
     print("Precache...")
 	local t=table.maxn(mxx)
@@ -719,6 +722,8 @@ function Precache( context )
 		chess_visage = '1',
 		chess_lion = '1',
 		chess_na = '2',
+		chess_oracle = '2',
+		chess_na = '2',
 	}
 
 	for u,_ in pairs(precache_list) do
@@ -813,7 +818,6 @@ function DAC:InitGameMode()
 	}
 	GameRules:GetGameModeEntity().quest_14_buff_list = {
 		is_troll = 6,
-		is_beast = 6,
 		is_elf = 9,
 		is_human = 6,
 		is_undead = 6,
@@ -1040,6 +1044,7 @@ function DAC:InitGameMode()
 			[10] = 'item_xuwubaoshi',
 			[11] = 'item_fashichangpao',
 			[12] = 'item_wangguan',
+			[13] = 'item_suduzhixue',
 		},
 		[2] = {
 			[1] = 'item_banjia', 	
@@ -1049,6 +1054,7 @@ function DAC:InitGameMode()
 			[5] = 'item_biaoqiang',
 			[6] = 'item_molifazhang',
 			[7] = 'item_xiaofu',
+			[8] = 'item_nengliangqiu',
 		},
 		[3] = {
 			[1] = 'item_emodaofeng',
@@ -1448,8 +1454,8 @@ function DAC:InitGameMode()
 	--能看到这行字的代码哥哥，请勿将测试服拆包内容曝光和公开讨论，谢谢
 	GameRules:GetGameModeEntity().chess_list_by_mana = {
 		[1] = {'chess_tusk','chess_axe','chess_eh','chess_clock','chess_ss','chess_bh','chess_dr','chess_tk','chess_am','chess_tiny','chess_mars','chess_ww','chess_wd','chess_lion'}, --,'chess_om'
-		[2] = {'chess_bm','chess_jugg','chess_shredder','chess_puck','chess_ck','chess_slardar','chess_luna','chess_qop','chess_cm','chess_fur','chess_morph','chess_rubick','chess_slark','chess_bat'}, --'chess_riki','chess_lich','chess_pom'
-		[3] = {'chess_ok','chess_razor','chess_wr','chess_abaddon','chess_sniper','chess_sf','chess_viper','chess_lyc','chess_pa','chess_lina','chess_tb','chess_tp','chess_dazzle','chess_veno','chess_pudge'}, --'chess_fv','chess_sk'
+		[2] = {'chess_bm','chess_jugg','chess_shredder','chess_puck','chess_ck','chess_luna','chess_cm','chess_fur','chess_morph','chess_rubick','chess_slark','chess_bat','chess_oracle'}, --,'chess_na','chess_riki','chess_lich','chess_pom','chess_slardar',,'chess_qop'
+		[3] = {'chess_ok','chess_razor','chess_wr','chess_abaddon','chess_sniper','chess_sf','chess_viper','chess_lyc','chess_pa','chess_lina','chess_tb','chess_tp','chess_dazzle','chess_veno','chess_pudge','chess_sk'}, --'chess_fv'
 		[4] = {'chess_kunkka','chess_doom','chess_troll','chess_nec','chess_ta','chess_medusa','chess_disruptor','chess_ga','chess_dk','chess_light','chess_ld','chess_gs'},
 		[5] = {'chess_gyro','chess_th','chess_enigma','chess_tech','chess_dp','chess_zeus','chess_sven','chess_visage'}, --,'chess_kael',
 	}
@@ -1537,6 +1543,8 @@ function DAC:InitGameMode()
 		chess_pudge = 3,
 		chess_visage = 5,
 		chess_lion = 1,
+		chess_na = 2,
+		chess_oracle = 2,
 		chess_na = 2,
 	}
 	GameRules:GetGameModeEntity().chess_pool = {
@@ -1841,6 +1849,14 @@ function DAC:InitGameMode()
 		chess_na = 'nyx_assassin_spiked_carapace',
 		chess_na1 = 'nyx_assassin_spiked_carapace',
 		chess_na11 = 'nyx_assassin_spiked_carapace',
+
+		chess_oracle = 'oracle_mingyunsheling',
+		chess_oracle1 = 'oracle_mingyunsheling',
+		chess_oracle11 = 'oracle_mingyunsheling',
+
+		chess_na = 'nyx_assassin_spiked_carapace_datadriven',
+		chess_na1 = 'nyx_assassin_spiked_carapace_datadriven',
+		chess_na11 = 'nyx_assassin_spiked_carapace_datadriven',
 	}
 	GameRules:GetGameModeEntity().summon_ability_list = {
 		visage_dragon_1 = 'visage_grave_chill',
@@ -1850,6 +1866,8 @@ function DAC:InitGameMode()
 	--释放技能：0=被动技能，1=单位目标，2=无目标，3=点目标，4=自己目标，5=近身单位目标，6=先知周边树人，7=随机友军目标（嗜血术），8=随机周围空地目标（炸弹人），9=需要治疗的，10=等级最高的敌人（末日），11=沙王穿刺, 14=pom的特殊目标，15=小鱼人跳，16=需要护盾的队友，17=按伤害量计算最合适的目标，19=新蝙蝠，20=屠夫（最远的敌人单位目标）
 	--能看到这行字的代码哥哥，请勿将测试服拆包内容曝光和公开讨论，谢谢
 	GameRules:GetGameModeEntity().ability_behavior_list = {
+			nyx_assassin_spiked_carapace_datadriven = 2,
+			oracle_mingyunsheling = 1,
 			nyx_assassin_spiked_carapace = 2,
 			lion_mana_drain_datadriven = 18,
 			slark_nengliangzhuanyi = 0,
@@ -1943,7 +1961,8 @@ function DAC:InitGameMode()
 	
 	--组合技技能ability
 	--组合技条件condition：0=只有唯一1个同职业/种族的友军，1~3=需要1~3名同职业/种族的友军
-	--组合技类型type：0=自身有效果，1=所有同职业/种族的友军的有效果，2=所有友军有效果，3=所有敌军有效果，4=随机一个友军有效果，5=随机一个敌军有效果，6信使有效果，9=巫师效果
+	--组合技类型type：0=自身有效果，1=所有同职业/种族的友军的有效果，2=所有友军有效果，3=所有敌军有效果，4=随机一个友军有效果，5=随机一个敌军有效果，
+	--6信使有效果，7=所有远程友军有效果，9=巫师效果
 	GameRules:GetGameModeEntity().combo_ability_type = {
 		--职业技能
 		is_warrior = { ability = 'is_warrior_buff', condition = 3, type = 1 },
@@ -1960,7 +1979,7 @@ function DAC:InitGameMode()
 		is_mech11 = { ability = 'is_mech_buff_plus_plus', condition = 6, type = 2 },
 		is_assassin = { ability = 'is_assassin_buff', condition = 3, type = 1 },
 		is_assassin1 = { ability = 'is_assassin_buff_plus', condition = 6, type = 1 },
-		-- is_assassin11 = { ability = 'is_assassin_buff_plus_plus', condition = 9, type = 1 },
+		is_assassin11 = { ability = 'is_assassin_buff_plus_plus', condition = 9, type = 1 },
 		is_hunter = { ability = 'is_hunter_buff', condition = 3, type = 1 },
 		is_hunter1 = { ability = 'is_hunter_buff_plus', condition = 6, type = 1 },
 		is_knight = { ability = 'is_knight_buff', condition = 2, type = 1 },
@@ -1971,6 +1990,7 @@ function DAC:InitGameMode()
 		is_demonhunter1 = {condition = 2 , type = 1},
 		is_druid = {condition = 2, type = 1},
 		is_priest = { condition = 999, type = 6},
+		is_priest1 = { condition = 999, type = 6},
 		is_wizard = { ability = 'is_wizard_buff', condition = 2, type = 1},
 
 		--种族技能
@@ -2000,13 +2020,14 @@ function DAC:InitGameMode()
 		is_element1 = { ability = 'is_element_buff_plus', condition = 4, type = 2, is_race = true },
 		is_demon = { ability = 'is_demon_buff', condition = 0, type = 1, is_race = true },
 		is_dwarf = { ability = 'is_dwarf_buff', condition = 1, type = 1, is_race = true },
+		is_dwarf1 = { ability = 'is_dwarf_buff', condition = 2, type = 7, is_race = true },
 		is_ogre = { ability = 'is_ogre_buff', condition = 1, type = 2, is_race = true },
 		is_dragon = {condition = 3 , type = 1, is_race = true },
 		is_dragon1 = {condition = 5 , type = 1, is_race = true },
-		is_nraqi = {condition = 1 , type = 1, is_race = true },
-		is_god = { condition = 999, type = 2, is_race = true },
-		is_god1 = { condition = 999, type = 2, is_race = true },
-		is_god11 = { condition = 999, type = 2, is_race = true },
+		is_nraqi = { condition = 1 , type = 1, is_race = true },
+		is_aqir = { ability = 'is_aqir_buff', condition = 2 , type = 2, is_race = true },
+		is_god = { condition = 2, type = 2, is_race = true },
+		is_god1 = { condition = 4, type = 2, is_race = true },
 	}
 
 	GameRules:GetGameModeEntity().class_type = {
@@ -2038,6 +2059,7 @@ function DAC:InitGameMode()
 		[114] = 'is_druid',
 		[115] = 'is_satyr',
 		[116] = 'is_god',
+		[117] = 'is_aqir',
 	}
 
 	GameRules:GetGameModeEntity().sm_hero_list = {
@@ -2273,6 +2295,7 @@ function DAC:InitGameMode()
 		h446 = "effect/wabbit/lvl3.vpcf",
 		h244 = "effect/chongya/1econ/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf",
 		h425 = "effect/xiexiaowo_guanjundun/1.vpcf",
+		h434 = "effect/jinguizi/base.vpcf",
 		h356 = "effect/wangyu/1.vpcf",
 		-- h245 = "effect/xiaoxiang/pnt.vpcf",
 		h397 = "effect/googie/397.vpcf",
@@ -2284,6 +2307,7 @@ function DAC:InitGameMode()
 		h397 = "effect/googie/397.vpcf",
 		h398 = "effect/googie/398.vpcf",
 		h425 = "effect/yuhuofenshen/1_2_embers.vpcf",
+		h434 = "effect/yuhuofenshen/1_2_embers.vpcf",
 		h357 = "effect/ronghuo_equan/fire.vpcf",
 		h356 = "particles/econ/events/ti7/golden_treasure_ti7_ambient_magic.vpcf",
 		h349 = "particles/econ/courier/courier_minipudge/courier_minipudge_ambient.vpcf",
@@ -2621,8 +2645,10 @@ function DAC:InitGameMode()
 		item_kuangzhanfu = "item_zhiliaozhihuan;item_xuwubaoshi",
 		item_bkb = "item_xiaofu;item_miyinchui",
 		item_xiwa = "item_shenmifazhang;item_banjia",
-		item_zhaohuanshenshi = "item_huoliqiu;item_kuweishi;item_kuweishi",
-		item_dongchayandou = "item_zhiliaozhihuan;item_huifuzhihuan;item_kangmodoupeng;item_huifuzhihuan;item_kangmodoupeng",
+		item_zhaohuanshenshi = "item_huoliqiu;item_kuweishi",
+		item_dongchayandou = "item_zhiliaozhihuan;item_huifuzhihuan;item_kangmodoupeng;item_kangmodoupeng",
+		item_jingmixie = "item_suduzhixue;item_huifuzhihuan",
+		item_aoshuxie = "item_suduzhixue;item_nengliangqiu",
 	}
 	GameRules:GetGameModeEntity().user_setting = {}
 end
@@ -2824,7 +2850,7 @@ function InitHeros()
 				hero.steam_id = steam_id
 				hero.onduty_hero_effect = onduty_hero_effect
 
-				if user_info.is_crown_s2 ~= nil then
+				if user_info.is_crown_s3 ~= nil then
 					hero.is_crown = true
 					ShowCrown(hero,1)
 				end
@@ -3530,6 +3556,7 @@ function StartAPrepareRound()
 		if v ~= -1 then
 			local hhh = TeamId2Hero(i)
 			RemoveAbilityAndModifier(hhh,'is_priest_buff')
+			RemoveAbilityAndModifier(hhh,'is_priest_buff_plus')
 			if hhh.hand_entities ~= nil then
 				for _,ent in pairs(hhh.hand_entities) do
 					if ent ~= nil and ent:IsNull() == false then
@@ -4178,6 +4205,12 @@ function DAC:OnEntityKilled(keys)
 		end
 	end
 
+	--亡语
+	if u:HasModifier('modifier_is_aqir_buff') == true then
+		-- prt('亚基 亡语：'..u:GetUnitName())
+		DeathRattle(u)
+	end
+
 	--杀人者
 	local attacker = EntIndexToHScript(keys.entindex_attacker)
 	attacker = attacker.damage_owner or attacker
@@ -4351,7 +4384,7 @@ function FindLevelOneChess(hero)
 	local level_one_chess = ''
 	if hero ~= nil then
 		for _,v in pairs(GameRules:GetGameModeEntity().mychess[hero.team_id]) do
-			if GetStarLevelOfUnit(v.chess) == 1 or GetStarLevelOfUnit(v.chess) == 2 then
+			if GetChessNameStar(v.chess) == 1 or GetChessNameStar(v.chess) == 2 then
 				level_one_chess = level_one_chess..v.chess..','
 			end
 		end
@@ -4866,7 +4899,7 @@ function DAC:OnPickChessPosition(keys)
 			picked_chess.hand_index = target_index
 
 			picked_chess:SetForwardVector((HandIndex2Vector(team_id,target_index)- picked_chess:GetAbsOrigin()):Normalized())
-			BlinkChessX({p=HandIndex2Vector(team_id,target_index),caster=picked_chess})
+			BlinkChessX({p=HandIndex2Vector(team_id,target_index),caster=picked_chess,blink_type="jump"})
 
 
 			--隐藏手牌
@@ -4904,7 +4937,7 @@ function DAC:OnPickChessPosition(keys)
 
 		--跳过去
 		picked_chess:SetForwardVector((HandIndex2Vector(team_id,target_index)- picked_chess:GetAbsOrigin()):Normalized())
-		BlinkChessX({p=HandIndex2Vector(team_id,target_index),caster=picked_chess})
+		BlinkChessX({p=HandIndex2Vector(team_id,target_index),caster=picked_chess,blink_type="jump"})
 		picked_chess.hand_index = target_index
 		picked_chess.team_id = team_id
 		picked_chess.owner_player_id = caster
@@ -5069,7 +5102,7 @@ function DAC:OnPickChessPosition(keys)
 		GameRules:GetGameModeEntity().unit[team_id][''..y..'_'..x] = 1
 
 		picked_chess:SetForwardVector((position-origin_p):Normalized())
-		BlinkChessX({p=position,caster=picked_chess})
+		BlinkChessX({p=position,caster=picked_chess,blink_type="jump"})
 		Timers:CreateTimer((position-origin_p):Length2D()/1000+0.5,function()
 			TriggerChessCombineAtGrid(x,y,team_id,is_move)
 		end)
@@ -5400,9 +5433,9 @@ end
 --为小精灵找两个指定level星级的相同棋子
 function Find2SameChessByIO(team_id,level)
 	for _,v1 in pairs(GameRules:GetGameModeEntity().mychess[team_id]) do
-		if v1 ~= nil and v1.chess ~= 'chess_io' and v1.chess ~= 'chess_io1' and v1.combining ~= true and GetStarLevelOfUnit(v1.chess) == level then
+		if v1 ~= nil and v1.chess ~= 'chess_io' and v1.chess ~= 'chess_io1' and v1.combining ~= true and GetChessNameStar(v1.chess) == level then
 			for _,v2 in pairs(GameRules:GetGameModeEntity().mychess[team_id]) do
-				if v2 ~= nil and v2.index ~= v1.index and v2.chess ~= 'chess_io' and v2.chess ~= 'chess_io1' and v2.combining ~= true and GetStarLevelOfUnit(v2.chess) == level and v1.chess == v2.chess then
+				if v2 ~= nil and v2.index ~= v1.index and v2.chess ~= 'chess_io' and v2.chess ~= 'chess_io1' and v2.combining ~= true and GetChessNameStar(v2.chess) == level and v1.chess == v2.chess then
 					return v1,v2
 				end
 			end
@@ -6158,7 +6191,6 @@ function StartAPVERound()
 							text = '#pve_'..(GameRules:GetGameModeEntity().battle_round-1),
 						})
 						SaveMaxObj(m,'draw')
-						GiveALootBox(TeamId2Hero(m))
 
 						ShowDamageStatOfTeam(m)
 						return
@@ -6278,6 +6310,16 @@ function StartAPVERound()
 											damage_all = 1
 										end
 									end
+									if damage_all >= 8 and hero:FindModifierByName('modifier_is_priest_buff_plus') ~= nil then
+										local i = GameRules:GetGameModeEntity().ITEM_FOOD_LIST[RandomInt(1,table.maxn(GameRules:GetGameModeEntity().ITEM_FOOD_LIST))]
+										hero:AddItemByName(i)
+										play_particle("particles/items_fx/aegis_respawn_spotlight.vpcf",PATTACH_OVERHEAD_FOLLOW,hero,5)
+										-- local newItem = CreateItem( i, hero, hero )
+										-- local drop = CreateItemOnPositionForLaunch(hero:GetAbsOrigin(), newItem )
+										-- local dropRadius = RandomFloat( 50, 200 )
+										-- newItem:LaunchLootInitialHeight( false, 0, 200, 0.75, hero:GetAbsOrigin() + RandomVector(dropRadius ))
+									end
+									
 									if GameRules:GetGameModeEntity().p2_mode == true then
 										damage_all = math.floor(damage_all/2+0.5)
 										if damage_all == 0 then
@@ -6850,6 +6892,15 @@ function LoseARound(team,enemychess_new)
 			damage_all = 1
 		end
 	end
+	if damage_all >= 8 and hero:FindModifierByName('modifier_is_priest_buff_plus') ~= nil then
+		local i = GameRules:GetGameModeEntity().ITEM_FOOD_LIST[RandomInt(1,table.maxn(GameRules:GetGameModeEntity().ITEM_FOOD_LIST))]
+		hero:AddItemByName(i)
+		play_particle("particles/items_fx/aegis_respawn_spotlight.vpcf",PATTACH_OVERHEAD_FOLLOW,hero,5)
+		-- local newItem = CreateItem( i, hero, hero )
+		-- local drop = CreateItemOnPositionForLaunch(hero:GetAbsOrigin(), newItem )
+		-- local dropRadius = RandomFloat( 50, 200 )
+		-- newItem:LaunchLootInitialHeight( false, 0, 200, 0.75, hero:GetAbsOrigin() + RandomVector(dropRadius ))
+	end
 
 	Timers:CreateTimer(delay_time,function()
 		if is_have_thunder == true then
@@ -6898,7 +6949,7 @@ function LoseARound(team,enemychess_new)
 
 		GameRules:GetGameModeEntity().stat_info[TeamId2Hero(GameRules:GetGameModeEntity().counterpart[team]).steam_id]['hero_damage'] = GameRules:GetGameModeEntity().stat_info[TeamId2Hero(GameRules:GetGameModeEntity().counterpart[team]).steam_id]['hero_damage'] + damage_all
 		if GameRules:GetGameModeEntity().egg_quest == 'q020' and GameRules:GetGameModeEntity().stat_info[TeamId2Hero(GameRules:GetGameModeEntity().counterpart[team]).steam_id]['hero_damage'] >= 150 then
-			SetQuest(team,true)
+			SetQuest(GameRules:GetGameModeEntity().counterpart[team],true)
 		end
 	end
 	
@@ -6934,7 +6985,7 @@ function LoseARound(team,enemychess_new)
 	--清除拉比克技能
 	for _,rchess in pairs(GameRules:GetGameModeEntity().mychess[team]) do
 		if string.find(rchess.chess,'rubick') ~= nil then
-			print('losearound removed')
+			-- print('losearound removed')
 			rchess.rubick_a = nil
 		end
 	end
@@ -7328,6 +7379,7 @@ function AddComboAbility(teamid)
 	--第三次循环：添加技能
 	local combo_count_race = 0
 	local dragon_sound = false --龙战吼的声音是否触发过（只吼一次，否则声音太吵了）
+	local god_sound = false --龙战吼的声音是否触发过（只吼一次，否则声音太吵了）
 	local combo_type_table = {} --用来统计combo种类数（比如3猎人和猎人6算1个combo_type）
 	for s,x in pairs(combo_count_table_self) do
 		local condition = GameRules:GetGameModeEntity().combo_ability_type[s]['condition']
@@ -7338,6 +7390,11 @@ function AddComboAbility(teamid)
 		if x >= condition and is_race ~= true then
 			for m,n in pairs(combo_chess_table_self[s]) do
 				n.class = 1
+			end
+		end
+		if x >= condition and is_race == true and string.find(s,'god') == nil and string.find(s,'is_demon') == nil then
+			for m,n in pairs(combo_chess_table_self[s]) do
+				n.race = 1
 			end
 		end
 	end
@@ -7358,6 +7415,7 @@ function AddComboAbility(teamid)
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
 						if is_race == true then
+							chess.race = 1
 							combo_count_race = combo_count_race + 1
 						end
 					end
@@ -7368,6 +7426,7 @@ function AddComboAbility(teamid)
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
 						if is_race == true then
+							chess.race = 1
 							combo_count_race = combo_count_race + 1
 						end
 					end
@@ -7422,6 +7481,72 @@ function AddComboAbility(teamid)
 							end
 						end
 					end
+					if p == 'is_god' then
+						if combo_count_table_self[p] >= condition then
+							local demon_active = false
+							if (combo_count_table_self['is_demon'] == 1 and combo_count_table_enemy['is_demonhunter'] == 0) or combo_count_table_self['is_demonhunter'] == 2 then
+								demon_active = true
+							end
+							for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+								if vvvv.team_id == teamid then
+									if vvvv:FindAbilityByName('is_demon') ~= nil then
+										if demon_active == false then
+											if god_sound == false then
+												EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+												god_sound = true
+											end
+											if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff') == nil then
+												AddAbilityAndSetLevelDelay(vvvv,'is_god_buff')
+												play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+											end
+										end
+									elseif vvvv.race ~= 1 then
+										if god_sound == false then
+											EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+											god_sound = true
+										end
+										if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff') == nil then
+											AddAbilityAndSetLevelDelay(vvvv,'is_god_buff')
+											play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+										end
+									end
+								end
+							end
+						end
+					end
+					if p == 'is_god1' then
+						if combo_count_table_self[p] >= condition then
+							local demon_active = false
+							if (combo_count_table_self['is_demon'] == 1 and combo_count_table_enemy['is_demonhunter'] == 0) or combo_count_table_self['is_demonhunter'] == 2 then
+								demon_active = true
+							end
+							for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+								if vvvv.team_id == teamid then
+									if vvvv:FindAbilityByName('is_demon') ~= nil then
+										if demon_active == false then
+											if god_sound == false then
+												EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+												god_sound = true
+											end
+											if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff_plus') == nil then
+												AddAbilityAndSetLevelDelay(vvvv,'is_god_buff_plus')
+												play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+											end
+										end
+									elseif vvvv.race ~= 1 then
+										if god_sound == false then
+											EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+											god_sound = true
+										end
+										if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff_plus') == nil then
+											AddAbilityAndSetLevelDelay(vvvv,'is_god_buff_plus')
+											play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+										end
+									end
+								end
+							end
+						end
+					end
 				end
 				--同类有技能
 				if type1 == 1 then
@@ -7438,10 +7563,18 @@ function AddComboAbility(teamid)
 						if chess.team_id == teamid then
 							if string.find(chess:GetUnitName(),'hero') == nil then
 								if buff_ability ~= nil then
-									if troll_level == 0 then
-										AddAbilityAndSetLevelDelay(chess,buff_ability)
+									if buff_ability == 'is_aqir_buff' then
+										--特殊情况，亚基
+										if chess:HasAbility('is_aqir') == false then
+											AddAbilityAndSetLevelDelay(chess,buff_ability)
+										end
 									else
-										AddAbilityAndSetLevel(chess,buff_ability,troll_level)
+										--正常情况
+										if troll_level == 0 then
+											AddAbilityAndSetLevelDelay(chess,buff_ability)
+										else
+											AddAbilityAndSetLevel(chess,buff_ability,troll_level)
+										end
 									end
 								end
 							end
@@ -7479,55 +7612,35 @@ function AddComboAbility(teamid)
 						try_count = try_count + 1
 					end
 				end
-			end
-		end
-	end
-	--神族
-	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 1 and combo_count_race == 0 then
-		SAdd(combo_type_table,'is_god')
-		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-			--是友军
-			if chess.team_id == teamid then
-				if string.find(chess:GetUnitName(),'hero') == nil then
-					AddAbilityAndSetLevelDelay(chess,'is_god_buff')
-					play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,chess,5)
-					EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',chess)
-				end
-			end
-		end
-	end
-	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 2 and combo_count_race == 0 then
-		SAdd(combo_type_table,'is_god')
-		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-			--是友军
-			if chess.team_id == teamid then
-				if string.find(chess:GetUnitName(),'hero') == nil then
-					AddAbilityAndSetLevelDelay(chess,'is_god_buff_plus')
-					play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,chess,5)
-					EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',chess)
-				end
-			end
-		end
-	end
-	if combo_count_table_self['is_god'] ~= nil and combo_count_table_self['is_god'] == 3 and combo_count_race == 0 then
-		SAdd(combo_type_table,'is_god')
-		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-			--是友军
-			if chess.team_id == teamid then
-				if string.find(chess:GetUnitName(),'hero') == nil then
-					AddAbilityAndSetLevelDelay(chess,'is_god_buff_plus_plus')
-					play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,chess,5)
-					EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',chess)
+				--远程友军有技能
+				if type1 == 7 then
+					for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+						--是友军
+						if chess.team_id == teamid and chess:IsRangedAttacker() == true then
+							if string.find(chess:GetUnitName(),'hero') == nil then
+								if buff_ability ~= nil then
+									if troll_level == 0 then
+										AddAbilityAndSetLevelDelay(chess,buff_ability)
+									else
+										AddAbilityAndSetLevel(chess,buff_ability,troll_level)
+									end
+								end
+							end
+						end
+					end
 				end
 			end
 		end
 	end
 	--priest
+	local courier = TeamId2Hero(teamid)
 	if combo_count_table_self['is_priest'] ~= nil and combo_count_table_self['is_priest'] >= 1 then
 		SAdd(combo_type_table,'is_priest')
-		local courier = TeamId2Hero(teamid)
 		AddAbilityAndSetLevelDelay(courier,'is_priest_buff')
 		EmitSoundOn('Hero_Dark_Seer.Ion_Shield_Start',courier)
+	end
+	if combo_count_table_self['is_priest'] ~= nil and combo_count_table_self['is_priest'] >= 2 then
+		AddAbilityAndSetLevelDelay(courier,'is_priest_buff_plus')
 	end
 	
 	if GameRules:GetGameModeEntity().egg_quest == 'q015' and table.maxn(combo_type_table) >= 5 then
@@ -7536,6 +7649,7 @@ function AddComboAbility(teamid)
 
 	local combo_count_race = 0
 	local dragon_sound_enemy = false
+	local god_sound_enemy = false
 	for s,x in pairs(combo_count_table_enemy) do
 		local condition = GameRules:GetGameModeEntity().combo_ability_type[s]['condition']
 		local is_race = GameRules:GetGameModeEntity().combo_ability_type[s]['is_race']
@@ -7545,6 +7659,11 @@ function AddComboAbility(teamid)
 		if x >= condition and is_race ~= true then
 			for m,n in pairs(combo_chess_table_enemy[s]) do
 				n.class = 1
+			end
+		end
+		if x >= condition and is_race == true and string.find(s,'god') == nil and string.find(s,'is_demon') == nil then
+			for m,n in pairs(combo_chess_table_enemy[s]) do
+				n.race = 1
 			end
 		end
 	end
@@ -7565,6 +7684,7 @@ function AddComboAbility(teamid)
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
 						if is_race == true then
+							chess.race = 1
 							combo_count_race = combo_count_race + 1
 						end
 					end
@@ -7574,6 +7694,7 @@ function AddComboAbility(teamid)
 					if buff_ability ~= nil then
 						AddAbilityAndSetLevelDelay(chess,buff_ability)
 						if is_race == true then
+							chess.race = 1
 							combo_count_race = combo_count_race + 1
 						end
 					end
@@ -7627,6 +7748,72 @@ function AddComboAbility(teamid)
 							end
 						end
 					end
+					if p == 'is_god' then
+						if combo_count_table_enemy[p] >= condition then
+							local demon_active = false
+							if (combo_count_table_enemy['is_demon'] == 1 and combo_count_table_self['is_demonhunter'] == 0) or combo_count_table_enemy['is_demonhunter'] == 2 then
+								demon_active = true
+							end
+							for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+								if vvvv.team_id == 4 then
+									if vvvv:FindAbilityByName('is_demon') ~= nil then
+										if demon_active == false then
+											if god_sound == false then
+												EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+												god_sound = true
+											end
+											if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff') == nil then
+												AddAbilityAndSetLevelDelay(vvvv,'is_god_buff')
+												play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+											end
+										end
+									elseif vvvv.race ~= 1 then
+										if god_sound == false then
+											EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+											god_sound = true
+										end
+										if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff') == nil then
+											AddAbilityAndSetLevelDelay(vvvv,'is_god_buff')
+											play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+										end
+									end
+								end
+							end
+						end
+					end
+					if p == 'is_god1' then
+						if combo_count_table_enemy[p] >= condition then
+							local demon_active = false
+							if (combo_count_table_enemy['is_demon'] == 1 and combo_count_table_self['is_demonhunter'] == 0) or combo_count_table_enemy['is_demonhunter'] == 2 then
+								demon_active = true
+							end
+							for kkkk,vvvv in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+								if vvvv.team_id == 4 then
+									if vvvv:FindAbilityByName('is_demon') ~= nil then
+										if demon_active == false then
+											if god_sound == false then
+												EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+												god_sound = true
+											end
+											if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff_plus') == nil then
+												AddAbilityAndSetLevelDelay(vvvv,'is_god_buff_plus')
+												play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+											end
+										end
+									elseif vvvv.race ~= 1 then
+										if god_sound == false then
+											EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',vvvv)
+											god_sound = true
+										end
+										if string.find(vvvv:GetUnitName(),'hero') == nil and vvvv:FindAbilityByName('is_god_buff_plus') == nil then
+											AddAbilityAndSetLevelDelay(vvvv,'is_god_buff_plus')
+											play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,vvvv,5)
+										end
+									end
+								end
+							end
+						end
+					end
 				end
 				--同类有技能
 				if type1 == 1 then
@@ -7642,10 +7829,18 @@ function AddComboAbility(teamid)
 						if chess.team_id == 4 then
 							if string.find(chess:GetUnitName(),'hero') == nil then
 								if buff_ability ~= nil then
-									if troll_levels == 0 then
-										AddAbilityAndSetLevelDelay(chess,buff_ability)
+									if buff_ability == 'is_aqir_buff' then
+										--特殊情况，亚基
+										if chess:HasAbility('is_aqir') == false then
+											AddAbilityAndSetLevelDelay(chess,buff_ability)
+										end
 									else
-										AddAbilityAndSetLevel(chess,buff_ability,troll_levels)
+										--正常情况
+										if troll_levels == 0 then
+											AddAbilityAndSetLevelDelay(chess,buff_ability)
+										else
+											AddAbilityAndSetLevel(chess,buff_ability,troll_levels)
+										end
 									end
 								end
 							end
@@ -7683,41 +7878,21 @@ function AddComboAbility(teamid)
 						try_count = try_count + 1
 					end
 				end
-			end
-		end
-	end
-	if combo_count_table_enemy['is_god'] ~= nil and combo_count_table_enemy['is_god'] == 1 and combo_count_race == 0 then
-		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-			--是友军
-			if chess.team_id == 4 then
-				if string.find(chess:GetUnitName(),'hero') == nil then
-					AddAbilityAndSetLevelDelay(chess,'is_god_buff')
-					play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,chess,5)
-					EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',chess)
-				end
-			end
-		end
-	end
-	if combo_count_table_enemy['is_god'] ~= nil and combo_count_table_enemy['is_god'] == 2 and combo_count_race == 0 then
-		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-			--是友军
-			if chess.team_id == 4 then
-				if string.find(chess:GetUnitName(),'hero') == nil then
-					AddAbilityAndSetLevelDelay(chess,'is_god_buff_plus')
-					play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,chess,5)
-					EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',chess)
-				end
-			end
-		end
-	end
-	if combo_count_table_enemy['is_god'] ~= nil and combo_count_table_enemy['is_god'] == 3 and combo_count_race == 0 then
-		for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
-			--是友军
-			if chess.team_id == 4 then
-				if string.find(chess:GetUnitName(),'hero') == nil then
-					AddAbilityAndSetLevelDelay(chess,'is_god_buff_plus_plus')
-					play_particle("effect/god/1.vpcf",PATTACH_OVERHEAD_FOLLOW,chess,5)
-					EmitSoundOn('Hero_Disruptor.StaticStorm.Cast',chess)
+				--远程友军有技能
+				if type1 == 7 then
+					for _,chess in pairs(GameRules:GetGameModeEntity().to_be_destory_list[teamid]) do
+						if chess.team_id == 4 and chess:IsRangedAttacker() == true then
+							if string.find(chess:GetUnitName(),'hero') == nil then
+								if buff_ability ~= nil then
+									if troll_levels == 0 then
+										AddAbilityAndSetLevelDelay(chess,buff_ability)
+									else
+										AddAbilityAndSetLevel(chess,buff_ability,troll_levels)
+									end
+								end
+							end
+						end
+					end
 				end
 			end
 		end
@@ -8051,7 +8226,7 @@ function ChessAI(u)
 				ai_delay = u:FindModifierByName('modifier_batrider_sticky_napalm'):GetStackCount()
 			end
 
-			if u:IsStunned() == true or u.is_moving == true or u.is_comboing == true or u:IsChanneling() == true then
+			if u:IsStunned() == true or u.is_moving == true or u.is_comboing == true or u:IsChanneling() == true or u:IsFrozen() == true then
 				return 0.1
 			end
 
@@ -8105,6 +8280,11 @@ function ChessAI(u)
 			local fenglian_result = TriggerFengKuangMianJu(u)
 			if fenglian_result ~= nil and fenglian_result > 0 then
 				return fenglian_result + ai_delay
+			end
+
+			local mifaxie_result = TriggerMiFaXie(u)
+			if mifaxie_result ~= nil and mifaxie_result > 0 then
+				return mifaxie_result + ai_delay
 			end
 			
 			--释放技能：11=新沙王，0=被动技能，1=单位目标，2=无目标，3=点目标，4=自己目标，5=近身单位目标，6=先知在地图边缘招树人，7=随机友军目标（嗜血术），8=随机周围空地目标（炸弹人），9=血量百分比最低的队友，10=等级最高的敌人（末日），11=沙王戳最远的能打到敌人的格子，12=小小投掷身边的敌人到最远的格子，13=自己为中心的点目标,14=pom特殊目标
@@ -8388,8 +8568,6 @@ function ChessAI(u)
 								end
 							end)
 							return RandomFloat(0.5,1) + go_duration + ai_delay
-						else
-							return RandomFloat(0.5,1)
 						end
 					elseif GameRules:GetGameModeEntity().ability_behavior_list[a] == 12 then
                         --小小投掷，确认周围有敌人
@@ -8691,20 +8869,23 @@ function ChessAI(u)
 			end
 
 			--不攻击就走动
-			if u.attack_target == nil and u.stop_moving ~= true then
+			if u.attack_target == nil and u.stop_moving ~= true and u:HasModifier('modifier_oracle_mingyunsheling') == false then
 
 				local find_ok = nil
 				local try_count = 0
 				local blink_type = 'run'
 
 				--寻路
-				if u:FindAbilityByName('is_assassin') ~= nil then
+				if u:FindAbilityByName('is_assassin') ~= nil and u.assassin_blinked == nil then
+					u.assassin_blinked = true
 					find_ok = FindFarthestUnluckyDogAvailablePosition(u)
 					blink_type = 'jump'
 				else
 					find_ok = FindNextSkipPosition(u)
-					if find_ok ~= nil and (find_ok-u:GetAbsOrigin()):Length2D() > 512 then
-						blink_type = 'jump'
+					if find_ok ~= nil then
+						if u:FindModifierByName('modifier_item_suduzhixue') ~= nil or u:FindModifierByName('modifier_item_aoshuxie') ~= nil or u:FindModifierByName('modifier_item_jingmixie') ~= nil or u:FindModifierByName('modifier_item_yuanxingxie') ~= nil then
+							blink_type = 'jump'
+						end
 					end
 				end
 
@@ -10454,7 +10635,7 @@ function show_damage(keys)
 			AttackHeal({
 				attacker = attacker,
 				damage = damage,
-				per = 0.1,
+				per = 0.15,
 			})
 			play_particle("particles/generic_gameplay/generic_lifesteal.vpcf",PATTACH_OVERHEAD_FOLLOW,attacker,2)
 		end
@@ -10462,14 +10643,14 @@ function show_damage(keys)
 			AttackHeal({
 				attacker = attacker,
 				damage = damage,
-				per = 0.2,
+				per = 0.15,
 			})
 		end
 		if attacker:FindModifierByName("modifier_is_warlock_buff_plus_plus") ~= nil then
 			AttackHeal({
 				attacker = attacker,
 				damage = damage,
-				per = 0.3,
+				per = 0.30,
 			})
 		end
 	end
@@ -11028,6 +11209,34 @@ function TriggerFengKuangMianJu(u)
 	end
 end
 
+function TriggerMiFaXie(u)
+	if u:FindModifierByName("modifier_item_aoshuxie") == nil then
+		return 
+	end
+
+	for slot=0,5 do
+		if u:GetItemInSlot(slot)~= nil then
+			local ability = u:GetItemInSlot(slot)
+			local name = ability:GetAbilityName()
+			if name == 'item_aoshuxie' and ability:IsCooldownReady() == true then
+				play_particle("particles/items_fx/arcane_boots.vpcf",PATTACH_ABSORIGIN_FOLLOW,u,5)
+				EmitSoundOn('DOTA_Item.ArcaneBoots.Activate',u)
+				for _,unit in pairs(GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+					if unit.team_id == u.team_id and unit:GetMaxMana() ~= 0 then
+						play_particle('particles/items_fx/arcane_boots_recipient.vpcf',PATTACH_OVERHEAD_FOLLOW,unit,3)
+						if unit:GetMana() < 100 then
+							AMHC:CreateNumberEffect(unit,20,2,AMHC.MSG_MISS,{128,128,255},0)
+						end
+						unit:GiveMana(20)
+					end
+				end
+				ability:StartCooldown(30)
+				return 1
+			end
+		end
+	end
+end
+
 function TriggerBKB(u)
 	if u:FindModifierByName("modifier_item_bkb") == nil then
 		return 
@@ -11538,6 +11747,10 @@ function SummonOneMinion(caster, minion, p)
 	--判断英雄是否还活着
 	local hero1 = TeamId2Hero(at_teamid)
 	if hero1 == nil or hero1:IsNull() or hero1:IsAlive() == false then
+		return
+	end
+
+	if GameRules:GetGameModeEntity().battle_timer <= 1 then
 		return
 	end
 	
@@ -12235,6 +12448,13 @@ function MakeTiny(x)
 		x.part2:FollowEntity(x,true)
 		x.part3 = SpawnEntityFromTableSynchronous('prop_dynamic',{model="models/items/viper/venom_source_machinery_tail/venom_source_machinery_tail.vmdl"})
 		x.part3:FollowEntity(x,true)
+	end
+
+	if x:GetUnitName() == 'chess_luna11' then
+		x:SetRangedProjectileName("particles/econ/items/luna/luna_ti9_weapon_gold/luna_ti9_gold_base_attack.vpcf")
+	end
+	if x:GetUnitName() == 'chess_luna1' then
+		x:SetRangedProjectileName("particles/econ/items/luna/luna_ti9_weapon/luna_ti9_base_attack.vpcf")
 	end
 end
 
@@ -13195,15 +13415,25 @@ end
 
 function StartMarsShieldCD(caster)
 	if caster:HasAbility("mars_bulwark") then
-		if caster:HasAbility('is_god_buff_plus_plus') then
-			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.22)
-		elseif caster:HasAbility('is_god_buff_plus') then
-			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.36)
+		-- if caster:HasAbility('is_god_buff_plus_plus') then
+		-- 	caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.22)
+		-- elseif caster:HasAbility('is_god_buff_plus') then
+		-- 	caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.36)
+		-- elseif caster:HasAbility('is_god_buff') then
+		-- 	caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.6)
+		-- else
+		-- 	caster:FindAbilityByName("mars_bulwark"):StartCooldown(8)
+		-- end
+
+		if caster:HasAbility('is_god_buff_plus') then
+			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.25)
 		elseif caster:HasAbility('is_god_buff') then
-			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.6)
+			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8*0.5)
 		else
 			caster:FindAbilityByName("mars_bulwark"):StartCooldown(8)
 		end
+
+
 		-- if caster:HasAbility('is_god_buff_plus') then
 		-- 	caster:FindAbilityByName("mars_bulwark"):StartCooldown(2)
 		-- elseif caster:HasAbility('is_god_buff') then
@@ -13244,14 +13474,14 @@ function ShowCrown(hero,crown_level)
 	if crown_level == 1 then
 		hero.crown_p = PlayParticleOnUnitUntilDeath({
 			caster = hero,
-			p = "effect/crown_s2/1.vpcf",
+			p = "effect/crown_s3/1.vpcf",
 			pos = PATTACH_OVERHEAD_FOLLOW,
 		})
 	end
 	if crown_level == 2 then
 		hero.crown_p = PlayParticleOnUnitUntilDeath({
 			caster = hero,
-			p = "effect/crown_s2/2.vpcf",
+			p = "effect/crown_s3/2.vpcf",
 			pos = PATTACH_OVERHEAD_FOLLOW,
 		})
 	end
@@ -13596,8 +13826,10 @@ function ShallowGrave(keys)
 	end
 	local u1 = FindShallowGraveFriend(caster)
 	if u1 ~= nil then
-		u1:AddNewModifier(u1,nil,"modifier_dazzle_shallow_grave",{duration=4})
-		EmitSoundOn("Hero_Dazzle.Shallow_Grave",u1)
+		if u1:FindModifierByName("modifier_dazzle_shallow_grave") == nil then
+			u1:AddNewModifier(u1,nil,"modifier_dazzle_shallow_grave",{duration=4})
+			EmitSoundOn("Hero_Dazzle.Shallow_Grave",u1)
+		end
 		if level >= 2 then
 			Timers:CreateTimer(0.5,function()
 				if IsUnitExist(caster) == false then 
@@ -13605,8 +13837,10 @@ function ShallowGrave(keys)
 				end
 				local u2 = FindShallowGraveFriend(caster)
 				if u2 ~= nil then
-					u2:AddNewModifier(u2,nil,"modifier_dazzle_shallow_grave",{duration=4})
-					EmitSoundOn("Hero_Dazzle.Shallow_Grave",u2)
+					if u2:FindModifierByName("modifier_dazzle_shallow_grave") == nil then
+						u2:AddNewModifier(u2,nil,"modifier_dazzle_shallow_grave",{duration=4})
+						EmitSoundOn("Hero_Dazzle.Shallow_Grave",u2)
+					end
 					if level >= 3 then
 						Timers:CreateTimer(0.5,function()
 							if IsUnitExist(caster) == false then 
@@ -13614,8 +13848,10 @@ function ShallowGrave(keys)
 							end
 							local u3 = FindShallowGraveFriend(caster)
 							if u3 ~= nil then
-								u3:AddNewModifier(u3,nil,"modifier_dazzle_shallow_grave",{duration=5})
-								EmitSoundOn("Hero_Dazzle.Shallow_Grave",u3)
+								if u3:FindModifierByName("modifier_dazzle_shallow_grave") == nil then
+									u3:AddNewModifier(u3,nil,"modifier_dazzle_shallow_grave",{duration=5})
+									EmitSoundOn("Hero_Dazzle.Shallow_Grave",u3)
+								end
 							end
 						end)
 					end
@@ -13750,7 +13986,8 @@ end
 
 function ItemMangguo(keys)
 	local caster = keys.caster
-	AddMana(caster, RandomInt(1,5))
+	local add_mana = RandomInt(1,caster:GetLevel())
+	AddMana(caster, add_mana)
 	EmitSoundOn("DOTA_Item.Mango.Activate",caster)
 	play_particle('particles/items3_fx/mango_active.vpcf',PATTACH_ABSORIGIN_FOLLOW,caster,3)
 end
@@ -13940,7 +14177,7 @@ function GetChessStar(chess)
 	return 1
 end
 
-function GetStarLevelOfUnit(chess_name)
+function GetChessNameStar(chess_name)
 	if string.find(chess_name,'11') ~= nil then
 		return 3
 	end
@@ -14308,6 +14545,7 @@ function CourierCP(c1,c2)
 		h226 = 16, h227 = 16, h228 = 16, h324 = 16, h325 = 16, h326 = 16, h423 = 16, h424 = 16, h425 = 16,
 		h399 = 17, h433 = 17,
 		h397 = 18, h398 = 18,
+		h136 = 19, h137 = 19, h240 = 19, h340 = 19, h434 = 19,
 	}
 	local h1 = c1.onduty_hero
 	local h2 = c2.onduty_hero
@@ -14475,6 +14713,8 @@ function GetHistoryLose(team1, team2)
 end
 function IsBozangWudi(unit)
 	if unit:FindModifierByName('modifier_dazzle_shallow_grave') ~= nil and unit:GetHealth() < 10 then
+		return true
+	elseif unit:FindModifierByName('modifier_oracle_mingyunsheling') ~= nil then
 		return true
 	else
 		return false
@@ -15169,9 +15409,251 @@ end
 
 function InitChessMana(chess)
 	if chess:FindModifierByName('modifier_item_nengliangqiu') ~= nil or chess:FindModifierByName('modifier_item_aoshuxie') ~= nil then
-		chess:SetMana(50)
-		AMHC:CreateNumberEffect(chess,50,2,AMHC.MSG_MISS,{128,128,255},0)
+		chess:SetMana(40)
+		AMHC:CreateNumberEffect(chess,40,2,AMHC.MSG_MISS,{128,128,255},0)
 	else
 		chess:SetMana(0)
 	end
 end
+
+function AnMieProjectile(keys)
+	local caster = keys.caster
+	caster:SetRangedProjectileName("particles/items_fx/desolator_projectile.vpcf")
+end
+
+function AqirDead(keys)
+	local caster = keys.caster
+	prt('亚基'..caster:GetUnitName()..'亡语')
+end
+
+--其实命运敕令第三个字应该都chi，但是语死早的代码里有很多mingyunsheling，懒得改了...囧
+function OracleMingyunSheling(keys)
+	local caster = keys.caster
+	local u1 = keys.target
+	local level = keys.ability:GetLevel() or 1
+	if IsUnitExist(caster) == false or IsUnitExist(u1) == false then 
+		return
+	end
+	local sub_ability_name = 'oracle_mingyunsheling_one'
+
+	local u0 = FindMingyunShelingTarget(u1)
+	if u0 == nil then
+		return
+	end
+
+	if u1 ~= nil then
+		u1.has_mingyun_sheling = true
+		InvisibleUnitCast({
+			caster = caster,
+			ability = sub_ability_name,
+			level = level,
+			unluckydog = u1,
+		})
+
+		if level >= 2 then
+			Timers:CreateTimer(0.1,function()
+				if IsUnitExist(caster) == false then 
+					return
+				end
+				local u2 = FindMingyunShelingTarget(u1)
+				if u2 ~= nil then
+					u2.has_mingyun_sheling = true
+					InvisibleUnitCast({
+						caster = caster,
+						ability = sub_ability_name,
+						level = level,
+						unluckydog = u2,
+					})
+					if level >= 3 then
+						Timers:CreateTimer(0.1,function()
+							if IsUnitExist(caster) == false then 
+								return
+							end
+							local u3 = FindMingyunShelingTarget(u2)
+							if u3 ~= nil then
+								u3.has_mingyun_sheling = true
+								InvisibleUnitCast({
+									caster = caster,
+									ability = sub_ability_name,
+									level = level,
+									unluckydog = u3,
+								})
+								Timers:CreateTimer(0.1,function()
+									if IsUnitExist(caster) == false then 
+										return
+									end
+									local u4 = FindMingyunShelingTarget(u2)
+									if u4 ~= nil then
+										u4.has_mingyun_sheling = true
+										InvisibleUnitCast({
+											caster = caster,
+											ability = sub_ability_name,
+											level = level,
+											unluckydog = u4,
+										})
+									end
+								end)
+							end
+						end)
+					end
+				end
+			end)
+		end
+	end
+end
+
+function FindMingyunShelingTarget(u)
+	local unluckydog = u
+	local hp_per = 0
+	local un_chiling_enemy_count = 0
+	for _,unit in pairs (GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if unit.team_id == u.team_id then
+			local hp = unit:GetHealth()
+			local hp_max = unit:GetMaxHealth()
+			local per = 1.0*hp/hp_max*100
+			local level = unit:GetLevel()
+
+			if unit.has_mingyun_sheling == nil then
+				un_chiling_enemy_count = un_chiling_enemy_count + 1
+			end
+
+			if per+level > hp_per and unit.has_mingyun_sheling == nil then
+				unluckydog = unit
+				hp_per = per+level
+			end
+		end
+	end
+	if un_chiling_enemy_count <= 1 then
+		unluckydog = nil
+	end
+	return unluckydog
+end
+
+function RemoveMingyunSheling(keys)
+	local target = keys.target
+	target.has_mingyun_sheling = nil
+end
+
+--发动亡语效果
+function DeathRattle(u)
+	if u:HasModifier('modifier_is_aqir_buff') == true then
+		--亚基：虫族亡语
+		-- local AQIR_CHESS_LIST = {
+		-- 	[1] = 'chess_sk',
+		-- 	[2] = 'chess_veno',
+		-- }
+		local AQIR_CHESS_LIST = {
+			[1] = { [1] = 'chess_na' },
+			[2] = { [1] = 'chess_na' },
+			[3] = { [1] = 'chess_sk', [2] = 'chess_veno' },
+			[4] = { [1] = 'chess_na1' },
+			[5] = { [1] = 'chess_sk1', [2] = 'chess_veno1' },
+			[6] = { [1] = 'chess_na11' },
+			[7] = { [1] = 'chess_sk11', [2] = 'chess_veno11' },
+			[8] = { [1] = 'chess_sk11', [2] = 'chess_veno11' },
+			[9] = { [1] = 'chess_sk11', [2] = 'chess_veno11' },
+		}
+		local max_level = GetSameNameFriendChessMaxLevel(u)
+		if max_level <= 0 then
+			play_particle('particles/units/heroes/hero_life_stealer/life_stealer_infest_cast.vpcf',PATTACH_ABSORIGIN_FOLLOW,u,5)
+			EmitSoundOn('Hero_LifeStealer.Infest',u)
+			return
+		end
+		local random_pool = AQIR_CHESS_LIST[max_level]
+		local random_aqir = random_pool[RandomInt(1,table.maxn(random_pool))]
+		local aqir_level = GetChessNameStar(random_aqir)
+
+		if aqir_level == 1 then
+			play_particle('particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_clean_low.vpcf',PATTACH_ABSORIGIN_FOLLOW,u,5)
+			EmitSoundOn('Hero_LifeStealer.Infest',u)
+			local x = SummonOneMinion(u,random_aqir,u:GetAbsOrigin())
+			x:SetMana(0)
+			ExtendBeastBuff(x,u)
+			AddChessAbility(x,aqir_level)
+			AddAbilityAndSetLevel(x,'jiaoxie_wudi')
+		elseif aqir_level == 2 then
+			play_particle('particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_clean_low.vpcf',PATTACH_ABSORIGIN_FOLLOW,u,5)
+			EmitSoundOn('Hero_LifeStealer.Infest',u)
+			local x = SummonOneMinion(u,random_aqir,u:GetAbsOrigin())
+			x:SetMana(0)
+			ExtendBeastBuff(x,u)
+			AddChessAbility(x,aqir_level)
+			AddAbilityAndSetLevel(x,'jiaoxie_wudi')
+		elseif aqir_level >= 3 then
+			play_particle('particles/units/heroes/hero_life_stealer/life_stealer_infest_emerge_bloody.vpcf',PATTACH_ABSORIGIN_FOLLOW,u,5)
+			EmitSoundOn('Hero_LifeStealer.Infest',u)
+			local x = SummonOneMinion(u,random_aqir,u:GetAbsOrigin())
+			x:SetMana(0)
+			ExtendBeastBuff(x,u)
+			AddChessAbility(x,aqir_level)
+			AddAbilityAndSetLevel(x,'jiaoxie_wudi')
+		else
+			play_particle('particles/units/heroes/hero_life_stealer/life_stealer_infest_cast.vpcf',PATTACH_ABSORIGIN_FOLLOW,u,5)
+			EmitSoundOn('Hero_LifeStealer.Infest',u)
+		end
+	end
+end
+
+--获取场上存活的同名友方棋子数量
+function GetSameNameFriendChessCount(u)
+	local same_count = 0
+	for _,v in pairs(GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if IsUnitExist(v) == true and v.team_id == u.team_id and v:entindex() ~= u:entindex() and GetUnitBaseName(u) == GetUnitBaseName(v) then
+			same_count = same_count + 1
+		end
+	end
+
+	return same_count
+end
+--获取场上存活的同名友方棋子星级之和
+function GetSameNameFriendChessTotalStars(u)
+	local stars = 0
+	for _,v in pairs(GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if IsUnitExist(v) == true and v.team_id == u.team_id and v:entindex() ~= u:entindex() and GetUnitBaseName(u) == GetUnitBaseName(v) then
+			stars = stars + GetChessStar(v)
+		end
+	end
+
+	return stars
+end
+
+function GetSameNameFriendChessMaxLevel(u)
+	local max_level = 0
+	for _,v in pairs(GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if IsUnitExist(v) == true and v.team_id == u.team_id and v:entindex() ~= u:entindex() and GetUnitBaseName(u) == GetUnitBaseName(v) and v:GetLevel() > max_level then
+			max_level = v:GetLevel()
+		end
+	end
+
+	if max_level < 0 then
+		max_level = 0
+	end
+	if max_level > 9 then
+		max_level = 9
+	end
+
+	return max_level
+end
+
+--获得棋子名字的基础部分（去掉1和11）
+function GetUnitBaseName(u)
+	local unit_name = u:GetUnitName() 
+	if string.find(unit_name,'11') ~= nil then
+		unit_name = string.sub(unit_name,1,-3)
+	end
+	if string.find(unit_name,'1') ~= nil then
+		unit_name = string.sub(unit_name,1,-2)
+	end
+	return unit_name
+end
+
+--添加棋子战斗技能
+function AddChessAbility(x,level)
+	if GameRules:GetGameModeEntity().chess_ability_list[x:GetUnitName()] ~= nil then
+		local a = GameRules:GetGameModeEntity().chess_ability_list[x:GetUnitName()]
+		if x:FindAbilityByName(a) == nil then
+			AddAbilityAndSetLevel(x,a,(level or 0))
+		end
+	end
+end
+

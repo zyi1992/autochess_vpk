@@ -2023,6 +2023,15 @@
 					"ProjectileName"	"particles/items_fx/desolator_projectile.vpcf"
 					"Priority"	"1"
 				}
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"AnMieProjectile"
+					}
+				}
 			}
 			"modifier_item_anmie_2"
 			{
@@ -2596,6 +2605,43 @@
 		}
 	}
 
+	"item_guijizhiwu"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_smoke_of_deceit"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"3"
+		"AbilityManaCost"	"0"
+		"ID"	"1564"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/tango.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"1"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemGuijizhiwu"
+			}
+		}
+	}
+
 	"item_lootbox_lv2"
 	{
 		"BaseClass"	"item_datadriven"
@@ -2727,7 +2773,6 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
 		"AbilityManaCost"	"0"
 		"ID"	"1554"
 		"ItemQuality"	"consumable"
@@ -2821,7 +2866,7 @@
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
 		"ItemPermanent"	"0"
-		"ItemStackable"	"1"
+		"ItemStackable"	"0"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"precache"
@@ -2882,10 +2927,10 @@
 	{
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_energy_booster"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
 		"AbilityManaCost"	"0"
 		"ID"	"1557"
 		"ItemQuality"	"rare"
@@ -2954,7 +2999,6 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"30"
 		"AbilityManaCost"	"0"
 		"ID"	"1563"
 		"ItemQuality"	"rare"
@@ -2993,7 +3037,6 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
 		"AbilityManaCost"	"0"
 		"ID"	"1559"
 		"ItemQuality"	"rare"
@@ -3489,6 +3532,32 @@
 		"ItemRequirements"
 		{
 			"01"	"item_tiaozhantoujin;item_kangmodoupeng;"
+		}
+	}
+
+	"item_recipe_jingmixie"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3039"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_jingmixie"
+		"ItemRequirements"
+		{
+			"01"	"item_suduzhixue;item_huifuzhihuan;"
+		}
+	}
+
+	"item_recipe_aoshuxie"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3040"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_aoshuxie"
+		"ItemRequirements"
+		{
+			"01"	"item_suduzhixue;item_nengliangqiu;"
 		}
 	}
 }

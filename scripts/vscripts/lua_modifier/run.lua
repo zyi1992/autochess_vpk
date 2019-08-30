@@ -25,12 +25,23 @@ function modifier_run:OnCreated(kv)
             return
         end
 
+        local speed = 500
+        if self:GetParent() ~= nil and self:GetParent():GetIdealSpeed() ~= nil then
+            speed = self:GetParent():GetIdealSpeed()
+        end
+        if speed > 2000 then
+            speed = 2000
+        end
+        if speed < 100 then
+            speed = 100
+        end
+
         self.vStartPosition    = GetGroundPosition( self:GetParent():GetOrigin(), self:GetParent() )
 
         self.vTargetPosition   = Vector(kv.vx,kv.vy,128)
 
         self.vDirection        = (self.vTargetPosition - self.vStartPosition):Normalized()
-        self.flHorizontalSpeed = 600.0/30
+        self.flHorizontalSpeed = speed/30
         self.flDistance        = (self.vTargetPosition - self.vStartPosition):Length2D() + self.flHorizontalSpeed
         self.leap_traveled = 0
         --self:GetParent():SetForwardVector(self.vDirection)

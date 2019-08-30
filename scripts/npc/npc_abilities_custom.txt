@@ -197,7 +197,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"move_slow"	"0"
+				"move_slow"	"30"
 			}
 			"05"
 			{
@@ -455,17 +455,17 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"slow_min"	"0"
+				"slow_min"	"5"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"slow_max"	"0"
+				"slow_max"	"10 15 25"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"slow_duration"	"0"
+				"slow_duration"	"2"
 			}
 		}
 	}
@@ -7977,7 +7977,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -8005,7 +8005,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -8033,7 +8033,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"9"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"11"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -8126,7 +8126,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-3"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-4"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -8154,7 +8154,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-5"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-4"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -8182,7 +8182,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-6"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -8631,7 +8631,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"10"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"15"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8661,7 +8661,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"20"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"25"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9062,7 +9062,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9088,7 +9088,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"40"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9150,7 +9150,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"64"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"75"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9206,7 +9206,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9236,7 +9236,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"45"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9285,6 +9285,33 @@
 						"attack_damage"	"%attack_damage"
 					}
 				}
+			}
+		}
+	}
+
+	"is_aqir_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"big_thunder_lizard_wardrums_aura"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_life_stealer/life_stealer_infested_unit.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_aqir_buff"
+			{
+				"TextureName"	"big_thunder_lizard_wardrums_aura"
+				"IsDebuff"	"0"
+				"Properties"	{}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectAttachType"	"follow_overhead"
+				"EffectName"	"particles/units/heroes/hero_life_stealer/life_stealer_infested_unit.vpcf"
 			}
 		}
 	}
@@ -9496,7 +9523,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"35"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9566,7 +9593,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"25"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -9636,7 +9663,7 @@
 								"ModifierName"	"modifier_is_knight_buff_2_plus_plus"
 							}
 						}
-						"Chance"	"30"
+						"Chance"	"25"
 					}
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
@@ -10053,6 +10080,16 @@
 		"MaxLevel"	"1"
 	}
 
+	"is_aqir"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"big_thunder_lizard_wardrums_aura"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+	}
+
 	"is_priest"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -10098,6 +10135,30 @@
 			"modifier_is_priest_buff"
 			{
 				"EffectName"	"effect/priest/shield.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Passive"	"1"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"is_priest_buff_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"courier_shield"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+		"precache"
+		{
+			"particle"	"effect/priest/shield2.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_is_priest_buff_plus"
+			{
+				"EffectName"	"effect/priest/shield2.vpcf"
 				"EffectAttachType"	"attach_origin"
 				"Passive"	"1"
 				"IsHidden"	"1"
@@ -10332,7 +10393,7 @@
 		"AbilityCastPoint"	"0"
 		"AbilityCastAnimation"	"ACT_DOTA_RUN"
 		"AbilityCooldown"	"10 8 6"
-		"AbilityManaCost"	"0"
+		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -10340,7 +10401,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"burrow_width"	"80"
+				"burrow_width"	"90"
 			}
 			"02"
 			{
@@ -10373,7 +10434,7 @@
 				"burrow_speed_scepter"	"3000"
 			}
 		}
-		"AbilityDamage"	"150 250 350"
+		"AbilityDamage"	"150 250 450"
 	}
 
 	"sven_great_cleave"
@@ -11502,7 +11563,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_ms"	"0"
+				"requiem_reduction_ms"	"10 15 25"
 			}
 			"04"
 			{
@@ -11581,7 +11642,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_movement_speed"	"30"
+				"bonus_movement_speed"	"0"
 			}
 			"03"
 			{
@@ -11662,7 +11723,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_movement_speed"	"-40 -60 -80"
+				"bonus_movement_speed"	"-20 -30 -60"
 			}
 			"04"
 			{
@@ -14736,6 +14797,12 @@
 				"IsBuff"	"1"
 				"TextureName"	"grimstroke_ink_creature"
 			}
+			"modifier_show_combo_is_aqir"
+			{
+				"TextureName"	"big_thunder_lizard_wardrums_aura"
+				"IsBuff"	"0"
+				"IsDebuff"	"1"
+			}
 		}
 	}
 
@@ -15735,12 +15802,12 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"movement_slow_pct"	"50 60 70"
+				"movement_slow_pct"	"5 10 20"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"slow_duration"	"1.5"
+				"slow_duration"	"10 15 20"
 			}
 			"08"
 			{
@@ -15830,12 +15897,12 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"movement_slow_pct"	"0"
+				"movement_slow_pct"	"5 10 20"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"slow_duration"	"0"
+				"slow_duration"	"10 15 20"
 			}
 			"08"
 			{
@@ -15859,6 +15926,176 @@
 			}
 		}
 		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
+	}
+
+	"oracle_mingyunsheling"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"oracle_fates_edict"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"16 13 10"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"POINT"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"OracleMingyunSheling"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"jingu_duration"	"5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"jingu_count"	"1 2 4"
+			}
+		}
+	}
+
+	"om_multi_cast"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"ogre_magi_unrefined_fireblast"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCooldown"	"16 13 10"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_om_multi_cast"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_om_multi_cast"	{}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"multi_duration"	"5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"multi_count"	"2 3 4"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"multi_per"	"40 40 50"
+			}
+		}
+	}
+
+	"oracle_mingyunsheling_one"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"oracle_fates_edict"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_oracle/oracle_fortune_prj.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
+			"particle"	"particles/units/heroes/hero_oracle/oracle_fatesedict.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"TrackingProjectile"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"particles/units/heroes/hero_oracle/oracle_fortune_prj.vpcf"
+				"MoveSpeed"	"600"
+			}
+		}
+		"OnProjectileHitUnit"
+		{
+			"DeleteOnHit"	"1"
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_oracle_mingyunsheling"
+				"Duration"	"%jingu_duration"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"Hero_Oracle.FatesEdict.Cast"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_oracle_mingyunsheling"
+			{
+				"TextureName"	"oracle_fates_edict"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"999"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"EffectName"	"particles/units/heroes/hero_oracle/oracle_fatesedict.vpcf"
+				"IsDebuff"	"1"
+				"EffectAttachType"	"attach_origin"
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"Function"	"RemoveMingyunSheling"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"jingu_duration"	"5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"jingu_count"	"1 2 4"
+			}
+		}
 	}
 
 	"gs_give_fuhun"
@@ -17048,6 +17285,128 @@
 				"var_type"	"FIELD_INTEGER"
 				"damage_reflect_pct"	"100"
 				"LinkedSpecialBonus"	"special_bonus_unique_nyx"
+			}
+		}
+	}
+
+	"nyx_assassin_spiked_carapace_datadriven"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"nyx_assassin_spiked_carapace"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"1"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"15 12 9"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Data driven
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+			"particle"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_nyx_assassin/spiked_carapace.lua"
+				"Function"	"spiked_carapace_init"
+			}
+			"ApplyModifier"
+			{
+				"Target"	"CASTER"
+				"ModifierName"	"modifier_spiked_carapace_buff_datadriven"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_spiked_carapace_buff_datadriven"
+			{
+				"IsBuff"	"1"
+				"IsPurgable"	"0"
+				"Duration"	"%reflect_duration"
+				"EffectName"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace.vpcf"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"heroes/hero_nyx_assassin/spiked_carapace.lua"
+						"Function"	"spiked_carapace_reflect"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+			}
+			"modifier_spiked_carapaced_stun_datadriven"
+			{
+				"IsDebuff"	"1"
+				"Duration"	"%stun_duration"
+				"OverrideAnimation"	"ACT_DOTA_DISABLED"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/units/heroes/hero_nyx_assassin/nyx_assassin_spiked_carapace_hit.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"ControlPoints"
+						{
+							"02"	"%stun_duration %stun_duration %stun_duration"
+						}
+					}
+					"AttachEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
+						"EffectAttachType"	"follow_overhead"
+					}
+				}
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				// 2.25"
+				"reflect_duration"	"4 5 6"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				// 0.6 1.2 1.8 2.4"
+				"stun_duration"	"1 1.5 2.5"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"0"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"0"
 			}
 		}
 	}
