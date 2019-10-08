@@ -47,7 +47,8 @@ function modifier_jump:OnDestroy()
     if IsServer() then
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
-        if GameRules:GetGameModeEntity().game_status == 1 then
+        if GameRules:GetGameModeEntity().game_status == 1 or self:GetParent().transfer_chess == true then
+            self:GetParent().transfer_chess = false
             self:GetParent():SetForwardVector(Vector(0,1,0))
         end
     end
@@ -88,6 +89,7 @@ function modifier_jump:UpdateHorizontalMotion(me, dt)
             play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)
             self:Destroy()
+            me.is_removing = false
         end
     end
 end

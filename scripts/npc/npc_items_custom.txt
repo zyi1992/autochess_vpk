@@ -738,7 +738,7 @@
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
 		"precache"
 		{
 			"particle"	"particles/econ/events/ti7/golden_treasure_ti7_ambient_twinkle.vpcf"
@@ -750,7 +750,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"150"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"300"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2491,6 +2491,39 @@
 		}
 	}
 
+	"item_qiongguidun"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_poor_mans_shield"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ID"	"1565"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_qiongguidun"
+			{
+				"Passive"	"1"
+				"Properties"	{}
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+	}
+
 	"item_kangmodoupeng"
 	{
 		"BaseClass"	"item_datadriven"
@@ -2783,7 +2816,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
@@ -2817,7 +2850,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
@@ -2865,7 +2898,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
@@ -2941,7 +2974,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
@@ -2975,7 +3008,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
@@ -3009,7 +3042,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
@@ -3047,7 +3080,7 @@
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"1"
 		"ItemAlertable"	"1"
-		"ItemPermanent"	"0"
+		"ItemPermanent"	"1"
 		"ItemRequiresCharges"	"0"
 		"ItemStackable"	"0"
 		"ItemRequirements"	{}
@@ -3558,6 +3591,19 @@
 		"ItemRequirements"
 		{
 			"01"	"item_suduzhixue;item_nengliangqiu;"
+		}
+	}
+
+	"item_recipe_qiongguidun"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3041"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_qiongguidun"
+		"ItemRequirements"
+		{
+			"01"	"item_yuandun;item_yuandun;"
 		}
 	}
 }

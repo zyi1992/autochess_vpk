@@ -27,6 +27,12 @@ function pudge_meat_hook_lua:OnSpellStart()
 	end
 
 	self.hTarget = self:GetCaster().hook_unluckydog  
+	if self.hTarget:HasModifier("modifier_jump") or self.hTarget:HasModifier("modifier_run") then
+		-- return
+		self.hTarget:RemoveModifierByName("modifier_jump")
+		self.hTarget:RemoveModifierByName("modifier_run")
+		self.hTarget.is_moving = false
+	end
 
 	self.hook_damage = self:GetSpecialValueFor( "hook_damage" )  
 	self.hook_speed = self:GetSpecialValueFor( "hook_speed" )

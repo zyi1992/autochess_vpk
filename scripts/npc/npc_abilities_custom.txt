@@ -9011,6 +9011,10 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"precache"
+		{
+			"particle"	"effect/ogre/1.vpcf"
+		}
 		"Modifiers"
 		{
 			"modifier_is_ogre_buff"
@@ -9021,24 +9025,8 @@
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"Target"	"CASTER"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"AddMaxHPPer"
-						"per"	"5"
-					}
-					"RunScript"
-					{
-						"Target"	"CASTER"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"ChangeModelScale"
-						"x"	"1.1"
-					}
-				}
-				"EffectAttachType"	"attach_origin"
+				"EffectAttachType"	"follow_overhead"
+				"EffectName"	"effect/ogre/1.vpcf"
 			}
 		}
 	}
@@ -10406,7 +10394,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"burrow_duration"	"2"
+				"burrow_duration"	"1.5 1.5 2"
 			}
 			"03"
 			{
@@ -10982,7 +10970,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_percent"	"6 9 13"
+				"damage_percent"	"6 8 12"
 			}
 			"03"
 			{
@@ -11243,12 +11231,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"mana_regain"	"8 12 20"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"800"
+				"mana_regain"	"10 15 25"
 			}
 		}
 	}
@@ -12230,7 +12213,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"4 4 5"
+		"AbilityCooldown"	"4 4 6"
 		"AbilityManaCost"	"100"
 		"OnSpellStart"
 		{
@@ -14198,7 +14181,7 @@
 		"MaxLevel"	"1"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityCooldown"	"10"
+		"AbilityCooldown"	"5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"OnSpellStart"
@@ -15976,38 +15959,39 @@
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityCooldown"	"16 13 10"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCooldown"	"10"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"particle"	"effect/multicast/buff.vpcf"
+		}
 		"OnSpellStart"
 		{
-			"ApplyModifier"
+			"RunScript"
 			{
 				"Target"	"TARGET"
-				"ModifierName"	"modifier_om_multi_cast"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"OmMultiCast"
 			}
 		}
 		"Modifiers"
 		{
-			"modifier_om_multi_cast"	{}
+			"modifier_om_multi_cast"
+			{
+				"EffectAttachType"	"follow_origin"
+				"IsBuff"	"1"
+				"TextureName"	"ogre_magi_unrefined_fireblast"
+				"EffectName"	"effect/multicast/buff.vpcf"
+			}
 		}
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"multi_duration"	"5"
-			}
-			"02"
-			{
 				"var_type"	"FIELD_INTEGER"
-				"multi_count"	"2 3 4"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"multi_per"	"40 40 50"
+				"multi_count"	"1 2 4"
 			}
 		}
 	}
@@ -16038,7 +16022,7 @@
 			{
 				"Target"	"TARGET"
 				"EffectName"	"particles/units/heroes/hero_oracle/oracle_fortune_prj.vpcf"
-				"MoveSpeed"	"600"
+				"MoveSpeed"	"800"
 			}
 		}
 		"OnProjectileHitUnit"
@@ -17391,7 +17375,7 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				// 0.6 1.2 1.8 2.4"
-				"stun_duration"	"1 1.5 2.5"
+				"stun_duration"	"1.5 1.5 2"
 			}
 			"03"
 			{
@@ -17407,6 +17391,27 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"bonus_intellect"	"0"
+			}
+		}
+	}
+
+	"ogre_25_attack_damage"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"	"9"
+		"Modifiers"
+		{
+			"modifier_ogre_25_attack_damage"
+			{
+				"IsHidden"	"0"
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"25"
+				}
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"TextureName"	"ogre_magi_multicast"
 			}
 		}
 	}
