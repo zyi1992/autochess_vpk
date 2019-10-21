@@ -3606,4 +3606,142 @@
 			"01"	"item_yuandun;item_yuandun;"
 		}
 	}
+
+	"item_force_staff_datadriven"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_force_staff"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"FightRecapLevel"	"1"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE"
+		"AbilityCooldown"	"20.0"
+		"AbilityManaCost"	"25"
+		"AbilityCastRange"	"800"
+		// Default ID by Valve is "102"
+		"ID"	"3042"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/red_box.vmdl"
+		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
+		"ItemCost"	"2225"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemDeclarations"	"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemKillable"	"0"
+		"ItemPermanent"	"1"
+		"ItemStackable"	"0"
+		"SideShop"	"0"
+		"SecretShop"	"0"
+		"ItemShopTags"	"int;damage;attack_speed;hard_to_tag"
+		"ItemAliases"	"fs;force staff"
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"precache"
+		{
+			"particle"	"particles/status_fx/status_effect_forcestaff.vpcf"
+			"soundfile"	"soundevents/game_sounds_items.vsndevts"
+			"particle"	"particles/items_fx/force_staff.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"FireSound"
+			{
+				"EffectName"	"DOTA_Item.ForceStaff.Activate"
+				"Target"	"TARGET"
+			}
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_item_force_staff_effect"
+				"Target"	"TARGET"
+			}
+			"RunScript"
+			{
+				"ScriptFile"	"items/item_force_staff.lua"
+				"Function"	"ForceStaff"
+				"Target"	"TARGET"
+			}
+			// For this: gfycat.com/BraveHideousGiantschnauzer -> check: bit.ly/1KWulqA
+			"ApplyMotionController"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"items/item_force_staff.lua"
+				"HorizontalControlFunction"	"ForceHorizontal"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_force_staff_passive"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_NONE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
+				}
+			}
+			"modifier_item_force_staff_effect"
+			{
+				"Duration"	"%push_duration"
+				"OverrideAnimation"	"ACT_DOTA_FLAIL"
+				"StatusEffectName"	"particles/status_fx/status_effect_forcestaff.vpcf"
+				"StatusEffectPriority"	"10"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"	"particles/items_fx/force_staff.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"Target"	"TARGET"
+					}
+				}
+				"ThinkInterval"	"0.03"
+				"OnIntervalThink"
+				{
+					"DestroyTrees"
+					{
+						"Target"	"TARGET"
+						"Radius"	"%tree_radius"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"10"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health_regen"	"4"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"push_length"	"600"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"push_speed"	"1500"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"push_duration"	"0.4"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"tree_radius"	"100"
+			}
+		}
+	}
 }

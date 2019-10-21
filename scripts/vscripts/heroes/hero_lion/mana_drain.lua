@@ -12,6 +12,9 @@ function mana_drain( keys )
 		target:ForceKill(true)
 	else
 		-- Location variables
+		if caster == nil or caster:IsNull() == true or caster:IsAlive() == false then
+			return
+		end
 		local caster_location = caster:GetAbsOrigin()
 		local target_location = target:GetAbsOrigin()
 
