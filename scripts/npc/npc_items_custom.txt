@@ -14,7 +14,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1501"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -41,6 +41,29 @@
 		}
 	}
 
+	"item_null"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_default"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ID"	"1566"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"0"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+	}
+
 	"item_qiangxi"
 	{
 		"BaseClass"	"item_datadriven"
@@ -50,7 +73,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1517"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -73,7 +96,11 @@
 			"modifier_item_qiangxi"
 			{
 				"Passive"	"1"
-				"Properties"	{}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
+				}
 				"IsHidden"	"1"
 				"EffectName"	"effect/qiangxi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
@@ -87,7 +114,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-10"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-10"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-5"
 				}
 				"IsHidden"	"1"
 				"EffectName"	"particles/units/heroes/hero_dazzle/dazzle_armor_enemy.vpcf"
@@ -98,7 +125,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
 				}
 				"IsHidden"	"1"
 				"EffectName"	"particles/units/heroes/hero_dazzle/dazzle_armor_friend.vpcf"
@@ -126,7 +153,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1505"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -162,7 +189,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1510"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -181,7 +208,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -198,7 +225,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1515"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -230,7 +257,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1516"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -249,7 +276,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -266,7 +293,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1534"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -285,7 +312,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"20"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"30"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -302,7 +329,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1523"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -321,7 +348,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"15"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"10"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -370,7 +398,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1511"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -389,7 +417,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"20"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -406,7 +434,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1522"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -425,7 +453,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -453,6 +481,89 @@
 		}
 	}
 
+	"item_bingyan"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_skadi"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ID"	"1576"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"precache"
+		{
+			"particle"	"particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_frostbite_snow_base.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_bingyan"
+			{
+				"Passive"	"1"
+				"Properties"	{}
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"500"
+					}
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"BingYanProjectile"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"-500"
+					}
+				}
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"TARGET"
+						"ModifierName"	"modifier_item_bingyan_2"
+						"Duration"	"5"
+					}
+				}
+			}
+			"modifier_item_bingyan_2"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-100"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"-100"
+				}
+				"EffectName"	"particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_frostbite_snow_base.vpcf"
+				"EffectAttachType"	"attach_origin"
+			}
+		}
+	}
+
 	"item_xixuemianju"
 	{
 		"BaseClass"	"item_datadriven"
@@ -462,7 +573,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1509"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -515,7 +626,7 @@
 		"AbilityCooldown"	"20"
 		"ID"	"1532"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -566,7 +677,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1506"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -585,7 +696,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"20"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -602,7 +714,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1502"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -638,7 +750,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1524"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -662,7 +774,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"40"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"40"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -727,7 +840,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1508"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -750,7 +863,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"300"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"200"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -769,7 +883,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1503"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -805,7 +919,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1507"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -841,7 +955,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1513"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -877,7 +991,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1518"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -932,6 +1046,73 @@
 		}
 	}
 
+	"item_sadan"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_satanic"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"30"
+		"ID"	"1577"
+		"ItemQuality"	"artifact"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_sadan"
+			{
+				"Passive"	"1"
+				"Properties"	{}
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"500"
+						"per"	"15"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"-500"
+						"per"	"-15"
+					}
+				}
+				"EffectAttachType"	"attach_origin"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"Target"	"ATTACKER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RenJiaDamaged"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+			}
+		}
+	}
+
 	"item_dafu"
 	{
 		"BaseClass"	"item_datadriven"
@@ -941,7 +1122,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1519"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -996,7 +1177,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1549"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1049,7 +1230,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1520"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1102,7 +1283,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1538"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1149,13 +1330,13 @@
 	"item_wangguan"
 	{
 		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"item_crown"
+		"AbilityTextureName"	"custom/red_crown"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1541"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1188,7 +1369,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1535"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1205,26 +1386,12 @@
 			"modifier_item_molifazhang"
 			{
 				"Passive"	"1"
-				"Properties"	{}
-				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_molifazhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_molifazhang_debuff"
-			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
+					"MODIFIER_PROPERTY_MAGICDAMAGEOUTGOING_PERCENTAGE"	"150"
 				}
-				"Duration"	"5"
+				"IsHidden"	"1"
+				"States"	{}
 			}
 		}
 	}
@@ -1238,7 +1405,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1539"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1257,24 +1424,6 @@
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_shenmifazhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_shenmifazhang_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-40"
-				}
-				"Duration"	"5"
 			}
 		}
 	}
@@ -1289,7 +1438,7 @@
 		"AbilityCooldown"	"15"
 		"ID"	"1540"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1308,16 +1457,6 @@
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_yangdao_debuff"
-						"Duration"	"5"
-					}
-				}
 				"OnCreated"
 				{
 					"RunScript"
@@ -1339,14 +1478,6 @@
 					}
 				}
 			}
-			"modifier_item_yangdao_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-20"
-				}
-				"Duration"	"5"
-			}
 		}
 	}
 
@@ -1360,7 +1491,7 @@
 		"AbilityCooldown"	"15"
 		"ID"	"1547"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1392,7 +1523,7 @@
 		"AbilityCooldown"	"15"
 		"ID"	"1542"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1406,29 +1537,11 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"Modifiers"
 		{
-			"modifier_item_hongzhang"
+			"modifier_item_hongzhang_1"
 			{
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_hongzhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_hongzhang_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
-				}
-				"Duration"	"5"
 			}
 		}
 	}
@@ -1443,7 +1556,7 @@
 		"AbilityCooldown"	"12"
 		"ID"	"1543"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1457,29 +1570,11 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"Modifiers"
 		{
-			"modifier_item_hongzhang"
+			"modifier_item_hongzhang_2"
 			{
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_hongzhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_hongzhang_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-60"
-				}
-				"Duration"	"5"
 			}
 		}
 	}
@@ -1494,7 +1589,7 @@
 		"AbilityCooldown"	"9"
 		"ID"	"1544"
 		"ItemQuality"	"secret_shop"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1508,29 +1603,11 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"Modifiers"
 		{
-			"modifier_item_hongzhang"
+			"modifier_item_hongzhang_3"
 			{
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_hongzhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_hongzhang_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-90"
-				}
-				"Duration"	"5"
 			}
 		}
 	}
@@ -1545,7 +1622,7 @@
 		"AbilityCooldown"	"6"
 		"ID"	"1545"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1559,29 +1636,11 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"Modifiers"
 		{
-			"modifier_item_hongzhang"
+			"modifier_item_hongzhang_4"
 			{
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_hongzhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_hongzhang_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-120"
-				}
-				"Duration"	"5"
 			}
 		}
 	}
@@ -1596,7 +1655,7 @@
 		"AbilityCooldown"	"3"
 		"ID"	"1546"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1610,29 +1669,11 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"Modifiers"
 		{
-			"modifier_item_hongzhang"
+			"modifier_item_hongzhang_5"
 			{
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_hongzhang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_hongzhang_debuff"
-			{
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-150"
-				}
-				"Duration"	"5"
 			}
 		}
 	}
@@ -1646,7 +1687,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1536"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1665,24 +1706,6 @@
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_fashichangpao_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_fashichangpao_debuff"
-			{
-				"Duration"	"5"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
-				}
 			}
 		}
 	}
@@ -1696,7 +1719,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1537"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1715,24 +1738,6 @@
 				"Passive"	"1"
 				"Properties"	{}
 				"IsHidden"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"ApplyModifier"
-					{
-						"Target"	"TARGET"
-						"ModifierName"	"modifier_item_huiguang_debuff"
-						"Duration"	"5"
-					}
-				}
-			}
-			"modifier_item_huiguang_debuff"
-			{
-				"Duration"	"5"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-100"
-				}
 			}
 		}
 	}
@@ -1747,7 +1752,7 @@
 		"AbilityCooldown"	"30"
 		"ID"	"1521"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1766,8 +1771,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"10"
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -1795,7 +1800,7 @@
 		"AbilityCooldown"	"30"
 		"ID"	"1550"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1814,7 +1819,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"15"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -1852,6 +1857,125 @@
 		}
 	}
 
+	"item_hudie"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_butterfly"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"30"
+		"ID"	"1575"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"precache"
+		{
+			"particle"	"particles/econ/items/techies/techies_ti9/techies_ti9_spleen_ambient_butterfly.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_hudie"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"5"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"45"
+				}
+				"IsHidden"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnTakeDamage"
+				{
+					"RunScript"
+					{
+						"Target"	"ATTACKER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"RenJiaDamaged"
+						"DamageTaken"	"%attack_damage"
+					}
+				}
+				"EffectName"	"particles/econ/items/techies/techies_ti9/techies_ti9_spleen_ambient_butterfly.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+		}
+	}
+
+	"item_huiyao"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_radiance"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCooldown"	"30"
+		"ID"	"1578"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"precache"
+		{
+			"particle"	"effect/huiyao/2.vpcf"
+			"particle"	"effect/huiyao/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_huiyao"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"50"
+				}
+				"IsHidden"	"1"
+				"EffectName"	"effect/huiyao/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"HuiyaoTang"
+						"damage"	"30"
+						"radius"	"400"
+					}
+				}
+				"ThinkInterval"	"1"
+			}
+			"modifier_item_huiyao_debuff"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE"	"25"
+				}
+				"IsDebuff"	"1"
+				"ThinkInterval"	"0.5"
+			}
+		}
+	}
+
 	"item_tiaozhantoujin"
 	{
 		"BaseClass"	"item_datadriven"
@@ -1861,7 +1985,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1514"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1880,8 +2004,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"50"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -1899,7 +2023,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1562"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1918,8 +2042,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"50"
 				}
 				"IsHidden"	"1"
 				"OnTakeDamage"
@@ -1945,7 +2069,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1533"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -1964,7 +2088,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"5"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -1981,7 +2105,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1512"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2005,7 +2129,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"40"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2037,7 +2161,7 @@
 			{
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-15"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-10"
 				}
 				"IsDebuff"	"1"
 				"IsHidden"	"1"
@@ -2056,7 +2180,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1525"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2079,7 +2203,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"15"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2100,7 +2224,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1526"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2158,7 +2282,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1527"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2177,7 +2301,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"25"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
 				}
 				"IsHidden"	"1"
 				"OnAttackLanded"
@@ -2214,7 +2339,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1528"
 		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2233,7 +2358,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"15"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"10"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2250,7 +2376,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1529"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2273,8 +2399,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"50"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"40"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2313,7 +2439,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1530"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2336,8 +2462,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"80"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"60"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"35"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2361,7 +2487,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
 		"ID"	"1548"
 		"ItemQuality"	"artifact"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2384,8 +2510,9 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"30"
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"20"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2430,7 +2557,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1531"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2450,7 +2577,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"5"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"5"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2467,7 +2594,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1504"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2500,7 +2627,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1565"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2533,7 +2660,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"ID"	"1500"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2552,7 +2679,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"15"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -2683,13 +2810,13 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"1"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
 		"AbilityChannelTime"	"1"
 		"ID"	"1553"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
@@ -2724,13 +2851,13 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"1"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
 		"AbilityChannelTime"	"1"
 		"ID"	"1560"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
@@ -2765,13 +2892,13 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"1"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
 		"AbilityChannelTime"	"1"
 		"ID"	"1561"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
@@ -2798,6 +2925,129 @@
 		}
 	}
 
+	"item_lootbox_lv4"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"custom/lootbox_lv2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"1"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"50"
+		"AbilityChannelTime"	"1"
+		"ID"	"1567"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+				"lv"	"4"
+			}
+		}
+	}
+
+	"item_lootbox_lv5"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"custom/lootbox_lv2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"1"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"50"
+		"AbilityChannelTime"	"1"
+		"ID"	"1568"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+				"lv"	"5"
+			}
+		}
+	}
+
+	"item_lootbox_lv6"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"custom/lootbox_lv2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"1"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"50"
+		"AbilityChannelTime"	"1"
+		"ID"	"1569"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"Effect"	"effect/golden_treasure_ti7_ambient_2/ti7.vpcf"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"0"
+		"ItemRequiresCharges"	"1"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"OnSpellStart"
+		{
+			"SpendCharge"	{}
+			"RunScript"
+			{
+				"Target"	"TARGET"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"ItemBaoxiang"
+				"lv"	"6"
+			}
+		}
+	}
+
 	"item_suduzhixue"
 	{
 		"BaseClass"	"item_datadriven"
@@ -2809,7 +3059,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1554"
 		"ItemQuality"	"consumable"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2843,7 +3093,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1555"
 		"ItemQuality"	"epic"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2891,7 +3141,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1556"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2967,7 +3217,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1557"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -2989,6 +3239,205 @@
 		}
 	}
 
+	"item_huanxinzhiren"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_blade_of_alacrity"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityManaCost"	"0"
+		"ID"	"1570"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_huanxinzhiren"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
+				}
+			}
+		}
+	}
+
+	"item_yingjiaogong"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_eagle"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityManaCost"	"0"
+		"ID"	"1571"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_yingjiaogong"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
+				}
+			}
+		}
+	}
+
+	"item_shanbihufu"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_talisman_of_evasion"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityManaCost"	"0"
+		"ID"	"1572"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_shanbihufu"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
+				}
+			}
+		}
+	}
+
+	"item_qinglianbaozhu"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_lotus_orb"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityCooldown"	"15"
+		"AbilityManaCost"	"0"
+		"ID"	"1574"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_qinglianbaozhu"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
+				}
+			}
+		}
+	}
+
+	"item_jinghunzhiren"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_diffusal_blade"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+		"AbilityManaCost"	"0"
+		"ID"	"1573"
+		"ItemQuality"	"rare"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_jinghunzhiren"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+				}
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"mana"	"20"
+						"Function"	"DecreaseMana"
+					}
+				}
+			}
+		}
+	}
+
 	"item_aoshuxie"
 	{
 		"BaseClass"	"item_datadriven"
@@ -3001,7 +3450,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1558"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -3035,7 +3484,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1563"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -3055,7 +3504,7 @@
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"30"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"25"
 				}
 				"IsHidden"	"1"
 			}
@@ -3073,7 +3522,7 @@
 		"AbilityManaCost"	"0"
 		"ID"	"1559"
 		"ItemQuality"	"rare"
-		"Model"	"models/props_winter/present.vmdl"
+		"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
 		"ItemCost"	"999"
 		"ItemDroppable"	"1"
 		"ItemSellable"	"0"
@@ -3447,7 +3896,7 @@
 		"ItemResult"	"item_biaoqiang"
 		"ItemRequirements"
 		{
-			"01"	"item_gongjizhizhua;item_gongjizhizhua"
+			"01"	"item_duangun;item_duangun"
 		}
 	}
 
@@ -3473,7 +3922,7 @@
 		"ItemResult"	"item_shengzheyiwu"
 		"ItemRequirements"
 		{
-			"01"	"item_kuojian;item_kuojian;item_kuojian"
+			"01"	"item_miyinchui;item_miyinchui;item_miyinchui"
 		}
 	}
 
@@ -3607,6 +4056,109 @@
 		}
 	}
 
+	"item_recipe_jinghunzhiren"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3042"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_jinghunzhiren"
+		"ItemRequirements"
+		{
+			"01"	"item_huanxinzhiren;item_fashichangpao;"
+		}
+	}
+
+	"item_recipe_qinglianbaozhu"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3043"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_qinglianbaozhu"
+		"ItemRequirements"
+		{
+			"01"	"item_jianrenqiu;item_nengliangqiu;"
+		}
+	}
+
+	"item_recipe_hudie"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3044"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_hudie"
+		"ItemRequirements"
+		{
+			"01"	"item_yingjiaogong;item_shanbihufu;item_duangun;"
+		}
+	}
+
+	"item_recipe_bingyan"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3045"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_bingyan"
+		"ItemRequirements"
+		{
+			"01"	"item_jixianfaqiu;item_jixianfaqiu;"
+		}
+	}
+
+	"item_recipe_sadan"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3046"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_sadan"
+		"ItemRequirements"
+		{
+			"01"	"item_dafu;item_xixuemianju;"
+		}
+	}
+
+	"item_recipe_huiyao"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3047"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_huiyao"
+		"ItemRequirements"
+		{
+			"01"	"item_shengzheyiwu;item_shanbihufu;"
+		}
+	}
+
+	"item_recipe_yingjiaogong"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3048"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_yingjiaogong"
+		"ItemRequirements"
+		{
+			"01"	"item_huanxinzhiren;item_huanxinzhiren;"
+		}
+	}
+	"item_recipe_miyinchui"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3049"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_miyinchui"
+		"ItemRequirements"
+		{
+			"01"	"item_gongjizhizhua;item_gongjizhizhua;"
+		}
+	}
+
 	"item_force_staff_datadriven"
 	{
 		"BaseClass"	"item_datadriven"
@@ -3621,7 +4173,7 @@
 		"AbilityManaCost"	"25"
 		"AbilityCastRange"	"800"
 		// Default ID by Valve is "102"
-		"ID"	"3042"
+		"ID"	"3050"
 		"ItemQuality"	"rare"
 		"Model"	"models/props_gameplay/red_box.vmdl"
 		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
@@ -3638,6 +4190,7 @@
 		"SecretShop"	"0"
 		"ItemShopTags"	"int;damage;attack_speed;hard_to_tag"
 		"ItemAliases"	"fs;force staff"
+		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
 		"precache"
 		{

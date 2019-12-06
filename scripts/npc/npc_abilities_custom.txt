@@ -171,6 +171,7 @@
 
 	"tusk_walrus_punch"
 	{
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
 		"AbilityCooldown"	"7"
@@ -504,7 +505,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"10"
+		"AbilityCooldown"	"10 9 8"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilityChannelTime"	"2"
@@ -608,54 +609,38 @@
 			}
 			"02"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"scepter_tooltip_delay"	"1.55"
-				"RequiresScepter"	"1"
+				"var_type"	"FIELD_INTEGER"
+				"ghostship_distance"	"2000"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ghostship_distance"	"2000"
+				"ghostship_width"	"425 425 425"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ghostship_width"	"425 425 425"
+				"movespeed_bonus"	"40"
 			}
 			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"movespeed_bonus"	"0"
-			}
-			"06"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"buff_duration"	"10"
 			}
-			"07"
+			"06"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"stun_duration"	"1 1.5 2.5"
 			}
-			"08"
+			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"ghostship_speed"	"650"
 			}
-			"09"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"ghostship_speed_scepter"	"650"
-			}
-			"10"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"ghostship_width_scepter"	"200"
-			}
-			"11"
+			"08"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"ghostship_absorb"	"0"
+				"ghostship_absorb"	"40"
 			}
 		}
 		"AbilityDamage"	"150 250 400"
@@ -8010,7 +7995,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"6"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -8038,7 +8023,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"6"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -8089,7 +8074,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-33"
 				}
 				"Passive"	"1"
 			}
@@ -8111,7 +8096,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-30"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-33"
 				}
 				"Passive"	"1"
 			}
@@ -8454,7 +8439,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"30"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"25"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8766,7 +8751,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"200"
+						"hp"	"100"
 					}
 				}
 			}
@@ -8786,10 +8771,7 @@
 			{
 				"TextureName"	"beastmaster_call_of_the_wild_boar"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_BONUS"	"500"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
@@ -9058,7 +9040,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9146,7 +9128,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"75"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9172,7 +9154,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"78"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9202,7 +9184,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -10752,7 +10734,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"12"
+		"AbilityCooldown"	"12 10 8"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -10841,7 +10823,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"5"
+		"AbilityCooldown"	"7 6 5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -10963,6 +10945,7 @@
 
 	"enigma_midnight_pulse"
 	{
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
 		"AbilityCooldown"	"20"
@@ -11127,7 +11110,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"5"
+		"AbilityCooldown"	"7 6 5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -11492,6 +11475,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
 		"AbilityCooldown"	"7"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
@@ -11500,12 +11484,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_interval"	"1.5"
+				"damage_interval"	"0.25"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"leech_damage"	"30 45 60"
+				"leech_damage"	"40 80 120"
 				"LinkedSpecialBonus"	"special_bonus_unique_treant_2"
 			}
 			"03"
@@ -11515,18 +11499,23 @@
 			}
 			"04"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"400"
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"2"
 			}
 			"05"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"5"
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
 			}
 			"06"
 			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"5.0"
+			}
+			"07"
+			{
 				"var_type"	"FIELD_INTEGER"
-				"projectile_speed"	"400"
+				"projectile_speed"	"550"
 			}
 		}
 	}
@@ -11543,73 +11532,66 @@
 		{
 			"01"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"cast_time_tooltip"	"1.67"
+				"var_type"	"FIELD_INTEGER"
+				"requiem_radius"	"700"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_radius"	"700"
+				"requiem_reduction_ms"	"10 15 25"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_ms"	"10 15 25"
+				"requiem_slow_duration"	"0"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_damage"	"0"
+				"requiem_slow_duration_max"	"0"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_tooltip"	"0"
+				"requiem_reduction_radius"	"500 600 700"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_slow_duration"	"5.0"
+				"requiem_soul_conversion"	"2 2 2"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_radius"	"500 600 700"
+				"requiem_line_width_start"	"125"
 			}
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_soul_conversion"	"2 2 2"
+				"requiem_line_width_end"	"425"
 			}
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_line_width_start"	"125"
-			}
-			"10"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_line_width_end"	"425"
-			}
-			"11"
-			{
-				"var_type"	"FIELD_INTEGER"
 				"requiem_line_speed"	"700 700 700"
 			}
-			"12"
+			"10"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"soul_death_release"	"0"
 			}
-			"13"
+			"11"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"requiem_heal_pct_scepter"	"100"
+				"RequiresScepter"			"1"
 			}
-			"14"
+			"12"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"requiem_damage_pct_scepter"	"40"
+				"RequiresScepter"			"1"
+				"CalculateSpellDamageTooltip"	"0"
 			}
 		}
 		"AbilityDuration"	"5.0 5.0 5.0"
@@ -14297,11 +14279,6 @@
 				"var_type"	"FIELD_INTEGER"
 				"necromastery_souls_hero_bonus"	"11"
 			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"necromastery_max_souls_scepter"	"22 30 38 46"
-			}
 		}
 		"OnCastbar"	"0"
 		"HasScepterUpgrade"	"1"
@@ -15330,7 +15307,7 @@
 			{
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_bkb_buff"
-				"Duration"	"8"
+				"Duration"	"7"
 			}
 		}
 		"Modifiers"
@@ -15350,6 +15327,116 @@
 				{
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"100"
 				}
+			}
+		}
+	}
+
+	"give_sadan_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"omniknight_repel"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_items.vsndevts"
+			"particle"	"particles/items2_fx/satanic_buff.vpcf"
+			"particle"	"particles/units/heroes/hero_demonartist/demonartist_soulchain_marker_tgt.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_give_sadan_buff"
+				"Duration"	"10"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"DOTA_Item.Satanic.Activate"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_give_sadan_buff"
+			{
+				"EffectName"	"particles/items2_fx/satanic_buff.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Passive"	"0"
+				"TextureName"	"omniknight_repel"
+				"IsBuff"	"1"
+				"States"	{}
+				"Properties"	{}
+				"OnAttackLanded"
+				{
+					"Lifesteal"
+					{
+						"Target"	"ATTACKER"
+						"LifestealPercent"	"200"
+					}
+					"AttachEffect"
+					{
+						"Target"	"ATTACKER"
+						"EffectName"	"particles/units/heroes/hero_demonartist/demonartist_soulchain_marker_tgt.vpcf"
+						"EffectAttachType"	"follow_overhead"
+					}
+				}
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"give_hudie_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"omniknight_repel"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityCastPoint"	"0"
+		"AbilityCooldown"	"0"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"precache"
+		{
+			"soundfile"	"soundevents/game_sounds_items.vsndevts"
+			"particle"	"particles/econ/items/windrunner/windrunner_cape_cascade/windrunner_windrun_cascade.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_give_hudie_buff"
+				"Duration"	"5"
+			}
+			"FireSound"
+			{
+				"Target"	"TARGET"
+				"EffectName"	"DOTA_Item.Butterfly"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_give_hudie_buff"
+			{
+				"EffectName"	"particles/econ/items/windrunner/windrunner_cape_cascade/windrunner_windrun_cascade.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Passive"	"0"
+				"TextureName"	"omniknight_repel"
+				"IsBuff"	"1"
+				"States"	{}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"100"
+				}
+				"IsHidden"	"1"
 			}
 		}
 	}
@@ -16203,7 +16290,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-50"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-40"
 				}
 				"EffectName"	"particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_frostbite_snow_base.vpcf"
 				"EffectAttachType"	"attach_origin"
@@ -16246,7 +16333,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"25"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
 				}
 				"EffectName"	"effect/pipe/1.vpcf"
@@ -16280,7 +16367,7 @@
 			{
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_fengkuangmianju"
-				"Duration"	"8"
+				"Duration"	"5"
 			}
 			"FireSound"
 			{
@@ -16298,8 +16385,8 @@
 				"EffectAttachType"	"attach_origin"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"80"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-8"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"60"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-10"
 				}
 				"States"
 				{
@@ -16857,11 +16944,16 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"dismember_damage"	"40 60 100"
+				"LinkedSpecialBonus"	"special_bonus_unique_pudge_3"
+				"LinkedSpecialBonusField"	"value"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"strength_damage"	"0"
+				"LinkedSpecialBonus"	"special_bonus_unique_pudge_3"
+				"LinkedSpecialBonusField"	"value2"
+				"CalculateSpellDamageTooltip"	"0"
 			}
 			"03"
 			{
@@ -16882,6 +16974,34 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"animation_rate"	"1.5"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"abilitychanneltime"	"3.0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"creep_dismember_duration_tooltip"	"6.0 6.0 6.0"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_regen_pct"	"4"
+				"RequiresScepter"	"1"
+			}
+			"10"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"order_lock_duration"	"3"
+				"RequiresScepter"	"1"
+			}
+			"11"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"scepter_cooldown"	"11"
+				"RequiresScepter"	"1"
 			}
 		}
 	}
@@ -17489,12 +17609,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"250 350 500"
+				"radius"	"250 300 400"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"silence_duration"	"2.5 3 4"
+				"silence_duration"	"2 2 3"
 			}
 			"03"
 			{
@@ -17587,7 +17707,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityCastPoint"	"0.0 0.0 0.0 0.0"
 		// Time
@@ -17695,7 +17815,7 @@
 					"Damage"
 					{
 						"Target"	"TARGET"
-						"Type"	"DAMAGE_TYPE_PURE"
+						"Type"	"DAMAGE_TYPE_MAGICAL"
 						"Damage"	"%AbilityDamage"
 					}
 				}
@@ -17718,7 +17838,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_cost"	"15"
+				"health_cost"	"20 25 35"
 			}
 			"02"
 			{
@@ -17728,7 +17848,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"burning_spear_damage"	"10 15 25"
+				"burning_spear_damage"	"20 25 35"
 			}
 			"04"
 			{
@@ -17749,7 +17869,7 @@
 		"AbilityDuration"	"8"
 		// Damage.
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"	"10 15 25"
+		"AbilityDamage"	"20 25 35"
 	}
 
 	"huskar_buff1"
@@ -17936,12 +18056,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"200 300 400"
+				"damage"	"300"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"jumps"	"6 9 12"
+				"jumps"	"6 9 15"
 			}
 			"03"
 			{
@@ -17961,7 +18081,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"slow_duration"	"2.5"
+				"slow_duration"	"3"
 			}
 			"07"
 			{
@@ -17976,7 +18096,7 @@
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_scepter"	"400 500 600"
+				"damage_scepter"	"300"
 				"RequiresScepter"	"1"
 			}
 			"10"
@@ -18091,7 +18211,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"final_aoe"	"500"
+				"final_aoe"	"350"
 			}
 			"04"
 			{
@@ -18101,7 +18221,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"300 450 700"
+				"damage"	"250 350 550"
 			}
 			"06"
 			{
@@ -18111,7 +18231,7 @@
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_scepter"	"350 530 725"
+				"damage_scepter"	"250 350 550"
 			}
 			"08"
 			{
@@ -18479,5 +18599,259 @@
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
 		"AbilityCooldown"	"30"
 		"AbilityManaCost"	"100"
+	}
+
+	"snapfire_lil_shredder"
+	{
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCastAnimation"	"ACT_DOTA_OVERRIDE_ABILITY_3"
+		"AbilityCooldown"	"12 10 8"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"800"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"150 200 300"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"buffed_attacks"	"15 20 30"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed_bonus"	"300"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_range_bonus"	"500"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"buff_duration_tooltip"	"8"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"base_attack_time"	"0.75"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed_slow_per_stack"	"30"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"3 4 5"
+			}
+		}
+		"AbilitySound"	"Hero_Snapfire.ExplosiveShells.Cast"
+		"AbilityDuration"	"8"
+	}
+
+	"kunkka_torrent_storm"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCooldown"	"15 12 9"
+		"AbilityManaCost"	"100"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"torrent_interval"	"1 0.7 0.4"
+				"RequiresScepter"	"0"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"torrent_duration"	"5.0"
+				"RequiresScepter"	"0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"torrent_min_distance"	"100"
+				"RequiresScepter"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"torrent_max_distance"	"500"
+				"RequiresScepter"	"0"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"200 300 500"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"stun"	"1.6"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"180"
+			}
+		}
+		"AbilitySound"	"Ability.Torrent"
+	}
+
+	"kunkka_torrent"
+	{
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"180"
+				"LinkedSpecialBonus"	"special_bonus_unique_kunkka"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed_bonus"	"-35"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"2.0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"stun_duration"	"1.6"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"delay"	"1.6 1.6 1.6 1.6"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"torrent_damage"	"200 300 500 500"
+				"LinkedSpecialBonus"	"special_bonus_unique_kunkka_2"
+			}
+		}
+	}
+
+	"midnight_pulse_datadriven"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"enigma_midnight_pulse"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"1"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		"AbilityCooldown"	"20"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AoERadius"	"550"
+		"precache"
+		{
+			"soundfile"	"sounds/weapons/hero/enigma/midnight_pulse.vsnd"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
+			"particle"	"particles/units/heroes/hero_enigma/enigma_midnight_pulse.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"CreateThinker"
+			{
+				"ModifierName"	"modifier_midnight_pulse_datadriven"
+				"Target"	"POINT"
+			}
+			"RunScript"
+			{
+				"Target"	"POINT"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"EnigmaCastPoint"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_midnight_pulse_datadriven"
+			{
+				"Duration"	"%duration"
+				"OnCreated"
+				{
+					"FireSound"
+					{
+						"EffectName"	"Hero_Enigma.Midnight_Pulse"
+						"Target"	"TARGET"
+					}
+					"AttachEffect"
+					{
+						"EffectName"	"particles/units/heroes/hero_enigma/enigma_midnight_pulse.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"Target"	"TARGET"
+						"ControlPoints"
+						{
+							"00"	"0 0 0"
+							"01"	"%radius %radius %radius"
+						}
+					}
+					"DestroyTrees"
+					{
+						"Target"	"TARGET"
+						"Radius"	"%radius"
+					}
+				}
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"POINT"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"EnigmaPulseDamage"
+						"radius"	"%radius"
+					}
+				}
+				"ThinkInterval"	"0.5"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"450"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_per"	"6 8 12"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"8"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_tick"	"0.5"
+			}
+		}
 	}
 }

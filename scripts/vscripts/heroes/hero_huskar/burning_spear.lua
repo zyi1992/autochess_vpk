@@ -9,13 +9,22 @@ function DoHealthCost( event )
     local caster = event.caster
     local ability = event.ability
     local health_cost = ability:GetLevelSpecialValueFor( "health_cost" , ability:GetLevel() - 1  )
-    local health = caster:GetHealth()
-    local new_health = (health - health_cost)
+    -- local health = caster:GetHealth()
+    -- local new_health = (health - health_cost)
 
-    -- "do damage"
-    -- aka set the casters HP to the new value
-    -- ModifyHealth's third parameter lets us decide if the healthcost should be lethal
-    caster:ModifyHealth(new_health, ability, false, 0)
+    -- -- "do damage"
+    -- -- aka set the casters HP to the new value
+    -- -- ModifyHealth's third parameter lets us decide if the healthcost should be lethal
+    -- caster:ModifyHealth(new_health, ability, false, 0)
+
+    --对自己造成魔法伤害
+    local damageTable = {
+        victim=caster,
+        attacker=caster,
+        damage_type=DAMAGE_TYPE_MAGICAL,
+        damage=health_cost
+    }
+    ApplyDamage(damageTable)
 end
 
 --[[
