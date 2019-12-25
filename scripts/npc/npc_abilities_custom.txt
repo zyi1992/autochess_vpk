@@ -332,18 +332,18 @@
 		"AbilityCooldown"	"10 8 6"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
-		"AbilityChannelTime"	"3"
+		"AbilityChannelTime"	"2"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_per_second"	"100 150 250"
+				"damage_per_second"	"150 225 375"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"max_channel_time"	"3"
+				"max_channel_time"	"2"
 			}
 			"03"
 			{
@@ -393,7 +393,7 @@
 			"12"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"total_damage"	"300 450 600"
+				"total_damage"	"300 450 750"
 				"LinkedSpecialBonus"	"special_bonus_unique_keeper_of_the_light"
 			}
 		}
@@ -8335,25 +8335,16 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"precache"
-		{
-			"particle"	"particles/items_fx/healing_flask.vpcf"
-		}
 		"Modifiers"
 		{
 			"modifier_is_mech_buff"
 			{
 				"TextureName"	"rattletrap_power_cogs"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
-				"EffectName"	"particles/items_fx/healing_flask.vpcf"
-				"EffectAttachType"	"follow_origin"
 			}
 		}
 	}
@@ -8365,25 +8356,16 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"precache"
-		{
-			"particle"	"particles/items_fx/healing_flask.vpcf"
-		}
 		"Modifiers"
 		{
 			"modifier_is_mech_buff_plus"
 			{
 				"TextureName"	"rattletrap_power_cogs"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"25"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
-				"EffectName"	"particles/items_fx/healing_flask.vpcf"
-				"EffectAttachType"	"follow_origin"
 			}
 		}
 	}
@@ -8395,24 +8377,16 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"precache"
-		{
-			"particle"	"particles/items_fx/healing_flask.vpcf"
-		}
 		"Modifiers"
 		{
 			"modifier_is_mech_buff_plus_plus"
 			{
 				"TextureName"	"rattletrap_power_cogs"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"35"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
-				"EffectName"	"particles/items_fx/healing_flask.vpcf"
 				"EffectAttachType"	"follow_origin"
 			}
 		}
@@ -8458,7 +8432,7 @@
 								"ModifierName"	"modifier_is_hunter_buff_jingzhun"
 							}
 						}
-						"Chance"	"45"
+						"Chance"	"40"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -8515,7 +8489,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"40"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"35"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8540,6 +8514,82 @@
 				}
 			}
 			"modifier_is_hunter_buff_jingzhun_plus"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"FireEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"effect/hunter/monkey_king_fur_army_positions.vpcf"
+						"EffectAttachType"	"follow_overhead"
+					}
+					"FireSound"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"Damage_Projectile.Player"
+					}
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus"
+					}
+				}
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"is_hunter_buff_plus_plus"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"drow_ranger_marksmanship"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"precache"
+		{
+			"particle"	"effect/lieren/1.vpcf"
+			"particle"	"effect/hunter/monkey_king_fur_army_positions.vpcf"
+			"soundfile"	"soundevents/game_sounds.vsndevts"
+		}
+		"Modifiers"
+		{
+			"modifier_is_hunter_buff_plus_plus"
+			{
+				"TextureName"	"drow_ranger_marksmanship"
+				"IsDebuff"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"55"
+				}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"EffectName"	"effect/lieren/1.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"OnAttackStart"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus_plus"
+							}
+						}
+						"Chance"	"100"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+			}
+			"modifier_is_hunter_buff_jingzhun_plus_plus"
 			{
 				"Properties"	{}
 				"States"
@@ -8709,7 +8759,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"30"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"40"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -8831,7 +8881,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"15"
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -9516,7 +9566,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"70"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"67"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9586,7 +9636,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"70"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"67"
 				}
 				"States"	{}
 				"EffectName"	"effect/knight/1.vpcf"
@@ -9655,7 +9705,7 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"70"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"67"
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"30"
 				}
 				"States"	{}
@@ -10717,13 +10767,33 @@
 		{
 			"01"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"damage_per_burn"	"0.5"
+				"var_type"	"FIELD_INTEGER"
+				"percent_damage_per_burn"	"100"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"mana_per_hit"	"30 60 90"
+				"mana_per_hit"	"30 60 100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mana_per_hit_pct"	"0 0 0 0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"silence_chance"	"0"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"silence_duration"	"0"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"illusion_percentage"	"100"
 			}
 		}
 		"AbilitySound"	"Hero_Antimage.ManaBreak"
@@ -11584,13 +11654,13 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"requiem_heal_pct_scepter"	"100"
-				"RequiresScepter"			"1"
+				"RequiresScepter"	"1"
 			}
 			"12"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"requiem_damage_pct_scepter"	"40"
-				"RequiresScepter"			"1"
+				"RequiresScepter"	"1"
 				"CalculateSpellDamageTooltip"	"0"
 			}
 		}
@@ -14491,27 +14561,27 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"min_damage"	"50 75 100"
+				"min_damage"	"100 150 350"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"min_stun"	"1 1.5 2"
+				"min_stun"	"1 1.5 3"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"max_damage"	"500 750 1000"
+				"max_damage"	"500 750 1200"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"max_stun"	"5 7.5 10"
+				"max_stun"	"5 7.5 12"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"max_distance"	"6000"
+				"max_distance"	"1000"
 			}
 		}
 	}
@@ -15117,9 +15187,24 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"shield_bash_radius"	"200"
+				"redirect_chance"	"0"
 			}
 			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"redirect_range"	"0"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"redirect_speed_penatly"	"0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shield_bash_radius"	"200"
+			}
+			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"shield_bash_damage"	"150 300 500"
@@ -16000,7 +16085,7 @@
 			"11"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"fuhun_stack_count"	"1 2 4"
+				"fuhun_stack_count"	"1 3 9"
 			}
 		}
 		"SpellDispellableType"	"SPELL_DISPELLABLE_YES"
@@ -18851,6 +18936,119 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"damage_tick"	"0.5"
+			}
+		}
+	}
+
+	"br_web"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"broodmother_spin_web"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"FightRecapLevel"	"1"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.5"
+		"AbilityCooldown"	"10"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AoERadius"	"205"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_broodmother/broodmother_web_cast_test.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
+			"particle"	"effect/br_web/1.vpcf"
+			"particle"	"particles/units/heroes/hero_broodmother/broodmother_web_cast_test.vpcf"
+			"particle"	"particles/econ/items/broodmother/bm_lycosidaes/bm_lycosidaes_web_cast.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"CreateThinker"
+			{
+				"Target"	"POINT"
+				"ModifierName"	"modifier_br_web"
+			}
+		}
+		"OnAbilityStart"
+		{
+			"FireEffect"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"particles/units/heroes/hero_broodmother/broodmother_web_cast_test.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_br_web"
+			{
+				"Duration"	"%duration"
+				"OnCreated"
+				{
+					"FireSound"
+					{
+						"EffectName"	"Hero_Broodmother.SpinWebCast"
+						"Target"	"TARGET"
+					}
+					"AttachEffect"
+					{
+						"EffectName"	"effect/br_web/1.vpcf"
+						"EffectAttachType"	"follow_origin"
+						"Target"	"TARGET"
+						"ControlPoints"
+						{
+							"00"	"0 0 0"
+							"01"	"%radius %radius %radius"
+						}
+					}
+					"FireEffect"
+					{
+						"Target"	"TARGET"
+						"EffectName"	"particles/units/heroes/hero_broodmother/broodmother_web_cast_test.vpcf"
+						"EffectAttachType"	"follow_origin"
+					}
+				}
+				"ThinkInterval"	"0.2"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"BrWeb"
+						"radius"	"%radius"
+					}
+				}
+			}
+			"modifier_br_web_debuff"
+			{
+				"States"	{}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MISS_PERCENTAGE"	"%miss_per"
+				}
+				"EffectName"	"particles/econ/items/broodmother/bm_lycosidaes/bm_lycosidaes_web_cast.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"Duration"	"2"
+				"IsDebuff"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"205"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"4 6 10"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"miss_per"	"40 60 100"
 			}
 		}
 	}
