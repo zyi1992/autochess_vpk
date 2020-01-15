@@ -103,5 +103,17 @@
 		"count"		"short"
 		"total"		"short"
 	}
+	"drodo_chat"
+	{
+		"player_id"	"short"
+		"text"		"string"
+		"type"		"string"
+	}
+	"drodo_combat"
+	{
+		"player_id"	"short"
+		"text"		"string"
+		"type"		"string"
+	}
 }
 

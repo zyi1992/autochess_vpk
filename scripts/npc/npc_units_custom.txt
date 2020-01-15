@@ -14217,8 +14217,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"100"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"110"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -14337,9 +14337,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"120"
-		"AttackDamageMax"	"180"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"160"
+		"AttackDamageMax"	"220"
+		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -14457,9 +14457,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"240"
-		"AttackDamageMax"	"360"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"320"
+		"AttackDamageMax"	"440"
+		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -14547,7 +14547,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"800"
+		"StatusHealth"	"850"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14671,7 +14671,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1600"
+		"StatusHealth"	"1700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14795,7 +14795,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3200"
+		"StatusHealth"	"3400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -16371,13 +16371,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"450"
+		"StatusHealth"	"1000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"10"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -16443,17 +16443,17 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
+		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
-		"AttackAnimationPoint"	"0.5"
+		"AttackAnimationPoint"	"0.4"
 		"HasInventory"	"1"
 		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Nevermore"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		"SoundSet"	"Hero_Invoker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
 	}
 
 	// 5
@@ -16503,13 +16503,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"450"
+		"StatusHealth"	"2000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"15"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -16533,8 +16533,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"70"
-		"AttackDamageMax"	"80"
+		"AttackDamageMin"	"140"
+		"AttackDamageMax"	"160"
 		"AttackRate"	"1.1"
 		"AttackRange"	"600"
 		"Creature"
@@ -16575,17 +16575,17 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
+		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
-		"AttackAnimationPoint"	"0.5"
+		"AttackAnimationPoint"	"0.4"
 		"HasInventory"	"1"
-		"Level"	"5"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Nevermore"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		"SoundSet"	"Hero_Invoker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
 	}
 
 	// 5
@@ -16635,13 +16635,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"450"
+		"StatusHealth"	"4000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"25"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -16665,8 +16665,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"70"
-		"AttackDamageMax"	"80"
+		"AttackDamageMin"	"280"
+		"AttackDamageMax"	"320"
 		"AttackRate"	"1.1"
 		"AttackRange"	"600"
 		"Creature"
@@ -16707,17 +16707,17 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
+		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
-		"AttackAnimationPoint"	"0.5"
+		"AttackAnimationPoint"	"0.4"
 		"HasInventory"	"1"
-		"Level"	"5"
+		"Level"	"9"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Nevermore"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		"SoundSet"	"Hero_Invoker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
 	}
 
 	// 4
@@ -31248,6 +31248,168 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
+	"invoker_spirit1"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"forged_spirit_jianjia"
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/heroes/invoker/forge_spirit.vmdl"
+		"ModelScale"	"0.7"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"500"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"100"
+		"AttackRate"	"1.7"
+		"AttackRange"	"900"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.2"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"invoker_spirit2"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"forged_spirit_jianjia"
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/invoker/forge_spirit/sempiternal_revelations_forged_spirits/sempiternal_revelations_forged_spirits.vmdl"
+		"ModelScale"	"0.8"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"700"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"150"
+		"AttackRate"	"1.4"
+		"AttackRange"	"900"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.2"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"invoker_spirit3"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"forged_spirit_jianjia"
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/invoker/forge_spirit/ti8_invoker_prism_forge_spirit/ti8_invoker_prism_forge_spirit.vmdl"
+		"ModelScale"	"0.91"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1100"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"150"
+		"AttackDamageMax"	"200"
+		"AttackRate"	"1.1"
+		"AttackRange"	"900"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf"
+		"ProjectileSpeed"	"800"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.2"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
 	"veno_ward1"
 	{
 		"BaseClass"	"npc_dota_creature"
@@ -31281,7 +31443,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"100"
+		"AttackDamageMax"	"70"
 		"AttackRate"	"1.4"
 		"AttackRange"	"900"
 		"AttackRangeBuffer"	"50"
@@ -31334,8 +31496,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"150"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"100"
 		"AttackRate"	"1.4"
 		"AttackRange"	"900"
 		"AttackRangeBuffer"	"50"
@@ -31388,8 +31550,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"150"
-		"AttackDamageMax"	"200"
+		"AttackDamageMin"	"110"
+		"AttackDamageMax"	"130"
 		"AttackRate"	"1.4"
 		"AttackRange"	"900"
 		"AttackRangeBuffer"	"50"

@@ -8839,7 +8839,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"200"
+						"hp"	"250"
 					}
 				}
 			}
@@ -9770,7 +9770,7 @@
 			}
 			"modifier_coup_de_grace_crit_datadriven"
 			{
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"300"
@@ -9798,6 +9798,41 @@
 						"Target"	"TARGET"
 					}
 				}
+				"TextureName"	"skeleton_king_reincarnation"
+				"IsBuff"	"1"
+			}
+			"modifier_coup_de_grace_crit_datadriven_first"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"300"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_coup_de_grace_crit_datadriven_first"
+						"Target"	"CASTER"
+					}
+					"FireEffect"
+					{
+						"EffectName"	"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf"
+						"EffectAttachType"	"start_at_customorigin"
+						"ControlPointEntities"
+						{
+							"TARGET"	"follow_origin"
+							"TARGET"	"follow_origin"
+						}
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_PhantomAssassin.CoupDeGrace"
+						"Target"	"TARGET"
+					}
+				}
+				"TextureName"	"skeleton_king_reincarnation"
+				"IsBuff"	"1"
 			}
 			"modifier_is_assassin_buff"
 			{
@@ -9883,6 +9918,37 @@
 					}
 				}
 			}
+			"modifier_coup_de_grace_crit_datadriven_plus_first"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"500"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_coup_de_grace_crit_datadriven_plus_first"
+						"Target"	"CASTER"
+					}
+					"FireEffect"
+					{
+						"EffectName"	"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf"
+						"EffectAttachType"	"start_at_customorigin"
+						"ControlPointEntities"
+						{
+							"TARGET"	"follow_origin"
+							"TARGET"	"follow_origin"
+						}
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_PhantomAssassin.CoupDeGrace"
+						"Target"	"TARGET"
+					}
+				}
+			}
 			"modifier_is_assassin_buff_plus"
 			{
 				"Passive"	"1"
@@ -9948,6 +10014,37 @@
 					"RemoveModifier"
 					{
 						"ModifierName"	"modifier_coup_de_grace_crit_datadriven_plus_plus"
+						"Target"	"CASTER"
+					}
+					"FireEffect"
+					{
+						"EffectName"	"particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf"
+						"EffectAttachType"	"start_at_customorigin"
+						"ControlPointEntities"
+						{
+							"TARGET"	"follow_origin"
+							"TARGET"	"follow_origin"
+						}
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_PhantomAssassin.CoupDeGrace"
+						"Target"	"TARGET"
+					}
+				}
+			}
+			"modifier_coup_de_grace_crit_datadriven_plus_plus_first"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE"	"700"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"ModifierName"	"modifier_coup_de_grace_crit_datadriven_plus_plus_first"
 						"Target"	"CASTER"
 					}
 					"FireEffect"
@@ -10483,7 +10580,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"cleave_distance"	"625"
+				"cleave_distance"	"500"
 			}
 			"04"
 			{
@@ -18930,7 +19027,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"8"
+				"duration"	"7"
 			}
 			"04"
 			{
@@ -19049,6 +19146,531 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"miss_per"	"40 60 100"
+			}
+		}
+	}
+
+	"invoker_ghost_walk"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityManaCost"	"50"
+	}
+
+	"invoker_ice_wall"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"10 8 6"
+		"AbilityManaCost"	"50"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"5.0 10.0 15.0"
+				"levelkey"	"quaslevel"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slow"	"-20 -40 -60"
+				"levelkey"	"quaslevel"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"slow_duration"	"5.0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_per_second"	"50 75 125"
+				"levelkey"	"exortlevel"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"wall_place_distance"	"200"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"num_wall_elements"	"15"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"wall_element_spacing"	"80"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"wall_element_radius"	"105"
+			}
+		}
+	}
+
+	"invoker_cold_snap"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"5 4 3"
+		"AbilityManaCost"	"50"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"15.0 15.0 15.0"
+				"levelkey"	"quaslevel"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"freeze_duration"	"1.0 2.0 3.0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"freeze_cooldown"	"0.1 0.1 0.1"
+				"levelkey"	"quaslevel"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"freeze_damage"	"25 50 100"
+				"levelkey"	"quaslevel"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_trigger"	"10.0"
+			}
+		}
+	}
+
+	"invoker_tornado"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"10 8 6"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"travel_distance"	"800 1000 1200"
+				"levelkey"	"wexlevel"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"travel_speed"	"1000"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"area_of_effect"	"200"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"vision_distance"	"200"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"end_vision_duration"	"1.75"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"lift_duration"	"2 3 5"
+				"LinkedSpecialBonus"	"special_bonus_unique_invoker_8"
+				"levelkey"	"quaslevel"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"base_damage"	"400 600 1000"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"quas_damage"	"0 0 0"
+				"levelkey"	"quaslevel"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"wex_damage"	"0 0 0"
+				"levelkey"	"wexlevel"
+			}
+		}
+	}
+
+	"invoker_deafening_blast"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT_TARGET"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"15 12 9"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"travel_distance"	"600 800 1200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"travel_speed"	"1100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius_start"	"175"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius_end"	"225"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"end_vision_duration"	"1.75"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage"	"200 300 500"
+				"levelkey"	"exortlevel"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"knockback_duration"	"0 0 0"
+				"levelkey"	"quaslevel"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"disarm_duration"	"3 4 6"
+				"levelkey"	"wexlevel"
+			}
+		}
+	}
+
+	"invoker_chaos_meteor"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"20 15 10"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"land_time"	"1.3"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"area_of_effect"	"200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"travel_distance"	"400 600 800"
+				"levelkey"	"wexlevel"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"travel_speed"	"300"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage_interval"	"0.5"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"vision_distance"	"500"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"end_vision_duration"	"3.0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"main_damage"	"150 200 300"
+				"LinkedSpecialBonus"	"special_bonus_unique_invoker_6"
+				"levelkey"	"exortlevel"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"burn_duration"	"3.0 4.0 5.0"
+			}
+			"10"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"burn_dps"	"60 80 100"
+				"levelkey"	"exortlevel"
+				"CalculateSpellDamageTooltip"	"1"
+			}
+		}
+	}
+
+	"invoker_emp"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"5 4 3"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"delay"	"0.5"
+				"levelkey"	"wexlevel"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"area_of_effect"	"675"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mana_burned"	"40 60 100"
+				"levelkey"	"wexlevel"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_per_mana_pct"	"0"
+			}
+		}
+	}
+
+	"invoker_sun_strike"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.1"
+		"AbilityCooldown"	"10 8 6"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"delay"	"1.7"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"area_of_effect"	"175"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage"	"800 1200 2000"
+				"levelkey"	"exortlevel"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"vision_distance"	"400"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"vision_duration"	"4.0"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"cataclysm_cooldown"	"90"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"cataclysm_min_range"	"160"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"cataclysm_max_range"	"200"
+			}
+		}
+	}
+
+	"forge_spirit"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"invoker_forge_spirit"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"3"
+		"AbilityCooldown"	"15 12 9"
+		"AbilityManaCost"	"100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"InvokerSpirit"
+			}
+		}
+	}
+
+	"alacrity"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"invoker_alacrity"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"3"
+		"AbilityCooldown"	"5 4 3"
+		"AbilityManaCost"	"100"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_invoker/invoker_alacrity_buff.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_alacrity"
+				"Duration"	"10"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_alacrity"
+			{
+				"IsBuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed_bonus"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%attack_damage_bonus"
+				}
+				"EffectName"	"particles/units/heroes/hero_invoker/invoker_alacrity_buff.vpcf"
+				"EffectAttachType"	"follow_overhead"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed_bonus"	"40 60 100"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_damage_bonus"	"40 60 100"
+			}
+		}
+	}
+
+	"invoker_quas"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+
+	"invoker_wex"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+
+	"invoker_exort"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+
+	"invoker_invoke"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	}
+
+	"invoke"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"invoker_invoke"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"	"3"
+		"AbilityCooldown"	"0.5"
+		"AbilityManaCost"	"100"
+	}
+
+	"forged_spirit_jianjia"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"forged_spirit_melting_strike"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"Modifiers"
+		{
+			"modifier_forged_spirit_jianjia"
+			{
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"TARGET"
+						"ModifierName"	"modifier_forged_spirit_armor_reduction"
+						"Duration"	"5"
+					}
+				}
+				"Passive"	"1"
+				"IsHidden"	"1"
+			}
+			"modifier_forged_spirit_armor_reduction"
+			{
+				"TextureName"	"forged_spirit_melting_strike"
+				"IsDebuff"	"1"
+				"Duration"	"5"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor"	"-5"
 			}
 		}
 	}
