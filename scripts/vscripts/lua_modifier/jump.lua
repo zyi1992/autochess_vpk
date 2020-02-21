@@ -91,6 +91,8 @@ function modifier_jump:UpdateHorizontalMotion(me, dt)
             EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)
             self:Destroy()
             me.is_removing = false
+            me.blink_start_p = nil
+            me.blink_stop_count = 0
         end
     end
 end
