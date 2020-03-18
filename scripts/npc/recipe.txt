@@ -593,3 +593,18 @@
 			"01"	"item_gongjizhizhua;item_gongjizhizhua;"
 		}
 	}
+
+
+	// 暂时废弃的
+	"item_recipe_baojunwangpao"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3053"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_baojunwangpao"
+		"ItemRequirements"
+		{
+			"01"	"item_shengzheyiwu;item_wangguan;item_fashichangpao;"
+		}
+	}
