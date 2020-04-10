@@ -50,6 +50,7 @@ function modifier_jump:OnDestroy()
         if GameRules:GetGameModeEntity().game_status == 1 or self:GetParent().transfer_chess == true then
             self:GetParent().transfer_chess = false
             self:GetParent():SetForwardVector(Vector(0,1,0))
+
         end
     end
 end
@@ -86,6 +87,7 @@ function modifier_jump:UpdateHorizontalMotion(me, dt)
             --到终点了
             me:SetAbsOrigin(self.vTargetPosition)
             me.is_moving = false
+            RemoveAbilityAndModifier(me,'jiaoxie')
             me:InterruptMotionControllers(true)
             play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)

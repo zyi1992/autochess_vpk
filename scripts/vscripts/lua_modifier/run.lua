@@ -99,6 +99,7 @@ function modifier_run:UpdateHorizontalMotion(me, dt)
             me:InterruptMotionControllers(true)
             me.blink_start_p = nil
             me.blink_stop_count = 0
+            RemoveAbilityAndModifier(me,'jiaoxie')
             -- play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             -- EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)
             self:Destroy()

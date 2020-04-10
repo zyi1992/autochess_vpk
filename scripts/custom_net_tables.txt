@@ -9,5 +9,6 @@
 		"setting_table",
 		"quest_table",
 		"player_id_table",
+		"game_info",
 	]
 }

@@ -35,9 +35,11 @@ function modifier_tuitui:OnCreated(kv)
         self.leap_traveled = 0
         --self:GetParent():SetForwardVector(self.vDirection)
 
-        self.sound = kv.sound or "DOTA_Item.ForceStaff.Activate"
-        -- 创建开始的特效和音效
-        EmitSoundOn(self.sound, self:GetParent())
+        -- self.sound = kv.sound
+        -- -- 创建开始的特效和音效
+        -- if self.sound then
+        --     EmitSoundOn(self.sound, self:GetParent())
+        -- end
 
         self:GetParent().tuitui_particle = ParticleManager:CreateParticle('particles/items_fx/force_staff.vpcf', PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
 

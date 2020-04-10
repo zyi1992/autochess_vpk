@@ -5,6 +5,33 @@
 {
 	"Version"		"1"
 
+	"item_bag_of_gold"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityCastPoint"	"0.0"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"100"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/gold_bag.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"99999"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"0"
+		"ItemKillable"	"0"
+		"ItemPermanent"	"0"
+		"ItemInitialCharges"	"1"
+		"ItemStackable"	"1"
+		"ItemShopTags"	"consumable"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityName"	"item_bag_of_gold"
+	}
+
 	"item_suozijia"
 	{
 		"BaseClass"	"item_datadriven"
@@ -700,6 +727,39 @@
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnAttackStart"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_bizhong"
+							}
+						}
+						"Chance"	"40"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+			}
+			"modifier_bizhong"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_bizhong"
+					}
+				}
+				"IsHidden"	"1"
 			}
 		}
 	}
@@ -793,7 +853,37 @@
 						"Chance"	"10"
 						"PseudoRandom"	"1"
 					}
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_bizhong"
+							}
+						}
+						"Chance"	"40"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
 				}
+			}
+			"modifier_bizhong"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_bizhong"
+					}
+				}
+				"IsHidden"	"1"
 			}
 			"modifier_item_dapao_crit"
 			{
@@ -869,6 +959,39 @@
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"EffectName"	"particles/econ/events/ti7/golden_treasure_ti7_ambient_twinkle.vpcf"
 				"EffectAttachType"	"follow_origin"
+				"OnAttackStart"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_bizhong"
+							}
+						}
+						"Chance"	"40"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+			}
+			"modifier_bizhong"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_bizhong"
+					}
+				}
+				"IsHidden"	"1"
 			}
 		}
 	}
@@ -1708,48 +1831,6 @@
 		}
 	}
 
-	"item_baojunwangpao"
-	{
-		"BaseClass"	"item_datadriven"
-		"AbilityTextureName"	"custom/baojunwangpao"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"ID"	"1588"
-		"ItemQuality"	"common"
-		"Model"	"models/props_winter/present.vmdl"
-		"ItemCost"	"999"
-		"ItemDroppable"	"1"
-		"ItemSellable"	"0"
-		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
-		"ItemPurchasable"	"1"
-		"ItemAlertable"	"1"
-		"ItemPermanent"	"1"
-		"ItemRequiresCharges"	"0"
-		"ItemStackable"	"0"
-		"ItemRequirements"	{}
-		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_greevil_generic/courier_greevil_eye_generic.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_item_baojunwangpao"
-			{
-				"Passive"	"1"
-				"Properties"	{}
-				"IsHidden"	"1"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"50"
-				}
-				"EffectName"	"particles/econ/courier/courier_greevil_generic/courier_greevil_eye_generic.vpcf"
-				"EffectAttachType"	"follow_head"
-			}
-		}
-	}
-
 	"item_hongzhang_2"
 	{
 		"BaseClass"	"item_datadriven"
@@ -2516,11 +2597,44 @@
 								"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning.vpcf"
 							}
 						}
-						"Chance"	"25"
+						"Chance"	"20"
 						"PseudoRandom"	"1"
 					}
 				}
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnAttackStart"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_bizhong"
+							}
+						}
+						"Chance"	"25"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+			}
+			"modifier_bizhong"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_bizhong"
+					}
+				}
+				"IsHidden"	"1"
 			}
 		}
 	}
@@ -2558,6 +2672,39 @@
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"OnAttackStart"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_bizhong"
+							}
+						}
+						"Chance"	"20"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+			}
+			"modifier_bizhong"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_bizhong"
+					}
+				}
+				"IsHidden"	"1"
 			}
 		}
 	}
@@ -2615,12 +2762,45 @@
 								"particle"	"particles/units/heroes/hero_shadowshaman/shadowshaman_ether_shock.vpcf"
 							}
 						}
-						"Chance"	"25"
+						"Chance"	"20"
 						"PseudoRandom"	"1"
 					}
 				}
 				"EffectName"	"particles/econ/events/ti7/mjollnir_shield_ti7.vpcf"
 				"EffectAttachType"	"follow_origin"
+				"OnAttackStart"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"ApplyModifier"
+							{
+								"Target"	"CASTER"
+								"ModifierName"	"modifier_bizhong"
+							}
+						}
+						"Chance"	"25"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+			}
+			"modifier_bizhong"
+			{
+				"Properties"	{}
+				"States"
+				{
+					"MODIFIER_STATE_CANNOT_MISS"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OnAttackLanded"
+				{
+					"RemoveModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_bizhong"
+					}
+				}
+				"IsHidden"	"1"
 			}
 		}
 	}
@@ -2733,7 +2913,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"cleave_per"	"30"
+				"cleave_per"	"25"
 			}
 			"02"
 			{
@@ -2891,7 +3071,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"1"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"0"
 		"ID"	"1551"
@@ -3048,7 +3228,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"1"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
 		"ID"	"1552"
@@ -3082,12 +3262,9 @@
 	{
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_pupils_gift"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_NONE"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
 		"ID"	"1583"
@@ -3105,14 +3282,19 @@
 		"ItemStackable"	"1"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"OnSpellStart"
+		"precache"
 		{
-			"SpendCharge"	{}
-			"RunScript"
+			"particle"	"particles/econ/items/dazzle/dazzle_ti6_gold/dazzle_ti6_shallow_grave_gold.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_pingguo"
 			{
-				"Target"	"CASTER"
-				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"ItemPingguo"
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"EffectName"	"particles/econ/items/dazzle/dazzle_ti6_gold/dazzle_ti6_shallow_grave_gold.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"TextureName"	"item_pupils_gift"
 			}
 		}
 	}
@@ -3121,12 +3303,9 @@
 	{
 		"BaseClass"	"item_datadriven"
 		"AbilityTextureName"	"item_royal_jelly"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_NONE"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityCastPoint"	"0.1"
-		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
 		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"50"
 		"ID"	"1584"
@@ -3144,14 +3323,19 @@
 		"ItemStackable"	"1"
 		"ItemRequirements"	{}
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"OnSpellStart"
+		"precache"
 		{
-			"SpendCharge"	{}
-			"RunScript"
+			"particle"	"effect/fengwangjiang/2.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_item_fengwangjiang"
 			{
-				"Target"	"CASTER"
-				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"ItemFengwangjiang"
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"TextureName"	"item_royal_jelly"
+				"EffectName"	"effect/fengwangjiang/2.vpcf"
+				"EffectAttachType"	"attach_origin"
 			}
 		}
 	}
@@ -3169,10 +3353,10 @@
 		"AbilityCastRange"	"300"
 		"ItemQuality"	"consumable"
 		"ItemCastOnPickup"	"1"
-		"Model"	"models/props_gameplay/gold_coin001.vmdl"
+		"Model"	"models/props_gameplay/gold_bag.vmdl"
 		// Item Info
 		// -------------------------------------------------------------------------------------------------------------
-		"ItemCost"	"1"
+		"ItemCost"	"0"
 		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
 		"ItemPurchasable"	"0"
 		"ItemKillable"	"0"
@@ -3184,47 +3368,16 @@
 		"ItemRequirements"	{}
 		"OnSpellStart"
 		{
-			"SpendCharge"	{}
 			"RunScript"
 			{
 				"Target"	"CASTER"
 				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 				"Function"	"ItemMoney"
-				"money"	"1"
 			}
 		}
 		// General
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityName"	"item_money"
-	}
-
-	"item_bag_of_gold"
-	{
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityCastPoint"	"0.0"
-		// Stats
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"100"
-		"ItemQuality"	"consumable"
-		"ItemCastOnPickup"	"1"
-		"Model"	"models/props_gameplay/gold_bag.vmdl"
-		// Item Info
-		// -------------------------------------------------------------------------------------------------------------
-		"ItemCost"	"99999"
-		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
-		"ItemPurchasable"	"0"
-		"ItemKillable"	"0"
-		"ItemKillable"	"0"
-		"ItemPermanent"	"0"
-		"ItemInitialCharges"	"1"
-		"ItemStackable"	"1"
-		"ItemShopTags"	"consumable"
-		"ItemRequirements"	{}
-		// General
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityName"	"item_bag_of_gold"
 	}
 
 	"item_guijizhiwu"
@@ -3235,7 +3388,7 @@
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
-		"AbilityCooldown"	"3"
+		"AbilityCooldown"	"1"
 		"AbilityManaCost"	"0"
 		"ID"	"1564"
 		"ItemQuality"	"consumable"
@@ -4244,6 +4397,19 @@
 		}
 	}
 
+	"item_recipe_baojunwangpao"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3053"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_baojunwangpao"
+		"ItemRequirements"
+		{
+			"01"	"item_shengzheyiwu;item_wangguan;item_fashichangpao;"
+		}
+	}
+
 	"item_recipe_shengjian"
 	{
 		"BaseClass"	"item_recipe_arcane_boots"
@@ -4266,7 +4432,7 @@
 		"ItemResult"	"item_kuangzhanfu"
 		"ItemRequirements"
 		{
-			"01"	"item_jianrenqiu;item_emodaofeng"
+			"01"	"item_jianrenqiu;item_kuojian;item_miyinchui"
 		}
 	}
 
