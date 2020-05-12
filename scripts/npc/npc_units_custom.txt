@@ -1174,7 +1174,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"650"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -1294,7 +1294,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1500"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -1392,7 +1392,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"3750"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -3549,7 +3549,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"5"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -4429,7 +4429,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"5"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -14188,9 +14188,9 @@
 		// Ability 1.
 		"Ability1"	"is_aqir"
 		// Ability 2.
-		"Ability2"	"is_assassin"
+		"Ability2"	"is_undead"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"is_assassin"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -14304,9 +14304,9 @@
 		// Ability 1.
 		"Ability1"	"is_aqir"
 		// Ability 2.
-		"Ability2"	"is_assassin"
+		"Ability2"	"is_undead"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"is_assassin"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -14420,9 +14420,9 @@
 		// Ability 1.
 		"Ability1"	"is_aqir"
 		// Ability 2.
-		"Ability2"	"is_assassin"
+		"Ability2"	"is_undead"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"is_assassin"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -16233,7 +16233,7 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/shadow_fiend/shadow_fiend_arcana.vmdl"
+		"Model"	"models/heroes/shadow_fiend/shadow_fiend.vmdl"
 		"ModelScale"	"0.9"
 		// Abilities
 		// ----------------------------------------------------------------
@@ -18572,7 +18572,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"is_dragon"
 		"Ability2"	"run_attack"
-		"Ability3"	""
+		"Ability3"	"spell_attack"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -18592,9 +18592,9 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"500"
+		"StatusHealth"	"300"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
+		"StatusMana"	"100"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -18626,7 +18626,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"is_dragon"
 		"Ability2"	"run_attack"
-		"Ability3"	""
+		"Ability3"	"spell_attack"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -18646,9 +18646,9 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"750"
+		"StatusHealth"	"500"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
+		"StatusMana"	"100"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -18680,7 +18680,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Ability1"	"is_dragon"
 		"Ability2"	"run_attack"
-		"Ability3"	""
+		"Ability3"	"spell_attack"
 		"Ability4"	""
 		"Ability5"	""
 		"Ability6"	""
@@ -18700,9 +18700,9 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"1000"
+		"StatusHealth"	"700"
 		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
+		"StatusMana"	"100"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
@@ -19000,7 +19000,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"5"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -19354,7 +19354,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"5"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -32839,7 +32839,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -32890,7 +32890,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -32948,7 +32948,7 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"300"
+		"AttackDamageMin"	"350"
 		"AttackDamageMax"	"400"
 		"AttackRate"	"0.45"
 		"AttackRange"	"800"
@@ -33001,7 +33001,7 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"300"
+		"AttackDamageMin"	"350"
 		"AttackDamageMax"	"400"
 		"AttackRate"	"0.45"
 		"AttackRange"	"800"
