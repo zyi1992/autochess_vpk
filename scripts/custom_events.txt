@@ -64,10 +64,10 @@
 	{
 		"player_id"	"short"
 		"text"		"string"
-		"win"		"string"
-		"draw"		"string"
-		"lose"		"string"
 		"target"	"string"
+		"item"		"string"
+		"item_level"	"short"
+		"ban"		"string"
 	}
 	"sync_hp"
 	{

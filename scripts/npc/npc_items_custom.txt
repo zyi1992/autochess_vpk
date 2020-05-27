@@ -138,6 +138,7 @@
 			}
 			"modifier_item_qiangxi_debuff"
 			{
+				"IsDebuff"	"1"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-10"
@@ -2240,6 +2241,7 @@
 					}
 				}
 				"ThinkInterval"	"1"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
 			"modifier_item_huiyao_debuff"
 			{
@@ -2581,26 +2583,6 @@
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
 				}
 				"IsHidden"	"1"
-				"OnAttackLanded"
-				{
-					"Random"
-					{
-						"OnSuccess"
-						{
-							"RunScript"
-							{
-								"Target"	"TARGET"
-								"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-								"Function"	"DianChui"
-								"targets"	"3"
-								"damage"	"100"
-								"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning.vpcf"
-							}
-						}
-						"Chance"	"20"
-						"PseudoRandom"	"1"
-					}
-				}
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"OnAttackStart"
 				{
@@ -2614,7 +2596,7 @@
 								"ModifierName"	"modifier_bizhong"
 							}
 						}
-						"Chance"	"25"
+						"Chance"	"20"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -2632,6 +2614,15 @@
 					{
 						"Target"	"CASTER"
 						"ModifierName"	"modifier_bizhong"
+					}
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"DianChui"
+						"targets"	"3"
+						"damage"	"100"
+						"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning.vpcf"
 					}
 				}
 				"IsHidden"	"1"
@@ -2746,27 +2737,7 @@
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
-				"OnAttackLanded"
-				{
-					"Random"
-					{
-						"OnSuccess"
-						{
-							"RunScript"
-							{
-								"Target"	"TARGET"
-								"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-								"Function"	"DianChui"
-								"targets"	"5"
-								"damage"	"200"
-								"particle"	"particles/units/heroes/hero_shadowshaman/shadowshaman_ether_shock.vpcf"
-							}
-						}
-						"Chance"	"20"
-						"PseudoRandom"	"1"
-					}
-				}
-				"EffectName"	"particles/econ/events/ti7/mjollnir_shield_ti7.vpcf"
+				"EffectName"	"particles/items2_fx/mjollnir_shield.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"OnAttackStart"
 				{
@@ -2780,7 +2751,27 @@
 								"ModifierName"	"modifier_bizhong"
 							}
 						}
-						"Chance"	"25"
+						"Chance"	"20"
+						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
+					}
+				}
+				"OnAttacked"
+				{
+					"Random"
+					{
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"Target"	"TARGET"
+								"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+								"Function"	"DianChui"
+								"targets"	"5"
+								"damage"	"150"
+								"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning.vpcf"
+							}
+						}
+						"Chance"	"20"
 						"PseudoRandom"	"DOTA_PSEUDO_RANDOM_PHANTOMASSASSIN_CRIT"
 					}
 				}
@@ -2798,6 +2789,15 @@
 					{
 						"Target"	"CASTER"
 						"ModifierName"	"modifier_bizhong"
+					}
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"DianChui"
+						"targets"	"5"
+						"damage"	"150"
+						"particle"	"particles/units/heroes/hero_zuus/zuus_arc_lightning.vpcf"
 					}
 				}
 				"IsHidden"	"1"
@@ -4953,6 +4953,18 @@
 		"ItemRequirements"
 		{
 			"01"	"item_gongjizhizhua;item_gongjizhizhua;"
+		}
+	}
+	"item_recipe_zhenfenbaoshi"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3054"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_zhenfenbaoshi"
+		"ItemRequirements"
+		{
+			"01"	"item_kuojian;item_kuojian"
 		}
 	}
 }

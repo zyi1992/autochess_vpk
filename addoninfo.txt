@@ -30,7 +30,7 @@
     {
         "01"
         {
-            "Key"       "1"
+            "Key"       "`"
             "Command"   "+BackHome"
             "Name"      "BackHome"
         }
@@ -42,7 +42,7 @@
         }
         "03"
         {
-            "Key"       "2"
+            "Key"       "="
             "Command"   "+ToggleStat"
             "Name"      "ToggleStat"
         }

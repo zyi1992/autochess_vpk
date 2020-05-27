@@ -15,32 +15,51 @@ end
 --------------------------------------------------------------------------------
 -- Ability Start
 function shadow_fiend_requiem_of_souls_lua:OnSpellStart()
-	-- get references
-	local soul_per_line = self:GetSpecialValueFor("requiem_soul_conversion")
 
 	-- get number of souls
 	local lines = 0
-	local modifier = self:GetCaster():FindModifierByNameAndCaster( "modifier_nevermore_necromastery", self:GetCaster() )
-	if modifier~=nil then
-		lines = math.floor(modifier:GetStackCount() / soul_per_line) 
+	-- local modifier = self:GetCaster():FindModifierByNameAndCaster( "modifier_nevermore_necromastery", self:GetCaster() )
+	-- if modifier~=nil then
+	-- 	lines = math.floor(modifier:GetStackCount() / soul_per_line) 
+	-- end
+
+	--统计有多少个恶魔
+	local demon_table = {}
+	local demon_count = 0
+	local u = self:GetCaster()
+	for _,unit in pairs (GameRules:GetGameModeEntity().to_be_destory_list[u.at_team_id or u.team_id]) do
+		if unit ~= nil and unit:IsNull() == false and unit:IsAlive() == true and unit.is_removing ~= true and unit.team_id == u.team_id and unit:HasAbility('is_demon_buff') then
+			-- local base_name = GetUnitBaseName(unit)
+			-- if FindValueInTable(demon_table,base_name) ~= true then
+			-- 	table.insert(demon_table,base_name)
+			-- end
+			demon_count = demon_count + 1
+		end
+	end
+
+	local ability_level = self:GetLevel()
+	local base_soul_count = self:GetSpecialValueFor("base_soul_count")
+	lines = base_soul_count or 0
+	if demon_count > 0 then
+		lines = lines + demon_count
 	end
 
 	-- explode
 	self:Explode( lines )
 
 	-- if has scepter, add modifier to implode
-	if self:GetCaster():HasScepter() then
-		local explodeDuration = self:GetSpecialValueFor("requiem_radius") / self:GetSpecialValueFor("requiem_line_speed")
-		self:GetCaster():AddNewModifier(
-			self:GetCaster(),
-			self,
-			"modifier_shadow_fiend_requiem_of_souls_lua_scepter",
-			{
-				lineDuration = explodeDuration,
-				lineNumber = lines,
-			}
-		)
-	end
+	-- if self:GetCaster():HasScepter() then
+	-- 	local explodeDuration = self:GetSpecialValueFor("requiem_radius") / self:GetSpecialValueFor("requiem_line_speed")
+	-- 	self:GetCaster():AddNewModifier(
+	-- 		self:GetCaster(),
+	-- 		self,
+	-- 		"modifier_shadow_fiend_requiem_of_souls_lua_scepter",
+	-- 		{
+	-- 			lineDuration = explodeDuration,
+	-- 			lineNumber = lines,
+	-- 		}
+	-- 	)
+	-- end
 end
 
 --------------------------------------------------------------------------------
@@ -96,18 +115,18 @@ function shadow_fiend_requiem_of_souls_lua:OnOwnerDied()
 	-- do nothing if not learned
 	if self:GetLevel()<1 then return end
 
-	-- get references
-	local soul_per_line = self:GetSpecialValueFor("requiem_soul_conversion")
+	-- -- get references
+	-- local soul_per_line = self:GetSpecialValueFor("requiem_soul_conversion")
 
-	-- get number of souls
-	local lines = 0
-	local modifier = self:GetCaster():FindModifierByNameAndCaster( "modifier_nevermore_necromastery", self:GetCaster() )
-	if modifier~=nil then
-		lines = math.floor(modifier:GetStackCount() / soul_per_line) 
-	end
+	-- -- get number of souls
+	-- local lines = 0
+	-- local modifier = self:GetCaster():FindModifierByNameAndCaster( "modifier_nevermore_necromastery", self:GetCaster() )
+	-- if modifier~=nil then
+	-- 	lines = math.floor(modifier:GetStackCount() / soul_per_line) 
+	-- end
 
-	-- explode
-	self:Explode( lines/2 )
+	-- -- explode
+	-- self:Explode( lines/2 )
 end
 
 --------------------------------------------------------------------------------
@@ -121,6 +140,9 @@ function shadow_fiend_requiem_of_souls_lua:Explode( lines )
 	-- local particle_line = "particles/units/heroes/hero_shadow_demon/shadow_demon_shadow_poison_projectile.vpcf"
 	-- local particle_line = "effect/sf/proj.vpcf"
 	local particle_lines = "particles/units/heroes/hero_nevermore/nevermore_requiemofsouls_line.vpcf"
+	if self:GetLevel() == 3 then
+		particle_lines = "effect/sf/1ofsouls_line.vpcf"
+	end
 	local line_length = self:GetSpecialValueFor("requiem_radius")
 	local width_start = self:GetSpecialValueFor("requiem_line_width_start")
 	local width_end = self:GetSpecialValueFor("requiem_line_width_end")
