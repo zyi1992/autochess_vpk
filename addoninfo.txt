@@ -1,62 +1,95 @@
-"AddonInfo"
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
-	"maps"			"ranked_1x8 ranked_2x4 casual_1x8 casual_2x4 casual_1x8_ob casual_2x4_ob"
-	"IsPlayable"	"1"
-    "ranked_1x8"
-    {
-        "MaxPlayers"                    "8"
-    }
-    "ranked_2x4"
-    {
-        "MaxPlayers"                    "8"
-    }
-    "casual_1x8"
-    {
-        "MaxPlayers"                    "8"
-    }
-    "casual_2x4"
-    {
-        "MaxPlayers"                    "8"
-    }
-    "casual_1x8_ob"
-    {
-        "MaxPlayers"                    "12"
-    }
-    "casual_2x4_ob"
-    {
-        "MaxPlayers"                    "12"
-    }
-	"Default_Keys"
-    {
-        "01"
-        {
-            "Key"       "`"
-            "Command"   "+BackHome"
-            "Name"      "BackHome"
-        }
-        "02"
-        {
-            "Key"       "TAB"
-            "Command"   "+TabHome"
-            "Name"      "TabHome"
-        }
-        "03"
-        {
-            "Key"       "="
-            "Command"   "+ToggleStat"
-            "Name"      "ToggleStat"
-        }
-        "11"
-        {
-            "Key"       "SPACE"
-            "Command"   "+TogglePanel"
-            "Name"      "TogglePanel"
-        }
-        "12"
-        {
-            "Key"       "F9"
-            "Command"   "+ToggleF9"
-            "Name"      "ToggleF9"
-        }
-    }
+	maps = 
+	[
+		"ranked_1x8",
+		"ranked_2x4",
+		"casual_1x8",
+		"casual_2x4",
+		"casual_1x8_ob",
+		"casual_2x4_ob",
+	]
+	IsPlayable = 1
+	Default_Keys = 
+	[
+		{
+			Key = "`"
+			Command = "+BackHome"
+			Name = "BackHome"
+		},
+		{
+			Key = "TAB"
+			Command = "+TabHome"
+			Name = "TabHome"
+		},
+		{
+			Key = "="
+			Command = "+ToggleStat"
+			Name = "ToggleStat"
+		},
+		{
+			Key = "F3"
+			Command = "+ToggleStat"
+			Name = "ToggleStat"
+		},
+		{
+			Key = "F2"
+			Command = "+BackHome"
+			Name = "BackHome"
+		},
+		{
+			Key = "SPACE"
+			Command = "+TogglePanel"
+			Name = "TogglePanel"
+		},
+		{
+			Key = "F9"
+			Command = "+ToggleF9"
+			Name = "ToggleF9"
+		},
+	]
+	map_options = 
+	[
+		{
+			MaxPlayers = 12
+			map = "casual_2x4_ob"
+		},
+		{
+			MaxPlayers = 12
+			map = "casual_1x8_ob"
+		},
+		{
+			MaxPlayers = 8
+			map = "casual_2x4"
+		},
+		{
+			MaxPlayers = 8
+			map = "casual_1x8"
+		},
+		{
+			MaxPlayers = 8
+			map = "ranked_2x4"
+		},
+		{
+			MaxPlayers = 8
+			map = "ranked_1x8"
+		},
+	]
+	HideInTools = false
+	IsTemplate = false
+	CheckAFKPlayers = false
+	DefaultMap = "ranked_1x8"
+	DisableIK = false
+	EnablePickRules = false
+	EventGame = false
+	hero_picker = 
+	{
+	}
+	HeroGuidesSupported = true
+	ForceDefaultGuide = true
+	MinimalPrecache = true
+	MinPlayers = 1
+	MaxPlayers = 10
+	PenaltiesEnabled = false
+	TeamCount = -1
 }

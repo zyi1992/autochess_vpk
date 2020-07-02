@@ -35,7 +35,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -131,6 +131,7 @@
 		"SoundSet"	"Hero_Tusk"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tusk.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tusk"
 	}
 
 	// 1
@@ -163,7 +164,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -263,6 +264,7 @@
 		"SoundSet"	"Hero_Tusk"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tusk.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tusk"
 	}
 
 	// 1
@@ -295,7 +297,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -318,7 +320,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -395,9 +397,10 @@
 		"SoundSet"	"Hero_Tusk"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tusk.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tusk"
 	}
 
-	// 2
+	// 1
 	"chess_cm"
 	{
 		// General
@@ -427,9 +430,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"1"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -519,9 +522,10 @@
 		"SoundSet"	"hero_Crystal"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_crystalmaiden"
 	}
 
-	// 2
+	// 1
 	"chess_cm1"
 	{
 		// General
@@ -551,9 +555,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"1"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -643,9 +647,10 @@
 		"SoundSet"	"hero_Crystal"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_crystalmaiden"
 	}
 
-	// 2
+	// 1
 	"chess_cm11"
 	{
 		// General
@@ -675,9 +680,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"1"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -767,6 +772,7 @@
 		"SoundSet"	"hero_Crystal"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_crystalmaiden"
 	}
 
 	// 1
@@ -801,7 +807,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -883,6 +889,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tusk"
+		"particle_folder"	"particles/units/heroes/hero_axe"
 	}
 
 	// 1
@@ -917,7 +924,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1003,6 +1010,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
+		"particle_folder"	"particles/units/heroes/hero_axe"
 	}
 
 	// 1
@@ -1037,7 +1045,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1060,7 +1068,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -1123,6 +1131,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
+		"particle_folder"	"particles/units/heroes/hero_axe"
 	}
 
 	// 1
@@ -1157,7 +1166,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1174,7 +1183,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"500"
+		"StatusHealth"	"550"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -1243,6 +1252,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tiny"
+		"particle_folder"	"particles/units/heroes/hero_tiny"
 	}
 
 	// 1
@@ -1277,7 +1287,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1294,7 +1304,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1250"
+		"StatusHealth"	"1350"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -1341,6 +1351,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tiny"
+		"particle_folder"	"particles/units/heroes/hero_tiny"
 	}
 
 	// 1
@@ -1375,7 +1386,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1392,13 +1403,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3125"
+		"StatusHealth"	"3400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -1439,6 +1450,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tiny"
+		"particle_folder"	"particles/units/heroes/hero_tiny"
 	}
 
 	// 1
@@ -1471,7 +1483,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1559,6 +1571,7 @@
 		"SoundSet"	"Hero_Enchantress"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enchantress.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_enchantress"
 	}
 
 	// 1
@@ -1591,7 +1604,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1679,6 +1692,7 @@
 		"SoundSet"	"Hero_Enchantress"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enchantress.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_enchantress"
 	}
 
 	// 1
@@ -1711,7 +1725,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1734,7 +1748,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -1799,6 +1813,7 @@
 		"SoundSet"	"Hero_Enchantress"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enchantress.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_enchantress"
 	}
 
 	// 2
@@ -1831,7 +1846,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -1921,6 +1936,7 @@
 		"SoundSet"	"Hero_OgreMagi"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
 	}
 
 	// 2
@@ -1953,7 +1969,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -2043,6 +2059,7 @@
 		"SoundSet"	"Hero_OgreMagi"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
 	}
 
 	// 2
@@ -2075,7 +2092,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -2098,7 +2115,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -2166,6 +2183,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
 		"Skin"	"1"
+		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
 	}
 
 	// 1
@@ -2198,9 +2216,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"10"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -2292,6 +2310,7 @@
 		"SoundSet"	"Hero_Antimage"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_antimage"
 	}
 
 	// 1
@@ -2324,7 +2343,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -2418,6 +2437,7 @@
 		"SoundSet"	"Hero_Antimage"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_antimage"
 	}
 
 	// 1
@@ -2450,9 +2470,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -2544,6 +2564,7 @@
 		"SoundSet"	"Hero_Antimage"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_antimage"
 	}
 
 	// 1
@@ -2576,7 +2597,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -2593,7 +2614,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"700"
+		"StatusHealth"	"750"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
@@ -2658,6 +2679,7 @@
 		"SoundSet"	"Hero_Rattletrap"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_rattletrap"
 	}
 
 	// 1
@@ -2690,7 +2712,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"7"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -2707,7 +2729,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1500"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"10"
 		// Base mana.
@@ -2772,6 +2794,7 @@
 		"SoundSet"	"Hero_Rattletrap"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_rattletrap"
 	}
 
 	// 1
@@ -2804,7 +2827,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"9"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -2821,13 +2844,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2800"
+		"StatusHealth"	"3000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"20"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -2886,6 +2909,7 @@
 		"SoundSet"	"Hero_Rattletrap"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_rattletrap"
 	}
 
 	// 1
@@ -3181,7 +3205,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -3278,9 +3302,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -3370,6 +3394,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
 	}
 
 	// 1
@@ -3402,9 +3427,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -3494,6 +3519,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
 	}
 
 	// 1
@@ -3526,9 +3552,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -3549,7 +3575,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -3626,6 +3652,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
 	}
 
 	// 1
@@ -3658,9 +3685,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -3754,6 +3781,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shadowshaman.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
 	}
 
 	// 1
@@ -3786,7 +3814,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -3878,6 +3906,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bounty_hunter.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_bounty_hunter"
 	}
 
 	// 1
@@ -3910,7 +3939,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -4002,6 +4031,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bounty_hunter.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_bounty_hunter"
 	}
 
 	// 1
@@ -4034,7 +4064,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -4057,7 +4087,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -4130,6 +4160,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bounty_hunter.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_bounty_hunter"
 	}
 
 	// 1
@@ -4162,9 +4193,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -4250,6 +4281,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_witchdoctor.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_witchdoctor"
 	}
 
 	// 1
@@ -4282,9 +4314,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -4374,6 +4406,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_witchdoctor.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_witchdoctor"
 	}
 
 	// 1
@@ -4406,9 +4439,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"0"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -4429,7 +4462,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -4498,9 +4531,10 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_witchdoctor.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_witchdoctor"
 	}
 
-	// 1
+	// 2
 	"chess_bat"
 	{
 		// General
@@ -4530,7 +4564,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -4614,9 +4648,10 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_batrider.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_batrider"
 	}
 
-	// 1
+	// 2
 	"chess_bat1"
 	{
 		// General
@@ -4646,7 +4681,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -4730,9 +4765,10 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_batrider.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_batrider"
 	}
 
-	// 1
+	// 2
 	"chess_bat11"
 	{
 		// General
@@ -4762,7 +4798,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -4785,7 +4821,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -4846,6 +4882,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_batrider.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_batrider"
 	}
 
 	// 1
@@ -4878,7 +4915,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -4970,6 +5007,7 @@
 		"SoundSet"	"Hero_Tinker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tinker"
 	}
 
 	// 1
@@ -5002,7 +5040,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -5094,6 +5132,7 @@
 		"SoundSet"	"Hero_Tinker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tinker"
 	}
 
 	// 1
@@ -5126,7 +5165,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -5149,7 +5188,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -5209,10 +5248,6 @@
 				{
 					"ItemDef"	"13777"
 				}
-				"Wearable8"
-				{
-					"ItemDef"	"515"
-				}
 			}
 		}
 		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
@@ -5226,6 +5261,7 @@
 		"SoundSet"	"Hero_Tinker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tinker"
 	}
 
 	// 2
@@ -5258,9 +5294,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -5350,6 +5386,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_furion.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_furion"
 	}
 
 	// 2
@@ -5382,9 +5419,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -5474,6 +5511,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_furion.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_furion"
 	}
 
 	// 2
@@ -5506,9 +5544,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -5529,7 +5567,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -5602,6 +5640,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_furion.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_furion"
 	}
 
 	// 2
@@ -5634,7 +5673,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -5720,6 +5759,7 @@
 		"SoundSet"	"Hero_Beastmaster"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_beastmaster"
 	}
 
 	// 2
@@ -5752,7 +5792,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -5838,6 +5878,7 @@
 		"SoundSet"	"Hero_Beastmaster"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_beastmaster"
 	}
 
 	// 2
@@ -5870,7 +5911,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -5893,7 +5934,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -5956,6 +5997,7 @@
 		"SoundSet"	"Hero_Beastmaster"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_beastmaster"
 	}
 
 	// 2
@@ -5988,7 +6030,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -6074,6 +6116,7 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_juggernaut"
 	}
 
 	// 2
@@ -6106,7 +6149,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -6192,6 +6235,7 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_juggernaut"
 	}
 
 	// 2
@@ -6224,7 +6268,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -6247,7 +6291,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -6310,9 +6354,10 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_juggernaut"
 	}
 
-	// 2
+	// 3
 	"chess_lc"
 	{
 		// General
@@ -6436,9 +6481,10 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_legion_commander"
 	}
 
-	// 2
+	// 3
 	"chess_lc1"
 	{
 		// General
@@ -6562,9 +6608,10 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_legion_commander"
 	}
 
-	// 2
+	// 3
 	"chess_lc11"
 	{
 		// General
@@ -6688,6 +6735,7 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_legion_commander"
 	}
 
 	// 3
@@ -6991,7 +7039,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -7212,7 +7260,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -7298,6 +7346,7 @@
 		"SoundSet"	"Hero_Lycan"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lycan"
 	}
 
 	// 3
@@ -7330,7 +7379,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -7424,6 +7473,7 @@
 		"SoundSet"	"Hero_Lycan"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lycan"
 	}
 
 	// 3
@@ -7456,7 +7506,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -7479,7 +7529,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -7554,6 +7604,7 @@
 		"SoundSet"	"Hero_Lycan"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lycan"
 	}
 
 	// 2
@@ -7680,6 +7731,7 @@
 		"SoundSet"	"Hero_Shredder"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shredder.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_shredder"
 	}
 
 	// 2
@@ -7712,7 +7764,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"7"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -7806,6 +7858,7 @@
 		"SoundSet"	"Hero_Shredder"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shredder.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_shredder"
 	}
 
 	// 2
@@ -7838,7 +7891,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"9"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -7861,7 +7914,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -7936,6 +7989,7 @@
 		"SoundSet"	"Hero_Shredder"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shredder.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_shredder"
 	}
 
 	// 3
@@ -7968,7 +8022,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8056,6 +8110,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_phantom_assassin.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_phantom_assassin"
 	}
 
 	// 3
@@ -8066,7 +8121,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/phantom_assassin/phantom_assassin.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.77"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -8088,7 +8143,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8145,23 +8200,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8586"
+					"ItemDef"	"13480"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8587"
+					"ItemDef"	"13479"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8588"
+					"ItemDef"	"13477"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8589"
+					"ItemDef"	"13476"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8590"
+					"ItemDef"	"13478"
 				}
 			}
 		}
@@ -8176,6 +8231,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_phantom_assassin.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_phantom_assassin"
 	}
 
 	// 3
@@ -8208,7 +8264,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8296,6 +8352,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_phantom_assassin.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_phantom_assassin"
 	}
 
 	// 2
@@ -8583,7 +8640,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -8676,9 +8733,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -8764,6 +8821,7 @@
 		"SoundSet"	"Hero_Oracle"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_oracle"
 	}
 
 	// 2
@@ -8796,9 +8854,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -8884,6 +8942,7 @@
 		"SoundSet"	"Hero_Oracle"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_oracle"
 	}
 
 	// 2
@@ -8916,9 +8975,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -8939,7 +8998,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -9004,6 +9063,7 @@
 		"SoundSet"	"Hero_Oracle"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_oracle"
 	}
 
 	// 3
@@ -9036,9 +9096,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -9136,6 +9196,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_pudge"
 	}
 
 	// 3
@@ -9168,9 +9229,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -9268,6 +9329,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_pudge"
 	}
 
 	// 3
@@ -9300,9 +9362,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -9323,7 +9385,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -9404,9 +9466,10 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_pudge"
 	}
 
-	// 2
+	// 3
 	"chess_slardar"
 	{
 		// General
@@ -9524,9 +9587,10 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slardar.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_slardar"
 	}
 
-	// 2
+	// 3
 	"chess_slardar1"
 	{
 		// General
@@ -9644,9 +9708,10 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slardar.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_slardar"
 	}
 
-	// 2
+	// 3
 	"chess_slardar11"
 	{
 		// General
@@ -9699,7 +9764,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -9764,6 +9829,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slardar.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_slardar"
 	}
 
 	// 2
@@ -9796,7 +9862,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -9884,6 +9950,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
 	}
 
 	// 2
@@ -9916,7 +9983,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -10004,6 +10071,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
 	}
 
 	// 2
@@ -10036,7 +10104,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -10059,7 +10127,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -10124,6 +10192,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
 	}
 
 	// 2
@@ -10156,7 +10225,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -10244,6 +10313,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
 	}
 
 	// 2
@@ -10276,7 +10346,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -10768,7 +10838,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -10860,6 +10930,7 @@
 		"SoundSet"	"Hero_Morphling"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_morphling"
 	}
 
 	// 2
@@ -10892,7 +10963,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -10984,6 +11055,7 @@
 		"SoundSet"	"Hero_Morphling"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_morphling"
 	}
 
 	// 2
@@ -11016,7 +11088,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11039,7 +11111,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -11116,6 +11188,7 @@
 		"SoundSet"	"Hero_Morphling"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_morphling"
 	}
 
 	// 3
@@ -11148,7 +11221,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11165,7 +11238,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"700"
+		"StatusHealth"	"750"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -11232,6 +11305,7 @@
 		"SoundSet"	"Hero_Treant"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_treant"
 	}
 
 	// 3
@@ -11264,7 +11338,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11281,7 +11355,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1500"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -11348,6 +11422,7 @@
 		"SoundSet"	"Hero_Treant"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_treant"
 	}
 
 	// 3
@@ -11380,7 +11455,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11397,13 +11472,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2700"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -11464,6 +11539,7 @@
 		"SoundSet"	"Hero_Treant"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_treant"
 	}
 
 	// 1
@@ -11496,7 +11572,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11592,6 +11668,7 @@
 		"SoundSet"	"Hero_DrowRanger"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_drow"
 	}
 
 	// 1
@@ -11624,7 +11701,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11720,6 +11797,7 @@
 		"SoundSet"	"Hero_DrowRanger"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_drow"
 	}
 
 	// 1
@@ -11752,7 +11830,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -11848,6 +11926,7 @@
 		"SoundSet"	"Hero_DrowRanger"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_drow"
 	}
 
 	// 4
@@ -11880,9 +11959,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -11968,6 +12047,7 @@
 		"SoundSet"	"Hero_KeeperOfTheLight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_keeper_of_the_light"
 	}
 
 	// 4
@@ -12000,9 +12080,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -12088,6 +12168,7 @@
 		"SoundSet"	"Hero_KeeperOfTheLight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_keeper_of_the_light"
 	}
 
 	// 4
@@ -12120,9 +12201,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -12143,7 +12224,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -12181,7 +12262,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13773"
+					"ItemDef"	"9198"
 				}
 				"Wearable3"
 				{
@@ -12208,6 +12289,7 @@
 		"SoundSet"	"Hero_KeeperOfTheLight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_keeper_of_the_light"
 	}
 
 	// 3
@@ -12332,6 +12414,7 @@
 		"SoundSet"	"Hero_Razor"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_razor.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_razor,particles/units/heroes/hero_razor_reduced_flash"
 	}
 
 	// 3
@@ -12456,6 +12539,7 @@
 		"SoundSet"	"Hero_Razor"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_razor.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_razor,particles/units/heroes/hero_razor_reduced_flash"
 	}
 
 	// 3
@@ -12511,7 +12595,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -12580,6 +12664,7 @@
 		"SoundSet"	"Hero_Razor"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_razor.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_razor,particles/units/heroes/hero_razor_reduced_flash"
 	}
 
 	// 3
@@ -12612,7 +12697,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -12629,7 +12714,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -12704,6 +12789,7 @@
 		"SoundSet"	"Hero_Omniknight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_omniknight"
 	}
 
 	// 3
@@ -12736,7 +12822,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -12753,7 +12839,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -12828,6 +12914,7 @@
 		"SoundSet"	"Hero_Omniknight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_omniknight"
 	}
 
 	// 3
@@ -12860,7 +12947,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -12877,13 +12964,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -12952,9 +13039,10 @@
 		"SoundSet"	"Hero_Omniknight"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_omniknight"
 	}
 
-	// 3
+	// 4
 	"chess_wr"
 	{
 		// General
@@ -12986,7 +13074,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -13072,9 +13160,10 @@
 		"SoundSet"	"Hero_Windrunner"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_windrunner"
 	}
 
-	// 3
+	// 4
 	"chess_wr1"
 	{
 		// General
@@ -13106,7 +13195,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -13192,9 +13281,10 @@
 		"SoundSet"	"Hero_Windrunner"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_windrunner"
 	}
 
-	// 3
+	// 4
 	"chess_wr11"
 	{
 		// General
@@ -13226,7 +13316,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"5"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -13247,7 +13337,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -13312,6 +13402,7 @@
 		"SoundSet"	"Hero_Windrunner"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_windrunner"
 	}
 
 	// 2
@@ -13440,6 +13531,7 @@
 		"SoundSet"	"Hero_Mirana"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mirana.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_mirana"
 	}
 
 	// 2
@@ -13568,6 +13660,7 @@
 		"SoundSet"	"Hero_Mirana"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mirana.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_mirana"
 	}
 
 	// 2
@@ -13623,7 +13716,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -13696,6 +13789,7 @@
 		"SoundSet"	"Hero_Mirana"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mirana.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_mirana"
 	}
 
 	// 3
@@ -13848,7 +13942,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -13936,6 +14030,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sandking"
 	}
 
 	// 3
@@ -13968,7 +14063,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -14056,6 +14151,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sandking"
 	}
 
 	// 3
@@ -14088,7 +14184,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -14111,7 +14207,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -14176,6 +14272,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sandking"
 	}
 
 	// 4
@@ -14292,6 +14389,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
 	}
 
 	// 4
@@ -14408,6 +14506,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
 	}
 
 	// 4
@@ -14463,7 +14562,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -14524,6 +14623,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
 	}
 
 	// 4
@@ -14556,7 +14656,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -14573,7 +14673,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"800"
+		"StatusHealth"	"900"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14644,6 +14744,7 @@
 		"SoundSet"	"Hero_Broodmother"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_broodmother"
 	}
 
 	// 4
@@ -14676,7 +14777,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -14693,7 +14794,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1600"
+		"StatusHealth"	"1800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14764,6 +14865,7 @@
 		"SoundSet"	"Hero_Broodmother"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_broodmother"
 	}
 
 	// 4
@@ -14796,7 +14898,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -14813,13 +14915,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3200"
+		"StatusHealth"	"3600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -14884,6 +14986,7 @@
 		"SoundSet"	"Hero_Broodmother"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_broodmother"
 	}
 
 	// 2
@@ -14933,7 +15036,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -15008,6 +15111,7 @@
 		"SoundSet"	"Hero_Abaddon"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_abaddon.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_abaddon"
 	}
 
 	// 2
@@ -15057,7 +15161,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -15132,6 +15236,7 @@
 		"SoundSet"	"Hero_Abaddon"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_abaddon.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_abaddon"
 	}
 
 	// 2
@@ -15181,13 +15286,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -15256,6 +15361,7 @@
 		"SoundSet"	"Hero_Abaddon"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_abaddon.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_abaddon"
 	}
 
 	// 2
@@ -15288,7 +15394,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -15380,6 +15486,7 @@
 		"SoundSet"	"Hero_Brewmaster"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_brewmaster"
 	}
 
 	// 2
@@ -15412,7 +15519,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -15504,6 +15611,7 @@
 		"SoundSet"	"Hero_Brewmaster"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_brewmaster"
 	}
 
 	// 2
@@ -15536,7 +15644,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -15559,7 +15667,132 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"240"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"9179"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"9181"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"9182"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"6459"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"4894"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"7495"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"HasInventory"	"1"
+		"Level"	"6"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Brewmaster"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_brewmaster"
+	}
+
+	// 15
+	"chess_brew_ssr"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/brewmaster/brewmaster.vmdl"
+		"ModelScale"	"0.8"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_monk"
+		// Ability 3.
+		"Ability3"	"e111"
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"4"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3200"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -15609,11 +15842,11 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"4894"
+					"ItemDef"	"9178"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7495"
+					"ItemDef"	"632"
 				}
 			}
 		}
@@ -15621,16 +15854,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.35"
 		"HasInventory"	"1"
-		"Level"	"6"
+		"Level"	"15"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Brewmaster"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_brewmaster"
 	}
 
-	// 2
+	// 3
 	"chess_storm"
 	{
 		// General
@@ -15660,9 +15894,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -15677,7 +15911,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"600"
+		"StatusHealth"	"650"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -15707,8 +15941,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"45"
-		"AttackDamageMax"	"55"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"70"
 		"AttackRate"	"1.4"
 		"AttackRange"	"400"
 		"Creature"
@@ -15733,16 +15967,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"2"
+		"Level"	"3"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_StormSpirit"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_stormspirit"
 	}
 
-	// 2
+	// 3
 	"chess_storm1"
 	{
 		// General
@@ -15750,7 +15985,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/storm_spirit/storm_spirit.vmdl"
-		"ModelScale"	"0.95"
+		"ModelScale"	"0.98"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -15772,9 +16007,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -15789,7 +16024,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1200"
+		"StatusHealth"	"1300"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -15819,8 +16054,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"90"
-		"AttackDamageMax"	"110"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"140"
 		"AttackRate"	"1.4"
 		"AttackRange"	"400"
 		"Creature"
@@ -15845,16 +16080,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_StormSpirit"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_stormspirit"
 	}
 
-	// 2
+	// 3
 	"chess_storm11"
 	{
 		// General
@@ -15862,7 +16098,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/storm_spirit/storm_spirit.vmdl"
-		"ModelScale"	"1.15"
+		"ModelScale"	"1.18"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -15884,9 +16120,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -15901,13 +16137,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2400"
+		"StatusHealth"	"2600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -15931,8 +16167,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"180"
-		"AttackDamageMax"	"220"
+		"AttackDamageMin"	"240"
+		"AttackDamageMax"	"280"
 		"AttackRate"	"1.4"
 		"AttackRange"	"400"
 		"Creature"
@@ -15957,16 +16193,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"6"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_StormSpirit"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_stormspirit"
 	}
 
-	// 2
+	// 3
 	"chess_ember"
 	{
 		// General
@@ -15996,7 +16233,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16013,7 +16250,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"600"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -16044,7 +16281,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"60"
+		"AttackDamageMax"	"80"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -16081,16 +16318,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.4"
 		"HasInventory"	"1"
-		"Level"	"2"
+		"Level"	"3"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_EmberSpirit"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
 	}
 
-	// 2
+	// 3
 	"chess_ember1"
 	{
 		// General
@@ -16098,7 +16336,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/ember_spirit/ember_spirit.vmdl"
-		"ModelScale"	"0.95"
+		"ModelScale"	"0.98"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -16120,7 +16358,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16137,7 +16375,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1200"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -16168,7 +16406,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"120"
+		"AttackDamageMax"	"160"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -16177,27 +16415,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12263"
+					"ItemDef"	"7001"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12268"
+					"ItemDef"	"7002"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8845"
+					"ItemDef"	"12262"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12267"
+					"ItemDef"	"7003"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12261"
+					"ItemDef"	"7004"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8844"
+					"ItemDef"	"12260"
 				}
 			}
 		}
@@ -16205,16 +16443,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.4"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_EmberSpirit"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
 	}
 
-	// 2
+	// 3
 	"chess_ember11"
 	{
 		// General
@@ -16244,7 +16483,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16261,13 +16500,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2400"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -16292,7 +16531,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"240"
+		"AttackDamageMax"	"320"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
@@ -16329,13 +16568,401 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.4"
 		"HasInventory"	"1"
-		"Level"	"6"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_EmberSpirit"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
+	}
+
+	// 3
+	"chess_earth"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/earth_spirit/earth_spirit.vmdl"
+		"ModelScale"	"0.6"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_shaman"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"800"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"40"
+		"AttackDamageMax"	"70"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"477"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"481"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"482"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"479"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"480"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"526"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"475"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.350000"
+		"HasInventory"	"1"
+		"Level"	"3"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_EarthSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_earth_spirit/"
+	}
+
+	// 3
+	"chess_earth1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/earth_spirit/earth_spirit.vmdl"
+		"ModelScale"	"0.75"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_shaman"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"9"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1600"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"140"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"6434"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"6432"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"482"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"6433"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"6435"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"526"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"7184"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.350000"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_EarthSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_earth_spirit/"
+	}
+
+	// 3
+	"chess_earth11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/earth_spirit/earth_spirit.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_shaman"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"9"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3200"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"8"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"160"
+		"AttackDamageMax"	"320"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"13389"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"13392"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"482"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"13391"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"13390"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"526"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"7935"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.350000"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_EarthSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_earth_spirit/"
 	}
 
 	// 2
@@ -16368,7 +16995,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16460,6 +17087,7 @@
 		"SoundSet"	"Hero_Slark"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slark.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_slark"
 	}
 
 	// 2
@@ -16492,7 +17120,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16588,6 +17216,7 @@
 		"SoundSet"	"Hero_Slark"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slark.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_slark"
 	}
 
 	// 2
@@ -16620,7 +17249,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16716,9 +17345,10 @@
 		"SoundSet"	"Hero_Slark"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slark.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_slark"
 	}
 
-	// 3
+	// 2
 	"chess_sniper"
 	{
 		// General
@@ -16748,7 +17378,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16836,9 +17466,10 @@
 		"SoundSet"	"Hero_Sniper"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sniper"
 	}
 
-	// 3
+	// 2
 	"chess_sniper1"
 	{
 		// General
@@ -16868,7 +17499,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -16956,9 +17587,10 @@
 		"SoundSet"	"Hero_Sniper"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sniper"
 	}
 
-	// 3
+	// 2
 	"chess_sniper11"
 	{
 		// General
@@ -16988,7 +17620,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -17011,7 +17643,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -17076,6 +17708,7 @@
 		"SoundSet"	"Hero_Sniper"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sniper"
 	}
 
 	// 3
@@ -17108,9 +17741,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17192,6 +17825,7 @@
 		"SoundSet"	"Hero_Nevermore"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_nevermore"
 	}
 
 	// 3
@@ -17224,9 +17858,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17308,6 +17942,7 @@
 		"SoundSet"	"Hero_Nevermore"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_nevermore"
 	}
 
 	// 3
@@ -17340,9 +17975,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17363,7 +17998,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -17428,9 +18063,10 @@
 		"SoundSet"	"Hero_Nevermore"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_nevermore"
 	}
 
-	// 3
+	// 2
 	"chess_dazzle"
 	{
 		// General
@@ -17460,9 +18096,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17548,9 +18184,10 @@
 		"SoundSet"	"Hero_Dazzle"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_dazzle"
 	}
 
-	// 3
+	// 2
 	"chess_dazzle1"
 	{
 		// General
@@ -17580,9 +18217,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17668,9 +18305,10 @@
 		"SoundSet"	"Hero_Dazzle"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_dazzle"
 	}
 
-	// 3
+	// 2
 	"chess_dazzle11"
 	{
 		// General
@@ -17700,9 +18338,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17723,7 +18361,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -17788,6 +18426,7 @@
 		"SoundSet"	"Hero_Dazzle"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_dazzle"
 	}
 
 	// 5
@@ -17822,7 +18461,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -17920,6 +18559,7 @@
 		"SoundSet"	"Hero_Invoker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_invoker"
 	}
 
 	// 5
@@ -17954,7 +18594,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -18052,6 +18692,7 @@
 		"SoundSet"	"Hero_Invoker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_invoker"
 	}
 
 	// 5
@@ -18086,7 +18727,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -18184,6 +18825,7 @@
 		"SoundSet"	"Hero_Invoker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_invoker"
 	}
 
 	// 4
@@ -18309,6 +18951,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
 		"ProjectileSpeed"	"800"
+		"particle_folder"	"particles/units/heroes/hero_dragon_knight"
 	}
 
 	// 4
@@ -18438,6 +19081,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
 		"ProjectileSpeed"	"800"
+		"particle_folder"	"particles/units/heroes/hero_dragon_knight"
 	}
 
 	// 4
@@ -18493,7 +19137,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -18567,6 +19211,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
 		"ProjectileSpeed"	"800"
+		"particle_folder"	"particles/units/heroes/hero_dragon_knight"
 	}
 
 	// 4
@@ -18870,7 +19515,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -18971,9 +19616,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -19059,6 +19704,7 @@
 		"SoundSet"	"Hero_Terrorblade"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_terrorblade"
 	}
 
 	// 3
@@ -19091,9 +19737,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -19183,6 +19829,7 @@
 		"SoundSet"	"Hero_Terrorblade"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_terrorblade"
 	}
 
 	// 3
@@ -19215,9 +19862,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -19238,7 +19885,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -19307,9 +19954,10 @@
 		"SoundSet"	"Hero_Terrorblade"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_terrorblade"
 	}
 
-	// 5
+	// 3
 	"chess_visage"
 	{
 		// General
@@ -19341,7 +19989,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"20"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -19421,9 +20069,10 @@
 		"SoundSet"	"Hero_Visage"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_visage.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_visage"
 	}
 
-	// 5
+	// 3
 	"chess_visage1"
 	{
 		// General
@@ -19535,9 +20184,10 @@
 		"SoundSet"	"Hero_Visage"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_visage.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_visage"
 	}
 
-	// 5
+	// 3
 	"chess_visage11"
 	{
 		// General
@@ -19569,7 +20219,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"40"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -19588,7 +20238,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -19649,6 +20299,7 @@
 		"SoundSet"	"Hero_Visage"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_visage.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_visage"
 	}
 
 	"visage_dragon_1"
@@ -19733,7 +20384,7 @@
 		"StatusHealth"	"500"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"100"
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"5"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
@@ -19787,7 +20438,7 @@
 		"StatusHealth"	"700"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"100"
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"10"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
@@ -19821,7 +20472,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/winterwyvern/winterwyvern.vmdl"
-		"ModelScale"	"0.58"
+		"ModelScale"	"0.56"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -19921,6 +20572,7 @@
 		"SoundSet"	"Hero_Winter_Wyvern"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_winter_wyvern"
 	}
 
 	// 1
@@ -19931,7 +20583,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/winterwyvern/winterwyvern.vmdl"
-		"ModelScale"	"0.65"
+		"ModelScale"	"0.63"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -20031,6 +20683,7 @@
 		"SoundSet"	"Hero_Winter_Wyvern"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_winter_wyvern"
 	}
 
 	// 1
@@ -20041,7 +20694,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/winterwyvern/winterwyvern.vmdl"
-		"ModelScale"	"0.85"
+		"ModelScale"	"0.83"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -20084,7 +20737,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -20141,6 +20794,7 @@
 		"SoundSet"	"Hero_Winter_Wyvern"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_winter_wyvern"
 	}
 
 	// 1
@@ -20173,7 +20827,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -20263,6 +20917,7 @@
 		"SoundSet"	"Hero_DarkWillow"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_dark_willow"
 	}
 
 	// 1
@@ -20295,7 +20950,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -20385,6 +21040,7 @@
 		"SoundSet"	"Hero_DarkWillow"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_dark_willow"
 	}
 
 	// 1
@@ -20417,7 +21073,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -20438,7 +21094,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"2"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -20507,6 +21163,7 @@
 		"SoundSet"	"Hero_DarkWillow"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_dark_willow"
 	}
 
 	// 5
@@ -20539,7 +21196,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"9"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -20625,6 +21282,7 @@
 		"SoundSet"	"Hero_Jakiro"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_jakiro.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_jakiro"
 	}
 
 	// 5
@@ -20657,7 +21315,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"9"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -20743,6 +21401,7 @@
 		"SoundSet"	"Hero_Jakiro"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_jakiro.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_jakiro"
 	}
 
 	// 5
@@ -20775,7 +21434,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"9"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -20861,6 +21520,7 @@
 		"SoundSet"	"Hero_Jakiro"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_jakiro.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_jakiro"
 	}
 
 	// 3
@@ -20977,6 +21637,7 @@
 		"SoundSet"	"Hero_Viper"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_viper.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_viper"
 	}
 
 	// 3
@@ -21093,6 +21754,7 @@
 		"SoundSet"	"Hero_Viper"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_viper.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_viper"
 	}
 
 	// 3
@@ -21148,7 +21810,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -21213,6 +21875,7 @@
 		"SoundSet"	"Hero_Viper"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_viper.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_viper"
 	}
 
 	// 2
@@ -21245,9 +21908,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -21333,6 +21996,7 @@
 		"SoundSet"	"Hero_Rubick"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rubick.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_rubick"
 	}
 
 	// 2
@@ -21365,9 +22029,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -21457,6 +22121,7 @@
 		"SoundSet"	"Hero_Rubick"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rubick.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_rubick"
 	}
 
 	// 2
@@ -21467,7 +22132,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/items/rubick/rubick_arcana/rubick_arcana_base.vmdl"
-		"ModelScale"	"0.7"
+		"ModelScale"	"0.68"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -21489,9 +22154,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -21512,7 +22177,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -21581,6 +22246,7 @@
 		"SoundSet"	"Hero_Rubick"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rubick.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_rubick"
 	}
 
 	// 4
@@ -21613,7 +22279,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -21697,6 +22363,7 @@
 		"SoundSet"	"Hero_Grimstroke"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_grimstroke.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_grimstroke"
 	}
 
 	// 4
@@ -21729,7 +22396,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -21813,6 +22480,7 @@
 		"SoundSet"	"Hero_Grimstroke"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_grimstroke.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_grimstroke"
 	}
 
 	// 4
@@ -21845,7 +22513,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -21868,7 +22536,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -21933,6 +22601,7 @@
 		"SoundSet"	"Hero_Grimstroke"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_grimstroke.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_grimstroke"
 	}
 
 	// 4
@@ -21965,9 +22634,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"7"
 		// Magical protection.
-		"MagicalResistance"	"20"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -22053,6 +22722,7 @@
 		"SoundSet"	"Hero_LoneDruid"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lone_druid"
 	}
 
 	// 4
@@ -22085,9 +22755,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"7"
 		// Magical protection.
-		"MagicalResistance"	"20"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -22181,6 +22851,7 @@
 		"SoundSet"	"Hero_LoneDruid"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lone_druid"
 	}
 
 	// 4
@@ -22213,9 +22884,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"7"
 		// Magical protection.
-		"MagicalResistance"	"20"
+		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -22236,7 +22907,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -22313,9 +22984,10 @@
 		"SoundSet"	"Hero_LoneDruid"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lone_druid"
 	}
 
-	// 5
+	// 4
 	"chess_kunkka"
 	{
 		// General
@@ -22323,7 +22995,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/kunkka/kunkka.vmdl"
-		"ModelScale"	"0.63"
+		"ModelScale"	"0.68"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22345,7 +23017,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -22362,7 +23034,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1200"
+		"StatusHealth"	"950"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -22392,8 +23064,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"130"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"100"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -22410,7 +23082,7 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5335"
+					"ItemDef"	"8657"
 				}
 				"Wearable4"
 				{
@@ -22418,11 +23090,19 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"81"
+					"ItemDef"	"8656"
 				}
 				"Wearable6"
 				{
 					"ItemDef"	"357"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"12"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"81"
 				}
 			}
 		}
@@ -22430,16 +23110,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.400000"
 		"HasInventory"	"1"
-		"Level"	"5"
+		"Level"	"4"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Kunkka"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_kunkka"
 	}
 
-	// 5
+	// 4
 	"chess_kunkka1"
 	{
 		// General
@@ -22447,7 +23128,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/kunkka/kunkka.vmdl"
-		"ModelScale"	"0.82"
+		"ModelScale"	"0.85"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22469,7 +23150,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -22486,7 +23167,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2400"
+		"StatusHealth"	"1900"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -22516,8 +23197,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"260"
+		"AttackDamageMin"	"160"
+		"AttackDamageMax"	"200"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -22526,35 +23207,35 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13196"
+					"ItemDef"	"6181"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13194"
+					"ItemDef"	"6182"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13195"
+					"ItemDef"	"5321"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13193"
+					"ItemDef"	"6213"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13198"
+					"ItemDef"	"6196"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"13192"
+					"ItemDef"	"6179"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"5334"
+					"ItemDef"	"6180"
 				}
 				"Wearable8"
 				{
-					"ItemDef"	"13197"
+					"ItemDef"	"6184"
 				}
 			}
 		}
@@ -22562,16 +23243,17 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.400000"
 		"HasInventory"	"1"
-		"Level"	"7"
+		"Level"	"6"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Kunkka"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_kunkka"
 	}
 
-	// 5
+	// 4
 	"chess_kunkka11"
 	{
 		// General
@@ -22579,7 +23261,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/kunkka/kunkka.vmdl"
-		"ModelScale"	"0.92"
+		"ModelScale"	"0.97"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22618,13 +23300,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"4800"
+		"StatusHealth"	"3800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -22648,8 +23330,8 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"400"
-		"AttackDamageMax"	"520"
+		"AttackDamageMin"	"320"
+		"AttackDamageMax"	"400"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -22682,7 +23364,7 @@
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"12291"
+					"ItemDef"	"5334"
 				}
 				"Wearable8"
 				{
@@ -22694,13 +23376,14 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.400000"
 		"HasInventory"	"1"
-		"Level"	"9"
+		"Level"	"8"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Kunkka"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_kunkka"
 	}
 
 	// 4
@@ -22733,7 +23416,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -22829,6 +23512,7 @@
 		"SoundSet"	"Hero_DoomBringer"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_doom_bringer"
 	}
 
 	// 4
@@ -22861,7 +23545,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -22918,31 +23602,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5125"
+					"ItemDef"	"9985"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"5127"
+					"ItemDef"	"9991"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5124"
+					"ItemDef"	"9986"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5122"
+					"ItemDef"	"9988"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"5126"
+					"ItemDef"	"9989"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7647"
+					"ItemDef"	"9990"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"5123"
+					"ItemDef"	"9987"
 				}
 			}
 		}
@@ -22957,6 +23641,7 @@
 		"SoundSet"	"Hero_DoomBringer"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_doom_bringer"
 	}
 
 	// 4
@@ -22989,7 +23674,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -23012,7 +23697,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -23085,6 +23770,7 @@
 		"SoundSet"	"Hero_DoomBringer"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_doom_bringer"
 	}
 
 	// 3
@@ -23117,9 +23803,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -23205,6 +23891,7 @@
 		"SoundSet"	"Hero_Lina"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lina"
 	}
 
 	// 3
@@ -23237,9 +23924,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -23325,6 +24012,7 @@
 		"SoundSet"	"Hero_Lina"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lina"
 	}
 
 	// 3
@@ -23357,9 +24045,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -23380,7 +24068,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -23445,6 +24133,7 @@
 		"SoundSet"	"Hero_Lina"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_lina"
 	}
 
 	// 4
@@ -23477,7 +24166,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -23565,6 +24254,7 @@
 		"SoundSet"	"Hero_TrollWarlord"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_troll_warlord"
 	}
 
 	// 4
@@ -23597,7 +24287,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -23681,6 +24371,7 @@
 		"SoundSet"	"Hero_TrollWarlord"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_troll_warlord"
 	}
 
 	// 4
@@ -23713,7 +24404,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -23797,6 +24488,7 @@
 		"SoundSet"	"Hero_TrollWarlord"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_troll_warlord"
 	}
 
 	// 3
@@ -23829,7 +24521,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -23921,6 +24613,7 @@
 		"SoundSet"	"Hero_Venomancer"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_venomancer.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_venomancer"
 	}
 
 	// 3
@@ -23953,7 +24646,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -24041,6 +24734,7 @@
 		"SoundSet"	"Hero_Venomancer"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_venomancer.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_venomancer"
 	}
 
 	// 3
@@ -24073,7 +24767,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"20"
 		// Attack
@@ -24096,7 +24790,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -24161,6 +24855,7 @@
 		"SoundSet"	"Hero_Venomancer"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_venomancer.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_venomancer"
 	}
 
 	// 4
@@ -24193,9 +24888,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -24281,6 +24976,7 @@
 		"SoundSet"	"Hero_Necrolyte"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_necrolyte"
 	}
 
 	// 4
@@ -24313,9 +25009,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -24405,6 +25101,7 @@
 		"SoundSet"	"Hero_Necrolyte"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_necrolyte"
 	}
 
 	// 4
@@ -24437,9 +25134,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -24460,7 +25157,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -24529,6 +25226,7 @@
 		"SoundSet"	"Hero_Necrolyte"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_necrolyte"
 	}
 
 	// 4
@@ -24561,7 +25259,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -24657,6 +25355,7 @@
 		"SoundSet"	"Hero_Chen"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_chen"
 	}
 
 	// 4
@@ -24689,7 +25388,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -24785,6 +25484,7 @@
 		"SoundSet"	"Hero_Chen"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_chen"
 	}
 
 	// 4
@@ -24817,7 +25517,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -24840,7 +25540,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -24913,6 +25613,7 @@
 		"SoundSet"	"Hero_Chen"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_chen"
 	}
 
 	// 4
@@ -24945,9 +25646,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -25069,9 +25770,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -25145,6 +25846,7 @@
 		"SoundSet"	"Hero_Wisp"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_wisp"
 	}
 
 	// 1
@@ -25177,9 +25879,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -25253,6 +25955,7 @@
 		"SoundSet"	"Hero_Wisp"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_wisp"
 	}
 
 	// 4
@@ -25285,7 +25988,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -25373,6 +26076,7 @@
 		"SoundSet"	"Hero_TemplarAssassin"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_templar_assassin"
 	}
 
 	// 4
@@ -25405,7 +26109,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -25493,6 +26197,7 @@
 		"SoundSet"	"Hero_TemplarAssassin"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_templar_assassin"
 	}
 
 	// 4
@@ -25525,7 +26230,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -25548,7 +26253,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -25613,6 +26318,7 @@
 		"SoundSet"	"Hero_TemplarAssassin"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_templar_assassin"
 	}
 
 	// 4
@@ -25645,7 +26351,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -25692,7 +26398,6 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-
 		"AttackDamageMin"	"60"
 		"AttackDamageMax"	"90"
 		"AttackRate"	"1"
@@ -25738,6 +26443,7 @@
 		"SoundSet"	"Hero_Medusa"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_medusa"
 	}
 
 	// 4
@@ -25770,7 +26476,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -25817,7 +26523,6 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-
 		"AttackDamageMin"	"120"
 		"AttackDamageMax"	"180"
 		"AttackRate"	"1"
@@ -25867,6 +26572,7 @@
 		"SoundSet"	"Hero_Medusa"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_medusa"
 	}
 
 	// 4
@@ -25899,7 +26605,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -25922,7 +26628,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -25991,6 +26697,7 @@
 		"SoundSet"	"Hero_Medusa"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_medusa"
 	}
 
 	// 5
@@ -26023,9 +26730,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -26119,6 +26826,7 @@
 		"SoundSet"	"Hero_Disruptor"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_disruptor.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_disruptor"
 	}
 
 	// 5
@@ -26151,9 +26859,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -26247,6 +26955,7 @@
 		"SoundSet"	"Hero_Disruptor"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_disruptor.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_disruptor"
 	}
 
 	// 5
@@ -26279,9 +26988,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -26375,6 +27084,7 @@
 		"SoundSet"	"Hero_Disruptor"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_disruptor.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_disruptor"
 	}
 
 	// 5
@@ -26503,6 +27213,7 @@
 		"SoundSet"	"Hero_Sven"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sven.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sven"
 	}
 
 	// 5
@@ -26631,6 +27342,7 @@
 		"SoundSet"	"Hero_Sven"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sven.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sven"
 	}
 
 	// 5
@@ -26759,6 +27471,7 @@
 		"SoundSet"	"Hero_Sven"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sven.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_sven"
 	}
 
 	// 5
@@ -26769,15 +27482,15 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/monkey_king/monkey_king.vmdl"
-		"ModelScale"	"0.65"
+		"ModelScale"	"0.68"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
 		"Ability1"	"is_beast"
 		// Ability 2.
-		"Ability2"	"is_warrior"
+		"Ability2"	"is_monk"
 		// Ability 3.
-		"Ability3"	"spell_attack"
+		"Ability3"	"mk_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -26791,7 +27504,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -26812,7 +27525,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -26840,7 +27553,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"80"
 		"AttackDamageMax"	"145"
-		"AttackRate"	"1.3"
+		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -26875,6 +27588,7 @@
 		"SoundSet"	"Hero_MonkeyKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_monkey_king/"
 	}
 
 	// 5
@@ -26891,9 +27605,9 @@
 		// Ability 1.
 		"Ability1"	"is_beast"
 		// Ability 2.
-		"Ability2"	"is_warrior"
+		"Ability2"	"is_monk"
 		// Ability 3.
-		"Ability3"	"spell_attack"
+		"Ability3"	"mk_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -26907,7 +27621,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -26928,7 +27642,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -26956,7 +27670,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"160"
 		"AttackDamageMax"	"290"
-		"AttackRate"	"1.3"
+		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -26984,13 +27698,14 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.35"
 		"HasInventory"	"1"
-		"Level"	"5"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_MonkeyKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_monkey_king/"
 	}
 
 	// 5
@@ -27007,9 +27722,9 @@
 		// Ability 1.
 		"Ability1"	"is_beast"
 		// Ability 2.
-		"Ability2"	"is_warrior"
+		"Ability2"	"is_monk"
 		// Ability 3.
-		"Ability3"	"spell_attack"
+		"Ability3"	"mk_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -27023,7 +27738,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -27044,9 +27759,9 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
-		"StatusMana"	"100"
+		"StatusMana"	"0"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"0"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -27072,7 +27787,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"320"
 		"AttackDamageMax"	"580"
-		"AttackRate"	"1.3"
+		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -27100,13 +27815,14 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.35"
 		"HasInventory"	"1"
-		"Level"	"5"
+		"Level"	"9"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_MonkeyKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_monkey_king/"
 	}
 
 	// 4
@@ -27139,7 +27855,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -27243,6 +27959,7 @@
 		"SoundSet"	"Hero_Axe"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_alchemist"
 	}
 
 	// 4
@@ -27275,7 +27992,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -27387,6 +28104,7 @@
 		"SoundSet"	"Hero_Axe"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_alchemist"
 	}
 
 	// 4
@@ -27419,7 +28137,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -27442,7 +28160,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"8"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -27531,6 +28249,7 @@
 		"SoundSet"	"Hero_Axe"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_alchemist"
 	}
 
 	// 5
@@ -27563,7 +28282,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -27655,6 +28374,7 @@
 		"SoundSet"	"Hero_Gyrocopter"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_gyrocopter"
 	}
 
 	// 5
@@ -27687,7 +28407,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -27787,6 +28507,7 @@
 		"SoundSet"	"Hero_Gyrocopter"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_gyrocopter"
 	}
 
 	// 5
@@ -27819,7 +28540,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -27923,6 +28644,7 @@
 		"SoundSet"	"Hero_Gyrocopter"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_gyrocopter"
 	}
 
 	// 5
@@ -27955,7 +28677,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -28075,7 +28797,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -28199,7 +28921,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -28323,7 +29045,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"9"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -28411,6 +29133,7 @@
 		"SoundSet"	"Hero_Huskar"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_huskar.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_huskar"
 	}
 
 	// 5
@@ -28443,7 +29166,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"9"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -28531,6 +29254,7 @@
 		"SoundSet"	"Hero_Huskar"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_huskar.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_huskar"
 	}
 
 	// 5
@@ -28563,7 +29287,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"9"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -28651,6 +29375,7 @@
 		"SoundSet"	"Hero_Huskar"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_huskar.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_huskar"
 	}
 
 	// 5
@@ -28811,9 +29536,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -28895,6 +29620,7 @@
 		"SoundSet"	"Hero_QueenOfPain"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_queenofpain"
 	}
 
 	// 5
@@ -28927,9 +29653,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -29011,6 +29737,7 @@
 		"SoundSet"	"Hero_QueenOfPain"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_queenofpain"
 	}
 
 	// 5
@@ -29020,8 +29747,8 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/queenofpain/queenofpain.vmdl"
-		"ModelScale"	"1.05"
+		"Model"	"models/items/queenofpain/queenofpain_arcana/queenofpain_arcana.vmdl"
+		"ModelScale"	"1.13"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -29029,7 +29756,7 @@
 		// Ability 2.
 		"Ability2"	"is_assassin"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"qop_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -29043,9 +29770,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -29100,19 +29827,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12337"
+					"ItemDef"	"13768"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7212"
+					"ItemDef"	"12930"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8231"
+					"ItemDef"	"12337"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5157"
+					"ItemDef"	"13769"
 				}
 			}
 		}
@@ -29127,6 +29854,7 @@
 		"SoundSet"	"Hero_QueenOfPain"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_queenofpain"
 	}
 
 	// 2
@@ -29159,9 +29887,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -29249,6 +29977,7 @@
 		"SoundSet"	"Hero_Bloodseeker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_bloodseeker"
 	}
 
 	// 2
@@ -29281,9 +30010,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -29375,6 +30104,7 @@
 		"SoundSet"	"Hero_Bloodseeker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_bloodseeker"
 	}
 
 	// 2
@@ -29407,9 +30137,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"3"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -29430,7 +30160,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -29501,6 +30231,7 @@
 		"SoundSet"	"Hero_Bloodseeker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_bloodseeker"
 	}
 
 	// 5
@@ -29533,9 +30264,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"11"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"15"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -29625,6 +30356,7 @@
 		"SoundSet"	"Hero_Tidehunter"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tidehunter"
 	}
 
 	// 5
@@ -29657,9 +30389,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"11"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"15"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -29749,6 +30481,7 @@
 		"SoundSet"	"Hero_Tidehunter"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tidehunter"
 	}
 
 	// 5
@@ -29781,9 +30514,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"11"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"15"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -29873,6 +30606,7 @@
 		"SoundSet"	"Hero_Tidehunter"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_tidehunter"
 	}
 
 	// 5
@@ -30289,9 +31023,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"40"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30365,6 +31099,7 @@
 		"SoundSet"	"Hero_Enigma"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_enigma"
 	}
 
 	// 5
@@ -30397,9 +31132,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"40"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30481,6 +31216,7 @@
 		"SoundSet"	"Hero_Enigma"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_enigma"
 	}
 
 	// 5
@@ -30513,9 +31249,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"6"
 		// Magical protection.
-		"MagicalResistance"	"40"
+		"MagicalResistance"	"30"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30605,6 +31341,7 @@
 		"SoundSet"	"Hero_Enigma"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_enigma"
 	}
 
 	// 5
@@ -30639,7 +31376,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"40"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30725,6 +31462,7 @@
 		"SoundSet"	"Hero_DeathProphet"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_death_prophet"
 	}
 
 	// 5
@@ -30759,7 +31497,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"40"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30853,6 +31591,7 @@
 		"SoundSet"	"Hero_DeathProphet"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_death_prophet"
 	}
 
 	// 5
@@ -30887,7 +31626,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"5"
 		// Magical protection.
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"40"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -30989,6 +31728,7 @@
 		"SoundSet"	"Hero_DeathProphet"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_death_prophet"
 	}
 
 	// 5
@@ -31237,6 +31977,7 @@
 		"SoundSet"	"Hero_Techies"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_techies.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_techies"
 	}
 
 	// 5
@@ -31365,6 +32106,7 @@
 		"SoundSet"	"Hero_Techies"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_techies.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_techies"
 	}
 
 	// 5
@@ -31493,6 +32235,7 @@
 		"SoundSet"	"Hero_Techies"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_techies.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_techies"
 	}
 
 	// 5
@@ -31525,7 +32268,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -31613,6 +32356,7 @@
 		"SoundSet"	"Hero_Snapfire"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_snapfire.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_snapfire.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_snapfire/"
 	}
 
 	// 5
@@ -31645,7 +32389,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -31733,6 +32477,7 @@
 		"SoundSet"	"Hero_Snapfire"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_snapfire.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_snapfire.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_snapfire/"
 	}
 
 	// 5
@@ -31765,7 +32510,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -31853,6 +32598,7 @@
 		"SoundSet"	"Hero_Snapfire"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_snapfire.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_snapfire.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_snapfire/"
 	}
 
 	"invisible_unit"
@@ -31956,7 +32702,7 @@
 		// Base mana.
 		"StatusMana"	"999"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"999"
+		"StatusManaRegen"	"99"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -32316,7 +33062,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"1750"
+		"StatusHealth"	"1400"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -32324,7 +33070,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"200"
+		"AttackDamageMax"	"150"
 		"AttackRate"	"1"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -32365,15 +33111,15 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"1000"
+		"StatusHealth"	"800"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"150"
+		"AttackDamageMin"	"75"
+		"AttackDamageMax"	"125"
 		"AttackRate"	"1"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -32414,7 +33160,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"2250"
+		"StatusHealth"	"2000"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -34034,8 +34780,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"350"
-		"AttackDamageMax"	"400"
+		"AttackDamageMin"	"400"
+		"AttackDamageMax"	"450"
 		"AttackRate"	"0.45"
 		"AttackRange"	"800"
 		"AttackRangeBuffer"	"50"
@@ -34087,8 +34833,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"350"
-		"AttackDamageMax"	"400"
+		"AttackDamageMin"	"400"
+		"AttackDamageMax"	"450"
 		"AttackRate"	"0.45"
 		"AttackRange"	"800"
 		"AttackRangeBuffer"	"50"
@@ -39178,7 +39924,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"40"
 		// Attack
@@ -39274,6 +40020,7 @@
 		"SoundSet"	"Hero_zuus"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_zuus,particles/units/heroes/hero_zeus"
 	}
 
 	// 5
@@ -39306,7 +40053,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"40"
 		// Attack
@@ -39402,6 +40149,7 @@
 		"SoundSet"	"Hero_zuus"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_zuus,particles/units/heroes/hero_zeus"
 	}
 
 	// 5
@@ -39434,7 +40182,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"40"
 		// Attack
@@ -39530,6 +40278,7 @@
 		"SoundSet"	"Hero_zuus"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_zuus,particles/units/heroes/hero_zeus"
 	}
 
 	// 5
@@ -39562,7 +40311,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -39653,6 +40402,7 @@
 		"AttackRangeBuffer"	"100"
 		"AttackAcquisitionRange"	"300"
 		"HasAggressiveStance"	"1"
+		"particle_folder"	"particles/units/heroes/hero_mars/"
 	}
 
 	// 5
@@ -39685,7 +40435,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -39774,6 +40524,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mars.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mars.vsndevts"
 		"HasAggressiveStance"	"1"
+		"particle_folder"	"particles/units/heroes/hero_mars/"
 	}
 
 	// 5
@@ -39806,7 +40557,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -39895,6 +40646,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mars.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mars.vsndevts"
 		"HasAggressiveStance"	"1"
+		"particle_folder"	"particles/units/heroes/hero_mars/"
 	}
 
 	"gemtd_pet"

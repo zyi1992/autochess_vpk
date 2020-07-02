@@ -18,7 +18,6 @@ function sleight_of_fist_init( keys )
 	local attack_interval = ability:GetLevelSpecialValueFor( "attack_interval", ability:GetLevel() - 1 )
 	local modifierTargetName = "modifier_sleight_of_fist_target_datadriven"
 	local modifierHeroName = "modifier_sleight_of_fist_target_hero_datadriven"
-	local modifierCreepName = "modifier_sleight_if_fist_target_creep_datadriven"
 	local casterModifierName = "modifier_sleight_of_fist_caster_datadriven"
 	local dummyModifierName = "modifier_sleight_of_fist_dummy_datadriven"
 	local particleSlashName = "particles/units/heroes/hero_ember_spirit/ember_spirit_sleightoffist_tgt.vpcf"
@@ -96,7 +95,6 @@ function sleight_of_fist_init( keys )
 					
 					-- Clean up modifier
 					caster:RemoveModifierByName( modifierHeroName )
-					caster:RemoveModifierByName( modifierCreepName )
 					target:RemoveModifierByName( modifierTargetName )
 				end
 				return nil

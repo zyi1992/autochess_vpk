@@ -134,16 +134,22 @@ function ball_lightning_damage( keys )
 	local damage_per_distance = ability:GetAbilityDamage()
 	local distance_per_damage = ability:GetLevelSpecialValueFor( "distance_per_damage", ability:GetLevel() - 1 )
 	local damageType = ability:GetAbilityDamageType()
+
+	if keys.caster:GetTeam() ~= keys.target:GetTeam() then
 	
 	-- Calculate and damage the unit
-	local real_damage = ( targetLoc - casterLoc ):Length2D() * damage_per_distance / distance_per_damage
-	local damageTable = {
-		victim = keys.target,
-		attacker = keys.caster,
-		damage = real_damage,
-		damage_type = damageType
-	}
-	ApplyDamage( damageTable )
+		local real_damage = ( targetLoc - casterLoc ):Length2D() * damage_per_distance / distance_per_damage
+		if real_damage > damage_per_distance * 20 then
+			real_damage = damage_per_distance * 20 
+		end
+		local damageTable = {
+			victim = keys.target,
+			attacker = keys.caster,
+			damage = real_damage,
+			damage_type = damageType
+		}
+		ApplyDamage( damageTable )
+	end
 end
 
 --[[

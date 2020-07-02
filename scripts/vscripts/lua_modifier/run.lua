@@ -36,6 +36,10 @@ function modifier_run:OnCreated(kv)
             speed = 100
         end
 
+        if kv.speed ~= nil then
+            speed = kv.speed
+        end
+
         self.vStartPosition    = GetGroundPosition( self:GetParent():GetOrigin(), self:GetParent() )
 
         self.vTargetPosition   = Vector(kv.vx,kv.vy,128)
@@ -51,11 +55,14 @@ function modifier_run:OnCreated(kv)
         EmitSoundOn(self.sound, self:GetParent())
 
         self.animation = kv.animation or ACT_DOTA_RUN
+        self:GetParent():AddActivityModifier('run')
+        self:GetParent():StartGesture(ACT_DOTA_RUN)
     end
 end
 
 function modifier_run:OnDestroy()
     if IsServer() then
+        self:GetParent():RemoveGesture(ACT_DOTA_RUN)
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
         if GameRules:GetGameModeEntity().game_status == 1 then
@@ -66,7 +73,7 @@ end
 
 function modifier_run:DeclareFunctions()
     local funcs = {
-        MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+        -- MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
     }
     return funcs
 end
@@ -81,9 +88,9 @@ function modifier_run:CheckState()
     return state
 end
 
-function modifier_run:GetOverrideAnimation()
-    return animation or ACT_DOTA_RUN
-end
+-- function modifier_run:GetOverrideAnimation()
+--     return animation or ACT_DOTA_RUN
+-- end
 
 function modifier_run:UpdateHorizontalMotion(me, dt)
     if IsServer() then
