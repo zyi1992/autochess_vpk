@@ -1,6 +1,3 @@
-// Dota2 Editor
-// Get latest version: https://github.com/zombieJ/nw-dota2editor
-
 "DOTAUnits"
 {
 	"Version"		"1"
@@ -401,6 +398,756 @@
 	}
 
 	// 1
+	"chess_sb"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
+		"ModelScale"	"0.47"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_assassin"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"3"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"650"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"0"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"65"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"115"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"106"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"116"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"112"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"113"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"114"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"111"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.6"
+		"ConsideredHero"	"1"
+		"HasInventory"	"1"
+		"Level"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_spirit_breaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_spirit_breaker"
+	}
+
+	// 1
+	"chess_sb1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
+		"ModelScale"	"0.63"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_assassin"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"3"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1300"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"0"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"130"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"12828"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"106"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"12829"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"12832"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"12827"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"12830"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"12831"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.6"
+		"ConsideredHero"	"1"
+		"HasInventory"	"1"
+		"Level"	"3"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_spirit_breaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_spirit_breaker"
+	}
+
+	// 1
+	"chess_sb11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/spirit_breaker/spirit_breaker.vmdl"
+		"ModelScale"	"0.8"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_assassin"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"3"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2600"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"0"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"260"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"13745"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"106"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"13746"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"13748"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"9744"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"13749"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"8234"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.6"
+		"ConsideredHero"	"1"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_spirit_breaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_spirit_breaker"
+	}
+
+	// 5
+	"chess_et"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"	"0.5"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_god"
+		// Ability 3.
+		"Ability3"	"is_warrior"
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"10"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"120"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"427"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"430"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"429"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"426"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"428"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"ConsideredHero"	"1"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_ElderTitan"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_elder_titan"
+	}
+
+	// 5
+	"chess_et1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"	"0.65"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_god"
+		// Ability 3.
+		"Ability3"	"is_warrior"
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"10"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"240"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"13169"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"13174"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"13170"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"13172"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"6384"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"ConsideredHero"	"1"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_ElderTitan"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_elder_titan"
+	}
+
+	// 5
+	"chess_et11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/elder_titan/elder_titan.vmdl"
+		"ModelScale"	"0.8"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_god"
+		// Ability 3.
+		"Ability3"	"is_warrior"
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"10"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"4000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"400"
+		"AttackDamageMax"	"480"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8762"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"9240"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"8763"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"8761"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"13171"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_tinker/tinker_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"ConsideredHero"	"1"
+		"HasInventory"	"1"
+		"Level"	"9"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_ElderTitan"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_elder_titan"
+	}
+
+	// 1
 	"chess_cm"
 	{
 		// General
@@ -784,7 +1531,7 @@
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/axe/axe.vmdl"
 		"ModelScale"	"0.6"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_axe.vsndevts"
 		// Abilities
 		// ----------------------------------------------------------------
@@ -1361,7 +2108,7 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/items/tiny/tiny_prestige/tiny_prestige_lvl_04.vmdl"
+		"Model"	"models/items/tiny/tiny_bad_to_the_bone_back/tiny_bad_to_the_bone_back.vmdl"
 		"ModelScale"	"0.8"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tiny.vsndevts"
@@ -2194,6 +2941,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/antimage/antimage.vmdl"
+		//"models/heroes/antimage_female/antimage_female.vmdl"
 		"ModelScale"	"0.6"
 		// Abilities
 		// ----------------------------------------------------------------
@@ -2557,7 +3305,7 @@
 		}
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -2942,7 +3690,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -3062,7 +3810,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -3182,7 +3930,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"5"
 		// Attack
@@ -4496,19 +5244,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9374"
+					"ItemDef"	"9679"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9679"
+					"ItemDef"	"9384"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9384"
+					"ItemDef"	"7380"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9382"
+					"ItemDef"	"9374"
 				}
 				"Wearable5"
 				{
@@ -4516,7 +5264,7 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7380"
+					"ItemDef"	"13819"
 				}
 			}
 		}
@@ -6478,9 +7226,9 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Juggernaut"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"SoundSet"	"Hero_LegionCommander"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_legion_commander"
 	}
 
@@ -6571,7 +7319,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9803"
+					"ItemDef"	"12789"
 				}
 				"Wearable2"
 				{
@@ -6605,9 +7353,9 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Juggernaut"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"SoundSet"	"Hero_LegionCommander"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_legion_commander"
 	}
 
@@ -6698,19 +7446,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6834"
+					"ItemDef"	"13989"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8366"
+					"ItemDef"	"8316"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9780"
+					"ItemDef"	"13986"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9785"
+					"ItemDef"	"13987"
 				}
 				"Wearable5"
 				{
@@ -6718,7 +7466,7 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8823"
+					"ItemDef"	"13985"
 				}
 				"Wearable7"
 				{
@@ -6732,9 +7480,9 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_Juggernaut"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"SoundSet"	"Hero_LegionCommander"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_legion_commander"
 	}
 
@@ -8711,7 +9459,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/oracle/oracle.vmdl"
-		"ModelScale"	"0.6"
+		"ModelScale"	"0.55"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -8832,7 +9580,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/oracle/oracle.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.72"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -8953,7 +9701,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/oracle/oracle.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.77"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9073,8 +9821,8 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/pudge/pudge.vmdl"
-		"ModelScale"	"0.6"
+		"Model"	"models/heroes/pudge_cute/pudge_cute.vmdl"
+		"ModelScale"	"0.8"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9153,35 +9901,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"47"
-				}
-				"Wearable2"
-				{
-					"ItemDef"	"258"
-				}
-				"Wearable3"
-				{
-					"ItemDef"	"259"
-				}
-				"Wearable4"
-				{
-					"ItemDef"	"260"
-				}
-				"Wearable5"
-				{
-					"ItemDef"	"261"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"262"
-				}
-				"Wearable7"
-				{
-					"ItemDef"	"391"
-				}
-				"Wearable8"
-				{
-					"ItemDef"	"470"
+					"ItemDef"	"696"
 				}
 			}
 		}
@@ -9814,7 +10534,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12941"
+					"ItemDef"	"13814"
 				}
 			}
 		}
@@ -10040,23 +10760,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6267"
+					"ItemDef"	"14148"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"6265"
+					"ItemDef"	"7792"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9058"
+					"ItemDef"	"14152"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"6266"
+					"ItemDef"	"5328"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6268"
+					"ItemDef"	"5173"
 				}
 			}
 		}
@@ -10165,7 +10885,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7792"
+					"ItemDef"	"14149"
 				}
 				"Wearable3"
 				{
@@ -10173,11 +10893,11 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7878"
+					"ItemDef"	"13561"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13561"
+					"ItemDef"	"7878"
 				}
 			}
 		}
@@ -13750,15 +14470,15 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7563"
+					"ItemDef"	"14420"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9098"
+					"ItemDef"	"14419"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9100"
+					"ItemDef"	"14417"
 				}
 				"Wearable4"
 				{
@@ -13766,7 +14486,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6997"
+					"ItemDef"	"14415"
 				}
 				"Wearable6"
 				{
@@ -13774,7 +14494,7 @@
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"6993"
+					"ItemDef"	"14418"
 				}
 			}
 		}
@@ -14386,9 +15106,9 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_SandKing"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"SoundSet"	"Hero_NyxAssassin"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
 	}
 
@@ -14503,9 +15223,9 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_SandKing"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"SoundSet"	"Hero_NyxAssassin"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
 	}
 
@@ -14620,10 +15340,376 @@
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_SandKing"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"SoundSet"	"Hero_NyxAssassin"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
+	}
+
+	// 3
+	"chess_es"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/earthshaker/earthshaker.vmdl"
+		"ModelScale"	"0.65"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_shaman"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"10"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"700"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"5"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"45"
+		"AttackDamageMax"	"90"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"460"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"8366"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"461"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"8655"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"459"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.53"
+		"HasInventory"	"1"
+		"Level"	"4"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Earthshaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts"
+	}
+
+	// 3
+	"chess_es1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/earthshaker/earthshaker.vmdl"
+		"ModelScale"	"0.83"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_shaman"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"10"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"5"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"90"
+		"AttackDamageMax"	"180"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"9735"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"8316"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"9737"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"9738"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"9730"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.53"
+		"HasInventory"	"1"
+		"Level"	"6"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Earthshaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts"
+	}
+
+	// 3
+	"chess_es11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/items/earthshaker/earthshaker_arcana/earthshaker_arcana.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_tauren"
+		// Ability 2.
+		"Ability2"	"is_shaman"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"10"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2800"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"5"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"8"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"180"
+		"AttackDamageMax"	"360"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"7293"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"8316"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"9737"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"12692"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"12969"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.53"
+		"HasInventory"	"1"
+		"Level"	"8"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Earthshaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts"
 	}
 
 	// 4
@@ -16098,7 +17184,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/storm_spirit/storm_spirit.vmdl"
-		"ModelScale"	"1.18"
+		"ModelScale"	"1.2"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -16143,7 +17229,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"8"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -16423,7 +17509,7 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12262"
+					"ItemDef"	"7170"
 				}
 				"Wearable4"
 				{
@@ -16431,11 +17517,11 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7004"
+					"ItemDef"	"5972"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12260"
+					"ItemDef"	"7175"
 				}
 			}
 		}
@@ -16461,7 +17547,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/ember_spirit/ember_spirit.vmdl"
-		"ModelScale"	"1.1"
+		"ModelScale"	"1.15"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -16506,7 +17592,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"8"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -16540,11 +17626,11 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13442"
+					"ItemDef"	"13290"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13441"
+					"ItemDef"	"13361"
 				}
 				"Wearable3"
 				{
@@ -16556,7 +17642,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13381"
+					"ItemDef"	"13299"
 				}
 				"Wearable6"
 				{
@@ -16889,7 +17975,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"8"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -20345,9 +21431,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Visage_Familiar"
 		"ProjectileModel"	"particles/units/heroes/hero_visage/visage_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -20399,9 +21483,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Visage_Familiar"
 		"ProjectileModel"	"particles/units/heroes/hero_visage/visage_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -20453,9 +21535,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Visage_Familiar"
 		"ProjectileModel"	"particles/units/heroes/hero_visage/visage_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -21374,6 +22454,7 @@
 				}
 				"Wearable2"
 				{
+					// 14125
 					"ItemDef"	"9262"
 				}
 				"Wearable3"
@@ -21493,7 +22574,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13025"
+					"ItemDef"	"14949"
 				}
 				"Wearable3"
 				{
@@ -21501,7 +22582,7 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13024"
+					"ItemDef"	"14124"
 				}
 				"Wearable5"
 				{
@@ -22453,17 +23534,21 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13062"
+					"ItemDef"	"12923"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13060"
+					"ItemDef"	"13062"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13064"
+					"ItemDef"	"13060"
 				}
 				"Wearable4"
+				{
+					"ItemDef"	"13064"
+				}
+				"Wearable5"
 				{
 					"ItemDef"	"13061"
 				}
@@ -22570,23 +23655,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"13060"
+					"ItemDef"	"12923"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13061"
+					"ItemDef"	"13874"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13062"
+					"ItemDef"	"12939"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12939"
+					"ItemDef"	"13875"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13064"
+					"ItemDef"	"13877"
 				}
 			}
 		}
@@ -23017,7 +24102,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"12"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -23150,7 +24235,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"12"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -23344,7 +24429,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9342"
+					"ItemDef"	"14966"
 				}
 				"Wearable3"
 				{
@@ -23602,7 +24687,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9985"
+					"ItemDef"	"9741"
 				}
 				"Wearable2"
 				{
@@ -23610,23 +24695,23 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9986"
+					"ItemDef"	"6822"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9988"
+					"ItemDef"	"6887"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9989"
+					"ItemDef"	"5471"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9990"
+					"ItemDef"	"6821"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9987"
+					"ItemDef"	"6947"
 				}
 			}
 		}
@@ -23739,23 +24824,23 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"6822"
+					"ItemDef"	"9986"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"6887"
+					"ItemDef"	"14492"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6873"
+					"ItemDef"	"14490"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"6821"
+					"ItemDef"	"14491"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"6947"
+					"ItemDef"	"14494"
 				}
 			}
 		}
@@ -24120,6 +25205,10 @@
 				{
 					"ItemDef"	"504"
 				}
+				"Wearable6"
+				{
+					"ItemDef"	"14250"
+				}
 			}
 		}
 		"ProjectileModel"	"particles/units/heroes/hero_lina/lina_base_attack.vpcf"
@@ -24461,7 +25550,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12559"
+					"ItemDef"	"14296"
 				}
 				"Wearable2"
 				{
@@ -25276,7 +26365,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"800"
+		"StatusHealth"	"900"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -25405,7 +26494,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1600"
+		"StatusHealth"	"1800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -25534,7 +26623,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3200"
+		"StatusHealth"	"3600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -25966,7 +27055,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/lanaya/lanaya.vmdl"
-		"ModelScale"	"0.6"
+		"ModelScale"	"0.63"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -25988,7 +27077,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -26005,7 +27094,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"950"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -26037,7 +27126,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"90"
 		"AttackDamageMax"	"110"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1"
 		"AttackRange"	"400"
 		"Creature"
 		{
@@ -26069,7 +27158,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -26087,7 +27176,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/lanaya/lanaya.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.77"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -26109,7 +27198,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -26126,7 +27215,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1900"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -26158,7 +27247,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"180"
 		"AttackDamageMax"	"220"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1"
 		"AttackRange"	"400"
 		"Creature"
 		{
@@ -26174,11 +27263,11 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5302"
+					"ItemDef"	"13722"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"4670"
+					"ItemDef"	"13720"
 				}
 				"Wearable5"
 				{
@@ -26190,7 +27279,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"6"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -26208,7 +27297,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/lanaya/lanaya.vmdl"
-		"ModelScale"	"0.86"
+		"ModelScale"	"0.9"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -26230,7 +27319,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -26247,13 +27336,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"3800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"8"
+		"StatusManaRegen"	"10"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -26279,7 +27368,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"360"
 		"AttackDamageMax"	"440"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1"
 		"AttackRange"	"400"
 		"Creature"
 		{
@@ -26295,11 +27384,11 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13720"
+					"ItemDef"	"14752"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13722"
+					"ItemDef"	"14754"
 				}
 				"Wearable5"
 				{
@@ -26311,7 +27400,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"8"
+		"Level"	"9"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -27456,7 +28545,7 @@
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"7282"
+					"ItemDef"	"13811"
 				}
 			}
 		}
@@ -27957,7 +29046,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_alchemist"
 	}
@@ -28102,7 +29191,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_alchemist"
 	}
@@ -28247,7 +29336,7 @@
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_axe.vsndevts"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_alchemist"
 	}
@@ -30571,27 +31660,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7774"
+					"ItemDef"	"14139"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7773"
+					"ItemDef"	"14143"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5179"
+					"ItemDef"	"7773"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"4201"
+					"ItemDef"	"14140"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7461"
+					"ItemDef"	"7469"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7775"
+					"ItemDef"	"14141"
 				}
 			}
 		}
@@ -31110,7 +32199,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/enigma/enigma.vmdl"
-		"ModelScale"	"0.7"
+		"ModelScale"	"0.72"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -31227,7 +32316,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/enigma/enigma.vmdl"
-		"ModelScale"	"0.85"
+		"ModelScale"	"0.9"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -31306,27 +32395,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8326"
+					"ItemDef"	"14748"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"498"
+					"ItemDef"	"8326"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12329"
+					"ItemDef"	"8632"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12330"
+					"ItemDef"	"498"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12331"
+					"ItemDef"	"14750"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12332"
+					"ItemDef"	"14749"
 				}
 			}
 		}
@@ -32770,9 +33859,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_Lich"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		"SoundSet"	"Creep_Good_Melee"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
@@ -32822,9 +33909,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_Lich"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		"SoundSet"	"Undying_Zombie"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
@@ -32878,6 +33963,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"Creep_Good_Melee_Mega"
 	}
 
 	"pve_melee_bad_mega_diretide"
@@ -32927,6 +34013,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"Undying_Zombie"
 	}
 
 	"pve_ranged_good"
@@ -32974,9 +34061,7 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"ProjectileModel"	"particles/base_attacks/ranged_goodguy.vpcf"
 		"ProjectileSpeed"	"600"
-		"SoundSet"	"Creep_Good_Melee_Mega"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Creep_Good_Range"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
@@ -33028,9 +34113,7 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"ProjectileModel"	"particles/base_attacks/ranged_goodguy.vpcf"
 		"ProjectileSpeed"	"600"
-		"SoundSet"	"Creep_Good_Melee_Mega"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Creep_Bad_Range"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
@@ -33084,6 +34167,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Melee"
 	}
 
 	"pve_stone_b"
@@ -33133,6 +34217,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Melee"
 	}
 
 	"pve_wolf_big"
@@ -33178,9 +34263,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33231,9 +34314,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33285,9 +34366,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33663,9 +34742,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Furion_Treant"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33717,9 +34794,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Furion_Treant"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33771,9 +34846,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Furion_Treant"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33825,9 +34898,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"0"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33879,9 +34950,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"0"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33933,9 +35002,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"0"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -33987,9 +35054,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Beastmaster_Boar"
 		"ProjectileModel"	"particles/units/heroes/hero_beastmaster/beastmaster_boar_attack.vpcf"
 		"ProjectileSpeed"	"1200"
 		"RingRadius"	"60"
@@ -34041,9 +35106,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"256"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"0"
 		"ProjectileModel"	"particles/units/heroes/hero_disruptor/disruptor_thunder_strike_bolt.vpcf"
 		"ProjectileSpeed"	"2000"
 		"RingRadius"	"60"
@@ -34090,14 +35153,12 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"15"
+		"ArmorPhysical"	"12"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"LoneDruid_SpiritBear"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34149,9 +35210,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"LoneDruid_SpiritBear"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34203,9 +35262,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"LoneDruid_SpiritBear"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34257,9 +35314,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"LoneDruid_SpiritBear"
 		"ProjectileModel"	"particles/econ/items/enchantress/enchantress_virgas/ench_impetus_virgas.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34311,9 +35366,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Creep_Good_Range"
 		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34365,9 +35418,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Creep_Good_Range"
 		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34419,9 +35470,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Creep_Good_Range"
 		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_forged_spirit_projectile.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34473,9 +35522,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Hero_VenomancerWard"
 		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34527,9 +35574,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Hero_VenomancerWard"
 		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34581,9 +35626,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"Hero_VenomancerWard"
 		"ProjectileModel"	"particles/units/heroes/hero_venomancer/venomancer_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34635,9 +35678,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Creep_Good_Melee"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
+		"SoundSet"	"ShadowShaman_Ward"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadow_shaman_ward_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -34691,8 +35732,7 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 	}
@@ -34742,8 +35782,7 @@
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"RingRadius"	"60"
 		"AttackAnimationPoint"	"0.3"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 	}
@@ -34791,9 +35830,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"ProjectileModel"	"particles/econ/items/invoker/invoker_ti6/invoker_tornado_ti6_funnel.vpcf"
 		"ProjectileSpeed"	"1200"
 		"RingRadius"	"60"
@@ -34844,9 +35881,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Melee"
 		"ProjectileModel"	"particles/units/heroes/hero_invoker/invoker_tornado_funnel.vpcf"
 		"ProjectileSpeed"	"1200"
 		"RingRadius"	"60"
@@ -34903,6 +35938,7 @@
 		"ProjectileSpeed"	"600"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Ranged"
 	}
 
 	"pve_leishou_b"
@@ -34954,6 +35990,7 @@
 		"ProjectileSpeed"	"600"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Ranged"
 	}
 
 	"pve_black_dragon"
@@ -35005,6 +36042,7 @@
 		"ProjectileSpeed"	"600"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Ranged"
 	}
 
 	"pve_troll_dark_a"
@@ -35050,9 +36088,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Ranged"
 		"ProjectileModel"	"particles/econ/items/alchemist/alchemist_smooth_criminal/alchemist_smooth_criminal_unstable_concoction_projectile.vpcf"
 		"ProjectileSpeed"	"800"
 		"RingRadius"	"60"
@@ -35103,9 +36139,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Ranged"
 		"ProjectileModel"	"particles/econ/items/clinkz/clinkz_maraxiform/clinkz_maraxiform_searing_arrow_deso.vpcf"
 		"ProjectileSpeed"	"600"
 		"RingRadius"	"60"
@@ -35156,9 +36190,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"n_creep_Ranged"
 		"ProjectileModel"	"particles/items2_fx/skadi_projectile.vpcf"
 		"ProjectileSpeed"	"600"
 		"RingRadius"	"60"
@@ -35209,9 +36241,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"428"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"cny_beast"
 		"ProjectileModel"	"particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave.vpcf"
 		"ProjectileSpeed"	"1000"
 		"AttackAnimationPoint"	"0.3"
@@ -35347,9 +36377,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"428"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"SoundSet"	"Hero_OgreMagi"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"SoundSet"	"Roshan"
 		"ProjectileModel"	"particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_spell_great_cleave.vpcf"
 		"ProjectileSpeed"	"1000"
 		"AttackAnimationPoint"	"0.3"
@@ -35504,7 +36532,7 @@
 	"stub"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
+		"Ability1"	""
 		"Ability2"	"no_hp_bar"
 		"Ability3"	""
 		"Ability4"	""
@@ -35542,6 +36570,50 @@
 		"ArmorPhysical"	"0"
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"HealthBarOffset"	"192"
+	}
+
+	"fissure"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"wudi"
+		"Ability2"	"no_hp_bar"
+		"Ability3"	"no_selectable"
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/earthshaker/ti9_immortal/ti9_immortal_fissure.vmdl"
+		"ModelScale"	"1.3"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"100"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"5"
+		"AttackRange"	"328"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"192"
 	}
 
@@ -35587,3829 +36659,6 @@
 		"MovementSpeed"	"150"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
-	}
-
-	"barrack_good"
-	{
-		// General
-		//
-		// Class of entity of link to.
-		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/props_structures/radiant_ranged_barracks001.vmdl"
-		"ModelScale"	"0.7"
-		"MinimapIconSize"	"0"
-		// Abilities
-		// ----------------------------------------------------------------
-		// Ability 1.
-		"Ability1"	"is_ward"
-		// Ability 2.
-		"Ability2"	""
-		// Ability 3.
-		"Ability3"	""
-		// Ability 4.
-		"Ability4"	""
-		// Ability 5.
-		"Ability5"	""
-		// Ability 6 - Extra.
-		"Ability6"	""
-		// Ability 7 - Extra.
-		"Ability7"	""
-		// Ability 8 - Extra.
-		"Ability8"	""
-		// Armor
-		// ----------------------------------------------------------------
-		// Physical protection.
-		"ArmorPhysical"	"0"
-		// Magical protection.
-		"MagicalResistance"	"0"
-		// Attack
-		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
-		// Movement
-		// ----------------------------------------------------------------
-		// Type of locomotion - ground, air
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
-		// Speed
-		"MovementSpeed"	"0"
-		// Turning rate.
-		"MovementTurnRate"	"0"
-		// Status
-		// ----------------------------------------------------------------
-		// Base health.
-		"StatusHealth"	"100"
-		// Health regeneration rate.
-		"StatusHealthRegen"	"0"
-		// Base mana.
-		"StatusMana"	"0"
-		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
-		// Team
-		// ----------------------------------------------------------------
-		// Team name.
-		"TeamName"	"DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
-		// Vision
-		// ----------------------------------------------------------------
-		// Range of vision during day light.
-		"VisionDaytimeRange"	"256"
-		// Range of vision at night time.
-		"VisionNighttimeRange"	"256"
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"ShouldDoFlyHeightVisual"	"0"
-		"IsAncient"	"1"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-	}
-
-	"barrack_bad"
-	{
-		// General
-		//
-		// Class of entity of link to.
-		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/props_structures/dire_barracks_ranged001.vmdl"
-		"ModelScale"	"0.7"
-		"MinimapIconSize"	"0"
-		// Abilities
-		// ----------------------------------------------------------------
-		// Ability 1.
-		"Ability1"	"is_ward"
-		// Ability 2.
-		"Ability2"	""
-		// Ability 3.
-		"Ability3"	""
-		// Ability 4.
-		"Ability4"	""
-		// Ability 5.
-		"Ability5"	""
-		// Ability 6 - Extra.
-		"Ability6"	""
-		// Ability 7 - Extra.
-		"Ability7"	""
-		// Ability 8 - Extra.
-		"Ability8"	""
-		// Armor
-		// ----------------------------------------------------------------
-		// Physical protection.
-		"ArmorPhysical"	"0"
-		// Magical protection.
-		"MagicalResistance"	"0"
-		// Attack
-		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
-		// Movement
-		// ----------------------------------------------------------------
-		// Type of locomotion - ground, air
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
-		// Speed
-		"MovementSpeed"	"0"
-		// Turning rate.
-		"MovementTurnRate"	"0"
-		// Status
-		// ----------------------------------------------------------------
-		// Base health.
-		"StatusHealth"	"100"
-		// Health regeneration rate.
-		"StatusHealthRegen"	"0"
-		// Base mana.
-		"StatusMana"	"0"
-		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
-		// Team
-		// ----------------------------------------------------------------
-		// Team name.
-		"TeamName"	"DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
-		// Vision
-		// ----------------------------------------------------------------
-		// Range of vision during day light.
-		"VisionDaytimeRange"	"256"
-		// Range of vision at night time.
-		"VisionNighttimeRange"	"256"
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"ShouldDoFlyHeightVisual"	"0"
-		"IsAncient"	"1"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-	}
-
-	"castle"
-	{
-		// General
-		//
-		// Class of entity of link to.
-		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/props_structures/radiant_tower_base001.vmdl"
-		"ModelScale"	"0.64"
-		"MinimapIconSize"	"0"
-		// Abilities
-		// ----------------------------------------------------------------
-		// Ability 1.
-		"Ability1"	"no_hp_bar"
-		// Ability 2.
-		"Ability2"	"no_minimap_icon"
-		// Ability 3.
-		"Ability3"	"no_selectable"
-		// Ability 4.
-		"Ability4"	"no_collision"
-		// Ability 5.
-		"Ability5"	"mo_mian"
-		// Ability 6 - Extra.
-		"Ability6"	""
-		// Ability 7 - Extra.
-		"Ability7"	""
-		// Ability 8 - Extra.
-		"Ability8"	""
-		// Armor
-		// ----------------------------------------------------------------
-		// Physical protection.
-		"ArmorPhysical"	"99999"
-		// Magical protection.
-		"MagicalResistance"	"100"
-		// Attack
-		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
-		// Movement
-		// ----------------------------------------------------------------
-		// Type of locomotion - ground, air
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
-		// Speed
-		"MovementSpeed"	"0"
-		// Turning rate.
-		"MovementTurnRate"	"0"
-		// Status
-		// ----------------------------------------------------------------
-		// Base health.
-		"StatusHealth"	"500"
-		// Health regeneration rate.
-		"StatusHealthRegen"	"1000"
-		// Base mana.
-		"StatusMana"	"500"
-		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
-		// Team
-		// ----------------------------------------------------------------
-		// Team name.
-		"TeamName"	"DOTA_TEAM_GOODGUYS"
-		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
-		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
-		// Vision
-		// ----------------------------------------------------------------
-		// Range of vision during day light.
-		"VisionDaytimeRange"	"832"
-		// Range of vision at night time.
-		"VisionNighttimeRange"	"416"
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"ShouldDoFlyHeightVisual"	"0"
-		"IsAncient"	"1"
-	}
-
-	// m101
-	"m101"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/props_gameplay/donkey.vmdl"
-		"ModelScale"	"1"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m102
-	"m102"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/props_gameplay/donkey_dire.vmdl"
-		"ModelScale"	"1"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m103
-	"m103"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/mighty_chicken/mighty_chicken.vmdl"
-		"ModelScale"	"1"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"200"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m104
-	"m104"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/yak/yak.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m105
-	"m105"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/mighty_boar/mighty_boar.vmdl"
-		"ModelScale"	"1"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"200"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m106
-	"m106"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/frog/frog.vmdl"
-		"ModelScale"	"1"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"200"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m107
-	"m107"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/juggernaut_dog/juggernaut_dog.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m108
-	"m108"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/bearzky/bearzky.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m109
-	"m109"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	"movespeed_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/arneyb_rabbit/arneyb_rabbit.vmdl"
-		"ModelScale"	"1.1"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m110
-	"m110"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	"movespeed_aura_enemy"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/nexon_turtle_05_green/nexon_turtle_05_green.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m111
-	"m111"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_plant"
-		"Ability2"	"plant_stop"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/stump/stump"
-		"ModelScale"	"1"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m112
-	"m112"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	"armor_kill"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/mechjaw/mechjaw.vmdl"
-		"ModelScale"	"1.45"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m113
-	"m113"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/blue_lightning_horse/blue_lightning_horse.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"250"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m114
-	"m114"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/skippy_parrot/skippy_parrot.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m201
-	"m201"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/baby_rosh/babyroshan.vmdl"
-		"ModelScale"	"1.6"
-		"Level"	"8"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"60"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"6"
-		"AttackDamageMax"	"6"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m202
-	"m202"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_dragon"
-		"Ability2"	"have_attack_froze"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/baby_winter_wyvern/baby_winter_wyvern_flying.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
-		"HealthBarOffset"	"128"
-	}
-
-	// m203
-	"m203"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/snowl/snowl.vmdl"
-		"ModelScale"	"1"
-		"Level"	"1.1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"768"
-		"VisionNighttimeRange"	"768"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m204
-	"m204"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"have_attack_poison"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/venoling/venoling.vmdl"
-		"ModelScale"	"1.1"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m205
-	"m205"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/props_gameplay/donkey.vmdl"
-		"ModelScale"	"1"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-		"Skin"	"1"
-	}
-
-	// m206
-	"m206"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	"heal_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/tinkbot/tinkbot.vmdl"
-		"ModelScale"	"1.1"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m207
-	"m207"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ghost"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/imp/imp.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"250"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-		"Skin"	"0"
-	}
-
-	// m208
-	"m208"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/lilnova/lilnova.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"768"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"200"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m209
-	"m209"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_halobios"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/kanyu_shark/kanyu_shark.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"45"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"6"
-		"AttackDamageMax"	"6"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"200"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m210
-	"m210"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ghost"
-		"Ability2"	"death_draw_1_card"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/pumpkin_courier/pumpkin_courier.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m211
-	"m211"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/mech_donkey/mech_donkey.vmdl"
-		"ModelScale"	"1.1"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m212
-	"m212"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	"armor_damaged"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/trapjaw/trapjaw.vmdl"
-		"ModelScale"	"1.4"
-		"Level"	"5"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m214
-	"m214"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ghost"
-		"Ability2"	"death_break_armor"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/krobeling/krobeling.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"5"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"5"
-		"AttackDamageMax"	"5"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m213
-	"m213"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"have_attack_break"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/huntling/huntling.vmdl"
-		"ModelScale"	"1.1"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m215
-	"m215"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/baekho/baekho.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"40"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m216
-	"m216"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"healself_kill"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/seekling/seekling.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"5"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"40"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m217
-	"m217"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_dragon"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/otter_dragon/otter_dragon.vmdl"
-		"ModelScale"	"1.9"
-		"Level"	"7"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m218
-	"m218"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_dragon"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/green_jade_dragon/green_jade_dragon.vmdl"
-		"ModelScale"	"1.7"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"45"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m301
-	"m301"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/teron/teron_flying.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"6"
-		"AttackDamageMax"	"6"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"250"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
-		"HealthBarOffset"	"192"
-	}
-
-	// m302
-	"m302"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	""
-		"Ability2"	"is_beast"
-		"Ability3"	"attack_aura"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/duskie/duskie.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"192"
-	}
-
-	// m303
-	"m303"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ghost"
-		"Ability2"	"death_summon_self"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/pw_zombie/pw_zombie.vmdl"
-		"ModelScale"	"1.0"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m304
-	"m304"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_imp"
-		"Ability2"	"burning_soil_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/doom_demihero_courier/doom_demihero_courier.vmdl"
-		"ModelScale"	"1.9"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"5"
-		"AttackDamageMax"	"5"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m305
-	"m305"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_dragon"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/bookwyrm/bookwyrm.vmdl"
-		"ModelScale"	"1.4"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m306
-	"m306"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"death_summon_3_donkey"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/donkey_trio/mesh/donkey_trio.vmdl"
-		"ModelScale"	"1.4"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"30"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m307
-	"m307"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	"break_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/beetlejaws/mesh/beetlejaws.vmdl"
-		"ModelScale"	"1.8"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"45"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m308
-	"m308"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"death_get_2_a_card"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/donkey_crummy_wizard_2014/donkey_crummy_wizard_2014.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"5"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m309
-	"m309"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/flopjaw/flopjaw.vmdl"
-		"ModelScale"	"1.9"
-		"Level"	"10"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m310
-	"m310"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ghost"
-		"Ability2"	"death_draw_3_card"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl"
-		"ModelScale"	"1.3"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m311
-	"m311"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_halobios"
-		"Ability2"	"riki_permanent_invisibility"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/hermit_crab/hermit_crab.vmdl"
-		"ModelScale"	"1.7"
-		"Level"	"5"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"40"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m312
-	"m312"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_halobios"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/axolotl/axolotl.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"15"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m313
-	"m313"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"chaosalways"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/bajie_pig/bajie_pig.vmdl"
-		"ModelScale"	"2.1"
-		"Level"	"9"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"75"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"6"
-		"AttackDamageMax"	"6"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m401
-	"m401"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"melan_aura"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/drodo/drodo.vmdl"
-		"ModelScale"	"1.4"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"30"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m402
-	"m402"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_dragon"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/ig_dragon/ig_dragon.vmdl"
-		"ModelScale"	"1.8"
-		"Level"	"10"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"30"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"5"
-		"AttackDamageMax"	"5"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m403
-	"m403"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_element"
-		"Ability2"	"growup"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/vaal_the_animated_constructradiant/vaal_the_animated_constructradiant.vmdl"
-		"ModelScale"	"1"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"5"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m404
-	"m404"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ghost"
-		"Ability2"	"death_chaos"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/krobeling_gold/krobeling_gold.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"5"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"5"
-		"AttackDamageMax"	"5"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m405
-	"m405"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"burning_soil_aura2"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/courier_mvp_redkita/courier_mvp_redkita.vmdl"
-		"ModelScale"	"1.6"
-		"Level"	"7"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"5"
-		"AttackDamageMax"	"5"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m406
-	"m406"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_machine"
-		"Ability2"	"death_get_1_4xx_card"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/lockjaw/lockjaw.vmdl"
-		"ModelScale"	"2"
-		"Level"	"8"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"60"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m407
-	"m407"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/navi_courier/navi_courier.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"9"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m4071
-	"m4071"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/courier/navi_courier/navi_courier_flying.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"9"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"7"
-		"AttackDamageMax"	"7"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
-		"HealthBarOffset"	"128"
-	}
-
-	// m408
-	"m408"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	"burning_soil_aura_onhurt"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/boris_baumhauer/boris_baumhauer_flying.vmdl"
-		"ModelScale"	"1.7"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"40"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
-		"HealthBarOffset"	"128"
-	}
-
-	// m409
-	"m409"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_beast"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/virtus_werebear_t3/virtus_werebear_t3.vmdl"
-		"ModelScale"	"2"
-		"Level"	"7"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"60"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// m410
-	"m410"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_halobios"
-		"Ability2"	"riki_permanent_invisibility"
-		"Ability3"	"chaosalways"
-		"Ability4"	"heal_aura"
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/courier/lgd_golden_skipper/lgd_golden_skipper_flying.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"25"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"150"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
-		"HealthBarOffset"	"128"
-	}
-
-	// w101
-	"w101"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"materials/pumpkin.vmdl"
-		"ModelScale"	"2.5"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"30"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w102
-	"w102"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	""
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/eye_of_avernus_ward/eye_of_avernus_ward.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w103
-	"w103"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_froze"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/crystal_maiden_ward/crystal_maiden_ward.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w104
-	"w104"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_poison"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/tide_bottom_watcher/tide_bottom_watcher.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w105
-	"w105"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_break"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/echo_bat_ward/echo_bat_ward.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w106
-	"w106"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_cleave"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/jinnie_v2/jinnie_v2.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w107
-	"w107"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"riki_permanent_invisibility"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/deep_observer/deep_observer.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"205"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"250"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w108
-	"w108"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"tower_true_sight"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/eyeofforesight/eyeofforesight.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w109
-	"w109"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_split"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/enchantedvision_ward/enchantedvision_ward.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"1"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"20"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w201
-	"w201"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"heal_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/heroes/juggernaut/jugg_healing_ward.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w202
-	"w202"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_froze"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/esl_wardchest_radling_ward/esl_wardchest_radling_ward.vmdl"
-		"ModelScale"	"1.4"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"328"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w203
-	"w203"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"burning_soil_aura1"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/jakiro_pyrexae_ward/jakiro_pyrexae_ward.vmdl"
-		"ModelScale"	"1.2"
-		"Level"	"2"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"384"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w204
-	"w204"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_poison"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/dragon_ward/dragon_ward.vmdl"
-		"ModelScale"	"1.7"
-		"Level"	"4"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"35"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w205
-	"w205"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"explode1"
-		"Ability3"	"riki_permanent_invisibility"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/heroes/techies/fx_techiesfx_mine.vmdl"
-		"ModelScale"	"1.4"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"1"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"656"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w301
-	"w301"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"burning_soil_aura2"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/d2lp_4_ward/d2lp_4_ward.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"7"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"384"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w302
-	"w302"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"heal_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/chinese_ward/chinese_ward.vmdl"
-		"ModelScale"	"1.6"
-		"Level"	"6"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"2"
-		"AttackDamageMax"	"2"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w303
-	"w303"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_cleave"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/esl_wardchest_ward_of_foresight/esl_wardchest_ward_of_foresight.vmdl"
-		"ModelScale"	"1.9"
-		"Level"	"8"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"4"
-		"AttackDamageMax"	"4"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w306
-	"w306"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"explode3"
-		"Ability3"	"riki_permanent_invisibility"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/heroes/techies/fx_techiesfx_stasis.vmdl"
-		"ModelScale"	"1.6"
-		"Level"	"3"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"1"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w304
-	"w304"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"have_attack_split"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/tink/tink.vmdl"
-		"ModelScale"	"1.8"
-		"Level"	"9"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"3"
-		"AttackDamageMax"	"3"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w305
-	"w305"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"break_aura"
-		"Ability3"	""
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/warding_guise/warding_guise.vmdl"
-		"ModelScale"	"1.8"
-		"Level"	"7"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"1"
-		"AttackDamageMax"	"1"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w401
-	"w401"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"melancholy"
-		"Ability3"	"have_attack_cleave"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/items/wards/monty_ward/monty_ward.vmdl"
-		"ModelScale"	"1.8"
-		"Level"	"7"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"50"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"6"
-		"AttackDamageMax"	"6"
-		"AttackRate"	"5"
-		"AttackRange"	"384"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	// w402
-	"w402"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"is_ward"
-		"Ability2"	"explode2"
-		"Ability3"	"riki_permanent_invisibility"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"Model"	"models/heroes/techies/fx_techies_remotebomb.vmdl"
-		"ModelScale"	"2.2"
-		"Level"	"10"
-		"BountyXP"	"0"
-		"BountyGoldMin"	"0"
-		"BountyGoldMax"	"0"
-		"StatusHealth"	"1"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"StatusStartingMana"	"0"
-		"VisionDaytimeRange"	"384"
-		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"5"
-		"AttackRange"	"512"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"0"
-		"ArmorPhysical"	"0"
-		"MovementSpeed"	"0"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"128"
-	}
-
-	"good_castle"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"no_hp_bar"
-		"Ability2"	"no_selectable"
-		"Ability3"	"tower_true_sight"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"StatusHealth"	"100"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"VisionDaytimeRange"	"512"
-		"VisionNighttimeRange"	"384"
-		"StatusStartingMana"	"0"
-		"Model"	"models/props_structures/radiant_ancient001.vmdl"
-		"ModelScale"	"1.15"
-		"Level"	"1"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"	"0"
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
-		"IsAncient"	"1"
-	}
-
-	"bad_castle"
-	{
-		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"no_hp_bar"
-		"Ability2"	"no_selectable"
-		"Ability3"	"tower_true_sight"
-		"Ability4"	""
-		"Ability5"	""
-		"Ability6"	""
-		"Ability7"	""
-		"Ability8"	""
-		"Ability9"	""
-		"Ability10"	""
-		"Ability11"	""
-		"Ability12"	""
-		"Ability13"	""
-		"Ability14"	""
-		"Ability15"	""
-		"Ability16"	"dac_guai_base"
-		"StatusHealth"	"100"
-		"StatusHealthRegen"	"0"
-		"StatusMana"	"0"
-		"StatusManaRegen"	"0"
-		"VisionDaytimeRange"	"512"
-		"VisionNighttimeRange"	"384"
-		"StatusStartingMana"	"0"
-		"Model"	"models/props_structures/dire_ancient_base001.vmdl"
-		"ModelScale"	"1"
-		"Level"	"1"
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
-		"MovementSpeed"	"0"
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
-		"IsAncient"	"1"
 	}
 
 	// 速度神符
@@ -40413,7 +37662,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/mars/mars.vmdl"
-		"ModelScale"	"0.65"
+		"ModelScale"	"0.63"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -40492,7 +37741,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"670"
+					"ItemDef"	"672"
 				}
 				"Wearable2"
 				{
@@ -40500,15 +37749,15 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"672"
+					"ItemDef"	"13572"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"673"
+					"ItemDef"	"670"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"5412"
+					"ItemDef"	"673"
 				}
 			}
 		}
@@ -40535,7 +37784,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/mars/mars.vmdl"
-		"ModelScale"	"0.8"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -40614,23 +37863,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"670"
+					"ItemDef"	"14879"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"671"
+					"ItemDef"	"14878"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"672"
+					"ItemDef"	"13538"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"673"
+					"ItemDef"	"14881"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13538"
+					"ItemDef"	"673"
 				}
 			}
 		}
@@ -40753,5 +38002,105 @@
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"ShouldDoFlyHeightVisual"	"0"
+	}
+
+	"taunt_ward"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"is_ward"
+		"Ability2"	"ward_taunt"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/wards/relentless_warden_ward/relentless_warden_ward.vmdl"
+		"ModelScale"	"1.5"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"0"
+		"AttackRange"	"0"
+		"AttackRangeBuffer"	"0"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"0"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"heal_ward"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"ward_heal"
+		"Ability2"	"is_ward"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/heroes/juggernaut/jugg_healing_ward.vmdl"
+		"ModelScale"	"1.5"
+		"Level"	"2"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"10"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"0"
+		"AttackRange"	"900"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"100"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"0"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 }

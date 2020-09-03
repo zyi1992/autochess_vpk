@@ -55,13 +55,16 @@ function ball_lightning_traverse( keys )
 		-- caster:SpendMana( mana_per_distance, ability )
 		
 		-- Create dummy projectile
+
+		local grid_distance = (target - casterLoc):Length2D()
+		
 		local projectileTable =
 		{
 			EffectName = particle_dummy,
 			Ability = ability,
 			vSpawnOrigin = caster:GetAbsOrigin(),
 			vVelocity = speed * forwardVec,
-			fDistance = 99999,
+			fDistance = grid_distance,
 			fStartRadius = radius,
 			fEndRadius = radius,
 			Source = caster,
@@ -135,7 +138,7 @@ function ball_lightning_damage( keys )
 	local distance_per_damage = ability:GetLevelSpecialValueFor( "distance_per_damage", ability:GetLevel() - 1 )
 	local damageType = ability:GetAbilityDamageType()
 
-	if keys.caster:GetTeam() ~= keys.target:GetTeam() then
+	if keys.caster:GetTeam() ~= keys.target:GetTeam() and keys.target:IsMagicImmune() == false then
 	
 	-- Calculate and damage the unit
 		local real_damage = ( targetLoc - casterLoc ):Length2D() * damage_per_distance / distance_per_damage
