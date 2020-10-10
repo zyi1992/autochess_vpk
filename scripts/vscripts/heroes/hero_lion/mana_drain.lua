@@ -17,7 +17,9 @@ function mana_drain( keys )
 		end
 
 		if BlockByLinken(target) == true then
-			caster:RemoveModifierByName('modifier_mana_drain_datadriven')
+			-- caster:RemoveModifierByName('modifier_mana_drain_datadriven')
+			ability:OnChannelFinish(false)
+			caster:Stop()
 			return
 		end
 

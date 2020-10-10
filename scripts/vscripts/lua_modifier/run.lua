@@ -3,7 +3,7 @@ modifier_run = class({})
 animation = ACT_DOTA_RUN
 
 function modifier_run:IsStunDebuff()
-    return true
+    return false
 end
 
 function modifier_run:IsHidden()
@@ -73,32 +73,45 @@ end
 
 function modifier_run:DeclareFunctions()
     local funcs = {
-        -- MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+        MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
     }
     return funcs
 end
 
 function modifier_run:CheckState()
     local state = {
-        [MODIFIER_STATE_STUNNED] = true,
-        [MODIFIER_STATE_UNSELECTABLE] = true,
+        -- [MODIFIER_STATE_STUNNED] = true,
+        -- [MODIFIER_STATE_UNSELECTABLE] = true,
+        [MODIFIER_STATE_SILENCED] = true,
+        [MODIFIER_STATE_DISARMED] = true,
+        [MODIFIER_STATE_COMMAND_RESTRICTED] = true,
         -- [MODIFIER_STATE_INVULNERABLE] = true,
     }
 
     return state
 end
 
--- function modifier_run:GetOverrideAnimation()
---     return animation or ACT_DOTA_RUN
--- end
+function modifier_run:GetOverrideAnimation()
+    if self:GetParent():IsStunned() ==true then
+        return ACT_DOTA_DISABLED
+    else
+        return animation or ACT_DOTA_RUN
+    end
+end
 
 function modifier_run:UpdateHorizontalMotion(me, dt)
     if IsServer() then
         -- 判断是否到达了终点
         -- if self.leap_traveled < self.flDistance then
         if (me:GetAbsOrigin()-self.vTargetPosition):Length2D() > self.flHorizontalSpeed then
-            me:SetAbsOrigin(me:GetAbsOrigin() + self.vDirection * self.flHorizontalSpeed)
-            self.leap_traveled = self.leap_traveled + self.flHorizontalSpeed
+            --没到终点
+            if me:IsStunned() ~= true and me:IsFrozen() ~= true then
+                me:SetAbsOrigin(me:GetAbsOrigin() + self.vDirection * self.flHorizontalSpeed)
+                self.leap_traveled = self.leap_traveled + self.flHorizontalSpeed
+            else
+                --眩晕或冰冻，不位移
+
+            end
         else
             --到终点了
             me:SetAbsOrigin(self.vTargetPosition)

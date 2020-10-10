@@ -32,6 +32,20 @@ return {
 			animation_modifier = nil,
 			end_effect = "effect/animation/tree/2_oak_01_destruction.vpcf",
 		},
+		n302 = {
+			--闪亮登场
+			tp_effect = "particles/econ/events/ti10/radiance_owner_ti10_detail.vpcf",
+			tp_sound = "animation.levelup",
+			animation_modifier = nil,
+			end_effect = "particles/econ/events/ti10/hero_levelup_ti10_godray.vpcf",
+		},
+		n303 = {
+			--虚空传送阵
+			tp_effect = "particles/econ/events/ti10/portal/portal_open_good.vpcf",
+			tp_sound = "animation.portal",
+			animation_modifier = nil,
+			end_effect = "particles/econ/events/ti10/portal/portal_open_good_endflash.vpcf",
+		},
 		n401 = {	
 			--洪流浪潮
 			tp_effect = "effect/animation/water/1kunkka/kunkka_spell_torrent_bubbles.vpcf",
@@ -44,7 +58,15 @@ return {
 			tp_sound = "animation.cookie",
 			animation_modifier = nil,
 			end_effect = "particles/units/heroes/hero_lion/lion_spell_voodoo.vpcf",
-		}
+		},
+		n403 = {
+			--清风环佩
+			tp_effect = "particles/econ/items/windrunner/windranger_arcana/windranger_arcana_ambient.vpcf",
+			tp_sound = "animation.windrun",
+			animation_modifier = nil,
+			end_effect = "effect/animation/wr/1.vpcf",
+		},
+		
 	},
 
 } 

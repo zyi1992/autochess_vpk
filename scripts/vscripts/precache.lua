@@ -290,7 +290,14 @@ return {
 	"effect/animation/cookie/revealed_cookies.vpcf",
 	"particles/units/heroes/hero_lion/lion_spell_voodoo.vpcf",
 	"particles/dev/library/base_dust_hit_shockwave.vpcf",
- 
+ 	"particles/econ/events/ti10/agh_aura_03.vpcf",
+ 	"particles/econ/items/windrunner/windranger_arcana/windranger_arcana_ambient.vpcf",
+ 	"effect/animation/wr/1.vpcf",
+ 	"particles/econ/events/ti10/portal/portal_open_good.vpcf",
+ 	"particles/econ/events/ti10/portal/portal_open_good_endflash.vpcf",
+ 	"particles/econ/events/ti10/radiance_owner_ti10_detail.vpcf",
+ 	"particles/econ/events/ti10/hero_levelup_ti10_godray.vpcf",
+ 	"particles/econ/items/keeper_of_the_light/kotl_ti10_immortal/kotl_ti10_blinding_light.vpcf",
 
 	"soundevents/soundevents_dota_ui.vsndevts",
 	"soundevents/game_sounds_ui.vsndevts",

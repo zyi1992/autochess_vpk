@@ -54,6 +54,7 @@ function modifier_tuitui:OnDestroy()
         if GameRules:GetGameModeEntity().game_status == 1 or self:GetParent().transfer_chess == true then
             self:GetParent().transfer_chess = false
             self:GetParent():SetForwardVector(Vector(0,1,0))
+            ParticleManager:DestroyParticle(self:GetParent().tuitui_particle,true)
         end
     end
 end

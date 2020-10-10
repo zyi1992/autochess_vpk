@@ -125,8 +125,8 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"5"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
 				}
 				"IsHidden"	"1"
 				"EffectName"	"effect/qiangxi/1.vpcf"
@@ -231,7 +231,7 @@
 		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"Modifiers"
 		{
-			"modifier_item_shanbihufu"
+			"modifier_item_huifuzhihuan"
 			{
 				"Passive"	"1"
 				"Properties"
@@ -1032,7 +1032,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"90"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"100"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -1108,7 +1108,7 @@
 				"Passive"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"1"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"2"
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
@@ -4613,18 +4613,7 @@
 		}
 	}
 
-	"item_recipe_qinglianbaozhu"
-	{
-		"BaseClass"	"item_recipe_arcane_boots"
-		"ID"	"3043"
-		"ItemCost"	"0"
-		"ItemRecipe"	"1"
-		"ItemResult"	"item_qinglianbaozhu"
-		"ItemRequirements"
-		{
-			"01"	"item_jianrenqiu;item_nengliangqiu;"
-		}
-	}
+
 
 	"item_recipe_zhaohuanshenshi"
 	{
