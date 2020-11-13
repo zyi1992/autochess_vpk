@@ -9,7 +9,7 @@ function spiked_carapace_reflect( keys )
 	local damageTaken = keys.DamageTaken
 	
 	-- Check if it's not already been hit
-	if not caster.carapaced_units[ attacker:entindex() ] and not attacker:IsMagicImmune() then
+	if not caster.carapaced_units[ attacker:entindex() ] and not attacker:IsMagicImmune() and not attacker:HasModifier('modifier_spiked_carapace_buff_datadriven') then
 		-- attacker:SetHealth( attacker:GetHealth() - damageTaken )
 
 		ApplyDamage({

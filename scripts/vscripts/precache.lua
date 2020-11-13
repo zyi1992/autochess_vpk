@@ -259,6 +259,12 @@ return {
 	"models/items/courier/courier_ti10_dire/courier_ti10_dire_lvl5/courier_ti10_dire_lvl5.vmdl",
 	"models/items/courier/courier_ti10_radiant/courier_ti10_radiant_lvl7/courier_ti10_radiant_lvl7.vmdl",
 
+	"models/items/courier/clockwerks_orange/clockwerks_orange.vmdl",
+	"models/items/courier/enno_the_underlord/enno_the_underlord.vmdl",
+	"models/items/courier/happy_koala/happy_koala.vmdl",
+	"models/items/courier/leafy_the_sea_dragon_courier_courier/leafy_the_sea_dragon_courier_courier.vmdl",
+	"models/items/courier/ol_dirty_boot_courier_courier/ol_dirty_boot_courier_courier.vmdl",
+
 	"particles/econ/items/ogre_magi/ogre_magi_arcana/ogre_magi_arcana_attack1_blur.vpcf",
 	"particles/econ/items/ogre_magi/ogre_magi_arcana/ogre_magi_arcana_attack2_blur.vpcf",
 	"particles/econ/items/ogre_magi/ogre_magi_arcana/ogre_magi_arcana_attack3_blur.vpcf",
@@ -281,6 +287,12 @@ return {
 	"particles/econ/items/sven/sven_ti7_sword/sven_ti7_sword_attack_blur.vpcf",
 	"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon_offhand/bs_ez_atk3_blur_l.vpcf",
 	"particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bs_ez_atk3_blur_r.vpcf",
+	"models/items/courier/courier_fall20/courier_fall20.vmdl",
+	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v3_effect.vpcf",
+	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf",
+	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf",
+	"particles/econ/events/diretide_2020/emblem/fall20_emblem_effect.vpcf",
+
 
 	"effect/tp/1.vpcf",
 	"effect/animation/tk_teleport/1econ/items/tinker/boots_of_travel/teleport_end_bots.vpcf",
@@ -309,6 +321,7 @@ return {
 	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts",
 
 	-- "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts",
@@ -462,6 +475,9 @@ return {
 	"particles/units/heroes/hero_bloodseeker/bs_atk2_blur_alt.vpcf",
 	"particles/units/heroes/hero_bloodseeker/bs_atk3_blur_l.vpcf",
 	"particles/units/heroes/hero_bloodseeker/bs_atk3_blur_r.vpcf",
+	"particles/neutral_fx/z_d1.vpcf",
+	"particles/creeps/lane_creeps/creep_dire_hulk_swipe_left.vpcf",
+	"particles/creeps/lane_creeps/creep_dire_hulk_swipe_right.vpcf",
 
 	"models/qiyidan_s2/qiyidan_s2.vmdl",
 

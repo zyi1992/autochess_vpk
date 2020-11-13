@@ -84,7 +84,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
 		"AttackDamageMax"	"55"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -213,7 +213,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"110"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -346,7 +346,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
 		"AttackDamageMax"	"220"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -803,7 +803,7 @@
 		// Ability 2.
 		"Ability2"	"is_god"
 		// Ability 3.
-		"Ability3"	"is_warrior"
+		"Ability3"	"is_druid"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -865,7 +865,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"120"
+		"AttackDamageMax"	"130"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -924,7 +924,7 @@
 		// Ability 2.
 		"Ability2"	"is_god"
 		// Ability 3.
-		"Ability3"	"is_warrior"
+		"Ability3"	"is_druid"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -986,7 +986,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"240"
+		"AttackDamageMax"	"260"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -1045,7 +1045,7 @@
 		// Ability 2.
 		"Ability2"	"is_god"
 		// Ability 3.
-		"Ability3"	"is_warrior"
+		"Ability3"	"is_druid"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -1076,13 +1076,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"4000"
+		"StatusHealth"	"3000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"10"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -1107,7 +1107,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"400"
-		"AttackDamageMax"	"480"
+		"AttackDamageMax"	"520"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -1141,7 +1141,7 @@
 		"AttackAnimationPoint"	"0.35"
 		"ConsideredHero"	"1"
 		"HasInventory"	"1"
-		"Level"	"9"
+		"Level"	"8"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_ElderTitan"
@@ -2235,7 +2235,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -2356,7 +2356,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -2477,7 +2477,7 @@
 		// Physical protection.
 		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"0"
+		"MagicalResistance"	"10"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -6719,7 +6719,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9879"
+					"ItemDef"	"13168"
 				}
 				"Wearable2"
 				{
@@ -6727,15 +6727,15 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8333"
+					"ItemDef"	"13166"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9877"
+					"ItemDef"	"13163"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9881"
+					"ItemDef"	"13164"
 				}
 			}
 		}
@@ -9072,7 +9072,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7247"
+					"ItemDef"	"9322"
 				}
 				"Wearable2"
 				{
@@ -9080,15 +9080,15 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9322"
+					"ItemDef"	"14948"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9757"
+					"ItemDef"	"7247"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9321"
+					"ItemDef"	"9757"
 				}
 			}
 		}
@@ -9583,7 +9583,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/oracle/oracle.vmdl"
-		"ModelScale"	"0.72"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9704,7 +9704,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/oracle/oracle.vmdl"
-		"ModelScale"	"0.77"
+		"ModelScale"	"0.82"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9787,15 +9787,15 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13425"
+					"ItemDef"	"14746"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13424"
+					"ItemDef"	"14954"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"13423"
+					"ItemDef"	"14747"
 				}
 				"Wearable5"
 				{
@@ -10321,7 +10321,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/slardar/slardar.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.77"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -10442,7 +10442,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/slardar/slardar.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.95"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -10521,7 +10521,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12943"
+					"ItemDef"	"12662"
 				}
 				"Wearable2"
 				{
@@ -10537,7 +10537,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13814"
+					"ItemDef"	"14974"
 				}
 			}
 		}
@@ -11291,7 +11291,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/luna/luna.vmdl"
-		"ModelScale"	"0.7"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -11370,27 +11370,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12512"
+					"ItemDef"	"7216"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12510"
+					"ItemDef"	"742"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12513"
+					"ItemDef"	"7217"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8301"
+					"ItemDef"	"7218"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12509"
+					"ItemDef"	"12553"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"453"
+					"ItemDef"	"5595"
 				}
 			}
 		}
@@ -11415,7 +11415,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/luna/luna.vmdl"
-		"ModelScale"	"0.85"
+		"ModelScale"	"0.78"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -11494,27 +11494,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"5947"
+					"ItemDef"	"8301"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8327"
+					"ItemDef"	"18315"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13524"
+					"ItemDef"	"12551"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"5944"
+					"ItemDef"	"12554"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"5948"
+					"ItemDef"	"13000"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"453"
+					"ItemDef"	"12552"
 				}
 			}
 		}
@@ -12195,7 +12195,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2800"
+		"StatusHealth"	"2650"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -13352,27 +13352,27 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6916"
+					"ItemDef"	"18133"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8000"
+					"ItemDef"	"18131"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"8959"
+					"ItemDef"	"513"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8968"
+					"ItemDef"	"8000"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"8967"
+					"ItemDef"	"18132"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"513"
+					"ItemDef"	"6646"
 				}
 			}
 		}
@@ -13727,19 +13727,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9555"
+					"ItemDef"	"12633"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"9245"
+					"ItemDef"	"9556"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9556"
+					"ItemDef"	"4317"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9748"
+					"ItemDef"	"13756"
 				}
 				"Wearable5"
 				{
@@ -13748,6 +13748,10 @@
 				"Wearable6"
 				{
 					"ItemDef"	"7580"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"9748"
 				}
 			}
 		}
@@ -18133,7 +18137,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
 		"AttackDamageMax"	"60"
-		"AttackRate"	"0.9"
+		"AttackRate"	"0.85"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -18258,7 +18262,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"120"
-		"AttackRate"	"0.9"
+		"AttackRate"	"0.85"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -18266,31 +18270,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"538"
+					"ItemDef"	"17682"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7711"
+					"ItemDef"	"538"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7713"
+					"ItemDef"	"7711"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8316"
+					"ItemDef"	"7713"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7710"
+					"ItemDef"	"8366"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"7409"
+					"ItemDef"	"7710"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"7712"
+					"ItemDef"	"7409"
 				}
 			}
 		}
@@ -18316,7 +18320,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/slark/slark.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.95"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -18387,7 +18391,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
 		"AttackDamageMax"	"240"
-		"AttackRate"	"0.9"
+		"AttackRate"	"0.85"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -18399,27 +18403,27 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"13313"
+					"ItemDef"	"17681"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13315"
+					"ItemDef"	"13547"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"8316"
+					"ItemDef"	"8366"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"13317"
+					"ItemDef"	"17680"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"8002"
+					"ItemDef"	"7974"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"13314"
+					"ItemDef"	"9164"
 				}
 			}
 		}
@@ -18782,7 +18786,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"6453"
+					"ItemDef"	"14971"
 				}
 			}
 		}
@@ -20310,7 +20314,7 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/dragon_knight/dragon_knight.vmdl"
+		"Model"	"models/heroes/faceless_void/faceless_void.vmdl"
 		"ModelScale"	"0.65"
 		// Abilities
 		// ----------------------------------------------------------------
@@ -20390,27 +20394,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"63"
+					"ItemDef"	"92"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"64"
+					"ItemDef"	"90"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"65"
+					"ItemDef"	"93"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"66"
+					"ItemDef"	"91"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"67"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"68"
+					"ItemDef"	"15"
 				}
 			}
 		}
@@ -20434,8 +20434,8 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/dragon_knight/dragon_knight.vmdl"
-		"ModelScale"	"0.65"
+		"Model"	"models/heroes/faceless_void/faceless_void.vmdl"
+		"ModelScale"	"0.8"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -20514,27 +20514,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"63"
+					"ItemDef"	"4182"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"64"
+					"ItemDef"	"4184"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"65"
+					"ItemDef"	"8317"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"66"
+					"ItemDef"	"4181"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"67"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"68"
+					"ItemDef"	"4183"
 				}
 			}
 		}
@@ -20558,8 +20554,8 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/dragon_knight/dragon_knight.vmdl"
-		"ModelScale"	"0.65"
+		"Model"	"models/heroes/faceless_void/faceless_void.vmdl"
+		"ModelScale"	"0.95"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -20638,27 +20634,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"63"
+					"ItemDef"	"7996"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"64"
+					"ItemDef"	"6576"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"65"
+					"ItemDef"	"12657"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"66"
+					"ItemDef"	"8268"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"67"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"68"
+					"ItemDef"	"7571"
 				}
 			}
 		}
@@ -21419,13 +21411,13 @@
 		"StatusHealth"	"300"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"100"
-		"StatusManaRegen"	"0"
+		"StatusManaRegen"	"5"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"50"
 		"AttackDamageMax"	"70"
-		"AttackRate"	"1.4"
+		"AttackRate"	"1.3"
 		"AttackRange"	"400"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
@@ -21471,13 +21463,13 @@
 		"StatusHealth"	"500"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"100"
-		"StatusManaRegen"	"5"
+		"StatusManaRegen"	"10"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"90"
 		"AttackDamageMax"	"110"
-		"AttackRate"	"1.4"
+		"AttackRate"	"1.3"
 		"AttackRange"	"400"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
@@ -21523,13 +21515,13 @@
 		"StatusHealth"	"700"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"100"
-		"StatusManaRegen"	"10"
+		"StatusManaRegen"	"20"
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"160"
 		"AttackDamageMax"	"200"
-		"AttackRate"	"1.4"
+		"AttackRate"	"1.3"
 		"AttackRange"	"400"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"50"
@@ -22615,7 +22607,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/meepo/meepo.vmdl"
-		"ModelScale"	"0.8"
+		"ModelScale"	"0.78"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22651,7 +22643,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
@@ -22732,7 +22724,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/meepo/meepo.vmdl"
-		"ModelScale"	"0.95"
+		"ModelScale"	"0.92"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22771,7 +22763,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"10"
 		// Base mana.
@@ -22855,7 +22847,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/meepo/meepo.vmdl"
-		"ModelScale"	"1.0"
+		"ModelScale"	"1.05"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22894,7 +22886,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2400"
+		"StatusHealth"	"2100"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"20"
 		// Base mana.
@@ -22934,7 +22926,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"9832"
+					"ItemDef"	"13736"
 				}
 				"Wearable2"
 				{
@@ -22942,19 +22934,23 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"9835"
+					"ItemDef"	"734"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9833"
+					"ItemDef"	"13738"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9834"
+					"ItemDef"	"13741"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9836"
+					"ItemDef"	"13739"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"13737"
 				}
 			}
 		}
@@ -24184,7 +24180,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/lone_druid/lone_druid.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.72"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -24313,7 +24309,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/lone_druid/lone_druid.vmdl"
-		"ModelScale"	"0.9"
+		"ModelScale"	"0.87"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -24352,7 +24348,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -27853,10 +27849,10 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"90"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"80"
 		"AttackRate"	"1"
-		"AttackRange"	"600"
+		"AttackRange"	"400"
 		"Creature"
 		{
 			"AttachWearables"
@@ -27978,10 +27974,10 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"120"
-		"AttackDamageMax"	"180"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"160"
 		"AttackRate"	"1"
-		"AttackRange"	"600"
+		"AttackRange"	"400"
 		"Creature"
 		{
 			"AttachWearables"
@@ -28107,10 +28103,10 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"240"
-		"AttackDamageMax"	"360"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"320"
 		"AttackRate"	"1"
-		"AttackRange"	"600"
+		"AttackRange"	"400"
 		"Creature"
 		{
 			"AttachWearables"
@@ -33651,31 +33647,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6879"
+					"ItemDef"	"6908"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12834"
+					"ItemDef"	"6043"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"12835"
+					"ItemDef"	"6946"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"12836"
+					"ItemDef"	"6879"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"12839"
+					"ItemDef"	"6045"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"12840"
+					"ItemDef"	"6288"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"12833"
+					"ItemDef"	"6042"
 				}
 			}
 		}
@@ -33901,23 +33897,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"691"
+					"ItemDef"	"18303"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"692"
+					"ItemDef"	"18301"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"693"
+					"ItemDef"	"695"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"694"
+					"ItemDef"	"693"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"695"
+					"ItemDef"	"691"
 				}
 			}
 		}
@@ -34022,23 +34018,23 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"691"
+					"ItemDef"	"18303"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"692"
+					"ItemDef"	"18301"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"693"
+					"ItemDef"	"18378"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"694"
+					"ItemDef"	"18302"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"695"
+					"ItemDef"	"18300"
 				}
 			}
 		}
@@ -35103,7 +35099,7 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -35155,7 +35151,7 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -35207,7 +35203,7 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -36635,12 +36631,12 @@
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
 		"Model"	"models/heroes/dark_willow/dark_willow.vmdl"
-		"ModelScale"	"2"
-		"Level"	"9"
+		"ModelScale"	"1.8"
+		"Level"	"8"
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"40000"
+		"StatusHealth"	"10000"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -36648,22 +36644,23 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"500"
-		"AttackDamageMax"	"1500"
+		"AttackDamageMax"	"1200"
 		"AttackRate"	"0.6"
 		"AttackRange"	"900"
 		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"30"
-		"ArmorPhysical"	"30"
+		"MagicalResistance"	"25"
+		"ArmorPhysical"	"15"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
-		"HealthBarOffset"	"428"
+		"HealthBarOffset"	"256"
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"RingRadius"	"60"
-		"AttackAnimationPoint"	"0.6"
-		"ProjectileModel"	"effect/qianjiaomonv/1.vpcf"
+		"AttackAnimationPoint"	"0.3"
+		"ProjectileModel"	"particles/econ/items/vengeful/vs_ti8_immortal_shoulder/vs_ti8_immortal_magic_missle_crimson.vpcf"
 		"ProjectileSpeed"	"600"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Ranged"
 		"Creature"
 		{
 			"AttachWearables"
@@ -36695,6 +36692,105 @@
 				"Wearable7"
 				{
 					"ItemDef"	"13677"
+				}
+			}
+		}
+	}
+
+	"pve_tangyimaowang"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"sven_great_cleave"
+		"Ability2"	"tidehunter_kraken_shell"
+		"Ability3"	"is_demon"
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/heroes/pudge/pudge.vmdl"
+		"ModelScale"	"2.2"
+		"Level"	"9"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"30000"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"5000"
+		"AttackDamageMax"	"5000"
+		"AttackRate"	"2"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"25"
+		"MovementSpeed"	"500"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"428"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"SoundSet"	"Roshan"
+		"ProjectileModel"	"particles/hw_fx/hw_candy_projectile.vpcf"
+		"ProjectileSpeed"	"1000"
+		"AttackAnimationPoint"	"0.5"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
+		"Skin"	"0"
+		"SoundSet"	"Hero_Pudge"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pudge.vsndevts"
+		"ProjectileModel"	"particles/dac/explode/land_mine_explode.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_pudge"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"18063"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"18066"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"709"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"18067"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"18064"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"18068"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"18065"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"391"
+				}
+				"Wearable9"
+				{
+					"ItemDef"	"18069"
 				}
 			}
 		}
@@ -37931,7 +38027,7 @@
 		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		// Movement
 		// ----------------------------------------------------------------
 		// Type of locomotion - ground, air
@@ -37973,9 +38069,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"80"
+		"AttackRate"	"1.9"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -38028,7 +38124,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/mars/mars.vmdl"
-		"ModelScale"	"0.63"
+		"ModelScale"	"0.60"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -38055,7 +38151,7 @@
 		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		// Movement
 		// ----------------------------------------------------------------
 		// Type of locomotion - ground, air
@@ -38097,9 +38193,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"100"
+		"AttackDamageMax"	"160"
+		"AttackRate"	"1.9"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -38107,19 +38203,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"672"
+					"ItemDef"	"14918"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"671"
+					"ItemDef"	"14915"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"13572"
+					"ItemDef"	"14917"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"670"
+					"ItemDef"	"14916"
 				}
 				"Wearable5"
 				{
@@ -38177,7 +38273,7 @@
 		"MagicalResistance"	"0"
 		// Attack
 		// ----------------------------------------------------------------
-		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
 		// Movement
 		// ----------------------------------------------------------------
 		// Type of locomotion - ground, air
@@ -38219,9 +38315,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"0"
-		"AttackDamageMax"	"0"
-		"AttackRate"	"1.4"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"320"
+		"AttackRate"	"1.9"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -38390,7 +38486,7 @@
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
 		"Model"	"models/items/wards/relentless_warden_ward/relentless_warden_ward.vmdl"
-		"ModelScale"	"1.5"
+		"ModelScale"	"1.0"
 		"Level"	"1"
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
@@ -38420,11 +38516,11 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 	}
 
-	"heal_ward"
+	"nether_ward"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"ward_heal"
-		"Ability2"	"is_ward"
+		"Ability1"	"is_ward"
+		"Ability2"	"ward_nether"
 		"Ability3"	""
 		"Ability4"	""
 		"Ability5"	""
@@ -38439,13 +38535,13 @@
 		"Ability14"	""
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
-		"Model"	"models/heroes/juggernaut/jugg_healing_ward.vmdl"
-		"ModelScale"	"1.5"
-		"Level"	"2"
+		"Model"	"models/items/wards/nexon_sotdaeward/nexon_sotdaeward.vmdl"
+		"ModelScale"	"1.0"
+		"Level"	"1"
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"10"
+		"StatusHealth"	"1"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -38455,9 +38551,59 @@
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"AttackRate"	"0"
-		"AttackRange"	"900"
-		"AttackRangeBuffer"	"50"
-		"MagicalResistance"	"100"
+		"AttackRange"	"0"
+		"AttackRangeBuffer"	"0"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"0"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	}
+
+	"disarm_ward"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"is_ward"
+		"Ability2"	"ward_disarm"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/items/wards/arcticwatchtower/arcticwatchtower.vmdl"
+		"ModelScale"	"0.9"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"0"
+		"AttackRange"	"0"
+		"AttackRangeBuffer"	"0"
+		"MagicalResistance"	"0"
 		"ArmorPhysical"	"0"
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
