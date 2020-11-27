@@ -587,6 +587,7 @@
 				}
 				"EffectName"	"particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_frostbite_snow_base.vpcf"
 				"EffectAttachType"	"attach_origin"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -4612,8 +4613,6 @@
 			"01"	"item_huanxinzhiren;item_fashichangpao;"
 		}
 	}
-
-
 
 	"item_recipe_zhaohuanshenshi"
 	{

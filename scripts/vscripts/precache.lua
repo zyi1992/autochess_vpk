@@ -248,6 +248,7 @@ return {
 	"models/courier/baby_rosh/babyroshan_ti10.vmdl",
 	"models/courier/baby_rosh/babyroshan_ti10_dire.vmdl",
 	"models/qiyidan_s2/qiyidan_s2.vmdl",
+	"models/toon_reaper/toon_reaper.vmdl",
 
 	"models/items/courier/courier_ti10_radiant/courier_ti10_radiant.vmdl",
 	"models/items/courier/courier_ti10_dire/courier_ti10_dire.vmdl",
@@ -322,6 +323,7 @@ return {
 	"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_dark_seer.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_bane.vsndevts",
 
 	-- "soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_razor.vsndevts",
@@ -364,7 +366,7 @@ return {
 	-- "soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts",
-	-- "soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_puck.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts",

@@ -4360,35 +4360,31 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8632"
+					"ItemDef"	"12419"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12419"
+					"ItemDef"	"251"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"251"
+					"ItemDef"	"9908"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9908"
+					"ItemDef"	"9905"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9909"
+					"ItemDef"	"6647"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"5507"
+					"ItemDef"	"9909"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"9904"
-				}
-				"Wearable8"
-				{
-					"ItemDef"	"9907"
+					"ItemDef"	"13757"
 				}
 			}
 		}
@@ -16987,7 +16983,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -17100,7 +17096,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -17213,7 +17209,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -20321,7 +20317,7 @@
 		// Ability 1.
 		"Ability1"	"is_nraqi"
 		// Ability 2.
-		"Ability2"	"is_warrior"
+		"Ability2"	"is_assassin"
 		// Ability 3.
 		"Ability3"	""
 		// Ability 4.
@@ -20337,7 +20333,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -20384,9 +20380,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"60"
-		"AttackRate"	"1.2"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"80"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -20414,17 +20410,16 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
-		"ProjectileSpeed"	"3000"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"3"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_DragonKnight"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"SoundSet"	"Hero_FacelessVoid"
+		"particle_folder"	"particles/units/heroes/hero_faceless_void"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts"
 	}
 
 	// 4
@@ -20441,7 +20436,7 @@
 		// Ability 1.
 		"Ability1"	"is_nraqi"
 		// Ability 2.
-		"Ability2"	"is_warrior"
+		"Ability2"	"is_assassin"
 		// Ability 3.
 		"Ability3"	""
 		// Ability 4.
@@ -20457,7 +20452,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -20474,7 +20469,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"800"
+		"StatusHealth"	"1600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20504,9 +20499,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"60"
-		"AttackRate"	"1.2"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"160"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -20534,17 +20529,16 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_nevermore/nevermore_base_attack.vpcf"
-		"ProjectileSpeed"	"3000"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_DragonKnight"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"SoundSet"	"Hero_FacelessVoid"
+		"particle_folder"	"particles/units/heroes/hero_faceless_void"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts"
 	}
 
 	// 4
@@ -20561,7 +20555,7 @@
 		// Ability 1.
 		"Ability1"	"is_nraqi"
 		// Ability 2.
-		"Ability2"	"is_warrior"
+		"Ability2"	"is_assassin"
 		// Ability 3.
 		"Ability3"	""
 		// Ability 4.
@@ -20577,7 +20571,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"10"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -20594,13 +20588,13 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"800"
+		"StatusHealth"	"2400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"8"
+		"StatusManaRegen"	"6"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -20624,9 +20618,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"60"
-		"AttackRate"	"1.2"
+		"AttackDamageMin"	"240"
+		"AttackDamageMax"	"320"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -20658,13 +20652,14 @@
 		"ProjectileSpeed"	"3000"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
-		"SoundSet"	"Hero_DragonKnight"
-		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts"
-		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
+		"SoundSet"	"Hero_FacelessVoid"
+		"particle_folder"	"particles/units/heroes/hero_faceless_void"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts"
 	}
 
 	// 3
@@ -22643,7 +22638,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"700"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"5"
 		// Base mana.
@@ -22763,7 +22758,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"10"
 		// Base mana.
@@ -22886,7 +22881,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2100"
+		"StatusHealth"	"1800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"20"
 		// Base mana.
@@ -28617,7 +28612,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"150"
-		"AttackRate"	"1.6"
+		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -28746,7 +28741,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
 		"AttackDamageMax"	"300"
-		"AttackRate"	"1.6"
+		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -28875,7 +28870,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"400"
 		"AttackDamageMax"	"600"
-		"AttackRate"	"1.6"
+		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -29004,7 +28999,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"80"
 		"AttackDamageMax"	"145"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -29121,7 +29116,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"160"
 		"AttackDamageMax"	"290"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -29238,7 +29233,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"320"
 		"AttackDamageMax"	"580"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -30496,7 +30491,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"9"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -30617,7 +30612,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"9"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -30738,7 +30733,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"9"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack

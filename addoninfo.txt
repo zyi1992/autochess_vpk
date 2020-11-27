@@ -47,6 +47,11 @@
 			Command = "+ToggleF9"
 			Name = "ToggleF9"
 		},
+		{
+			Key = "K"
+			Command = "+ChatEmotion"
+			Name = "ChatEmotion"
+		},
 	]
 	map_options = 
 	[

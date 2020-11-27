@@ -383,6 +383,35 @@
 		}
 	}
 
+	"faceless_void_time_lock"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"	"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"1"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration_creep"	"1"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"chance_pct"	"10"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"100"
+			}
+		}
+	}
+
 	"visage_grave_chill"
 	{
 		// General
@@ -1576,6 +1605,24 @@
 		}
 	}
 
+	"is_nraqi_banned"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/is_nraqi_banned"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"	"1"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"UnbanSynergy"
+				"synergy"	"is_nraqi"
+			}
+		}
+	}
+
 	"is_satyr"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -1759,329 +1806,6 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_ATTRIBUTES"
 	}
 
-	// Rewrite of Alchemist Unstable Concoction
-	// Author: Noya
-	// Date: October 13, 2015
-	// Version: 6.83
-	// Type: Datadriven
-	//
-	// ----- FILE REQUIREMENTS -----
-	// Script files:
-	// scripts/vscripts/heroes/hero_alchemist/unstable_concoction.lua
-	//
-	// KV files:
-	// scripts/npc/abilities/alchemist/unstable_concoction_throw_datadriven.txt
-	"zibao"
-	{
-		// General
-		// -------------------------------------------------------------------------------------------------------------
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"alchemist_unstable_concoction"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"FightRecapLevel"	"1"
-		// Casting
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"	"0.0"
-		// Time
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"10"
-		// Cost
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"	"0"
-		"precache"
-		{
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
-			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_timer.vpcf"
-			// This particle isn't used because it would need a separate rule to attach to the hands or weapons for each hero
-			// CP1 and CP2 are left and right hands respectively
-			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstableconc_bottles.vpcf"
-			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
-		}
-		"OnSpellStart"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-				"Function"	"StartBrewing"
-				"sub_ability_name"	"unstable_concoction_throw_datadriven"
-			}
-			"ApplyModifier"
-			{
-				"ModifierName"	"modifier_unstable_concoction_brewing"
-				"Target"	"CASTER"
-			}
-		}
-		"OnUpgrade"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-				"Function"	"LevelUpAbility"
-				"ability_name"	"unstable_concoction_throw_datadriven"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_unstable_concoction_brewing"
-			{
-				"IsHidden"	"1"
-				"Duration"	"%brew_explosion"
-				"ThinkInterval"	"0.5"
-				"OnIntervalThink"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-						"Function"	"UpdateTimerParticle"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-						"Function"	"CheckSelfStun"
-						"sub_ability_name"	"unstable_concoction_throw_datadriven"
-						"Target"
-						{
-							"Center"	"CASTER"
-							"Radius"	"%radius"
-							"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-							"Types"	"DOTA_UNIT_TARGET_HERO"
-						}
-					}
-				}
-			}
-			"modifier_unstable_concoction_stun"
-			{
-				"IsDebuff"	"1"
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"OverrideAnimation"	"ACT_DOTA_DISABLED"
-				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
-				"EffectAttachType"	"follow_overhead"
-			}
-		}
-		// Special
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"brew_time"	"5.0"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"brew_explosion"	"5.5"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"min_stun"	"0.25"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"max_stun"	"5"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"min_damage"	"0"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"max_damage"	"40"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"12"
-			}
-		}
-	}
-
-	// Rewrite of Alchemist Unstable Concoction Throw (Sub-Ability)
-	// Author: Noya
-	// Date: October 13, 2015
-	// Version: 6.83
-	// Type: Datadriven
-	//
-	// ----- FILE REQUIREMENTS -----
-	// Script files:
-	// scripts/vscripts/heroes/hero_alchemist/unstable_concoction.lua
-	//
-	// KV files:
-	// scripts/npc/abilities/alchemist/unstable_concoction_datadriven.txt
-	"zibao_throw"
-	{
-		// General
-		// -------------------------------------------------------------------------------------------------------------
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"alchemist_unstable_concoction_throw"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityCastPoint"	"0.2"
-		// Casting
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"775"
-		"AoERadius"	"%midair_explosion_radius"
-		"precache"
-		{
-			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_projectile.vpcf"
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
-			"particle"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_explosion.vpcf"
-			"particle"	"particles/generic_gameplay/generic_stunned.vpcf"
-		}
-		"OnSpellStart"
-		{
-			"TrackingProjectile"
-			{
-				"Target"	"TARGET"
-				"EffectName"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_projectile.vpcf"
-				"Dodgeable"	"0"
-				"ProvidesVision"	"1"
-				"VisionRadius"	"%vision_range"
-				"MoveSpeed"	"%movement_speed"
-				"SourceAttachment"	"DOTA_PROJECTILE_ATTACHMENT_ATTACK_1"
-			}
-			"FireSound"
-			{
-				"EffectName"	"Hero_Alchemist.UnstableConcoction.Throw"
-				"Target"	"CASTER"
-			}
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-				"Function"	"EndBrewing"
-				"main_ability_name"	"unstable_concoction_datadriven"
-			}
-		}
-		"OnProjectileHitUnit"
-		{
-			"DeleteOnHit"	"1"
-			"FireSound"
-			{
-				"EffectName"	"Hero_Alchemist.UnstableConcoction.Stun"
-				"Target"	"TARGET"
-			}
-			"FireEffect"
-			{
-				"EffectName"	"particles/units/heroes/hero_alchemist/alchemist_unstable_concoction_explosion.vpcf"
-				"EffectAttachType"	"attach_hitloc"
-				"Target"	"TARGET"
-				// This is required for the explosion to actually attach on the projectile hit location
-				"ControlPointEntities"
-				{
-					"TARGET"	"attach_hitloc"
-					"TARGET"	"attach_hitloc"
-					"TARGET"	"attach_hitloc"
-					"TARGET"	"attach_hitloc"
-				}
-			}
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-				"Function"	"ConcoctionHit"
-				"Target"
-				{
-					"Center"	"TARGET"
-					"Radius"	"%midair_explosion_radius"
-					"Teams"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-					"Types"	"DOTA_UNIT_TARGET_HERO"
-				}
-			}
-		}
-		"OnUpgrade"
-		{
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_alchemist/unstable_concoction.lua"
-				"Function"	"LevelUpAbility"
-				"ability_name"	"unstable_concoction_datadriven"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_unstable_concoction_stun"
-			{
-				"IsDebuff"	"1"
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"OverrideAnimation"	"ACT_DOTA_DISABLED"
-				"EffectName"	"particles/generic_gameplay/generic_stunned.vpcf"
-				"EffectAttachType"	"follow_overhead"
-			}
-		}
-		// Special
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"brew_time"	"5.0"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"min_stun"	"0.25"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"max_stun"	"1.75 2.5 3.25 4.0"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"min_damage"	"0"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"max_damage"	"20"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"movement_speed"	"900"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"vision_range"	"400"
-			}
-			"08"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"midair_explosion_radius"	"12"
-			}
-			"09"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"brew_explosion"	"7.0"
-			}
-		}
-		// Stats
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityModifierSupportBonus"	"120"
-	}
-
 	"gameover_win"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -2130,7 +1854,6 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"precache"
 		{
-			"particle"	"particles/units/heroes/hero_shadow_demon/shadow_demon_disruption.vpcf"
 			"particle"	"particles/units/heroes/hero_shadowshaman/shadowshaman_voodoo.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_lion.vsndevts"
 		}
@@ -2185,8 +1908,7 @@
 			}
 			"modifier_transfer_debuff"
 			{
-				"IsDebuff"	"1"
-				"EffectName"	"particles/units/heroes/hero_shadow_demon/shadow_demon_disruption.vpcf"
+				"IsDebuff"	"0"
 				"EffectAttachType"	"follow_origin"
 				"Properties"	{}
 				"States"
@@ -2195,20 +1917,26 @@
 					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
 					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
-				"OnDestroy"
+				"StatusEffectName"	"particles/status_fx/status_effect_nightmare.vpcf"
+				"OverrideAnimation"	"ACT_DOTA_FLAIL"
+				"EffectName"	"particles/units/heroes/hero_shadow_demon/shadow_demon_disruption.vpcf"
+				"EffectAttachType"	"follow_origin"
+			}
+			"modifier_transfer_buff"
+			{
+				"IsDebuff"	"0"
+				"EffectAttachType"	"follow_origin"
+				"Properties"	{}
+				"States"
 				{
-					"FireEffect"
-					{
-						"Target"	"CASTER"
-						"EffectName"	"particles/units/heroes/hero_shadowshaman/shadowshaman_voodoo.vpcf"
-						"EffectAttachType"	"follow_origin"
-					}
-					"FireSound"
-					{
-						"Target"	"CASTER"
-						"EffectName"	"Hero_Lion.Voodoo"
-					}
+					"MODIFIER_STATE_DISARMED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_SILENCED"	"MODIFIER_STATE_VALUE_ENABLED"
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
+				"StatusEffectName"	"particles/status_fx/status_effect_shaman_shackle.vpcf"
+				//"OverrideAnimation"	"ACT_DOTA_DISABLED"
+				//"EffectName"	"particles/econ/events/ti10/bottle_ti10_ring_bokeh.vpcf"
+				//"EffectAttachType"	"follow_origin"
 			}
 		}
 	}
@@ -2991,6 +2719,7 @@
 				}
 				"EffectName"	"particles/units/heroes/hero_crystalmaiden/maiden_frostbite_buff.vpcf"
 				"EffectAttachType"	"attach_origin"
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -3014,7 +2743,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-2"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-3"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -3070,7 +2799,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-6"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-7"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -3423,7 +3152,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"25"
+					"MODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE"	"50"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -3935,6 +3664,37 @@
 		}
 	}
 
+	"is_nraqi_buff"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"faceless_void_backtrack"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"Modifiers"
+		{
+			"modifier_is_nraqi_buff"
+			{
+				"TextureName"	"faceless_void_backtrack"
+				"IsDebuff"	"0"
+				"Properties"	{}
+				"IsBuff"	"1"
+				"States"	{}
+				"Passive"	"1"
+				"StatusEffectName"	"particles/status_effect_nraqi_buff.vpcf"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"GainNraqiEffect"
+					}
+				}
+			}
+		}
+	}
+
 	"is_ogre_buff"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -3981,7 +3741,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -4153,10 +3913,6 @@
 			{
 				"TextureName"	"wisp_overcharge"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"20"
-				}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
@@ -5151,6 +4907,16 @@
 		"MaxLevel"	"1"
 	}
 
+	"is_nraqi"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"faceless_void_backtrack"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"MaxLevel"	"1"
+	}
+
 	"is_priest"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -5497,56 +5263,6 @@
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"MaxLevel"	"1"
-	}
-
-	"boss_bianyang"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCastAnimation"	"ACT_DOTA_RUN"
-		"AbilityCooldown"	"2"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"OnSpellStart"
-		{
-			"ApplyModifier"
-			{
-				"Target"	"TARGET"
-				"ModifierName"	"modifier_boss_bianyang"
-				"Duration"	"10"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_boss_bianyang"
-			{
-				"States"
-				{
-					"MODIFIER_STATE_COMMAND_RESTRICTED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"OnCreated"
-				{
-					"RunScript"
-					{
-						"Target"	"TARGET"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"MoXingBianYang"
-					}
-				}
-				"OnDestroy"
-				{
-					"RunScript"
-					{
-						"Target"	"TARGET"
-						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-						"Function"	"MoXingBuYang"
-					}
-				}
-			}
-		}
 	}
 
 	"shadow_shaman_voodoo"
@@ -6483,49 +6199,6 @@
 		}
 	}
 
-	"batrider_sticky_napalm"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.2"
-		"AbilityCooldown"	"3"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage"	"50 75 100"
-				"CalculateSpellDamageTooltip"	"1"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"375 375 375"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"20"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"movement_speed_pct"	"-3 -5 -7"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"turn_rate_pct"	"-70 -70 -70"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"max_stacks"	"4 7 10"
-			}
-		}
-	}
-
 	"luna_moon_glaive"
 	{
 		"MaxLevel"	"3"
@@ -6878,7 +6551,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"pulses"	"8 12 16"
+				"pulses"	"8 10 16"
 				"LinkedSpecialBonus"	"special_bonus_unique_disruptor_7"
 				"LinkedSpecialBonusField"	"value2"
 			}
@@ -6901,7 +6574,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"pulses_scepter"	"8 12 16"
+				"pulses_scepter"	"2 3 4"
 			}
 		}
 		"HasScepterUpgrade"	"0"
@@ -7094,6 +6767,7 @@
 						"Function"	"TriggerHex"
 					}
 				}
+				"IsDebuff"	"1"
 			}
 		}
 	}
@@ -10210,6 +9884,12 @@
 				"IsBuff"	"0"
 				"IsDebuff"	"1"
 			}
+			"modifier_show_combo_is_nraqi"
+			{
+				"TextureName"	"faceless_void_backtrack"
+				"IsBuff"	"0"
+				"IsDebuff"	"1"
+			}
 		}
 	}
 
@@ -11915,6 +11595,12 @@
 				"ModifierName"	"modifier_fengkuangmianju"
 				"Duration"	"5"
 			}
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"ModifierName"	"modifier_fengkuangmianju_debuff"
+				"Duration"	"5"
+			}
 			"FireSound"
 			{
 				"EffectName"	"DOTA_Item.MaskOfMadness.Activate"
@@ -11932,6 +11618,17 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"60"
+				}
+			}
+			"modifier_fengkuangmianju_debuff"
+			{
+				"IsDebuff"	"1"
+				"IsBuff"	"0"
+				"IsHidden"	"1"
+				"EffectName"	"particles/items2_fx/mask_of_madness.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Properties"
+				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-8"
 				}
 				"States"
@@ -12209,6 +11906,7 @@
 				}
 				"IsHidden"	"1"
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"IsDebuff"	"1"
 			}
 			"modifier_slark_nengliangzhuanyi_buff_counter"
 			{
@@ -13541,7 +13239,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_speed_per_level"	"15 20 25"
+				"attack_speed_per_level"	"20 25 30"
 			}
 			"05"
 			{
@@ -13917,157 +13615,6 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"chaos_duration"	"2 2.5 3.5"
-			}
-		}
-	}
-
-	"bloodseeker_blood_bath_datadriven"
-	{
-		// General
-		// -------------------------------------------------------------------------------------------------------------
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"bloodseeker_blood_bath_datadriven"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
-		// Casting
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"	"0.0"
-		// Time
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"0 0 0 0"
-		// Cost
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"	"0"
-		// Cast Range
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"	"0"
-		"precache"
-		{
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
-			"particle"	"particles/units/heroes/hero_bloodseeker/bloodseeker_bloodbath.vpcf"
-		}
-		"OnSpellStart"
-		{
-			"ApplyModifier"
-			{
-				"ModifierName"	"modifier_bloodseeker_blood_bath_datadriven"
-				"Target"	"CASTER"
-			}
-		}
-		"Modifiers"
-		{
-			"modifier_bloodseeker_blood_bath_datadriven"
-			{
-				"IsHidden"	"1"
-				"Passive"	"1"
-				"OnHeroKill"
-				{
-					"ActOnTargets"
-					{
-						"Target"
-						{
-							"Center"	"CASTER"
-							"Radius"	"%damage_assist_aoe"
-							"Teams"	"DOTA_UNIT_TARGET_TEAM_BOTH"
-							"Types"	"DOTA_UNIT_TARGET_HERO"
-						}
-						"Action"
-						{
-							"RunScript"
-							{
-								"ScriptFile"	"heroes/hero_bloodseeker/bloodbath.lua"
-								"Function"	"HealKiller"
-							}
-							"AttachEffect"
-							{
-								"EffectName"	"particles/units/heroes/hero_bloodseeker/bloodseeker_bloodbath.vpcf"
-								"EffectAttachType"	"follow_origin"
-								"Target"	"CASTER"
-							}
-							"FireSound"
-							{
-								"EffectName"	"Hero_Bloodseeker.BloodBath"
-								"Target"	"CASTER"
-							}
-						}
-					}
-				}
-				"OnKill"
-				{
-					"ActOnTargets"
-					{
-						"Target"
-						{
-							"Center"	"CASTER"
-							"Radius"	"%damage_assist_aoe"
-							"Teams"	"DOTA_UNIT_TARGET_TEAM_BOTH"
-							"Types"	"DOTA_UNIT_TARGET_BASIC"
-						}
-						"Action"
-						{
-							"RunScript"
-							{
-								"ScriptFile"	"heroes/hero_bloodseeker/bloodbath.lua"
-								"Function"	"HealKillerCreeps"
-							}
-							"AttachEffect"
-							{
-								"EffectName"	"particles/units/heroes/hero_bloodseeker/bloodseeker_bloodbath.vpcf"
-								"EffectAttachType"	"follow_origin"
-								"Target"	"CASTER"
-								"ControlPoints"	{}
-								"ControlPointEntities"	{}
-							}
-							"FireSound"
-							{
-								"EffectName"	"Hero_Bloodseeker.BloodBath"
-								"Target"	"CASTER"
-							}
-						}
-					}
-				}
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%damage_pct_factor"
-					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"%damage_pct_factor"
-				}
-			}
-		}
-		// Special
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"health_bonus_pct"	"10 20 30 40"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"health_bonus_creep_pct"	"10 15 20 25"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage_pct_factor"	"0.5"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"damage_assist_aoe"	"225"
-			}
-			// Extra variables for "OnKill" to heal half of all health
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"health_half_bonus_pct"	"2.5 5 7.5 10.0"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"health_half_bonus_creep_pct"	"2.5 3.75 5.0 6.25"
 			}
 		}
 	}
@@ -15033,7 +14580,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_bouns_per_victory"	"10 20 30"
+				"damage_bouns_per_victory"	"10 10 20"
 			}
 			"02"
 			{
@@ -15772,6 +15319,40 @@
 		}
 	}
 
+	"fv_zhao"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"faceless_void_chronosphere"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.35"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCooldown"	"20 16 12"
+		"AbilityManaCost"	"100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"POINT"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"FvZhao"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"4 4.5 5.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"350 400 450"
+			}
+		}
+	}
+
 	"et_earth_splitter"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -15828,12 +15409,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_base"	"25 30 35"
+				"damage_base"	"20 25 30"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_per"	"25 30 35"
+				"damage_per"	"20 25 30"
 			}
 			"04"
 			{
@@ -16520,5 +16101,146 @@
 				"split_shot_bonus_range"	"100"
 			}
 		}
+	}
+
+	"shadow_shaman_shackles"
+	{
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3 0.3 0.3"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"10 8 5"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilityChannelTime"	"4 6 8"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"tick_interval"	"0.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"total_damage"	"200 300 400"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_6"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"channel_time"	"4 6 8"
+				"LinkedSpecialBonus"	"special_bonus_unique_shadow_shaman_2"
+			}
+		}
+	}
+
+	"ability_acid_spray"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_lua"
+		"AbilityTextureName"	"alchemist_acid_spray"
+		"ScriptFile"	"scripts/vscripts/heroes/hero_alchemist/acid_spray.lua"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"	"0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"15"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor_reduction"	"4 7 10"
+				"LinkedSpecialBonus"	"special_bonus_unique_alchemist_5"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"tick_rate"	"1.0"
+			}
+		}
+	}
+
+	"ability_disruptor_static_storm"
+	{
+		"BaseClass"	"ability_lua"
+		"AbilityTextureName"	"disruptor_static_storm"
+		"ScriptFile"	"scripts/vscripts/heroes/hero_disruptor/static_storm.lua"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"	"2"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.3"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"	"ACT_DOTA_STATIC_STORM"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"10 8 6"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Cast Range
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"9999"
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"300 400 500"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"pulses"	"4 5 8"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_max"	"150 200 300"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"duration"	"4 5 8"
+			}
+		}
+		"SpellDispellableType"	"SPELL_DISPELLABLE_NO"
+		"AbilityCastGestureSlot"	"DEFAULT"
 	}
 }

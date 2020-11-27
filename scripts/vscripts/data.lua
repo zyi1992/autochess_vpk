@@ -66,7 +66,6 @@ return {
 			animation_modifier = nil,
 			end_effect = "effect/animation/wr/1.vpcf",
 		},
-		
 	},
 
 } 
