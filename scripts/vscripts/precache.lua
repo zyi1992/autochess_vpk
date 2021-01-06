@@ -266,6 +266,16 @@ return {
 	"models/items/courier/leafy_the_sea_dragon_courier_courier/leafy_the_sea_dragon_courier_courier.vmdl",
 	"models/items/courier/ol_dirty_boot_courier_courier/ol_dirty_boot_courier_courier.vmdl",
 
+	"models/items/courier/spooky_tear_of_the_swamp/spooky_tear_of_the_swamp.vmdl",
+	"models/items/courier/mango_the_courier/mango_the_courier.vmdl",
+	"models/items/courier/loco_the_crocodile_courier/loco_the_crocodile_courier.vmdl",
+	"models/items/courier/hermid/hermid.vmdl",
+	"models/items/courier/frosty_the_courier/frosty_the_courier.vmdl",
+	"models/items/courier/dplus_zao_jun_the_stove_god/dplus_zao_jun_the_stove_god.vmdl",
+	"models/items/courier/autumn_wards_courier/autumn_wards_courier.vmdl",
+
+
+
 	"particles/econ/items/ogre_magi/ogre_magi_arcana/ogre_magi_arcana_attack1_blur.vpcf",
 	"particles/econ/items/ogre_magi/ogre_magi_arcana/ogre_magi_arcana_attack2_blur.vpcf",
 	"particles/econ/items/ogre_magi/ogre_magi_arcana/ogre_magi_arcana_attack3_blur.vpcf",
@@ -311,6 +321,7 @@ return {
  	"particles/econ/events/ti10/radiance_owner_ti10_detail.vpcf",
  	"particles/econ/events/ti10/hero_levelup_ti10_godray.vpcf",
  	"particles/econ/items/keeper_of_the_light/kotl_ti10_immortal/kotl_ti10_blinding_light.vpcf",
+ 	"effect/ground_gold/1.vpcf",
 
 	"soundevents/soundevents_dota_ui.vsndevts",
 	"soundevents/game_sounds_ui.vsndevts",

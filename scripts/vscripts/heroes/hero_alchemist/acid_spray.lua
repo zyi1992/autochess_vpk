@@ -65,7 +65,11 @@ modifier_acid_spray_lua_debuff = class({
     DeclareFunctions        = function(self) return {MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS} end,
     GetModifierPhysicalArmorBonus  = function(self) 
         local ability = self:GetAbility()
-        return ability:GetSpecialValueFor('armor_reduction') * -1
+        if ability ~= nil then
+            return ability:GetSpecialValueFor('armor_reduction') * -1
+        else
+            return 0
+        end
     end,
 })
 
