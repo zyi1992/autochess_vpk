@@ -249,6 +249,7 @@ return {
 	"models/courier/baby_rosh/babyroshan_ti10_dire.vmdl",
 	"models/qiyidan_s2/qiyidan_s2.vmdl",
 	"models/toon_reaper/toon_reaper.vmdl",
+	"models/items/courier/pangolier_squire/pangolier_squire.vmdl",
 
 	"models/items/courier/courier_ti10_radiant/courier_ti10_radiant.vmdl",
 	"models/items/courier/courier_ti10_dire/courier_ti10_dire.vmdl",
@@ -322,6 +323,7 @@ return {
  	"particles/econ/events/ti10/hero_levelup_ti10_godray.vpcf",
  	"particles/econ/items/keeper_of_the_light/kotl_ti10_immortal/kotl_ti10_blinding_light.vpcf",
  	"effect/ground_gold/1.vpcf",
+ 	"particles/units/heroes/hero_alchemist/alchemist_berserk_potion_projectile.vpcf",
 
 	"soundevents/soundevents_dota_ui.vsndevts",
 	"soundevents/game_sounds_ui.vsndevts",
@@ -378,6 +380,8 @@ return {
 	-- "soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_bounty_hunter.vsndevts",
 	"soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts",
+	"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_puck.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts",
 	-- "soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts",

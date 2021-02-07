@@ -1,9 +1,5 @@
-// Dota2 Editor
-// Get latest version: https://github.com/zombieJ/nw-dota2editor
-
 "DOTAUnits"
 {
-	"Version"		"1"
 
 	// 1
 	"chess_tusk"
@@ -132,6 +128,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tusk.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tusk"
+		"Ability17"	""
 	}
 
 	// 1
@@ -265,6 +262,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tusk.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tusk"
+		"Ability17"	""
 	}
 
 	// 1
@@ -398,6 +396,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tusk.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tusk.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tusk"
+		"Ability17"	""
 	}
 
 	// 1
@@ -527,6 +526,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_spirit_breaker"
+		"Ability17"	""
 	}
 
 	// 1
@@ -656,6 +656,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_spirit_breaker"
+		"Ability17"	""
 	}
 
 	// 1
@@ -785,6 +786,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spirit_breaker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spirit_breaker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_spirit_breaker"
+		"Ability17"	""
 	}
 
 	// 5
@@ -906,6 +908,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_elder_titan"
+		"Ability17"	""
 	}
 
 	// 5
@@ -1027,6 +1030,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_elder_titan"
+		"Ability17"	""
 	}
 
 	// 5
@@ -1148,6 +1152,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_elder_titan.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_elder_titan"
+		"Ability17"	""
 	}
 
 	// 1
@@ -1273,6 +1278,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_crystalmaiden"
+		"Ability17"	""
 	}
 
 	// 1
@@ -1398,6 +1404,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_crystalmaiden"
+		"Ability17"	""
 	}
 
 	// 1
@@ -1523,6 +1530,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_crystalmaiden.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_crystalmaiden"
+		"Ability17"	""
 	}
 
 	// 1
@@ -1640,6 +1648,7 @@
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tusk"
 		"particle_folder"	"particles/units/heroes/hero_axe"
+		"Ability17"	""
 	}
 
 	// 1
@@ -1761,6 +1770,7 @@
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
 		"particle_folder"	"particles/units/heroes/hero_axe"
+		"Ability17"	""
 	}
 
 	// 1
@@ -1882,6 +1892,7 @@
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Axe"
 		"particle_folder"	"particles/units/heroes/hero_axe"
+		"Ability17"	""
 	}
 
 	// 1
@@ -2003,6 +2014,7 @@
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tiny"
 		"particle_folder"	"particles/units/heroes/hero_tiny"
+		"Ability17"	""
 	}
 
 	// 1
@@ -2102,6 +2114,7 @@
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tiny"
 		"particle_folder"	"particles/units/heroes/hero_tiny"
+		"Ability17"	""
 	}
 
 	// 1
@@ -2201,6 +2214,7 @@
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Tiny"
 		"particle_folder"	"particles/units/heroes/hero_tiny"
+		"Ability17"	""
 	}
 
 	// 1
@@ -2322,6 +2336,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enchantress.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_enchantress"
+		"Ability17"	""
 	}
 
 	// 1
@@ -2443,6 +2458,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enchantress.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_enchantress"
+		"Ability17"	""
 	}
 
 	// 1
@@ -2564,6 +2580,383 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enchantress.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enchantress.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_enchantress"
+		"Ability17"	""
+	}
+
+	// 1
+	"chess_vs"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/vengeful/vengeful.vmdl"
+		"ModelScale"	"0.72"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_demonhunter"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"2"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"500"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"40"
+		"AttackDamageMax"	"60"
+		"AttackRate"	"1.3"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"517"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"447"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"445"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"9891"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"441"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_vengeful/vengeful_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.330000"
+		"HasInventory"	"1"
+		"Level"	"1"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_VengefulSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_vengefulspirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_vengeful"
+		"Ability17"	""
+	}
+
+	"chess_vs1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/vengeful/vengeful.vmdl"
+		"ModelScale"	"0.85"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_demonhunter"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"2"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"120"
+		"AttackRate"	"1.3"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"517"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"7796"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"7799"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"7798"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"7797"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_vengeful/vengeful_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.330000"
+		"HasInventory"	"1"
+		"Level"	"3"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_VengefulSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_vengefulspirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_vengeful"
+		"Ability17"	""
+	}
+
+	"chess_vs11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/vengeful/vengeful.vmdl"
+		"ModelScale"	"1.0"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_undead"
+		// Ability 2.
+		"Ability2"	"is_demonhunter"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"2"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"2"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"160"
+		"AttackDamageMax"	"240"
+		"AttackRate"	"1.3"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"517"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"18232"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"9749"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"5344"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"18234"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_vengeful/vengeful_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.330000"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_VengefulSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_vengefulspirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_vengeful"
+		"Ability17"	""
 	}
 
 	// 2
@@ -2687,6 +3080,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
+		"Ability17"	""
 	}
 
 	// 2
@@ -2810,6 +3204,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
+		"Ability17"	""
 	}
 
 	// 2
@@ -2934,6 +3329,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
 		"Skin"	"1"
 		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3062,6 +3458,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_antimage"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3189,6 +3586,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_antimage"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3316,6 +3714,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_antimage.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_antimage"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3431,6 +3830,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_rattletrap"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3546,6 +3946,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_rattletrap"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3661,6 +4062,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_rattletrap"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3781,6 +4183,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lion.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3901,6 +4304,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lion.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+		"Ability17"	""
 	}
 
 	// 1
@@ -3956,7 +4360,7 @@
 		// Base mana.
 		"StatusMana"	"100"
 		// Mana regeneration rate.
-		"StatusManaRegen"	"2"
+		"StatusManaRegen"	"4"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -4021,6 +4425,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lion.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_lion/lion_base_attack.vpcf"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4146,6 +4551,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4271,6 +4677,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4400,6 +4807,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4529,6 +4937,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_shadowshaman"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4654,6 +5063,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_bounty_hunter"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4779,6 +5189,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_bounty_hunter"
+		"Ability17"	""
 	}
 
 	// 1
@@ -4908,6 +5319,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_bounty_hunter"
+		"Ability17"	""
 	}
 
 	// 1
@@ -5029,6 +5441,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_witchdoctor"
+		"Ability17"	""
 	}
 
 	// 1
@@ -5154,6 +5567,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_witchdoctor"
+		"Ability17"	""
 	}
 
 	// 1
@@ -5279,6 +5693,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_witchdoctor/witchdoctor_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_witchdoctor"
+		"Ability17"	""
 	}
 
 	// 2
@@ -5396,6 +5811,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_batrider"
+		"Ability17"	""
 	}
 
 	// 2
@@ -5513,6 +5929,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_batrider"
+		"Ability17"	""
 	}
 
 	// 2
@@ -5630,6 +6047,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_batrider"
+		"Ability17"	""
 	}
 
 	// 1
@@ -5755,6 +6173,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tinker"
+		"Ability17"	""
 	}
 
 	// 1
@@ -5880,6 +6299,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tinker"
+		"Ability17"	""
 	}
 
 	// 1
@@ -6009,6 +6429,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tinker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tinker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tinker"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6134,6 +6555,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_furion"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6259,6 +6681,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_furion"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6388,6 +6811,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_furion/furion_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_furion"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6507,6 +6931,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_beastmaster"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6626,6 +7051,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_beastmaster"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6745,6 +7171,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_beastmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_beastmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_beastmaster"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6864,6 +7291,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_juggernaut"
+		"Ability17"	""
 	}
 
 	// 2
@@ -6983,6 +7411,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_juggernaut"
+		"Ability17"	""
 	}
 
 	// 2
@@ -7102,6 +7531,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_juggernaut"
+		"Ability17"	""
 	}
 
 	// 3
@@ -7182,8 +7612,8 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"70"
-		"AttackRate"	"1.2"
+		"AttackDamageMax"	"80"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -7229,6 +7659,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_legion_commander"
+		"Ability17"	""
 	}
 
 	// 3
@@ -7309,8 +7740,8 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"140"
-		"AttackRate"	"1.2"
+		"AttackDamageMax"	"160"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -7356,6 +7787,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_legion_commander"
+		"Ability17"	""
 	}
 
 	// 3
@@ -7436,8 +7868,8 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"280"
-		"AttackRate"	"1.2"
+		"AttackDamageMax"	"320"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -7483,6 +7915,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_legion_commander.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_legion_commander.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_legion_commander"
+		"Ability17"	""
 	}
 
 	// 3
@@ -7605,6 +8038,7 @@
 		"SoundSet"	"Hero_Riki"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_riki.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -7731,6 +8165,7 @@
 		"SoundSet"	"Hero_Riki"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_riki.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -7853,6 +8288,7 @@
 		"SoundSet"	"Hero_Riki"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_riki.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_riki.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -7975,6 +8411,7 @@
 		"SoundSet"	"Hero_Juggernaut"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_juggernaut.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_juggernaut.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -8094,6 +8531,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lycan"
+		"Ability17"	""
 	}
 
 	// 3
@@ -8221,6 +8659,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lycan"
+		"Ability17"	""
 	}
 
 	// 3
@@ -8352,6 +8791,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lycan.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lycan.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lycan"
+		"Ability17"	""
 	}
 
 	// 2
@@ -8384,7 +8824,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8479,6 +8919,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shredder.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_shredder"
+		"Ability17"	""
 	}
 
 	// 2
@@ -8511,7 +8952,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8606,6 +9047,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shredder.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_shredder"
+		"Ability17"	""
 	}
 
 	// 2
@@ -8638,7 +9080,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"7"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8737,6 +9179,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_shredder.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_shredder"
+		"Ability17"	""
 	}
 
 	// 3
@@ -8858,6 +9301,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_phantom_assassin"
+		"Ability17"	""
 	}
 
 	// 3
@@ -8979,6 +9423,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_phantom_assassin"
+		"Ability17"	""
 	}
 
 	// 3
@@ -9100,6 +9545,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_phantom_assassin"
+		"Ability17"	""
 	}
 
 	// 2
@@ -9110,7 +9556,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/puck/puck.vmdl"
-		"ModelScale"	"0.65"
+		"ModelScale"	"0.7"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9132,9 +9578,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"30"
+		"MagicalResistance"	"50"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -9149,7 +9595,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"450"
+		"StatusHealth"	"500"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9216,6 +9662,7 @@
 		"SoundSet"	"Hero_Puck"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_puck.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_puck.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -9226,7 +9673,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/puck/puck.vmdl"
-		"ModelScale"	"0.8"
+		"ModelScale"	"0.82"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9248,7 +9695,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
 		"MagicalResistance"	"50"
 		// Attack
@@ -9265,7 +9712,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"900"
+		"StatusHealth"	"1000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9332,6 +9779,7 @@
 		"SoundSet"	"Hero_Puck"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_puck.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_puck.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -9342,7 +9790,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/puck/puck.vmdl"
-		"ModelScale"	"0.95"
+		"ModelScale"	"0.98"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -9364,9 +9812,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"0"
+		"ArmorPhysical"	"2"
 		// Magical protection.
-		"MagicalResistance"	"80"
+		"MagicalResistance"	"50"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
@@ -9381,7 +9829,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1800"
+		"StatusHealth"	"2000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -9448,6 +9896,7 @@
 		"SoundSet"	"Hero_Puck"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_puck.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_puck.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -9569,6 +10018,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_oracle"
+		"Ability17"	""
 	}
 
 	// 2
@@ -9690,6 +10140,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_oracle"
+		"Ability17"	""
 	}
 
 	// 2
@@ -9811,6 +10262,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_oracle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_oracle.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_oracle"
+		"Ability17"	""
 	}
 
 	// 3
@@ -9916,6 +10368,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_pudge"
+		"Ability17"	""
 	}
 
 	// 3
@@ -10049,6 +10502,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_pudge"
+		"Ability17"	""
 	}
 
 	// 3
@@ -10186,6 +10640,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_pudge"
+		"Ability17"	""
 	}
 
 	// 3
@@ -10307,6 +10762,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_slardar"
+		"Ability17"	""
 	}
 
 	// 3
@@ -10428,6 +10884,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_slardar"
+		"Ability17"	""
 	}
 
 	// 3
@@ -10549,6 +11006,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_slardar"
+		"Ability17"	""
 	}
 
 	// 2
@@ -10670,6 +11128,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
+		"Ability17"	""
 	}
 
 	// 2
@@ -10791,6 +11250,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
+		"Ability17"	""
 	}
 
 	// 2
@@ -10912,6 +11372,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11033,6 +11494,7 @@
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
 		"particle_folder"	"particles/units/heroes/hero_chaos_knight"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11153,6 +11615,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chaos_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"ProjectileModel"	"particles/units/heroes/hero_shadowshaman/shadowshaman_base_attack.vpcf"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11277,6 +11740,7 @@
 		"SoundSet"	"Hero_Luna"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_luna.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11401,6 +11865,7 @@
 		"SoundSet"	"Hero_Luna"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_luna.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11525,6 +11990,7 @@
 		"SoundSet"	"Hero_Luna"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_luna.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_luna.vsndevts"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11650,6 +12116,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_morphling"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11775,6 +12242,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_morphling"
+		"Ability17"	""
 	}
 
 	// 2
@@ -11908,6 +12376,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_morphling"
+		"Ability17"	""
 	}
 
 	// 3
@@ -12025,6 +12494,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_treant"
+		"Ability17"	""
 	}
 
 	// 3
@@ -12142,6 +12612,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_treant"
+		"Ability17"	""
 	}
 
 	// 3
@@ -12259,6 +12730,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_treant.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_treant"
+		"Ability17"	""
 	}
 
 	// 1
@@ -12388,6 +12860,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_drow"
+		"Ability17"	""
 	}
 
 	// 1
@@ -12517,6 +12990,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_drow"
+		"Ability17"	""
 	}
 
 	// 1
@@ -12646,6 +13120,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_drow"
+		"Ability17"	""
 	}
 
 	// 4
@@ -12767,6 +13242,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_keeper_of_the_light"
+		"Ability17"	""
 	}
 
 	// 4
@@ -12888,6 +13364,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_keeper_of_the_light"
+		"Ability17"	""
 	}
 
 	// 4
@@ -13009,6 +13486,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_keeper_of_the_light.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_keeper_of_the_light.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_keeper_of_the_light"
+		"Ability17"	""
 	}
 
 	// 3
@@ -13134,6 +13612,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_razor.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_razor,particles/units/heroes/hero_razor_reduced_flash"
+		"Ability17"	""
 	}
 
 	// 3
@@ -13259,6 +13738,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_razor.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_razor,particles/units/heroes/hero_razor_reduced_flash"
+		"Ability17"	""
 	}
 
 	// 3
@@ -13384,6 +13864,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_razor.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_razor,particles/units/heroes/hero_razor_reduced_flash"
+		"Ability17"	""
 	}
 
 	// 3
@@ -13509,6 +13990,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_omniknight"
+		"Ability17"	""
 	}
 
 	// 3
@@ -13634,6 +14116,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_omniknight"
+		"Ability17"	""
 	}
 
 	// 3
@@ -13763,6 +14246,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_omniknight"
+		"Ability17"	""
 	}
 
 	// 4
@@ -13884,6 +14368,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_windrunner"
+		"Ability17"	""
 	}
 
 	// 4
@@ -14005,6 +14490,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_windrunner"
+		"Ability17"	""
 	}
 
 	// 4
@@ -14126,6 +14612,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_windrunner.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_windrunner.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_windrunner"
+		"Ability17"	""
 	}
 
 	// 2
@@ -14255,6 +14742,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mirana.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_mirana"
+		"Ability17"	""
 	}
 
 	// 2
@@ -14384,6 +14872,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mirana.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_mirana"
+		"Ability17"	""
 	}
 
 	// 2
@@ -14513,6 +15002,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mirana.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_mirana"
+		"Ability17"	""
 	}
 
 	// 3
@@ -14633,6 +15123,7 @@
 		"SoundSet"	"Hero_SandKing"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -14754,6 +15245,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sandking"
+		"Ability17"	""
 	}
 
 	// 3
@@ -14875,6 +15367,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sandking"
+		"Ability17"	""
 	}
 
 	// 3
@@ -14996,6 +15489,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sandking.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sandking.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sandking"
+		"Ability17"	""
 	}
 
 	// 4
@@ -15113,6 +15607,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
+		"Ability17"	""
 	}
 
 	// 4
@@ -15230,6 +15725,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
+		"Ability17"	""
 	}
 
 	// 4
@@ -15347,6 +15843,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nyx_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nyx_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nyx_assassin"
+		"Ability17"	""
 	}
 
 	// 3
@@ -15469,6 +15966,7 @@
 		"SoundSet"	"Hero_Earthshaker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -15591,6 +16089,7 @@
 		"SoundSet"	"Hero_Earthshaker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -15713,6 +16212,7 @@
 		"SoundSet"	"Hero_Earthshaker"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earthshaker.vsndevts"
+		"Ability17"	""
 	}
 
 	// 4
@@ -15834,6 +16334,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_broodmother"
+		"Ability17"	""
 	}
 
 	// 4
@@ -15955,6 +16456,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_broodmother"
+		"Ability17"	""
 	}
 
 	// 4
@@ -16076,6 +16578,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_broodmother"
+		"Ability17"	""
 	}
 
 	// 2
@@ -16201,6 +16704,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_abaddon.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_abaddon"
+		"Ability17"	""
 	}
 
 	// 2
@@ -16326,6 +16830,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_abaddon.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_abaddon"
+		"Ability17"	""
 	}
 
 	// 2
@@ -16451,6 +16956,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_abaddon.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_abaddon.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_abaddon"
+		"Ability17"	""
 	}
 
 	// 2
@@ -16576,6 +17082,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_brewmaster"
+		"Ability17"	""
 	}
 
 	// 2
@@ -16701,6 +17208,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_brewmaster"
+		"Ability17"	""
 	}
 
 	// 2
@@ -16826,6 +17334,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_brewmaster"
+		"Ability17"	""
 	}
 
 	// 15
@@ -16951,6 +17460,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_brewmaster.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_brewmaster.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_brewmaster"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17000,7 +17510,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"650"
+		"StatusHealth"	"700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -17064,6 +17574,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_stormspirit"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17074,7 +17585,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/storm_spirit/storm_spirit.vmdl"
-		"ModelScale"	"0.98"
+		"ModelScale"	"1"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -17113,7 +17624,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1300"
+		"StatusHealth"	"1400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -17177,6 +17688,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_stormspirit"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17187,7 +17699,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/storm_spirit/storm_spirit.vmdl"
-		"ModelScale"	"1.2"
+		"ModelScale"	"1.3"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -17226,7 +17738,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2600"
+		"StatusHealth"	"2800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -17290,6 +17802,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_stormspirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_stormspirit"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17415,6 +17928,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17540,6 +18054,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17665,6 +18180,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17794,6 +18310,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_earth_spirit/"
+		"Ability17"	""
 	}
 
 	// 3
@@ -17923,6 +18440,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_earth_spirit/"
+		"Ability17"	""
 	}
 
 	// 3
@@ -18052,6 +18570,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_earth_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_earth_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_earth_spirit/"
+		"Ability17"	""
 	}
 
 	// 2
@@ -18177,6 +18696,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slark.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_slark"
+		"Ability17"	""
 	}
 
 	// 2
@@ -18306,6 +18826,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slark.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_slark"
+		"Ability17"	""
 	}
 
 	// 2
@@ -18435,6 +18956,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_slark.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_slark"
+		"Ability17"	""
 	}
 
 	// 2
@@ -18556,6 +19078,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sniper"
+		"Ability17"	""
 	}
 
 	// 2
@@ -18677,6 +19200,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sniper"
+		"Ability17"	""
 	}
 
 	// 2
@@ -18798,6 +19322,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sniper.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sniper"
+		"Ability17"	""
 	}
 
 	// 3
@@ -18879,7 +19404,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"70"
 		"AttackDamageMax"	"80"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.2"
 		"AttackRange"	"600"
 		"Creature"
 		{
@@ -18915,6 +19440,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nevermore"
+		"Ability17"	""
 	}
 
 	// 3
@@ -18996,7 +19522,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"140"
 		"AttackDamageMax"	"160"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.2"
 		"AttackRange"	"600"
 		"Creature"
 		{
@@ -19032,6 +19558,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nevermore"
+		"Ability17"	""
 	}
 
 	// 3
@@ -19113,7 +19640,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"280"
 		"AttackDamageMax"	"320"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.2"
 		"AttackRange"	"600"
 		"Creature"
 		{
@@ -19153,6 +19680,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_nevermore"
+		"Ability17"	""
 	}
 
 	// 2
@@ -19274,6 +19802,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_dazzle"
+		"Ability17"	""
 	}
 
 	// 2
@@ -19395,6 +19924,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_dazzle"
+		"Ability17"	""
 	}
 
 	// 2
@@ -19516,6 +20046,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dazzle.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_dazzle"
+		"Ability17"	""
 	}
 
 	// 5
@@ -19649,6 +20180,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_invoker"
+		"Ability17"	""
 	}
 
 	// 5
@@ -19782,6 +20314,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_invoker"
+		"Ability17"	""
 	}
 
 	// 5
@@ -19915,6 +20448,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_invoker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_invoker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_invoker"
+		"Ability17"	""
 	}
 
 	// 4
@@ -20041,6 +20575,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"particle_folder"	"particles/units/heroes/hero_dragon_knight"
+		"Ability17"	""
 	}
 
 	// 4
@@ -20171,6 +20706,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"particle_folder"	"particles/units/heroes/hero_dragon_knight"
+		"Ability17"	""
 	}
 
 	// 4
@@ -20301,6 +20837,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dragon_knight.vsndevts"
 		"ProjectileSpeed"	"800"
 		"particle_folder"	"particles/units/heroes/hero_dragon_knight"
+		"Ability17"	""
 	}
 
 	// 3
@@ -20381,7 +20918,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"80"
+		"AttackDamageMax"	"90"
 		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
@@ -20420,6 +20957,7 @@
 		"particle_folder"	"particles/units/heroes/hero_faceless_void"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -20500,7 +21038,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"120"
-		"AttackDamageMax"	"160"
+		"AttackDamageMax"	"180"
 		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
@@ -20539,6 +21077,7 @@
 		"particle_folder"	"particles/units/heroes/hero_faceless_void"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -20619,7 +21158,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"240"
-		"AttackDamageMax"	"320"
+		"AttackDamageMax"	"360"
 		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
@@ -20660,6 +21199,7 @@
 		"particle_folder"	"particles/units/heroes/hero_faceless_void"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts"
+		"Ability17"	""
 	}
 
 	// 4
@@ -20775,6 +21315,7 @@
 		"particle_folder"	"particles/units/heroes/hero_pangolier"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pangolier.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pangolin.vsndevts"
+		"Ability17"	""
 	}
 
 	// 4
@@ -20890,6 +21431,7 @@
 		"particle_folder"	"particles/units/heroes/hero_pangolier"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pangolier.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pangolin.vsndevts"
+		"Ability17"	""
 	}
 
 	// 4
@@ -21005,6 +21547,7 @@
 		"particle_folder"	"particles/units/heroes/hero_pangolier"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_pangolier.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_pangolin.vsndevts"
+		"Ability17"	""
 	}
 
 	// 3
@@ -21126,6 +21669,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_terrorblade"
+		"Ability17"	""
 	}
 
 	// 3
@@ -21251,6 +21795,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_terrorblade"
+		"Ability17"	""
 	}
 
 	// 3
@@ -21376,6 +21921,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_terrorblade"
+		"Ability17"	""
 	}
 
 	// 2
@@ -21491,6 +22037,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_visage.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_visage"
+		"Ability17"	""
 	}
 
 	// 2
@@ -21606,6 +22153,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_visage.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_visage"
+		"Ability17"	""
 	}
 
 	// 2
@@ -21721,6 +22269,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_visage.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_visage.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_visage"
+		"Ability17"	""
 	}
 
 	"visage_dragon_1"
@@ -21773,6 +22322,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.5"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"visage_dragon_2"
@@ -21825,6 +22375,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.5"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"visage_dragon_3"
@@ -21877,6 +22428,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.5"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	// 1
@@ -21988,6 +22540,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_winter_wyvern"
+		"Ability17"	""
 	}
 
 	// 1
@@ -22099,6 +22652,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_winter_wyvern"
+		"Ability17"	""
 	}
 
 	// 1
@@ -22210,6 +22764,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_winter_wyvern.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_winter_wyvern.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_winter_wyvern"
+		"Ability17"	""
 	}
 
 	// 1
@@ -22333,6 +22888,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_dark_willow"
+		"Ability17"	""
 	}
 
 	// 1
@@ -22456,6 +23012,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_dark_willow"
+		"Ability17"	""
 	}
 
 	// 1
@@ -22579,6 +23136,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_dark_willow"
+		"Ability17"	""
 	}
 
 	// 5
@@ -22698,6 +23256,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_jakiro.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_jakiro"
+		"Ability17"	""
 	}
 
 	// 5
@@ -22818,6 +23377,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_jakiro.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_jakiro"
+		"Ability17"	""
 	}
 
 	// 5
@@ -22937,6 +23497,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_jakiro.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_jakiro"
+		"Ability17"	""
 	}
 
 	// 3
@@ -23054,6 +23615,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_meepo.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_meepo"
+		"Ability17"	""
 	}
 
 	// 3
@@ -23177,6 +23739,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_meepo.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_meepo"
+		"Ability17"	""
 	}
 
 	// 3
@@ -23304,6 +23867,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_meepo.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_meepo"
+		"Ability17"	""
 	}
 
 	// 3
@@ -23421,6 +23985,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_viper.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_viper"
+		"Ability17"	""
 	}
 
 	// 3
@@ -23538,6 +24103,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_viper.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_viper"
+		"Ability17"	""
 	}
 
 	// 3
@@ -23659,6 +24225,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_viper.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_viper"
+		"Ability17"	""
 	}
 
 	// 2
@@ -23780,6 +24347,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rubick.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_rubick"
+		"Ability17"	""
 	}
 
 	// 2
@@ -23905,6 +24473,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rubick.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_rubick"
+		"Ability17"	""
 	}
 
 	// 2
@@ -24030,6 +24599,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_rubick.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_rubick.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_rubick"
+		"Ability17"	""
 	}
 
 	// 3
@@ -24147,6 +24717,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_grimstroke.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_grimstroke"
+		"Ability17"	""
 	}
 
 	// 3
@@ -24268,6 +24839,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_grimstroke.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_grimstroke"
+		"Ability17"	""
 	}
 
 	// 3
@@ -24389,6 +24961,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_grimstroke.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_grimstroke.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_grimstroke"
+		"Ability17"	""
 	}
 
 	// 4
@@ -24510,6 +25083,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lone_druid"
+		"Ability17"	""
 	}
 
 	// 4
@@ -24639,6 +25213,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lone_druid"
+		"Ability17"	""
 	}
 
 	// 4
@@ -24772,6 +25347,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lone_druid.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lone_druid.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lone_druid"
+		"Ability17"	""
 	}
 
 	// 4
@@ -24905,6 +25481,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_kunkka"
+		"Ability17"	""
 	}
 
 	// 4
@@ -25038,6 +25615,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_kunkka"
+		"Ability17"	""
 	}
 
 	// 4
@@ -25171,6 +25749,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_kunkka.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_kunkka"
+		"Ability17"	""
 	}
 
 	// 4
@@ -25300,6 +25879,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_doom_bringer"
+		"Ability17"	""
 	}
 
 	// 4
@@ -25429,6 +26009,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_doom_bringer"
+		"Ability17"	""
 	}
 
 	// 4
@@ -25558,6 +26139,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_doombringer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_doom_bringer.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_doom_bringer"
+		"Ability17"	""
 	}
 
 	// 3
@@ -25679,6 +26261,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lina"
+		"Ability17"	""
 	}
 
 	// 3
@@ -25800,6 +26383,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lina"
+		"Ability17"	""
 	}
 
 	// 3
@@ -25925,6 +26509,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lina.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lina.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_lina"
+		"Ability17"	""
 	}
 
 	// 4
@@ -26046,6 +26631,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_troll_warlord"
+		"Ability17"	""
 	}
 
 	// 4
@@ -26163,6 +26749,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_troll_warlord"
+		"Ability17"	""
 	}
 
 	// 4
@@ -26280,6 +26867,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_troll_warlord.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_troll_warlord.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_troll_warlord"
+		"Ability17"	""
 	}
 
 	// 3
@@ -26405,6 +26993,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_venomancer.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_venomancer"
+		"Ability17"	""
 	}
 
 	// 3
@@ -26526,6 +27115,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_venomancer.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_venomancer"
+		"Ability17"	""
 	}
 
 	// 3
@@ -26647,6 +27237,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_venomancer.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_venomancer.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_venomancer"
+		"Ability17"	""
 	}
 
 	// 4
@@ -26768,6 +27359,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_necrolyte"
+		"Ability17"	""
 	}
 
 	// 4
@@ -26893,6 +27485,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_necrolyte"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27018,6 +27611,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_necrolyte"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27147,6 +27741,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_chen"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27276,6 +27871,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_chen"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27405,6 +28001,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_chen"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27529,6 +28126,7 @@
 		"SoundSet"	"Hero_Necrolyte"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts"
+		"Ability17"	""
 	}
 
 	// 1
@@ -27638,6 +28236,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_wisp"
+		"Ability17"	""
 	}
 
 	// 1
@@ -27747,6 +28346,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_wisp.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_wisp"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27868,6 +28468,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_templar_assassin"
+		"Ability17"	""
 	}
 
 	// 4
@@ -27989,6 +28590,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_templar_assassin"
+		"Ability17"	""
 	}
 
 	// 4
@@ -28110,6 +28712,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_templar_assassin.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_templar_assassin.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_templar_assassin"
+		"Ability17"	""
 	}
 
 	// 4
@@ -28235,6 +28838,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_medusa"
+		"Ability17"	""
 	}
 
 	// 4
@@ -28364,6 +28968,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_medusa"
+		"Ability17"	""
 	}
 
 	// 4
@@ -28489,6 +29094,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_medusa.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_medusa"
+		"Ability17"	""
 	}
 
 	// 5
@@ -28618,6 +29224,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_disruptor.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_disruptor"
+		"Ability17"	""
 	}
 
 	// 5
@@ -28747,6 +29354,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_disruptor.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_disruptor"
+		"Ability17"	""
 	}
 
 	// 5
@@ -28876,6 +29484,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_disruptor.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_disruptor.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_disruptor"
+		"Ability17"	""
 	}
 
 	// 5
@@ -29005,6 +29614,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sven.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sven"
+		"Ability17"	""
 	}
 
 	// 5
@@ -29134,6 +29744,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sven.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sven"
+		"Ability17"	""
 	}
 
 	// 5
@@ -29263,6 +29874,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_sven.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_sven"
+		"Ability17"	""
 	}
 
 	// 5
@@ -29380,6 +29992,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_monkey_king/"
+		"Ability17"	""
 	}
 
 	// 5
@@ -29497,6 +30110,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_monkey_king/"
+		"Ability17"	""
 	}
 
 	// 5
@@ -29614,6 +30228,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_monkey_king/"
+		"Ability17"	""
 	}
 
 	// 4
@@ -29751,6 +30366,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_alchemist"
+		"Ability17"	""
 	}
 
 	// 4
@@ -29896,6 +30512,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_alchemist"
+		"Ability17"	""
 	}
 
 	// 4
@@ -30041,6 +30658,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_alchemist"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30166,6 +30784,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_gyrocopter"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30299,6 +30918,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_gyrocopter"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30436,6 +31056,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_gyrocopter"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30556,6 +31177,7 @@
 		"SoundSet"	"Hero_Lich"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30680,6 +31302,7 @@
 		"SoundSet"	"Hero_Lich"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30804,6 +31427,7 @@
 		"SoundSet"	"Hero_Lich"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -30925,6 +31549,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_huskar.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_huskar"
+		"Ability17"	""
 	}
 
 	// 5
@@ -31046,6 +31671,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_huskar.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_huskar"
+		"Ability17"	""
 	}
 
 	// 5
@@ -31167,6 +31793,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_huskar.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_huskar.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_huskar"
+		"Ability17"	""
 	}
 
 	// 5
@@ -31295,6 +31922,7 @@
 		"SoundSet"	"Hero_Lich"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_lich.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -31412,6 +32040,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_queenofpain"
+		"Ability17"	""
 	}
 
 	// 5
@@ -31529,6 +32158,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_queenofpain"
+		"Ability17"	""
 	}
 
 	// 5
@@ -31646,6 +32276,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_queenofpain.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_queenofpain"
+		"Ability17"	""
 	}
 
 	// 2
@@ -31769,6 +32400,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_bloodseeker"
+		"Ability17"	""
 	}
 
 	// 2
@@ -31896,6 +32528,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_bloodseeker"
+		"Ability17"	""
 	}
 
 	// 2
@@ -32023,6 +32656,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_bloodseeker"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32148,6 +32782,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tidehunter"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32273,6 +32908,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tidehunter"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32398,6 +33034,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_tidehunter.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_tidehunter"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32526,6 +33163,7 @@
 		"SoundSet"	"Hero_Spectre"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spectre.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32654,6 +33292,7 @@
 		"SoundSet"	"Hero_Spectre"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spectre.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32782,6 +33421,419 @@
 		"SoundSet"	"Hero_Spectre"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_spectre.vsndevts"
+		"Ability17"	""
+	}
+
+	// 5
+	"chess_wl"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/warlock/warlock.vmdl"
+		"ModelScale"	"0.65"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_orc"
+		// Ability 2.
+		"Ability2"	"is_warlock"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"25"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"900"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"120"
+		"AttackRate"	"1.5"
+		"AttackRange"	"600"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"182"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"241"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"240"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"244"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"242"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"239"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"243"
+				}
+				"Wearable9"
+				{
+					"ItemDef"	"245"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.3"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Warlock"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_warlock.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_warlock"
+		"Ability17"	""
+	}
+
+	"chess_wl1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/warlock/warlock.vmdl"
+		"ModelScale"	"0.8"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_orc"
+		// Ability 2.
+		"Ability2"	"is_warlock"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"25"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1800"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"240"
+		"AttackRate"	"1.5"
+		"AttackRange"	"600"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"14301"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"14300"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"14299"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"14303"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"14298"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"14297"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"14304"
+				}
+				"Wearable9"
+				{
+					"ItemDef"	"14302"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.3"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Warlock"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_warlock.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_warlock"
+		"Ability17"	""
+	}
+
+	"chess_wl11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/warlock/warlock.vmdl"
+		"ModelScale"	"1.0"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_orc"
+		// Ability 2.
+		"Ability2"	"is_warlock"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"25"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3600"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"10"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"240"
+		"AttackDamageMax"	"480"
+		"AttackRate"	"1.5"
+		"AttackRange"	"600"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"9921"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"9922"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"12956"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"9924"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"9926"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"6473"
+				}
+				"Wearable8"
+				{
+					"ItemDef"	"9920"
+				}
+				"Wearable9"
+				{
+					"ItemDef"	"9925"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_warlock/warlock_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.3"
+		"HasInventory"	"1"
+		"Level"	"9"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Warlock"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_warlock.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_warlock"
+		"Ability17"	""
 	}
 
 	// 5
@@ -32891,6 +33943,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_enigma"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33008,6 +34061,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_enigma"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33133,6 +34187,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_enigma"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33254,6 +34309,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_death_prophet"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33383,6 +34439,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_death_prophet"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33520,6 +34577,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_death_prophet.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_death_prophet.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_death_prophet"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33640,6 +34698,7 @@
 		"SoundSet"	"Hero_Enigma"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_enigma.vsndevts"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33769,6 +34828,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_techies.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_techies"
+		"Ability17"	""
 	}
 
 	// 5
@@ -33898,6 +34958,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_techies.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_techies"
+		"Ability17"	""
 	}
 
 	// 5
@@ -34027,6 +35088,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_techies.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_techies.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_techies"
+		"Ability17"	""
 	}
 
 	// 5
@@ -34148,6 +35210,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_snapfire.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_snapfire.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_snapfire/"
+		"Ability17"	""
 	}
 
 	// 5
@@ -34269,6 +35332,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_snapfire.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_snapfire.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_snapfire/"
+		"Ability17"	""
 	}
 
 	// 5
@@ -34390,6 +35454,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_snapfire.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_snapfire.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_snapfire/"
+		"Ability17"	""
 	}
 
 	"invisible_unit"
@@ -34516,6 +35581,7 @@
 		"Ability15"	"no_collision"
 		"Ability16"	"dac_guai_base"
 		"IsAncient"	"1"
+		"Ability17"	""
 	}
 
 	"pve_melee_good"
@@ -34566,6 +35632,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_melee_bad_diretide"
@@ -34616,6 +35683,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_melee_good_mega"
@@ -34666,6 +35734,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"Creep_Good_Melee_Mega"
+		"Ability17"	""
 	}
 
 	"pve_melee_bad_mega_diretide"
@@ -34716,6 +35785,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"Undying_Zombie"
+		"Ability17"	""
 	}
 
 	"pve_ranged_good"
@@ -34768,6 +35838,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_ranged_bad_diretide"
@@ -34820,6 +35891,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_stone_a"
@@ -34870,6 +35942,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"n_creep_Melee"
+		"Ability17"	""
 	}
 
 	"pve_stone_b"
@@ -34920,6 +35993,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"n_creep_Melee"
+		"Ability17"	""
 	}
 
 	"pve_wolf_big"
@@ -34971,6 +36045,7 @@
 		"RingRadius"	"60"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_wolf_small_a"
@@ -35023,6 +36098,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_wolf_small_b"
@@ -35075,6 +36151,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"lyc_wolf1"
@@ -35110,7 +36187,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"100"
+		"AttackDamageMax"	"110"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -35129,6 +36206,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"lyc_wolf2"
@@ -35164,7 +36242,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"150"
+		"AttackDamageMax"	"160"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -35183,6 +36261,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"lyc_wolf3"
@@ -35218,7 +36297,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"150"
-		"AttackDamageMax"	"200"
+		"AttackDamageMax"	"220"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -35237,6 +36316,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"aqir_lv1"
@@ -35291,6 +36371,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"aqir_lv2"
@@ -35345,6 +36426,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"aqir_lv3"
@@ -35399,6 +36481,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"fur_tree1"
@@ -35439,7 +36522,7 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"4"
+		"ArmorPhysical"	"5"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -35451,6 +36534,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"fur_tree2"
@@ -35491,7 +36575,7 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"4"
+		"ArmorPhysical"	"5"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -35503,6 +36587,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"fur_tree3"
@@ -35543,7 +36628,7 @@
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"4"
+		"ArmorPhysical"	"7"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -35555,6 +36640,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"br_spider1"
@@ -35589,8 +36675,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"40"
-		"AttackDamageMax"	"60"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"80"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -35607,6 +36693,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"br_spider2"
@@ -35641,8 +36728,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"80"
+		"AttackDamageMin"	"80"
+		"AttackDamageMax"	"100"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -35659,6 +36746,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"br_spider3"
@@ -35711,6 +36799,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"bm_beast1"
@@ -35738,7 +36827,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"500"
+		"StatusHealth"	"600"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -35763,6 +36852,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.633"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"bm_beast2"
@@ -35790,7 +36880,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"800"
+		"StatusHealth"	"900"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -35815,6 +36905,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"bm_beast3"
@@ -35842,7 +36933,7 @@
 		"BountyXP"	"0"
 		"BountyGoldMin"	"0"
 		"BountyGoldMax"	"0"
-		"StatusHealth"	"2000"
+		"StatusHealth"	"2200"
 		"StatusHealthRegen"	"0"
 		"StatusMana"	"0"
 		"StatusManaRegen"	"0"
@@ -35867,6 +36958,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"ld_bear1"
@@ -35919,6 +37011,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"ld_bear2"
@@ -35971,6 +37064,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"ld_bear3"
@@ -36023,6 +37117,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"invoker_spirit1"
@@ -36075,6 +37170,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.2"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"invoker_spirit2"
@@ -36127,6 +37223,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.2"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"invoker_spirit3"
@@ -36179,6 +37276,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.2"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"veno_ward1"
@@ -36231,6 +37329,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"veno_ward2"
@@ -36283,6 +37382,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"veno_ward3"
@@ -36335,6 +37435,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"ss_ssr_ward"
@@ -36387,6 +37488,7 @@
 		"AutoAttacksByDefault"	"1"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"pve_bear_a"
@@ -36437,6 +37539,7 @@
 		"SoundSet"	"n_creep_Melee"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_bear_b"
@@ -36487,6 +37590,7 @@
 		"SoundSet"	"n_creep_Melee"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_vulture_a"
@@ -36538,6 +37642,7 @@
 		"RingRadius"	"60"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_vulture_b"
@@ -36589,6 +37694,7 @@
 		"RingRadius"	"60"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_leishou_a"
@@ -36641,6 +37747,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"n_creep_Ranged"
+		"Ability17"	""
 	}
 
 	"pve_leishou_b"
@@ -36693,6 +37800,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"n_creep_Ranged"
+		"Ability17"	""
 	}
 
 	"pve_black_dragon"
@@ -36745,6 +37853,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"SoundSet"	"n_creep_Ranged"
+		"Ability17"	""
 	}
 
 	"pve_troll_dark_a"
@@ -36796,6 +37905,7 @@
 		"RingRadius"	"60"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_troll_dark_b"
@@ -36847,6 +37957,7 @@
 		"RingRadius"	"60"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_troll_dark_c"
@@ -36898,6 +38009,7 @@
 		"RingRadius"	"60"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_nian"
@@ -36949,6 +38061,7 @@
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
+		"Ability17"	""
 	}
 
 	"pve_qianjiaomonv"
@@ -37035,6 +38148,7 @@
 				}
 			}
 		}
+		"Ability17"	""
 	}
 
 	"pve_tangyimaowang"
@@ -37134,6 +38248,7 @@
 				}
 			}
 		}
+		"Ability17"	""
 	}
 
 	"pve_roshan"
@@ -37186,6 +38301,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"Skin"	"0"
+		"Ability17"	""
 	}
 
 	"pve_baby_roshan"
@@ -37240,6 +38356,7 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"1"
 		"Skin"	"0"
+		"Ability17"	""
 	}
 
 	"player_image"
@@ -37285,6 +38402,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
 		"HealthBarOffset"	"192"
 		"ShouldDoFlyHeightVisual"	"1"
+		"Ability17"	""
 	}
 
 	"cheer_courier"
@@ -37330,6 +38448,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
 		"HealthBarOffset"	"192"
 		"ShouldDoFlyHeightVisual"	"1"
+		"Ability17"	""
 	}
 
 	"melee_bad"
@@ -37374,6 +38493,7 @@
 		"MovementSpeed"	"150"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	"stub"
@@ -37418,6 +38538,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
 		"HealthBarOffset"	"192"
+		"Ability17"	""
 	}
 
 	"fissure"
@@ -37462,6 +38583,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		"HealthBarOffset"	"192"
+		"Ability17"	""
 	}
 
 	"melee_bad_mega"
@@ -37506,6 +38628,7 @@
 		"MovementSpeed"	"150"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 速度神符
@@ -37551,6 +38674,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 攻击神符
@@ -37596,6 +38720,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 防御神符
@@ -37641,6 +38766,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 瞄准神符
@@ -37686,6 +38812,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 回复神符
@@ -37731,6 +38858,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 隐身神符
@@ -37776,6 +38904,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 变大神符
@@ -37821,6 +38950,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 诅咒神符
@@ -37866,6 +38996,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	// 芒果神符
@@ -37911,6 +39042,7 @@
 		"MovementSpeed"	"0"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
+		"Ability17"	""
 	}
 
 	"enemy_bomb"
@@ -37988,6 +39120,7 @@
 		"Ability15"	""
 		"Ability16"	""
 		"MinimapIcon"	"minimap_racks90"
+		"Ability17"	""
 	}
 
 	// 5
@@ -38117,6 +39250,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_zuus,particles/units/heroes/hero_zeus"
+		"Ability17"	""
 	}
 
 	// 5
@@ -38246,6 +39380,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_zuus,particles/units/heroes/hero_zeus"
+		"Ability17"	""
 	}
 
 	// 5
@@ -38375,6 +39510,7 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_zuus.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_zuus,particles/units/heroes/hero_zeus"
+		"Ability17"	""
 	}
 
 	// 5
@@ -38499,6 +39635,7 @@
 		"AttackAcquisitionRange"	"300"
 		"HasAggressiveStance"	"1"
 		"particle_folder"	"particles/units/heroes/hero_mars/"
+		"Ability17"	""
 	}
 
 	// 5
@@ -38621,6 +39758,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mars.vsndevts"
 		"HasAggressiveStance"	"1"
 		"particle_folder"	"particles/units/heroes/hero_mars/"
+		"Ability17"	""
 	}
 
 	// 5
@@ -38743,6 +39881,7 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_mars.vsndevts"
 		"HasAggressiveStance"	"1"
 		"particle_folder"	"particles/units/heroes/hero_mars/"
+		"Ability17"	""
 	}
 
 	"gemtd_pet"
@@ -38849,6 +39988,7 @@
 		"AttackDamageMin"	"0"
 		"AttackDamageMax"	"0"
 		"ShouldDoFlyHeightVisual"	"0"
+		"Ability17"	""
 	}
 
 	"taunt_ward"
@@ -38899,6 +40039,7 @@
 		"AutoAttacksByDefault"	"0"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"nether_ward"
@@ -38949,6 +40090,7 @@
 		"AutoAttacksByDefault"	"0"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 
 	"disarm_ward"
@@ -38999,5 +40141,57 @@
 		"AutoAttacksByDefault"	"0"
 		"AttackAnimationPoint"	"0.3"
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
+	}
+
+	"wl_golem"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"warlock_golem_flaming_fists"
+		"Ability2"	"warlock_golem_permanent_immolation"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/heroes/warlock/warlock_demon.vmdl"
+		"ModelScale"	"0.95"
+		"Level"	"5"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"2000"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"350"
+		"AttackRate"	"2"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"5"
+		"MovementSpeed"	"500"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"SoundSet"	"Hero_WarlockGolem"
+		"RingRadius"	"60"
+		"AutoAttacksByDefault"	"1"
+		"AttackAnimationPoint"	"0.26"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"Ability17"	""
 	}
 }

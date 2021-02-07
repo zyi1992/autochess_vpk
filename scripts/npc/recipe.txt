@@ -10,3 +10,43 @@
 			"01"	"item_jianrenqiu;item_nengliangqiu;"
 		}
 	}
+
+
+	"item_recipe_silingshu_1"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3060"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_silingshu_1"
+		"ItemRequirements"
+		{
+			"01"	"item_xiaofu;item_xuwubaoshi;"
+		}
+	}
+
+	"item_recipe_silingshu_2"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3061"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_silingshu_2"
+		"ItemRequirements"
+		{
+			"01"	"item_silingshu_1;item_xiaofu;"
+		}
+	}
+
+	"item_recipe_silingshu_3"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3062"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_silingshu_3"
+		"ItemRequirements"
+		{
+			"01"	"item_silingshu_2;item_xiaofu;"
+		}
+	}

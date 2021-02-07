@@ -13,11 +13,17 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_shadow_fiend_requiem_of_souls_lua:OnCreated( kv )
+	if self == nil or self:GetAbility() == nil then
+		return
+	end
 	self.reduction_ms_pct = self:GetAbility():GetSpecialValueFor("requiem_reduction_ms")
 	self.reduction_damage_pct = self:GetAbility():GetSpecialValueFor("requiem_reduction_damage")
 end
 
 function modifier_shadow_fiend_requiem_of_souls_lua:OnRefresh( kv )
+	if self == nil or self:GetAbility() == nil then
+		return
+	end
 	self.reduction_ms_pct = self:GetAbility():GetSpecialValueFor("requiem_reduction_ms")
 	self.reduction_damage_pct = self:GetAbility():GetSpecialValueFor("requiem_reduction_damage")
 end
