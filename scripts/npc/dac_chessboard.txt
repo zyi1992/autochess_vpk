@@ -1,0 +1,123 @@
+"dac_chessboard"
+{
+	"default_chessboard"						"b101"
+	"b101"
+	{
+		"id"					"b101"
+		"name"					"哼哼井"
+		"vmap"					"chessboard/chessboard01"
+	}
+	"b102"
+	{
+		"id"					"b102"
+		"name"					"达达城"
+		"vmap"					"chessboard/chessboard02"
+	}
+	"b103"
+	{
+		"id"					"b103"
+		"name"					"翠翠林"
+		"vmap"					"chessboard/chessboard04"
+	}
+
+	"b104"
+	{
+		"id"					"b104"
+		"name"					"绣绣谷"
+		"vmap"					"chessboard/chessboard06"
+	}
+	"b105"
+	{
+		"id"					"b105"
+		"name"					"祖祖庙"
+		"vmap"					"chessboard/chessboard05"
+	}
+	"b106"
+	{
+		"id"					"b106"
+		"name"					"沙沙寨"
+		"vmap"					"chessboard/chessboard08"
+	}
+	"b107"
+	{
+		"id"					"b107"
+		"name"					"冬冬谷"
+		"vmap"					"chessboard/chessboard11"
+	}
+
+	"b299"
+	{
+		"id"					"b299"
+		"name"					"星星庭院"
+		"vmap"					"chessboard/chessboard03"
+	}
+	"b201"
+	{
+		"id"					"b201"
+		"name"					"闹闹矿"
+		"vmap"					"chessboard/chessboard07"
+	}
+	"b202"
+	{
+		"id"					"b202"
+		"name"					"灵灵洞"
+		"vmap"					"chessboard/chessboard10"
+	}
+
+	"b301"
+	{
+		"id"					"b301"
+		"name"					"赞赞塔♦上层"
+		"vmap"					"chessboard/chessboard09"
+	}
+
+
+	"b001"
+	{
+		"id"					"b001"
+		"name"					""
+		"vmap"					"chessboard/chessboard51"
+	}
+	"b002"
+	{
+		"id"					"b002"
+		"name"					""
+		"vmap"					"chessboard/chessboard52"
+	}
+	"b003"
+	{
+		"id"					"b003"
+		"name"					""
+		"vmap"					"chessboard/chessboard53"
+	}
+	"b004"
+	{
+		"id"					"b004"
+		"name"					""
+		"vmap"					"chessboard/chessboard54"
+	}
+	"b005"
+	{
+		"id"					"b005"
+		"name"					""
+		"vmap"					"chessboard/chessboard55"
+	}
+	"b006"
+	{
+		"id"					"b006"
+		"name"					""
+		"vmap"					"chessboard/chessboard56"
+	}
+	"b007"
+	{
+		"id"					"b007"
+		"name"					""
+		"vmap"					"chessboard/chessboard57"
+	}
+	"b008"
+	{
+		"id"					"b008"
+		"name"					""
+		"vmap"					"chessboard/chessboard58"
+	}
+}

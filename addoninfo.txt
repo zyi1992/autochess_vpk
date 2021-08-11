@@ -3,10 +3,10 @@
 	maps = 
 	[
 		"ranked_1x8",
-		"ranked_2x4",
 		"casual_1x8",
-		"casual_2x4",
 		"casual_1x8_ob",
+		"ranked_2x4",
+		"casual_2x4",
 		"casual_2x4_ob",
 	]
 	IsPlayable = 1
@@ -78,6 +78,10 @@
 		{
 			MaxPlayers = 8
 			map = "ranked_1x8"
+		},
+		{
+			MaxPlayers = 8
+			map = "chessboard/test01"
 		},
 	]
 	HideInTools = false

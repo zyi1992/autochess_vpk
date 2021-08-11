@@ -1,0 +1,112 @@
+"DOTAItemRecipe"
+{
+	// 由于矩阵编辑器目前不支持#base，这个文件仅供备份尚未实装的物品配方
+
+
+	// "item_recipe_qinglianbaozhu"
+	// {
+	// 	"BaseClass"	"item_recipe_arcane_boots"
+	// 	"ID"	"3043"
+	// 	"ItemCost"	"0"
+	// 	"ItemRecipe"	"1"
+	// 	"ItemResult"	"item_qinglianbaozhu"
+	// 	"ItemRequirements"
+	// 	{
+	// 		"01"	"item_jianrenqiu;item_nengliangqiu;"
+	// 	}
+	// }
+
+	// "item_recipe_jufengchangji"
+	// {
+	// 	"BaseClass"	"item_recipe_arcane_boots"
+	// 	"AbilityTextureName"	"item_hurricane_pike_png"
+	// 	"ID"	"3059"
+	// 	"ItemCost"	"0"
+	// 	"ItemRecipe"	"1"
+	// 	"ItemResult"	"item_jufengchangji"
+	// 	"ItemRequirements"
+	// 	{
+	// 		"01"	"item_wangyuanjing;item_yuanlifazhang;"
+	// 	}
+	// }
+
+
+	// "item_recipe_silingshu_1"
+	// {
+	// 	"BaseClass"	"item_recipe_arcane_boots"
+	// 	"ID"	"3060"
+	// 	"ItemCost"	"0"
+	// 	"ItemRecipe"	"1"
+	// 	"ItemResult"	"item_silingshu_1"
+	// 	"ItemRequirements"
+	// 	{
+	// 		"01"	"item_xiaofu;item_xuwubaoshi;"
+	// 	}
+	// }
+
+	// "item_recipe_silingshu_2"
+	// {
+	// 	"BaseClass"	"item_recipe_arcane_boots"
+	// 	"ID"	"3061"
+	// 	"ItemCost"	"0"
+	// 	"ItemRecipe"	"1"
+	// 	"ItemResult"	"item_silingshu_2"
+	// 	"ItemRequirements"
+	// 	{
+	// 		"01"	"item_silingshu_1;item_xiaofu;"
+	// 	}
+	// }
+
+	// "item_recipe_silingshu_3"
+	// {
+	// 	"BaseClass"	"item_recipe_arcane_boots"
+	// 	"ID"	"3062"
+	// 	"ItemCost"	"0"
+	// 	"ItemRecipe"	"1"
+	// 	"ItemResult"	"item_silingshu_3"
+	// 	"ItemRequirements"
+	// 	{
+	// 		"01"	"item_silingshu_2;item_xiaofu;"
+	// 	}
+	// }
+
+
+	
+	//"item_recipe_jinghunzhiren"
+	//{
+	//	"BaseClass"	"item_recipe_arcane_boots"
+	//	"ID"	"3042"
+	//	"ItemCost"	"0"
+	//	"ItemRecipe"	"1"
+	//	"ItemResult"	"item_jinghunzhiren"
+	//	"ItemRequirements"
+	//	{
+	//		"01"	"item_huanxinzhiren;item_fashichangpao;"
+	//	}
+	//}
+
+	"item_recipe_jinghunzhiren"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3042"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_jinghunzhiren"
+		"ItemRequirements"
+		{
+			"01"	"item_huanxinzhiren;item_fashichangpao;"
+		}
+	}
+	"item_recipe_jingmixie"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3039"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_jingmixie"
+		"ItemRequirements"
+		{
+			"01"	"item_suduzhixue;item_huifuzhihuan;"
+		}
+	}
+}

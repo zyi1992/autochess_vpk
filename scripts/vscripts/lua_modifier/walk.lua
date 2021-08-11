@@ -20,7 +20,7 @@ end
 
 function modifier_walk:OnCreated(kv)
     if IsServer() then
-        if self:ApplyHorizontalMotionController() == false or self:ApplyVerticalMotionController() == false then
+        if self:ApplyHorizontalMotionController() == false then
             self:Destroy()
             return
         end

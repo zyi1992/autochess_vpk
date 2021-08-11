@@ -7458,6 +7458,49 @@
 		"PortraitDesaturateParticles"		"0"
 		"PortraitDesaturateHero"		"1"
 	}
+	"models/heroes/dawnbreaker/dawnbreaker.vmdl"
+	{
+		"PortraitLightPosition"		"203.701859 -63.490330 303.905457"
+		"PortraitLightAngles"		"37.023029 157.655731 -118.454834"
+		"PortraitLightFOV"		"40.000000"
+		"PortraitLightDistance"		"400.000000"
+		"PortraitLightColor"		"233 252 255"
+		"PortraitShadowColor"		"25 25 47"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"69 60 93"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_white.vmat"
+		"PortraitBackgroundColor1"		"0.772549 0.505882 0.207843"
+		"PortraitBackgroundColor2"		"0.105882 0.043137 0.247059"
+		"PortraitBackgroundColor3"		"0.066667 0.011765 0.203922"
+		"PortraitBackgroundColor4"		"0.670588 0.423529 0.141176"
+		"PortraitLightScale"		"1.200000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"16.680 31.210 9.210"
+		"PortraitAnimationActivity"		"ACT_DOTA_CAPTURE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"222.238647 33.034248 180.020325"
+				"PortraitAngles"		"3.463106 187.007813 0.000000"
+				"PortraitFOV"		"8.000000"
+				"PortraitFar"		"1000.000000"
+			}
+		}
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitHideParticles"		"0"
+		"PortraitHideDropShadow"		"0"
+		"PortraitDesaturateParticles"		"0"
+		"PortraitDesaturateHero"		"1"
+		"PortraitPlayIdleExpression"		"0"
+		"PortraitVignetteItem"		"0"
+	}
 
 	// 野怪
 	"models/creeps/lane_creeps/creep_radiant_melee/radiant_melee.vmdl"
@@ -9920,6 +9963,76 @@
 	}
 
 	// 召唤物
+	// tb_mohua2
+	"models/items/terrorblade/marauders_demon/marauders_demon.vmdl"
+	{
+		"PortraitLightPosition"		"120.31 -1.87 317.39"
+		"PortraitLightAngles"		"54.79 171.70 0.00"
+		"PortraitLightFOV"		"52"
+		"PortraitLightDistance"		"188"
+		"PortraitLightColor"		"177 235 254"
+		"PortraitShadowColor"		"74 74 74"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"123 153 177"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor2"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor3"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor4"		"1.000000 1.000000 1.000000"
+		"PortraitParticle"		"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_head.vpcf"
+		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/phantom_assassin.vmat"
+		"PortraitLightScale"		"4.500000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-130.070 -248.940 -36.600"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"260.69 -157.66 103.47"
+				"PortraitAngles"		"340.38 148.27 0.00"
+				"PortraitFOV"		"11"
+			}
+		}
+	}
+	// tb_mohua3
+	"models/items/terrorblade/endless_purgatory_demon/endless_purgatory_demon.vmdl"
+	{
+		"PortraitLightPosition"		"120.31 -1.87 317.39"
+		"PortraitLightAngles"		"54.79 171.70 0.00"
+		"PortraitLightFOV"		"52"
+		"PortraitLightDistance"		"188"
+		"PortraitLightColor"		"177 235 254"
+		"PortraitShadowColor"		"74 74 74"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"123 153 177"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor2"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor3"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor4"		"1.000000 1.000000 1.000000"
+		"PortraitParticle"		"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_head.vpcf"
+		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/phantom_assassin.vmat"
+		"PortraitLightScale"		"4.500000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-130.070 -248.940 -36.600"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"260.69 -157.66 103.47"
+				"PortraitAngles"		"340.38 148.27 0.00"
+				"PortraitFOV"		"11"
+			}
+		}
+	}
 	// ld_bear
 	"models/heroes/lone_druid/spirit_bear.vmdl"
 	{
@@ -10492,6 +10605,317 @@
 				"PortraitPosition"		"212.02 -53.72 127.62"
 				"PortraitAngles"		"354.30 167.35 0.00"
 				"PortraitFOV"		"16"
+			}
+		}
+	}
+	//necro_warrior
+	"models/creeps/item_creeps/i_creep_necro_warrior/necro_warrior.vmdl"
+	{
+		"PortraitLightPosition"		"47.59 -29.69 338.27"
+		"PortraitLightAngles"		"54.11 166.17 0.00"
+		"PortraitLightFOV"		"90"
+		"PortraitLightDistance"		"99"
+		"PortraitLightColor"		"254 248 242"
+		"PortraitShadowColor"		"74 74 74"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"79 108 108"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitLightScale"		"4.500000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-79.070 -84.150 -25.320"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"275.03 -95.44 138.02"
+				"PortraitAngles"		"1.29 153.22 0.00"
+				"PortraitFOV"		"35"
+			}
+		}
+	}
+	//necro_archer
+	"models/creeps/item_creeps/i_creep_necro_archer/necro_archer.vmdl"
+	{
+		"PortraitLightPosition"		"193.47 -112.10 349.45"
+		"PortraitLightAngles"		"54.11 166.17 0.00"
+		"PortraitLightFOV"		"90"
+		"PortraitLightDistance"		"97"
+		"PortraitLightColor"		"254 248 242"
+		"PortraitShadowColor"		"74 74 74"
+		"PortraitShadowScale"		"5.000000"
+		"PortraitAmbientColor"		"79 108 108"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitLightScale"		"4.500000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-79.070 -84.150 -25.320"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"173.23 -303.26 225.01"
+				"PortraitAngles"		"11.27 113.94 0.00"
+				"PortraitFOV"		"35"
+			}
+		}
+	}
+	//nether_ward
+	"models/items/wards/nexon_sotdaeward/nexon_sotdaeward.vmdl"
+	{
+		"PortraitLightPosition"		"-158.546432 166.622437 266.400116"
+		"PortraitLightAngles"		"32.958630 -54.821796 0.000000"
+		"PortraitLightFOV"		"71.528656"
+		"PortraitLightDistance"		"669.084717"
+		"PortraitLightColor"		"178 254 177"
+		"PortraitShadowColor"		"176 172 153"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"156 159 64"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.487845 0.487845 0.487845"
+		"PortraitBackgroundColor2"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor3"		"0.933503 0.933503 0.933503"
+		"PortraitBackgroundColor4"		"0.735216 0.735216 0.735216"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_ghosts.vmat"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"2.125925"
+		"PortraitAmbientDirection"		"0.646 -0.320 0.693"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"312.493530 44.212795 178.400024"
+				"PortraitAngles"		"14.057806 -174.342041 0.000000"
+				"PortraitFOV"		"27.078926"
+				"PortraitFar"		"1500.000000"
+			}
+		}
+	}
+	//disarm_ward
+	"models/items/wards/arcticwatchtower/arcticwatchtower.vmdl"
+	{
+		"PortraitLightPosition"		"-70.392708 154.741302 476.399750"
+		"PortraitLightAngles"		"57.336494 -75.491966 0.000000"
+		"PortraitLightFOV"		"90.000000"
+		"PortraitLightDistance"		"1000.000000"
+		"PortraitLightColor"		"111 162 254"
+		"PortraitShadowColor"		"0 94 208"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"118 122 180"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.348232 0.296261 0.296261"
+		"PortraitBackgroundColor2"		"0.946260 0.834435 1.000000"
+		"PortraitBackgroundColor3"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor4"		"0.691713 0.520346 0.520346"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_underwater.vmat"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"5.000000"
+		"PortraitAmbientDirection"		"0.815 -0.539 0.212"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"332.387268 -126.388840 111.030136"
+				"PortraitAngles"		"4.731359 160.323486 0.000000"
+				"PortraitFOV"		"19.690283"
+				"PortraitFar"		"1500.000000"
+			}
+		}
+	}
+	//enemy_bomb
+	"models/heroes/techies/fx_techies_remotebomb.vmdl"
+	{
+		"PortraitLightPosition"		"93.56 115.06 216.53"
+		"PortraitLightAngles"		"36.09 211.93 0.00"
+		"PortraitLightFOV"		"90"
+		"PortraitLightDistance"		"506"
+		"PortraitLightColor"		"235 241 254"
+		"PortraitShadowColor"		"48 25 25"
+		"PortraitShadowScale"		"4.650000"
+		"PortraitAmbientColor"		"129 159 245"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_techies.vmat"
+		"PortraitBackgroundColor1"		"1 1 1"
+		"PortraitBackgroundColor2"		"1 1 1"
+		"PortraitBackgroundColor3"		"1 1 1"
+		"PortraitBackgroundColor4"		"1 1 1"
+		"PortraitLightScale"		"2.150000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientDirection"		"-97.590 -319.900 -21.470"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"277.73 -34.47 278.70"
+				"PortraitAngles"		"38.11 172.96 0.00"
+				"PortraitFOV"		"12"
+			}
+		}
+	}
+	//wl_golem
+	"models/items/warlock/golem/ahmhedoq/ahmhedoq.vmdl"
+	{
+		"PortraitLightPosition"		"267.912048 33.513275 297.998444"
+		"PortraitLightAngles"		"15.912092 -177.956543 -0.000000"
+		"PortraitLightFOV"		"48.316841"
+		"PortraitLightDistance"		"431.310120"
+		"PortraitLightColor"		"254 254 254"
+		"PortraitShadowColor"		"151 105 105"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"254 122 0"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"1.000000 0.454651 0.000000"
+		"PortraitBackgroundColor2"		"0.988945 0.000000 0.000000"
+		"PortraitBackgroundColor3"		"0.000000 0.000000 0.000000"
+		"PortraitBackgroundColor4"		"0.442113 0.041964 0.041964"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_gradient_btm.vmat"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"1.781320"
+		"PortraitAmbientDirection"		"0.459 0.661 -0.593"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"296.271454 -120.926506 207.230072"
+				"PortraitAngles"		"-3.081273 153.379074 0.000000"
+				"PortraitFOV"		"28.383942"
+				"PortraitFar"		"1500.000000"
+			}
+		}
+	}
+	"models/items/warlock/golem/doom_of_ithogoaki/doom_of_ithogoaki.vmdl"
+	{
+		"PortraitLightPosition"		"-69.418823 9.001524 500.000000"
+		"PortraitLightAngles"		"-47.794891 -7.952331 0.000000"
+		"PortraitLightFOV"		"63.000000"
+		"PortraitLightDistance"		"471.000000"
+		"PortraitLightColor"		"171 173 254"
+		"PortraitShadowColor"		"0 0 0"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"142 142 142"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.629831 0.000000 0.000000"
+		"PortraitBackgroundColor2"		"0.250000 0.250000 0.250000"
+		"PortraitBackgroundColor3"		"0.646716 0.497413 0.368028"
+		"PortraitBackgroundColor4"		"0.497474 0.194762 0.194762"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_bluebloom.vmat"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"2.820315"
+		"PortraitAmbientDirection"		"0.573 0.070 0.817"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"326.922668 -139.917862 167.229965"
+				"PortraitAngles"		"-12.082280 154.566650 0.000001"
+				"PortraitFOV"		"34.145344"
+				"PortraitFar"		"1500.000000"
+			}
+		}
+	}
+	"models/items/warlock/golem/obsidian_golem/obsidian_golem.vmdl"
+	{
+		"PortraitLightPosition"		"68.772751 13.050235 1.200000"
+		"PortraitLightAngles"		"-47.788635 -163.992920 -0.000001"
+		"PortraitLightFOV"		"90.000000"
+		"PortraitLightDistance"		"211.760498"
+		"PortraitLightColor"		"149 180 208"
+		"PortraitShadowColor"		"80 127 128"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"254 163 209"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.100288 0.104979 0.026062"
+		"PortraitBackgroundColor2"		"0.250000 0.250000 0.250000"
+		"PortraitBackgroundColor3"		"0.500000 0.500000 0.500000"
+		"PortraitBackgroundColor4"		"0.700000 0.700000 0.700000"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_jakiro.vmat"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"1.000000"
+		"PortraitAmbientDirection"		"-0.967 -0.231 0.111"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"271.217834 -229.992035 174.030243"
+				"PortraitAngles"		"0.764908 138.482666 0.000000"
+				"PortraitFOV"		"23.370102"
+				"PortraitFar"		"1500.000000"
+			}
+		}
+	}
+	"models/items/warlock/golem/the_torchbearer/the_torchbearer.vmdl"
+	{
+		"PortraitLightPosition"		"-69.418823 9.001524 500.000000"
+		"PortraitLightAngles"		"-47.794891 -7.952331 0.000000"
+		"PortraitLightFOV"		"63.000000"
+		"PortraitLightDistance"		"471.000000"
+		"PortraitLightColor"		"171 173 254"
+		"PortraitShadowColor"		"0 0 0"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"142 142 142"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.629831 0.000000 0.000000"
+		"PortraitBackgroundColor2"		"0.250000 0.250000 0.250000"
+		"PortraitBackgroundColor3"		"0.646716 0.497413 0.368028"
+		"PortraitBackgroundColor4"		"0.497474 0.194762 0.194762"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_gradient_btm.vmat"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"2.820315"
+		"PortraitAmbientDirection"		"0.573 0.070 0.817"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"446.17 -88.29 -22.69"
+				"PortraitAngles"		"334.89 166.83 0.00"
+				"PortraitFOV"		"16"
+				"PortraitFar"		"1500.000000"
 			}
 		}
 	}

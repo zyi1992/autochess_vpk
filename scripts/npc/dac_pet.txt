@@ -1,0 +1,5 @@
+"dac_pet"
+{
+	"default_pet"						"p000"
+	
+}

@@ -115,49 +115,6 @@
 		"HasScepterUpgrade"	"0"
 	}
 
-	"beastmaster_wild_axes"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"7"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"175"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"spread"	"450"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"range"	"1500"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"axe_damage"	"80 120 160"
-				"LinkedSpecialBonus"	"special_bonus_unique_beastmaster"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"10"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage_amp"	"10 20 30"
-			}
-		}
-	}
-
 	"juggernaut_blade_fury"
 	{
 		"MaxLevel"	"3"
@@ -210,7 +167,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"whirling_damage"	"150 200 250"
+				"whirling_damage"	"200 250 300"
 			}
 			"03"
 			{
@@ -245,7 +202,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"damage_per_second"	"150 250 500"
+				"damage_per_second"	"125 200 400"
 			}
 			"02"
 			{
@@ -300,7 +257,7 @@
 			"12"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"total_damage"	"300 500 1000"
+				"total_damage"	"250 400 800"
 				"LinkedSpecialBonus"	"special_bonus_unique_keeper_of_the_light"
 			}
 		}
@@ -311,7 +268,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
-		"AbilityCooldown"	"12 10 8"
+		"AbilityCooldown"	"8 7 6"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -319,7 +276,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"heal"	"200 400 720"
+				"heal"	"250 400 550"
 				"LinkedSpecialBonus"	"special_bonus_unique_omniknight_1"
 			}
 			"02"
@@ -381,7 +338,7 @@
 
 	"faceless_void_time_lock"
 	{
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
 		"MaxLevel"	"1"
 		"AbilitySpecial"
 		{
@@ -398,7 +355,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"chance_pct"	"5"
+				"chance_pct"	"4"
 			}
 			"04"
 			{
@@ -423,6 +380,7 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"chill_duration"	"6"
+				"LinkedSpecialBonus"	"special_bonus_unique_visage_7"
 			}
 			"02"
 			{
@@ -433,6 +391,11 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"attackspeed_bonus"	"20 30 40"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"2000"
 			}
 		}
 	}
@@ -607,6 +570,7 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"damage"	"500 750 1200"
+				"LinkedSpecialBonus"	"special_bonus_unique_lina_5"
 			}
 			"02"
 			{
@@ -617,13 +581,19 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				"damage_delay"	"0.25"
+				"CalculateSpellDamageTooltip"	"0"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"fiery_soul_duration"	"30"
+				"scepter_width"	"125"
 			}
 			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"fiery_soul_duration"	"30"
+			}
+			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"fiery_soul_attack_speed_bonus"	"40 60 80"
@@ -732,6 +702,22 @@
 					// 隐藏血条
 					"MODIFIER_STATE_NO_HEALTH_BAR"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
+			}
+		}
+	}
+
+	"cheer_ground"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"Modifiers"
+		{
+			"modifier_cheer_ground"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+				"States"	{}
+				"Properties"	{}
 			}
 		}
 	}
@@ -1657,12 +1643,72 @@
 		}
 	}
 
+	"is_satyr_banned"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/is_satyr_banned"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"	"1"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"UnbanSynergy"
+				"synergy"	"is_satyr"
+			}
+		}
+	}
+
 	"is_satyr"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"riki_permanent_invisibility"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"	"1"
+		"Modifiers"
+		{
+			"modifier_is_satyr"
+			{
+				"Passive"	"1"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"smoke_screen_trigger"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"riki_smoke_screen"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"MaxLevel"	"3"
+		"Modifiers"
+		{
+			"modifier_smoke_screen_trigger"
+			{
+				"Passive"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"200 250 350"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"4 5 6"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"miss_rate"	"40 60 80"
+			}
+		}
 	}
 
 	"beast_aura"
@@ -1993,12 +2039,14 @@
 
 	"riki_permanent_invisibility"
 	{
+		// "AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"	"1"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"fade_delay"	"0.5"
+				"fade_delay"	"0"
 			}
 		}
 	}
@@ -2406,41 +2454,6 @@
 		}
 	}
 
-	"shooter_aura"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"drow_ranger_trueshot"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"MaxLevel"	"3"
-		"Modifiers"
-		{
-			"modifier_shooter_range"
-			{
-				"Passive"	"1"
-				"TextureName"	"drow_ranger_trueshot"
-				"IsHidden"	"0"
-				"Duration"	"99999"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%damage_add"
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%damage_add"
-				}
-				"States"	{}
-				"IsBuff"	"1"
-			}
-		}
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage_add"	"20 30 50"
-			}
-		}
-	}
-
 	"act_teleport"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -2633,7 +2646,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"11"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"8"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -2661,7 +2674,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"9"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -2692,7 +2705,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-33"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
 				}
 				"Passive"	"1"
 			}
@@ -2714,7 +2727,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-33"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"-35"
 				}
 				"Passive"	"1"
 			}
@@ -2775,7 +2788,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-3"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-2"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -2803,7 +2816,7 @@
 				"IsDebuff"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-5"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-8"
 				}
 				"Passive"	"1"
 				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_spirits_copy.vpcf"
@@ -2955,6 +2968,12 @@
 				"States"	{}
 				"Passive"	"1"
 				"EffectAttachType"	"follow_origin"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+			"modifier_is_warlock_buff_plus_plus_buff"
+			{
+				"IsBuff"	"1"
+				"TextureName"	"warlock_fatal_bonds"
 			}
 		}
 	}
@@ -3288,7 +3307,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"45"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -3318,7 +3337,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"15"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"10"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -3348,7 +3367,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"20"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"30"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -3420,7 +3439,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"200"
+						"hp"	"150"
 					}
 				}
 				"IsHidden"	"0"
@@ -3459,7 +3478,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"AddMaxHP"
-						"hp"	"500"
+						"hp"	"450"
 					}
 				}
 			}
@@ -3502,8 +3521,8 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"15"
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"20"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"20"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -3569,7 +3588,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"per"	"25"
+				"per"	"20"
 			}
 			"02"
 			{
@@ -3626,12 +3645,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"per"	"25"
+				"per"	"30"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"3.5"
+				"duration"	"4"
 			}
 		}
 	}
@@ -3944,7 +3963,7 @@
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"30"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"35"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -4201,7 +4220,7 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"15"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"20"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"67"
 				}
 				"States"	{}
@@ -4220,7 +4239,7 @@
 					"Heal"
 					{
 						"Target"	"CASTER"
-						"HealAmount"	"50"
+						"HealAmount"	"100"
 					}
 				}
 			}
@@ -4276,7 +4295,7 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"15"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"20"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"67"
 				}
 				"States"	{}
@@ -4295,7 +4314,7 @@
 					"Heal"
 					{
 						"Target"	"CASTER"
-						"HealAmount"	"100"
+						"HealAmount"	"150"
 					}
 				}
 			}
@@ -4351,7 +4370,7 @@
 				"Duration"	"3"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"15"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"20"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"67"
 				}
 				"States"	{}
@@ -4407,7 +4426,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"15"
+						"Chance"	"20"
 						"OnSuccess"
 						{
 							"ApplyModifier"
@@ -4527,7 +4546,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"20"
+						"Chance"	"25"
 						"OnSuccess"
 						{
 							"ApplyModifier"
@@ -4678,7 +4697,7 @@
 					}
 					"Random"
 					{
-						"Chance"	"10"
+						"Chance"	"0"
 						"OnSuccess"
 						{
 							"ApplyModifier"
@@ -5433,6 +5452,7 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"great_cleave_damage"	"50"
+				"LinkedSpecialBonus"	"special_bonus_unique_sven_8"
 			}
 		}
 	}
@@ -5617,48 +5637,6 @@
 		"AbilityDamage"	"100 150 250"
 	}
 
-	"puck_illusory_orb"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"5 4 3"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"radius"	"150"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"max_distance"	"800"
-				"LinkedSpecialBonus"	"special_bonus_unique_puck"
-				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"orb_speed"	"651"
-				"LinkedSpecialBonus"	"special_bonus_unique_puck"
-				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_PERCENTAGE_ADD"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"orb_vision"	"450"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"vision_duration"	"3.34 3.34 3.34"
-			}
-		}
-		"AbilityDamage"	"150 200 300"
-	}
-
 	"templar_assassin_refraction"
 	{
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
@@ -5691,45 +5669,6 @@
 				"duration"	"6"
 			}
 		}
-	}
-
-	"bounty_hunter_shuriken_toss"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"9 7 5"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"bonus_damage"	"300 500 800"
-				"LinkedSpecialBonus"	"special_bonus_unique_bounty_hunter_2"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"speed"	"800"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"bounce_aoe"	"1200"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"ministun"	"0.1"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"scepter_ministun"	"0.75"
-			}
-		}
-		"HasScepterUpgrade"	"0"
 	}
 
 	"witch_doctor_paralyzing_cask"
@@ -5966,6 +5905,7 @@
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"drow_ranger_trueshot"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"MaxLevel"	"3"
 		"Modifiers"
@@ -6147,117 +6087,6 @@
 		}
 	}
 
-	"qop_sonicwave"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"queenofpain_sonic_wave"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_POINT"
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.3"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"15"
-		// -------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilityCastRangeBuffer"	"10"
-		"precache"
-		{
-			"particle"	"particles/units/heroes/hero_queenofpain/queen_sonic_wave.vpcf"
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_queenofpain.vsndevts"
-		}
-		"OnSpellStart"
-		{
-			"LinearProjectile"
-			{
-				"EffectName"	"particles/units/heroes/hero_queenofpain/queen_sonic_wave.vpcf"
-				// 发射速率
-				"MoveSpeed"	"1500"
-				// 获取的开始范围
-				"StartRadius"	"100"
-				// 获取的终止范围
-				"EndRadius"	"500"
-				// 距离
-				"FixedDistance"	"%distance"
-				"StartPosition"	"CASTER"
-				// 不晓得是什么玩意
-				"HasFrontalCone"	"0"
-				// 是否给予视野
-				"ProvidesVision"	"1"
-				// 视野大小
-				"VisionRadius"	"500"
-				"TargetTeams"	"DOTA_UNIT_TARGET_TEAM_BOTH"
-				"TargetTypes"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-				"Target"	"POINT"
-			}
-			"FireSound"
-			{
-				"EffectName"	"Hero_QueenOfPain.SonicWave"
-				"Target"	"CASTER"
-			}
-		}
-		"OnProjectileHitUnit"
-		{
-			"RunScript"
-			{
-				"Target"	"TARGET"
-				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"SonicDamage"
-				"damage"	"%damage"
-			}
-		}
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"damage"	"400 700 1000"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"distance"	"900"
-			}
-		}
-	}
-
-	"ogre_magi_bloodlust"
-	{
-		"MaxLevel"	"3"
-		"AbilityCooldown"	"5"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"modelscale"	"25"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"bonus_movement_speed"	"0"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"bonus_attack_speed"	"30 40 50"
-				"LinkedSpecialBonus"	"special_bonus_unique_ogre_magi"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"self_bonus"	"30 50 70"
-				"LinkedSpecialBonus"	"special_bonus_unique_ogre_magi"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"30"
-			}
-		}
-	}
-
 	"luna_moon_glaive"
 	{
 		"MaxLevel"	"3"
@@ -6326,84 +6155,6 @@
 		}
 	}
 
-	"nevermore_requiem"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"1.67 1.67 1.67"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_6"
-		"AbilityCooldown"	"20"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"9999"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_radius"	"700"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_ms"	"10 15 25"
-			}
-			"03"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_slow_duration"	"0"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_slow_duration_max"	"0"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_reduction_radius"	"500 600 700"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_soul_conversion"	"2 2 2"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_line_width_start"	"125"
-			}
-			"08"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_line_width_end"	"425"
-			}
-			"09"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"requiem_line_speed"	"700 700 700"
-			}
-			"10"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"soul_death_release"	"0"
-			}
-			"11"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"requiem_heal_pct_scepter"	"100"
-				"RequiresScepter"	"1"
-			}
-			"12"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"requiem_damage_pct_scepter"	"40"
-				"RequiresScepter"	"1"
-				"CalculateSpellDamageTooltip"	"0"
-			}
-		}
-		"AbilityDuration"	"5.0 5.0 5.0"
-		"AbilityDamage"	"100 150 250"
-	}
-
 	"dragon_knight_elder_dragon_form"
 	{
 		"MaxLevel"	"3"
@@ -6431,12 +6182,12 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_attack_damage"	"150 150 150"
+				"bonus_attack_damage"	"200"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"corrosive_breath_damage"	"10"
+				"corrosive_breath_damage"	"20"
 			}
 			"06"
 			{
@@ -6451,25 +6202,25 @@
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"splash_damage_percent"	"50"
+				"splash_damage_percent"	"35"
 				"LinkedSpecialBonus"	"special_bonus_unique_dragon_knight_6"
 			}
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"frost_bonus_movement_speed"	"-40"
+				"frost_bonus_movement_speed"	"-50"
 				"LinkedSpecialBonus"	"special_bonus_unique_dragon_knight_5"
 			}
 			"10"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"frost_bonus_attack_speed"	"-40"
+				"frost_bonus_attack_speed"	"-50"
 				"LinkedSpecialBonus"	"special_bonus_unique_dragon_knight_5"
 			}
 			"11"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"frost_duration"	"3.0 3.0 3.0"
+				"frost_duration"	"5.0"
 			}
 			"12"
 			{
@@ -6484,7 +6235,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"10 7 4"
+		"AbilityCooldown"	"10 8 6"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -6497,7 +6248,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"150 250 450"
+				"damage"	"150 250 350"
 				"LinkedSpecialBonus"	"special_bonus_unique_viper_2"
 			}
 			"03"
@@ -6508,7 +6259,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_attack_speed"	"-40 -60 -80"
+				"bonus_attack_speed"	"-20 -30 -60"
 			}
 			"05"
 			{
@@ -6650,12 +6401,13 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stun_duration"	"0.5 1 2"
+				"stun_duration"	"1 1 2"
+				"LinkedSpecialBonus"	"special_bonus_unique_monkey_king_9"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"strike_crit_mult"	"200 250 350"
+				"strike_crit_mult"	"200 300 400"
 				"LinkedSpecialBonus"	"special_bonus_unique_monkey_king"
 			}
 			"03"
@@ -7295,7 +7047,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stun_duration"	"1.5"
+				"stun_duration"	"1"
 			}
 			"03"
 			{
@@ -7309,1569 +7061,13 @@
 			}
 			"05"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"inferno_duration"	"10"
+				"var_type"	"FIELD_FLOAT"
+				"inferno_duration"	"7.5"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"another_inferno_per"	"10"
-			}
-		}
-	}
-
-	"queenofpain_scream_of_pain"
-	{
-		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0"
-		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
-		"AbilityCooldown"	"6"
-		"AbilityManaCost"	"100"
-		"AbilityCastRange"	"0"
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"area_of_effect"	"425"
-			}
-			"02"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"projectile_speed"	"900"
-			}
-		}
-		"AbilityDamage"	"200 300 500"
-	}
-
-	"e101"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/shengjie/shengjie.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/shengjie/shengjie.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e102"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/ruby.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/ruby.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e103"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/bianpao/bianpaofireworks.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/bianpao/bianpaofireworks.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e104"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_crystal_rift/courier_ambient_crystal_rift.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_crystal_rift/courier_ambient_crystal_rift.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e105"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_trail_cursed/courier_cursed_ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_trail_cursed/courier_cursed_ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e106"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_trail_04/courier_trail_04.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_trail_04/courier_trail_04.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e107"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_trail_hw_2012/courier_trail_hw_2012.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_trail_hw_2012/courier_trail_hw_2012.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e108"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_trail_hw_2013/courier_trail_hw_2013.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_trail_hw_2013/courier_trail_hw_2013.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e109"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_trail_orbit/courier_trail_orbit.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_trail_orbit/courier_trail_orbit.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e111"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/hapi.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/hapi.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e112"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/baoshiguangze.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/baoshiguangze.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e113"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/wuwuwuwuwu.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/wuwuwuwuwu.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e110"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_snow_b_arcana1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_snow_b_arcana1.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e201"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_trail_spirit/courier_trail_spirit.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_trail_spirit/courier_trail_spirit.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e202"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e203"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/courier/courier_polycount_01/courier_trail_polycount_01a.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/courier/courier_polycount_01/courier_trail_polycount_01a.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e204"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/wards/bane/bane_ward/bane_ward_ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/wards/bane/bane_ward/bane_ward_ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e205"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/mogu.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/mogu.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e206"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/2012trail_international_2012.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/2012trail_international_2012.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e207"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/2013.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/2013.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e208"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/2014.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/2014.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e209"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/nihonghudieblue.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/nihonghudieblue.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e210"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti6/radiance_owner_ti6.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti6/radiance_owner_ti6.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e211"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e212"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/xianqichanrao.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/xianqichanrao.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e301"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/vr/player_light_godray.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/vr/player_light_godray.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e302"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e303"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/bingnv/ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/bingnv/ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e304"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/grass/03.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/grass/03.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e305"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/lianhua/lianhua.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/lianhua/lianhua.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e306"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/snow2012/1econ/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/snow2012/1econ/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e307"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/ranshaomori/ranshao.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/ranshaomori/ranshao.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e308"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"particles/gem/brewmaster_drunken_haze_debuff_bubbles_2.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/gem/brewmaster_drunken_haze_debuff_bubbles_2.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e309"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"sm/ziyuanpurple/courier_greevil_purple_ambient_3.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/ziyuanpurple/courier_greevil_purple_ambient_3.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e310"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"effect/xuehua/xuehua.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuehua/xuehua.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e311"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"sm/xiehuodefault.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/xiehuodefault.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e312"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"effect/jinbi/jinbigold.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/jinbi/jinbigold.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e313"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"sm/guanghuisuiyue.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/guanghuisuiyue.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e314"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"sm/zisexingyunsecondary.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/zisexingyunsecondary.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e315"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"effect/emengchanrao/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/emengchanrao/1.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e316"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"precache"
-		{
-			"particle"	"sm/xingxingold.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/xingxingold.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e401"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/rongyanroushan.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/rongyanroushan.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e402"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/bingroushan.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/bingroushan.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e403"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/golden_roshan/goldenambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/golden_roshan/goldenambient.vpcf"
-				"EffectAttachType"	"follow_overhead"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e404"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/lizizhiqiambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/lizizhiqiambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e405"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/generic_gameplay/dropped_item_rapier.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/generic_gameplay/dropped_item_rapier.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e317"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/hongxin/ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/hongxin/ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e318"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/wangzherongyao/wangzherongyao.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/wangzherongyao/wangzherongyao.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e499"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"sm/loveblue.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"sm/loveblue.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e321"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/lanhuo/motenai.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/lanhuo/motenai.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e214"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/yuhuofenshen/1_2.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/yuhuofenshen/1_2.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e215"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti9/fountain_regen_ti9_lvl2.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti9/fountain_regen_ti9_lvl2.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e410"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/puck_xuehua/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/puck_xuehua/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e411"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/killstreak/killstreak_ti10_glitter_topbar.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/killstreak/killstreak_ti10_glitter_topbar.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e412"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v3_effect.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v3_effect.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e413"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e414"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e415"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf"
-			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_effect.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_effect.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e213"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/ti8roshan/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/ti8roshan/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e409"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e408"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/anyue/anyueflying.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/anyue/anyueflying.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e407"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e320"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e319"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/ti7donkey/effect.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/ti7donkey/effect.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e406"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/blue_gem/ti7.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/blue_gem/ti7.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e114"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e323"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e324"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti10/agh_aura_03.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti10/agh_aura_03.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e325"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti9/teleport_end_ti9_model.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti9/teleport_end_ti9_model.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e501"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
+				"another_inferno_per"	"7"
 			}
 		}
 	}
@@ -8920,204 +7116,6 @@
 						"Function"	"AttackAbilityPure"
 					}
 				}
-			}
-		}
-	}
-
-	"e409"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e408"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/anyue/anyueflying.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/anyue/anyueflying.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e407"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e320"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e322"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/gewugu/flyup/ambient.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/gewugu/flyup/ambient.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e319"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/ti7donkey/effect.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/ti7donkey/effect.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e406"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/blue_gem/ti7.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/blue_gem/ti7.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e114"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
-				"EffectAttachType"	"attach_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e999"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/crown/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_crown"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/crown/1.vpcf"
-				"EffectAttachType"	"follow_head"
-				"IsHidden"	"1"
 			}
 		}
 	}
@@ -9467,7 +7465,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"60 80 100"
+				"damage"	"80 120 160"
 			}
 			"02"
 			{
@@ -9477,7 +7475,48 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"speed"	"30 40 50"
+				"speed"	"40 60 80"
+			}
+		}
+	}
+
+	"tb_mohua_new"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"terrorblade_metamorphosis"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.5"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"100"
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+				"Function"	"TbMohuaNew"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mohua_friend_count"	"0 1 2"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mohua_tb_hp"	"900 1800 3600"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mohua_tb_ad"	"155 270 460"
 			}
 		}
 	}
@@ -9545,7 +7584,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"precache"
 		{
-			"particle"	"effect/satyr_3/dust_of_appearance_true_sight.vpcf"
+			"particle"	"effect/sytur/1.vpcf"
 		}
 		"Modifiers"
 		{
@@ -9559,10 +7598,10 @@
 					"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_ENABLED"
 				}
 				"Properties"	{}
-				"EffectName"	"effect/satyr_3/dust_of_appearance_true_sight.vpcf"
-				"EffectAttachType"	"follow_overhead"
 				"IsHidden"	"0"
 				"TextureName"	"riki_permanent_invisibility"
+				"EffectName"	"effect/sytur/1.vpcf"
+				"EffectAttachType"	"follow_overhead"
 			}
 		}
 	}
@@ -9570,42 +7609,33 @@
 	"riki_smoke_screen"
 	{
 		"MaxLevel"	"3"
-		"AbilityCastPoint"	"0.2"
+		"AbilityCastPoint"	"0"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"15"
-		"AbilityManaCost"	"100"
+		"AbilityCooldown"	"60"
+		"AbilityManaCost"	"0"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"325"
+				"radius"	"200 250 350"
+				"LinkedSpecialBonus"	"special_bonus_unique_riki_7"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"miss_rate"	"30 40 50"
+				"duration"	"4 5 6"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"movement_speed_reduction"	"0"
-			}
-			"04"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"turn_reduction"	"0"
-			}
-			"05"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"duration"	"4 5 6"
+				"miss_rate"	"40 60 80"
 			}
 		}
 		"AbilitySound"	"Hero_Riki.Smoke_Screen"
-		"AbilityDuration"	"4 5 6"
+		"AbilityDuration"	"5 6 7"
 	}
 
 	"death_prophet_exorcism"
@@ -9647,12 +7677,12 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"min_damage"	"120"
+				"min_damage"	"200"
 			}
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"max_damage"	"120"
+				"max_damage"	"200"
 			}
 			"08"
 			{
@@ -9662,12 +7692,12 @@
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"average_damage"	"100"
+				"average_damage"	"200"
 			}
 			"10"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"ghost_spawn_rate"	"0.3"
+				"ghost_spawn_rate"	"0.4 0.3 0.2"
 			}
 		}
 		"HasScepterUpgrade"	"0"
@@ -10035,226 +8065,6 @@
 				"TextureName"	"faceless_void_backtrack"
 				"IsBuff"	"0"
 				"IsDebuff"	"1"
-			}
-		}
-	}
-
-	"e450"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e451"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/red/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/red/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e452"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/orange/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/orange/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e453"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/yellow/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/yellow/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e454"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/green/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/green/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e455"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/cyan/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/cyan/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e456"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/blue/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/blue/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e457"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/purple/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/purple/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e458"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/white/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/white/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
-			}
-		}
-	}
-
-	"e459"
-	{
-		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"wisp_overcharge"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"HotKeyOverride"	"L"
-		"precache"
-		{
-			"particle"	"effect/xuwuzhiyan/pink/1.vpcf"
-		}
-		"Modifiers"
-		{
-			"modifier_texiao_star"
-			{
-				"Passive"	"1"
-				"EffectName"	"effect/xuwuzhiyan/pink/1.vpcf"
-				"EffectAttachType"	"follow_origin"
-				"IsHidden"	"1"
 			}
 		}
 	}
@@ -10757,7 +8567,6 @@
 		"AbilitySound"	"Hero_Lich.FrostArmor"
 	}
 
-	// 给冰霜魔盾的目标附加一个冰霜护甲效果（敌人攻击会被减攻速）
 	"give_bingjia"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -10812,6 +8621,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%attack_speed"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"%movement_speed"
 				}
 				"IsDebuff"	"1"
 				"Duration"	"2"
@@ -10958,7 +8768,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
-		"AbilityCooldown"	"10 8 4"
+		"AbilityCooldown"	"10 8 5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilitySpecial"
@@ -11616,7 +9426,7 @@
 			{
 				"Target"	"TARGET"
 				"ModifierName"	"modifier_shiva_debuff"
-				"Duration"	"4"
+				"Duration"	"5"
 			}
 		}
 		"Modifiers"
@@ -11628,9 +9438,11 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-40"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-40"
 				}
 				"EffectName"	"particles/econ/items/crystal_maiden/ti7_immortal_shoulder/cm_ti7_immortal_frostbite_snow_base.vpcf"
 				"EffectAttachType"	"attach_origin"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
 		}
 	}
@@ -12130,7 +9942,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"zhanhun_stack_amount"	"20"
+				"zhanhun_stack_amount"	"10"
 			}
 			"02"
 			{
@@ -12367,7 +10179,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"9 7 5"
+		"AbilityCooldown"	"7 6 5"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"precache"
@@ -12409,7 +10221,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"ministun"	"0.1"
+				"ministun"	"1"
 			}
 			"03"
 			{
@@ -12616,7 +10428,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"dismember_damage"	"100 200 400"
+				"dismember_damage"	"150 250 450"
 				"LinkedSpecialBonus"	"special_bonus_unique_pudge_3"
 				"LinkedSpecialBonusField"	"value"
 				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
@@ -12700,7 +10512,7 @@
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"8 6 4"
+		"AbilityCooldown"	"5 4 3"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"10"
@@ -12819,7 +10631,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"mana_per_second"	"15 25 45"
+				"mana_per_second"	"20 30 50"
 			}
 			"03"
 			{
@@ -12934,7 +10746,7 @@
 		"AbilityCastPoint"	"0"
 		// Stats
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"15 12 9"
+		"AbilityCooldown"	"10 8 6"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"100"
@@ -13022,7 +10834,7 @@
 			{
 				"var_type"	"FIELD_FLOAT"
 				// 0.6 1.2 1.8 2.4"
-				"stun_duration"	"1.5 1.5 2"
+				"stun_duration"	"2"
 			}
 			"03"
 			{
@@ -13082,6 +10894,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"MaxLevel"	"3"
 		"Modifiers"
 		{
@@ -13112,17 +10925,17 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_count"	"4"
+				"attack_count"	"4 3 3"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stun_duration"	"0.5 1 2"
+				"stun_duration"	"1.5 1.5 2.5"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_multiple"	"200 250 350"
+				"damage_multiple"	"200 300 400"
 			}
 			"04"
 			{
@@ -13189,7 +11002,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"150 200 300"
+				"damage"	"200 250 350"
 				"LinkedSpecialBonus"	"special_bonus_unique_bloodseeker_2"
 			}
 			"04"
@@ -13368,7 +11181,7 @@
 			"modifier_burning_spear_datadriven_debuff"
 			{
 				"Passive"	"0"
-				"IsHidden"	"1"
+				"IsHidden"	"0"
 				"IsBuff"	"0"
 				"IsDebuff"	"1"
 				"IsPurgable"	"0"
@@ -13408,38 +11221,38 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_cost"	"20 30 50"
+				"health_cost"	"15 20 25"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"burning_spear_duration"	"8"
+				"burning_spear_duration"	"5"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"burning_spear_damage"	"20 30 50"
+				"burning_spear_damage"	"15 20 25"
 			}
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_speed_per_level"	"20 25 30"
+				"attack_speed_per_level"	"7 10 15"
 			}
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"magic_resist_per_level"	"10"
+				"magic_resist_per_level"	"8"
 			}
 			"06"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"hp_regain_per_level"	"0.5"
+				"hp_regain_per_level"	"0.25"
 			}
 		}
-		"AbilityDuration"	"8"
+		"AbilityDuration"	"5"
 		// Damage.
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"	"20 30 50"
+		"AbilityDamage"	"15 20 25"
 	}
 
 	"huskar_buff1"
@@ -13482,17 +11295,17 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_speed_bonus"	"15 30 45 60 75 90 105 120 135 150"
+				"attack_speed_bonus"	"7 14 21 28 35 42 49 56 63 70"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"magic_asst_bonus"	"10 20 30 40 50 60 70 80 90 100"
+				"magic_asst_bonus"	"8 16 24 32 40 48 56 64 72 80"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"health_regain_bonus"	"0.5 1 1.5 2 2.5 3 3.5 4 4.5 5"
+				"health_regain_bonus"	"0.25 0.5 0.75 1 1.25 1.5 1.75 2 2.25 2.5"
 			}
 		}
 	}
@@ -13537,17 +11350,17 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_speed_bonus"	"20 40 60 80 100 120 140 160 180 200"
+				"attack_speed_bonus"	"10 20 30 40 50 60 70 80 90 100"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"magic_asst_bonus"	"10 20 30 40 50 60 70 80 90 100"
+				"magic_asst_bonus"	"8 16 24 32 40 48 56 64 72 80"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"health_regain_bonus"	"0.5 1 1.5 2 2.5 3 3.5 4 4.5 5"
+				"health_regain_bonus"	"0.25 0.5 0.75 1 1.25 1.5 1.75 2 2.25 2.5"
 			}
 		}
 	}
@@ -13592,17 +11405,17 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_speed_bonus"	"25 50 75 100 125 150 175 200 225 250"
+				"attack_speed_bonus"	"15 30 45 60 75 90 105 120 135 150"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"magic_asst_bonus"	"10 20 30 40 50 60 70 80 90 100"
+				"magic_asst_bonus"	"8 16 24 32 40 48 56 64 72 80"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"health_regain_bonus"	"0.5 1 1.5 2 2.5 3 3.5 4 4.5 5"
+				"health_regain_bonus"	"0.25 0.5 0.75 1 1.25 1.5 1.75 2 2.25 2.5"
 			}
 		}
 	}
@@ -13627,11 +11440,12 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"damage"	"300"
+				"LinkedSpecialBonus"	"special_bonus_unique_lich_7"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"jumps"	"6 9 15"
+				"jumps"	"9 12 15"
 			}
 			"03"
 			{
@@ -13666,14 +11480,7 @@
 			"09"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_scepter"	"300"
-				"RequiresScepter"	"1"
-			}
-			"10"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"cast_range_scepter"	"9999"
-				"RequiresScepter"	"1"
+				"bonus_jump_damage"	"10 20 30"
 			}
 		}
 		"AbilitySound"	"Hero_Lich.ChainFrost"
@@ -13798,7 +11605,7 @@
 			"08"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"chaos_duration"	"2 2.5 3.5"
+				"chaos_duration"	"2 3 4"
 			}
 		}
 	}
@@ -13855,7 +11662,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.0"
 		"AbilityCastAnimation"	"ACT_DOTA_OVERRIDE_ABILITY_3"
-		"AbilityCooldown"	"12 10 8"
+		"AbilityCooldown"	"10 8 6"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"800"
 		// Special
@@ -13865,7 +11672,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"150 200 300"
+				"damage"	"100 150 200"
 			}
 			"02"
 			{
@@ -13895,12 +11702,12 @@
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_reduction_per_attack"	"2 2 3"
+				"armor_reduction_per_attack"	"1 1 2"
 			}
 			"08"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"armor_duration"	"3 4 5"
+				"armor_duration"	"5"
 			}
 		}
 		"AbilitySound"	"Hero_Snapfire.ExplosiveShells.Cast"
@@ -14200,6 +12007,11 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"miss_per"	"40 60 100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"lifesteal_per"	"25"
 			}
 		}
 	}
@@ -14668,16 +12480,48 @@
 	"invoker_quas"
 	{
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"	"3"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"health_regen_per_instance"	"20 40 60"
+			}
+		}
 	}
 
 	"invoker_wex"
 	{
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"	"3"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attack_speed_per_instance"	"20 40 60"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"move_speed_per_instance"	"20 40 60"
+			}
+		}
 	}
 
 	"invoker_exort"
 	{
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"MaxLevel"	"3"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_per_instance"	"20 40 60"
+			}
+		}
 	}
 
 	"invoker_invoke"
@@ -14692,6 +12536,23 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"MaxLevel"	"3"
 		"AbilityManaCost"	"100"
+	}
+
+	"arc_double"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"arc_warden_tempest_double"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"	"3"
+		"AbilityManaCost"	"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"10 20 30"
+			}
+		}
 	}
 
 	"forged_spirit_jianjia"
@@ -14775,6 +12636,62 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"fanji_xixue"	"50"
+			}
+		}
+	}
+
+	"troll_axe"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"troll_warlord_berserkers_rage"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"Modifiers"
+		{
+			"modifier_troll_axe"
+			{
+				"TextureName"	"troll_warlord_berserkers_rage"
+				"IsBuff"	"0"
+				"IsHidden"	"1"
+				"OnAttackStart"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"TrollAxeAttack"
+					}
+				}
+				"Passive"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"axe_per"	"25"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"cd_axe_melee"	"3 2 1"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"cd_axe_ranged"	"3 2 1"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_axe_melee"	"150 250 350"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage_axe_ranged"	"150 250 350"
 			}
 		}
 	}
@@ -14976,6 +12893,7 @@
 	"show_ability"
 	{
 		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"action_move"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_BOTH"
@@ -15041,22 +12959,16 @@
 			}
 			"06"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"damage_scepter"	"100 150 250"
-				"RequiresScepter"	"1"
-			}
-			"07"
-			{
 				"var_type"	"FIELD_FLOAT"
 				"linger_duration"	"2"
 			}
-			"08"
+			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
 				"scepter_bonus_range"	"400"
 				"RequiresScepter"	"1"
 			}
-			"09"
+			"08"
 			{
 				"var_type"	"FIELD_FLOAT"
 				"scepter_bonus_duration"	"20"
@@ -15133,6 +13045,7 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"stun_radius"	"300"
+				"LinkedSpecialBonus"	"special_bonus_unique_dark_willow_7"
 			}
 		}
 	}
@@ -15334,7 +13247,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"400 600 800"
+				"damage"	"250 400 700"
 			}
 		}
 	}
@@ -15420,7 +13333,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.5"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_2"
-		"AbilityCooldown"	"7 6 5"
+		"AbilityCooldown"	"9 8 7"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"precache"
@@ -15446,7 +13359,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"pure_damage"	"100 150 200"
+				"pure_damage"	"100 125 175"
 			}
 			"02"
 			{
@@ -15588,8 +13501,12 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityCooldown"	"15 12 10"
+		"AbilityCooldown"	"8"
 		"AbilityManaCost"	"100"
+		"precache"
+		{
+			"particle"	"particles/econ/items/sniper/sniper_immortal_cape/sniper_immortal_cape_headshot_slow_ring.vpcf"
+		}
 		"OnSpellStart"
 		{
 			"RunScript"
@@ -15608,12 +13525,10 @@
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor_bonus"
 				}
 				"IsDebuff"	"1"
-				"States"
-				{
-					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
-				}
-				"StatusEffectName"	"particles/status_fx/status_effect_terrorblade_reflection.vpcf"
+				"States"	{}
 				"OverrideAnimation"	"ACT_DOTA_DISABLED"
+				"EffectName"	"particles/econ/items/sniper/sniper_immortal_cape/sniper_immortal_cape_headshot_slow_ring.vpcf"
+				"EffectAttachType"	"follow_overhead"
 			}
 		}
 		"AbilitySpecial"
@@ -15626,12 +13541,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"stun_duration"	"2 3 4"
+				"stun_duration"	"4 5 6"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"armor_bonus"	"-4 -6 -8"
+				"armor_bonus"	"-6 -9 -15"
 			}
 		}
 	}
@@ -15721,7 +13636,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"2 2.5 3"
+				"duration"	"1.5 2 2.5"
 			}
 			"02"
 			{
@@ -15856,7 +13771,7 @@
 			"10"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"requiem_line_width_end"	"400"
+				"requiem_line_width_end"	"300"
 			}
 			"11"
 			{
@@ -15888,7 +13803,7 @@
 		"AbilityDuration"	"5.0"
 		// Damage
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"	"100 175 250"
+		"AbilityDamage"	"100 150 200"
 	}
 
 	"brewmaster_cinder_brew"
@@ -16378,7 +14293,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"attack_spill_range"	"768"
+				"attack_spill_range"	"2"
 			}
 			"03"
 			{
@@ -16530,7 +14445,7 @@
 		"AbilityCastAnimation"	"ACT_DOTA_STATIC_STORM"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"	"10 8 6"
+		"AbilityCooldown"	"12 9 6"
 		// Cost
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"100"
@@ -16554,7 +14469,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_max"	"150 200 300"
+				"damage_max"	"50 75 100"
 			}
 			"04"
 			{
@@ -16754,7 +14669,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"aura_damage"	"30"
+				"aura_damage"	"20"
 			}
 		}
 	}
@@ -16895,7 +14810,7 @@
 			"06"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"blind_duration"	"3 4 5"
+				"blind_duration"	"2 3 4"
 			}
 			"07"
 			{
@@ -16903,6 +14818,2156 @@
 				"blind_miss_per"	"50"
 			}
 		}
-		"AbilityDamage"	"150 200 300"
+		"AbilityDamage"	"150 200 250"
+	}
+
+	"e101"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/shengjie/shengjie.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/shengjie/shengjie.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+		"name"	"圣洁精华"
+	}
+
+	"e102"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/ruby.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/ruby.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e103"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/bianpao/bianpaofireworks.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/bianpao/bianpaofireworks.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e104"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_crystal_rift/courier_ambient_crystal_rift.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_crystal_rift/courier_ambient_crystal_rift.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e105"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_trail_cursed/courier_cursed_ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_trail_cursed/courier_cursed_ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e106"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_trail_04/courier_trail_04.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_trail_04/courier_trail_04.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e107"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_trail_hw_2012/courier_trail_hw_2012.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_trail_hw_2012/courier_trail_hw_2012.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e108"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_trail_hw_2013/courier_trail_hw_2013.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_trail_hw_2013/courier_trail_hw_2013.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e109"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_trail_orbit/courier_trail_orbit.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_trail_orbit/courier_trail_orbit.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e111"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/hapi.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/hapi.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e112"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/baoshiguangze.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/baoshiguangze.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e113"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/wuwuwuwuwu.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/wuwuwuwuwu.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e110"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_snow_b_arcana1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/items/crystal_maiden/crystal_maiden_maiden_of_icewrack/maiden_freezing_field_snow_b_arcana1.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e201"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_trail_spirit/courier_trail_spirit.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_trail_spirit/courier_trail_spirit.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e202"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/units/heroes/hero_skeletonking/wraith_king_ghosts_ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e203"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/courier/courier_polycount_01/courier_trail_polycount_01a.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/courier/courier_polycount_01/courier_trail_polycount_01a.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e204"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/wards/bane/bane_ward/bane_ward_ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/wards/bane/bane_ward/bane_ward_ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e205"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/mogu.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/mogu.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e206"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/2012trail_international_2012.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/2012trail_international_2012.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e207"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/2013.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/2013.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e208"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/2014.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/2014.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e209"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/nihonghudieblue.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/nihonghudieblue.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e210"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti6/radiance_owner_ti6.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti6/radiance_owner_ti6.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e211"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e212"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/xianqichanrao.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/xianqichanrao.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e301"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/vr/player_light_godray.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/vr/player_light_godray.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e302"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e303"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/bingnv/ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/bingnv/ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e304"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/grass/03.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/grass/03.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e305"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/lianhua/lianhua.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/lianhua/lianhua.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e306"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/snow2012/1econ/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/snow2012/1econ/courier/courier_trail_winter_2012/courier_trail_winter_2012.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e307"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/ranshaomori/ranshao.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/ranshaomori/ranshao.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e308"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/gem/brewmaster_drunken_haze_debuff_bubbles_2.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/gem/brewmaster_drunken_haze_debuff_bubbles_2.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e309"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/ziyuanpurple/courier_greevil_purple_ambient_3.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/ziyuanpurple/courier_greevil_purple_ambient_3.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e310"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuehua/xuehua.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuehua/xuehua.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e311"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/xiehuodefault.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/xiehuodefault.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e312"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/jinbi/jinbigold.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/jinbi/jinbigold.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e313"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/guanghuisuiyue.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/guanghuisuiyue.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e314"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/zisexingyunsecondary.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/zisexingyunsecondary.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e315"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/emengchanrao/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/emengchanrao/1.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e316"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/xingxingold.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/xingxingold.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e401"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/rongyanroushan.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/rongyanroushan.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e402"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/bingroushan.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/bingroushan.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e403"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/golden_roshan/goldenambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/golden_roshan/goldenambient.vpcf"
+				"EffectAttachType"	"follow_overhead"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e404"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/lizizhiqiambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/lizizhiqiambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e405"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/generic_gameplay/dropped_item_rapier.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/generic_gameplay/dropped_item_rapier.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e317"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/hongxin/ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/hongxin/ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e318"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/wangzherongyao/wangzherongyao.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/wangzherongyao/wangzherongyao.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e499"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"sm/loveblue.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"sm/loveblue.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e321"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/lanhuo/motenai.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/lanhuo/motenai.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e214"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/yuhuofenshen/1_2.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/yuhuofenshen/1_2.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e215"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti9/fountain_regen_ti9_lvl2.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti9/fountain_regen_ti9_lvl2.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e216"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/spring_2021/fountain_regen_spring_2021_orbit.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/spring_2021/fountain_regen_spring_2021_orbit.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e217"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/items/omniknight/omniknight_fall20_immortal/omniknight_fall20_immortal_degen_aura_debuff_runes.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/items/omniknight/omniknight_fall20_immortal/omniknight_fall20_immortal_degen_aura_debuff_runes.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e410"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/puck_xuehua/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/puck_xuehua/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e411"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/killstreak/killstreak_ti10_glitter_topbar.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/killstreak/killstreak_ti10_glitter_topbar.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e412"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v3_effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v3_effect.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e413"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v2_effect.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e414"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e415"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_v1_effect.vpcf"
+			"particle"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/diretide_2020/emblem/fall20_emblem_effect.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e416"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/tianyundan_wenzhang/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/tianyundan_wenzhang/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e213"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/ti8roshan/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/ti8roshan/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e409"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e408"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/anyue/anyueflying.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/anyue/anyueflying.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e407"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e320"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e319"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/ti7donkey/effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/ti7donkey/effect.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e406"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/blue_gem/ti7.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/blue_gem/ti7.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e114"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e323"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e324"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti10/agh_aura_03.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti10/agh_aura_03.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e325"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti9/teleport_end_ti9_model.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti9/teleport_end_ti9_model.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e501"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti10/aghanim_aura_ti10/agh_aura_ti10.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e114"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti6/fountain_regen_ribbon_lvl3_a.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e999"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/crown/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_crown"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/crown/1.vpcf"
+				"EffectAttachType"	"follow_head"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e409"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuehuan/xuehuanecon/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e408"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/anyue/anyueflying.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/anyue/anyueflying.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e407"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/huangsha/roushanbaby_roshan_desert_sands_ambient.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e320"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/daxuanwo/xuanwoecon/items/kunkka/kunkka_immortal/kunkka_immortal_ghost_ship_marker.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e322"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/gewugu/flyup/ambient.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/gewugu/flyup/ambient.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e319"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/ti7donkey/effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/ti7donkey/effect.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e406"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/blue_gem/ti7.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/blue_gem/ti7.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e450"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e451"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/red/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/red/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e452"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/orange/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/orange/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e453"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/yellow/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/yellow/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e454"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/green/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/green/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e455"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/cyan/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/cyan/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e456"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/blue/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/blue/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e457"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/purple/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/purple/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e458"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/white/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/white/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e459"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"effect/xuwuzhiyan/pink/1.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"effect/xuwuzhiyan/pink/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"troll_warlord_whirling_axes_ranged"
+	{
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.2 0.2 0.2"
+		"AbilityCastAnimation"	"ACT_DOTA_WHIRLING_AXES_RANGED"
+		"AbilityCooldown"	"3 2 1"
+		"AbilityManaCost"	"0"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"axe_width"	"100"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"axe_speed"	"1500.0"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"axe_range"	"950.0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"axe_damage"	"150 250 350"
+				"LinkedSpecialBonus"	"special_bonus_unique_troll_warlord_3"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"axe_slow_duration"	"5"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movement_speed"	"40"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"axe_spread"	"25"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"axe_count"	"5"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"scepter_cooldown"	"4"
+			}
+		}
+		"AbilityCastGestureSlot"	"DEFAULT"
+	}
+
+	"troll_warlord_whirling_axes_melee"
+	{
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"MaxLevel"	"3"
+		"AbilityCastPoint"	"0.0"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCooldown"	"3 2 1"
+		"AbilityManaCost"	"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"damage"	"150 250 350"
+				"LinkedSpecialBonus"	"special_bonus_unique_troll_warlord_3"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"hit_radius"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"max_range"	"450.0"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"axe_movement_speed"	"1250"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"blind_duration"	"5"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"blind_pct"	"50"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"whirl_duration"	"3.0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"scepter_cooldown"	"4"
+			}
+		}
+		"AbilityCastGestureSlot"	"DEFAULT"
+	}
+
+	"hoodwink_hunters_boomerang"
+	{
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"MaxLevel"	"3"
+		"AbilityCooldown"	"12 10 8"
+		"AbilityManaCost"	"100"
+		"AbilityCastRange"	"9999"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"speed"	"900"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"radius"	"125"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"damage"	"75 100 150"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"mark_duration"	"10.0"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slow_pct"	"0"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"spell_amp"	"20 30 50"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"status_resistance"	"0"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"spread"	"400"
+			}
+			"09"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"min_throw_duration"	"0.5"
+			}
+			"10"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"max_throw_duration"	"1.2"
+			}
+			"11"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"debuff_amp"	"40 60 100"
+			}
+		}
+		"IsGrantedByScepter"	"0"
+		"AbilityCastGestureSlot"	"DEFAULT"
+	}
+
+	"necronomicon_warrior_last_will"
+	{
+		"MaxLevel"	"9"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"explosion"	"100 200 300 400 500 600 700 800 900"
+			}
+		}
+	}
+
+	"necronomicon_warrior_mana_burn"
+	{
+		"MaxLevel"	"9"
+		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"burn_amount"	"10 20 30 40 50 60 70 80 90"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"burn_damage_conversion"	"50"
+			}
+		}
 	}
 }

@@ -1,0 +1,24 @@
+"dac_courier"
+{
+	"default_courier"						"h001"
+	"h001"
+	{
+		"name"		"天辉小驴"
+		"model"		"models/props_gameplay/donkey.vmdl"
+		"size"		"1"
+		"skin"		""
+		"effect_ground"		""
+		"effect_flyup"		""
+		"cp_group"			"1"
+	}
+	"h002"
+	{
+		"name"		"夜魇小驴"
+		"model"		"models/props_gameplay/donkey_dire.vmdl"
+		"size"		"1"
+		"skin"		""
+		"effect_ground"		""
+		"effect_flyup"		""
+		"cp_group"			"1"
+	}
+}

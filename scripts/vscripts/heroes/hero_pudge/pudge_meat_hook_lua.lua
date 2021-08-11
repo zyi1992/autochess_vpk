@@ -27,12 +27,8 @@ function pudge_meat_hook_lua:OnSpellStart()
 	end
 
 	self.hTarget = self:GetCaster().hook_unluckydog  
-	if self.hTarget:HasModifier("modifier_jump") or self.hTarget:HasModifier("modifier_run") then
-		-- return
-		self.hTarget:RemoveModifierByName("modifier_jump")
-		self.hTarget:RemoveModifierByName("modifier_run")
-		self.hTarget.is_moving = false
-	end
+	self.hTarget.is_hooked = true
+	self.hTarget.stop_moving = true
 
 	self.hook_damage = self:GetSpecialValueFor( "hook_damage" )  
 	self.hook_speed = self:GetSpecialValueFor( "hook_speed" )
@@ -110,23 +106,23 @@ function pudge_meat_hook_lua:OnSpellStart()
 			end
 		end
 
-		if self.hTarget ~= nil then
-			local vFinalHookPos = vLocation
-			self.hTarget:InterruptMotionControllers( true )
-			self.hTarget:RemoveModifierByName( "modifier_meat_hook_lua" )
+		-- if self.hTarget ~= nil then
+		-- 	local vFinalHookPos = vLocation
+		-- 	-- self.hTarget:InterruptMotionControllers( true )
+		-- 	-- self.hTarget:RemoveModifierByName( "modifier_meat_hook_lua" )
 
-			--结束被钩的移动！
-			-- prt('结束移动：'..self.hTarget:GetUnitName())
-			if self.hTarget.hook_cb ~= nil then
-				self.hTarget.hook_cb(self:GetCaster())
-			end
+		-- 	--结束被钩的移动！
+		-- 	-- prt('结束移动：'..self.hTarget:GetUnitName())
+		-- 	if self.hTarget.hook_cb ~= nil then
+		-- 		self.hTarget.hook_cb(self:GetCaster())
+		-- 	end
 
-			-- local vVictimPosCheck = self.hVictim:GetOrigin() - vFinalHookPos 
-			-- local flPad = self:GetCaster():GetPaddedCollisionRadius() + self.hVictim:GetPaddedCollisionRadius()
-			-- if vVictimPosCheck:Length2D() > flPad then
-			-- 	FindClearSpaceForUnit( self.hVictim, self.vStartPosition, false )
-			-- end
-		end
+		-- 	-- local vVictimPosCheck = self.hVictim:GetOrigin() - vFinalHookPos 
+		-- 	-- local flPad = self:GetCaster():GetPaddedCollisionRadius() + self.hVictim:GetPaddedCollisionRadius()
+		-- 	-- if vVictimPosCheck:Length2D() > flPad then
+		-- 	-- 	FindClearSpaceForUnit( self.hVictim, self.vStartPosition, false )
+		-- 	-- end
+		-- end
 
 		self.hTarget = nil
 		self.hVictim = nil
@@ -139,22 +135,23 @@ end
 --------------------------------------------------------------------------------
 
 function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
-	if hTarget == self:GetCaster() or hTarget.is_moving == true then
-		return false
-	end
+	
+	-- if hTarget == self:GetCaster() or hTarget.is_moving == true then
+	-- 	return false
+	-- end
 
-	if self.bRetracting == false then
-		if hTarget ~= nil and ( not ( hTarget:IsCreep() or hTarget:IsConsideredHero() ) ) then
-			Msg( "Target was invalid")
-			return false
-		end
+	-- if self.bRetracting == false then
+	-- 	if hTarget ~= nil and ( not ( hTarget:IsCreep() or hTarget:IsConsideredHero() ) ) then
+	-- 		Msg( "Target was invalid")
+	-- 		return false
+	-- 	end
 
-		local bTargetPulled = false
+	-- 	local bTargetPulled = false
 		if hTarget ~= nil then
 			EmitSoundOn( "Hero_Pudge.AttackHookImpact", hTarget )
 
-			-- 被钩走
-			hTarget:AddNewModifier( self:GetCaster(), self, "modifier_meat_hook_lua", nil )
+	-- 		-- 被钩走
+	-- 		hTarget:AddNewModifier( self:GetCaster(), self, "modifier_meat_hook_lua", nil )
 			
 			if hTarget:GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then
 				local damage = {
@@ -167,9 +164,9 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 
 				ApplyDamage( damage )
 
-				if not hTarget:IsAlive() then
-					self.bDiedInHook = true
-				end
+	-- 			if not hTarget:IsAlive() then
+	-- 				self.bDiedInHook = true
+	-- 			end
 
 				if not hTarget:IsMagicImmune() then
 					hTarget:Interrupt()
@@ -182,24 +179,24 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 
 			
 
-			AddFOWViewer( self:GetCaster():GetTeamNumber(), hTarget:GetOrigin(), self.vision_radius, self.vision_duration, false )
-			self.hVictim = hTarget
-			bTargetPulled = true
+	-- 		AddFOWViewer( self:GetCaster():GetTeamNumber(), hTarget:GetOrigin(), self.vision_radius, self.vision_duration, false )
+	-- 		self.hVictim = hTarget
+	-- 		bTargetPulled = true
 		end
 
-		local vHookPos = self.vTargetPosition
-		local flPad = self:GetCaster():GetPaddedCollisionRadius()
-		if hTarget ~= nil then
-			vHookPos = hTarget:GetOrigin()
-			flPad = flPad + hTarget:GetPaddedCollisionRadius()
-		end
+	-- 	local vHookPos = self.vTargetPosition
+	-- 	local flPad = self:GetCaster():GetPaddedCollisionRadius()
+	-- 	if hTarget ~= nil then
+	-- 		vHookPos = hTarget:GetOrigin() 
+	-- 		flPad = flPad + hTarget:GetPaddedCollisionRadius()
+	-- 	end
 
-		--Missing: Setting target facing angle
-		local vVelocity = self.vStartPosition - vHookPos
-		vVelocity.z = 0.0
+	-- 	--Missing: Setting target facing angle
+	-- 	local vVelocity = self.vStartPosition - vHookPos
+	-- 	vVelocity.z = 0.0
 
-		local flDistance = vVelocity:Length2D() - flPad
-		vVelocity = vVelocity:Normalized() * self.hook_speed
+	-- 	local flDistance = vVelocity:Length2D() - flPad
+	-- 	vVelocity = vVelocity:Normalized() * self.hook_speed
 
 		local info = {
 			Ability = self,
@@ -227,40 +224,41 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 			self:GetCaster():StartGesture( ACT_DOTA_CHANNEL_ABILITY_1 );
 		end
 
-		self.bRetracting = true
-	-- else
-		-- print('2222222')
-		-- if self:GetCaster() and self:GetCaster():IsHero() then
-		-- 	local hHook = self:GetCaster():GetTogglableWearable( DOTA_LOADOUT_TYPE_WEAPON )
-		-- 	if hHook ~= nil then
-		-- 		hHook:RemoveEffects( EF_NODRAW )
-		-- 	end
-		-- end
+	-- 	self.bRetracting = true
+	-- -- else
+	-- 	-- print('2222222')
+	-- 	-- if self:GetCaster() and self:GetCaster():IsHero() then
+	-- 	-- 	local hHook = self:GetCaster():GetTogglableWearable( DOTA_LOADOUT_TYPE_WEAPON )
+	-- 	-- 	if hHook ~= nil then
+	-- 	-- 		hHook:RemoveEffects( EF_NODRAW )
+	-- 	-- 	end
+	-- 	-- end
 
-		-- if self.hTarget ~= nil then
-		-- 	local vFinalHookPos = vLocation
-		-- 	self.hTarget:InterruptMotionControllers( true )
-		-- 	self.hTarget:RemoveModifierByName( "modifier_meat_hook_lua" )
+	-- 	-- if self.hTarget ~= nil then
+	-- 	-- 	local vFinalHookPos = vLocation
+	-- 	-- 	self.hTarget:InterruptMotionControllers( true )
+	-- 	-- 	self.hTarget:RemoveModifierByName( "modifier_meat_hook_lua" )
 
-		-- 	--结束被钩的移动！（并没有执行到这？）
-		-- 	print('结束移动：'..self.hTarget:GetUnitName())
-		-- 	if self.hTarget.hook_cb ~= nil then
-		-- 		self.hTarget.hook_cb()
-		-- 	end
+	-- 	-- 	--结束被钩的移动！（并没有执行到这？）
+	-- 	-- 	print('结束移动：'..self.hTarget:GetUnitName())
+	-- 	-- 	if self.hTarget.hook_cb ~= nil then
+	-- 	-- 		self.hTarget.hook_cb()
+	-- 	-- 	end
 
-		-- 	-- local vVictimPosCheck = self.hVictim:GetOrigin() - vFinalHookPos 
-		-- 	-- local flPad = self:GetCaster():GetPaddedCollisionRadius() + self.hVictim:GetPaddedCollisionRadius()
-		-- 	-- if vVictimPosCheck:Length2D() > flPad then
-		-- 	-- 	FindClearSpaceForUnit( self.hVictim, self.vStartPosition, false )
-		-- 	-- end
-		-- end
+	-- 	-- 	-- local vVictimPosCheck = self.hVictim:GetOrigin() - vFinalHookPos 
+	-- 	-- 	-- local flPad = self:GetCaster():GetPaddedCollisionRadius() + self.hVictim:GetPaddedCollisionRadius()
+	-- 	-- 	-- if vVictimPosCheck:Length2D() > flPad then
+	-- 	-- 	-- 	FindClearSpaceForUnit( self.hVictim, self.vStartPosition, false )
+	-- 	-- 	-- end
+	-- 	-- end
 
-		-- self.hTarget = nil
-		-- ParticleManager:DestroyParticle( self.nChainParticleFXIndex, true )
-		-- EmitSoundOn( "Hero_Pudge.AttackHookRetractStop", self:GetCaster() )
-	end
+	-- 	-- self.hTarget = nil
+	-- 	-- ParticleManager:DestroyParticle( self.nChainParticleFXIndex, true )
+	-- 	-- EmitSoundOn( "Hero_Pudge.AttackHookRetractStop", self:GetCaster() )
+	-- end
 
-	return true
+	-- return true
+	return false
 end
 
 --------------------------------------------------------------------------------

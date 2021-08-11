@@ -20,7 +20,7 @@ end
 
 function modifier_run:OnCreated(kv)
     if IsServer() then
-        if self:ApplyHorizontalMotionController() == false or self:ApplyVerticalMotionController() == false then
+        if self:ApplyHorizontalMotionController() == false then
             self:Destroy()
             return
         end
@@ -106,7 +106,7 @@ function modifier_run:UpdateHorizontalMotion(me, dt)
         if (me:GetAbsOrigin()-self.vTargetPosition):Length2D() > self.flHorizontalSpeed then
             --没到终点
             if me:IsStunned() ~= true and me:IsFrozen() ~= true then
-                me:SetAbsOrigin(me:GetAbsOrigin() + self.vDirection * self.flHorizontalSpeed)
+                me:SetAbsOrigin(GetGroundPosition(me:GetAbsOrigin() + self.vDirection * self.flHorizontalSpeed,me))
                 self.leap_traveled = self.leap_traveled + self.flHorizontalSpeed
             else
                 --眩晕或冰冻，不位移
@@ -114,7 +114,7 @@ function modifier_run:UpdateHorizontalMotion(me, dt)
             end
         else
             --到终点了
-            me:SetAbsOrigin(self.vTargetPosition)
+            me:SetAbsOrigin(GetGroundPosition(self.vTargetPosition,me))
             me.is_moving = false
             me:InterruptMotionControllers(true)
             me.blink_start_p = nil

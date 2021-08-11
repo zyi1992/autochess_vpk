@@ -85,8 +85,8 @@ return {
 	--h237 = "models/items/courier/frostivus2018_courier_serac_the_seal/frostivus2018_courier_serac_the_seal.vmdl",
 	--h238 = "models/items/courier/pangolier_squire/pangolier_squire.vmdl",
 	--h239 = "models/hujing_wangyu/hujing.vmdl",
-	"models/items/courier/courier_ti9/courier_ti9_lvl3/courier_ti9_lvl3.vmdl",--h240 = 
-	-- h241 = "models/items/courier/axolotl/axolotl.vmdl",
+	"models/items/courier/courier_ti9/courier_ti9_lvl3/courier_ti9_lvl3.vmdl",
+	"models/items/courier/axolotl/axolotl.vmdl",
 	"models/items/courier/snaggletooth_red_panda/snaggletooth_red_panda.vmdl",--h242 = 
 	"models/items/courier/xianhe_stork/xianhe_stork.vmdl",--h243 = 
 	"models/hy/huya.vmdl",--h244 = 
@@ -250,6 +250,10 @@ return {
 	"models/qiyidan_s2/qiyidan_s2.vmdl",
 	"models/toon_reaper/toon_reaper.vmdl",
 	"models/items/courier/pangolier_squire/pangolier_squire.vmdl",
+	"models/xuehu/xuehu_00.vmdl",
+	"models/xuehu/xuehu_01.vmdl",
+	"models/xuehu/xuehu_02.vmdl",
+	"models/xuehu/xuehu_03.vmdl",
 
 	"models/items/courier/courier_ti10_radiant/courier_ti10_radiant.vmdl",
 	"models/items/courier/courier_ti10_dire/courier_ti10_dire.vmdl",
@@ -274,6 +278,12 @@ return {
 	"models/items/courier/frosty_the_courier/frosty_the_courier.vmdl",
 	"models/items/courier/dplus_zao_jun_the_stove_god/dplus_zao_jun_the_stove_god.vmdl",
 	"models/items/courier/autumn_wards_courier/autumn_wards_courier.vmdl",
+
+	"models/elong/elong.vmdl",
+	"models/xuezhe/xuezhe01.vmdl",
+	"models/xuezhe/xuezhe.vmdl",
+	"models/xiaochou/xiaochou.vmdl",
+	"models/items/courier/owl_courier/owl_courier.vmdl",
 
 
 
