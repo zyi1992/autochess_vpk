@@ -1,0 +1,8 @@
+ranked_1x8
+{
+	material materials/overviews/ranked_1x8.vmat
+	pos_x -4096
+	pos_y 4096
+	scale 8.000
+}
+

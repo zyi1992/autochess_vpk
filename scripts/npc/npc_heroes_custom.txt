@@ -56,7 +56,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HasAggressiveStance"	"0"
 		"FollowRange"	"100"
-		"HealthBarOffset"	"250"
+		"HealthBarOffset"	"256"
 		"HasInventory"	"1"
 		"Model"	"models/props_gameplay/donkey.vmdl"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"

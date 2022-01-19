@@ -70,7 +70,7 @@ return {
 	-- h222 = "models/items/courier/courier_faun/courier_faun.vmdl",
 	"models/items/courier/livery_llama_courier/livery_llama_courier.vmdl",--h223 = 
 	"models/items/courier/onibi_lvl_10/onibi_lvl_10.vmdl",--h224 = 
-	-- h225 = "models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl", --胆小南瓜人
+	"models/items/courier/little_fraid_the_courier_of_simons_retribution/little_fraid_the_courier_of_simons_retribution.vmdl", --胆小南瓜人
 	"models/items/courier/hermit_crab/hermit_crab.vmdl", --h226 = 
 	"models/items/courier/hermit_crab/hermit_crab_boot.vmdl", --h227 = 
 	"models/items/courier/hermit_crab/hermit_crab_shield.vmdl", --h228 = 
@@ -103,6 +103,14 @@ return {
 	"models/balloon/zhai.vmdl",--h255 = 
 	"models/balloon/dai.vmdl",--h256 = 
 	"models/balloon/meng.vmdl",--h257 = 
+	"models/danshengou/gou.vmdl",
+
+	"models/items/courier/vaal_the_animated_constructradiant/vaal_the_animated_constructradiant.vmdl",
+	"models/items/courier/vaal_the_animated_constructdire/vaal_the_animated_constructdire.vmdl",
+	"models/items/courier/carty/carty.vmdl",
+	"models/items/courier/carty_dire/carty_dire.vmdl",
+	"models/items/courier/dc_angel/dc_angel.vmdl",
+	"models/items/courier/dc_demon/dc_demon.vmdl",
 
 	"models/items/courier/bookwyrm/bookwyrm.vmdl",--h301 = 
 	"models/items/courier/captain_bamboo/captain_bamboo.vmdl",--h302 = 
@@ -284,6 +292,7 @@ return {
 	"models/xuezhe/xuezhe.vmdl",
 	"models/xiaochou/xiaochou.vmdl",
 	"models/items/courier/owl_courier/owl_courier.vmdl",
+	"models/shayu/shayu.vmdl",
 
 
 
@@ -505,8 +514,11 @@ return {
 	"particles/neutral_fx/z_d1.vpcf",
 	"particles/creeps/lane_creeps/creep_dire_hulk_swipe_left.vpcf",
 	"particles/creeps/lane_creeps/creep_dire_hulk_swipe_right.vpcf",
+	"effect/fuwenzhouyu/1.vpcf",
 
 	"models/qiyidan_s2/qiyidan_s2.vmdl",
+	'particles/econ/items/spectre/spectre_arcana/spectre_arcana_haunt_caster.vpcf',
+	'particles/items2_fx/teleport_start.vpcf',
 
 
 	"models/courier/greevil/greevil_eyes.vmdl",

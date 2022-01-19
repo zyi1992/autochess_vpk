@@ -70,6 +70,18 @@
 		"effect"	"particles/units/heroes/hero_alchemist/alchemist_berserk_potion_projectile.vpcf"
 		"sound"		"pj_hit.berserk_potionn"
 	}
+	"p109"
+	{
+		"name"		"闪光幽魂"
+		"effect"	"particles/units/heroes/hero_arc_warden/arc_warden_wraith_prj.vpcf"
+		"sound"		"pj_hit.spark_wraith"
+	}
+	"p110"
+	{
+		"name"		"昏睡飞镖"
+		"effect"	"particles/units/heroes/hero_riki/riki_shard_sleeping_dart.vpcf"
+		"sound"		"Hero_Riki.SleepDart.Target"
+	}
 
 
 	"p201"
@@ -138,6 +150,14 @@
 		"effect"	"particles/winter_fx/winter_present_projectile.vpcf"
 		"sound"		"pj_hit.snowball"
 	}
+	"p212"
+	{
+		"name"		"仙灵榴弹"
+		"effect"	"particles/items2_fx/paintball.vpcf"
+		"sound"		"pj_hit.paintball"
+	}
+
+	
 
 
 	"p301"

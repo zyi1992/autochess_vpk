@@ -11,5 +11,6 @@
 		"player_id_table",
 		"game_info",
 		"chess_pool_table",
+		"hp_bar_table",
 	]
 }

@@ -2,12 +2,25 @@
 {
 	maps = 
 	[
-		"ranked_1x8",
-		"casual_1x8",
-		"casual_1x8_ob",
-		"ranked_2x4",
-		"casual_2x4",
-		"casual_2x4_ob",
+		"ranked_1x8", 			// 默认地图，天梯比赛（无段位要求，或通过匹配平台控制段位要求）
+
+		// 下面这3个地图是因为外服目前无匹配平台，外服玩家手动建房用
+		//（如果玩家低于最低要求段位进入游戏，会直接判负。但由于没有匹配平台进行预组队，无法保证游戏同段位的8人顺利开启）
+		"ranked_1x8_bishop+",	// 天梯比赛（要求段位至少为主教一段）
+		"ranked_1x8_rook+",		// 天梯比赛（要求段位至少为堡垒一段）
+		"ranked_1x8_king+",		// 天梯比赛（要求段位至少为国王）
+		// 为了避免现有战绩平台因为地图名字不同而出现问题，天梯比赛4张地图的战绩统计数据中map_name都统一为ranked_1x8
+
+		"casual_1x8", 			// 休闲比赛，不计天梯分
+		"casual_1x8_ob", 		// 休闲比赛，不计天梯分，带4个观战位。
+		// 如果有显示休闲比赛战绩的需求，休闲比赛战绩统计数据中map_name都统一为causal_1x8
+
+		// 双排模式地图暂时下架
+		// "ranked_2x4",		
+		// "casual_2x4",
+		// "casual_2x4_ob",
+
+		// 后续可能会添加新的模式 
 	]
 	IsPlayable = 1
 	Default_Keys = 
@@ -56,38 +69,35 @@
 	map_options = 
 	[
 		{
-			MaxPlayers = 12
-			map = "casual_2x4_ob"
-		},
-		{
-			MaxPlayers = 12
-			map = "casual_1x8_ob"
+			MaxPlayers = 8
+			map = "ranked_1x8"
 		},
 		{
 			MaxPlayers = 8
-			map = "casual_2x4"
+			map = "ranked_1x8_bishop+"
+		},
+		{
+			MaxPlayers = 8
+			map = "ranked_1x8_rook+"
+		},
+		{
+			MaxPlayers = 8
+			map = "ranked_1x8_king+"
 		},
 		{
 			MaxPlayers = 8
 			map = "casual_1x8"
 		},
 		{
-			MaxPlayers = 8
-			map = "ranked_2x4"
-		},
-		{
-			MaxPlayers = 8
-			map = "ranked_1x8"
-		},
-		{
-			MaxPlayers = 8
-			map = "chessboard/test01"
+			MaxPlayers = 12
+			map = "casual_1x8_ob"
 		},
 	]
 	HideInTools = false
 	IsTemplate = false
 	CheckAFKPlayers = false
 	DefaultMap = "ranked_1x8"
+	// DefaultMap = "ranked"
 	DisableIK = false
 	EnablePickRules = false
 	EventGame = false
@@ -98,7 +108,7 @@
 	ForceDefaultGuide = true
 	MinimalPrecache = true
 	MinPlayers = 1
-	MaxPlayers = 10
+	MaxPlayers = 12
 	PenaltiesEnabled = false
 	TeamCount = -1
 }

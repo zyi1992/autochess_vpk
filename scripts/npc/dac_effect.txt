@@ -2002,14 +2002,55 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"precache"
 		{
-			"particle"	"particles/econ/items/omniknight/omniknight_fall20_immortal/omniknight_fall20_immortal_degen_aura_debuff_runes.vpcf"
+			"particle"	"effect/fuwenzhouyu/1.vpcf"
 		}
 		"Modifiers"
 		{
 			"modifier_texiao_star"
 			{
 				"Passive"	"1"
-				"EffectName"	"particles/econ/items/omniknight/omniknight_fall20_immortal/omniknight_fall20_immortal_degen_aura_debuff_runes.vpcf"
+				"EffectName"	"effect/fuwenzhouyu/1.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+	"e326"
+	{
+		"BaseClass"		"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/ti10/hot_potato/disco_ball_channel.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/ti10/hot_potato/disco_ball_channel.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"IsHidden"	"1"
+			}
+		}
+	}
+
+	"e417"
+	{
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"wisp_overcharge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"precache"
+		{
+			"particle"	"particles/econ/events/fall_2021/fall_2021_emblem_game_effect.vpcf"
+		}
+		"Modifiers"
+		{
+			"modifier_texiao_star"
+			{
+				"Passive"	"1"
+				"EffectName"	"particles/econ/events/fall_2021/fall_2021_emblem_game_effect.vpcf"
 				"EffectAttachType"	"follow_origin"
 				"IsHidden"	"1"
 			}

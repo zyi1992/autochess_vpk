@@ -159,7 +159,7 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 						attacker = self:GetCaster(),
 						damage = self.hook_damage,
 						damage_type = DAMAGE_TYPE_PHYSICAL,		
-						ability = this
+						ability = self,
 					}
 
 				ApplyDamage( damage )

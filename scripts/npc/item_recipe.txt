@@ -30,83 +30,298 @@
 	// 	}
 	// }
 
-
-	// "item_recipe_silingshu_1"
+	// "item_recipe_dianjinshou"
 	// {
 	// 	"BaseClass"	"item_recipe_arcane_boots"
-	// 	"ID"	"3060"
+	// 	"ID"	"3050"
 	// 	"ItemCost"	"0"
 	// 	"ItemRecipe"	"1"
-	// 	"ItemResult"	"item_silingshu_1"
+	// 	"ItemResult"	"item_dianjinshou"
 	// 	"ItemRequirements"
 	// 	{
-	// 		"01"	"item_xiaofu;item_xuwubaoshi;"
+	// 		"01"	"item_gongjizhizhua;item_zhiliaozhihuan;"
 	// 	}
 	// }
 
-	// "item_recipe_silingshu_2"
+
+	// "item_fashichangpao"
+	// {
+	// 	"BaseClass"	"item_datadriven"
+	// 	"AbilityTextureName"	"item_robe"
+	// 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	// 	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	// 	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	// 	"ID"	"1536"
+	// 	"ItemQuality"	"common"
+	// 	"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+	// 	"ItemCost"	"999"
+	// 	"ItemDroppable"	"1"
+	// 	"ItemSellable"	"0"
+	// 	"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	// 	"ItemPurchasable"	"1"
+	// 	"ItemAlertable"	"1"
+	// 	"ItemPermanent"	"1"
+	// 	"ItemRequiresCharges"	"0"
+	// 	"ItemStackable"	"0"
+	// 	"ItemRequirements"	{}
+	// 	"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	// 	"Modifiers"
+	// 	{
+	// 		"modifier_item_fashichangpao"
+	// 		{
+	// 			"Passive"	"1"
+	// 			"Properties"	{}
+	// 			"IsHidden"	"1"
+	// 		}
+	// 	}
+	// }
+	// "item_huanxinzhiren"
+	// {
+	// 	"BaseClass"	"item_datadriven"
+	// 	"AbilityTextureName"	"item_blade_of_alacrity"
+	// 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	// 	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	// 	"AbilityCastPoint"	"0.1"
+	// 	"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+	// 	"AbilityManaCost"	"0"
+	// 	"ID"	"1570"
+	// 	"ItemQuality"	"rare"
+	// 	"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+	// 	"ItemCost"	"999"
+	// 	"ItemDroppable"	"1"
+	// 	"ItemSellable"	"0"
+	// 	"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	// 	"ItemPurchasable"	"1"
+	// 	"ItemAlertable"	"1"
+	// 	"ItemPermanent"	"1"
+	// 	"ItemRequiresCharges"	"0"
+	// 	"ItemStackable"	"0"
+	// 	"ItemRequirements"	{}
+	// 	"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	// 	"Modifiers"
+	// 	{
+	// 		"modifier_item_huanxinzhiren"
+	// 		{
+	// 			"Passive"	"1"
+	// 			"IsHidden"	"1"
+	// 			"Properties"
+	// 			{
+	// 				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+	// 				"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
+	// 			}
+	// 		}
+	// 	}
+	// }
+	// "item_recipe_huiguang"
 	// {
 	// 	"BaseClass"	"item_recipe_arcane_boots"
-	// 	"ID"	"3061"
+	// 	"ID"	"3018"
 	// 	"ItemCost"	"0"
 	// 	"ItemRecipe"	"1"
-	// 	"ItemResult"	"item_silingshu_2"
+	// 	"ItemResult"	"item_huiguang"
 	// 	"ItemRequirements"
 	// 	{
-	// 		"01"	"item_silingshu_1;item_xiaofu;"
+	// 		"01"	"item_molifazhang;item_fashichangpao"
+	// 	}
+	// }
+	// "item_huiguang"
+	// {
+	// 	"BaseClass"	"item_datadriven"
+	// 	"AbilityTextureName"	"item_kaya"
+	// 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	// 	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	// 	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	// 	"ID"	"1537"
+	// 	"ItemQuality"	"common"
+	// 	"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+	// 	"ItemCost"	"999"
+	// 	"ItemDroppable"	"1"
+	// 	"ItemSellable"	"0"
+	// 	"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	// 	"ItemPurchasable"	"1"
+	// 	"ItemAlertable"	"1"
+	// 	"ItemPermanent"	"1"
+	// 	"ItemRequiresCharges"	"0"
+	// 	"ItemStackable"	"0"
+	// 	"ItemRequirements"	{}
+	// 	"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	// 	"Modifiers"
+	// 	{
+	// 		"modifier_item_huiguang"
+	// 		{
+	// 			"Passive"	"1"
+	// 			"Properties"	{}
+	// 			"IsHidden"	"1"
+	// 			"States"	{}
+	// 		}
 	// 	}
 	// }
 
-	// "item_recipe_silingshu_3"
+	// "item_jinghunzhiren"
+	// {
+	// 	"BaseClass"	"item_datadriven"
+	// 	"AbilityTextureName"	"item_diffusal_blade"
+	// 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	// 	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	// 	"AbilityCastPoint"	"0.1"
+	// 	"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+	// 	"AbilityManaCost"	"0"
+	// 	"ID"	"1573"
+	// 	"ItemQuality"	"rare"
+	// 	"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+	// 	"ItemCost"	"999"
+	// 	"ItemDroppable"	"1"
+	// 	"ItemSellable"	"0"
+	// 	"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	// 	"ItemPurchasable"	"1"
+	// 	"ItemAlertable"	"1"
+	// 	"ItemPermanent"	"1"
+	// 	"ItemRequiresCharges"	"0"
+	// 	"ItemStackable"	"0"
+	// 	"ItemRequirements"	{}
+	// 	"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	// 	"precache"
+	// 	{
+	// 		"particle"	"particles/items_fx/diffusal_slow.vpcf"
+	// 	}
+	// 	"Modifiers"
+	// 	{
+	// 		"modifier_item_jinghunzhiren"
+	// 		{
+	// 			"Passive"	"1"
+	// 			"IsHidden"	"1"
+	// 			"Properties"
+	// 			{
+	// 				"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
+	// 				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+	// 			}
+	// 			"OnAttackLanded"
+	// 			{
+	// 				"RunScript"
+	// 				{
+	// 					"Target"	"TARGET"
+	// 					"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+	// 					"Function"	"JinghunAttack"
+	// 				}
+	// 			}
+	// 		}
+	// 		"modifier_item_jinghunzhiren_debuff"
+	// 		{
+	// 			"IsDebuff"	"1"
+	// 			"TextureName"	"item_diffusal_blade"
+	// 			"EffectName"	"particles/items_fx/diffusal_slow.vpcf"
+	// 			"EffectAttachType"	"attach_origin"
+	// 			"IsPurgable"	"1"
+	// 		}
+	// 	}
+	// }
+	// "item_xingwuzhihuo"
+	// {
+	// 	"BaseClass"	"item_datadriven"
+	// 	"AbilityTextureName"	"item_heavy_blade"
+	// 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	// 	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	// 	"AbilityCastPoint"	"0.1"
+	// 	"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
+	// 	"AbilityManaCost"	"0"
+	// 	"ID"	"1564"
+	// 	"ItemQuality"	"rare"
+	// 	"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+	// 	"ItemCost"	"999"
+	// 	"ItemDroppable"	"1"
+	// 	"ItemSellable"	"0"
+	// 	"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	// 	"ItemPurchasable"	"1"
+	// 	"ItemAlertable"	"1"
+	// 	"ItemPermanent"	"1"
+	// 	"ItemRequiresCharges"	"0"
+	// 	"ItemStackable"	"0"
+	// 	"ItemRequirements"	{}
+	// 	"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	// 	"precache"
+	// 	{
+	// 		"particle"	"particles/items_fx/diffusal_slow.vpcf"
+	// 	}
+	// 	"Modifiers"
+	// 	{
+	// 		"modifier_item_xingwuzhihuo"
+	// 		{
+	// 			"Passive"	"1"
+	// 			"IsHidden"	"1"
+	// 			"Properties"
+	// 			{
+	// 				"MODIFIER_PROPERTY_EVASION_CONSTANT"	"15"
+	// 				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+	// 			}
+	// 			"OnAttackLanded"
+	// 			{
+	// 				"ApplyModifier"
+	// 				{
+	// 					"Target"	"TARGET"
+	// 					"ModifierName"	"modifier_item_jinghunzhiren_debuff"
+	// 					"Duration"	"10"
+	// 				}
+	// 			}
+	// 		}
+	// 		"modifier_item_jinghunzhiren_debuff"
+	// 		{
+	// 			"IsDebuff"	"1"
+	// 			"TextureName"	"item_diffusal_blade"
+	// 			"EffectName"	"particles/items_fx/diffusal_slow.vpcf"
+	// 			"EffectAttachType"	"attach_origin"
+	// 			"IsPurgable"	"1"
+	// 		}
+	// 	}
+	// }
+	// "item_recipe_jinghunzhiren"
 	// {
 	// 	"BaseClass"	"item_recipe_arcane_boots"
-	// 	"ID"	"3062"
+	// 	"ID"	"3042"
 	// 	"ItemCost"	"0"
 	// 	"ItemRecipe"	"1"
-	// 	"ItemResult"	"item_silingshu_3"
+	// 	"ItemResult"	"item_jinghunzhiren"
 	// 	"ItemRequirements"
 	// 	{
-	// 		"01"	"item_silingshu_2;item_xiaofu;"
+	// 		"01"	"item_huanxinzhiren;item_fashichangpao;"
+	// 	}
+	// }
+
+	// "item_kuojian"
+	// {
+	// 	"BaseClass"	"item_datadriven"
+	// 	"AbilityTextureName"	"item_broadsword"
+	// 	"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	// 	"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+	// 	"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	// 	"ID"	"1511"
+	// 	"ItemQuality"	"common"
+	// 	"Model"	"models/props_gameplay/pumpkin_rune.vmdl"
+	// 	"ItemCost"	"999"
+	// 	"ItemDroppable"	"1"
+	// 	"ItemSellable"	"0"
+	// 	"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+	// 	"ItemPurchasable"	"1"
+	// 	"ItemAlertable"	"1"
+	// 	"ItemPermanent"	"1"
+	// 	"ItemRequiresCharges"	"0"
+	// 	"ItemStackable"	"0"
+	// 	"ItemRequirements"	{}
+	// 	"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+	// 	"Modifiers"
+	// 	{
+	// 		"modifier_item_kuojian"
+	// 		{
+	// 			"Passive"	"1"
+	// 			"Properties"
+	// 			{
+	// 				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"20"
+	// 			}
+	// 			"IsHidden"	"1"
+	// 			"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+	// 		}
 	// 	}
 	// }
 
 
 	
-	//"item_recipe_jinghunzhiren"
-	//{
-	//	"BaseClass"	"item_recipe_arcane_boots"
-	//	"ID"	"3042"
-	//	"ItemCost"	"0"
-	//	"ItemRecipe"	"1"
-	//	"ItemResult"	"item_jinghunzhiren"
-	//	"ItemRequirements"
-	//	{
-	//		"01"	"item_huanxinzhiren;item_fashichangpao;"
-	//	}
-	//}
-
-	"item_recipe_jinghunzhiren"
-	{
-		"BaseClass"	"item_recipe_arcane_boots"
-		"ID"	"3042"
-		"ItemCost"	"0"
-		"ItemRecipe"	"1"
-		"ItemResult"	"item_jinghunzhiren"
-		"ItemRequirements"
-		{
-			"01"	"item_huanxinzhiren;item_fashichangpao;"
-		}
-	}
-	"item_recipe_jingmixie"
-	{
-		"BaseClass"	"item_recipe_arcane_boots"
-		"ID"	"3039"
-		"ItemCost"	"0"
-		"ItemRecipe"	"1"
-		"ItemResult"	"item_jingmixie"
-		"ItemRequirements"
-		{
-			"01"	"item_suduzhixue;item_huifuzhihuan;"
-		}
-	}
 }

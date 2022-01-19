@@ -149,7 +149,8 @@ function ball_lightning_damage( keys )
 			victim = keys.target,
 			attacker = keys.caster,
 			damage = real_damage,
-			damage_type = damageType
+			damage_type = damageType,
+			ability = ability,
 		}
 		ApplyDamage( damageTable )
 	end

@@ -44,6 +44,18 @@
 		"name"					"冬冬谷"
 		"vmap"					"chessboard/chessboard11"
 	}
+	"b108"
+	{
+		"id"					"b108"
+		"name"					"闹闹矿"
+		"vmap"					"chessboard/chessboard07"
+	}
+	"b109"
+	{
+		"id"					"b109"
+		"name"					"苏苏林"
+		"vmap"					"chessboard/chessboard15"
+	}
 
 	"b299"
 	{
@@ -53,15 +65,27 @@
 	}
 	"b201"
 	{
-		"id"					"b201"
-		"name"					"闹闹矿"
-		"vmap"					"chessboard/chessboard07"
+		"id"					"b205"
+		"name"					"风风谷♦竹林"
+		"vmap"					"chessboard/chessboard14"
 	}
 	"b202"
 	{
 		"id"					"b202"
 		"name"					"灵灵洞"
 		"vmap"					"chessboard/chessboard10"
+	}
+	"b203"
+	{
+		"id"					"b203"
+		"name"					"琪琪海"
+		"vmap"					"chessboard/chessboard12"
+	}
+	"b204"
+	{
+		"id"					"b204"
+		"name"					"修修院"
+		"vmap"					"chessboard/chessboard13"
 	}
 
 	"b301"
@@ -118,6 +142,6 @@
 	{
 		"id"					"b008"
 		"name"					""
-		"vmap"					"chessboard/chessboard58"
+		"vmap"					"chessboard/chessboard13"
 	}
 }

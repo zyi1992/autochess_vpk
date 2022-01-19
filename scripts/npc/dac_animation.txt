@@ -44,6 +44,20 @@
 		"tp_sound"					"animation.portal"
 		"end_effect"				"particles/econ/events/ti10/portal/portal_open_good_endflash.vpcf"
 	}
+	"n304"
+	{
+		"name"						"不朽之守护"
+		"tp_effect"					"effect/aegis.vpcf"
+		"tp_sound"					"animation.aegis"
+		"end_effect"				"particles/items_fx/aegis_respawn_aegis_starfall.vpcf"
+	}
+	"n305"
+	{
+		"name"						"堆雪人"
+		"tp_effect"					"effect/animation/snowman/1.vpcf"
+		"tp_sound"					"animation.snowman"
+		"end_effect"				"effect/animation/snowman/2.vpcf"
+	}
 	"n401"
 	{
 		"name"						"洪流浪潮"
