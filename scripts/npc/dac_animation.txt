@@ -58,6 +58,7 @@
 		"tp_sound"					"animation.snowman"
 		"end_effect"				"effect/animation/snowman/2.vpcf"
 	}
+	
 	"n401"
 	{
 		"name"						"洪流浪潮"
@@ -77,5 +78,12 @@
 		"tp_effect"					"particles/econ/items/windrunner/windranger_arcana/windranger_arcana_ambient.vpcf"
 		"tp_sound"					"animation.windrun"
 		"end_effect"				"effect/animation/wr/1.vpcf"
+	}
+	"n404"
+	{
+		"name"						"阿哈利姆传送"
+		"tp_effect"					"effect/agha_tp/econ/events/fall_2021/teleport_end_fall_2021_lvl2.vpcf"
+		"tp_sound"					"dac.tp"
+		"end_effect"				"particles/econ/events/fall_2021/blink_dagger_fall_2021_start_lvl2.vpcf"
 	}
 }

@@ -48,7 +48,7 @@ function modifier_run:OnCreated(kv)
         self.flHorizontalSpeed = speed/30
         self.flDistance        = (self.vTargetPosition - self.vStartPosition):Length2D() + self.flHorizontalSpeed
         self.leap_traveled = 0
-        --self:GetParent():SetForwardVector(self.vDirection)
+        -- self:GetParent():SetForwardVector(self.vDirection)
 
         self.sound = kv.sound or "Courier.Footsteps"
         -- 创建开始的特效和音效
@@ -65,7 +65,7 @@ function modifier_run:OnDestroy()
         self:GetParent():RemoveGesture(ACT_DOTA_RUN)
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
-        if GameRules:GetGameModeEntity().game_status == 1 then
+        if _G.game_status == 1 then
             self:GetParent():SetForwardVector(Vector(0,1,0))
         end
     end
@@ -74,6 +74,7 @@ end
 function modifier_run:DeclareFunctions()
     local funcs = {
         MODIFIER_PROPERTY_OVERRIDE_ANIMATION,
+        MODIFIER_PROPERTY_DISABLE_AUTOATTACK,
     }
     return funcs
 end

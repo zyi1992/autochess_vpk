@@ -79,7 +79,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"80"
+		"AttackDamageMax"	"90"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -209,7 +209,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"160"
+		"AttackDamageMax"	"180"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -343,7 +343,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"320"
+		"AttackDamageMax"	"360"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -3340,6 +3340,131 @@
 		"Ability17"	""
 	}
 
+	"chess_om_ssr"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/ogre_magi/ogre_magi.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_ogre"
+		// Ability 2.
+		"Ability2"	"is_dragon"
+		// Ability 3.
+		"Ability3"	"is_mage"
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"3"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"220"
+		"AttackDamageMax"	"300"
+		"AttackRate"	"1.5"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"18101"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"18100"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"18099"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"534"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"18097"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"18098"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.53"
+		"HasInventory"	"1"
+		"Level"	"9"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_OgreMagi"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ogre_magi.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_ogre_magi"
+		"Ability17"	""
+	}
+
 	// 1
 	"chess_am"
 	{
@@ -3420,7 +3545,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"45"
 		"AttackDamageMax"	"55"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -3548,7 +3673,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"90"
 		"AttackDamageMax"	"110"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -3676,7 +3801,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"180"
 		"AttackDamageMax"	"220"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.1"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -3928,19 +4053,19 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"6481"
+					"ItemDef"	"19187"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"6482"
+					"ItemDef"	"19188"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"6484"
+					"ItemDef"	"19190"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"6485"
+					"ItemDef"	"19189"
 				}
 			}
 		}
@@ -5716,7 +5841,7 @@
 		// Ability 2.
 		"Ability2"	"is_knight"
 		// Ability 3.
-		"Ability3"	"spell_attack"
+		"Ability3"	"bat_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -5834,7 +5959,7 @@
 		// Ability 2.
 		"Ability2"	"is_knight"
 		// Ability 3.
-		"Ability3"	"spell_attack"
+		"Ability3"	"bat_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -5952,7 +6077,7 @@
 		// Ability 2.
 		"Ability2"	"is_knight"
 		// Ability 3.
-		"Ability3"	"spell_attack"
+		"Ability3"	"bat_attack"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -6897,7 +7022,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"60"
 		"AttackDamageMax"	"70"
-		"AttackRate"	"1.3"
+		"AttackRate"	"1.4"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -7017,7 +7142,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"120"
 		"AttackDamageMax"	"140"
-		"AttackRate"	"1.3"
+		"AttackRate"	"1.4"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -7137,7 +7262,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"240"
 		"AttackDamageMax"	"280"
-		"AttackRate"	"1.3"
+		"AttackRate"	"1.4"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -7952,7 +8077,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"4"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -7969,7 +8094,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"450"
+		"StatusHealth"	"500"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -8000,7 +8125,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"45"
-		"AttackDamageMax"	"75"
+		"AttackDamageMax"	"95"
 		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
@@ -8035,7 +8160,7 @@
 		}
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"2"
+		"Level"	"3"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -8075,7 +8200,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"4"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8092,7 +8217,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"900"
+		"StatusHealth"	"1000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -8123,7 +8248,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"90"
-		"AttackDamageMax"	"150"
+		"AttackDamageMax"	"190"
 		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
@@ -8162,7 +8287,7 @@
 		}
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -8202,7 +8327,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"4"
+		"ArmorPhysical"	"5"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8219,7 +8344,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1800"
+		"StatusHealth"	"2000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -8250,7 +8375,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"180"
-		"AttackDamageMax"	"300"
+		"AttackDamageMax"	"380"
 		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
@@ -8285,7 +8410,7 @@
 		}
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"6"
+		"Level"	"7"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -8448,7 +8573,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8497,7 +8622,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
 		"AttackDamageMax"	"60"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -8568,7 +8693,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8617,7 +8742,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"110"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -8688,7 +8813,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8737,7 +8862,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
 		"AttackDamageMax"	"120"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -8816,7 +8941,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8863,9 +8988,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"220"
-		"AttackRate"	"1.1"
+		"AttackDamageMin"	"175"
+		"AttackDamageMax"	"195"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -8944,7 +9069,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -8993,7 +9118,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
 		"AttackDamageMax"	"240"
-		"AttackRate"	"1.1"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -9068,7 +9193,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"6"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -9115,9 +9240,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"350"
-		"AttackDamageMax"	"390"
-		"AttackRate"	"1.1"
+		"AttackDamageMin"	"300"
+		"AttackDamageMax"	"340"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -9629,7 +9754,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"90"
 		"AttackDamageMax"	"110"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.0"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -9751,7 +9876,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"180"
 		"AttackDamageMax"	"220"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.0"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -9873,7 +9998,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"360"
 		"AttackDamageMax"	"440"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.0"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -11830,29 +11955,29 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"7740"
+					"ItemDef"	"19301"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"7947"
+					"ItemDef"	"19303"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"5337"
+					"ItemDef"	"19304"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"7878"
+					"ItemDef"	"19300"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"7950"
+					"ItemDef"	"19302"
 				}
 			}
 		}
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"15"
+		"Level"	"9"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -12222,7 +12347,7 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_luna/luna_base_attack.vpcf"
+		"ProjectileModel"	"particles/econ/items/luna/luna_ti9_weapon/luna_ti9_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.46"
 		"HasInventory"	"1"
@@ -12347,7 +12472,7 @@
 				}
 			}
 		}
-		"ProjectileModel"	"particles/units/heroes/hero_luna/luna_base_attack.vpcf"
+		"ProjectileModel"	"particles/econ/items/luna/luna_ti9_weapon_gold/luna_ti9_gold_base_attack.vpcf"
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.46"
 		"HasInventory"	"1"
@@ -13929,7 +14054,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"750"
+		"StatusHealth"	"650"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14055,7 +14180,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1500"
+		"StatusHealth"	"1300"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14181,7 +14306,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3000"
+		"StatusHealth"	"2600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -14221,7 +14346,7 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"18133"
+					"ItemDef"	"14759"
 				}
 				"Wearable2"
 				{
@@ -14237,7 +14362,7 @@
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"18132"
+					"ItemDef"	"14812"
 				}
 				"Wearable6"
 				{
@@ -15015,9 +15140,9 @@
 		//
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
-		"Model"	"models/heroes/mirana/mirana.vmdl"
-		// "Model"		"models/heroes/mirana_persona/mirana_persona_base.vmdl"
-		"ModelScale"	"0.55"
+		// "Model"	"models/heroes/mirana/mirana.vmdl"
+		"Model"	"models/heroes/mirana_persona/mirana_persona_base.vmdl"
+		"ModelScale"	"0.5"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -15094,33 +15219,53 @@
 		{
 			"AttachWearables"
 			{
+				// "Wearable1"
+				// {
+				// 	"ItemDef"	"403"
+				// }
+				// "Wearable2"
+				// {
+				// 	"ItemDef"	"404"
+				// }
+				// "Wearable3"
+				// {
+				// 	"ItemDef"	"405"
+				// }
+				// "Wearable4"
+				// {
+				// 	"ItemDef"	"406"
+				// }
+				// "Wearable5"
+				// {
+				// 	"ItemDef"	"407"
+				// }
+				// "Wearable6"
+				// {
+				// 	"ItemDef"	"408"
+				// }
+				// "Wearable7"
+				// {
+				// 	"ItemDef"	"409"
+				// }
 				"Wearable1"
 				{
-					"ItemDef"	"403"
+					"ItemDef"	"774"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"404"
+					"ItemDef"	"775"
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"405"
+					"ItemDef"	"776"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"406"
+					"ItemDef"	"773"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"407"
-				}
-				"Wearable6"
-				{
-					"ItemDef"	"408"
-				}
-				"Wearable7"
-				{
-					"ItemDef"	"409"
+					"ItemDef"	"731"
 				}
 			}
 		}
@@ -17846,7 +17991,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.35"
 		"HasInventory"	"1"
-		"Level"	"15"
+		"Level"	"9"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -18093,7 +18238,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/storm_spirit/storm_spirit.vmdl"
-		"ModelScale"	"1.3"
+		"ModelScale"	"1.25"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -18459,7 +18604,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/ember_spirit/ember_spirit.vmdl"
-		"ModelScale"	"1.1"
+		"ModelScale"	"1.05"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -18574,6 +18719,372 @@
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_ember_spirit.vsndevts"
 		"particle_folder"	"particles/units/heroes/hero_ember_spirit/"
+		"Ability17"	""
+	}
+
+	// 3
+	"chess_void"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/void_spirit/void_spirit.vmdl"
+		"ModelScale"	"0.65"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_monk"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"4"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"750"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"70"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"690"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"689"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"687"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"688"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"686"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"HasInventory"	"1"
+		"Level"	"3"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_VoidSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_void_spirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_void_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_void_spirit/"
+		"Ability17"	""
+	}
+
+	// 3
+	"chess_void1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/void_spirit/void_spirit.vmdl"
+		"ModelScale"	"0.8"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_monk"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"4"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1500"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"140"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"690"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"689"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"687"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"688"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"18363"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_VoidSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_void_spirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_void_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_void_spirit/"
+		"Ability17"	""
+	}
+
+	// 3
+	"chess_void11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/void_spirit/void_spirit.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_pandaman"
+		// Ability 2.
+		"Ability2"	"is_monk"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"4"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3000"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"240"
+		"AttackDamageMax"	"280"
+		"AttackRate"	"1.3"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"690"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"18366"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"18364"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"18365"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"18363"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_keeper_of_the_light/keeper_of_the_light_base_attack.vpcf"
+		"ProjectileSpeed"	"800"
+		"AttackAnimationPoint"	"0.35"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_VoidSpirit"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_void_spirit.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_void_spirit.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_void_spirit/"
 		"Ability17"	""
 	}
 
@@ -18997,7 +19508,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -19045,7 +19556,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"60"
+		"AttackDamageMax"	"70"
 		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
@@ -19123,7 +19634,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -19171,7 +19682,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"120"
+		"AttackDamageMax"	"140"
 		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
@@ -19253,7 +19764,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -19301,7 +19812,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"240"
+		"AttackDamageMax"	"280"
 		"AttackRate"	"0.9"
 		"AttackRange"	"205"
 		"Creature"
@@ -19383,9 +19894,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"15"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -19404,7 +19915,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
-		"StatusMana"	"0"
+		"StatusMana"	"100"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -19491,7 +20002,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/siren/siren.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.7"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -19513,9 +20024,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"15"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -19534,7 +20045,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
-		"StatusMana"	"0"
+		"StatusMana"	"100"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -19570,11 +20081,11 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"8557"
+					"ItemDef"	"7042"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"8556"
+					"ItemDef"	"7041"
 				}
 				"Wearable3"
 				{
@@ -19582,7 +20093,7 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"18881"
+					"ItemDef"	"7043"
 				}
 				"Wearable5"
 				{
@@ -19590,11 +20101,11 @@
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"18880"
+					"ItemDef"	"7039"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"18879"
+					"ItemDef"	"7040"
 				}
 			}
 		}
@@ -19643,9 +20154,9 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"3"
+		"ArmorPhysical"	"4"
 		// Magical protection.
-		"MagicalResistance"	"15"
+		"MagicalResistance"	"20"
 		// Attack
 		// ----------------------------------------------------------------
 		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
@@ -19664,7 +20175,7 @@
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
-		"StatusMana"	"0"
+		"StatusMana"	"100"
 		// Mana regeneration rate.
 		"StatusManaRegen"	"0"
 		// Team
@@ -20156,7 +20667,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"500"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20274,7 +20785,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1000"
+		"StatusHealth"	"1200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20392,7 +20903,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2000"
+		"StatusHealth"	"2400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20497,7 +21008,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"2"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -20514,7 +21025,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"500"
+		"StatusHealth"	"450"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20578,7 +21089,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"2"
+		"Level"	"1"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -20619,7 +21130,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"2"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -20636,7 +21147,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1000"
+		"StatusHealth"	"900"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20700,7 +21211,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"4"
+		"Level"	"3"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -20741,7 +21252,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"2"
+		"ArmorPhysical"	"1"
 		// Magical protection.
 		"MagicalResistance"	"10"
 		// Attack
@@ -20758,7 +21269,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2000"
+		"StatusHealth"	"1800"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -20822,7 +21333,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"6"
+		"Level"	"5"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -21243,7 +21754,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/dragon_knight_persona/dk_persona_base.vmdl"
-		"ModelScale"	"0.75"
+		"ModelScale"	"0.65"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -21449,7 +21960,7 @@
 		"HasInventory"	"1"
 		"Level"	"4"
 		"ConsideredHero"	"1"
-		"HealthBarOffset"	"150"
+		"HealthBarOffset"	"256"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Jakiro"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
@@ -21680,7 +22191,7 @@
 		"HasInventory"	"1"
 		"Level"	"6"
 		"ConsideredHero"	"1"
-		"HealthBarOffset"	"150"
+		"HealthBarOffset"	"256"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Jakiro"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
@@ -21910,7 +22421,7 @@
 		"HasInventory"	"1"
 		"Level"	"8"
 		"ConsideredHero"	"1"
-		"HealthBarOffset"	"150"
+		"HealthBarOffset"	"256"
 		"RingRadius"	"60"
 		"SoundSet"	"Hero_Jakiro"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_jakiro.vsndevts"
@@ -21951,7 +22462,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -21968,7 +22479,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"700"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -21998,9 +22509,9 @@
 		"Ability16"	"dac_guai_base"
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
-		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"90"
-		"AttackRate"	"1.2"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"80"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -22030,7 +22541,7 @@
 		}
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"3"
+		"Level"	"2"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -22049,7 +22560,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/faceless_void/faceless_void.vmdl"
-		"ModelScale"	"0.8"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -22071,7 +22582,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -22088,7 +22599,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -22120,7 +22631,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"120"
 		"AttackDamageMax"	"180"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -22150,7 +22661,7 @@
 		}
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"5"
+		"Level"	"4"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -22191,7 +22702,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"4"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -22208,7 +22719,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2800"
+		"StatusHealth"	"2400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -22240,7 +22751,7 @@
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"240"
 		"AttackDamageMax"	"360"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
 		{
@@ -22272,7 +22783,7 @@
 		"ProjectileSpeed"	"3000"
 		"AttackAnimationPoint"	"0.5"
 		"HasInventory"	"1"
-		"Level"	"7"
+		"Level"	"6"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -25836,19 +26347,19 @@
 				}
 				"Wearable3"
 				{
-					"ItemDef"	"7658"
+					"ItemDef"	"14435"
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"674"
+					"ItemDef"	"14437"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"9504"
+					"ItemDef"	"12427"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"9502"
+					"ItemDef"	"14425"
 				}
 			}
 		}
@@ -28029,7 +28540,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"90"
-		"AttackDamageMax"	"120"
+		"AttackDamageMax"	"130"
 		"AttackRate"	"0.9"
 		"AttackRange"	"400"
 		"Creature"
@@ -28151,7 +28662,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"180"
-		"AttackDamageMax"	"240"
+		"AttackDamageMax"	"260"
 		"AttackRate"	"0.9"
 		"AttackRange"	"400"
 		"Creature"
@@ -28269,7 +28780,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"360"
-		"AttackDamageMax"	"480"
+		"AttackDamageMax"	"520"
 		"AttackRate"	"0.9"
 		"AttackRange"	"400"
 		"Creature"
@@ -29699,7 +30210,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/chen/chen.vmdl"
-		"ModelScale"	"0.95"
+		"ModelScale"	"0.8"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -29782,7 +30293,7 @@
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"5732"
+					"ItemDef"	"19349"
 				}
 				"Wearable3"
 				{
@@ -29790,19 +30301,19 @@
 				}
 				"Wearable4"
 				{
-					"ItemDef"	"9465"
+					"ItemDef"	"19348"
 				}
 				"Wearable5"
 				{
-					"ItemDef"	"5663"
+					"ItemDef"	"19351"
 				}
 				"Wearable6"
 				{
-					"ItemDef"	"5733"
+					"ItemDef"	"13248"
 				}
 				"Wearable7"
 				{
-					"ItemDef"	"5664"
+					"ItemDef"	"19350"
 				}
 			}
 		}
@@ -29936,7 +30447,7 @@
 		"ProjectileSpeed"	"800"
 		"AttackAnimationPoint"	"0.3"
 		"HasInventory"	"1"
-		"Level"	"10"
+		"Level"	"9"
 		"ConsideredHero"	"1"
 		"HealthBarOffset"	"150"
 		"RingRadius"	"60"
@@ -31382,7 +31893,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"150"
-		"AttackDamageMax"	"300"
+		"AttackDamageMax"	"250"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"Creature"
@@ -31512,7 +32023,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"300"
-		"AttackDamageMax"	"600"
+		"AttackDamageMax"	"500"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"Creature"
@@ -31642,7 +32153,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"600"
-		"AttackDamageMax"	"1200"
+		"AttackDamageMax"	"1000"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"Creature"
@@ -31772,7 +32283,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"70"
-		"AttackDamageMax"	"90"
+		"AttackDamageMax"	"110"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -31890,7 +32401,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"140"
-		"AttackDamageMax"	"180"
+		"AttackDamageMax"	"220"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -32008,7 +32519,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"280"
-		"AttackDamageMax"	"360"
+		"AttackDamageMax"	"440"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -32078,7 +32589,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"7"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -32126,7 +32637,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"100"
+		"AttackDamageMax"	"110"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -32216,7 +32727,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"7"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -32264,7 +32775,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"200"
+		"AttackDamageMax"	"220"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -32362,7 +32873,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"7"
+		"ArmorPhysical"	"8"
 		// Magical protection.
 		"MagicalResistance"	"0"
 		// Attack
@@ -32410,7 +32921,7 @@
 		"MinimapIcon"	"minimap_creep"
 		"MinimapIconSize"	"256"
 		"AttackDamageMin"	"200"
-		"AttackDamageMax"	"400"
+		"AttackDamageMax"	"440"
 		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"Creature"
@@ -34506,7 +35017,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"11"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"15"
 		// Attack
@@ -34523,7 +35034,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1100"
+		"StatusHealth"	"1000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -34632,7 +35143,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"11"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"15"
 		// Attack
@@ -34649,7 +35160,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2200"
+		"StatusHealth"	"2000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -34758,7 +35269,7 @@
 		// Armor
 		// ----------------------------------------------------------------
 		// Physical protection.
-		"ArmorPhysical"	"11"
+		"ArmorPhysical"	"10"
 		// Magical protection.
 		"MagicalResistance"	"15"
 		// Attack
@@ -34775,7 +35286,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"4400"
+		"StatusHealth"	"4000"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -35288,7 +35799,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"900"
+		"StatusHealth"	"850"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -35425,7 +35936,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1800"
+		"StatusHealth"	"1700"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -35562,7 +36073,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"3600"
+		"StatusHealth"	"3400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -37435,7 +37946,7 @@
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"20"
 		"AttackDamageMax"	"30"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
@@ -37486,7 +37997,7 @@
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"20"
 		"AttackDamageMax"	"30"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
@@ -37639,7 +38150,7 @@
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"30"
 		"AttackDamageMax"	"40"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"600"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
@@ -37692,7 +38203,7 @@
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"30"
 		"AttackDamageMax"	"40"
-		"AttackRate"	"1.2"
+		"AttackRate"	"1.3"
 		"AttackRange"	"600"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
@@ -38003,13 +38514,13 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"70"
-		"AttackDamageMax"	"300"
+		"AttackDamageMin"	"50"
+		"AttackDamageMax"	"280"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -38058,13 +38569,13 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"140"
-		"AttackDamageMax"	"440"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"420"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -38113,13 +38624,13 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"220"
-		"AttackDamageMax"	"560"
+		"AttackDamageMin"	"200"
+		"AttackDamageMax"	"550"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"0"
-		"ArmorPhysical"	"5"
+		"ArmorPhysical"	"2"
 		"MovementSpeed"	"500"
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HealthBarOffset"	"128"
@@ -38439,8 +38950,8 @@
 		"StatusStartingMana"	"0"
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
-		"AttackDamageMin"	"60"
-		"AttackDamageMax"	"80"
+		"AttackDamageMin"	"70"
+		"AttackDamageMax"	"90"
 		"AttackRate"	"1.5"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -38758,7 +39269,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"50"
-		"AttackDamageMax"	"100"
+		"AttackDamageMax"	"90"
 		"AttackRate"	"1.2"
 		"AttackRange"	"400"
 		"AttackRangeBuffer"	"50"
@@ -38811,7 +39322,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"100"
-		"AttackDamageMax"	"150"
+		"AttackDamageMax"	"140"
 		"AttackRate"	"1.2"
 		"AttackRange"	"600"
 		"AttackRangeBuffer"	"50"
@@ -38864,7 +39375,7 @@
 		"VisionDaytimeRange"	"384"
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"150"
-		"AttackDamageMax"	"200"
+		"AttackDamageMax"	"170"
 		"AttackRate"	"1.2"
 		"AttackRange"	"205"
 		"AttackRangeBuffer"	"50"
@@ -39674,6 +40185,59 @@
 		"Ability17"	""
 	}
 
+	"pve_pine_cone"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"is_druid"
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/creeps/pine_cone/pine_cone.vmdl"
+		"ModelScale"	"1"
+		"Level"	"6"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"4500"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"500"
+		"AttackDamageMax"	"700"
+		"AttackRate"	"0.8"
+		"AttackRange"	"600"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"-10"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"500"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"155"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"RingRadius"	"60"
+		"AttackAnimationPoint"	"0.3"
+		"ProjectileModel"	"particles/neutral_fx/pine_cone_seed_shot_tracking.vpcf"
+		"ProjectileSpeed"	"800"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"1"
+		"SoundSet"	"n_creep_Ranged"
+		"Ability17"	""
+	}
+
 	"pve_leishou_b"
 	{
 		"BaseClass"	"npc_dota_creature"
@@ -39970,7 +40534,7 @@
 		"VisionNighttimeRange"	"384"
 		"AttackDamageMin"	"1000"
 		"AttackDamageMax"	"1500"
-		"AttackRate"	"0.6"
+		"AttackRate"	"0.5"
 		"AttackRange"	"400"
 		"AttackRangeBuffer"	"50"
 		"MagicalResistance"	"-20"
@@ -41486,7 +42050,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"700"
+		"StatusHealth"	"650"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -41611,7 +42175,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1400"
+		"StatusHealth"	"1300"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -41734,7 +42298,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2800"
+		"StatusHealth"	"2600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -41887,7 +42451,7 @@
 		"MovementSpeed"	"400"
 		// Turning rate.
 		"MovementTurnRate"	"10"
-		"FollowRange"	"0"
+		"FollowRange"	"100"
 		// Team
 		// ----------------------------------------------------------------
 		// Team name.
@@ -41966,6 +42530,114 @@
 		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
 		"AutoAttacksByDefault"	"0"
 		"Ability17"	""
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	}
+
+	"placeholder"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/turnip/turnip.vmdl"
+		"ModelScale"	"1"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"0"
+		"VisionNighttimeRange"	"0"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"0"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"RingRadius"	"60"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"0"
+		"Ability17"	""
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+	}
+
+	"egg"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	""
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"Model"	"models/props_winter/nest_07.vmdl"
+		"ModelScale"	"0.75"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"0"
+		"VisionNighttimeRange"	"0"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"0"
+		"AttackRange"	"205"
+		"AttackRangeBuffer"	"50"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"HealthBarOffset"	"128"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"SoundSet"	"Creep_Good_Melee"
+		"RingRadius"	"60"
+		"AttackAnimationPoint"	"0.3"
+		"UnitRelationShipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		"AutoAttacksByDefault"	"0"
+		"Ability17"	""
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 	}
 
 	"taunt_ward"
@@ -42192,6 +42864,51 @@
 		"Ability15"	""
 		"Ability16"	""
 		"Model"	"models/props_tree/mango_tree.vmdl"
+		"ModelScale"	"1"
+		"Level"	"1"
+		"BountyXP"	"0"
+		"BountyGoldMin"	"0"
+		"BountyGoldMax"	"0"
+		"StatusHealth"	"1"
+		"StatusHealthRegen"	"0"
+		"StatusMana"	"0"
+		"StatusManaRegen"	"0"
+		"StatusStartingMana"	"0"
+		"VisionDaytimeRange"	"384"
+		"VisionNighttimeRange"	"384"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"0"
+		"AttackRange"	"0"
+		"AttackRangeBuffer"	"0"
+		"MagicalResistance"	"0"
+		"ArmorPhysical"	"0"
+		"MovementSpeed"	"0"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
+		"HealthBarOffset"	"128"
+		"Ability17"	""
+	}
+
+	"great_vault"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"no_hp_bar"
+		"Ability2"	"no_selectable"
+		"Ability3"	"no_collision"
+		"Ability4"	"wudi"
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Model"	"models/ui/treasure/aghanim_2021_treasure/aghanim_2021_treasure.vmdl"
 		"ModelScale"	"1"
 		"Level"	"1"
 		"BountyXP"	"0"
@@ -42590,7 +43307,7 @@
 		// Class of entity of link to.
 		"BaseClass"	"npc_dota_creature"
 		"Model"	"models/heroes/marci/marci_base.vmdl"
-		"ModelScale"	"0.82"
+		"ModelScale"	"0.75"
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
@@ -42629,7 +43346,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"650"
+		"StatusHealth"	"600"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -42745,7 +43462,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"1300"
+		"StatusHealth"	"1200"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -42861,7 +43578,7 @@
 		// Status
 		// ----------------------------------------------------------------
 		// Base health.
-		"StatusHealth"	"2600"
+		"StatusHealth"	"2400"
 		// Health regeneration rate.
 		"StatusHealthRegen"	"0"
 		// Base mana.
@@ -42928,6 +43645,1110 @@
 		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_marci.vsndevts"
 		"HasAggressiveStance"	"1"
 		"particle_folder"	"particles/units/heroes/hero_marci/"
+		"Ability17"	""
+	}
+
+	"chess_pb"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/primal_beast/primal_beast_base.vmdl"
+		"ModelScale"	"0.55"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_beast"
+		// Ability 2.
+		"Ability2"	"is_warrior"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"11"
+		// Magical protection.
+		"MagicalResistance"	"10"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1200"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"150"
+		"AttackDamageMax"	"200"
+		"AttackRate"	"1.8"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"769"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"770"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"771"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"772"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.6"
+		"HasInventory"	"1"
+		"Level"	"5"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_PrimalBeast"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_primal_beast.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_primal_beast.vsndevts"
+		"HasAggressiveStance"	"1"
+		"particle_folder"	"particles/units/heroes/hero_primal_beast/"
+		"Ability17"	""
+	}
+
+	"chess_pb1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/primal_beast/primal_beast_base.vmdl"
+		"ModelScale"	"0.7"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_beast"
+		// Ability 2.
+		"Ability2"	"is_warrior"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"11"
+		// Magical protection.
+		"MagicalResistance"	"10"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"300"
+		"AttackDamageMax"	"400"
+		"AttackRate"	"1.8"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"769"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"770"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"771"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"772"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.6"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_PrimalBeast"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_primal_beast.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_primal_beast.vsndevts"
+		"HasAggressiveStance"	"1"
+		"particle_folder"	"particles/units/heroes/hero_primal_beast/"
+		"Ability17"	""
+	}
+
+	"chess_pb11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/primal_beast/primal_beast_base.vmdl"
+		"ModelScale"	"0.85"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_beast"
+		// Ability 2.
+		"Ability2"	"is_warrior"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"11"
+		// Magical protection.
+		"MagicalResistance"	"10"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"4800"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"600"
+		"AttackDamageMax"	"800"
+		"AttackRate"	"1.8"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"769"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"770"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"771"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"772"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.6"
+		"HasInventory"	"1"
+		"Level"	"9"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_PrimalBeast"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_primal_beast.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_primal_beast.vsndevts"
+		"HasAggressiveStance"	"1"
+		"particle_folder"	"particles/units/heroes/hero_primal_beast/"
+		"Ability17"	""
+	}
+
+	// 2
+	"chess_db"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/dawnbreaker/dawnbreaker.vmdl"
+		"ModelScale"	"0.7"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_draenei"
+		// Ability 2.
+		"Ability2"	"is_knight"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"600"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"100"
+		"AttackRate"	"1.6"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"756"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"758"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"757"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"755"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.46"
+		"HasInventory"	"1"
+		"Level"	"2"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Dawnbreaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dawnbreaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dawnbreaker.vsndevts"
+		"ProjectileSpeed"	"800"
+		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_dawnbreaker"
+		"Ability17"	""
+	}
+
+	// 2
+	"chess_db1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/dawnbreaker/dawnbreaker.vmdl"
+		"ModelScale"	"0.9"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_draenei"
+		// Ability 2.
+		"Ability2"	"is_knight"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1200"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"200"
+		"AttackRate"	"1.6"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"19612"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"758"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"19611"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"19613"//"755"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.46"
+		"HasInventory"	"1"
+		"Level"	"4"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Dawnbreaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dawnbreaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dawnbreaker.vsndevts"
+		"ProjectileSpeed"	"800"
+		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_dawnbreaker"
+		"Ability17"	""
+	}
+
+	// 2
+	"chess_db11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/dawnbreaker/dawnbreaker.vmdl"
+		"ModelScale"	"1.05"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_draenei"
+		// Ability 2.
+		"Ability2"	"is_knight"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"5"
+		// Magical protection.
+		"MagicalResistance"	"0"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"2400"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"240"
+		"AttackDamageMax"	"320"
+		"AttackRate"	"1.6"
+		"AttackRange"	"205"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"19612"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"19614"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"19611"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"19613"
+				}
+			}
+		}
+		"AttackAnimationPoint"	"0.46"
+		"HasInventory"	"1"
+		"Level"	"6"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Dawnbreaker"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_dawnbreaker.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_dawnbreaker.vsndevts"
+		"ProjectileSpeed"	"800"
+		"ProjectileModel"	"particles/units/heroes/hero_batrider/batrider_base_attack.vpcf"
+		"particle_folder"	"particles/units/heroes/hero_dawnbreaker"
+		"Ability17"	""
+	}
+
+	// 5
+	"chess_ts"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/leshrac/leshrac.vmdl"
+		"ModelScale"	"0.6"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_draenei"
+		// Ability 2.
+		"Ability2"	"is_druid"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"900"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"60"
+		"AttackDamageMax"	"110"
+		"AttackRate"	"1.2"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"529"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"345"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"570"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"591"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"347"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"346"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+		"ProjectileSpeed"	"1500"
+		"AttackAnimationPoint"	"0.5"
+		"HasInventory"	"1"
+		"Level"	"4"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Leshrac"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_leshrac.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_leshrac/"
+		"Ability17"	""
+	}
+
+	// 5
+	"chess_ts1"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/leshrac/leshrac.vmdl"
+		"ModelScale"	"0.75"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_draenei"
+		// Ability 2.
+		"Ability2"	"is_druid"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"1800"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"120"
+		"AttackDamageMax"	"220"
+		"AttackRate"	"1.2"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"529"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"8113"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"8111"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"591"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"8112"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"8110"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+		"ProjectileSpeed"	"1500"
+		"AttackAnimationPoint"	"0.5"
+		"HasInventory"	"1"
+		"Level"	"6"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Leshrac"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_leshrac.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_leshrac/"
+		"Ability17"	""
+	}
+
+	// 5
+	"chess_ts11"
+	{
+		// General
+		//
+		// Class of entity of link to.
+		"BaseClass"	"npc_dota_creature"
+		"Model"	"models/heroes/leshrac/leshrac.vmdl"
+		"ModelScale"	"0.95"
+		// Abilities
+		// ----------------------------------------------------------------
+		// Ability 1.
+		"Ability1"	"is_draenei"
+		// Ability 2.
+		"Ability2"	"is_druid"
+		// Ability 3.
+		"Ability3"	""
+		// Ability 4.
+		"Ability4"	""
+		// Ability 5.
+		"Ability5"	""
+		// Ability 6 - Extra.
+		"Ability6"	""
+		// Ability 7 - Extra.
+		"Ability7"	""
+		// Ability 8 - Extra.
+		"Ability8"	""
+		// Armor
+		// ----------------------------------------------------------------
+		// Physical protection.
+		"ArmorPhysical"	"6"
+		// Magical protection.
+		"MagicalResistance"	"20"
+		// Attack
+		// ----------------------------------------------------------------
+		"AttackCapabilities"	"DOTA_UNIT_CAP_RANGED_ATTACK"
+		// Movement
+		// ----------------------------------------------------------------
+		// Type of locomotion - ground, air
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		// Speed
+		"MovementSpeed"	"500"
+		// Turning rate.
+		"MovementTurnRate"	"10"
+		// Status
+		// ----------------------------------------------------------------
+		// Base health.
+		"StatusHealth"	"3150"
+		// Health regeneration rate.
+		"StatusHealthRegen"	"0"
+		// Base mana.
+		"StatusMana"	"100"
+		// Mana regeneration rate.
+		"StatusManaRegen"	"0"
+		// Team
+		// ----------------------------------------------------------------
+		// Team name.
+		"TeamName"	"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"	"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+		// Vision
+		// ----------------------------------------------------------------
+		// Range of vision during day light.
+		"VisionDaytimeRange"	"900"
+		// Range of vision at night time.
+		"VisionNighttimeRange"	"600"
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	"no_collision"
+		"Ability16"	"dac_guai_base"
+		"MinimapIcon"	"minimap_creep"
+		"MinimapIconSize"	"256"
+		"AttackDamageMin"	"240"
+		"AttackDamageMax"	"440"
+		"AttackRate"	"1.2"
+		"AttackRange"	"400"
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1"
+				{
+					"ItemDef"	"8632"
+				}
+				"Wearable2"
+				{
+					"ItemDef"	"529"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"14216"
+				}
+				"Wearable4"
+				{
+					"ItemDef"	"14215"
+				}
+				"Wearable5"
+				{
+					"ItemDef"	"591"
+				}
+				"Wearable6"
+				{
+					"ItemDef"	"14214"
+				}
+				"Wearable7"
+				{
+					"ItemDef"	"12933"
+				}
+			}
+		}
+		"ProjectileModel"	"particles/units/heroes/hero_leshrac/leshrac_base_attack.vpcf"
+		"ProjectileSpeed"	"1500"
+		"AttackAnimationPoint"	"0.5"
+		"HasInventory"	"1"
+		"Level"	"7"
+		"ConsideredHero"	"1"
+		"HealthBarOffset"	"150"
+		"RingRadius"	"60"
+		"SoundSet"	"Hero_Leshrac"
+		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+		"VoiceFile"	"soundevents/voscripts/game_sounds_vo_leshrac.vsndevts"
+		"particle_folder"	"particles/units/heroes/hero_leshrac/"
 		"Ability17"	""
 	}
 }

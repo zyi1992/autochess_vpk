@@ -6,9 +6,9 @@
 		// Hero to override
 		"override_hero"	"npc_dota_hero_wisp"
 		// Ability 1
-		"Ability1"	"empty1"
 		// Range of vision at night time.
 		"VisionNighttimeRange"	"384"
+		"Ability1"	"empty1"
 		"Ability2"	"empty2"
 		"Ability3"	"empty3"
 		"Ability4"	"empty4"
@@ -56,7 +56,7 @@
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		"HasAggressiveStance"	"0"
 		"FollowRange"	"100"
-		"HealthBarOffset"	"256"
+		"HealthBarOffset"	"220"
 		"HasInventory"	"1"
 		"Model"	"models/props_gameplay/donkey.vmdl"
 		"GameSoundsFile"	"soundevents/game_sounds_heroes/game_sounds_wisp.vsndevts"

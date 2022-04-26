@@ -66,7 +66,7 @@
 	"b201"
 	{
 		"id"					"b205"
-		"name"					"风风谷♦竹林"
+		"name"					"风风谷♦竹园"
 		"vmap"					"chessboard/chessboard14"
 	}
 	"b202"
@@ -93,6 +93,12 @@
 		"id"					"b301"
 		"name"					"赞赞塔♦上层"
 		"vmap"					"chessboard/chessboard09"
+	}
+	"b302"
+	{
+		"id"					"b302"
+		"name"					"天地迷宫"
+		"vmap"					"chessboard/chessboard16"
 	}
 
 
@@ -142,6 +148,6 @@
 	{
 		"id"					"b008"
 		"name"					""
-		"vmap"					"chessboard/chessboard13"
+		"vmap"					"chessboard/chessboard58"
 	}
 }

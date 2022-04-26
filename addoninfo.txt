@@ -41,16 +41,6 @@
 			Name = "ToggleStat"
 		},
 		{
-			Key = "F3"
-			Command = "+ToggleStat"
-			Name = "ToggleStat"
-		},
-		{
-			Key = "F2"
-			Command = "+BackHome"
-			Name = "BackHome"
-		},
-		{
 			Key = "SPACE"
 			Command = "+TogglePanel"
 			Name = "TogglePanel"
@@ -65,6 +55,123 @@
 			Command = "+ChatEmotion"
 			Name = "ChatEmotion"
 		},
+		// {
+		// 	Key = "Z"
+		// 	Command = "+KeyboardZ"
+		// 	Name = "KeyboardZ"
+		// },
+		// {
+		// 	Key = "A"
+		// 	Command = "+KeyboardA"
+		// 	Name = "KeyboardA"
+		// },
+		// {
+		// 	Key = "/"
+		// 	Command = "+KeyboardXiegang"
+		// 	Name = "KeyboardXiegang"
+		// },
+		// {
+		// 	Key = "uparrow"
+		// 	Command = "+KeyboardUp"
+		// 	Name = "KeyboardUp"
+		// },
+		// {
+		// 	Key = "downarrow"
+		// 	Command = "+KeyboardDown"
+		// 	Name = "KeyboardDown"
+		// },
+		// {
+		// 	Key = "leftarrow"
+		// 	Command = "+KeyboardLeft"
+		// 	Name = "KeyboardLeft"
+		// },
+		// {
+		// 	Key = "rightarrow"
+		// 	Command = "+KeyboardRight"
+		// 	Name = "KeyboardRight"
+		// },
+
+		// {
+		// 	Key = "1"
+		// 	Command = "+Keyboard1"
+		// 	Name = "Keyboard1"
+		// },
+		// {
+		// 	Key = "2"
+		// 	Command = "+Keyboard2"
+		// 	Name = "Keyboard2"
+		// },
+		// {
+		// 	Key = "3"
+		// 	Command = "+Keyboard3"
+		// 	Name = "Keyboard3"
+		// },
+		// {
+		// 	Key = "4"
+		// 	Command = "+Keyboard4"
+		// 	Name = "Keyboard4"
+		// },
+		// {
+		// 	Key = "5"
+		// 	Command = "+Keyboard5"
+		// 	Name = "Keyboard5"
+		// },
+		// {
+		// 	Key = "6"
+		// 	Command = "+Keyboard6"
+		// 	Name = "Keyboard6"
+		// },
+		// {
+		// 	Key = "7"
+		// 	Command = "+Keyboard7"
+		// 	Name = "Keyboard7"
+		// },
+		// {
+		// 	Key = "8"
+		// 	Command = "+Keyboard8"
+		// 	Name = "Keyboard8"
+		// },
+
+		// {
+		// 	Key = "F1"
+		// 	Command = "+KeyboardF1"
+		// 	Name = "KeyboardF1"
+		// },
+		{
+			Key = "F2"
+			Command = "+BackHome"
+			Name = "BackHome"
+		},
+		{
+			Key = "F3"
+			Command = "+ToggleStat"
+			Name = "ToggleStat"
+		},
+		// {
+		// 	Key = "F4"
+		// 	Command = "+KeyboardF4"
+		// 	Name = "KeyboardF4"
+		// },
+		// {
+		// 	Key = "F5"
+		// 	Command = "+KeyboardF5"
+		// 	Name = "KeyboardF5"
+		// },
+		// {
+		// 	Key = "F6"
+		// 	Command = "+KeyboardF6"
+		// 	Name = "KeyboardF6"
+		// },
+		// {
+		// 	Key = "F7"
+		// 	Command = "+KeyboardF7"
+		// 	Name = "KeyboardF7"
+		// },
+		// {
+		// 	Key = "F8"
+		// 	Command = "+KeyboardF8"
+		// 	Name = "KeyboardF8"
+		// },
 	]
 	map_options = 
 	[

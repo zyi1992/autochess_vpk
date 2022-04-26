@@ -22,11 +22,17 @@ end
 
 function pudge_meat_hook_lua:OnSpellStart()
 	self.bChainAttached = false
+
 	if self.hVictim ~= nil then
 		self.hVictim:InterruptMotionControllers( true )
 	end
 
 	self.hTarget = self:GetCaster().hook_unluckydog  
+
+	if self.hTarget == nil or self.hTarget:IsNull() == true then
+		return
+	end
+	
 	self.hTarget.is_hooked = true
 	self.hTarget.stop_moving = true
 
@@ -140,6 +146,8 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 	-- 	return false
 	-- end
 
+	
+
 	-- if self.bRetracting == false then
 	-- 	if hTarget ~= nil and ( not ( hTarget:IsCreep() or hTarget:IsConsideredHero() ) ) then
 	-- 		Msg( "Target was invalid")
@@ -176,8 +184,6 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 				ParticleManager:SetParticleControlEnt( nFXIndex, 0, hTarget, PATTACH_POINT_FOLLOW, "attach_hitloc", self:GetCaster():GetOrigin(), true )
 				ParticleManager:ReleaseParticleIndex( nFXIndex )
 			end
-
-			
 
 	-- 		AddFOWViewer( self:GetCaster():GetTeamNumber(), hTarget:GetOrigin(), self.vision_radius, self.vision_duration, false )
 	-- 		self.hVictim = hTarget

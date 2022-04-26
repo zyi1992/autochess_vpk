@@ -25,10 +25,10 @@ function modifier_elfrun:OnCreated(kv)
             return
         end
 
-        local speed = 500
-        if self:GetParent() ~= nil and self:GetParent():GetIdealSpeed() ~= nil then
-            speed = self:GetParent():GetIdealSpeed()
-        end
+        local speed = kv.speed or 1500
+        -- if self:GetParent() ~= nil and self:GetParent():GetIdealSpeed() ~= nil then
+        --     speed = self:GetParent():GetIdealSpeed()
+        -- end
         if speed > 2000 then
             speed = 2000
         end
@@ -49,8 +49,10 @@ function modifier_elfrun:OnCreated(kv)
         self.sound = kv.sound or "Courier.Footsteps"
         -- 创建开始的特效和音效
         EmitSoundOn(self.sound, self:GetParent())
-        play_particle("particles/units/heroes/hero_bounty_hunter/bounty_hunter_windwalk.vpcf",PATTACH_ABSORIGIN_FOLLOW,self:GetParent(),3)
-        self:GetParent():AddNewModifier(self:GetParent(),nil,"modifier_bounty_hunter_wind_walk",nil)
+        if speed > 1000 then
+            play_particle("particles/items_fx/courier_speed.vpcf",PATTACH_ABSORIGIN_FOLLOW,self:GetParent(),3)
+        end
+        -- self:GetParent():AddNewModifier(self:GetParent(),nil,"modifier_bounty_hunter_wind_walk",nil)
 
         self.animation = kv.animation or ACT_DOTA_RUN
     end
@@ -60,7 +62,7 @@ function modifier_elfrun:OnDestroy()
     if IsServer() then
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
-        if GameRules:GetGameModeEntity().game_status == 1 then
+        if _G.game_status == 1 then
             self:GetParent():SetForwardVector(Vector(0,1,0))
         end
     end
@@ -99,8 +101,8 @@ function modifier_elfrun:UpdateHorizontalMotion(me, dt)
             me:SetAbsOrigin(self.vTargetPosition)
             me.is_moving = false
             me:InterruptMotionControllers(true)
-            me.blink_start_p = nil
-            me.blink_stop_count = 0
+            -- me.blink_start_p = nil
+            -- me.blink_stop_count = 0
             -- play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             -- EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)
             self:Destroy()

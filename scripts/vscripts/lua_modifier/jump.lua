@@ -47,15 +47,16 @@ function modifier_jump:OnDestroy()
     if IsServer() then
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
-        if GameRules:GetGameModeEntity().game_status == 1 or self:GetParent().transfer_chess == true then
+        if _G.game_status == 1 or self:GetParent().transfer_chess == true or self:GetParent().hand_index ~= nil then
             self:GetParent().transfer_chess = false
 
             if self:GetParent().y and self:GetParent().y > 4 then
                 self:GetParent():SetForwardVector(Vector(0,-1,0))
+                self:GetParent():MoveToPosition(self:GetParent():GetOrigin()+Vector(0,-100,0))
             else
                 self:GetParent():SetForwardVector(Vector(0,1,0))
+                self:GetParent():MoveToPosition(self:GetParent():GetOrigin()+Vector(0,100,0))
             end
-
         end
     end
 end

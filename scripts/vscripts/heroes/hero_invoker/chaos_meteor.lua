@@ -172,7 +172,7 @@ end
 	Additional parameters: keys.BurnDamagePerInterval
 ================================================================================================================= ]]
 function modifier_invoker_chaos_meteor_datadriven_burn_damage_on_interval_think(keys)
-	if keys.caster.invoker_chaos_meteor_parent_caster ~= nil and keys.caster.invoker_chaos_meteor_burn_dps ~= nil then
+	if keys.caster ~= nil and keys.caster.invoker_chaos_meteor_parent_caster ~= nil and keys.caster.invoker_chaos_meteor_burn_dps ~= nil then
 		ApplyDamage({
 			victim = keys.target, 
 			attacker = keys.caster.invoker_chaos_meteor_parent_caster, 

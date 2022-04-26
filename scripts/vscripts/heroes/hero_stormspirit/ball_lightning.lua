@@ -133,6 +133,9 @@ function ball_lightning_damage( keys )
 	-- Variables
 	local targetLoc = keys.target:GetAbsOrigin()
 	local casterLoc = keys.caster.ball_lightning_start_pos
+	if targetLoc == nil or casterLoc == nil then
+		return
+	end
 	local ability = keys.ability
 	local damage_per_distance = ability:GetAbilityDamage()
 	local distance_per_damage = ability:GetLevelSpecialValueFor( "distance_per_damage", ability:GetLevel() - 1 )

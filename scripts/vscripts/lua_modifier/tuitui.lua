@@ -48,13 +48,15 @@ function modifier_tuitui:OnCreated(kv)
 end
 
 function modifier_tuitui:OnDestroy()
-    if IsServer() then
+    if IsServer() and self:GetParent() ~= nil then
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
-        if GameRules:GetGameModeEntity().game_status == 1 or self:GetParent().transfer_chess == true then
+        if _G.game_status == 1 or self:GetParent().transfer_chess == true then
             self:GetParent().transfer_chess = false
             self:GetParent():SetForwardVector(Vector(0,1,0))
-            ParticleManager:DestroyParticle(self:GetParent().tuitui_particle,true)
+            if self:GetParent().tuitui_particle ~= nil then
+                ParticleManager:DestroyParticle(self:GetParent().tuitui_particle,true)
+            end
         end
     end
 end
