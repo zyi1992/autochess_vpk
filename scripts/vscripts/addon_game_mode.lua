@@ -68,13 +68,11 @@
 --                                                                   .=:+..                                              
 --                                                                  ..+~...                                              
 
---刀塔自走棋
 if DAC == nil then
 	DAC = class({})
 end
 
---报错追踪
-if __debug_trace_back_original__ == nil then 
+if __debug_trace_back_original__ == nil then
 	__debug_trace_back_original__ = debug.traceback 
 end
 debug.traceback = function(thread, message, level)

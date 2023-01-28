@@ -2,3 +2,4 @@
 server_log.txt
 *.vpk
 *.vpcf_c
+*.idea
