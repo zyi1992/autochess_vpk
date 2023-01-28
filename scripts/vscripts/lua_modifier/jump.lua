@@ -20,11 +20,6 @@ end
 
 function modifier_jump:OnCreated(kv)
     if IsServer() then
-        if self:ApplyHorizontalMotionController() == false or self:ApplyVerticalMotionController() == false then
-            self:Destroy()
-            return
-        end
-
         self.vStartPosition    = GetGroundPosition( self:GetParent():GetOrigin(), self:GetParent() )
 
         self.vTargetPosition   = Vector(kv.vx,kv.vy,128)
@@ -33,13 +28,16 @@ function modifier_jump:OnCreated(kv)
         self.flHorizontalSpeed = 1000.0/30
         self.flDistance        = (self.vTargetPosition - self.vStartPosition):Length2D() + self.flHorizontalSpeed
         self.leap_traveled = 0
-        --self:GetParent():SetForwardVector(self.vDirection)
 
         self.sound = kv.sound or "Ability.TossThrow"
         -- 创建开始的特效和音效
         EmitSoundOn(self.sound, self:GetParent())
 
         self.animation = kv.animation or ACT_DOTA_FLAIL
+        if self:ApplyHorizontalMotionController() == false or self:ApplyVerticalMotionController() == false then
+            self:Destroy()
+            return
+        end
     end
 end
 
@@ -47,16 +45,9 @@ function modifier_jump:OnDestroy()
     if IsServer() then
         self:GetParent():RemoveHorizontalMotionController(self)
         self:GetParent():RemoveVerticalMotionController(self)
-        if _G.game_status == 1 or self:GetParent().transfer_chess == true or self:GetParent().hand_index ~= nil then
-            self:GetParent().transfer_chess = false
-
-            if self:GetParent().y and self:GetParent().y > 4 then
-                self:GetParent():SetForwardVector(Vector(0,-1,0))
-                self:GetParent():MoveToPosition(self:GetParent():GetOrigin()+Vector(0,-100,0))
-            else
-                self:GetParent():SetForwardVector(Vector(0,1,0))
-                self:GetParent():MoveToPosition(self:GetParent():GetOrigin()+Vector(0,100,0))
-            end
+        if self:GetParent().cb then
+            self:GetParent().cb(self:GetParent())
+            self:GetParent().cb = nil
         end
     end
 end
@@ -92,16 +83,16 @@ function modifier_jump:UpdateHorizontalMotion(me, dt)
         if (me:GetAbsOrigin()-self.vTargetPosition):Length2D() > self.flHorizontalSpeed then
             me:SetAbsOrigin(me:GetAbsOrigin() + self.vDirection * self.flHorizontalSpeed)
             self.leap_traveled = self.leap_traveled + self.flHorizontalSpeed
+            me:FaceTowards(self.vTargetPosition)
         else
             --到终点了
             me:SetAbsOrigin(self.vTargetPosition)
-            me.is_moving = false
             RemoveAbilityAndModifier(me,'jiaoxie')
             me:InterruptMotionControllers(true)
             play_particle("particles/dev/library/base_dust_hit_shockwave.vpcf",PATTACH_ABSORIGIN_FOLLOW,me,3)
             EmitSoundOn("Hero_OgreMagi.Idle.Headbutt",me)
             self:Destroy()
-            me.is_removing = false
+            me.is_moving = false
             me.blink_start_p = nil
             me.blink_stop_count = 0
         end

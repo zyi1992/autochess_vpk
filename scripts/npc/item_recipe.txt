@@ -16,19 +16,7 @@
 	// 	}
 	// }
 
-	// "item_recipe_jufengchangji"
-	// {
-	// 	"BaseClass"	"item_recipe_arcane_boots"
-	// 	"AbilityTextureName"	"item_hurricane_pike_png"
-	// 	"ID"	"3059"
-	// 	"ItemCost"	"0"
-	// 	"ItemRecipe"	"1"
-	// 	"ItemResult"	"item_jufengchangji"
-	// 	"ItemRequirements"
-	// 	{
-	// 		"01"	"item_wangyuanjing;item_yuanlifazhang;"
-	// 	}
-	// }
+	
 
 	// "item_recipe_dianjinshou"
 	// {

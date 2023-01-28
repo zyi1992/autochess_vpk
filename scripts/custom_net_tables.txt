@@ -13,5 +13,8 @@
 		"chess_pool_table",
 		"hp_bar_table",
 		"unit_table",
+		"match_history_table",
+		"chess_kv_table",
+		"casino_table",
 	]
 }

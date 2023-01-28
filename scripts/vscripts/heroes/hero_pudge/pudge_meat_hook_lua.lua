@@ -105,7 +105,7 @@ function pudge_meat_hook_lua:OnSpellStart()
 	end)
 
 	Timers:CreateTimer((self.hook_distance / self.hook_speed * 2 + 0.1),function()
-		if self:GetCaster() and self:GetCaster():IsHero() then
+		if self and self:IsNull() == false and self:GetCaster() and self:GetCaster():IsNull() == false and self:GetCaster():IsHero() then
 			local hHook = self:GetCaster():GetTogglableWearable( DOTA_LOADOUT_TYPE_WEAPON )
 			if hHook ~= nil then
 				hHook:RemoveEffects( EF_NODRAW )
@@ -129,11 +129,16 @@ function pudge_meat_hook_lua:OnSpellStart()
 		-- 	-- 	FindClearSpaceForUnit( self.hVictim, self.vStartPosition, false )
 		-- 	-- end
 		-- end
-
-		self.hTarget = nil
-		self.hVictim = nil
-		ParticleManager:DestroyParticle( self.nChainParticleFXIndex, true )
-		EmitSoundOn( "Hero_Pudge.AttackHookRetractStop", self:GetCaster() )
+		if self and self:IsNull() == false then
+			self.hTarget = nil
+			self.hVictim = nil
+		end
+		if self and self:IsNull() == false and self.nChainParticleFXIndex then
+			ParticleManager:DestroyParticle( self.nChainParticleFXIndex, true )
+		end
+		if self and self:IsNull() == false then
+			EmitSoundOn( "Hero_Pudge.AttackHookRetractStop", self:GetCaster() )
+		end
 	end)
 	
 end
@@ -155,7 +160,7 @@ function pudge_meat_hook_lua:OnHookLanded( hTarget, vLocation )
 	-- 	end
 
 	-- 	local bTargetPulled = false
-		if hTarget ~= nil then
+		if hTarget ~= nil and hTarget:IsNull() == false and self and self:IsNull() == false then
 			EmitSoundOn( "Hero_Pudge.AttackHookImpact", hTarget )
 
 	-- 		-- 被钩走

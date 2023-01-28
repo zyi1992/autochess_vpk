@@ -27,13 +27,15 @@ function shadow_fiend_requiem_of_souls_lua:OnSpellStart()
 	local demon_table = {}
 	local demon_count = 0
 	local u = self:GetCaster()
-	for _,unit in pairs (_G.to_be_destory_list[u.at_team_id or u.team_id]) do
-		if unit ~= nil and unit:IsNull() == false and unit:IsAlive() == true and unit.is_removing ~= true and unit.team_id == u.team_id and unit:HasAbility('is_demon') then
-			-- local base_name = GetUnitBaseName(unit)
-			-- if FindValueInTable(demon_table,base_name) ~= true then
-			-- 	table.insert(demon_table,base_name)
-			-- end
-			demon_count = demon_count + 1
+	if _G.to_be_destory_list[u.at_team_id or u.team_id or u:GetTeam()] ~= nil then
+		for _,unit in pairs (_G.to_be_destory_list[u.at_team_id or u.team_id or u:GetTeam()]) do
+			if unit ~= nil and unit:IsNull() == false and unit:IsAlive() == true and unit.is_removing ~= true and unit.team_id == u.team_id and unit:HasModifier('modifier_is_demon_buff') then
+				-- local base_name = GetUnitBaseName(unit)
+				-- if FindValueInTable(demon_table,base_name) ~= true then
+				-- 	table.insert(demon_table,base_name)
+				-- end
+				demon_count = demon_count + 1
+			end
 		end
 	end
 

@@ -8,53 +8,65 @@
 		//（如果玩家低于最低要求段位进入游戏，会直接判负。但由于没有匹配平台进行预组队，无法保证游戏同段位的8人顺利开启）
 		"ranked_1x8_bishop+",	// 天梯比赛（要求段位至少为主教一段）
 		"ranked_1x8_rook+",		// 天梯比赛（要求段位至少为堡垒一段）
-		"ranked_1x8_king+",		// 天梯比赛（要求段位至少为国王）
+		"ranked_1x8_king+",	// 天梯比赛（要求段位至少为国王）
 		// 为了避免现有战绩平台因为地图名字不同而出现问题，天梯比赛4张地图的战绩统计数据中map_name都统一为ranked_1x8
 
 		"casual_1x8", 			// 休闲比赛，不计天梯分
 		"casual_1x8_ob", 		// 休闲比赛，不计天梯分，带4个观战位。
+		"candy_5_1x8", 
 		// 如果有显示休闲比赛战绩的需求，休闲比赛战绩统计数据中map_name都统一为causal_1x8
 
 		// 双排模式地图暂时下架
-		// "ranked_2x4",		
+		// "ranked_2x4",
 		// "casual_2x4",
 		// "casual_2x4_ob",
 
-		// 后续可能会添加新的模式 
 	]
 	IsPlayable = 1
 	Default_Keys = 
 	[
-		{
-			Key = "`"
-			Command = "+BackHome"
-			Name = "BackHome"
-		},
-		{
-			Key = "TAB"
-			Command = "+TabHome"
-			Name = "TabHome"
-		},
-		{
-			Key = "="
-			Command = "+ToggleStat"
-			Name = "ToggleStat"
-		},
-		{
-			Key = "SPACE"
-			Command = "+TogglePanel"
-			Name = "TogglePanel"
-		},
-		{
-			Key = "F9"
-			Command = "+ToggleF9"
-			Name = "ToggleF9"
-		},
-		{
-			Key = "K"
-			Command = "+ChatEmotion"
-			Name = "ChatEmotion"
-		},
+		// {
+		// 	Key = "`"
+		// 	Command = "+BackHome"
+		// 	Name = "BackHome"
+		// },
+		// {
+		// 	Key = "TAB"
+		// 	Command = "+TabHome"
+		// 	Name = "TabHome"
+		// },
+		// {
+		// 	Key = "="
+		// 	Command = "+ToggleStat"
+		// 	Name = "ToggleStat"
+		// },
+		// {
+		// 	Key = "SPACE"
+		// 	Command = "+TogglePanel"
+		// 	Name = "TogglePanel"
+		// },
+		// {
+		// 	Key = "F9"
+		// 	Command = "+ToggleF9"
+		// 	Name = "ToggleF9"
+		// },
+		// {
+		// 	Key = "K"
+		// 	Command = "+ChatEmotion"
+		// 	Name = "ChatEmotion"
+		// },
+		// {
+		// 	Key = "F2"
+		// 	Command = "+BackHome"
+		// 	Name = "BackHome"
+		// },
+		// {
+		// 	Key = "F3"
+		// 	Command = "+ToggleStat"
+		// 	Name = "ToggleStat"
+		// },
+
+
 		// {
 		// 	Key = "Z"
 		// 	Command = "+KeyboardZ"
@@ -137,16 +149,7 @@
 		// 	Command = "+KeyboardF1"
 		// 	Name = "KeyboardF1"
 		// },
-		{
-			Key = "F2"
-			Command = "+BackHome"
-			Name = "BackHome"
-		},
-		{
-			Key = "F3"
-			Command = "+ToggleStat"
-			Name = "ToggleStat"
-		},
+		// 
 		// {
 		// 	Key = "F4"
 		// 	Command = "+KeyboardF4"
@@ -199,12 +202,15 @@
 			MaxPlayers = 12
 			map = "casual_1x8_ob"
 		},
+		{
+			MaxPlayers = 8
+			map = "candy_5_1x8"
+		},
 	]
 	HideInTools = false
 	IsTemplate = false
 	CheckAFKPlayers = false
 	DefaultMap = "ranked_1x8"
-	// DefaultMap = "ranked"
 	DisableIK = false
 	EnablePickRules = false
 	EventGame = false

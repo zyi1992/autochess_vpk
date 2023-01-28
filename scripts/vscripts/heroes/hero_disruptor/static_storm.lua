@@ -74,7 +74,12 @@ function modifier_ability_disruptor_static_storm_thinker:OnCreated()
 
     self.pulses_affect = 0
 
-    self.fx = ParticleManager:CreateParticle("particles/units/heroes/hero_disruptor/disruptor_static_storm.vpcf", PATTACH_WORLDORIGIN, self:GetCaster())
+    local particle = 'particles/units/heroes/hero_disruptor/disruptor_static_storm.vpcf'
+    if self:GetAbility():GetLevel() >= 3 then
+        particle = 'particles/econ/items/disruptor/disruptor_2022_immortal/disruptor_2022_immortal_static_storm.vpcf'
+    end
+
+    self.fx = ParticleManager:CreateParticle(particle, PATTACH_WORLDORIGIN, self:GetCaster())
     ParticleManager:SetParticleControl(self.fx, 0,self:GetParent():GetAbsOrigin())
     ParticleManager:SetParticleControl(self.fx, 1, Vector(self.radius, 0, 0))
     ParticleManager:SetParticleControl(self.fx, 2, Vector(self.duration, 0, 0))

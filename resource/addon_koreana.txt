@@ -209,9 +209,6 @@
 		"chess_dk"	"용기사★"
 		"chess_dk1"	"용기사★★"
 		"chess_dk11"	"용기사★★★"
-		"chess_viper"	"바이퍼★"
-		"chess_viper1"	"바이퍼★★"
-		"chess_viper11"	"바이퍼★★★"
 		"chess_tech"	"기술단★"
 		"chess_tech1"	"기술단★★"
 		"chess_tech11"	"기술단★★★"
@@ -516,7 +513,6 @@
 		"text_mima_not_avilable_position"	"이동 불가능한 지역입니다."
 		"text_mima_must_select_a_chess"	"체스말을 선택하세요."
 		"text_mima_cannot_delete_battle_chess"	"체스말이 전투중입니다."
-		"pve_preparing"	"준비중"
 		"tips_gold_title"	"골드"
 		"tips_gold_0"	"골드는 게임내에서 사용가능한 유일한 지불 수단입니다.<br><br>매 라운드마다 자동으로 획득 가능하고, 체스말을 되팔시 체스말 레벨만큼 돌려받을수 있습니다.<br><br>골드로는 체스말을 구매하거나, 다시 섞기 및 기보 읽기가 가능합니다.<br><br>"
 		"tips_gold_1"	"<font color='#ffff00'>현재 골드: "
@@ -585,7 +581,6 @@
 		"tips_recycle_hero_success"	"판매성공"
 		"tips_recycle_hero_fail"	"판매실패"
 		"text_confirm_recycle_hero"	"판매하시겠습니까?"
-		"tips_title_image_close"	"숨기기"
 		"tips_image_close"	"패널을 숨깁니다. 상단의 아이콘을 클릭하면 다시 보실 수 있습니다."
 		"tips_title_image_lock"	"잠금"
 		"DOTA_Tooltip_ability_pick_chess"	"체스말 선택하기"
@@ -633,8 +628,7 @@
 		"DOTA_Tooltip_modifier_is_demon_buff"	"지옥의 힘"
 		"DOTA_Tooltip_ability_is_demon_buff"	"악마 버프"
 		"DOTA_Tooltip_ability_is_undead_buff"	"(2)언데드 버프"
-		"DOTA_Tooltip_modifier_is_undead_buff"	"공포"
-		"DOTA_Tooltip_modifier_is_undead_buff_Description"	"-4 방어력"
+
 		"DOTA_Tooltip_ability_is_orc_buff"	"(2)오크 버프"
 		"DOTA_Tooltip_modifier_is_orc_buff"	"피의 격노"
 		"DOTA_Tooltip_ability_is_naga_buff"	"(2)나가 버프"
@@ -645,8 +639,7 @@
 		"DOTA_Tooltip_ability_is_element_buff"	"정령 버프"
 		"DOTA_Tooltip_modifier_is_element_buff"	"정령의 기운"
 		"DOTA_Tooltip_ability_is_dwarf_buff"	"드워프 버프"
-		"DOTA_Tooltip_modifier_is_dwarf_buff"	"단단한 코륨 고글"
-		"DOTA_Tooltip_modifier_is_dwarf_buff_Description"	"+200 공격 사거리."
+
 		"DOTA_Tooltip_ability_is_ogre_buff"	"오거 버프"
 		"DOTA_Tooltip_modifier_is_ogre_buff"	"고리안 혈통"
 		"DOTA_Tooltip_ability_item_bingjia"	"<font color=\"#ff00ff\">시바의 은총</font>"
@@ -692,9 +685,7 @@
 		"DOTA_Tooltip_modifier_is_orc_buff_plus_plus_Description"	"+450 최대 체력"
 		"DOTA_Tooltip_ability_is_undead_buff_plus"	"(4)언데드 버프"
 		"DOTA_Tooltip_ability_is_undead_buff_plus_plus"	"(6)언데드 버프"
-		"DOTA_Tooltip_modifier_is_undead_buff_plus"	"공포"
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_plus_Description"	"-7 방어력"
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_Description"	"-6 방어력"
+
 		"DOTA_Tooltip_ability_is_mech_buff_plus"	"(4)메카 버프"
 		"DOTA_Tooltip_modifier_is_mech_buff_plus"	"자동 수리"
 		"DOTA_Tooltip_modifier_is_mech_buff_plus_Description"	"+25 체력 재생"
@@ -712,7 +703,7 @@
 		"DOTA_Tooltip_ability_is_demonhunter"	"악마 사냥꾼"
 		"DOTA_Tooltip_ability_is_demon"	"악마"
 		"DOTA_Tooltip_ability_is_shaman"	"주술사"
-		"DOTA_Tooltip_ability_is_demonhunter_Description"	"내면의 악마를 받아드려 파괴적인 지옥 마법의 힘을 사용하는 무시무시한 투사"
+
 		"DOTA_Tooltip_ability_chess_tech_bomb_Description"	"자신의 주변에 폭탄 하나를 설치합니다.몇초 후 폭탄은 자동으로 폭발하며 4 칸의 반경안에 있는 적군 유닛들한테 엄청난 물리피해를 입힙니다."
 		"DOTA_Tooltip_ability_chess_tech_bomb"	"폭발물"
 		"DOTA_Tooltip_ability_chess_tech_bomb_range"	"폭발 반경"
@@ -929,7 +920,7 @@
 		"DOTA_Tooltip_ability_pom_arrow_far_min_damage"	"최소 데미지"
 		"DOTA_Tooltip_ability_pom_arrow_far_min_stun"	"최소 기절 지속시간"
 		"DOTA_Tooltip_ability_pom_arrow_far_max_distance"	"최대 효과에 수요되는 거리"
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_plus"	"공포"
+
 		"DOTA_Tooltip_ability_is_elf_buff_plus_plus"	"(9)엘프 버프"
 		"DOTA_Tooltip_ability_slark_jump"	"뛰어들기"
 		"DOTA_Tooltip_ability_slark_jump_Description"	"슬라크가 전방으로 뛰어올라 처음 마주치는 적군 유닛을 덮쳐 순수 피해를 입히고 해당 유닛에게 무장 해체 효과를 가합니다."
@@ -967,7 +958,6 @@
 		"text_combat_event_killing_spree_5"	"{s:player_name} 님의 {s:locstring_value} <font color='#ff0000'>광란!!!</font>"
 		"text_combat_event_killing_spree_3_creep"	"<panel class='CombatEventHeroIcon'/>{s:locstring_value} 가(이) <font color='#ff8888'>3연속 처치</font>를 달성했습니다!"
 		"text_combat_event_killing_spree_5_creep"	"<panel class='CombatEventHeroIcon'/>{s:locstring_value} <font color='#ff4444'>광란!!!</font>"
-		"text_combat_event_terminate"	"{s:player_name} 님의 연승이 저지되었습니다!"
 		"auto_combine_hand"	"벤치 자동 조합"
 		"DOTA_Tooltip_ability_is_assassin_buff_plus_plus"	"(9)암살자 버프"
 		"DOTA_Tooltip_modifier_is_assassin_buff_plus_plus"	"기습"
@@ -1072,7 +1062,6 @@
 		"DOTA_Tooltip_ability_dazzle_bozang_count"	"적용 대상 수량"
 		"DOTA_Tooltip_ability_dazzle_bozang_duration"	"지속시간"
 		"DOTA_Tooltip_ability_is_ogre_Note0"	"고리안 혈통은 중첩 적용 될 수 없습니다."
-		"DOTA_Tooltip_modifier_is_ogre_buff_Description"	"최대 체력 +5%%"
 		"DOTA_Tooltip_modifier_renjia_buff"	"칼날 갑옷"
 		"DOTA_Tooltip_modifier_renjia_buff_Description"	"받은 피해량의 100% 에 해당하는 순수 데미지를 적한테 반사합니다."
 		"DOTA_Tooltip_ability_item_yangdao_Lore"	"바이스 교단이 가장 소중하게 지키는 유물이며,마법사들이 가장 탐내는 유물이기도 합니다."
@@ -1150,7 +1139,6 @@
 		"tips_image_refresh"	"플레이어 레벨에 따른 다섯개의 체스말을 다시 한번 섞어서 선택할 수 있게 합니다.\n이미 3성을 보유한 체스말 유닛이나 전 패널에서 지나친 체스말 유닛은 구매패널에 나타나지 않습니다."
 		"DOTA_Tooltip_ability_summon_hero_Description"	"플레이어 레벨에 따른 체스말들을 다시 한번 섞어서 선택할 수 있게 합니다.\n이미 3성을 보유한 체스말 유닛이나 전 패널에서 지나친 체스말 유닛은 구매패널에 나타나지 않습니다."
 		"DOTA_Tooltip_ability_item_mangguo"	"<font color=\"#bbbbbb\">마력 깃든 망고</font>"
-		"DOTA_Tooltip_ability_item_mangguo_Description"	"사용 효과:즉시 짐꾼 캐릭터의 마나를 무작위로 회복합니다.($1~5)"
 		"DOTA_Tooltip_ability_item_chishu"	"<font color=\"#bbbbbb\">목담과</font>"
 		"chess_ww"	"겨울 비룡★"
 		"chess_ww1"	"겨울 비룡★★"
@@ -1169,7 +1157,7 @@
 		"DOTA_Tooltip_modifier_is_god_buff_plus_plus"	"독존"
 		"DOTA_Tooltip_modifier_is_god_buff_plus_plus_Description"	"스킬 재사용 대기시간 감소"
 		"DOTA_Tooltip_ability_gs_moji_damage"	"마법 피해"
-		"DOTA_Tooltip_ability_gs_moji_bonus_damage_per_target"	"주문 증폭"
+		"DOTA_Tooltip_ability_gs_moji_bonus_damage_pchess_gschess_lioner_target"	"주문 증폭"
 		"DOTA_Tooltip_ability_gs_moji_range_tooltip"	"결속 반경"
 		"DOTA_Tooltip_ability_gs_moji_fuhun_duration"	"둔화 지속시간"
 		"DOTA_Tooltip_ability_rubick_qiequ_ability_level"	"강탈한 주문 레벨"
@@ -1184,9 +1172,6 @@
 		"chess_rubick"	"루빅★"
 		"chess_rubick1"	"루빅★★"
 		"chess_rubick11"	"루빅★★★"
-		"chess_gs"	"그림스트로크★"
-		"chess_gs1"	"그림스트로크★★"
-		"chess_gs11"	"그림스트로크★★★"
 		"chess_kael"	"원소술사★"
 		"chess_chen"	"첸★"
 		"chess_spec"	"악령★"
@@ -1291,9 +1276,7 @@
 		"DOTA_Tooltip_ability_gs_moji_range_tooltip"	"결속 반경"
 		"DOTA_Tooltip_ability_gs_moji_fuhun_duration"	"지속시간"
 		"DOTA_Tooltip_ability_rubick_qiequ_ability_level"	"강탈한 주문 레벨"
-		"DOTA_Tooltip_modifier_is_undead_buff_Description"	"-4 방어력"
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_Description"	"-6 방어력"
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_plus_Description"	"-8 방어력"
+
 		"DOTA_Tooltip_modifier_is_beast_buff_Description"	"+공격력"
 		"DOTA_Tooltip_modifier_is_beast_buff_plus_Description"	"+공격력"
 		"DOTA_Tooltip_modifier_is_beast_buff_plus_plus_Description"	"+공격력"
@@ -1343,7 +1326,6 @@
 		"DOTA_Tooltip_modifier_gs_give_fuhun"	"영혼 결속"
 		"DOTA_Tooltip_modifier_gs_give_fuhun_Description"	"적군 타켓팅 스킬이 결속된 유닛한테 같이 작용됩니다."
 		"DOTA_Tooltip_ability_gs_moji_fuhun_stack_count"	"결속 층수"
-		"DOTA_Tooltip_ability_item_yuanxingxie"	"<font color=\"#4444ff\">여행의 장화</font>"
 		"DOTA_Tooltip_ability_item_xiwa_Lore"	"여신의 것이었다고 전해지는 아이템입니다,지금까지도 예전의 힘이 많이 남아있습니다."
 		"h356"	"아기고래 범돌이|Gold"
 		"DOTA_Tooltip_ability_item_zhaohuanshenshi_Lore"	"적들은 이 무궁무진한 소환물결에 매몰될 것이다."
@@ -1524,7 +1506,6 @@
 		"DOTA_Tooltip_modifier_is_god_buff_plus_plus_Description"	"스킬 재사용 대기시간 감소"
 		"DOTA_Tooltip_modifier_is_element_buff_plus"	"정령의 기운"
 		"DOTA_Tooltip_ability_is_element_buff_plus"	"(4)정령 버프"
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_cd_reduce"	"아군 스킬 재사용 대기시간 감소(초)"
 		"DOTA_Tooltip_ability_batrider_firefly"	"불꽃 질주"
 		"DOTA_Tooltip_ability_batrider_firefly_Description"	"박쥐기수가 적을 공격할 수 있는 가장 먼 위치로까지 비행하면서 지나가는 자리마다 불길을 남깁니다.불길에 닿는 적은 피해를 받고 나무들은 불타 사라집니다."
 		"DOTA_Tooltip_ability_batrider_firefly_Lore"	"적이 야마 라스카브 정글로 도망치면 보통은 나무를 베며 적을 찾습니다.박쥐기수는 그냥 적과 숲을 통째로 태워버립니다."
@@ -1554,12 +1535,6 @@
 		"visage_dragon_1"	"하수인"
 		"visage_dragon_2"	"하수인"
 		"visage_dragon_3"	"하수인"
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven"	"마나 흡수"
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Description"	"집중 시전: 매초 대상 적 유닛의 마법 에너지를 흡수하여 자신의 마나를 회복합니다.\n흡수가 종료되면 자신의 모든 마나를 소모하여 지정된 아군 유닛한테 차크라 마법 효과를 부여합니다.\n차크라 마법: 라이온과 동일한 마나를 획득하고 전투중 이미 사용한 스킬의 재사용 대기시간이 감소합니다."
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_duration"	"지속 시간"
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_mana_per_second"	"초당 흡수 마나"
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_ally_count"	"차크라 획득 아군 수"
-		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Lore"	"악마 마도사에게 자신보다 못한 마법사는 그저 마나를 회복하는 도구일 뿐입니다."
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Note0"	"아군 유닛은 라이온과 동일한 마나를 획득합니다."
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Note1"	"집중 스킬은 시전도중 끊길 수 있습니다."
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Note2"	"스킬 시전할려면 10 마나가 필요합니다."
@@ -1645,9 +1620,7 @@
 		"DOTA_Tooltip_modifier_is_warrior_buff"	"강화 갑옷"
 		"DOTA_Tooltip_modifier_is_warrior_buff_Description"	"방어력 증가."
 		"DOTA_Tooltip_modifier_is_warrior_buff_plus_Description"	"방어력 증가."
-		"DOTA_Tooltip_modifier_is_undead_buff_Description"	"방어력 감소."
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_Description"	"방어력 감소."
-		"DOTA_Tooltip_modifier_is_undead_buff_plus_plus_Description"	"방어력 감소."
+
 		"DOTA_Tooltip_modifier_is_elf_buff_plus_plus_Description"	"회피 증가."
 		"DOTA_Tooltip_modifier_is_elf_buff_plus_Description"	"회피 증가."
 		"DOTA_Tooltip_modifier_is_elf_buff_Description"	"회피 증가."
@@ -1663,7 +1636,6 @@
 		"DOTA_Tooltip_ability_om_multi_cast_multi_per"	"다중 시전 확률"
 		"DOTA_Tooltip_modifier_om_multi_cast"	"다중 시전"
 		"DOTA_Tooltip_modifier_om_multi_cast_Description"	"다음 번 스킬을 두번 연속으로 시전합니다."
-		"DOTA_Tooltip_modifier_is_ogre_buff_Description"	"(2) 오거: 아군 근접 유닛 사망시 아군 오거 최대 체력 +25%%,공격력 +25%%(최대 중첩:8회)"
 		"DOTA_Tooltip_modifier_ogre_25_attack_damage"	"고리안 혈통"
 		"DOTA_Tooltip_modifier_ogre_25_attack_damage_Description"	"최대 체력 +25%%,공격력 +25%%(최대 중첩:8회)"
 		"join_the_game"	"가/이 유닛풀에 추가 되었습니다."
@@ -1827,11 +1799,7 @@
 		"DOTA_Tooltip_ability_item_fashichangpao_Description"	"+10%% 마법 피해"
 		"DOTA_Tooltip_ability_item_molifazhang_Description"	"+20%% 마법 피해"
 		"DOTA_Tooltip_ability_item_huiguang_Description"	"+50%% 마법 피해"
-		"DOTA_Tooltip_ability_item_hongzhang_1_Description"	"+20%% 마법 피해, +100% 공격시 마나 재생\n자동 시전: 무작위로 적군 유닛 한명에게 400 데미지의 피해를 줍니다."
-		"DOTA_Tooltip_ability_item_hongzhang_2_Description"	"+40%% 마법 피해, +100% 공격시 마나 재생\n자동 시전: 무작위로 적군 유닛 한명에게 500 데미지의 피해를 줍니다."
-		"DOTA_Tooltip_ability_item_hongzhang_3_Description"	"+60%% 마법 피해, +100% 공격시 마나 재생\n자동 시전: 무작위로 적군 유닛 한명에게 600 데미지의 피해를 줍니다."
-		"DOTA_Tooltip_ability_item_hongzhang_4_Description"	"+80%% 마법 피해, +100% 공격시 마나 재생\n자동 시전: 무작위로 적군 유닛 한명에게 700 데미지의 피해를 줍니다."
-		"DOTA_Tooltip_ability_item_hongzhang_5_Description"	"+100%% 마법 피해, +100% 공격시 마나 재생\n자동 시전: 무작위로 적군 유닛 한명에게 800 데미지의 피해를 줍니다."
+		
 		"DOTA_Tooltip_ability_item_jinghunzhiren_Description"	"+10 공격 속도, +15% 회피, +10%% 마법 피해\n기본 공격시 상대로부터 20 마나를 소진 시킵니다."
 		"show_chess_list"	"◄ 체스말 보기"
 		"show_item_list"	"아이템 보기 ►"
@@ -1950,7 +1918,7 @@
 		"notice_player_got"	"님이 신의 양날검을 획득했습니다!"
 		"DOTA_Tooltip_ability_invoke"	"원소 조합"
 		"DOTA_Tooltip_ability_invoke_Lore"	"새로운 지식의 시대가 열립니다."
-		"DOTA_Tooltip_ability_invoke_Description"	"3가지 원소의 속성을 조합하여 새로운 주문을 생성합니다.（얼음의 원소는 체력 재생 증가, 폭풍의 원소는 공격속도 증가, 화염 원소는 공격력 증가）\n<h1>조합 주문</h1><h1>원소술사는 상대 진영에서 유닛수가 가장 많은 직업/종족（3개 이상）개체수에 따라서 조합할 주문을 선택합니다：</h1><h1>마법사，주술사，신：<font color=\"#f0ad4e\">전자기파</font></h1><h1>전사，오크，고블린：<font color=\"#f0ad4e\">달구어진 영혼</font></h1><h1>메카，흑마법사，나가：<font color=\"#f0ad4e\">활력</font></h1><h1>사냥꾼，암살자，트롤：<font color=\"#f0ad4e\">굉음 폭발</font></h1><h1>기사，인간，언데드：<font color=\"#f0ad4e\">태양 강타</font>&nbsp;</h1><h1>야수，엘프，충：<font color=\"#f0ad4e\">혼돈의 유성</font></h1><h1>드루이드，정령，용，타우렌，판다렌：<font color=\"#f0ad4e\">회오리</font></h1>"
+
 		"DOTA_Tooltip_ability_invoke_Note0"	"원소술사는 매 라운드가 시작될 때마다 새로운 주문을 조합합니다."
 		"DOTA_Tooltip_ability_forged_spirit_jianjia"	"녹아내리는 강타"
 		"DOTA_Tooltip_ability_forged_spirit_jianjia_Description"	"타격시 상대의 방어구를 녹여 방어력을 낮춥니다.(중첩가능)"
@@ -2008,12 +1976,7 @@
 		"DOTA_Tooltip_ability_invoker_tornado_lift_duration"	"부양시간"
 		"DOTA_Tooltip_ability_invoker_tornado_base_damage"	"피해"
 		"DOTA_Tooltip_ability_sven_gods_strength_Description"	"스벤의 기본 공격은 타격 대상 주변 2칸 범위내의 적들에게 50%의 범위피해를 입힙니다.\n신의 힘: 모든 아군 악마들은 60초 동안 추가 공격력을 획득합니다."
-		"DOTA_Tooltip_ability_item_hongzhang_1_Description"	"+20%% 마법 피해, +100% 공격시 마나 재생\n<h1>즉시 시전:</h1>무작위로 적군 유닛 한명에게 400 데미지의 피해를 줍니다.<br>재사용 대기시간：<span class=\"GameplayValues GameplayVariable\">15</span>초"
-		"DOTA_Tooltip_ability_item_hongzhang_2_Description"	"+40%% 마법 피해, +100% 공격시 마나 재생\n<h1>즉시 시전:</h1>무작위로 적군 유닛 한명에게 500 데미지의 피해를 줍니다.<br>재사용 대기시간：<span class=\"GameplayValues GameplayVariable\">12</span>초"
-		"DOTA_Tooltip_ability_item_hongzhang_3_Description"	"+60%% 마법 피해, +100% 공격시 마나 재생\n<h1>즉시 시전:</h1>무작위로 적군 유닛 한명에게 600 데미지의 피해를 줍니다.<br>재사용 대기시간：<span class=\"GameplayValues GameplayVariable\">9</span>초"
-		"DOTA_Tooltip_ability_item_hongzhang_4_Description"	"+80%% 마법 피해, +100% 공격시 마나 재생\n<h1>즉시 시전:</h1>무작위로 적군 유닛 한명에게 700 데미지의 피해를 줍니다.<br>재사용 대기시간：<span class=\"GameplayValues GameplayVariable\">6</span>초"
-		"DOTA_Tooltip_ability_item_hongzhang_5_Description"	"+100%% 마법 피해, +100% 공격시 마나 재생\n<h1>즉시 시전:</h1>무작위로 적군 유닛 한명에게 800 데미지의 피해를 줍니다.<br>재사용 대기시간：<span class=\"GameplayValues GameplayVariable\">3</span>초"
-		"DOTA_Tooltip_ability_item_qinglianbaozhu_Description"	"전투 시작과 동시에 40 마나를 획득합니다.\n+15 체력 재생, +50% 공격시 마나 재생\n모든 지정주문을 시전자에게 되돌립니다.<br>재사용 대기시간：<span class=\"GameplayValues GameplayVariable\">15</span>초"
+		
 		"DOTA_Tooltip_ability_invoker_sun_strike_strike_count"	"익조트수"
 		"DOTA_Tooltip_ability_sven_gods_strength_gods_strength_damage"	"스벤 힘 증폭"
 		"DOTA_Tooltip_ability_sven_gods_strength_damage_per_demon"	"지옥의 힘이 발동된 아군 유닛 한기당 공격력 상승 백분비"
@@ -2136,10 +2099,6 @@
 		"DOTA_Tooltip_ability_item_dianjinshou_Description"	"+10 공격력, +15 체력 재생\n보유한 유닛이 홈그라운드에서 펼쳐진 비 전리품 라운드전투어서 적 유닛 한기를 처치할 때마다 해당 유닛의 판매가격이 +1 증가합니다.(최대 중첩 층수는 해당유닛의 레벨과 동일합니다.)"
 		"DOTA_Tooltip_ability_item_qinglianbaozhu_Description"	"전투 시작과 동시에 40 마나를 획득합니다.\n+15 체력 재생, +50% 공격시 마나 재생\n모든 지정주문을 시전자에게 되돌립니다.<br>재사용 대기시간: <span class=\"GameplayValues GameplayVariable\">5</span>초"
 
-		"DOTA_Tooltip_modifier_is_priest_buff"	"로열 젤리 실드"
-		"DOTA_Tooltip_modifier_is_priest_buff_Description"	"해당 라운드 받는 피해 20%% 감소"
-		"DOTA_Tooltip_modifier_is_priest_buff_plus_plus"	"제자의 선물"
-		"DOTA_Tooltip_modifier_is_priest_buff_plus_plus_Description"	"해당 라운드 치사피해로부터 면역"
 		"DOTA_Tooltip_ability_item_lootbox_lv3_Description"	"<h1>사용 효과</h1>오픈시 3개의 아이템중 1개를 선택하여 획득할 수 있습니다."
 		"DOTA_Tooltip_ability_item_lootbox_lv2_Description"	"<h1>사용 효과</h1>오픈시 3개의 아이템중 1개를 선택하여 획득할 수 있습니다."
 		"DOTA_Tooltip_ability_item_lootbox_lv1_Description"	"<h1>사용 효과</h1>오픈시 3개의 아이템중 1개를 선택하여 획득할 수 있습니다."
@@ -2433,9 +2392,7 @@
 		"p307"	"슈퍼 페퍼"
 		"h461"	"아가님의 새끼 로샨♦레디언트"
 		"h462"	"아가님의 새끼 로샨♦다이어"
-		"DOTA_Tooltip_ability_is_shaman_Note0"	"주술사 사술로 인해 변이된 유닛은 기존의 아이템효과는 유지할 수 있지만 전투 시작시 발동한 종족 또는 직업 특성은 잃어버리게 됩니다."
 		"DOTA_Tooltip_ability_item_zhishizhishu_Description"	"사용 시 짐꾼 현재 레벨 경험치바의 1/16에 해당되는 경험치를 획득합니다.(정수 내림)추가로 획득한 경험치는 짐꾼 캐릭터로 하여금 최대 레벨 10 의 장벽을 깰 수 있도록 만들어 줍니다."
-		"DOTA_Tooltip_ability_is_shaman_Note0"	"주술사 사술로 인해 변이된 유닛은 기존의 아이템효과는 유지할 수 있지만 전투 시작시 발동한 종족 또는 직업 특성은 잃어버리게 됩니다."
 		"DOTA_Tooltip_ability_item_zhishizhishu_Description"	"사용 시 짐꾼 현재 레벨 경험치바의 1/16에 해당되는 경험치를 획득합니다.(정수 올림)추가로 획득한 경험치는 짐꾼 캐릭터로 하여금 최대 레벨 10 의 장벽을 깰 수 있도록 만들어 줍니다."
 		"localization_tips"	"========================20200825版本从这里开始翻译=============================="
 		"chess_sb"	"영혼 파괴자★"
@@ -2604,15 +2561,14 @@
 		"DOTA_Tooltip_ability_lc_qianggong_Note0"	"크립 라운드에서도 발동됩니다."
 		"DOTA_Tooltip_ability_lc_qianggong_Note1"	"군단 사령관 업그레이드시 가장 높은 중첩 수를 이어받습니다."
 		"DOTA_Tooltip_ability_item_zhishizhishu_Description"	"사용 시 짐꾼 현재 레벨 경험치바의 1/16에 해당되는 경험치를 획득합니다.(정수 올림)추가로 획득한 경험치는 짐꾼 캐릭터로 하여금 최대 레벨 10 의 장벽을 깰 수 있도록 만들어 줍니다."
-		"DOTA_Tooltip_modifier_is_ogre_buff_Description"	"(2) 오거: 아군 근접 유닛 사망시 아군 오거 최대 체력 +20%%,공격력 +20%%(최대 중첩:10회)"
+
 		"DOTA_Tooltip_modifier_ogre_25_attack_damage"	"고리안 혈통"
 		"DOTA_Tooltip_modifier_ogre_25_attack_damage_Description"	"최대 체력 +20%%,공격력 +20%%(최대 중첩:10회)"
 		"DOTA_Tooltip_ability_item_jinghunzhiren_Description"	"+10 공격 속도, +15% 회피, +10% 마법 피해\n소환물, 환영 및 변이상태 유닛 공격시 추가로 50 순수 피해를 입힙니다."
 		"DOTA_Tooltip_ability_item_dianjinshou_Description"	"+10 공격력, +15 체력 재생\n보유한 유닛이 홈그라운드에서 펼쳐진 비 전리품 라운드전투어서 적 유닛 한기를 처치할 때마다 해당 유닛의 판매가격이 +1 증가합니다.(최대 중첩 층수는 해당유닛 레벨x2)"
 		"DOTA_Tooltip_ability_medusa_stone_gaze"	"석화의 시선"
 		"DOTA_Tooltip_ability_medusa_stone_gaze_Description"	"메두사의 기본 공격이 여러개의 화살로 분리되어 더 많은 적을 타격합니다.\n<font color=\"#f0ad4e\">석화의 시선: </font>메두사를 바라보는 적군 유닛이 이동 및 공격 속도 둔화 효과에 걸립니다. 석화의 시선을 활성화한 메두사를 2초 이상 바라보면 해당 유닛은 돌로 변합니다. 석화한 유닛은 추가 물리피해를 받습니다."
-		"DOTA_Tooltip_modifier_is_dwarf_buff_plus"	"단단한 코륨 고글"
-		"DOTA_Tooltip_modifier_is_dwarf_buff_plus_Description"	"+200 공격 사거리, 범위내 체력이 낮은 유닛 우선 공격, 원거릭 공격 시 칸 거리 당 +10%추가 피해."
+
 		"DOTA_Tooltip_ability_lc_qianggong_Note1"	"군단 사령관은 업그레이드시 하위 군단 사령관들의 중첩 수를 이어받습니다."
 		"DOTA_Tooltip_ability_zeus_thunder_Note1"	"짐꾼을 대상으로 하는 번개피해는 피해량 감소효과를 무시합니다."
 
@@ -2678,13 +2634,9 @@
 		"DOTA_Tooltip_ability_item_chihongjia_Lore"	"모두가 두려워하는 해수 괴물에 맞서고자 제작된 흉갑입니다."
 		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_Description"	"천갑검사가 목표지점에 돌진한 다음 빠르게 검을 몇번 휘둘러 향하는 방향에 있는 적을 모두 벱니다."
 		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_Lore"	"천갑검사의 검은 입에서 나오는 말보다 더 빠르게 움직입니다."
-		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_Note0"	"칼부림은 무기를 비롯한 특수 공격효과를 적용시킬 수 있습니다."
 		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_attack_interval"	"공격 간격"
 		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_end_radius"	"베기 범위"
 		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_strikes"	"타격"
-		"DOTA_Tooltip_ability_is_priest_Note0"	"1~7 짐꾼 피해: 로열 젤리"
-		"DOTA_Tooltip_ability_is_priest_Note1"	"8~17 짐꾼 피해: 목담과"
-		"DOTA_Tooltip_ability_is_priest_Note2"	"18이상 짐꾼 피해: 제자의 선물"
 		"DOTA_Tooltip_ability_winter_wyvern_cold_embrace_Description"	"아군을 차가운 얼음에 가두고 단단히 얼려 일정 체력을 회복시키고 추가로 매초 최대 체력의 일정 비율을 회복시킵니다.얼음에 갇힌 대상은 모든 물리피해로부터 면역이 되며 자신을 공격한 모든 적들의 공격속도를 둔화시킵니다."
 		"DOTA_Tooltip_ability_winter_wyvern_cold_embrace_attack_speed_reduce"	"적 공격속도 둔화"
 		"q001_title"	"저녁은 치킨이닭!"
@@ -2865,13 +2817,7 @@
 		"wl_golem"	"지옥불 골렘"
 		"DOTA_Tooltip_ability_vs_swap"	"황천의 이동술"
 		"DOTA_Tooltip_modifier_vs_swap_debuff"	"황천의 이동술"
-		"DOTA_Tooltip_ability_vs_swap_Description"	"무작위 적 유닛과 즉시 위치를 맞바꾸며 기절시키고 방어력을 약화시켜 주변의 아군 유닛들로 하여금 우선 순위로 공격하게 합니다."
-		"DOTA_Tooltip_modifier_vs_swap_debuff_Description"	"황천의 이동술 영향으로 기절하고 적에게 우선 순위로 공격받습니다."
-		"DOTA_Tooltip_ability_vs_swap_max_star"	"위치 교환 유닛 최대 클라스★"
-		"DOTA_Tooltip_ability_vs_swap_stun_duration"	"기절 지속시간"
-		"DOTA_Tooltip_ability_vs_swap_Lore"	"복수를 위해서라면 순교도 마다하지 않습니다."
-		"DOTA_Tooltip_ability_vs_swap_Note0"	"황천의 이동술은 정신 집중을 방해합니다."
-		"DOTA_Tooltip_ability_vs_swap_Note1"	"황천의 이동술은 유닛 자신보다 클라스★가 높은 유닛을 상대로 시전할 수 없습니다.동일 클라스의 유닛이 없을 시 에는 자신 보다 클라스가 낮은 유닛을 지정합니다."
+		
 		"DOTA_Tooltip_ability_wl_inferno"	"혼돈의 제물"
 		"DOTA_Tooltip_ability_wl_inferno_Lore"	"뎀녹은 자신의 공포나무 지팡이에 구속된 영혼을 해방시켜 적 진영에 재앙을 불러냅니다."
 		"DOTA_Tooltip_ability_wl_inferno_Description"	"심연에서 지옥불 골렘을 소환하여 주변의 적을 일정 시간동안 기절시키고 순수피해를 입힙니다.지옥불 골렘은 전장에서 적유닛이 전사할 시 일정 확률로 다른 지옥불 골렘 한마리를 추가로 소환합니다."
@@ -2900,7 +2846,7 @@
 		"DOTA_Tooltip_ability_item_jufengchangji"	"<font color=\"#d32ce6\">허리케인 창</font>"
 		"DOTA_Tooltip_ability_item_meiken_Lore"	"알 수 없는 방식으로 갖가지 부품을 완벽하게 끼워 맞춰 빛나는 보석을 만들어 냈습니다."
 		"DOTA_Tooltip_ability_item_weishijingjia_Lore"	"전능자를 기릴 목적으로 만들어진 여러 신성한 도구 중 하나입니다."
-		"DOTA_Tooltip_ability_item_jufengchangji_Description"	"+20% 마법 피해, +10 체력 재생, +5 공격력, +5 공격속도, 전투 시작 시 40 마나를 획득합니다.\n원거리 유닛 착용 시 <font color=\"#d9534f\">드워프</font>로 변장됩니다.\n<h1>반격 시전: 근접 공격을 받을시 시전</h1>주변의 적 근접 유닛을 자신으로 부터 가장 멀리 떨어진 곳으로 밀쳐냅니다.착용유닛이 원거리일 시 상대유닛한테 5번의 사거리를 무시하는 공격을 가합니다.<br>재사용 대기시간: <span class=\"GameplayValues GameplayVariable\">15</span>초"
+
 		"DOTA_Tooltip_ability_item_jufengchangji_Lore"	"한떄 고대 비룡 기수가 왕실의 인장처럼 들던 전설의 창입니다."
 		"DOTA_Tooltip_modifier_item_jufengchangji_buff"	"허리케인 창"
 		"DOTA_Tooltip_modifier_item_jufengchangji_buff_Description"	"공격시 사거리를 무시합니다."
@@ -2957,11 +2903,10 @@
 		"DOTA_Tooltip_ability_item_relicbox_Description"	"<h1>사용 효과</h1>무작위 성물 3개 중 하나를 선택하여 획득할 수 있습니다.\n"
 		"DOTA_Tooltip_ability_item_relicbox_Note0"	"이미 장착한 성물은 다음 성물 획득 라운드가 끝나면 해지됩니다."
 		"DOTA_Tooltip_ability_item_relicbox_Note1"	"성물은 한개만 장착 가능하고 중복 획득 시 기존의 성물을 대체합니다."
-		"DOTA_Tooltip_ability_item_more_interest_Description"	"보유 골드 이자 상한가 7 으로 변경."
 
 		"DOTA_Tooltip_ability_item_upgrade_roll_Description"	"체스말 구매 시 유닛 생성 확률 +Lv.1(짐꾼)"
 		"DOTA_Tooltip_ability_item_double_io_Description"	"체스말 구매 시 이오 생성 확률 ×5."
-		"DOTA_Tooltip_ability_item_conceal_prepare_Description"	"전투 시작 전 체스말 유닛 은닉, 25% 확률로 짐꾼 피해 회피."
+
 		"DOTA_Tooltip_ability_item_free_ban_Lore"	"from: 성물 상자"
 		"DOTA_Tooltip_ability_item_free_ban_Description"	"원하는 종족/직업 무료 차단."
 		"notice_chess_destroyed"	"이/가 독점계약으로 인하여 유닛풀에서 제외됩니다."
@@ -3016,14 +2961,12 @@
 		"DOTA_Tooltip_ability_item_second_chance_Lore"	"from: 성물 상자"
 		"DOTA_Tooltip_ability_item_vampiric_embrace_Lore"	"from: 성물 상자"
 		"DOTA_Tooltip_ability_item_mangotree_Lore"	"from: 성물 상자"
-		"DOTA_Tooltip_ability_item_mangotree_Description"	"체스판 주변에 망고나무 한 그루를 심습니다.<br>홈그라운드 전투결과가 전 라운드와 상이할 시 망고 한개를 수확합니다."
 		"DOTA_Tooltip_ability_item_atuosi_Lore"	"부패의 군주 에이토스는 이 믿을 수 없을 정도로 단순한 지팡이에 그의 정수를 담았습니다."
 		"DOTA_Tooltip_ability_item_fulingsuo_Lore"	"고대 악을 억제할 수 있도록 불가능한 방법으로 벼려낸 속박입니다."
 		"DOTA_Tooltip_modifier_item_fulingsuo_debuff"	"신령한 족쇄"
 		"DOTA_Tooltip_modifier_item_fulingsuo_debuff_Description"	"이동 불가"
 		"DOTA_Tooltip_modifier_item_atuosi_debuff_Description"	"이동 불가"
 		"DOTA_Tooltip_modifier_item_atuosi_debuff"	"에이트스의 마법봉"
-		"DOTA_Tooltip_ability_item_more_interest_Description"	"보유 골드 40 초과 시 10 골드당 추가 이자 2 골드 획득."
 		"DOTA_Tooltip_ability_item_mangguo_Description"	"<h1>사용 효과</h1>즉시 1~짐꾼레벨에 해당되는 골드 및 경험치를 무작위로 획득합니다."
 		"q033_title"	"성물: 선장 그린스킨의 보물"
 		"q033"	"성물 상자에서 성물: 선장 그린스킨의 보물을 선택하고 탑3 달성"
@@ -3258,8 +3201,6 @@
 		"round_relic_line7"	"● 전부 클리어시: 성물 상자 획득"
 		"round_cloud_line6"	" "
 		"b203"	"가라앉은 사원"
-		"tips_image_close_panel_lootbox"	"진행중인 전리품 선택을 포기합니다."
-		"text_confirm_close_panel_lootbox"	"전리품 선택을 포기하시겠습니까?"
 		"DOTA_Tooltip_ability_item_more_creep"	"<font color=\"#ade55c\">백수 행진</font>"
 		"item_more_creep"	"백수 행진"
 		"DOTA_Tooltip_modifier_more_creep"	"백수 행진"
@@ -3274,8 +3215,7 @@
 		"localization_tips"	"=========以下为更新的描述,狗头人每组改为了每种,复制一个★★★移动到了米波技能的描述里========="
 		"DOTA_Tooltip_ability_poof"	"뿅뿅"
 		"DOTA_Tooltip_ability_poof_Description"	"미포는 ★★★조합 시 자신의 복제를 하나 소환합니다.\n미포는 대지에서 신비한 힘을 끌어내어 적의 위치로 순간이동 할 수 있으며 도착 지점 주변의 적에게 <font color=\"#d8af54\">순수 피해</font>를 줍니다."
-		"DOTA_Tooltip_ability_is_shaman_Note1"	"주술로 인하여 변이된 아군 유닛은 20초동안만 지속하며 지속시간이 끝나면 소멸됩니다."
-		"DOTA_Tooltip_ability_is_shaman_Note2"	"(4)주술사 주술 효과는 지속시간이 있는 유닛한테는 적용되지 않습니다."
+
 		"text_combinable_box"	"조합 가능 아이템"
 		"text_mima_no_combinable_item"	"조합 가능 아이템이 없습니다."
 		"DOTA_Tooltip_ability_item_suggest_liuju"	"조기 종료 투표하기"
@@ -3313,11 +3253,11 @@
 		"DOTA_Tooltip_ability_is_nraqi_Lore"	"느라키는 얼굴없는 자 라고도 불리는 고대 신이 창조한 두 종족 중 하나입니다.교활하고 높은 지능을 가진 이들은 고대 신을 향한 경건한 숭배를 항상 드러냅니다."
 		"DOTA_Tooltip_ability_is_tauren_Description"	"<h1>종족 특성: 높은산 토템</h1><font color=\"#656585\">아군 필드에 서로 다른 타우렌 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 타우렌: 전투 시작 시 허수아비 토템 1 개를 소환합니다.<br>(4) 타우렌: 전투 시작 시 딱따구리토템 1 개 및 우각토템 1개를 소환합니다."
 		"DOTA_Tooltip_ability_is_tauren_Lore"	"평화를 사랑하는 타우렌은 오랜 세월 다다대륙의 척박한 고산지대에서 거주해왔습니다.그들은 대지모신의 명에 따라 자연의 균형을 유지하며 살아가고 있습니다."
-		"DOTA_Tooltip_ability_is_undead_Lore"	"동부대륙에서 살아 있는 존재를 말살하려는 리치왕의 공격에 수많은 인간이 목숨을 잃었지만, 그들은 죽어서조차 리치 왕에게서 벗어날 수 없었습니다. 살해당한 인간들은 언데드로 되살아나 리치왕 군대의 일원이 되어, 한때 그들이 소중히 여긴 모든 것… 그리고 모든 이들과 끔찍한 전쟁을 치러야 했습니다."
+
 		"DOTA_Tooltip_ability_is_orc_Description"	"<h1>종족 특성: 피의 격노</h1><font color=\"#656585\">아군 필드에 서로 다른 오크 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 오크: 모든 아군 유닛의 최대 체력이 +100 증가합니다.<br>(4) 오크: 모든 아군 유닛의 최대 체력이 +500 증가합니다.<br>(6) 오크: 모든 아군 유닛의 최대 체력이 +(현재 플레이어의 짐꾼 캐릭터가 손실한 체력×8) 증가합니다."
 		"DOTA_Tooltip_ability_is_orc_Lore"	"오크 종족은 오래전 라라라는 행성에서 다다섬으로 왔습니다. 주술적 신앙을 가지고 평화롭게 살아가던 종족이었으나 악마우두머리들에 의해 타락해버렸고 오랜 세월 끝에 악마들의 속박에서 벗어나 자유를 되찾은 오크는 지금까지도 자신들을 경멸하고 증오하는 이 낯선 세계에서 명예를 지키기 위해 투쟁하고 있습니다."
 		"DOTA_Tooltip_ability_is_naga_Lore"	"나가는 원래 엘프의 귀족신분이었으나 무분별한 마법의 사용으로 궁전이 심해로 침몰한 후 풀리지 않는 저주를 받아 바다괴물로 변해버렸습니다."
-		"DOTA_Tooltip_ability_is_goblin_Description"	"<h1>고블린: 생명의 갑옷</h1><font color=\"#656585\">아군 필드에 서로 다른 고블린 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 고블린: 무작위로 아군 유닛 1기의 방어력이 +15 증가하고 체력 재생이 +15 증가합니다.<br>(6) 고블린: 모든 아군 유닛의 방어력이 +15 증가하고 체력 재생이 +15 증가합니다."
+
 		"DOTA_Tooltip_ability_is_goblin_Lore"	"고블린은 본래 케케섬에 거주하던 정글 트롤의 노예로 지하광산채굴로 강제동원 되었지만 마법이 깃든 지하광물들을 접하면서 신속하게 지능력이 상승하였습니다."
 		"DOTA_Tooltip_ability_is_element_Lore"	"정령계의 원소들은 자신의 영토를 넓히기 위해 끊임없이 전쟁과 약탈을 반복하고 있습니다."
 		"DOTA_Tooltip_ability_is_dwarf_Lore"	"대담하고 용감한 드워프는 세계의 초창기에 티탄이 만들어 낸 살아 있는 돌 인간, 토석인에게서 유래한 유서 깊은 종족입니다."
@@ -3325,7 +3265,7 @@
 		"DOTA_Tooltip_ability_is_kobold_Description"	"<h1>종족 특성: 흩어지면 산다</h1><font color=\"#656585\">아군 필드에 서로 다른 코볼트 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(1) 코볼트: 아군 필드에 클라스(★)가 동일한 코볼트 유닛이 존재 시 모든 종류의 동일 클라스 개체를 보유한 유닛은 전투 시작과 동시에 자신들의 복제를 하나 소환합니다.<br>(2) 코볼트: 복제된 코볼트 유닛은 아이템효과도 같이 복제합니다."
 		"DOTA_Tooltip_ability_is_kobold_Lore"	"코볼트들은 깊은 산속 광산이나 동굴속에서 거주하며 체구가 작고 머리 위에 양초를 얹는것을 좋아합니다.\n종족 특성의 특수성으로 인하여 코볼트들은 [유닛 자동 조합]기능이 적용되지 않습니다."
 		"DOTA_Tooltip_ability_is_kobold_Note0"	"동일한 코볼트유닛수가 3기 이상일 시 복제효과를 받을 수 없습니다."
-		"DOTA_Tooltip_ability_is_ogre_Description"	"<h1>종족 특성:고리안 혈통</h1><font color=\"#656585\">아군 필드에 서로 다른 오거 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 오거: 아군 근접 유닛 사망시 아군 오거 최대 체력 +25%%,공격력 +25%%(최대 중첩:10회)"
+		
 		"DOTA_Tooltip_ability_is_ogre_Lore"	"고리안 제국의 오거들은 잔혹한 통치속에서 비전 마법과 무력으로 자신을 무장했습니다."
 		"DOTA_Tooltip_ability_is_god_Description"	"<h1>종족 특성: 독존</h1><font color=\"#656585\">아군 필드에 서로 다른 신 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 신: 모든 신 제외 종족 특성이 활성화 되지 않은 아군 유닛들의 스킬 재사용 대기시간이 50%% 감소합니다.<br>(4) 신: 모든 신 제외 종족 특성이 활성화 되지 않은 아군 유닛들의 스킬 재사용 대기시간이 50%% 감소합니다."
 		"DOTA_Tooltip_ability_is_god_Lore"	"만물의 조물주로 여겨지는 신명들은 용족한테 신의 힘을 선사한 후 민간세계로부터는 발길을 끊은듯 했으나 공허세력의 침범을 막기 위하여 또다시 나타났습니다."
@@ -3439,7 +3379,7 @@
 		"DOTA_Tooltip_modifier_is_demon_buff_plus"	"지옥의 힘"
 		"DOTA_Tooltip_modifier_is_demon_buff_plus_Description"	"모든 피해가 순수피해로 전환됩니다."
 		"DOTA_Tooltip_modifier_is_element_buff_plus_Description"	"일정 확률로 자신을 공격하는 적군 유닛 석화."
-		"DOTA_Tooltip_ability_is_element_Description"	"<h1>종족 특성: 정령의 기운</h1><font color=\"#656585\">아군 필드에 서로 다른 정령 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 정령: 모든 아군 정령이 자신에게 근접 공격을 가하는 적 유닛을 25%% 확률로 3초간 석화상태로 만듭니다.<br>(4) 정령: 모든 아군 유닛이 자신을 공격하는 적 유닛을 25%% 확률로 3초간 석화상태로 만듭니다."
+
 		"DOTA_Tooltip_ability_sniper_assassinate_Description"	"저격수가 적 체스 유닛을 목표로 지정하고, 짧은 시간동안 조준한 후 먼 거리에서 강력한 피해를 주는 탄환을 발사하여 큰 <font color=\"#a02d27\">물리피해</font>를 줍니다."
 
 		"DOTA_Tooltip_ability_is_centaur"	"켄타우로스"
@@ -3447,7 +3387,7 @@
 		"DOTA_Tooltip_ability_is_centaur_Lore"	"자연의 수호자 반신 드루이드의 장남 재타르와 4대 정령왕 중 대지의 어머니 테라제인의 딸 테라드라스의 결합으로 낳은 자식이 바로 켄타우로스들이었습니다. 하지만 희망과 축복의 덩어리여야 할 자식은 증오와 분노의 덩어리였고, 그 모습은 흉측하기 그지 없었고 성격도 난폭하였으며 공격적이였습니다."
 		"DOTA_Tooltip_ability_is_banned"	"차단"
 		"DOTA_Tooltip_ability_is_banned_Description"	"해당 체스말은 알수 없는 동방의 신묘한 힘의 저주로 인하여 잠시 유닛풀에서 제외되었습니다."
-		"DOTA_Tooltip_ability_is_dwarf_Description"	"<h1>종족 특성: 단단한 코륨 고글</h1><font color=\"#656585\">아군 필드에 서로 다른 드워프 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 드워프: 모든 아군 원거리 유닛들은 공격 사거리가 200 증가하고 적에게 가하는 모든 물리피해가 적으로부터 1 칸 거리당 10%% 늘어납니다."
+		
 		"txt_you_win"	"승리!"
 		"p110"	"수면 투침"
 
@@ -3476,10 +3416,7 @@
 
 		"DOTA_Tooltip_ability_is_mech_Description"	"메카 유닛은 자동수리능력 떄문에 받는 치유 및 체력 회복효과가 +50%% 증가합니다.\n<h1>직업 특성: 메탈 하트</h1><font color=\"#656585\">아군 필드에 서로 다른 메카 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 메카: 홈그라운드 전투에서 1기 이상의 아군 메카 유닛이 살아 남으면 끝내주는 발명을 1회 진행 합니다.<br>(6) 메카: 끝내주는 발명이 골든 끝내주는 발명으로 업그레이드 됩니다!"
 		
-		"DOTA_Tooltip_ability_is_hunter_Description"	"사냥꾼 유닛은 사정거리 내의 체력이 낮은 적군 유닛을 우선으로 공격합니다.\n<h1>직업 특성: 정조준 사격</h1><font color=\"#656585\">아군 필드에 서로 다른 사냥꾼 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 사냥꾼: 모든 아군 사냥꾼의 기본 공격력이 20 증가합니다.<br>(6) 사냥꾼: 모든 아군 사냥꾼의 기본 공격력이 40 증가하고 공격시 +50%% 확률로 반드시 적중합니다.<br>(9) 사냥꾼: 모든 아군 유닛의 기본 공격력이 80 증가하고 공격시 50%% 확률로 상대를 밀쳐냅니다."
-		
 		"DOTA_Tooltip_modifier_is_warrior_buff_plus_plus_Description"	"방어력이 증가하고 (현재 방어력x1.5)만큼의 순수피해를 적한테 반사합니다."
-		"DOTA_Tooltip_ability_is_demonhunter_Description"	"악마 사냥꾼은 적 악마들로 하여금 악마의 힘 피해가 공격대상의 마나를 회복시킬 수 없게 만듭니다.\n<h1>직업 특성: 영혼 분쇄</h1><font color=\"#656585\">아군 필드에 서로 다른 악마 사냥꾼 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 악마 사냥꾼: 모든 아군 악마 유닛이 같은 종류로 인식되고 동시에 적 악마로 인식됩니다.<br>(4) 악마 사냥꾼: 모든 아군 유닛이 악마로 인식되고 적에게 가하는 마법피해가 악마의 힘 피해로 전환됩니다."
 		
 		"DOTA_Tooltip_ability_item_lootbox_lv1"	"<font color=\"#eb4b4b\">전리품 상자 LV1</font>"
 		"DOTA_Tooltip_ability_item_lootbox_lv2"	"<font color=\"#eb4b4b\">전리품 상자 LV2</font>"
@@ -3550,9 +3487,7 @@
 		"item_xiaofu"	"오거 도끼"
 		"DOTA_Tooltip_ability_item_xiaofu"	"<font color=\"#5e98d9\">오거 도끼</font>"
 		"DOTA_Tooltip_ability_item_xiaofu_Description"	"+20%% 체력"
-		"item_tiaodao"	"점멸 단검"
-		"DOTA_Tooltip_ability_item_tiaodao"	"<font color=\"#5e98d9\">점멸 단검</font>"
-		"DOTA_Tooltip_ability_item_tiaodao_Description"	"<h1>즉시 시전:</h1>상대진영의 가장 멀리 떨어져있는 유닛근처로 순간이동하고 마나를 +20 회복합니다.<br><br>쵀대 점멸 거리: %max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+		
 
 		"item_jianrenqiu"	"인내의 반지"
 		"DOTA_Tooltip_ability_item_jianrenqiu"	"<font color=\"#5e98d9\">인내의 반지</font>"
@@ -3611,7 +3546,6 @@
 		
 		"item_tiaozhantoujin"	"도전의 두건"
 		"DOTA_Tooltip_ability_item_tiaozhantoujin"	"<font color=\"#4b69ff\">도전의 두건</font>"
-		"DOTA_Tooltip_ability_item_tiaozhantoujin_Description"	"+50%% 마법 저항력, +30 체력 재생"
 		"item_bkb"	"칠흑왕의 지팡이"
 		"DOTA_Tooltip_ability_item_bkb"	"<font color=\"#4b69ff\">칠흑왕의 지팡이</font>"
 		"DOTA_Tooltip_ability_item_bkb_Description"	"+20%% 공격력, +20%% 체력\n<h1>부상 시전:</h1>4초 동안 100%의 마법 저항력과 주문 면역 효과를 획득합니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 60"
@@ -3634,11 +3568,7 @@
 		"DOTA_Tooltip_ability_item_hongzhang_3"	"<font color=\"#d32ce6\">다곤 LV3</font>"
 		"DOTA_Tooltip_ability_item_hongzhang_4"	"<font color=\"#d32ce6\">다곤 LV4</font>"
 		"DOTA_Tooltip_ability_item_hongzhang_5"	"<font color=\"#e4ae39\">다곤 LV5</font>"
-		"DOTA_Tooltip_ability_item_hongzhang_1_Description"	"+20%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 400 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
-		"DOTA_Tooltip_ability_item_hongzhang_2_Description"	"+40%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 500 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 12"
-		"DOTA_Tooltip_ability_item_hongzhang_3_Description"	"+60%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 600 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 9"
-		"DOTA_Tooltip_ability_item_hongzhang_4_Description"	"+80%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 700 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 6"
-		"DOTA_Tooltip_ability_item_hongzhang_5_Description"	"+100%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 800 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 3"
+		
 		"item_silingshu"	"네크로 노미콘"
 		"DOTA_Tooltip_ability_item_silingshu"	"<font color=\"#4b69ff\">네크로 노미콘</font>"
 		"DOTA_Tooltip_ability_item_silingshu_2"	"<font color=\"#4b69ff\">네크로 노미콘</font>"
@@ -3662,20 +3592,19 @@
 		"DOTA_Tooltip_ability_item_kuangzhanfu_Description"	"+20 공격력, +20 체력 재생, +50%% 마나 획득\n대상 주변 1칸 범위에 부채꼴 모양으로 근접 공격 피해량의 30%% 에 해당하는 스플래시 피해를 입힙니다."
 		"item_huanyingfu"	"만타 도끼"
 		"DOTA_Tooltip_ability_item_huanyingfu"	"<font color=\"#d32ce6\">만타 도끼</font>"
-		"DOTA_Tooltip_ability_item_huanyingfu_Description"	"+250 체력, +20%% 공격속도, +100%% 마나 획득\n<h1>즉시 시전:</h1>10초 동안 유지되는 자신의 환영 두개를 불러냅니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
 		"item_linkenfaqiu"	"린켄의 구슬"
 		"DOTA_Tooltip_ability_item_linkenfaqiu"	"<font color=\"#d32ce6\">린켄의 구슬</font>"
-		"DOTA_Tooltip_ability_item_linkenfaqiu_Description"	"+250 체력, +20 체력 재생, +150% 마나 획득\n대상 지정 주문을 1 회 막아냅니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 3"
+
 		"item_bingyan"	"스카디의 눈"
 
 		"item_xuejingshi"	"혈석"
 
 		"item_xiwa"	"시바의 은총"
 		"DOTA_Tooltip_ability_item_xiwa"	"<font color=\"#d32ce6\">시바의 은총</font>"
-		"DOTA_Tooltip_ability_item_xiwa_Description"	"+10 방어력, +60%% 마법피해\n<h1>즉시 시전:</h1>차가운 기운을 내뿜어 4초 동안 주변 5칸 범위내 적들의 공격속도 -50%%, 받는 치유효과 -25%%<br><br>범위: %max_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 20"
+		
 		"item_dongchayandou"	"통찰의 파이프"
 		"DOTA_Tooltip_ability_item_dongchayandou"	"<font color=\"#d32ce6\">통찰의 파이프</font>"
-		"DOTA_Tooltip_ability_item_dongchayandou_Description"	"+30 체력 재생, +50%% 마법 저항력\n<h1>부상 시전:</h1>8초 동안 주변 아군유닛한테 +30 체력 재생, +30%% 마법 저항력 효과를 부여합니다<br><br>범위: %max_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
 		
 		"item_weishijingjia"	"수호자의 경갑"
 		"DOTA_Tooltip_ability_item_weishijingjia"	"<font color=\"#d32ce6\">수호자의 경갑</font>"
@@ -3684,7 +3613,6 @@
 
 		"item_fulingsuo"	"신령한 족쇄"
 		"DOTA_Tooltip_ability_item_fulingsuo"	"<font color=\"#d32ce6\">신령한 족쇄</font>"
-		"DOTA_Tooltip_ability_item_fulingsuo_Description"	"+15%% 공격력, +30%% 공격속도, +100%% 마나 획득\n공격시 20%% 확률로 최대 3명의 적에게 충전된 전류 발사,감전 피해 100\n<h1>즉시 시전:</h1>7초 동안 레벨이 가장 높은 적 유닛 주변 2칸 범위내의 모든 적 유닛을 휘감는 뿌리로 묶어두고 100 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
 		
 		"text_item_t5"	"T5 아이템"
 		"item_shengjian"	"신의 양날검"
@@ -3707,19 +3635,18 @@
 
 		"item_qiangxi"	"돌격 흉갑"
 		"DOTA_Tooltip_ability_item_qiangxi"	"<font color=\"#e4ae39\">돌격 흉갑</font>"
-		"DOTA_Tooltip_ability_item_qiangxi_Description"	"+15 방어력, +40%% 공격속도\n<h1>오라</h1>주변 아군 +5 방어력, +10%% 공격속도<br><br>범위: %max_distance%\n<h1>오라</h1>주변 적 방어력 -5, 공격속도 -10%%<br><br>범위: %max_distance%"
+		
 		"item_shuaxinqiu"	"재생의 구슬"
-		"DOTA_Tooltip_ability_item_shuaxinqiu"	"<font color=\"#e4ae39\">재생의 구슬</font>"
+		"DOTA_Tooltip_ability_item_shuaxinqiu"	"<font color=\"#d32ce6\">재생의 구슬</font>"
 		"DOTA_Tooltip_ability_item_shuaxinqiu_Description"	"+40 체력 재생, +100%% 마나 획득\n<h1>자동 시전:</h1>모든 대기중인 스킬과 아이템의 재사용 대기시간을 초기화 합니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 20"
 		"item_yangdao"	"바이스의 낫"
 		"DOTA_Tooltip_ability_item_yangdao"	"<font color=\"#e4ae39\">바이스의 낫</font>"
-		"DOTA_Tooltip_ability_item_yangdao_Description"	"+60%% 마법피해, +150% 마나 획득, +250 체력\n<h1>즉시 시전:</h1>8초 동안 레벨이 가장 높은 적 유닛을 귀여운 동물로 변이시킵니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
 		"item_baojunwangpao"	"폭군의 가운"
 		"DOTA_Tooltip_ability_item_baojunwangpao"	"<font color=\"#e4ae39\">폭군의 가운</font>"
 		"DOTA_Tooltip_ability_item_baojunwangpao_Description"	"+45%% 공격력, +30%% 마법저항력\n아군이 발동한 모든 버프류 종족/직업 특성을 획득합니다."
 		"item_shirenmozhimao"	"오거 투구"
 		"DOTA_Tooltip_ability_item_shirenmozhimao"	"<font color=\"#e4ae39\">오거 투구</font>"
-		"DOTA_Tooltip_ability_item_shirenmozhimao_Description"	"+80%% 체력, +30%% 마법저항력\n착용시 종족값이 <font color=\"#ffffff\">오거</font>로 변장됩니다."
 		"DOTA_Tooltip_ability_snapfire_lil_shredder_Description"	"<h1>자동 시전:</h1>베아트릭스가 모티머위에 장착된 더블 배럴 기관포를 발사하여 적들에게 기본 공격에 해당되는 <font color=\"#a02d27\">물리피해</font>를 주고 타격입은 적의 방어력을 감소시킵니다.(중첩가능) "
 
 		"text_icon_config"					"설정"
@@ -3773,14 +3700,7 @@
 		"text_icon_emotion_button_desc"		"이모티콘 박스가 오픈됩니다."
 		"text_emotion_box"					"이모티콘"
 
-		"DOTA_Tooltip_ability_is_warlock_Description"	"흑마법사 유닛은 전투 시작 시 20% 체력을 소모하여 40% 마나를 획득합니다.\n<h1>직업 특성: 영혼 착취</h1><font color=\"#656585\">아군 필드에 서로 다른 흑마법사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 흑마법사: 모든 아군 유닛한테 5%%의 생명력 흡수 효과가 부여됩니다.<br>(4) 흑마법사: 모든 아군 유닛한테 25%%의 생명력 흡수 효과가 부여됩니다.<br>(6) 흑마법사: 적 유닛 사망시 체력이 가장 낮은 아군 유닛은 해당 적 유닛의 50%% 최대체력과 현재마나를 흡수합니다."
-
-		"DOTA_Tooltip_ability_is_priest_Description"	"사제 유닛은 자신한테 접근해오는 적 유닛을 피해 이동합니다.\n<h1>직업 특성: 장막</h1><font color=\"#656585\">아군 필드에 서로 다른 사제 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 사제: 홈그라운드 전투에서 패배하면 공물을 하나 획득합니다."
-
-		"DOTA_Tooltip_ability_is_shaman_Note1"	"변이된 유닛은 30초동안 지속됩니다."
-
 		"DOTA_Tooltip_ability_item_xueji"	"<font color=\"#d32ce6\">핏빛 가시</font>"
-		"DOTA_Tooltip_ability_item_xueji_Description"	"+30 공격력, +10% 공격속도, +100% 마나획득\n공격시 10%% 확률로 2 배 피해\n<h1>즉시 시전:</h1>7초 동안 공격 범위내의 레벨이 가장 높은 적을 휘감는 뿌리로 묶어두고 사거리가 닿는 아군유닛으로 하여금 우선으로 공격하도록 합니다.속박된 적은 침묵 상태에 빠지고 받는 모든 공격피해가 2배의 치명타 피해로 적용됩니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
 
 		"DOTA_Tooltip_ability_item_wangchongtui"	"<font color=\"#d32ce6\">거미 다리</font>"
 		"DOTA_Tooltip_ability_item_wangchongtui_Description"	"점프 이동, +10 공격속도, +100%% 마나 획득\n착용 시 종족값이 <font color=\"#ffffff\">충</font>으로 변장되고 아군 감염효과의 무작위 소환풀로 추가됩니다.\n<h1>즉시 시전:</h1>5초 동안 레벨이 가장 높은 적 유닛을 휘감는 뿌리로 묶어둡니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
@@ -3797,13 +3717,9 @@
 		"DOTA_Tooltip_ability_item_yuanlifazhang"	"<font color=\"#5e98d9\">염동력 지팡이</font>"
 		"DOTA_Tooltip_ability_item_yuanlifazhang_Description"	"+20%% 마법피해, +10 체력 재생\n<h1>자동 시전:</h1>인근의 적 유닛을 자신으로 부터 가장 멀리 떨어진 곳으로 밀쳐내고 자신도 반대 방향으로 밀려나며 밀친 적의 마나를 20 강탈합니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
 
-		"DOTA_Tooltip_ability_item_shrink_meister_Description"	"다시 섞기 시 75%확률로 1골드만 소모하고 2레벨 낮은 유닛 생성풀을 사용합니다."
-
 		"DOTA_Tooltip_ability_item_upgrade_lootbox_Description"	"50%확률로 전리품 상자 아이템 레벨 +1."
 
 		"DOTA_Tooltip_ability_item_vampiric_embrace_Description"	"원정 승리 및 상대 짐꾼 피해 시 +40% 짐꾼 흡혈."
-
-		"DOTA_Tooltip_ability_item_more_creep_Description"	"전리품 라운드 및 성물 라운드 크립 수 ×2, 크립 최대체력 및 피해 -25%."
 
 		"DOTA_Tooltip_ability_item_more_reward_Description"	"원정 승리 시 4 경험치 획득, 연승 차단 및 플레이어 처치 시 추가 경험치 획득.(상금×2)"
 
@@ -3860,8 +3776,6 @@
 		"DOTA_Tooltip_ability_item_destroy_piece_Description"	"★★★체스말 유닛 보유시 해당 유닛과 동명인 모든 유닛을 유닛풀에서 제거하고 (현재 모든 플레이어가 보유중인 동명 유닛수×해당 유닛의 코스트×2) 에 해당되는 보너스 골드를 획득합니다."
 		"DOTA_Tooltip_ability_item_bench_contract_Description"	"플레이어의 벤치를 묘목으로 가득 채웁니다.매 라운드 시작 시 묘목의 판매가격은 75% 확률로 +1 골드 증가합니다.플레이어는 언제든지 묘목을 판매하여 벤치를 활성화 시킬 수 있습니다."
 
-		"DOTA_Tooltip_ability_is_naga_Description"	"<h1>종족 특성: 비늘 갑옷</h1><font color=\"#656585\">아군 필드에 서로 다른 나가 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 나가: 모든 아군 유닛의 마법 저항력이 +30%% 증가합니다.<br>(4) 나가: 모든 아군 유닛의 마법 저항력이 +40%% 증가합니다."
-
 		"DOTA_Tooltip_ability_is_elf_Description"	"<h1>종족 특성: 은폐</h1><font color=\"#656585\">아군 필드에 서로 다른 엘프 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 엘프: 모든 아군 엘프의 회피가 +30%% 증가합니다.<br>(6) 엘프: 모든 아군 유닛의 회피가 +30%% 증가합니다.<br>(9) 엘프: 모든 아군 유닛은 회피 성공시 환영 하나를 생성하여 적을 현혹합니다."
 
 		"DOTA_Tooltip_ability_is_nraqi_Description"	"<h1>종족 특성: 어둠의 속삭임</h1><font color=\"#656585\">아군 필드에 서로 다른 느라키 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(1) 느라키: 어둠의 속삭임이 현재 활성화된 유일한 종족/직업 특성일 시 모든 아군 유닛은 부정효과로부터 면역됩니다."
@@ -3869,9 +3783,6 @@
 		"item_longxin"	"타라스크의 심장"
 		"DOTA_Tooltip_ability_item_longxin"	"<font color=\"#e4ae39\">타라스크의 심장</font>"
 		"DOTA_Tooltip_ability_item_longxin_Description"	"점프 이동, +60%% 체력, +10 체력 재생\n<h1>오라</h1>범위내 모든 아군은 초당 착용 유닛 최대체력의 1.5%%에 해당되는 체력을 회복합니다.<br><br>범위: %max_distance%"
-
-		"DOTA_Tooltip_ability_is_demon_Description"	"<h1>종족 특성: 지옥의 힘</h1><font color=\"#656585\">아군 필드에 단일 종류의 악마가 존재할 때 발동합니다.</font><br><br>(1) 악마: 아군 악마 유닛의 모든 물리 피해가 115%의 순수피해로 전환됩니다."
-		"DOTA_Tooltip_modifier_is_demon_buff_Description"	"모든 물리 피해가 115%%의 순수피해로 전환됩니다."
 
 		"DOTA_Tooltip_ability_is_knight_Note0"	"신성 보호의 보호막은 50%%의 물리 및 마법피해를 막아줍니다."
 
@@ -3901,7 +3812,6 @@
 
 		"item_yonghengzhipan"		"영겁의 원반"
 		"DOTA_Tooltip_ability_item_yonghengzhipan"	"<font color=\"#d32ce6\">영겁의 원반</font>"
-		"DOTA_Tooltip_ability_item_yonghengzhipan_Description"	"+15%% 공격력, +20%% 체력, +30 물리 블로킹, 30%% 확률로 추가 30%% 물리 블로킹.\n<h1>부상 시전</h1>5초 동안 100%%의 마법 저항력과 주문 면역효과를 획득합니다.착용유닛이 사망할 위기에 처할 시에는 재사용 대기 여부와 상관없이 바로 한번 발동합니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 60"
 
 		"item_shenjingdun"				"거울 방패"
 		"DOTA_Tooltip_ability_item_shenjingdun"	"<font color=\"#e4ae39\">거울 방패</font>"
@@ -3916,18 +3826,15 @@
 
 		"item_sanchaji"	"삼지창"
 		"DOTA_Tooltip_ability_item_sanchaji"	"<font color=\"#d32ce6\">삼지창</font>"
-		"DOTA_Tooltip_ability_item_sanchaji_Description"	"+30 공격력, +40%% 마법피해\n공격시 10%% 확률로 2 배 피해\n착용 유닛은 공격시 최대 2 기의 동명 적 유닛한테 동시에 피해를 입히고 적 처치시 최대 2 기의 동명 적 유닛한테 최대체력의 30%%에 해당되는 순수피해를 입힙니다."
 
 		"DOTA_Tooltip_ability_item_xuejingshi"	"<font color=\"#d32ce6\">혈석</font>"
 		"DOTA_Tooltip_ability_item_xuejingshi_Description"	"+500 체력, +80 마나\n홈그라운드에서 적 유닛이 사망하면 20%% 확률로 1 회 충전됩니다.충전 포인트마다 착용 유닛의 마법피해가 10%% 증가합니다.\n착용 유닛이 전사하면 충전 포인트가 반감되고 범위내 모든 아군이 (소모된 충전 포인트x500)에 해당되는 최대체력과 (소모된 충전 포인트x50)에 해당되는 마나를 흡수합니다.<br><br>범위: %max_distance%"
 
 		"item_chihongjia"	"핏빛 수호"
 		"DOTA_Tooltip_ability_item_chihongjia"	"<font color=\"#d32ce6\">핏빛 수호</font>"
-		"DOTA_Tooltip_ability_item_chihongjia_Description"	"+250 체력, +20 체력 재생, +5 방어력\n50%% 확률로 +40 물리 블로킹(원거리), 50%% 확률로 +100 물리 블로킹(근접)\n<h1>부상 시전:</h1>8초 동안 주변 아군 유닛한테 50%% 확률로 +40 물리 블로킹(원거리), 50%% 확률로 +100 물리 블로킹(근접) 효과를 부여합니다<br><br>범위: %max_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
 
 		"item_xianfengdun"	"선봉 방패"
 		"DOTA_Tooltip_ability_item_xianfengdun"	"<font color=\"#4b69ff\">선봉 방패</font>"
-		"DOTA_Tooltip_ability_item_xianfengdun_Description"	"+250 채력, +20 체력 재생\n50%% 확률로 +40 물리 블로킹(원거리), 50%% 확률로 +100 물리 블로킹(근접)"
 
 		"DOTA_Tooltip_ability_dr_shooter_aura_Description"	"<h1>오라</h1>드로우 레인저는 뛰어난 사수재능으로 적으로부터 떨어져있는 아군 원거리 유닛들의 공격력을 늘려줍니다."
 
@@ -3944,8 +3851,6 @@
 		"DOTA_Tooltip_ability_smoke_screen_trigger"	"연막"
 		"DOTA_Tooltip_ability_smoke_screen_trigger_Description"	"<h1>전투의 함성: 전투 라운드 시작 전 시전</h1>리키는 주변에 적이 있으면 자신의 위치에 연막탄을 투척하고 아닐 시에는 자신의 가로대칭 방향에 투척합니다.연막탄 범위내의 적은 <font color=\"#5cb85c\">침묵</font>에 빠지고 <font color=\"#5cb85c\">실명</font>효과를 입습니다.(일정 확률로 공격 빗나감)"
 
-		"DOTA_Tooltip_ability_item_jixiezhixin_black_Description"	"<h1>사용 효과</h1>사용시 무료로 1회의 스페셜 다시 섞기가 진행됩니다.스페셜 다시 섞기는 해당 게임 유닛풀이아닌 짐꾼의 현재 레벨에 따른 백업 유닛풀에서 체스말 유닛들을 불러옵니다!"
-
 		"n404"		"아가님의 텔레포트"
 		"h153"		"미니해수♦Green"
 		"h282"		"미니해수♦Blue"
@@ -3955,8 +3860,6 @@
 		"DOTA_Tooltip_ability_is_aqir_Description"	"<h1>종족 특성: 감염</h1><font color=\"#656585\">아군 필드에 서로 다른 충 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 충: 아군 필드에서 감염된 동명 체스말을 보유한 유닛(충 제외) 사망 시 충 체스말 유닛 한기를 무작위로 소환합니다.<br>(4) 충: 아군 필드에서 감염된 동명 체스말을 보유한 유닛(충 포함) 사망 시 본체보다 1~2레벨 높은 충 체스말 유닛 한기를 무작위로 소환합니다."
 		"DOTA_Tooltip_ability_is_aqir_Note0"	"충은 지속시간이 존재하는 유닛을 감염시키지 않습니다."
 		"DOTA_Tooltip_ability_is_aqir_Note1"	"본체 유닛의 레벨이 높을수록 소환되는 충유닛의 레벨도 높아집니다.(2)충 소환되는 무작위 충유닛의 레벨은 동명 유닛중 레벨이 가장 높은 본체 유닛의 레벨과 일치하고 (4)충 소환되는 무작위 충유닛의 레벨은 동명 유닛중 레벨이 가장 높은 본체유닛의 레벨 +1~2에 해당됩니다."
-		
-		"DOTA_Tooltip_ability_is_shaman_Description"	"주술사 유닛은 스킬 시전시 마나가 25% 적게 소요됩니다.\n<h1>직업 특성: 사술</h1><font color=\"#656585\">아군 필드에 서로 다른 주술사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 주술사: 전투 시작 시 적 한명을 무작위 동레벨 유닛으로 변이시킵니다.<br>(4) 주술사: 전투 시작 시 모든 아군 주술사를 무작위 +2 레벨 유닛으로 변이시킵니다.<br>(6) 주술사: 모든 아군 주술사 유닛은 스킬 시전 후 무작위 +2 레벨 유닛으로 변이됩니다."
 		
 		"b201"	"바람골♦참나무 숲"
 		"text_mima_cannot_open_more_lootbox"		"전리품 선택 미지정"
@@ -3972,8 +3875,6 @@
 		"DOTA_Tooltip_ability_lion_voodoo"				"주술"
 		"DOTA_Tooltip_ability_lion_voodoo_Description" 	"무작위의 적군 유닛을 무해한 동물로 바꿔 놓습니다.변이상태에서는 공격하거나 능력 및 아이템을 사용할 수 없습니다."
 		"DOTA_Tooltip_ability_lion_voodoo_Lore"			"라스타는 종종 개구리로 변신하여 공연을 마치곤 했습니다.이제 그 민망함을 적이 느낄 차례입니다."
-
-		"DOTA_Tooltip_ability_is_undead_Description"	"<h1>종족 특성: 공포</h1><font color=\"#656585\">아군 필드에 서로 다른 언데드 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 언데드: 모든 적의 방어력이 3 감소합니다.<br>(4) 언데드: 모든 적의 방어력이 10 감소합니다.<br>(6) 언데드: 공포효과를 입은 적에게 처치당한 아군 유닛은 유령상태로 5초간 전장에 남아 전투를 지속할 수 있습니다."
 
 		"DOTA_Tooltip_ability_item_chishu_new_Description"	"<h1>사용 효과</h1>짐꾼 캐릭터의 체력을 무작위로 회복합니다.(1~7)"
 
@@ -3998,17 +3899,12 @@
 		"DOTA_Tooltip_ability_summon_hero_Note0"	"플레이어는 체스판위에 ★★★이 존재하는 유닛 및 이전 패널에서 구매하지 않은 유닛을 구매패널로 불러올 수 없습니다."
 
 		"DOTA_Tooltip_ability_bh_shuriken"				"인술 수리검"
-		"DOTA_Tooltip_ability_bh_shuriken_Description"	"현상금 사냥꾼은 최초 적 처치 시 보너스 골드를 획득합니다.\n체력이 가장 낮은 적 유닛에게 치명적인 수리검을 던져 <font color=\"#5a91cd\">마법 피해</font>를 주고 대상을 짧은 <font color=\"#5cb85c\">기절</font>에 빠뜨리며 1 레벨 낮은 <font color=\"#ffffff\">투척 수리검</font>을 체력이 가장 낮은 다음 적 유닛한테 튕깁니다."
+		
 		"DOTA_Tooltip_ability_bh_shuriken_Lore"			"산전수전을 다 겪은 곤다르이기에 절대로 거래에서 빈손으로 나오는 법이 없습니다."
 		"DOTA_Tooltip_ability_bh_shuriken_Note0"		"현상금 골드는 첫 킬 한정으로 한번씩만 획득가능하며 클라스가 업그레이드 되면 초기화 됩니다."
 		"DOTA_Tooltip_ability_bh_shuriken_gold_count"	"첫 킬 현상금"
 		"DOTA_Tooltip_modifier_bh_gold"					"현상금"
 		"DOTA_Tooltip_modifier_bh_gold_Description"		"첫 킬 시 보너스 골드 획득."
-
-		"DOTA_Tooltip_ability_is_mage_Description"	"마법사 유닛은 아군 필드에 1기의 아군 마법사 유닛 생존시 마나 회복이 +10% 증가합니다.최대 +50%.\n<h1>직업 특성: 주문의 메아리</h1><font color=\"#656585\">아군 필드에 서로 다른 마법사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 마법사: 모든 적 유닛의 마법 저항력이 33%% 감소합니다.<br>(6) 마법사: 모든 적 유닛의 마법 저항력이 33%% 감소합니다.<br>(9) 마법사: 모든 마법 피해를 입은 적군 유닛을 동결합니다.동결 지속시간은 유닛이 입은 마법피해가 많을수록 늘어납니다."
-
-		"DOTA_Tooltip_ability_is_beast_Description"	"<h1>종족 특성: 야생의 힘</h1><font color=\"#656585\">아군 필드에 서로 다른 야수 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 야수: 모든 아군 유닛의 공격력이 +15%% 증가합니다.(소환물 포함)<br>(4) 야수: 모든 아군 유닛의 공격력이 +30%% 증가합니다.(소환물 포함)<br>(6) 야수: 모든 아군 유닛은 매번 공격 시 영구적으로 타격대상의 물리저항력을 12%% 감소시킵니다.(소환물 포함)"
-
 
 		"season_s19"				"S19별에서 온 그대 시즌"
 		"badge_title_s19"			"휘장: S19별에서 온 그대 시즌"
@@ -4017,24 +3913,19 @@
 		"chess_tusk"	"얼음폭군☆"
 		"chess_tusk1"	"얼음폭군☆☆"
 		"chess_tusk11"	"얼음폭군☆☆☆"
-		"chess_bh"	"현상금 사냥꾼☆"
-		"chess_bh1"	"현상금 사냥꾼☆☆"
-		"chess_bh11"	"현상금 사냥꾼☆☆☆"
+
 		"chess_dw"	"흑버들☆"
 		"chess_dw1"	"흑버들☆☆"
 		"chess_dw11"	"흑버들☆☆☆"
-		"chess_vs"	"복수 혼령☆"
-		"chess_vs1"	"복수 혼령☆☆"
-		"chess_vs11"	"복수 혼령☆☆☆"
+		"chess_vs"	"복수 혼령★"
+		"chess_vs1"	"복수 혼령★★"
+		"chess_vs11"	"복수 혼령★★★"
 		"chess_bs"	"혈귀☆"
 		"chess_bs1"	"혈귀☆☆"
 		"chess_bs11"	"혈귀☆☆☆"
 		"chess_visage"	"비사지☆"
 		"chess_visage1"	"비사지☆☆"
 		"chess_visage11"	"비사지☆☆☆"
-		"chess_lion"	"라이온☆"
-		"chess_lion1"	"라이온☆☆"
-		"chess_lion11"	"라이온☆☆☆"
 		"chess_ok"	"전능기사☆"
 		"chess_ok1"	"전능기사☆☆"
 		"chess_ok11"	"전능기사☆☆☆"
@@ -4044,12 +3935,9 @@
 		"chess_lyc"	"늑대인간☆"
 		"chess_lyc1"	"늑대인간☆☆"
 		"chess_lyc11"	"늑대인간☆☆☆"
-		"chess_pa"	"유령 자객☆"
-		"chess_pa1"	"유령 자객☆☆"
-		"chess_pa11"	"유령 자객☆☆☆"
-		"chess_lich"	"리치☆"
-		"chess_lich1"	"리치☆☆"
-		"chess_lich11"	"리치☆☆☆"
+		"chess_lich"	"리치★"
+		"chess_lich1"	"리치★★"
+		"chess_lich11"	"리치★★★"
 		"chess_na"	"닉스 암살자☆"
 		"chess_na1"	"닉스 암살자☆☆"
 		"chess_na11"	"닉스 암살자☆☆☆"
@@ -4083,12 +3971,7 @@
 		"DOTA_Tooltip_ability_item_steal_chess_Description"	"플레이어가 홈그라운드에서 패배할 때마다 마술 카드를 한장 획득합니다.마술 카드는 이전 홈그라운드전투에서 패배한 상대 진영의 체스말 유닛들을 구매패널로 불러옵니다."
 		"DOTA_Tooltip_ability_item_magic_card_Description"	"<h1>사용 효과</h1>사용시 무료로 1회의 스페셜 다시 섞기가 진행됩니다.스페셜 다시 섞기는 이전 홈그라운드전투에서 패배한 상대 진영의 체스말 유닛들을 구매패널로 불러옵니다."
 
-		"DOTA_Tooltip_ability_is_warrior_Description"	"전사 유닛은 체력이 50%% 이하 시 강화 갑옷효과가 2배로 늘어납니다.\n<h1>직업 특성: 강화 갑옷</h1><font color=\"#656585\">아군 필드에 서로 다른 전사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 전사: 모든 아군 전사의 방어력이 +3 증가합니다.<br>(6) 전사: 모든 아군 유닛의 방어력이 +7 증가합니다.<br>(9) 전사: 모든 아군 유닛의 방어력이 +4 증가하고 물리 또는 마법피해를 입을시 (현재 방어력x1.5)만큼의 순수피해를 적한테 반사합니다."
-		"DOTA_Tooltip_ability_is_assassin_Description"	"암살자유닛은 전투 시작시 적진후방으로 점프하며 점프 후 적에게 가하는 첫 공격은 가능한 배수중 무작위의 치명타 피해를 입힙니다.\n<h1>직업 특성: 기습</h1><font color=\"#656585\">아군 필드에 서로 다른 암살자 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 암살자: 모든 아군 암살자들이 25%% 확률로 3배의 치명타 피해를 입힙니다.<br>(6) 암살자: 모든 아군 유닛들이 25%% 확률로 4배의 치명타 피해를 입힙니다.<br>(9) 암살자: 모든 아군 유닛이 적 처치시 기습 점프 효과를 획득합니다.기습 점프한 유닛은 가장 높은 배수의 치명타 피해를 입힙니다."
-
 		"DOTA_Tooltip_ability_is_wizard_Description"	"<h1>직업 특성: 창조</h1><font color=\"#656585\">아군 필드에 서로 다른 마도사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 마도사: 전투 시작 후 (4)개 이상의 체스말 유 닛을 필요로하는 종족/직업 특성의 발동 조건을 1개 줄여줍니다.<br>(4) 마도사: 전투 시작 후 아군 조합에 활성화된 마도사를 제외한 종족/직업특성이 하나뿐일 시 해당 시너지를 최대화 시킵니다."
-
-		"DOTA_Tooltip_ability_is_pandaman_Description"	"<h1>종족 특성: 호객</h1><font color=\"#656585\">아군 필드에 서로 다른 판다렌 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(1) 판다렌: 라운드 시작 시 10%% 확률로 아군 필드의 체스말 유닛과 종족이 동일한 유닛 또는 무작위 판다렌 유닛 한기를 벤치로 소환합니다.<br>(2) 판다렌: 라운드 시작 시 25%% 확률로 무작위 판다렌 유닛 한기를 벤치로 소환합니다.<br>(4) 판다렌: 라운드 시작 시 아군 필드의 모든 판다렌 유닛은 15%% 확률로 동명 판다렌 유닛 한기를 벤치로 소환합니다."
 
 		"DOTA_Tooltip_ability_is_knight_Description"	"옆자리 또는 인근 대각선 위치에 아군 기사가 배치된 기사는 전투 시작 시 강력한 보호막을 시전합니다.\n<h1>직업 특성: 신성 보호</h1><font color=\"#656585\">아군 필드에 서로 다른 기사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 기사: 모든 아군 기사는 3초 마다 30%% 확률로 강력한 보호막을 시전합니다.<br>(4) 기사: 모든 아군 유닛은 3초 마다 30%% 확률로 강력한 보호막을 시전합니다.<br>(6) 기사: 모든 아군 유닛은 3초 마다 20%% 확률로 강력한 보호막을 시전하고 보호막 획득 시 체력을 200 회복합니다."
 
@@ -4116,5 +3999,631 @@
 		"DOTA_Tooltip_ability_summon_hero_per_cost_3"			"（$3）%"
 		"DOTA_Tooltip_ability_summon_hero_per_cost_4"			"（$4）%"
 		"DOTA_Tooltip_ability_summon_hero_per_cost_5"			"（$5）%"
+
+		"h154"		"해서웨이♦Brown"
+		"h283"		"해서웨이♦Blue"
+		"h384"		"해서웨이♦Red"
+		"h479"		"해서웨이♦Black"
+
+		"badge_title_douyu202205_1"	"徽章：斗鱼棋圣♦金牌"
+		"badge_text_douyu202205_1"	"在斗鱼TV《刀塔自走棋》Crazy杯明星主播赛中获奖的棋手！"
+		"badge_title_douyu202205_2"	"徽章：斗鱼棋圣♦银牌"
+		"badge_text_douyu202205_2"	"在斗鱼TV《刀塔自走棋》Crazy杯明星主播赛中获奖的棋手！"
+		"badge_title_douyu202205_3"	"徽章：斗鱼棋圣♦铜牌"
+		"badge_text_douyu202205_3"	"在斗鱼TV《刀塔自走棋》Crazy杯明星主播赛中获奖的棋手！"
+
+		"dac_casual_1x8(xiuxian)"	"도타 오토체스 1×8 일반"
+		"dac_casual_1x8_ob(guanzhan)"	"도타 오토체스 1×8 일반(OB)"
+		"dac_ranked_1x8(tianti)"	"도타 오토체스 1×8 랭크"
+		"dac_ranked_1x8_bishop+(zhujiao)"	"도타 오토체스 1×8 랭크(비숍+)"
+		"dac_ranked_1x8_rook+(baolei)"	"도타 오토체스 1×8 랭크(룩+)"
+		"dac_ranked_1x8_king+(wanghou)"	"도타 오토체스 1×8 랭크(킹+)"
+		"dac_casual_1x8(xiuxian)_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영되지 않습니다.\n● 캔디를 획득할 수 있습니다.(퀴스트 보상 불포함)"
+		"dac_casual_1x8_ob(guanzhan)_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영되지 않습니다.\n● 캔디를 획득할 수 있습니다.(퀴스트 보상 불포함)\n● 최대 4명의 관전이 가능합니다."
+		"dac_ranked_1x8(tianti)_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영됩니다.\n● 캔디 및 패스 보상을 획득할 수 있습니다."
+		"dac_ranked_1x8_bishop+(zhujiao)_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영됩니다.\n● 캔디 및 패스 보상을 획득할 수 있습니다.\n● 플레이어 최저티어: 비숍1."
+		"dac_ranked_1x8_rook+(baolei)_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영됩니다.\n● 캔디 및 패스 보상을 획득할 수 있습니다.\n● 플레이어 최저티어: 룩1."
+		"dac_ranked_1x8_king+(wanghou)_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영됩니다.\n● 캔디 및 패스 보상을 획득할 수 있습니다.\n● 플레이어 최저티어: 킹."
+
+
+		"badge_title_shilianji"		"휘장: 십연승"
+		"badge_text_shilianji"		"영화《21》의 대사: winner winner,chicken dinner.는 도박 시작전 자신의 행운을 비는 주문비슷한 느낌입니다.도박장에서의 십연승은 말도 안되는 업정을 달성했다고 볼 수 있지요."
+
+		"pve_preparing"		"준비중"
+		"prepare_pvp"		"PREPARE"
+		"prepare_pve"		"전리품 라운드"
+
+		"chess_bh"	"현상금 사냥꾼★"
+		"chess_bh1"	"현상금 사냥꾼★★"
+		"chess_bh11"	"현상금 사냥꾼★★★"
+
+		"tips_title_image_close"			"숨기기"
+		"tips_image_close_panel_lootbox"	"진행중인 전리품 선택을 포기합니다."
+		"text_confirm_close_panel_lootbox"	"전리품 선택을 포기하시겠습니까?"
+
+		"tips_title_image_random"			"무작위 선택"
+		"tips_image_random_panel_lootbox"	"무작위로 전리품을 선택합니다."
+		"text_confirm_random_panel_lootbox"	"무작위로 선택하시겠습니까?"
+
+		"DOTA_Tooltip_ability_item_yuanxingxie"	"<font color=\"#4b69ff\">여행의 장화</font>"
+		"item_yuanxingxie"				"여행의 장화"
+		"DOTA_Tooltip_ability_item_yuanxingxie_Description"		"점프 이동.\n착용 유닛은 전투에서 생존 시 홈/어웨이 그라운드로 순간이동하여 전투에 참여합니다.\n<h1>자동 시전:</h1>타격 가능 범위내 가장 먼 적한테로 순간이동하고 마나를 +20 획득합니다.<br><br>범위: %max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
+		"DOTA_Tooltip_ability_is_element_Description"	"<h1>종족 특성: 정령의 기운</h1><font color=\"#656585\">아군 필드에 서로 다른 정령 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 정령: 모든 아군 정령이 자신에게 근접 공격을 가하는 적 유닛을 25%% 확률로 3초간 석화상태로 만듭니다.<br>(4) 정령: 모든 아군 유닛이 자신을 공격하는 적 유닛을 20%% 확률로 4초간 석화상태로 만듭니다."
+
+		"DOTA_Tooltip_ability_item_fulingsuo_Description"	"+15%% 공격력, +30%% 공격속도, +100%% 마나 획득\n공격시 20%% 확률로 최대 3명의 적에게 충전된 전류 발사,감전 피해 100\n<h1>즉시 시전:</h1>5초 동안 레벨이 가장 높은 적 유닛 주변 2칸 범위내의 모든 적 유닛을 휘감는 뿌리로 묶어두고 100 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
+		"DOTA_Tooltip_ability_item_xiwa_Description"	"+10 방어력, +60%% 마법피해\n<h1>즉시 시전:</h1>차가운 기운을 내뿜어 5초 동안 주변 5칸 범위내의 적한테 100 피해를 입히고 적들의 공격속도 -50%%, 받는 치유효과 -25%% <br><br>범위: %max_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 20"
+
+		"DOTA_Tooltip_ability_item_yangdao_Description"	"+60%% 마법피해, +100% 마나 획득, +250 체력\n<h1>즉시 시전:</h1>8초 동안 레벨이 가장 높은 적 유닛을 귀여운 동물로 변이시킵니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
+		
+
+		"DOTA_Tooltip_ability_is_warlock_Description"	"흑마법사 유닛은 전투 시작 시 20% 체력을 소모하여 40% 마나를 획득합니다.\n<h1>직업 특성: 영혼 착취</h1><font color=\"#656585\">아군 필드에 서로 다른 흑마법사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 흑마법사: 모든 아군 유닛한테 5%%의 생명력 흡수 효과가 부여됩니다.<br>(4) 흑마법사: 모든 아군 유닛한테 25%%의 생명력 흡수 효과가 부여됩니다.<br>(6) 흑마법사: 아군 유닛 사망시 체력이 가장 낮은 아군 흑마법사가 해당 유닛의 50%에 해당되는 최대 체력 및 현재 마나를 흡수합니다."
+
+		"DOTA_Tooltip_ability_is_shaman_Description"	"주술사 유닛은 스킬 시전시 마나가 25% 적게 수요됩니다.\n<h1>직업 특성: 사술</h1><font color=\"#656585\">아군 필드에 서로 다른 주술사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 주술사: 전투 시작 시 적 한명을 무작위 동레벨 유닛으로 변이시킵니다.<br>(4) 주술사: 전투 시작 시 모든 아군 주술사를 무작위 +2 레벨 유닛으로 변이시킵니다.<br>(6) 주술사: 모든 아군 주술사 유닛은 스킬 시전 후 무작위 +2 레벨 유닛으로 변이됩니다."
+		"DOTA_Tooltip_ability_is_shaman_Note1"	"변이된 유닛은 20초동안 전투를 지속합니다."
+		"DOTA_Tooltip_ability_is_shaman_Note2"	"(4)주술사 주술 효과는 지속시간이 있는 유닛한테는 적용되지 않습니다."
+		"DOTA_Tooltip_ability_is_shaman_Note0"	"주술사의 사술은 2.5초 동안 시전이 필요한 주문으로 차단 가능합니다.시전을 차단당한 주술사 유닛은 처음 부터 다시 주술을 시전합니다."
+
+		"DOTA_Tooltip_ability_item_sanchaji_Description"	"+30 공격력, +40%% 마법피해\n공격시 10%% 확률로 2 배 피해\n착용 유닛은 공격시 최대 2 기의 동명 적 유닛한테 동시에 피해를 입히고 적 처치시 최대 2 기의 동명 적 유닛한테 최대체력의 20%에 해당되는 순수피해를 입힙니다."
+
+		"DOTA_Tooltip_ability_bh_shuriken_Description"	"현상금 사냥꾼은 최초 적 처치 시 보너스 골드를 획득합니다.\n체력이 가장 낮은 적 유닛에게 치명적인 수리검을 던져 <font color=\"#5a91cd\">마법 피해</font>를 주고 대상을 짧은 <font color=\"#5cb85c\">기절</font>에."
+
+
+
+
+
+
+		"chess_viper"	"바이퍼☆"
+		"chess_viper1"	"바이퍼☆☆"
+		"chess_viper11"	"바이퍼☆☆☆"
+		"chess_pa"		"유령 자객★"
+		"chess_pa1"		"유령 자객★★"
+		"chess_pa11"	"유령 자객★★★"
+
+		"pve_rabbit"	"전장에 던져진 토끼"
+		"h284"			"불로약사"
+		"h155" 			"별 그대♦Green"
+		"h285" 			"별 그대♦Blue"
+		"h385" 			"별 그대♦Red"
+		"h480" 			"별 그대♦Yellow"
+		"h481" 			"별 그대♦Black"
+
+		"DOTA_Tooltip_ability_gyro_flak_cannon"					"대공포"
+		"DOTA_Tooltip_ability_gyro_flak_cannon_Description"		"공격 시 자이로콥터의 주포는 일정 시간동안 범위내의 적을 한꺼번에 공격하고 측면에 장착된 부포는 자신으로부터 가장 멀리 떨어진 적을 지속적으로 공격합니다."
+		"DOTA_Tooltip_ability_gyro_flak_cannon_max_attacks"		"지속 공격 횟수"
+		"DOTA_Tooltip_ability_gyro_flak_cannon_Lore"			"새롭게 개조한 자이로콥터는 무기를 넉넉하게 장착하여 360도 전방위 공격을 할 수 있습니다."
+
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike"		"혼돈의 가격"
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike_Description"	"혼돈 기사는 공격 시 일정 확률에 따라 각기 다른 힘으로 치명타를 가하고 아울러 피해의 일정 비율을 체력으로 <font color=\"#5cb85c\">흡수</font>합니다."
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike_chance"		"확률%: "
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike_crit_min"		"치명타 최소%: "
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike_crit_max"		"치명타 최대%: "
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike_lifesteal"		"치명타 흡혈%: "
+		"DOTA_Tooltip_ability_chaos_knight_chaos_strike_Lore"			"혼돈 기사는 넘치는 힘으로 아무리 두꺼운 갑옷이라도 꿰뚫고 자기에게 맞서는 자를 모두 뭉개버립니다."
+
+		"DOTA_Tooltip_ability_viper_corrosive_skin"					"독성 피부"
+		"DOTA_Tooltip_ability_viper_corrosive_skin_Description"		"바이퍼가 감염성 독극물을 내뿜어 자신을 공격하는 적 유닛에게 <font color=\"#5a91cd\">마법 피해</font>를 입히고 공격속도를 둔화합니다.뿜어져 나오는 산성 독극물은 바이퍼의 마법저항력을 상승시킵니다."
+		"DOTA_Tooltip_ability_viper_corrosive_skin_duration"				"중독 지속시간: "
+		"DOTA_Tooltip_ability_viper_corrosive_skin_bonus_attack_speed"		"공격속도 둔화%: "
+		"DOTA_Tooltip_ability_viper_corrosive_skin_damage"					"초당 마법피해: "
+		"DOTA_Tooltip_ability_viper_corrosive_bonus_magic_resistance"		"마법 저항력%: "
+		"DOTA_Tooltip_ability_viper_corrosive_skin_Lore"					"황천기룡을 공격하면 들고 있던 검과 방패가 그대로 부식되어 버리는 일도 많습니다."
+
+		"DOTA_Tooltip_ability_item_conceal_prepare_Description"		"전투 시작 전 체스말 유닛 은틱.플레이어의 짐꾼은 피해입을 시 다음 비 전리품 라운드에서 자신의 모습을 숨기고 전투단계를 건너뜁니다."
+		"DOTA_Tooltip_ability_item_more_interest_Description"		"보유 골드 40 초과 시 초과 골드 20 골드당 4골드의 추가 이자를 획득합니다."
+		"DOTA_Tooltip_ability_item_more_creep_Description"			"전리품 라운드 및 성물 라운드 크립 수 x2,크립 최대 체력 및 피해 -20%."
+
+		"DOTA_Tooltip_ability_invoke_Description"	"무작위 3종의 원소 속성을 조합하여 새로운 주문을 생성합니다.원소 속성은 주문을 시전한 후 다시 새롭게 조합됩니다.\n<h1>조합 주문</h1><font color=\"#ffffff\">전자기파</font>, <font color=\"#ffffff\">달구어진 영혼</font>, <font color=\"#ffffff\">활력</font>, <font color=\"#ffffff\">굉음 폭발</font>, <font color=\"#ffffff\">태양 강타</font>, <font color=\"#ffffff\">혼돈의 유성</font>, <font color=\"#ffffff\">회오리</font>"
+
+		"DOTA_Tooltip_ability_is_dwarf_Description"	"<h1>종족 특성: 단단한 코륨 고글</h1><font color=\"#656585\">아군 필드에 서로 다른 드워프 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 드워프: 모든 아군 원거리 유닛의 물리피해가 목표물로부터 1칸 거리당 10% 씩 늘어납니다."
+		"DOTA_Tooltip_modifier_is_dwarf_buff"					"단단한 코륨 고글"
+		"DOTA_Tooltip_modifier_is_dwarf_buff_Description"		"물리피해가 목표물로부터 1칸 거리당 10% 씩 늘어납니다."
+		"DOTA_Tooltip_modifier_is_dwarf_buff_plus"				"단단한 코륨 고글"
+		"DOTA_Tooltip_modifier_is_dwarf_buff_plus_Description"	"물리피해가 목표물로부터 1칸 거리당 10% 씩 늘어납니다."
+
+		"item_molongqiang"										"용의 장창"
+		"DOTA_Tooltip_ability_item_molongqiang"	"<font color=\"#5e98d9\">용의 장창</font>"
+		
+		"DOTA_Tooltip_modifier_invisible_to_enemy_Description"	"해당 체스말은 은닉상태인 관계로 상대 플레이어들한테 보여지지 않습니다."
+
+		"DOTA_Tooltip_ability_is_hunter_Description"	"사냥꾼 유닛은 사정거리 내의 체력이 낮은 적군 유닛을 우선으로 공격합니다.\n<h1>직업 특성: 정조준 사격</h1><font color=\"#656585\">아군 필드에 서로 다른 사냥꾼 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 사냥꾼: 모든 아군 사냥꾼의 기본 공격력이 25 증가하고 공격시 +50%% 확률로 반드시 적중합니다.<br>(6) 사냥꾼: 모든 아군 사냥꾼의 기본 공격력이 50 증가하고 공격시 +100%% 확률로 반드시 적중합니다.<br>(9) 사냥꾼: 모든 아군 유닛의 기본 공격력이 50 증가하고 공격시 50%% 확률로 상대를 2칸 밀쳐냅니다."
+
+		"DOTA_Tooltip_modifier_is_naga_buff_ability_resist"							"비늘 갑옷"
+		"DOTA_Tooltip_modifier_is_naga_buff_ability_resist_Description"				"스킬 피해 흡수."
+		"DOTA_Tooltip_modifier_is_naga_buff_plus_ability_resist"					"비늘 갑옷"
+		"DOTA_Tooltip_modifier_is_naga_buff_plus_ability_resist_Description"		"스킬 피해 흡수."
+
+		"DOTA_Tooltip_ability_item_qiangxi_Description"	"+10 방어력, +40%% 공격속도\n<h1>오라</h1>주변 아군 +10 방어력, +10%% 공격속도<br><br>범위: %max_distance%\n<h1>오라</h1>주변 적 방어력 -10, 공격속도 -10%%<br><br>범위: %max_distance%"
+
+		"DOTA_Tooltip_ability_is_beast_Description"	"<h1>종족 특성: 야생의 힘</h1><font color=\"#656585\">아군 필드에 서로 다른 야수 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 야수: 모든 아군 유닛의 공격력이 +15%% 증가합니다.(소환물 포함)<br>(4) 야수: 모든 아군 유닛의 공격력이 +30%% 증가합니다.(소환물 포함)<br>(6) 야수: 모든 아군 유닛은 매번 공격 시 영구적으로 타격대상의 물리저항력을 10%% 감소시킵니다.(소환물 포함)"
+	
+		"text_mima_no_target"		"대상부재"
+
+		"chess_ud"		"언다잉★"
+		"chess_ud1"		"언다잉★★"
+		"chess_ud11"	"언다잉★★★"
+
+		"DOTA_Tooltip_ability_ud_decay"							"부패"
+		"DOTA_Tooltip_ability_ud_decay_Description"				"언다잉이 아군 유닛 주변 적 유닛의 최대체력을 훔쳐 <font color=\"#d8af54\">순수피해</font>를 입히고 해당 아군유닛을 <font color=\"#5cb85c\">치유</font>합니다."
+		"DOTA_Tooltip_ability_ud_decay_radius"					"범위: "
+		"DOTA_Tooltip_ability_ud_decay_hp_per"					"최대체력 백분비: "
+		"DOTA_Tooltip_ability_ud_decay_damage"					"순수피해: "
+		"DOTA_Tooltip_ability_ud_decay_Lore"					"산 자의 힘은 그저 죽은 자에게 빌려온 것에 불과합니다."
+
+		"DOTA_Tooltip_ability_omniknight_guardian_angel"		"수호천사"
+		"DOTA_Tooltip_ability_omniknight_guardian_angel_Description"		"전능기사가 수호천사를 불러내어 주위 아군 유닛들이 <font color=\"#5cb85c\">물리피해</font>에 면역이 되게 합니다."
+		"DOTA_Tooltip_ability_omniknight_guardian_angel_duration"		"지속시간: "
+		"DOTA_Tooltip_ability_omniknight_guardian_angel_radius"			"반경: "
+		"DOTA_Tooltip_ability_omniknight_guardian_angel_Lore"			"모든 것을 보는 자가 퓨리스트의 친구를 위로 보호의 날개를 펼칩니다."
+
+		"DOTA_Tooltip_ability_item_xueji_Description"	"+30 공격력, +10% 공격속도, +100% 마나획득\n공격시 10%% 확률로 2 배 피해\n<h1>즉시 시전:</h1>6초 동안 공격 범위내의 레벨이 가장 높은 적을 휘감는 뿌리로 묶어두고 사거리가 닿는 아군유닛으로 하여금 우선으로 공격하도록 합니다.속박된 적은 <font color=\"#5cb85c\">침묵</font>상태에 빠지고 받는 모든 공격피해가 2배의 치명타 피해로 적용됩니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
+		"DOTA_Tooltip_ability_pangolier_swashbuckle_datadriven_Note0"	"칼부림은 특수 공격효과를 적용시킬 수 없습니다."
+
+		"DOTA_Tooltip_ability_is_priest_Description"	"<h1>직업 특성: 구원</h1><font color=\"#656585\">아군 필드에 서로 다른 사제 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 사제: 체스판에 투입된 유닛수가 모자랄 시 홈 그라운드 전투에서 패배하면 목담과를 하나 획득합니다.<br>(4) 사제: 모든 아군 사제는 전투 시작 후 자신보다 레벨이 높지 않은 적 유닛 한기를 정신 지배합니다.최대 지배 유닛수는 (짐꾼 레벨-체스판 투입 아군 유닛수)에 해당됩니다."
+
+		"DOTA_Tooltip_modifier_mind_control_debuff"		"정신 지배"
+		"DOTA_Tooltip_modifier_mind_control_debuff_Description"		"해당 체스말은 정신 지배된 상태입니다."
+
+		"DOTA_Tooltip_ability_is_goblin_Description"	"<h1>종족 특성: 생명의 갑옷</h1><font color=\"#656585\">아군 필드에 서로 다른 고블린 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 고블린: 무작위로 아군 유닛 1기의 방어력이 +10 증가하고 체력 재생이 +10 증가합니다.<br>(6) 고블린: 모든 아군 유닛의 방어력이 +10 증가하고 체력 재생이 +10 증가합니다."
+
+
+		"DOTA_Tooltip_ability_is_naga_Description"	"<h1>종족 특성: 비늘 갑옷</h1><font color=\"#656585\">아군 필드에 서로 다른 나가 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 나가: 모든 아군 유닛이 2겹의 방어막을 획득하며 매겹의 방어막은 15%의 스킬 피해를 흡수합니다.<br>(4) 나가: 모든 아군 유닛이 4겹의 3초마다 1겹씩 소실되는 방어막을 획득합니다.<br>(6) 나가: 방어막은 소실 시 폭발을 일으켜 주변 2칸 범위내의 적에게 (해당 웨이브에서 흡수한 피해 총량)마법피해를 입힙니다."
+		"DOTA_Tooltip_ability_is_naga_Note0"	"비늘 갑옷은 순수피해를 흡수할 수 없습니다."
+		"DOTA_Tooltip_ability_is_priest_Note1"		"지배당한 유닛은 변신하거나 지배유닛이 전사하면 정신 지배로부터 벗어날 수 있습니다."
+		"DOTA_Tooltip_ability_is_priest_Note2"		""
+
+		"DOTA_Tooltip_modifier_is_priest_buff"				"구원"
+		"DOTA_Tooltip_modifier_is_priest_buff_Description"	"체스판에 투입된 유닛수가 모자랄 시 홈 그라운드 전투에서 패배하면 목담과를 하나 획득합니다."
+
+		"DOTA_Tooltip_ability_item_molongqiang_Description"		"+20% 체력, +10% 공격속도.\n원거리 유닛 장착 시 공격 사거리 +200."
+		"DOTA_Tooltip_ability_item_molongqiang_Note0"			"사거리 증가효과 중첩 불가."
+
+		"DOTA_Tooltip_ability_item_linkenfaqiu_Description"	"+250 체력, +20 체력 재생, +150% 마나 획득\n대상 지정 주문을 1 회 막아냅니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 5"
+
+		"DOTA_Tooltip_ability_item_jufengchangji_Description"	"+20% 마법 피해, +10 체력 재생, +20% 체력, +10% 공격속도.\n원거리 유닛 장착 시 공격 사거리 +200.\n<h1>자동 시전</h1>인근의 적 유닛을 자신으로 부터 가장 멀리 떨어진 곳으로 밀쳐내고 자신도 반대 방향으로 밀려나며 밀친 적의 마나를 20 강탈합니다.원거리 유닛은 즉시 5회의 사거리를 무시하는 공격을 가합니다.재사용 대기시간:15초<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+		"DOTA_Tooltip_ability_item_jufengchangji_Note0"			"사거리 증가효과 중첩 불가."
+
+		"DOTA_Tooltip_ability_item_hongzhang_1_Description"	"+15%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 400 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+		"DOTA_Tooltip_ability_item_hongzhang_2_Description"	"+30%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 500 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 12"
+		"DOTA_Tooltip_ability_item_hongzhang_3_Description"	"+45%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 600 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 9"
+		"DOTA_Tooltip_ability_item_hongzhang_4_Description"	"+60%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 700 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 6"
+		"DOTA_Tooltip_ability_item_hongzhang_5_Description"	"+75%% 마법피해, +100% 마나 획득\n<h1>즉시 시전:</h1>무작위 적 한명에게 800 마법피해를 입힙니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 3"
+
+		"pve_wolf_small_a"	"회갈색 늑대"
+		"pve_wolf_small_b"	"새끼 늑대"
+
+		"chess_pangolier"		"천갑검사☆"
+		"chess_pangolier1"		"천갑검사☆☆"
+		"chess_pangolier11"		"천갑검사☆☆☆"
+
+		"text_season_event_ranking_world"	"전체 랭킹"
+		"text_season_event_ranking_friend"	"친구 랭킹"
+		"text_season_event_ranking_self"	"대전 기록"
+		"text_season_event_ranking_vip"		"패스"
+		"text_ranking_self_empty"	"관련 데이터가 없습니다.>_<"
+		"text_ranking_world_empty"	"관련 데이터가 없습니다.>_<"
+		"text_ranking_friend_empty"	"관련 데이터가 없습니다.>_<"
+		"text_ranking_vip_empty"	"관련 데이터가 없습니다.>_<"
+		"text_season_max_level"		"최고 랭크"	
+		"text_rank_match_count"		"매치수"	
+		"text_rank_chicken_count"	"우승 횟수"	
+		"text_rank_chicken_per"		"우승 확률"	
+		"text_ave_rank"				"평균 순위"
+		"text_test_match"			"테스트 매치"
+		"text_casual_match"			"캐주얼 캐치"
+		"just_now"					"방금"
+		"m_ago"						"분 전"
+		"h_ago"						"시간 전"
+		"d_ago"						"일 전"
+		"text_only_show_rank"		"랭크게임만 보기"
+		"text_favorite_chess"		"선호 유닛"
+		"invalid_chessboard_id"		"잘못된 체스판입니다."
+		"already_have"				"이미 보유한 상태입니다."
+		"activate_error"			"실패 >_<"
+
+		"DOTA_Tooltip_ability_is_ogre_Description"	"<h1>종족 특성:고리안 혈통</h1><font color=\"#656585\">아군 필드에 서로 다른 오거 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 오거: 모든 오거 체스말 유닛은 전투 시작 전 자신으로부터 상하좌우 4칸에 위치한 레벨이 자신보다 높지 않은 체스말 유닛을 집어삼켜 그들의 체력과 공격력을 흡수합니다."
+		"DOTA_Tooltip_modifier_is_ogre_buff_Description"	"전투 시작 전 자신으로부터 상하좌우 4칸에 위치한 레벨이 자신보다 높지 않은 체스말 유닛을 집어삼켜 그들의 체력과 공격력을 흡수합니다."
+		"DOTA_Tooltip_ability_is_priest_Note0"		"정신 지배의 최대 지속시간은 10초입니다."
+
+		"DOTA_Tooltip_modifier_dazzle_bozang"							"얕은 무덤"
+		"DOTA_Tooltip_modifier_dazzle_bozang_Description"				"얕은 무덤의 축복을 받은 아군은 효과가 유지되는 한 결코 죽지 않습니다."
+		"DOTA_Tooltip_modifier_item_zhaohuanshenshi_buff"					"소환석"
+		"DOTA_Tooltip_modifier_item_zhaohuanshenshi_buff_Description"		"해당 유닛은 소환석의 축복을 받았습니다."
+		"DOTA_Tooltip_ability_vs_swap_Description"	"<h1>전투의 함성: 전투 라운드 시작 전 시전</h1>클라스가 자신과 같거나 낮은 무작위 적 유닛과 즉시 위치를 맞바꾸며 방어력을 약화시키고 해당 유닛으로 하여금 피해를 입을 시 마나를 회복할 수 없게 만듭니다."
+		"DOTA_Tooltip_ability_vs_swap_Note0"			"자신보다 클라스가 높은 유닛을 지정할 수 없습니다."
+		"DOTA_Tooltip_ability_vs_swap_Note1"			"황천의 이동술은 자신과 클라스가 같은 적 및 체력이 낮은 적을 우선으로 시전합니다."
+		"DOTA_Tooltip_ability_vs_swap_max_star"			"위치 교환 유닛 최대 클라스: "
+		"DOTA_Tooltip_ability_vs_swap_armor_bonus"		"방어력 감소: "
+		"DOTA_Tooltip_ability_vs_swap_armor_duration"	"지속시간: "
+
+		"item_tieyitoukui"			"굳은 의지의 투구"
+		"DOTA_Tooltip_ability_item_tieyitoukui"		"<font color=\"#5e98d9\">굳은 의지의 투구</font>"
+		"item_zhipeitoukui"			"지배자의 투구"
+		"DOTA_Tooltip_ability_item_zhipeitoukui"	"<font color=\"#4b69ff\">지배자의 투구</font>"
+		"item_tongyutoukui"			"대군주의 투구"
+		"DOTA_Tooltip_ability_item_tongyutoukui"	"<font color=\"#d32ce6\">대군주의 투구</font>"
+		"item_suiluchui"			"해골 파쇄기"
+		"DOTA_Tooltip_ability_item_suiluchui"	"<font color=\"#4b69ff\">해골 파쇄기</font>"
+		"item_dayunchui"			"심연의 검"
+		"DOTA_Tooltip_ability_item_dayunchui"	"<font color=\"#e4ae39\">심연의 검</font>"
+		"item_wuzhixiaomao"			"분별없는 깃털군모"
+		"DOTA_Tooltip_ability_item_wuzhixiaomao"	"<font color=\"#d32ce6\">분별없는 깃털군모</font>"
+		"DOTA_Tooltip_ability_item_tiaozhantoujin_Description"	"+50% 마법 저항력, +20 체력 재생."
+		"DOTA_Tooltip_ability_item_dongchayandou_Description"	"+50% 마법 저항력, +20 체력 재생.\n<h1>부상 시전:</h1>8초 동안 주변 아군 유닛한테 +30% 마법 저항력, +20 체력 재생효과를 부여합니다.<br><br>범위: %max_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
+		"DOTA_Tooltip_ability_item_shirenmozhimao_Description"	"+60% 체력, +10% 생명력 흡수, +15 물리 블로킹, +30% 마법 저항력.\n착용 유닛의 레벨이 2 상승하고 종족값이 <font color=\"#ffffff\">오거</font>로 변장됩니다."
+		"DOTA_Tooltip_ability_item_wuzhixiaomao_Description"	"+10% 생명력 흡수, +15 물리 블로킹, +30% 마법 저항력.\n착용유닛 레벨 +1."
+		"DOTA_Tooltip_ability_item_wuzhixiaomao_Note0"			"레벨 증가효과는 체스말 유닛한테만 적용됩니다."
+		"DOTA_Tooltip_modifier_item_wuzhixiaomao"					"분별없는 깃털군모"
+		"DOTA_Tooltip_modifier_item_wuzhixiaomao_Description"		"착용유닛 레벨 +1."
+		"DOTA_Tooltip_modifier_item_shirenmozhimao"					"오거 투구"
+		"DOTA_Tooltip_modifier_item_shirenmozhimao_Description"		"착용유닛 레벨 +2."
+		"DOTA_Tooltip_ability_item_pingguo"	"<font color=\"#d32ce6\">황금 망고</font>"
+		"DOTA_Tooltip_ability_item_pingguo_Lore"	"from: 망고나무"
+		"DOTA_Tooltip_ability_item_pingguo_Description"	"<h1>짐꾼이 치명 피해를 입으면 자동 사용</h1>해당 라운드에서 아군 짐꾼이 치사피해로부터 면역됩니다."
+		"DOTA_Tooltip_ability_item_mangguo_Lore"	"from: 망고나무"
+		
+		"DOTA_Tooltip_ability_item_tieyitoukui_Description"	"+15 물리 블로킹, +10% 생명력 흡수."
+		
+		"DOTA_Tooltip_ability_item_zhipeitoukui_Description"	"+100% 마나획득, +15 물리 블로킹, +10% 생명력 흡수.\n<h1>즉시 시전:</h1>지속 시간을 보유한 LV3 이하 적 유닛을 10초간 정신지배합니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 20"
+		"DOTA_Tooltip_ability_item_tongyutoukui_Description"	"+100% 마나획득, +15 물리 블로킹, +10% 생명력 흡수, +10 방어력.\n<h1>즉시 시전:</h1>지속 시간을 보유한 레벨이 착용 유닛의 레벨보다 높지 않은 적 유닛을 10초간 정신지배합니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 5"
+
+		"DOTA_Tooltip_ability_item_zhipeitoukui_Lore"	"죽은 강령술사의 무시무시한 머리방어구입니다."
+		"DOTA_Tooltip_ability_item_tongyutoukui_Lore"	"죽은 강령술사의 강력한 머리방어구입니다."
+		"DOTA_Tooltip_ability_item_dayunchui_Lore"	"나락의 통치자가 잃어버린 검으로 적의 영혼을 벱니다."
+		"DOTA_Tooltip_ability_item_suiluchui_Lore"	"정의로운 손에 쥐어지면 무시무시한 무기가 되는 이 망치는 적의 방어를 무너뜨릴 수 있으며 절대 과소평가할 수 없습니다."
+
+		"DOTA_Tooltip_ability_item_jixiezhixin_black_Description"	"<h1>사용 효과:</h1>무료로 1회의 스페셜 다시 섞기가 진행됩니다.스페셜 다시 섞기는 해당 게임 유닛풀이아닌 짐꾼의 현재 레벨에 따른 백업 유닛풀에서 체스말 유닛들을 불러옵니다!<br><br><img src='file://{images}/custom_game/chess_icon/chess_tusk.png'><img src='file://{images}/custom_game/chess_icon/chess_dw.png'><img src='file://{images}/custom_game/chess_icon/chess_gs.png'><img src='file://{images}/custom_game/chess_icon/chess_bs.png'><img src='file://{images}/custom_game/chess_icon/chess_visage.png'><img src='file://{images}/custom_game/chess_icon/chess_ok.png'><img src='file://{images}/custom_game/chess_icon/chess_lyc.png'><img src='file://{images}/custom_game/chess_icon/chess_viper.png'><img src='file://{images}/custom_game/chess_icon/chess_na.png'><br><br><img src='file://{images}/custom_game/chess_icon/chess_pangolier.png'><img src='file://{images}/custom_game/chess_icon/chess_dp.png'><img src='file://{images}/custom_game/chess_icon/chess_sven.png'>"
+
+		"h156"	"사막여우♦Gray"
+		"h286"	"사막여우♦Yellow"
+		"h386"	"사막여우♦Orange"
+		"h482"	"사막여우♦Red"
+		"h483"	"사막여우♦Black"
+
+		"DOTA_Tooltip_ability_item_xianfengdun_Description"	"+250 체력, +20 체력 재생.\n50% 확률로 +100 물리 블로킹(근접), 50% 확률로 +50 물리 블로킹(원거리)."
+		"DOTA_Tooltip_ability_item_chihongjia_Description"	"+250 체력, +20 체력 재생, +15 물리 블로킹, +10% 생명력 흡수.\n50% 확률로 +100 물리 블로킹(근접), 50% 확률로 +50 물리 블로킹(원거리).\n<h1>부상 시전: </h1>8초 동안 주변 아군 유닛한테 50% 확률로 +100 물리 블로킹(근접), 50% 확률로 +40 물리 블로킹(원거리) 효과를 부여합니다.<br><br>범위: %max_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
+
+		"DOTA_Tooltip_ability_item_suiluchui_Description"	"+15% 공격력, +10 방어력.\n근접 유닛은 20% 확률로 타격 시 대상을 3초간 기절시키고 원거리 유닛은 10% 확률로 타격 시 대상을 3초간 기절시킵니다."
+		"DOTA_Tooltip_ability_item_dayunchui_Description"	"+15% 공격력, +10 방어력, +250 체력, +20 체력 재생.\n50% 확률로 +100 물리 블로킹(근접), 20% 확률로 타격 대상 3초간 기절(근접), 50% 확률로 +50 물리 블로킹(원거리), 10% 확률로 타격 대상 3초간 기절(원거리).\n<h1>즉시 시전:</h1>가까이 있는 적 유닛 한기를 5초간 기절시키고 100 마법피해를 입힙니다.해당 효과는 스킬면역상태를 무시합니다!<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 20"
+
+		"season_s21"	"S21 Battlefield"
+		"badge_title_s21"		"S21 - Battlefield"
+		"badge_text_s21"		"Badge awarded to players with excellent performance in DAC Season 21."
+		"text_update" 	"update"	
+		"text_event" 	"event"	
+		"b206"			"R&D Battleground"
+		"chess_gs"		"그림스트로크☆"
+		"chess_gs1"		"그림스트로크☆☆"
+		"chess_gs11"	"그림스트로크☆☆☆"
+		"chess_lion"	"라이온★"
+		"chess_lion1"	"라이온★★"
+		"chess_lion11"	"라이온★★★"
+
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven"	                "마나 흡수"
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Description"	    "라이온의 최대 마나는 200 입니다. 지속 시전: 마나가 100 이하 시 일부 적 유닛의 마나를 흡수하여 자신의 마나를 회복합니다. 마나가 100 이상에 도달하면 자신의 마나를 일부 아군 유닛들한테 골고루 분배해줍니다."
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_drain_count"		"마나 흡수 유닛수: "
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_mana_per_second"	"초당 흡수 마나: "
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_duration"			"지속 시간: "
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_cd_reduce"			"재사용 대기시간 감소"
+		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Lore"		        "악마 마도사에게 자신보다 못한 마법사는 그저 마나를 회복하는 도구일 뿐입니다."
+
+		"DOTA_Tooltip_ability_is_demon_Description"	"<h1>종족 특성: 지옥의 힘</h1><font color=\"#656585\">아군 필드에 단일 종류의 악마가 존재할 때 발동합니다.</font><br><br>(1) 악마: 아군 악마 유닛의 모든 물리 피해가 순수피해로 전환됩니다. 같은 종류의 아군 악마유닛이 한종류 존재할 때마다 지옥의 힘 피해가 5% 증가합니다. "
+
+		"DOTA_Tooltip_ability_is_demonhunter_Description"	"악마 사냥꾼은 적 악마로 인식됩니다. \n<h1>직업 특성: 영혼 분쇄<font color=\"#656585\">아군 필드에 서로 다른 악마 사냥꾼 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 악마 사냥꾼: 모든 아군 악마 유닛이 같은 종류로 인식됩니다.<br>(4) 악마 사냥꾼: 모든 아군 유닛의 피해가 순수피해로 전환되며 공격대상의 마나를 회복시키지 않습니다."
+
+		"DOTA_Tooltip_modifier_is_demonhunter_buff"					"영혼 분쇄"
+		"DOTA_Tooltip_modifier_is_demonhunter_buff_Description"		"모든 아군 악마 유닛이 같은 종류로 인식됩니다."
+
+		"DOTA_Tooltip_modifier_is_demon_buff_Description"	"모든 물리 피해가 순수피해로 전환됩니다.같은 종류의 아군 악마유닛이 한종류 존재할 때마다 지옥의 힘 피해가 5% 증가합니다."
+
+
+		"DOTA_Tooltip_ability_item_mangotree_Description"	"체스판 주변에 망고나무 한 그루를 심습니다. <br>홈그라운드 전투결과가 전 라운드와 상이할 시 망고 한개를 수확합니다.망고나무는 9개의 망고 드랍 후 시들어 소멸하며 황금 망고 한개를 드랍합니다."
+		"DOTA_Tooltip_ability_item_shrink_meister_Description"	"다시 섞기 시 60%확률로 1골드만 소모하고 2레벨 낮은 유닛 생성풀을 사용합니다."
+
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven"					"운명의 비"
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven_Description" 		"대상 지역에 비를 내려 범위 안에 있는 아군을 치유합니다."
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven_Lore" 				"영적 세계와 대기를 섞어버림으로써 네리프는 단 하나의 현실을 왜곡하여 역설적 정렬을 이루어냅니다."
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven_radius"				"반경: "
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven_duration"			"지속시간: "
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven_hps"				"초당 치유: "
+		"DOTA_Tooltip_ability_oracle_rain_of_destiny_datadriven_tick_rate"			"치유 간격: "
+
+		"DOTA_Tooltip_ability_is_priest_Note0"		"정신지배상태는 최대로 9초동안 지속됩니다."
+
+		"DOTA_Tooltip_ability_eh_untouchable_aura"					"불가침"
+		"DOTA_Tooltip_ability_eh_untouchable_aura_Description"		"<h1>오라</h1>요술사가 적을 현혹하여 자신과 자신주변의 아군을 공격하는 적들의 공격속도를 둔화시킵니다."
+		"DOTA_Tooltip_ability_eh_untouchable_aura_Lore" 			"아이우시타를 공격한 대다수의 적들은 자신의 만행에 당황해합니다."
+		"DOTA_Tooltip_ability_eh_untouchable_aura_slow_attack_speed"	"공격 둔화: "
+		"DOTA_Tooltip_ability_eh_untouchable_aura_slow_duration"		"지속시간: "
+		"DOTA_Tooltip_ability_eh_untouchable_aura_radius"				"반경: "
+		"DOTA_Tooltip_modifier_modifier_untouchable_aura_buff"						"불가침"
+		"DOTA_Tooltip_modifier_modifier_untouchable_aura_buff_Description"			"해당 유닛 공격 시 공격속도가 둔화됩니다."
+		"DOTA_Tooltip_modifier_modifier_untouchable_aura_debuff"						"불가침"
+		"DOTA_Tooltip_modifier_modifier_untouchable_aura_debuff_Description"			"공격속도 둔화"
+
+		"text_ti11_countdown"			"예측마감까지 "
+		"ti11_countdown_expired"		"에측마감"
+		"day"							" 일"
+		"event_ti11_desc_title"			"예측 규칙"
+		"event_ti11_desc_desc"			"● 지지하는 팀을 선택하고 보유한 캔디로 예측에 참여합니다. \n● 플레이어는 오토체스 게임중 자신이 선택한 우승예측팀의 등장이펙트를 소유하게 되고 지지하는 팀이 탈락 시에는 해당 이펙트가 사라집니다. \n● 플레이어가 지지하는 팀이 탑3 달성 시 한정 짐꾼 캐릭터 주오♦레디언트를 획득합니다!\n● 플레이어가 지지하는 팀이 TI우승을 차지한다면 해당 팀의 우승 배당률에 비례되는 대량의 캔디를 보상받을 수 있습니다!"
+
+		"event_ti11_title"				"TI 예언자"
+		"event_ti11"					"TI 우승자예측이벤트!"
+		"text_ti11_countdown"			"예측마감까지 "
+		"text_ti11_1st"					"우승!"
+		"text_ti11_2nd"					"준우승!"
+		"text_ti11_3rd"					"3위!"
+		"text_ti11_dead_team"			"탈락"
+		"text_ti11_1st"					"우승!"
+		"text_ti11_2nd"					"준우승!"
+		"text_ti11_3rd"					"3위!"
+		"text_ti11_my_team"				"나의 팀"
+		"text_ti11_get_award"			"보상 받기"
+		"text_ti11_bet_candy"			"캔디 배팅"
+		"text_ti11_bet_rate"			"배당률"
+		"text_ti11_bet_candy_win"		"예상 캔디보상"
+		"text_ti11_bet_tbd"				"신비의 팀"
+		"text_ti11_bet_confirm"			"<candy>캔디를 사용하여 <team>팀을 지지하겠습니까?"
+		"text_ti11_bet_bet_success"		"예측 성공!"
+		"text_ti11_bet_bet_failed"		"예측 실패..."
+		"text_ti11_bet_tbd_desc"		"블라인드박스, 와일드 카드전이 끝난 후 발표"
+
+		"m109"			"유령 자객: 실패"
+		"m307"			"취권도사: 한잔해"
+		"m210"			"강령술사: 고질병 도짐"
+		"m406"			"캔디냠냠"
+		"m308"			"안보이지롱"
+		"m211"			"본체 피격"
+		"m110"			"악령: 의문"
+		"e327"			"수라단의 악장: 빛"
+		"e328"			"수라단의 악장: 밤"
+		"e418"			"용암문양"
+
+		"chess_ct"		"켄타우로스 전쟁용사★"
+		"chess_ct1"		"켄타우로스 전쟁용사★★"
+		"chess_ct11"	"켄타우로스 전쟁용사★★★"
+		"chess_mag"		"마그누스★"
+		"chess_mag1"	"마그누스★★"
+		"chess_mag11"	"마그누스★★★"
+		"DOTA_Tooltip_ability_is_centaur"	"켄타우로스"
+		"DOTA_Tooltip_ability_is_centaur_Lore"	"켄타우로스의 종족DNA는 사실 엄청 고귀합니다, 그들은 반신 드루이드의 장자 재타르와 대지의 어머니의 외동딸 테라드라스의 자식들입니다.하지만 그들 부족 전체는 매우 잔인하며 아주 강한 호전성과 공격성을 지니고 있습니다."
+		"DOTA_Tooltip_ability_is_centaur_Description"	"<h1>종족 특성: 돌격</h1><font color=\"#656585\">아군 필드에 서로 다른 켄타우로스 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(2) 켄타우로스: 모든 아군 켄타우로스 유닛은 전투 시작 후 적이 가장 밀집된 지점으로 돌격하며 통과한 적들을 기절시킵니다."
+		"DOTA_Tooltip_modifier_modifier_is_centaur_buff"			"돌격"
+		"DOTA_Tooltip_modifier_modifier_is_centaur_buff_Description"	"전투 시작 후 적이 가장 밀집된 지점으로 돌격하며 통과한 적들을 기절시킵니다."
+		"DOTA_Tooltip_ability_mag_reverse_polarity"					"극성 뒤집기"
+		"DOTA_Tooltip_ability_mag_reverse_polarity_Description"		"마그누스가 물질의 속성을 변경하여 가까이 있는 적을 모두 앞으로 모은 다음 강력한 내려찍기로 기절시키고 피해를 줍니다."
+		"DOTA_Tooltip_ability_mag_reverse_polarity_Lore"			"마그누스는 격렬하게 폭발하는 졸라크산의 힘으로 적과 싸웁니다."
+		"DOTA_Tooltip_ability_mag_reverse_polarity_radius"			"모으는 반경:"
+		"DOTA_Tooltip_ability_mag_reverse_polarity_stun_duration"	"기절 지속시간:"
+		"DOTA_Tooltip_ability_mag_reverse_polarity_stun_duration_step"	"거리당 추가 기절 지속시간:"
+		"DOTA_Tooltip_ability_mag_reverse_polarity_damage"			"마법피해:"
+		"DOTA_Tooltip_ability_ct_double_edge"						"양날의 검"
+		"DOTA_Tooltip_ability_ct_double_edge_Description"			"켄타우로스가 근접 범위에 강력한 공격을 가하여 자신과 대상,주위의 지역에 자신의 최대체력에 비례하는 마법피해를 입힙니다."
+		"DOTA_Tooltip_ability_ct_double_edge_Lore"					"전투의 열기가 고조되면 브래드워든은 잔인하게 공격하는 와중에 자기 자신에게 부수 피해를 주기도 합니다."
+		"DOTA_Tooltip_ability_ct_double_edge_damage_base"			"피해:"
+		"DOTA_Tooltip_ability_ct_double_edge_damage_per"			"최대체력 비례피해%:"
+		"DOTA_Tooltip_ability_ct_double_edge_radius"				"반경:"
+
+		"DOTA_Tooltip_ability_item_yonghengzhipan_Description"	"+15%% 공격력, +20%% 체력, +30 물리 블로킹, 30%% 확률로 추가 30%% 물리 블로킹.\n<h1>부상 시전</h1>3초 동안 100%의 마법 저항력과 주문 면역효과를 획득합니다.착용유닛이 사망할 위기에 처할 시에는 재사용 대기 여부와 상관없이 바로 한번 발동합니다.<br><br><img src='s2r: //panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 60"
+
+		"DOTA_Tooltip_ability_is_assassin_Description"	"암살자유닛은 전투 시작시 적진후방으로 점프하며 점프 후 적에게 가하는 첫 공격은 가능한 배수중 무작위의 치명타 피해를 입힙니다.\n<h1>직업 특성: 기습</h1><font color=\"#656585\">아군 필드에 서로 다른 암살자 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 암살자: 모든 아군 암살자들이 25%%의 확률로 3배의 치명타 피해를 입힙니다.<br>(6) 암살자: 모든 아군 암살자들이 25%%의 확률로 4배의 치명타 피해를 입힙니다.<br>(9) 암살자: 모든 아군 암살자들이 5%%의 확률로 5배의 치명타 피해를 입히고 적 처치시 기습 점프 효과를 획득합니다.기습 점프한 유닛은 가장 높은 배수의 치명타 피해를 입힙니다."
+
+		"DOTA_Tooltip_ability_is_centaur_banned"		"차단: 켄타우로스"
+		"DOTA_Tooltip_ability_is_centaur_banned_Description"	"해당 종족 또는 직업의 체스말 유닛을 구매패널로부터 차단하며 재클릭을 통해 해제할 수 있습니다."
+
+		"DOTA_Tooltip_ability_is_warrior_Description"	"전사 유닛은 체력이 50%% 이하 시 강화 갑옷효과가 2배로 늘어납니다.\n<h1>직업 특성: 강화 갑옷</h1><font color=\"#656585\">아군 필드에 서로 다른 전사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 전사: 모든 아군 전사의 방어력이 +3 증가합니다.<br>(6) 전사: 모든 아군 전사의 방어력이 +7 증가합니다.<br>(9) 전사: 모든 아군 유닛은 물리 또는 마법피해를 입을시 (현재 방어력x2)만큼의 순수피해를 적한테 반사합니다."
+
+		"DOTA_Item_Greevilhorn"		"그리빌뿔"
+		"DOTA_Item_Cotton_Dandy"		"솜사탕 미남"
+		"DOTA_Item_Taffied_Transport"		"쫀득한 수송"
+
+
+	
+		"DOTA_Tooltip_ability_is_undead_Description"	"<h1>종족 특성: 역병</h1><font color=\"#656585\">아군 필드에 서로 다른 언데드 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 언데드: 전투에 참여한 모든 비언데드 유닛은 역병에 감염됩니다: 최대 체력 -25%%.<br>(6) 언데드: 전투에 참여한 모든 비언데드 유닛은 역병에 감염됩니다: 최대 채력 -30%%.<br>(9) 언데드: 역병에 감염된 유닛은 사망 후 해골 병사로 부활하여 적을 위해 전투합니다."
+		"DOTA_Tooltip_ability_is_undead_Note0"			"해골 병사는 20초 지속됩니다. 근접 유닛은 망령 제왕으로, 원거리 유닛은 클링츠로 부활하며 클라스는 사망한 유닛과 동일하고 해당 유닛의 아이템효과를 물려받습니다."
+
+		"item_tiaodao"	"점멸 단검"
+		"DOTA_Tooltip_ability_item_tiaodao"	"<font color=\"#4b69ff\">점멸 단검</font>"
+		"DOTA_Tooltip_ability_item_tiaodao_Description"	"점프 이동.\n<h1>즉시 시전</h1>상대진영의 가장 멀리 떨어져있는 유닛근처로 순간이동하며 마나를 +30 회복합니다.<br><br>최대 점멸 거리: %max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
+		"item_liliangdatiaodao"		"압도적 점멸"
+		"DOTA_Tooltip_ability_item_liliangdatiaodao"	"<font color=\"#e4ae39\">압도적 점멸</font>"
+		"DOTA_Tooltip_ability_item_liliangdatiaodao_Description"	"+60%% 체력, 점프 이동. \n<h1>즉시 시전</h1>상대진영의 가장 멀리 떨어져있는 유닛근처로 순간이동하며 마나를 +30 회복하고 체력이 +30%% 증가합니다. <br><br>최대 점멸 거리: %max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
+
+		"item_minjiedatiaodao"		"신속 점멸"
+		"DOTA_Tooltip_ability_item_minjiedatiaodao"	"<font color=\"#e4ae39\">신속 점멸</font>"
+		"DOTA_Tooltip_ability_item_minjiedatiaodao_Description"	"+20%% 공격속도, +25%% 회피, 점프 이동. \n<h1>즉시 시전</h1>상대진영의 가장 멀리 떨어져있는 유닛근처로 순간이동하며 마나를 +30 회복하고 공격속도가 +30%% 증가합니다. <br><br>최대 점멸 거리: %max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
+
+		"item_zhilidatiaodao"		"비전 점멸"
+		"DOTA_Tooltip_ability_item_zhilidatiaodao"	"<font color=\"#e4ae39\">비전 점멸</font>"
+		"DOTA_Tooltip_ability_item_zhilidatiaodao_Description"	"+60%% 마법피해, 점프 이동. \n<h1>즉시 시전</h1>상대진영의 가장 멀리 떨어져있는 유닛근처로 순간이동하며 마나를 +30 회복하고 마법피해가 +30%% 증가합니다. <br><br>최대 점멸 거리: %max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
+
+		"DOTA_Tooltip_modifier_item_liliangdatiaodao_buff_show"		"압도적 점멸"
+		"DOTA_Tooltip_modifier_item_minjiedatiaodao_buff_show"		"신속 점멸"
+		"DOTA_Tooltip_modifier_item_zhilidatiaodao_buff_show"		"비전 점멸"
+		"DOTA_Tooltip_modifier_item_liliangdatiaodao_buff_show_Description"		"체력 증가(중첩 가능)."
+		"DOTA_Tooltip_modifier_item_minjiedatiaodao_buff_show_Description"		"공격속도 증가(중첩 가능)."
+		"DOTA_Tooltip_modifier_item_zhilidatiaodao_buff_show_Description"		"마법피해 증가(중첩 가능)."
+
+		"touch_mode_toolbar_title"		"터치모드 툴바"
+		"toggle_touch_mode"				"터치모드"
+
+		"DOTA_Tooltip_modifier_is_undead_buff"				"역병"
+		"DOTA_Tooltip_modifier_is_undead_buff_plus"			"역병"
+		"DOTA_Tooltip_modifier_is_undead_buff_plus_plus"	"역병"
+		"DOTA_Tooltip_modifier_is_undead_buff_Description"				"최대 체력 감소."
+		"DOTA_Tooltip_modifier_is_undead_buff_plus_Description"			"최대 체력 감소."
+		"DOTA_Tooltip_modifier_is_undead_buff_plus_plus_Description"	"사망 시 해골 병사로 부활."
+
+		"item_qizhashidoupeng"									"속임술사 망토"
+		"DOTA_Tooltip_ability_item_qizhashidoupeng"	"<font color=\"#4b69ff\">속임술사 망토</font>"
+		"DOTA_Tooltip_ability_item_qizhashidoupeng_Description"	"+25%% 회피, +30%% 마법저항력, 변이 및 정신지배 면역. \n착용 유닛은 전투 시작 전 자신을 은닉합니다. "
+
+		"item_kuanrongzhixue"									"지탱의 장화"
+		"DOTA_Tooltip_ability_item_kuanrongzhixue"	"<font color=\"#d32ce6\">지탱의 장화</font>"
+		"DOTA_Tooltip_ability_item_kuanrongzhixue_Description"	"점프 이동, +10 체력 재생, +25%% 회피, +30%% 마법저항력. \n착용 유닛은 전투 시작 전 자신을 은닉합니다. \n<h1>오라</h1>주변 아군 +20 초당 체력 재생, 변이 및 정신지배 면역. <br><br>범위: %max_distance%"
+
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence"						"돌풍"
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_Description"			"공기의 파장을 내보내어 적 유닛을 침묵에 빠뜨리고 밀쳐내며 <font color=\"#5a91cd\">마법피해</font>를 입힙니다."
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_Lore"		"트락젝스는 육탄전도 조용하게 치르기 좋아하기에 드로우 종족에 전해져 내려오는 기술을 이용하여 상대 마법사가 주문을 외지 못하게 입을 막습니다."
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_wave_speed"		"돌풍 속도:"
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_wave_width"		"돌풍 너비:"
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_silence_duration"		"침묵 지속시간:"
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_distance"			"돌풍 거리:"
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_blocks"			"밀치기 거리:"
+		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_damage"			"마법피해:"
+
+		"DOTA_Tooltip_ability_windrunner_shackleshot"						"올가미 투척"
+		"DOTA_Tooltip_ability_windrunner_shackleshot_Description"			"대상을 일직선상으로 뒤에 있는 적 유닛 또는 나무에 묶어 <font color=\"#5cb85c\">기절</font>시킵니다."
+		"DOTA_Tooltip_ability_windrunner_shackleshot_Lore"					"바람순찰자가 활을 다루는 기술은 매우 다양합니다.그중 하나는 두꺼운 밧줄이 달린 화살을 날려 도주하는 적의 발을 묶는것입니다."
+		"DOTA_Tooltip_ability_windrunner_shackleshot_fail_stun_duration"	"구속 실패 기절 지속시간:"
+		"DOTA_Tooltip_ability_windrunner_shackleshot_stun_duration"			"구속 성공 기절 지속시간:"
+		"DOTA_Tooltip_ability_windrunner_shackleshot_shackle_distance"		"속박 유효거리:"
+		"DOTA_Tooltip_ability_windrunner_shackleshot_shackle_angle"			"최대 각도:"
+
+		"DOTA_Tooltip_ability_is_mage_Description"	"마법사 유닛은 아군 필드에 1기의 아군 마법사 유닛 생존시 마나 회복이 +10% 증가합니다.최대 +50%.\n<h1>직업 특성: 주문의 메아리</h1><font color=\"#656585\">아군 필드에 서로 다른 마법사 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 마법사: 모든 적 유닛의 마법 저항력이 30%% 감소합니다.<br>(6) 마법사: 모든 적 유닛의 마법 저항력이 30%% 감소합니다.<br>(9) 마법사: 모든 마법 피해를 입은 적군 유닛을 동결합니다.동결 지속시간은 유닛이 입은 마법피해가 많을수록 늘어납니다."
+
+		"DOTA_Tooltip_ability_item_huanyingfu_Description"	"+250 체력, +20%% 공격속도, +100%% 마나 획득\n<h1>즉시 시전:</h1>10초 동안 유지되는 자신의 환영 두개를 불러냅니다.<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 20"
+
+		"DOTA_Tooltip_ability_is_undead_Lore"	"스컬지라고 불리우는 끔찍한 언데드 군대는 수많은 걸어다니는 시체, 육체를 떠난 영혼, 저주받은 필멸자와 다른 차원의 음험한 존재들로 구성되어 있습니다. 스컬지는 군단의 필연적인 침략에 앞서 전 세계에 걸쳐 공포를 퍼뜨리려는 유일한 목적으로 의해 만들어졌습니다."
+
+		"b207"			"아쿤다의 신전"
+
+		"chess_clinkz"		"클링츠✪"
+		"chess_clinkz1"		"클링츠✪✪"
+		"chess_clinkz11"	"클링츠✪✪✪"
+		"chess_snk"			"망령 제왕✪"
+		"chess_snk1"		"망령 제왕✪✪"
+		"chess_snk11"		"망령 제왕✪✪✪"
+
+		"DOTA_Tooltip_ability_skeleton_king_mortal_strike"						"필사의 일격"
+		"DOTA_Tooltip_ability_skeleton_king_mortal_strike_Description"			"망령 제왕이 쿨다운이 있는 공격 시 지속하여 보너스 피해를 줍니다."
+		"DOTA_Tooltip_ability_clinkz_searing_arrows_datadriven"					"불타는 화살"
+		"DOTA_Tooltip_ability_clinkz_searing_arrows_datadriven_Description"		"클링츠의 화살에 화염을 부여하여 추가 피해를 줍니다."
+		"DOTA_Tooltip_ability_clinkz_searing_arrows_datadriven_damage_bonus"				"보너스 피해량: "
+	
+
+		"item_xingyunguazhui"		"행운의 부적"
+		"DOTA_Tooltip_ability_item_xingyunguazhui"				"<font color=\"#5e98d9\">행운의 부적</font>"
+		"DOTA_Tooltip_ability_item_xingyunguazhui_Description"	"+25%% 회피, +50%% 마나 획득.\n착용 유닛의 종족/직업효과 발동 확률 +50%%."
+
+		"item_weixiuqiju"			"수리 공구"
+		"DOTA_Tooltip_ability_item_weixiuqiju"				"<font color=\"#4b69ff\">수리 공구</font>"
+		"DOTA_Tooltip_ability_item_weixiuqiju_Description"	"+50% 마법 저항력, +20 체력 재생, +15% 공격력.\n착용 유닛의 종족값이 <font color=\"#ffffff\">메카</font>로 변장되고 메카 효과 발동 시 해당 유닛이 홈그라운드 전투에서 살아 남으면 암흑 메탈 하트를 1개 획득합니다."
+
+		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_datadriven"	"번개 구슬"
+		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_datadriven_Description"	"폭풍령이 휘몰아치는 전류로 모습을 바꾸고 전장을 휩쓸며 충돌한 적에게 <font color=\"#5a91cd\">마법피해</font>를 줍니다.이동 거리 한칸당 스킬 피해가 즈악하며 <br>적 유닛 처치 시 스킬 재사용 대기시간이 초기화 됩니다."
+		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_datadriven_ball_lightning_move_speed"		"속도: "
+		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_datadriven_ball_lightning_aoe"			"피해 반경: "
+
+		"DOTA_Tooltip_ability_is_pandaman_Description"	"<h1>종족 특성: 호객</h1><font color=\"#656585\">아군 필드에 서로 다른 판다렌 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(1) 판다렌: 라운드 시작 시 7%% 확률로 아군 필드의 체스말 유닛과 다른 개체의 동일 종족 유닛 한기를 벤치로 소환합니다.<br>(2) 판다렌: 라운드 시작 시 아군 필드의 모든 판다렌 유닛은 10%% 확률로 동명 판다렌 유닛 한기를 벤치로 소환합니다."
+
+		"DOTA_Tooltip_ability_is_elf_Description"	"<h1>종족 특성: 은폐</h1><font color=\"#656585\">아군 필드에 서로 다른 엘프 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 엘프: 모든 아군 엘프의 회피가 +30%% 증가합니다.<br>(6) 엘프: 모든 아군 유닛의 회피가 +30%% 증가합니다.<br>(9) 엘프: 모든 아군 유닛은 회피 성공시 환영 하나를 생성하여 적을 현혹합니다."
+
+		"DOTA_Tooltip_ability_is_assassin_Description"	"암살자유닛은 전투 시작시 적진후방으로 점프하며 점프 후 적에게 가하는 첫 공격은 가능한 배수중 무작위의 치명타 피해를 입힙니다.\n<h1>직업 특성: 기습</h1><font color=\"#656585\">아군 필드에 서로 다른 암살자 체스말 (N)개가 존재할 때 발동합니다.</font><br><br>(3) 암살자: 모든 아군 암살자들이 20%%의 확률로 3배의 치명타 피해를 입힙니다.<br>(6) 암살자: 모든 아군 암살자들이 25%%의 확률로 4배의 치명타 피해를 입힙니다.<br>(9) 암살자: 모든 아군 암살자들이 5%%의 확률로 5배의 치명타 피해를 입히고 적 처치시 기습 점프 효과를 획득합니다.기습 점프한 유닛은 가장 높은 배수의 치명타 피해를 입힙니다."
+
+		"h290"		"호박신사♦Red"
+		"h291"		"호박신사♦Blue"
+		"h387"		"호박신사♦White"
+		"h484"		"호박신사♦Black"
+
+		"season_s23"			"S23릴리의 시즌"
+		"badge_title_s23"		"휘장: S23릴리의 시즌"
+		"badge_text_s23"		"《도타 오토체스》S23릴리의 시즌에서 눈부신 활약을 선보인 플레이어!"
+
+		"dac_candy_5_1x8"	"캔디쟁탈(5캔디)"
+		"dac_candy_5_1x8_desc"	"● 8명의 플레이어들이 모여서 최후의 승자를 가리는 싱글토너먼트모드입니다.\n● 해당 모드는 플레이어의 랭크점수가 반영되지 않습니다.\n● 게임에 참가한 플레이어는 5캔디의 입장료를 지불하고 순위에 따라 해당 매치 입장료의 대부분을 배당받습니다."
+		"text_casino_count"	"캔디보상 카운트"
+
+		"DOTA_Tooltip_ability_is_undead_Note0"			"체스말 유닛의 기본 체력과 보너스 체력은 모두 최대 체력 감소효과의 영향을 받습니다."
+		"DOTA_Tooltip_ability_is_undead_Note1"			"근접 유닛은 망령 제왕✪으로, 원거리 유닛은 클링츠✪로 부활하며 클라스는 사망한 유닛과 동일하고 해당 유닛의 아이템효과를 물려받습니다.해골 병사는 15초간 지속됩니다."
+
+		"DOTA_Tooltip_modifier_is_monk_buff"	"취권"
+		"DOTA_Tooltip_modifier_is_monk_buff_Description"	"일정 확률로 적을 즉시 처치합니다."
+		"DOTA_Tooltip_modifier_is_monk_buff_plus"	"취권"
+		"DOTA_Tooltip_modifier_is_monk_buff_plus_Description"	"일정 확률로 적 체력 반에 해당하는 피해를 입힙니다."
+
+		"DOTA_Tooltip_modifier_is_beast_buff_plus_plus_Description"	"추가 피해"
+		"DOTA_Tooltip_modifier_vs_swap_debuff"	"황천의 이동술"
+		"DOTA_Tooltip_modifier_vs_swap_debuff_Description"	"혼란"
+		"DOTA_Tooltip_modifier_siren_song_debuff"    "세이렌의 노래"
+		"DOTA_Tooltip_modifier_siren_song_debuff_Description"    "세이렌의 노래"
+		"DOTA_Tooltip_modifier_visage_grave_chill_buff" "무덤의 냉기"
+		"DOTA_Tooltip_modifier_visage_grave_chill_buff_Description" "공격속도 훔침"
+		"DOTA_Tooltip_modifier_gyro_flak_cannon_fire" "대공포"
+		"DOTA_Tooltip_modifier_gyro_flak_cannon_fire_Description" ""
+		"DOTA_Tooltip_modifier_gyro_flak_cannon" "대공포"
+		"DOTA_Tooltip_modifier_gyro_flak_cannon_Description" ""
+
+		"DOTA_Tooltip_modifier_untouchable_aura_buff" "불가촉"
+		"DOTA_Tooltip_modifier_untouchable_aura_buff_Description" "공격자 공격속도 둔화"
+
+		"DOTA_Tooltip_modifier_untouchable_aura" "불가촉"
+		"DOTA_Tooltip_modifier_untouchable_aura_Description" "공격자 공격속도 둔화"
+		"DOTA_Tooltip_modifier_clinkz_searing_arrows_datadriven" "불타는 화살"
+		"DOTA_Tooltip_modifier_clinkz_searing_arrows_datadriven_Description" "보너스 피해"
+		"DOTA_Tooltip_modifier_smoke_screen_debuff" "연막"
+		"DOTA_Tooltip_modifier_smoke_screen_debuff_Description" "공격 빛나감"
+
+		"DOTA_Tooltip_modifier_silence_debuff" "침묵"
+		"DOTA_Tooltip_modifier_silence_debuff_Description" "침묵"
+
+		"DOTA_Tooltip_modifier_queenofpain_sonic_wave_chaos_debuff" "혼란"
+		"DOTA_Tooltip_modifier_queenofpain_sonic_wave_chaos_debuff_Description" "혼란"
+
+		"DOTA_Tooltip_modifier_deafening_blast_disarm_datadriven" "무장해제"
+		"DOTA_Tooltip_modifier_deafening_blast_disarm_datadriven_Description" "무장해제"
+		"DOTA_Tooltip_modifier_invoker_tornado_datadriven_cyclone" "회오리"
+		"DOTA_Tooltip_modifier_invoker_tornado_datadriven_cyclone_Description" "회오리"
+		"DOTA_Tooltip_modifier_invoker_chaos_meteor_datadriven_burn_damage" "연소 피해"
+		"DOTA_Tooltip_modifier_invoker_chaos_meteor_datadriven_burn_damage_Description" "연소 피해"
+		"DOTA_Tooltip_modifier_yonghengzhipan_buff" "영겁의 원반"
+		"DOTA_Tooltip_modifier_yonghengzhipan_buff_Description" "영겁의 원반"
+		"DOTA_Tooltip_modifier_give_hudie_buff" "나비검"
+		"DOTA_Tooltip_modifier_give_hudie_buff_Description" "나비검"
+		"DOTA_Tooltip_modifier_item_minglingshu_debuff" "사자의 서"
+		"DOTA_Tooltip_modifier_item_minglingshu_debuff_Description" "사자의 서"
+		"DOTA_Tooltip_modifier_jurenzhijie_buff" "거인의 반지"
+		"DOTA_Tooltip_modifier_jurenzhijie_buff_Description" "거인의 반지" 
+		"DOTA_Tooltip_modifier_item_xueji_debuff" "핏빛 가시"
+		"DOTA_Tooltip_modifier_item_xueji_debuff_Description" "핏빛 가시"
+		"DOTA_Tooltip_modifier_item_weixiuqiju" "수리 공구"
+		"DOTA_Tooltip_modifier_item_weixiuqiju_Description" "수리 공구"
+		"DOTA_Tooltip_modifier_shenjingdun_buff" "거울 방패"
+		"DOTA_Tooltip_modifier_shenjingdun_buff_Description" "거울 방패"
+		"DOTA_Tooltip_modifier_item_linkenfaqiu_buff" "린켄의 구슬"
+		"DOTA_Tooltip_modifier_item_linkenfaqiu_buff_Description" "린켄의 구슬"
+
+
+		"text_season_event_ranking_vip"			"패스"
+		"text_season_event_ranking_quest"		"퀘스트"
+
+		"quest_award"			"퀘스트 보상"
+		"quest_ttl"				"제한 시간"
+
+		"vip_firstwin"			"오토체스 패스를 이용중인 플레이어는 매일 첫 번째 탑3 달성시 추가 보너스 캔디를 획득할 수 있습니다!"
+		"text_candy_added_limit_title"		"일간 보상"
+		"candy_added_limit_desc"			"탑3에 달성한 플레이어는 무작위 캔디를 획득할 수 있습니다, 일간 획득 가능 상한치는 10개입니다."
+
+		"text_casino_count_title"		"캔디쟁탈 보상"
+		"text_casino_count_desc"		"캔디쟁탈모드에서 5게임을 플레이한 플레이어는 추가 보너스 캔디를 획득할 수 있습니다."
+		"text_casino_count"				"캔디보상 카운트"
+
+		"text_casino_pool_title"		"본매치 캔디수익"
+		"text_casino_pool_desc"			"플레이어는 입장료를 지불하고 게임이 참여합니다. 입장권수익의 대부분은 해당 매치에서 순위 탑3를 기록한 플레이어들한테 배당됩니다."
+		"text_casino_candy_in"			"본매치 입장료"
+		"text_casino_candy_award"		"보상 전망"
+		"text_casino_rank"				"<rank>위"
+
+		"b303"			"잔잔첨탑♦하층"
+		"h388"			"옥토끼"
+
+		"text_test_match"			"클로징 베타 테스트"
+		"text_casual_match"			"캐주얼 매치"
+		"candy_match"				"캔디쟁탈"
+		"dac_candy_5_1x8"			"캔디쟁탈(5캔디)"
 	}
 }

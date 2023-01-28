@@ -109,6 +109,7 @@ function modifier_run:UpdateHorizontalMotion(me, dt)
             if me:IsStunned() ~= true and me:IsFrozen() ~= true then
                 me:SetAbsOrigin(GetGroundPosition(me:GetAbsOrigin() + self.vDirection * self.flHorizontalSpeed,me))
                 self.leap_traveled = self.leap_traveled + self.flHorizontalSpeed
+                me:FaceTowards(self.vTargetPosition)
             else
                 --眩晕或冰冻，不位移
 

@@ -1,0 +1,8 @@
+candy_5_1x8
+{
+	material materials/overviews/candy_5_1x8.vmat
+	pos_x -4224
+	pos_y 4592
+	scale 8.312
+}
+

@@ -87,6 +87,24 @@
 		"name"					"修修院"
 		"vmap"					"chessboard/chessboard13"
 	}
+	"b205"
+	{
+		"id"					"b205"
+		"name"					"天陨旦遗迹"
+		"vmap"					"chessboard/chessboard17"
+	}
+	"b206"
+	{
+		"id"					"b206"
+		"name"					"辉夜战场"
+		"vmap"					"chessboard/chessboard18"
+	}
+	"b207"
+	{
+		"id"					"b207"
+		"name"					"昆昆殿"
+		"vmap"					"chessboard/chessboard19"
+	}
 
 	"b301"
 	{
@@ -99,6 +117,12 @@
 		"id"					"b302"
 		"name"					"天地迷宫"
 		"vmap"					"chessboard/chessboard16"
+	}
+	"b303"
+	{
+		"id"					"b303"
+		"name"					"赞赞塔♦下层"
+		"vmap"					"chessboard/chessboard20"
 	}
 
 
