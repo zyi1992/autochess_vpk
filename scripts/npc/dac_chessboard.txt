@@ -105,6 +105,12 @@
 		"name"					"昆昆殿"
 		"vmap"					"chessboard/chessboard19"
 	}
+	"b208"
+	{
+		"id"					"b208"
+		"name"					"格格玛"
+		"vmap"					"chessboard/chessboard21"
+	}
 
 	"b301"
 	{

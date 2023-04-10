@@ -148,7 +148,7 @@
 			}
 			"shard_damage_pct"
 			{
-				"value"	"75"
+				"value"	"0"
 				"RequiresShard"	"1"
 			}
 		}
@@ -205,11 +205,12 @@
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilityChannelTime"	"2"
+		"AbilityCooldown"	"10 8 6"
 		"AbilityValues"
 		{
 			"total_damage"
 			{
-				"value"	"300 450 900"
+				"value"	"300 450 750"
 				"special_bonus_unique_keeper_of_the_light"	"+0"
 			}
 			"max_channel_time"	"2"
@@ -305,7 +306,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage_bonus"	"24 36 64"
+				"damage_bonus"	"30 50 90"
 				"LinkedSpecialBonus"	"special_bonus_unique_clinkz_1"
 			}
 		}
@@ -417,7 +418,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"125 150 200"
+				"damage"	"100 125 150"
 				"LinkedSpecialBonus"	"special_bonus_unique_leshrac_3"
 			}
 		}
@@ -588,6 +589,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityManaCost"	"100"
+		"AbilityCooldown"	"15 10 7.5"
 		"AbilityCastRange"	"9999"
 		"AbilityValues"
 		{
@@ -2820,8 +2822,6 @@
 				"OverrideAnimation"	"ACT_DOTA_DISABLED"
 				"States"	{}
 				"Properties"	{}
-				// "EffectName"	"particles/units/heroes/hero_legion_commander/legion_commander_duel_victory.vpcf"
-				// "EffectAttachType"	"follow_overhead"
 			}
 		}
 	}
@@ -2973,7 +2973,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"9"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"1"
@@ -2997,7 +2997,7 @@
 				"EffectAttachType"	"follow_overhead"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"7"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"9"
 				}
 				"EffectName"	"effect/zhanshi/1.vpcf"
 				"Passive"	"0"
@@ -3206,7 +3206,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"ModMaxHP"
-						"per"	"-30"
+						"per"	"-25"
 					}
 				}
 				"OnDestroy"
@@ -3216,7 +3216,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"ModMaxHP"
-						"per"	"30"
+						"per"	"25"
 					}
 				}
 			}
@@ -3548,21 +3548,7 @@
 						"chance"	"50"
 						"modifier"	"modifier_is_hunter_buff_jingzhun"
 					}
- 
-					// "Random"
-					// {
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"Target"	"CASTER"
-					// 			"ModifierName"	"modifier_is_hunter_buff_jingzhun"
-					// 		}
-					// 	}
-					// 	"Chance"	"50"
-					// }
 				}
-				
 			}
 			"modifier_is_hunter_buff_jingzhun"
 			{
@@ -3628,19 +3614,6 @@
 						"chance"	"100"
 						"modifier"	"modifier_is_hunter_buff_jingzhun_plus"
 					}
- 
-					// "Random"
-					// {
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"Target"	"CASTER"
-					// 			"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus"
-					// 		}
-					// 	}
-					// 	"Chance"	"50"
-					// }
 				}
 			}
 			"modifier_is_hunter_buff_jingzhun_plus"
@@ -3707,18 +3680,6 @@
 						"chance"	"50"
 						"modifier"	"modifier_is_hunter_buff_jingzhun_plus_plus"
 					}
-					// "Random"
-					// {
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"Target"	"CASTER"
-					// 			"ModifierName"	"modifier_is_hunter_buff_jingzhun_plus_plus"
-					// 		}
-					// 	}
-					// 	"Chance"	"50"
-					// }
 				}
 			}
 			"modifier_is_hunter_buff_jingzhun_plus_plus"
@@ -4023,7 +3984,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
-					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"10"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"15"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -4072,17 +4033,14 @@
 					// {
 					// 	"OnSuccess"
 					// 	{
-							"RunScript"
-							{
-								"Target"	"TARGET"
-								"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-								"Function"	"QiquWaibiao"
-								"duration"	"%duration"
-								"chance"	"%per"
-							}
-					// 	}
-					// 	"Chance"	"%per"
-					// }
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"QiquWaibiao"
+						"duration"	"%duration"
+						"chance"	"%per"
+					}
 				}
 			}
 		}
@@ -4130,18 +4088,15 @@
 					// {
 					// 	"OnSuccess"
 					// 	{
-							"RunScript"
-							{
-								"Target"	"TARGET"
-								"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-								"Function"	"QiquWaibiao"
-								"duration"	"%duration"
-								"ranged_enable"	"1"
-								"chance"	"%per"
-							}
-					// 	}
-					// 	"Chance"	"%per"
-					// }
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"QiquWaibiao"
+						"duration"	"%duration"
+						"ranged_enable"	"1"
+						"chance"	"%per"
+					}
 				}
 			}
 		}
@@ -4375,10 +4330,7 @@
 			{
 				"TextureName"	"wisp_overcharge"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					// "MODIFIER_PROPERTY_EVASION_CONSTANT"	"35"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
@@ -4391,7 +4343,7 @@
 	"is_god_buff"
 	{
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityTextureName"	"zuus_static_field"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -4399,11 +4351,11 @@
 		{
 			"modifier_is_god_buff"
 			{
-				"TextureName"	"zuus_static_field_alt1"
+				"TextureName"	"zuus_static_field"
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"33"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -4453,7 +4405,7 @@
 	"is_god_buff_plus"
 	{
 		"BaseClass"	"ability_datadriven"
-		"AbilityTextureName"	"zuus_static_field_alt1"
+		"AbilityTextureName"	"zuus_static_field"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -4461,11 +4413,11 @@
 		{
 			"modifier_is_god_buff_plus"
 			{
-				"TextureName"	"zuus_static_field_alt1"
+				"TextureName"	"zuus_static_field"
 				"IsDebuff"	"0"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
+					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"33"
 				}
 				"IsBuff"	"1"
 				"States"	{}
@@ -4489,10 +4441,7 @@
 			{
 				"TextureName"	"zuus_static_field_alt1"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					"MODIFIER_PROPERTY_COOLDOWN_PERCENTAGE"	"50"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
@@ -4519,10 +4468,7 @@
 			{
 				"TextureName"	"wisp_overcharge"
 				"IsDebuff"	"0"
-				"Properties"
-				{
-					// "MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
-				}
+				"Properties"	{}
 				"IsBuff"	"1"
 				"States"	{}
 				"Passive"	"1"
@@ -4806,20 +4752,6 @@
 						"modifier"	"modifier_is_knight_buff_2"
 						"duration"	"3"
 					}
-
-					// "Random"
-					// {
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"Target"	"CASTER"
-					// 			"Duration"	"3"
-					// 			"ModifierName"	"modifier_is_knight_buff_2"
-					// 		}
-					// 	}
-					// 	"Chance"	"30"
-					// }
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
@@ -4882,19 +4814,6 @@
 						"modifier"	"modifier_is_knight_buff_2_plus"
 						"duration"	"3"
 					}
-					// "Random"
-					// {
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"Target"	"CASTER"
-					// 			"Duration"	"3"
-					// 			"ModifierName"	"modifier_is_knight_buff_2_plus"
-					// 		}
-					// 	}
-					// 	"Chance"	"30"
-					// }
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
@@ -4957,19 +4876,6 @@
 						"modifier"	"modifier_is_knight_buff_2_plus_plus"
 						"duration"	"3"
 					}
-					// "Random"
-					// {
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"Target"	"CASTER"
-					// 			"Duration"	"3"
-					// 			"ModifierName"	"modifier_is_knight_buff_2_plus_plus"
-					// 		}
-					// 	}
-					// 	"Chance"	"20"
-					// }
 				}
 				"EffectName"	"effect/qishi/1.vpcf"
 				"EffectAttachType"	"follow_origin"
@@ -5035,18 +4941,6 @@
 						"chance"	"20"
 						"modifier"	"modifier_coup_de_grace_crit_datadriven"
 					}
-					// "Random"
-					// {
-					// 	"Chance"	"25"
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"ModifierName"	"modifier_coup_de_grace_crit_datadriven"
-					// 			"Target"	"CASTER"
-					// 		}
-					// 	}
-					// }
 				}
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
@@ -5163,18 +5057,6 @@
 						"chance"	"25"
 						"modifier"	"modifier_coup_de_grace_crit_datadriven_plus"
 					}
-					// "Random"
-					// {
-					// 	"Chance"	"25"
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"ModifierName"	"modifier_coup_de_grace_crit_datadriven_plus"
-					// 			"Target"	"CASTER"
-					// 		}
-					// 	}
-					// }
 				}
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
@@ -5322,18 +5204,6 @@
 						"chance"	"5"
 						"modifier"	"modifier_coup_de_grace_crit_datadriven_plus_plus"
 					}
-					// "Random"
-					// {
-					// 	"Chance"	"5"
-					// 	"OnSuccess"
-					// 	{
-					// 		"ApplyModifier"
-					// 		{
-					// 			"ModifierName"	"modifier_coup_de_grace_crit_datadriven_plus_plus"
-					// 			"Target"	"CASTER"
-					// 		}
-					// 	}
-					// }
 				}
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
@@ -6152,7 +6022,7 @@
 			"bounce_range"	"575"
 			"bounces"
 			{
-				"value"	"4 6 8"
+				"value"	"4 5 7"
 				"special_bonus_unique_witch_doctor_3"	"+2"
 			}
 			"speed"	"1000"
@@ -6254,6 +6124,7 @@
 	{
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
+		"AbilityManaCost"	"100"
 		"AbilityCooldown"	"12 10 8"
 		"AbilityValues"
 		{
@@ -7857,6 +7728,7 @@
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"	"100"
+		"AbilityCooldown"	"12 10 8"
 		// Casting
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"	"9999"
@@ -7949,28 +7821,59 @@
 		}
 	}
 
-	"nec_ssr_scythe"
+	"nec_scythe"
 	{
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"necrolyte_reapers_scythe"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
-		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
-		"MaxLevel"	"1"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_4"
-		"AbilityCooldown"	"5"
+		"AbilityCooldown"	"10 7 4"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"OnSpellStart"
 		{
+			"ApplyModifier"
+			{
+				"Target"	"TARGET"
+				"Duration"	"2.0"
+				"ModifierName"	"modifier_nec_scythe_debuff"
+			}
 			"RunScript"
 			{
 				"Target"	"TARGET"
 				"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
-				"Function"	"NecSSRScythe"
+				"Function"	"NecScythe"
+			}
+			
+		}
+		"AbilityValues"
+		{
+			"stun_duration"		"2.0"
+			"base_damage"		"200 300 400"
+			"hp_xishu"			"0.75 1.25 2.0"
+			"pulse_damage"		"200 300 400"
+			"area_of_effect"	"300 400 600"
+		}
+		"Modifiers"
+		{
+			"modifier_nec_scythe_debuff"
+			{
+				"Passive"	"0"
+				"IsHidden"	"0"
+				"States"
+				{
+					"MODIFIER_STATE_STUNNED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+				"OverrideAnimation"	"ACT_DOTA_FLAIL"
+				"IsDebuff"	"1"
+				"EffectName"	"particles/units/heroes/hero_necrolyte/necrolyte_scythe.vpcf"
+				"EffectAttachType"	"follow_origin"
+				"StatusEffectName"	"particles/status_fx/status_effect_necrolyte_spirit.vpcf"
 			}
 		}
 	}
@@ -8447,12 +8350,12 @@
 			}
 			"scepter_bonus_damage"
 			{
-				"value"	"20"
+				"value"	"0"
 				"RequiresScepter"	"1"
 			}
 			"scepter_spell_amp"
 			{
-				"value"	"5"
+				"value"	"0"
 				"RequiresScepter"	"1"
 			}
 			"armor_reduce"	"4 8 12"
@@ -10635,6 +10538,7 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"MaxLevel"	"3"
+		"AbilityManaCost"	"0"
 		"AbilityCooldown"	"8"
 		"Modifiers"
 		{
@@ -10962,11 +10866,11 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_PURE"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"15 12 9"
+		"AbilityCooldown"	"10 7 4"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"precache"
@@ -11011,18 +10915,18 @@
 			"07"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"hook_damage"	"150 250 450"
+				"hook_damage"	"300 450 600"
 			}
-			"08"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"dismember_damage"	"150 250 450"
-			}
-			"09"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"dismember_stun_duration"	"4.5"
-			}
+			// "08"
+			// {
+			// 	"var_type"	"FIELD_INTEGER"
+			// 	"dismember_damage"	"100 200 400"
+			// }
+			// "09"
+			// {
+			// 	"var_type"	"FIELD_FLOAT"
+			// 	"dismember_stun_duration"	"4.5"
+			// }
 		}
 	}
 
@@ -11035,7 +10939,7 @@
 		{
 			"dismember_damage"
 			{
-				"value"	"150 250 450"
+				"value"	"100 200 400"
 				"special_bonus_unique_pudge_3"	"x1.8"
 			}
 			"strength_damage"
@@ -13154,7 +13058,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"fanji_per"	"15 25 35"
+				"fanji_per"	"15 20 25"
 			}
 			"03"
 			{
@@ -13276,7 +13180,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"trigger_chance"	"15 25 35"
+				"trigger_chance"	"15 20 25"
 				"LinkedSpecialBonus"	"special_bonus_unique_legion_commander_3"
 			}
 			"02"
@@ -13298,7 +13202,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_CAST_ABILITY_1"
-		"AbilityCooldown"	"12 10 8"
+		"AbilityCooldown"	"8"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"AbilityChannelTime"	"0"
@@ -13314,13 +13218,13 @@
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"stun_duration"	"3 5 7"
+				"stun_duration"	"3 5 6"
 				"LinkedSpecialBonus"	"special_bonus_unique_windranger_6"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"shackle_distance"	"600"
+				"shackle_distance"	"600 900 1200"
 			}
 			"04"
 			{
@@ -13330,7 +13234,7 @@
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"shackle_count"	"1"
+				"shackle_count"	"1 1 2"
 			}
 			"06"
 			{
@@ -14148,12 +14052,12 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"3 4 6"
+				"duration"	"3 4 5"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"radius"	"275 300 350"
+				"radius"	"275 300 325"
 			}
 		}
 	}
@@ -17809,6 +17713,7 @@
 			}
 		}
 	}
+
 	"is_centaur_buff_plus"
 	{
 		"BaseClass"	"ability_datadriven"
@@ -18574,7 +18479,7 @@
 				"value"	"10 8 5"
 				"special_bonus_unique_lion_5"	"-2"
 			}
-			"duration"	"5 6 8"
+			"duration"	"4 5 6"
 			"movespeed"	"120"
 		}
 		// "AbilitySpecial"
@@ -18732,56 +18637,87 @@
 		"AbilityCastRange"	"1500"
 		// Special
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		
+		"AbilityValues"
 		{
-			"01"
+			"start_radius"			"250"
+			"end_radius"			"350"
+			"AbilityCastRange"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"start_radius"	"250"
+				"value"							"750"
+				"special_bonus_unique_jakiro_2"	"+100%"
 			}
-			"02"
+			"speed"					"1050"
+			"fire_delay"			"0.2"
+			"burn_damage"			
 			{
-				"var_type"	"FIELD_INTEGER"
-				"end_radius"	"350"
+				"value"							"200"
+				"special_bonus_unique_jakiro_2"	"+100%"
 			}
-			"03"
+			"slow_movement_speed_pct"	
 			{
-				"var_type"	"FIELD_INTEGER"
-				"range"	"750"
-				"LinkedSpecialBonus"	"special_bonus_unique_jakiro_5"
+				"value"												"-50"
+				"special_bonus_unique_jakiro_dualbreath_slow"		"-10"
 			}
-			"04"
+
+			"slow_attack_speed_pct"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"speed"	"1050"
+				"value"												"-50"
+				"special_bonus_unique_jakiro_dualbreath_slow"		"-10"
 			}
-			"05"
-			{
-				"var_type"	"FIELD_FLOAT"
-				"fire_delay"	"0.2"
-			}
-			"06"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"burn_damage"	"200"
-				"LinkedSpecialBonus"	"special_bonus_unique_jakiro_2"
-			}
-			"07"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"slow_movement_speed_pct"	"-50"
-			}
-			"08"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"slow_attack_speed_pct"	"-50"
-			}
-			"09"
-			{
-				"var_type"	"FIELD_INTEGER"
-				"speed_fire"	"1050"
-			}
-		}
+			"speed_fire"			"1050"
+
+		}		
+		// "AbilitySpecial"
+		// {
+		// 	"01"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"start_radius"	"250"
+		// 	}
+		// 	"02"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"end_radius"	"350"
+		// 	}
+		// 	"03"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"range"	"750"
+		// 		"LinkedSpecialBonus"	"special_bonus_unique_jakiro_5"
+		// 	}
+		// 	"04"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"speed"	"1050"
+		// 	}
+		// 	"05"
+		// 	{
+		// 		"var_type"	"FIELD_FLOAT"
+		// 		"fire_delay"	"0.2"
+		// 	}
+		// 	"06"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"burn_damage"	"200"
+		// 		"LinkedSpecialBonus"	"special_bonus_unique_jakiro_2"
+		// 	}
+		// 	"07"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"slow_movement_speed_pct"	"-50"
+		// 	}
+		// 	"08"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"slow_attack_speed_pct"	"-50"
+		// 	}
+		// 	"09"
+		// 	{
+		// 		"var_type"	"FIELD_INTEGER"
+		// 		"speed_fire"	"1050"
+		// 	}
+		// }
 		"AbilitySound"	"Hero_Jakiro.DualBreath.Cast"
 		"AbilityDuration"	"5.0"
 		// Damage.
@@ -18912,7 +18848,7 @@
 		"MaxLevel"	"3"
 		"AbilityCastPoint"	"0.3"
 		"AbilityCastAnimation"	"ACT_DOTA_SHALLOW_GRAVE"
-		"AbilityCooldown"	"20 15 10"
+		"AbilityCooldown"	"15"
 		"AbilityManaCost"	"100"
 		"AbilityCastRange"	"9999"
 		"precache"
@@ -19118,6 +19054,7 @@
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 		"MaxLevel"	"3"
+		"AbilityManaCost"	"0"
 		"AbilityCooldown"	"15 12 9"
 		"precache"
 		{
@@ -19275,7 +19212,7 @@
 			}
 			"scepter_status_resist"
 			{
-				"value"	"40"
+				"value"	"0"
 				"RequiresScepter"	"1"
 			}
 		}
@@ -19685,5 +19622,57 @@
 			}
 		}
 		"AbilitySound"	"Hero_DrowRanger.Silence"
+	}
+
+	"muerta_pierce_the_veil"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilitySound"					"Hero_Muerta.PierceTheVeil.Cast"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"25 20 15"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"duration"					"5 6 7"
+			"transform_duration"		"0.35"
+			"base_damage_pct"			"100"
+			"modelscale"				"0"
+			"bonus_damage"				"75 100 125"
+			"double_shot_chance"		"30 40 50"
+		}
+	}
+
+	"muerta_gunslinger"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"double_shot_chance"
+			{
+				"value"					"25 30 40"
+				"special_bonus_unique_muerta_gunslinger_double_shot_chance"	"+20"
+			}
+			"target_search_bonus_range"	"300"
+		}
 	}
 }

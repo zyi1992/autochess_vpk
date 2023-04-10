@@ -809,7 +809,6 @@
 			"modifier_item_xingyunguazhui"
 			{
 				"Passive"	"1"
-				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
@@ -5841,7 +5840,7 @@
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
 		"AbilityManaCost"	"0"
-		"AbilityCastRange"	"300"
+		"AbilityCastRange"	"205"
 		"ID"	"1563"
 		"ItemQuality"	"rare"
 		"Model"	"models/props_winter/present.vmdl"
@@ -5876,7 +5875,7 @@
 						"Target"	"CASTER"
 						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
 						"Function"	"ChessHpRegen"
-						"hp"	"20"
+						"hp"	"10"
 					}
 				}
 				"ThinkInterval"	"1"
@@ -5887,7 +5886,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"max_distance"	"300"
+				"max_distance"	"205"
 			}
 		}
 	}
@@ -5923,6 +5922,7 @@
 				"Properties"
 				{
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"50"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"15"
 				}
 				"Passive"	"1"
 				"TextureName"	"item_repair_kit"
@@ -5997,9 +5997,29 @@
 				{
 					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"45"
 					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"25"
 				}
 				"EffectName"	"particles/econ/courier/courier_greevil_generic/courier_greevil_eye_generic.vpcf"
 				"EffectAttachType"	"follow_head"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"Conceal"
+						"no_hero"	"1"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"Reveal"
+					}
+				}
 			}
 		}
 	}
@@ -7475,7 +7495,7 @@
 		"ItemResult"	"item_baojunwangpao"
 		"ItemRequirements"
 		{
-			"01"	"item_shengzheyiwu;item_kangmodoupeng"
+			"01"	"item_shengzheyiwu;item_qizhashidoupeng"
 		}
 	}
 
@@ -8741,7 +8761,7 @@
 				"IsHidden"	"1"
 				"Properties"
 				{
-					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"30"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"25"
 				}
 				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
 			}
@@ -8873,7 +8893,7 @@
 		"AbilityCastPoint"	"0.1"
 		"AbilityCastAnimation"	"ACT_DOTA_IDLE_RARE"
 		"AbilityManaCost"	"0"
-		"AbilityCastRange"	"300"
+		"AbilityCastRange"	"205"
 		"ID"	"1651"
 		"ItemQuality"	"rare"
 		"Model"	"models/props_winter/present.vmdl"
@@ -8956,7 +8976,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"max_distance"	"300"
+				"max_distance"	"205"
 			}
 		}
 	}
@@ -8997,5 +9017,107 @@
 		{
 			"01"	"item_shanbihufu;item_xuwubaoshi;"
 		}
+	}
+	"item_recipe_ahalimumojing"
+	{
+		"BaseClass"	"item_recipe_arcane_boots"
+		"ID"	"3098"
+		"ItemCost"	"0"
+		"ItemRecipe"	"1"
+		"ItemResult"	"item_ahalimumojing"
+		"ItemRequirements"
+		{
+			"01"	"item_zhenhunshi;item_nengliangqiu;item_nengliangqiu;"
+		}
+	}
+
+	"item_ahalimumojing"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"aghanims_shard"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ID"	"1654"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_winter/present.vmdl"
+		"ItemCost"	"999"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		"Modifiers"
+		{
+			"modifier_item_ahalimumojing"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"TextureName"	"custom/mojing_buff"
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ResetChessAbilityLevel"
+					}
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"250"
+					}
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/addon_game_mode.lua"
+						"Function"	"ModMaxHP"
+						"const"	"-250"
+					}
+				}
+			}
+		}
+	}
+
+	"item_malefic_rapture"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/zainankuanghuan"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"ID"	"1655"
+		"ItemCastOnPickup"	"0"
+		"ItemDroppable"	"0"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemPurchasable"	"0"
+		"ItemKillable"	"1"
+		"ItemAlertable"	"1"
+		"ItemPermanent"	"1"
+		"ItemRequiresCharges"	"0"
+		"ItemInitialCharges"	"0"
+		"ItemStackable"	"0"
+		"ItemRequirements"	{}
+		"ItemDisassembleRule"	"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"Modifiers"
+		{
+			"modifier_item_malefic_rapture"
+			{
+				"IsHidden"	"1"
+				"Passive"	"1"
+			}
+		}
+		"ItemIsNeutralDrop"	"1"
 	}
 }

@@ -16,5 +16,6 @@
 		"match_history_table",
 		"chess_kv_table",
 		"casino_table",
+		"ability_kv_table",
 	]
 }

@@ -155,9 +155,7 @@
 		"chess_wd"	"巫医★"
 		"chess_wd1"	"巫医★★"
 		"chess_wd11"	"巫医★★★"
-		"chess_puck"	"精灵龙★"
-		"chess_puck1"	"精灵龙★★"
-		"chess_puck11"	"精灵龙★★★"
+		
 		"chess_slardar"	"鱼人守卫★"
 		"chess_slardar1"	"鱼人守卫★★"
 		"chess_slardar11"	"鱼人守卫★★★"
@@ -219,9 +217,7 @@
 		"chess_fur"	"先知★"
 		"chess_fur1"	"先知★★"
 		"chess_fur11"	"先知★★★"
-		"chess_tiny"	"小小★"
-		"chess_tiny1"	"小小★★"
-		"chess_tiny11"	"小小★★★"
+		
 		"chess_morph"	"变体精灵★"
 		"chess_morph1"	"变体精灵★★"
 		"chess_morph11"	"变体精灵★★★"
@@ -877,9 +873,8 @@
 		"chess_mars1"	"天界战神★★"
 		"chess_mars11"	"天界战神★★★"
 		"DOTA_Tooltip_ability_zeus_thunder"	"雷神之怒"
-		"DOTA_Tooltip_ability_zeus_thunder_damage"	"对棋子固定伤害"
-		"DOTA_Tooltip_ability_zeus_thunder_damage_per"	"对棋子伤害百分比"
-		"DOTA_Tooltip_ability_zeus_thunder_damage_courier_per"	"对信使伤害百分比"
+		"DOTA_Tooltip_ability_zeus_thunder_damage"			"对棋子固定伤害"
+		
 		"DOTA_Tooltip_ability_zeus_thunder_Lore"	"神王毁灭一切胆敢反抗他的敌人，他们无所遁形。"
 		"DOTA_Tooltip_ability_is_god"	"神"
 		"DOTA_Tooltip_ability_is_demonhunter_Lore"	"伊利达雷自愿接受了邪能和混乱魔法，正是这样的能量长期威胁着多多岛，但他们相信这是抗击敌人所必需的。"
@@ -899,17 +894,15 @@
 		"txt_banned_player"	" 由于以往的恶劣行为正处于禁赛期，已被判负。"
 		"DOTA_Tooltip_ability_dk_dragon_form"	"古龙形态"
 		"DOTA_Tooltip_ability_dk_dragon_form_Lore"	"达维安体内有一个更为强大的形态正在休眠，一个将骑士之力和古龙之威完美结合的形态。"
-		"DOTA_Tooltip_ability_dk_dragon_form_splash_percent"	"溅射百分比"
-		"DOTA_Tooltip_ability_dk_dragon_form_slow_percent"	"减速百分比"
-		"DOTA_Tooltip_ability_dk_dragon_form_poison_percent"	"魔法伤害百分比"
+		
 		"DOTA_Tooltip_ability_dk_dragon_form_Description"	"<h1>主动技能：满法力值时激活</h1>达维安<font color=\"#5cb85c\">变身</font>成为三种古龙形态之一，并且获得新的<font color=\"#ffffff\">古龙吐息</font>能力。<br>★赤龙：攻击时对2格范围内所有敌方棋子造成<font color=\"#d8af54\">溅射伤害</font>。<br>★★苍龙：攻击时对2格范围内所有敌方棋子造成降低攻击和移动速度的冰霜效果。<br>★★★黑龙：攻击时对2格范围内所有敌方棋子造成每秒最大生命值百分比的<font color=\"#5a91cd\">魔法伤害</font>。"
 		"DOTA_Tooltip_ability_dk_dragon_form_Note0"	"每一等级的古龙吐息都会继承上一级的技能效果。"
 		"DOTA_Tooltip_ability_dk_dragon_attack"	"古龙吐息"
 		"DOTA_Tooltip_ability_dk_dragon_attack_Description"	"★赤龙：攻击时对2格范围内所有敌方棋子造成<font color=\"#d8af54\">溅射伤害</font>。<br>★★苍龙：攻击时对2格范围内所有敌方棋子造成降低攻击和移动速度的冰霜效果。<br>★★★黑龙：攻击时对2格范围内所有敌方棋子造成每秒最大生命值百分比的<font color=\"#5a91cd\">魔法伤害</font>。"
 		"DOTA_Tooltip_ability_dk_dragon_attack_Lore"	"龙骑士达维安的气息已经变成了斯莱瑞克的古龙之息，人们还记得它将无数骑士烧成了焦炭。"
-		"DOTA_Tooltip_ability_dk_dragon_attack_splash_percent"	"溅射百分比"
-		"DOTA_Tooltip_ability_dk_dragon_attack_slow_percent"	"减速百分比"
-		"DOTA_Tooltip_ability_dk_dragon_attack_poison_percent"	"魔法伤害百分比"
+		"DOTA_Tooltip_ability_dk_dragon_attack_splash_percent"	"溅射%："
+		"DOTA_Tooltip_ability_dk_dragon_attack_slow_percent"	"减速%："
+		"DOTA_Tooltip_ability_dk_dragon_attack_poison_percent"	"魔法伤害%："
 		"DOTA_Tooltip_modifier_dk_dragon_attack"	"溅射吐息"
 		"DOTA_Tooltip_modifier_dk_slow"	"冰霜吐息"
 		"DOTA_Tooltip_modifier_dk_poison"	"暗黑吐息"
@@ -1148,8 +1141,8 @@
 		"DOTA_Tooltip_ability_gs_moji_range_tooltip"	"墨迹距离"
 		"DOTA_Tooltip_ability_gs_moji_fuhun_duration"	"缚魂持续时间"
 		"DOTA_Tooltip_ability_rubick_qiequ_ability_level"	"窃取的技能等级"
-		"DOTA_Tooltip_ability_gs_moji_Note0"	"缚魂并不会影响物品的效果。"
-		"DOTA_Tooltip_ability_is_god_Note0"	"独尊并不会减少物品的冷却时间。"
+		
+		
 		"localization_tips"	"20190625补充要翻译的内容！"
 		"DOTA_Tooltip_modifier_is_naga_buff_Description"	"魔法抗性提高了。"
 		"DOTA_Tooltip_modifier_is_naga_buff_plus_Description"	"魔法抗性提高了。"
@@ -1168,7 +1161,7 @@
 		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_corrosive_breath_damage"	"腐蚀吐息每秒伤害"
 		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_corrosive_breath_duration"	"腐蚀吐息持续时间"
 		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_splash_radius"	"溅射吐息范围"
-		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_splash_damage_percent"	"溅射吐息伤害百分比"
+		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_splash_damage_percent"	"溅射吐息伤害%："
 		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_frost_bonus_attack_speed"	"冰霜吐息攻击速度降低"
 		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_frost_aoe"	"冰霜吐息范围"
 		"DOTA_Tooltip_ability_dragon_knight_elder_dragon_form_duration"	"持续时间"
@@ -1351,7 +1344,7 @@
 		"DOTA_Tooltip_modifier_is_human_buff_plus_plus_Description"	"攻击敌人有概率使敌人沉默。"
 		"DOTA_Tooltip_modifier_is_god_buff_Description"	"减少技能冷却时间。"
 		"DOTA_Tooltip_modifier_is_god_buff_plus_Description"	"减少技能冷却时间。"
-		"DOTA_Tooltip_modifier_is_god_buff_plus_plus_Description"	"减少技能冷却时间。"
+		
 		"DOTA_Tooltip_modifier_is_element_buff_plus"	"大地灵气"
 		"DOTA_Tooltip_ability_is_element_buff_plus"	"(4)元素buff"
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_cd_reduce"	"队友技能冷却时间减少（秒）"
@@ -1370,15 +1363,13 @@
 		"DOTA_Tooltip_ability_pudge_meat_hook_lua_dismember_damage_count"	"肢解伤害次数"
 		"DOTA_Tooltip_ability_pudge_meat_hook_lua_dismember_stun_duration"	"肢解眩晕时间"
 		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Lore"	"屠夫的肉钩是噩梦的象征，锋利的倒钩暗示了他嗜血的本性。"
-		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Note0"	"钩中敌方棋子后将打断它的持续施法类技能。"
-		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Note1"	"肢解也是持续施法技能，可以被打断。"
-		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Note2"	"肉钩可以穿越其他棋子。"
+		
 		"DOTA_Tooltip_ability_baby_dragon"	"召唤佣兽"
 		"DOTA_Tooltip_ability_baby_dragon_Description"	"<h1>主动技能：满法力值时激活</h1>召唤若干只盲眼的佣兽为死灵飞龙作战。<br>每只佣兽满能量的时候会选取攻速较高的敌方棋子对其施加一个<font color=\"#ffffff\">黄泉颤抖</font>效果，偷取它的百分比攻速。"
 		"DOTA_Tooltip_ability_baby_dragon_Lore"	"死灵飞龙的佣兽，也是狭窄迷宫的守卫，俯视着他的领地。"
 		"DOTA_Tooltip_ability_baby_dragon_famaliar_count"	"佣兽数量"
 		"DOTA_Tooltip_ability_baby_dragon_steal_duration"	"黄泉颤抖时间"
-		"DOTA_Tooltip_ability_baby_dragon_steal_attack_speed"	"黄泉颤抖偷取攻速百分比"
+		"DOTA_Tooltip_ability_baby_dragon_steal_attack_speed"	"黄泉颤抖偷取攻速%："
 		"DOTA_Tooltip_ability_baby_dragon_Note0"	"黄泉颤抖不会对同一个棋子重复释放。"
 		"visage_dragon_1"	"佣兽"
 		"visage_dragon_2"	"佣兽"
@@ -1502,7 +1493,7 @@
 		"DOTA_Tooltip_ability_spe_ghost"	"鬼影重重"
 		"text_localization_tips"	"========================20191010版本新内容========================"
 		"text_legendary_box_tips"	"本局传说棋子池"
-		"join_the_game"	"加入了棋库。"
+		
 		"DOTA_Tooltip_ability_ss_ssr_wards"	"群蛇守卫"
 		"DOTA_Tooltip_ability_ss_ssr_wards_Lore"	"耍蛇曾是演艺中的重头戏；现在罗斯塔可以授予蛇力量，以服从他自己的吩咐。"
 		"DOTA_Tooltip_ability_ss_ssr_wards_Description"	"<h1>主动技能：满法力值时激活</h1>在目标敌方棋子周围的所有空格子各召唤一只蛇形守卫攻击它。"
@@ -1668,7 +1659,7 @@
 		"DOTA_Tooltip_ability_midnight_pulse_datadriven_Description"	"<h1>主动技能：满法力值时激活</h1>使一块3格范围的区域浸入暗共振中，对其中的敌方棋子持续造成基于他们最大生命值百分比的<font color=\"#d8af54\">纯粹伤害</font>。"
 		"DOTA_Tooltip_ability_midnight_pulse_datadriven_Lore"	"世界的一部分缓缓跌入虚空。"
 		"DOTA_Tooltip_ability_midnight_pulse_datadriven_radius"	"凋零范围"
-		"DOTA_Tooltip_ability_midnight_pulse_datadriven_damage_per"	"每秒伤害百分比"
+		"DOTA_Tooltip_ability_midnight_pulse_datadriven_damage_per"	"每秒伤害%："
 		"DOTA_Tooltip_ability_midnight_pulse_datadriven_duration"	"凋零持续时间"
 		"DOTA_Tooltip_ability_midnight_pulse_datadriven_damage_tick"	"伤害计算间隔"
 		"DOTA_Tooltip_ability_kunkka_torrent_storm_torrent_interval"	"洪流释放时间间隔"
@@ -1693,7 +1684,7 @@
 		"DOTA_Tooltip_ability_kunkka_torrent_storm_stun"	"洪流眩晕时间"
 		"DOTA_Tooltip_ability_kunkka_torrent_storm_radius"	"洪流影响范围"
 		"pve_roshan"	"肉山大魔王"
-		"DOTA_Tooltip_ability_antimage_mana_break_percent_damage_per_burn"	"额外伤害百分比"
+		"DOTA_Tooltip_ability_antimage_mana_break_percent_damage_per_burn"	"额外伤害%："
 		"DOTA_Tooltip_ability_rubick_qiequ_Note1"	"大魔导师合并升星后偷取的技能会被重置为技能窃取。"
 		"DOTA_Tooltip_ability_dazzle_bozang_Note0"	"薄葬会优先释放给生命值低于50%的友方棋子。"
 		"DOTA_Tooltip_ability_is_knight_Note1"	"王者祝福触发的时间间隔为3秒，它无法庇护处于被变形状态下的骑士。"
@@ -1806,8 +1797,8 @@
 		"DOTA_Tooltip_ability_sven_gods_strength_Description"	"流浪剑客的普通攻击总是能对目标身后2格扇形范围的敌方棋子造成50%的<font color=\"#d8af54\">溅射伤害</font>。\n<h1>主动技能：满法力值时激活</h1>流浪剑客这下NB了，获得攻击力大幅提升。当前友军棋子中每有一个触发了邪能之力的恶魔，所有友方恶魔的攻击力也会大幅提升。"
 		"h449"	"鲨鱼棋棋"
 		"DOTA_Tooltip_ability_invoker_sun_strike_strike_count"	"阳炎个数"
-		"DOTA_Tooltip_ability_sven_gods_strength_gods_strength_damage"	"流浪剑客攻击力加成%"
-		"DOTA_Tooltip_ability_sven_gods_strength_damage_per_demon"	"友军每有一个触发邪能之力的恶魔，攻击力提升%"
+		
+		
 		"DOTA_Tooltip_ability_sven_gods_strength_gods_strength_bonus_str"	"流浪剑客力量加成"
 		"DOTA_Tooltip_modifier_shenli"	"碎神之力"
 		"DOTA_Tooltip_modifier_shenli_Description"	"攻击力大幅提升。"
@@ -1830,8 +1821,8 @@
 		"DOTA_Tooltip_modifier_lc_qianggong_count"	"强攻"
 		"DOTA_Tooltip_modifier_lc_qianggong_count_Description"	"攻击力增加了。"
 		"DOTA_Tooltip_ability_lc_qianggong_damage_bouns_per_victory"	"每次获胜攻击力加成"
-		"DOTA_Tooltip_ability_lc_qianggong_fanji_per"	"反击概率"
-		"DOTA_Tooltip_ability_lc_qianggong_fanji_xixue"	"反击吸血百分比"
+		
+		"DOTA_Tooltip_ability_lc_qianggong_fanji_xixue"	"反击吸血%："
 		"DOTA_Tooltip_ability_windrunner_powershot_powershot_damage"	"第一个穿过目标的伤害"
 		"DOTA_Tooltip_ability_windrunner_powershot_damage_reduction"	"每穿过一个敌人伤害衰减比例"
 		"DOTA_Tooltip_ability_windrunner_powershot_arrow_range"	"射程"
@@ -2067,7 +2058,7 @@
 		"text_stat_title_blockchat"	"屏蔽聊天"
 		"text_endgame"	"退出游戏"
 		"DOTA_Tooltip_ability_lyc_wolf_Description"	"<h1>主动技能：满法力值时激活</h1>狼人<font color=\"#5cb85c\">变身</font>为他的凶狼形态，提高攻击力，按百分比增加最大生命值，并对自己造成等量的<font color=\"#5cb85c\">治疗</font>，同时在身边的空格子召唤小狼为你作战。"
-		"DOTA_Tooltip_ability_lyc_wolf_hp_per"	"生命值加成百分比"
+		"DOTA_Tooltip_ability_lyc_wolf_hp_per"	"生命值加成%："
 		"DOTA_Tooltip_ability_lyc_wolf_wolf_count"	"小狼数量"
 		"DOTA_Tooltip_ability_is_monk_buff"	"(1)武僧buff"
 		"DOTA_Tooltip_modifier_is_monk_buff"	"醉拳"
@@ -2219,7 +2210,7 @@
 		"chess_bb"	"刚背兽★"
 		"DOTA_Tooltip_ability_mk_ruyibangfa_attack_count"	"所需攻击次数"
 		"DOTA_Tooltip_ability_mk_ruyibangfa_stun_duration"	"棒击大地眩晕时间"
-		"DOTA_Tooltip_ability_mk_ruyibangfa_damage_multiple"	"棒击大地普通攻击暴击百分比"
+		"DOTA_Tooltip_ability_mk_ruyibangfa_damage_multiple"	"棒击大地普通攻击暴击%："
 		"DOTA_Tooltip_ability_mk_ruyibangfa_damage_range"	"棒击大地击打距离"
 		"DOTA_Tooltip_ability_mars_shield_Description"	"玛尔斯举起他的战盾粉碎前方区域的敌人，造成物理伤害。"
 		"DOTA_Tooltip_ability_mars_shield_Lore"	"在玛尔斯谴戒的刺痛下世上还没有战士能纹丝不动。"
@@ -2279,7 +2270,7 @@
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_Lore"	"通过操控她的灵能面纱，拉娜娅让自然法则为她所用。"
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_attack_spill_range"	"穿透距离"
 		"DOTA_Tooltip_ability_templar_assassin_psi_blades_attack_spill_width"	"穿透宽度"
-		"DOTA_Tooltip_ability_templar_assassin_psi_blades_attack_spill_pct"	"穿透伤害百分比"
+		"DOTA_Tooltip_ability_templar_assassin_psi_blades_attack_spill_pct"	"穿透伤害%："
 		"DOTA_Tooltip_ability_templar_assassin_refraction_instances"	"折光次数"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_bonus_damage"	"攻击力加成"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_duration"	"持续时间"
@@ -2385,7 +2376,7 @@
 		"DOTA_Tooltip_ability_mars_bulwark_attack_shield_bash_radius"	"盾击范围"
 		"DOTA_Tooltip_ability_mars_bulwark_attack_shield_bash_damage"	"盾击物理伤害"
 		"DOTA_Tooltip_ability_is_tauren_Description"	"<h1>种族技能：高岭图腾</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）牛头人：战斗开始时召唤一个稻草人图腾。<br>（4）牛头人：战斗开始时召唤一个啄木鸟图腾和一个蛮牛角图腾。"
-		"DOTA_Tooltip_ability_is_god_Description"	"<h1>种族技能：独尊</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）神：所有未触发除神以外的种族技能的友方棋子获得效果：技能冷却时间减半。<br>（4）神：所有未触发除神以外的种族技能的友方棋子获得效果：技能冷却时间减半。"
+		
 		"pve_35"	"黑龙王"
 		"pve_qianjiaomonv"	"千娇魔女"
 		"pve_tangyimaowang"	"糖衣猫王"
@@ -2701,7 +2692,7 @@
 		"DOTA_Tooltip_ability_puck_illusory_orb_datadriven_max_distance"	"最远距离"
 		"DOTA_Tooltip_ability_puck_illusory_orb_datadriven_orb_speed"	"法球速度"
 		"DOTA_Tooltip_ability_puck_illusory_orb_datadriven_blind_duration"	"致盲时间"
-		"DOTA_Tooltip_ability_puck_illusory_orb_datadriven_blind_miss_per"	"致盲攻击丢失概率"
+		
 		"DOTA_Tooltip_ability_fur_tree_summon_duration"	"树人持续时间"
 		"DOTA_Tooltip_ability_bm_beast_summon_duration"	"野兽伙伴持续时间"
 		"DOTA_Tooltip_ability_veno_ward_summon_duration"	"守卫持续时间"
@@ -2719,13 +2710,12 @@
 		"DOTA_Tooltip_ability_item_bkb"	"<font color=\"#4b69ff\">黑皇杖</font>"
 		"candystore"	"多多岛糖果商店：芳晓佳节"
 		"DOTA_Tooltip_ability_baby_dragon_summon_duration"	"佣兽持续时间"
-		"DOTA_Tooltip_ability_wl_inferno_another_inferno_per"	"召唤另一只地狱火的概率"
 		"chunjie2020"	"芳晓佳节：时光钟楼"
 		"text_clocktower_2021"	"芳晓佳节：时光钟楼"
 		"text_clocktower_2021_quest"	"芳晓佳节：时光钟楼"
 		"text_clocktower_2021_quest_desc"	"● 开放时间：<font color='#fff'>2021-02-11 ~ 2021-02-18</font><br>● 参与方式：<font color='#fff'>多多岛糖果商店</font><br><br>● 芳晓佳节期间，多多岛糖果商店全部商品价格降低20%，商店刷新时间降低75%（6小时刷新一次！）。<br>● 诸多全新的信使、特效加入了糖果商店！在节日期间优惠上架后会进入随机商品池。"
 		"DOTA_Tooltip_ability_baby_dragon_summon_duration"	"佣兽持续时间"
-		"DOTA_Tooltip_ability_wl_inferno_another_inferno_per"	"召唤另一只地狱火的概率"
+		
 		
 		"DOTA_Tooltip_modifier_is_aqir_buff"	"感染"
 		"DOTA_Tooltip_modifier_is_aqir_buff_Description"	"该棋子死亡时，如果场上有与它同名的友方棋子存活，原地召唤一只随机虫族棋子。"
@@ -2937,7 +2927,7 @@
 		"DOTA_Tooltip_ability_smoke_screen_trigger_Lore"	"自从他在背叛之夜逃脱后，力丸就发掘出这能迷惑对手的简单烟幕的价值。"
 		"DOTA_Tooltip_ability_smoke_screen_trigger_radius"	"影响范围"
 		"DOTA_Tooltip_ability_smoke_screen_trigger_duration"	"持续时间"
-		"DOTA_Tooltip_ability_smoke_screen_trigger_miss_rate"	"攻击丢失概率"
+		
 		"DOTA_Tooltip_modifier_smoke_screen_trigger"	"烟雾弹"
 		"DOTA_Tooltip_modifier_smoke_screen_trigger_Description"	"当隐形刺客从隐身状态中显形，立即在棋盘上自己位置的中心对称点施放一颗烟雾弹。"
 		"DOTA_Tooltip_ability_item_dianjinshou_Description"	"攻击力+10，生命回复+15。\n当携带者在主场非战利品回合战斗中每击杀一名敌人都会获得1金币的赏金，最多可获得（该棋子等级）次。"
@@ -2948,7 +2938,7 @@
 		"DOTA_Tooltip_ability_item_minglingshu_Lore"	"记载着最终之战，其中的一页被人撕下。"
 		"DOTA_Tooltip_modifier_shadow_fiend_requiem_of_souls_lua"	"魂之挽歌"
 		"DOTA_Tooltip_ability_is_satyr_Description"	"<h1>种族技能：隐匿</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（1）萨特：所有友方萨特获得效果：在准备回合时隐藏自己在棋盘上的位置。"
-		"DOTA_Tooltip_ability_is_dragon_Description"	"<h1>种族技能：战吼</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）龙：所有友方龙的初始魔法值为100。<br>（5）龙：所有未触发职业技能的友军的初始魔法值为100。"
+		
 		"DOTA_Tooltip_ability_is_elf_Lore"	"生活在世界之树之上的精灵们，是多多岛最重要的保护者之一，其月神信仰与自然平衡信仰渗透在生活之中点点滴滴。"
 		"DOTA_Tooltip_ability_is_assassin_Lore"	"刺客的信条就是契约，而荣誉则可以用金钱来交易。这些雇佣兵们不会被良知束缚，习惯依赖于残忍而高效的战术。"
 		"dac_casual_2x4"	"2×4休闲模式"
@@ -3065,7 +3055,7 @@
 		"localization_tips"	"==============================20210725===================================="
 		"text_relic_box_tips"	"本局圣物池"
 		"text_relic_box_tips_desc"	"每局比赛都会将随机的10种圣物物品洗入圣物池，你可以通过圣物宝箱获得它们。"
-		"text_legendary_box_tips_desc"	"每局比赛会将随机的8种$5棋子洗入传说棋子池，你可以通过招募棋子招募到它们。<br><br><font color='#888'>（特殊的$5棋子精灵守卫每局都有机会出现，不会被洗入棋子池）</font>"
+		
 		
 		"DOTA_Tooltip_ability_is_troll_Lore"	"野蛮的巨魔因其残忍、黑暗的神秘宗教以及对其他种族的强烈仇恨而臭名昭着。"
 		"h274"	"乔克小子♦绿色"
@@ -3111,7 +3101,7 @@
 		"DOTA_Tooltip_ability_hoodwink_hunters_boomerang_Description"	"<h1>主动技能：满法力值时激活</h1>向敌方目标掷出一把沿弧线飞行的回旋镖。击中后会飞回至森海飞霞。回旋镖对沿途击中的敌方棋子都会造成<font color=\"#5a91cd\">魔法伤害</font>，并且施加一个<font color=\"#ffffff\">猎手印记</font>，使受到作用的敌方棋子承受的非普攻伤害和不良状态持续时间提高。"
 		"DOTA_Tooltip_ability_winter_wyvern_cold_embrace_Description"	"<h1>主动技能：满法力值时激活</h1>将一个友方棋子封入一个冰茧中，使其被冻在原地并恢复生命值，恢复数值为基础数值加上最大生命值的一定比例。冰茧将阻隔一切物理伤害，并使目标为冰茧的敌方棋子攻击速度降低。"
 		"DOTA_Tooltip_ability_bloodseeker_blood_bath_Description"	"<h1>主动技能：满法力值时激活</h1>血魔用魔血为自己为中心的一片区域洗礼。祭祀完成后，区域范围内所有敌人都会受到纯粹伤害，并被沉默。"
-		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Description"	"<h1>主动技能：满法力值时激活</h1>向一个距离最远的敌方棋子射出血腥的肉钩，将它拖到屠夫身边并造成<font color=\"#a02d27\">物理伤害</font>。\n如果钩回来后与帕吉相距1格以内，将其<font color=\"#ffffff\">肢解</font>，造成<font color=\"#5cb85c\">眩晕</font>和持续<font color=\"#5a91cd\">魔法伤害</font>，帕吉将回复与伤害量相等的生命值。"
+		
 		"DOTA_Tooltip_ability_nyx_assassin_spiked_carapace_datadriven_Description"	"<h1>主动技能：满法力值时激活</h1>激活尖刺外壳，可以反弹并无效化司夜刺客受到的伤害（每个攻击者最多作用一次），同时<font color=\"#5cb85c\">眩晕</font>攻击者。"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_Note0"	"灵能之刃每穿过一个目标，都会有5%的伤害衰减。"
 		"DOTA_Tooltip_ability_is_mech_Note0"	"机械之心：来自伟大发明，可以进行一次免费的棋子招募。金色机械之心不会从本局游戏的棋子池招募，而是直接获得5个随机的橙色棋子！"
@@ -3179,7 +3169,7 @@
 		"DOTA_Tooltip_ability_mk_ruyibangfa_Description"	"金箍棒能敏锐感知主人的情绪，在孙悟空展现战意时散发力量。每当累计若干次普通攻击，就会使用一次<font color=\"#ffffff\">棒击大地</font>，对一条直线上的敌方棋子造成基于普通攻击的<font color=\"#a02d27\">暴击伤害</font>和<font color=\"#5cb85c\">眩晕</font>。"
 		"DOTA_Tooltip_ability_magnataur_horn_toss_Description"	"马格纳斯顶起1格范围内的一个目标敌方棋子，将其抛在身后，使其<font color=\"#5cb85c\">眩晕</font>，并以它为中心释放一次<font color=\"#ffffff\">两极反转</font>。"
 		
-		"DOTA_Tooltip_ability_item_jixiezhixin_gold_Description"	"<h1>信使消耗品：点击使用</h1>进行一次特殊的免费棋子招募，但不会从本局游戏的棋子库招募，而是直接获得5个随机的传说棋子！<br><br><img src='file://{images}/custom_game/chess_icon/chess_disruptor.png'><img src='file://{images}/custom_game/chess_icon/chess_kael.png'><img src='file://{images}/custom_game/chess_icon/chess_ta.png'><img src='file://{images}/custom_game/chess_icon/chess_gyro.png'><img src='file://{images}/custom_game/chess_icon/chess_thd.png'><img src='file://{images}/custom_game/chess_icon/chess_tech.png'><img src='file://{images}/custom_game/chess_icon/chess_enigma.png'><img src='file://{images}/custom_game/chess_icon/chess_zeus.png'><img src='file://{images}/custom_game/chess_icon/chess_et.png'><img src='file://{images}/custom_game/chess_icon/chess_wl.png'><br><br><img src='file://{images}/custom_game/chess_icon/chess_qop.png'><img src='file://{images}/custom_game/chess_icon/chess_troll.png'><img src='file://{images}/custom_game/chess_icon/chess_aw.png'><img src='file://{images}/custom_game/chess_icon/chess_spe.png'><img src='file://{images}/custom_game/chess_icon/chess_dp.png'><img src='file://{images}/custom_game/chess_icon/chess_sven.png'><img src='file://{images}/custom_game/chess_icon/chess_th.png'>"
+		"DOTA_Tooltip_ability_item_jixiezhixin_gold_Description"	"<h1>信使消耗品：点击使用</h1>进行一次特殊的免费棋子招募，但不会从本局游戏的棋子库招募，而是直接获得5个随机的传说棋子！<br><br><img src='file://{images}/custom_game/chess_icon/chess_disruptor.png'><img src='file://{images}/custom_game/chess_icon/chess_kael.png'><img src='file://{images}/custom_game/chess_icon/chess_ta.png'><img src='file://{images}/custom_game/chess_icon/chess_gyro.png'><img src='file://{images}/custom_game/chess_icon/chess_thd.png'><img src='file://{images}/custom_game/chess_icon/chess_tech.png'><img src='file://{images}/custom_game/chess_icon/chess_enigma.png'><img src='file://{images}/custom_game/chess_icon/chess_zeus.png'><img src='file://{images}/custom_game/chess_icon/chess_et.png'><img src='file://{images}/custom_game/chess_icon/chess_wl.png'><br><br><img src='file://{images}/custom_game/chess_icon/chess_qop.png'><img src='file://{images}/custom_game/chess_icon/chess_troll.png'><img src='file://{images}/custom_game/chess_icon/chess_aw.png'><img src='file://{images}/custom_game/chess_icon/chess_spe.png'><img src='file://{images}/custom_game/chess_icon/chess_dp.png'><img src='file://{images}/custom_game/chess_icon/chess_sven.png'><img src='file://{images}/custom_game/chess_icon/chess_th.png'><img src='file://{images}/custom_game/chess_icon/chess_nec.png'>"
 		"DOTA_Tooltip_modifier_is_hunter_buff_Description"	"基础攻击力增加。"
 		"DOTA_Tooltip_ability_is_orc_Description"	"<h1>种族技能：强壮身躯</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）兽人：所有友军的最大生命值+100。<br>（4）兽人：所有友军的最大生命值+500。<br>（6）兽人：所有友军获得最大生命值+（你的信使当前已损失的生命值×8）。"
 		"DOTA_Tooltip_ability_sniper_assassinate_Description"	"<h1>主动技能：满法力值时激活</h1>狙击手锁定一个目标敌方棋子，经过短时间瞄准后从远距离射出一发毁灭性的子弹，对目标造成大量<font color=\"#a02d27\">物理伤害</font>。"
@@ -3316,7 +3306,7 @@
 		"DOTA_Tooltip_ability_item_zhaohuanshenshi_Description"	"生命值+250，攻击目标护甲-3。\n使你的召唤物获得效果：最大生命值+25%%，攻击力+25%%，持续时间+50%%。"
 		"item_jingmixie"	"静谧鞋"
 		"DOTA_Tooltip_ability_item_jingmixie"	"<font color=\"#5e98d9\">静谧鞋</font>"
-		"DOTA_Tooltip_ability_item_jingmixie_Description"	"快速移动，生命回复+10。\n<h1>光环效果</h1>周围范围内的友军获得效果：每秒获得20点治疗。<br><br>作用范围：%max_distance%"
+		
 		"item_aoshuxie"	"奥术鞋"
 		"DOTA_Tooltip_ability_item_aoshuxie"	"<font color=\"#5e98d9\">奥术鞋</font>"
 		
@@ -3328,15 +3318,11 @@
 		"item_zhenfenbaoshi"	"振奋宝石"
 		"DOTA_Tooltip_ability_item_zhenfenbaoshi"	"<font color=\"#4b69ff\">振奋宝石</font>"
 		"DOTA_Tooltip_ability_item_zhenfenbaoshi_Description"	"攻击速度+40%%。"
-		"item_dafu"	"掠夺者之斧"
-		"DOTA_Tooltip_ability_item_dafu"	"<font color=\"#4b69ff\">掠夺者之斧</font>"
-		"DOTA_Tooltip_ability_item_dafu_Description"	"生命值+60%%。"
+		
 		"item_shenmifazhang"	"神秘法杖"
 		"DOTA_Tooltip_ability_item_shenmifazhang"	"<font color=\"#4b69ff\">神秘法杖</font>"
 		"DOTA_Tooltip_ability_item_shenmifazhang_Description"	"魔法伤害+60%%。"
-		"item_shengzheyiwu"	"圣者遗物"
-		"DOTA_Tooltip_ability_item_shengzheyiwu"	"<font color=\"#4b69ff\">圣者遗物</font>"
-		"DOTA_Tooltip_ability_item_shengzheyiwu_Description"	"攻击力+45%%。"
+		
 		"item_yingjiaogong"	"鹰角弓"
 		"DOTA_Tooltip_ability_item_yingjiaogong"	"<font color=\"#4b69ff\">鹰角弓</font>"
 		"DOTA_Tooltip_ability_item_yingjiaogong_Description"	"攻击速度+20%%，闪避+25%%。"
@@ -3442,7 +3428,7 @@
 		
 		"item_baojunwangpao"	"暴君王袍"
 		"DOTA_Tooltip_ability_item_baojunwangpao"	"<font color=\"#e4ae39\">暴君王袍</font>"
-		"DOTA_Tooltip_ability_item_baojunwangpao_Description"	"攻击力+45%%，魔法抗性+30%%。\n获得友军已激活的种族/职业技能的全部增益效果。"
+		
 		"item_shirenmozhimao"	"食人魔之帽"
 		"DOTA_Tooltip_ability_item_shirenmozhimao"	"<font color=\"#e4ae39\">食人魔之帽</font>"
 		
@@ -3526,7 +3512,6 @@
 		"DOTA_Tooltip_ability_item_upgrade_lootbox_Description"		"你开启战利品宝箱有50%的概率使用更高1级的装备池。"
 		"DOTA_Tooltip_ability_item_vampiric_embrace_Description"	"你客场获胜对其他玩家造成伤害时+40%信使吸血。"
 		
-		"DOTA_Tooltip_ability_item_more_reward_Description"	"每当你客场获胜时会获得4点经验值，客场终结和击杀额外获得（赏金×2）的经验值。"
 		"tips_button_board_right"	"玩家详情 <font color=\"#888\">[F3]</font>"
 		"tips_button_board_right_desc"	"展开玩家详情面板，可以看到每个玩家详细的数据和阵容。"
 		"tips_minimap"	"小地图视角快捷操作"
@@ -3641,10 +3626,7 @@
 		"DOTA_Tooltip_ability_item_chishu_Description"	"<h1>信使消耗品：点击一棵树木使用</h1>为你的信使随机回复1~7点生命值。"
 		"item_yonghengzhipan"	"永恒之盘"
 		"DOTA_Tooltip_ability_item_yonghengzhipan"	"<font color=\"#d32ce6\">永恒之盘</font>"
-		
-		"chess_pb"	"獸★"
-		"chess_pb1"	"獸★★"
-		"chess_pb11"	"獸★★★"
+
 		"DOTA_Tooltip_ability_lion_voodoo"	"呱！"
 		"DOTA_Tooltip_ability_lion_voodoo_Description"	"<h1>主动技能：满法力值时激活</h1>将一个随机的敌方棋子变形成为人畜无害的小动物，使其不能攻击、释放技能和使用物品。"
 		"DOTA_Tooltip_ability_lion_voodoo_Lore"	"罗斯塔通常将自己变成一只青蛙来结束表演——现在他把这个屈辱分享给别人了。"
@@ -3775,7 +3757,7 @@
 
 		"DOTA_Tooltip_ability_oracle_mingyunsheling_Description"	"<h1>主动技能：满法力值时激活</h1>神谕者暂时禁锢敌方棋子，使其无法移动、缴械、免疫普攻伤害，但受到的技能伤害提高。"
 		"DOTA_Tooltip_modifier_oracle_mingyunsheling_Description"	"无法移动、缴械、免疫普攻伤害，但受到的技能伤害提高。"
-		"DOTA_Tooltip_ability_oracle_mingyunsheling_damage_bonus"	"受到的技能伤害加成百分比"
+		"DOTA_Tooltip_ability_oracle_mingyunsheling_damage_bonus"	"受到的技能伤害加成%："
 
 		"DOTA_Tooltip_ability_is_monk_Note1"	"敌方棋子的生命值百分比越低，被（2）武僧醉拳消灭的概率越高。hp%生命值的目标被消灭的概率为cot(hp*3.1)^1/3*(-ln(hp))/20。"
 
@@ -3786,7 +3768,7 @@
 		"DOTA_Tooltip_ability_void_astralstep_steps"		"最大穿行次数："
 		"DOTA_Tooltip_ability_void_astralstep_delay"		"引爆延迟："
 		"DOTA_Tooltip_ability_void_astralstep_area"			"每次搜寻范围："
-		"DOTA_Tooltip_ability_void_astralstep_movement_slow_pct"	"减速百分比："
+		"DOTA_Tooltip_ability_void_astralstep_movement_slow_pct"	"减速%："
 
 		"DOTA_Tooltip_ability_jakiro_dual_breath"	"冰火交加"
 		"DOTA_Tooltip_ability_jakiro_dual_breath_Description"	"<h1>主动技能：满法力值时激活</h1>“杰奇洛”对面前的敌人先后喷出寒冰和火焰。寒冰吐息减速敌人，火焰吐息对敌人造成持续伤害。"
@@ -3950,7 +3932,6 @@
 
 		"DOTA_Tooltip_ability_item_conceal_prepare_Description"		"在准备回合隐匿棋盘上的棋子。当你的信使受到伤害时，下个非战利品回合会同时隐匿信使并跳过战斗阶段。"
 		"DOTA_Tooltip_ability_item_more_interest_Description"		"如果你的持有金币超过40，每超出20金币都会获得4金币的额外利息收入。"
-		"DOTA_Tooltip_ability_item_more_creep_Description"			"你在战利品回合和圣物回合迎战的野怪数量×2，它们的最大生命值和造成的伤害-20%。"
 
 		"DOTA_Tooltip_ability_invoke_Description"	"召唤三个随机的元素精华并将它们融合为祈唤法术供祈求者施放。每次施放技能后都会重新召唤三个随机的元素精华，融合成另一个祈唤法术。\n<h1>祈唤法术列表</h1><font color=\"#ffffff\">电磁脉冲</font>，<font color=\"#ffffff\">熔炉精灵</font>，<font color=\"#ffffff\">灵动迅捷</font>，<font color=\"#ffffff\">超震声波</font>，<font color=\"#ffffff\">阳炎冲击</font>，<font color=\"#ffffff\">混沌陨石</font>，<font color=\"#ffffff\">强袭飓风</font>"
 
@@ -3993,7 +3974,7 @@
 		"DOTA_Tooltip_ability_ud_decay"							"腐朽"
 		"DOTA_Tooltip_ability_ud_decay_Description"				"<h1>主动技能：满法力值时激活</h1>不朽尸王使指定的友方棋子目标从附近的敌方棋子身上吸取最大生命值，并造成<font color=\"#d8af54\">纯粹伤害</font>用于<font color=\"#5cb85c\">治疗</font>目标。"
 		"DOTA_Tooltip_ability_ud_decay_radius"					"吸取范围："
-		"DOTA_Tooltip_ability_ud_decay_hp_per"					"最大生命值百分比："
+		"DOTA_Tooltip_ability_ud_decay_hp_per"					"最大生命值%："
 		"DOTA_Tooltip_ability_ud_decay_damage"					"纯粹伤害："
 		"DOTA_Tooltip_ability_ud_decay_Lore"					"生者的力量只不过是借用死者。"
 
@@ -4012,7 +3993,7 @@
 		"DOTA_Tooltip_modifier_mind_control_debuff"		"精神控制"
 		"DOTA_Tooltip_modifier_mind_control_debuff_Description"		"这个棋子被精神控制了，它将暂时为控制者战斗。"
 
-		"DOTA_Tooltip_ability_is_goblin_Description"	"<h1>种族技能：活体装甲</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）地精：使一个随机友军的护甲+10，生命回复+10。<br>（6）地精：使所有友军护甲+10，生命回复+10。"
+		
 
 		
 
@@ -4030,7 +4011,7 @@
 
 		"DOTA_Tooltip_ability_item_linkenfaqiu_Description"	"生命值+250，生命回复+20，法力获取+150%%。\n抵挡指向性法术。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 7"
 
-		"DOTA_Tooltip_ability_item_jufengchangji_Description"	"魔法伤害+20%%，生命回复+10，生命值+20%%，攻击速度+10%%。\n远程携带者的攻击距离+200。\n<h1>主动技能：有近身敌方棋子时激活</h1>将近身敌人击退到远离自己方向最远的格子，并将自己反向击退到最远的格子，同时会偷取目标20点的法力值。远程携带者还会立即对目标进行5次无视距离的攻击。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+		
 		"DOTA_Tooltip_ability_item_jufengchangji_Note0"			"攻击距离加成的效果不可叠加。"
 
 		"DOTA_Tooltip_ability_item_hongzhang_1_Description"	"魔法伤害+15%%，法力获取+100%。\n<h1>主动技能：立即激活</h1>对一个随机敌方棋子造成400点魔法伤害。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
@@ -4069,7 +4050,7 @@
 		"already_have"				"不能重复激活已经拥有的物品！"
 		"activate_error"			"激活失败 >_<"
 
-		"DOTA_Tooltip_ability_is_ogre_Description"	"<h1>种族技能：高丽亚铁腕</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）食人魔：所有食人魔棋子获得效果：开始战斗前吞食上下左右四个格子的等级不高于自己的友方棋子，获得它们的生命值和攻击力。"
+		
 		"DOTA_Tooltip_modifier_is_ogre_buff_Description"	"开始战斗前吞食上下左右四个格子的等级不高于自己的友方棋子，获得它们的生命值和攻击力。"
 		
 
@@ -4077,9 +4058,7 @@
 		"DOTA_Tooltip_modifier_dazzle_bozang_Description"				"可以抵消致死伤害。"
 		"DOTA_Tooltip_modifier_item_zhaohuanshenshi_buff"					"召唤神石"
 		"DOTA_Tooltip_modifier_item_zhaohuanshenshi_buff_Description"		"这个召唤物棋子受到了召唤神石的祝福。"
-		"DOTA_Tooltip_ability_vs_swap_Description"	"<h1>战吼技能：战斗回合开始前激活</h1>与一个星级不高于自己的敌方棋子交换位置，使其护甲降低，并且受到伤害不能回复法力值。"
-		"DOTA_Tooltip_ability_vs_swap_Note0"			"移形换位不能作用于比自己星级高的目标。"
-		"DOTA_Tooltip_ability_vs_swap_Note1"			"如果没有同星的敌方棋子，则会选取低于自己星级的目标；如果有多个同星的敌方棋子，复仇之魂会倾向于选择生命值较低的目标。"
+		
 		"DOTA_Tooltip_ability_vs_swap_max_star"			"目标最大星级："
 		"DOTA_Tooltip_ability_vs_swap_armor_bonus"		"护甲降低："
 		"DOTA_Tooltip_ability_vs_swap_armor_duration"	"持续时间："
@@ -4189,7 +4168,7 @@
 
 		
 		"DOTA_Tooltip_ability_item_mangotree_Description"	"在你的棋盘旁边种植一棵芒果树。<br>每当你主场的战斗结果和上一回合不同，就会掉落1个芒果。芒果树累计掉落9个芒果后就会枯萎，并额外掉落1个金色魔法芒果。"
-		"DOTA_Tooltip_ability_item_shrink_meister_Description"	"你的招募棋子有60%概率仅花费1金币，并使用-2等级信使的招募概率。"
+		
 
 		"DOTA_Tooltip_ability_enchantress_untouchable"					"不可侵犯"
 		"DOTA_Tooltip_ability_enchantress_untouchable_Description" 		"魅惑魔女让她的敌人神魂颠倒，攻击她的敌方棋子会降低攻击速度。"
@@ -4257,7 +4236,7 @@
 		"e418"			"熔岩纹章"
 
 		"is_test"		"测试"
-		"DOTA_Tooltip_ability_chen_fuhuo_Description"	"<h1>主动技能：满法力值时激活</h1>召唤一个在本回合阵亡的等级最高的棋子，并使其星级相当于陈的星级。"
+		
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Note0"	"队友可以获得和莱恩拥有的法力值相等的法力值"
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Note1"	"需要引导，可以被打断"
 		"DOTA_Tooltip_ability_lion_mana_drain_datadriven_Note2"	""
@@ -4297,7 +4276,7 @@
 		"DOTA_Tooltip_ability_is_centaur_banned"		"已屏蔽：半人马"
 		"DOTA_Tooltip_ability_is_centaur_banned_Description"	"你将不会再招募到此种族或职业的棋子，点击可以解除此屏蔽。"
 
-		"DOTA_Tooltip_ability_is_warrior_Description"	"战士棋子在生命值低于50%%的时候铜皮铁甲的效果翻倍。\n<h1>职业技能：铜皮铁甲</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此职业的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）战士：所有友方战士的护甲+3。<br>（6）战士：所有友方战士的护甲+7。<br>（9）战士：所有友军获得效果：受到物理或魔法伤害时会反弹（当前护甲×2）点纯粹伤害。"
+		
 		"b207"			"昆昆殿"
 
 		"chess_clinkz"		"骷髅射手✪"
@@ -4323,10 +4302,10 @@
 		"DOTA_Tooltip_ability_item_silingshu_2_Description"	"攻击吸血+20%%，法力值+40。\n<h1>主动技能：立即激活</h1>召唤1个死灵战士和1个死灵射手为你战斗，它们的生命值、持续时间和技能等级随携带者的棋子等级提高而提高。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
 		"DOTA_Tooltip_ability_item_silingshu_3_Description"	"攻击吸血+20%%，法力值+40。\n<h1>主动技能：立即激活</h1>召唤1个死灵战士和1个死灵射手为你战斗，它们的生命值、持续时间和技能等级随携带者的棋子等级提高而提高。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
 		"DOTA_Tooltip_ability_item_minglingshu_Description"	"生命值+250，法力值+40，攻击吸血+20%%，攻击目标护甲-3。\n使你的召唤物获得效果：最大生命值+25%%，攻击力+25%%，持续时间+50%%，并且有75%%的概率召唤数量+1。\n<h1>主动技能：立即激活</h1>召唤1个死灵战士和1个死灵射手为你战斗，它们的生命值、持续时间、技能等级随携带者的棋子等级提高而提高。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 30"
-		"DOTA_Tooltip_ability_item_xuejingshi_Description"	"生命值+500，法力值+80。\n如果主场的敌方棋子阵亡，持有者有20%%的概率获得1点能量点数，每点能量点数会提高10%%持有者造成的魔法伤害。\n如果持有者阵亡，会损失一半的能量点数，并使范围内所有友军吸取（损失的能量点数×500）点最大生命值和（损失的能量点数×50）点法力值。<br><br>作用范围：%max_distance%"
+		
 
 
-		"DOTA_Tooltip_ability_is_undead_Description"	"<h1>种族技能：瘟疫</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）亡灵：战斗双方所有非亡灵棋子获得瘟疫效果：最大生命值-25%%。<br>（6）亡灵：战斗双方所有非亡灵棋子获得瘟疫效果：最大生命值-30%%。<br>（9）亡灵：感染瘟疫的棋子阵亡后会被复活为骷髅兵为敌方战斗。"
+		
 
 		"item_tiaodao"	"闪烁匕首"
 		"DOTA_Tooltip_ability_item_tiaodao"	"<font color=\"#4b69ff\">闪烁匕首</font>"
@@ -4335,14 +4314,6 @@
 		"item_liliangdatiaodao"		"盛势闪光"
 		"DOTA_Tooltip_ability_item_liliangdatiaodao"	"<font color=\"#e4ae39\">盛势闪光</font>"
 		"DOTA_Tooltip_ability_item_liliangdatiaodao_Description"	"生命值+60%%，快速移动。\n<h1>主动技能：立即激活</h1>瞬间移动到范围内能攻击到敌人的最远的格子，并获得30点法力值，以及生命值+30%%的可叠加效果。<br><br>最远距离：%max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
-
-		"item_minjiedatiaodao"		"迅疾闪光"
-		"DOTA_Tooltip_ability_item_minjiedatiaodao"	"<font color=\"#e4ae39\">迅疾闪光</font>"
-		"DOTA_Tooltip_ability_item_minjiedatiaodao_Description"	"攻击速度+20%%，闪避+25%%，快速移动。\n<h1>主动技能：立即激活</h1>瞬间移动到范围内能攻击到敌人的最远的格子，并获得30点法力值，以及攻击速度+30%%的可叠加效果。<br><br>最远距离：%max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
-
-		"item_zhilidatiaodao"		"秘奥闪光"
-		"DOTA_Tooltip_ability_item_zhilidatiaodao"	"<font color=\"#e4ae39\">秘奥闪光</font>"
-		"DOTA_Tooltip_ability_item_zhilidatiaodao_Description"	"魔法伤害+60%%，快速移动。\n<h1>主动技能：立即激活</h1>瞬间移动到范围内能攻击到敌人的最远的格子，并获得30点法力值，以及魔法伤害+30%%的可叠加效果。<br><br>最远距离：%max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
 
 		"DOTA_Tooltip_modifier_item_liliangdatiaodao_buff_show"		"盛势闪光"
 		"DOTA_Tooltip_modifier_item_minjiedatiaodao_buff_show"		"迅疾闪光"
@@ -4367,7 +4338,7 @@
 		
 		"item_kuanrongzhixue"									"宽容之靴"
 		"DOTA_Tooltip_ability_item_kuanrongzhixue"	"<font color=\"#d32ce6\">宽容之靴</font>"
-		"DOTA_Tooltip_ability_item_kuanrongzhixue_Description"	"快速移动，生命回复+10，闪避+25%%，魔法抗性+30%%。\n携带者在准备回合时隐藏自己的位置。\n<h1>光环效果</h1>周围范围内的友军获得效果：每秒获得20点治疗，并免疫变形和精神控制。<br><br>作用范围：%max_distance%"
+		
 
 		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence"						"狂风"
 		"DOTA_Tooltip_ability_ability_drow_ranger_wave_of_silence_Description"			"<h1>主动技能：满法力值时激活</h1>释放一阵狂风，将范围内的敌方棋子击退，并且造成沉默和<font color=\"#5a91cd\">魔法伤害</font>。"
@@ -4415,9 +4386,7 @@
 		"DOTA_Tooltip_ability_item_xingyunguazhui"				"<font color=\"#5e98d9\">幸运挂坠</font>"
 		"DOTA_Tooltip_ability_item_xingyunguazhui_Description"	"闪避+25%%，法力获取+50%%。\n携带者概率触发的种族/职业技能效果触发概率+50%%。"
 
-		"item_weixiuqiju"			"维修器具"
-		"DOTA_Tooltip_ability_item_weixiuqiju"				"<font color=\"#4b69ff\">维修器具</font>"
-		"DOTA_Tooltip_ability_item_weixiuqiju_Description"	"魔法抗性+50%%，生命回复+20，攻击力+15%%。\n携带者视为<font color=\"#ffffff\">工匠</font>。如果主场战斗获胜携带者存活，你获得的机械之心将被替换为暗黑机械之心。"
+		
 
 		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_datadriven"	"球状闪电"
 		"DOTA_Tooltip_ability_storm_spirit_ball_lightning_datadriven_Description"	"<h1>主动技能：满法力值时激活</h1>风暴之灵变成不稳定的电流在战场上横冲直撞，对撞到的敌方棋子造成<font color=\"#5a91cd\">魔法伤害</font>，每飞行1格距离伤害就会递增。<br>击杀敌方棋子时会重置此技能的冷却时间。"
@@ -4433,11 +4402,6 @@
 		"h387"		"南瓜绅士♦白色"
 		"h484"		"南瓜绅士♦黑色"
 
-		"season_s23"			"S23 粒粒迎春"
-		"badge_title_s23"		"徽章：S22粒粒迎春"
-		"badge_text_s23"		"在《刀塔自走棋》S22粒粒迎春赛季中表现优异的棋手！"
-
-
 		"e218"		"寒冷之地"
 
 		"DOTA_Tooltip_ability_gyro_flak_cannon"					"高射火炮"
@@ -4452,26 +4416,13 @@
 
 		"DOTA_Tooltip_ability_is_hunter_Description"	"猎人棋子总是优先攻击攻击距离内的生命值较少的敌人。\n<h1>职业技能：精准射击</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此职业的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）猎人：所有友方猎人基础攻击力+25，攻击有50%%概率必中。<br>（6）猎人：所有友方猎人基础攻击力+50，攻击有100%%概率必中。<br>（9）猎人：所有友军基础攻击力+50，攻击有50%%概率击退敌人2格。"
 
-		"DOTA_Tooltip_ability_is_centaur_Description"	"<h1>种族技能：奔袭冲撞</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）半人马：所有友方半人马棋子获得效果：开始战斗时立即冲锋到周围敌方棋子最多的目标格子，并撞晕路径上的敌方棋子。"
-
-		"real_name_chess_cm" 		"莉莱"
-		"StatusHealth"			"最大生命值"
-		"StatusMana"			"最大魔法值"
-		"AttackDamage"			"攻击力"
-		"AttackRate"			"攻击间隔"
-		"AttackRange"			"攻击范围"
-		"ArmorPhysical"			"物理护甲"
-		"MagicalResistance"		"魔法抗性"
-		"ChessAbility"			"棋子技能"
-
-
 
 		"dac_candy_5_1x8"	"糖果竞赛（5糖果）"
 		"dac_candy_5_1x8_desc"	"● 8名玩家各自为战，活到最后的获得胜利。\n● 不计天梯段位分数。\n● 需要5糖果参加竞赛，根据排名瓜分糖果奖励池。"
 		"text_casino_count"	"糖果竞赛奖励进度"
 
 		"DOTA_Tooltip_ability_is_undead_Note0"			"棋子的基础生命值与加成的生命值都会被最大生命值减少的效果影响。"
-		"DOTA_Tooltip_ability_is_undead_Note1"			"近战棋子会被复活为骷髅王✪，远程棋子会被复活为骷髅射手✪，星级与阵亡棋子相同，并且会继承阵亡棋子的装备效果。骷髅兵持续15秒。"
+		
 
 		"DOTA_Tooltip_modifier_is_monk_buff"	"醉拳"
 		"DOTA_Tooltip_modifier_is_monk_buff_Description"	"有概率直接击杀敌人"
@@ -4480,7 +4431,7 @@
 
 		"DOTA_Tooltip_modifier_is_beast_buff_plus_plus_Description"	"累加的额外伤害"
 		"DOTA_Tooltip_modifier_vs_swap_debuff"	"移形换位"
-		"DOTA_Tooltip_modifier_vs_swap_debuff_Description"	"混乱"
+		
 		"DOTA_Tooltip_modifier_siren_song_debuff"    "海妖之歌"
 		"DOTA_Tooltip_modifier_siren_song_debuff_Description"    "海妖之歌"
 		"DOTA_Tooltip_modifier_visage_grave_chill_buff" "黄泉颤抖"
@@ -4564,5 +4515,301 @@
 
 		"txt_candy_insufficient"		" 由于糖果数未达到本局游戏的最低要求，已被判负。"
 		"text_candy_insufficient_tips"	"由于糖果数未达到本局游戏的最低要求，您已被判负！"
+
+		"item_shengzheyiwu"			"圣者遗物"
+		"DOTA_Tooltip_ability_item_shengzheyiwu"	"<font color=\"#4b69ff\">圣者遗物</font>"
+		"DOTA_Tooltip_ability_item_shengzheyiwu_Description"	"攻击力+45%%。"
+
+		"item_dafu"			"掠夺者之斧"
+		"DOTA_Tooltip_ability_item_dafu"	"<font color=\"#4b69ff\">掠夺者之斧</font>"
+		"DOTA_Tooltip_ability_item_dafu_Description"	"生命值+60%%。"
+
+		"real_name_chess_cm" 		"莉莱"
+		"real_name_chess_pom" 		"米拉娜"
+		"real_name_chess_luna" 		"露娜"
+		"real_name_chess_am" 		"玛吉纳"
+		"real_name_chess_wd" 		"扎瓦克"
+		"real_name_chess_ss" 		"罗斯塔"
+		"real_name_chess_dazzle" 	"戴泽"
+		"real_name_chess_hw" 		"大头爆栗子"
+		"real_name_chess_eh" 		"爱由莎"
+		"real_name_chess_abaddon" 	"亚巴顿"
+		"real_name_chess_ww" 		"傲洛斯"
+		"real_name_chess_vs" 		"仙德尔莎"
+		"real_name_chess_axe" 		"蒙哥可汗"
+		"real_name_chess_bh" 		"刚铎"
+		"real_name_chess_clock" 	"瑞托崔普"
+		"real_name_chess_tk" 		"鲍什"
+		"real_name_chess_tiny" 		"小小"
+		"real_name_chess_mars" 		"马尔斯"
+		"real_name_chess_sb" 		"巴拉森"
+		"real_name_chess_dw" 		"米瑞斯嘉"
+		"real_name_chess_tusk" 		"尤弥尔"
+
+		"real_name_chess_wr" 		"莱瑞蕾"
+		"real_name_chess_puck" 		"帕克"
+		"real_name_chess_fur" 		"法里奥"
+		"real_name_chess_bat" 		"金۰扎卡"
+		"real_name_chess_jugg" 		"尤涅若"
+		"real_name_chess_bm" 		"卡洛克"
+		"real_name_chess_shredder" 	"瑞兹拉克"
+		"real_name_chess_slark" 	"斯拉克"
+		"real_name_chess_naga" 		"司里希丝"
+		"real_name_chess_morph" 	"墨斐琳"
+		"real_name_chess_oracle" 	"奈里夫"
+		"real_name_chess_brew" 		"曼吉克斯"
+		"real_name_chess_sniper" 	"卡德尔۰鹰眼"
+		"real_name_chess_om" 		"阿格隆۰碎石者"
+		"real_name_chess_ck" 		"涅沙"
+		"real_name_chess_lion" 		"莱恩"
+		"real_name_chess_fv" 		"暗惧者"
+		"real_name_chess_ct" 		"布拉德瓦登"
+		"real_name_chess_visage" 	"维萨吉"
+		"real_name_chess_bs" 		"史德利古尔"
+		"real_name_chess_gs" 		"飞升之人"
+		"real_name_chess_clinkz" 	"克林克兹"
+
+		"real_name_chess_pa" 		"茉崔蒂"
+		"real_name_chess_tp" 		"鲁夫伦特"
+		"real_name_chess_marci" 	"玛西"
+		"real_name_chess_huskar" 	"哈斯卡"
+		"real_name_chess_veno" 		"里瑟尔۰死亡使者"
+		"real_name_chess_lina" 		"莉娜"
+		"real_name_chess_lc" 		"特蕾丝汀"
+		"real_name_chess_pudge" 	"帕吉"
+		"real_name_chess_ud" 		"吟葬者۰挽歌"
+		"real_name_chess_slardar" 	"斯拉达"
+		"real_name_chess_razor" 	"雷泽"
+		"real_name_chess_rubick" 	"拉比克"
+		"real_name_chess_sk" 		"克里瑟历斯"
+		"real_name_chess_sf" 		"奈文摩尔"
+		"real_name_chess_tb" 		"恐怖利刃"
+		"real_name_chess_meepo" 	"米波"
+		"real_name_chess_riki" 		"力丸"
+		"real_name_chess_lyc" 		"贝恩霍勒"
+		"real_name_chess_ok" 		"普利斯特۰雷霆之怒"
+		"real_name_chess_viper" 	"蝮蛇"
+		"real_name_chess_snk" 		"奥斯塔里昂大帝"
+
+		"real_name_chess_ld" 		"悉拉۰贝尔"
+		"real_name_chess_mk" 		"孙悟空"
+		"real_name_chess_kunkka" 	"昆卡"
+		"real_name_chess_light" 	"伊扎洛"
+		"real_name_chess_dk" 		"达维安"
+		"real_name_chess_lich" 		"艾斯瑞安"
+		"real_name_chess_dr" 		"崔希丝"
+		"real_name_chess_nec" 		"罗坦德吉利"
+		"real_name_chess_chen" 		"陈"
+		"real_name_chess_snap" 		"碧翠丝"
+		"real_name_chess_ga" 		"拉泽尔۰黑炼"
+		"real_name_chess_medusa" 	"美杜莎"
+		"real_name_chess_br" 		"布蕾克۰艾拉齐娜"
+		"real_name_chess_doom" 		"路西法"
+		"real_name_chess_es" 		"尼西埃۰图腾"
+		"real_name_chess_mag" 		"马格纳斯"
+		"real_name_chess_pangolier" 	"唐特۰培林"
+		"real_name_chess_na" 		"阿努巴拉克"
+		"real_name_chess_ember" 	"炘"
+		"real_name_chess_storm" 	"雷神۰风暴烈酒"
+		"real_name_chess_earth" 	"考林"
+		"real_name_chess_void" 		"无玄"
+
+		"real_name_chess_ta" 		"拉娜娅"
+		"real_name_chess_kael" 		"卡尔"
+		"real_name_chess_troll" 	"扎۰拉卡"
+		"real_name_chess_pb" 		"獸"
+		"real_name_chess_spe" 		"墨丘利"
+		"real_name_chess_wl" 		"戴蒙۰拉尼克"
+		"real_name_chess_disruptor" 	"萨尔"
+		"real_name_chess_tech" 		"斯奎۰斯布林۰斯布恩"
+		"real_name_chess_thd" 		"杰奇洛"
+		"real_name_chess_th" 		"利维坦"
+		"real_name_chess_enigma" 	"达奇罗"
+		"real_name_chess_zeus" 		"宙斯"
+		"real_name_chess_et" 		"凯恩۰世界铸造者"
+		"real_name_chess_ts" 		"拉席克"
+		"real_name_chess_gyro" 		"奥雷尔"
+		"real_name_chess_qop" 		"阿卡莎"
+		"real_name_chess_aw" 		"泽特"
+		"real_name_chess_dp" 		"克萝贝露丝"
+		"real_name_chess_sven" 		"斯温"
+		"real_name_chess_io" 		"艾欧"
+
+		"DOTA_Tooltip_ability_item_more_reward_Description"		"每当你客场获胜时会获得4点经验值，客场终结和击杀额外获得（赏金×2）的经验值。"
+
+
+
+
+
+
+
+
+		"DOTA_Tooltip_ability_item_xuejingshi_Description"	"生命值+500，法力值+40。\n如果主场的敌方棋子阵亡，持有者有20%%的概率获得1点能量点数，每点能量点数会提高10%%持有者造成的魔法伤害。\n如果持有者阵亡，会损失一半的能量点数，并使范围内所有友军吸取（损失的能量点数×500）点最大生命值和（损失的能量点数×50）点法力值。<br><br>作用范围：%max_distance%"
+
+		"DOTA_Tooltip_ability_is_centaur_Description"	"<h1>种族技能：奔袭冲撞</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）半人马：所有友方半人马棋子获得效果：开始战斗时立即冲锋到周围敌方棋子最多的目标格子，并撞晕路径上的敌方棋子。<br>（4）半人马：所有近战友方棋子的每次移动都是奔袭冲撞。"
+
+		"item_ahalimumojing"		"阿哈利姆魔晶"
+		"DOTA_Tooltip_ability_item_ahalimumojing"	"<font color=\"#d32ce6\">阿哈利姆魔晶</font>"
+		"DOTA_Tooltip_ability_item_ahalimumojing_Description"	"生命值+250，法力值+40。\n携带者的棋子技能等级+1。"
+		"DOTA_Tooltip_modifier_item_ahalimumojing"		"阿哈利姆魔晶"
+		"DOTA_Tooltip_modifier_item_ahalimumojing_Description"		"携带者的棋子技能等级+1。"
+
+		"DOTA_Tooltip_ability_is_dragon_Description"	"<h1>种族技能：战吼</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）龙：所有友方龙棋子的初始魔法值为100。<br>（5）龙：所有友军的初始魔法值为100。"
+
+		"DOTA_Tooltip_modifier_is_god_buff_plus_plus_Description"	"释放技能会减少技能和物品的冷却时间。"
+
+		"DOTA_Tooltip_ability_is_god_Description"	"<h1>种族技能：独尊</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）神：所有友方棋子获得效果：技能冷却时间-33%%。<br>（4）神：所有友方棋子获得效果：技能冷却时间-33%%。<br>（6）神：所有友方棋子获得效果：释放技能会使主动技能和主动物品的当前剩余冷却时间-50%%。"
+
+		"item_weixiuqiju"			"维修器具"
+		"DOTA_Tooltip_ability_item_weixiuqiju"				"<font color=\"#4b69ff\">维修器具</font>"
+		"DOTA_Tooltip_ability_item_weixiuqiju_Description"	"魔法抗性+50%%，生命回复+20，攻击力+15%%。\n携带者视为<font color=\"#ffffff\">工匠</font>。如果主场战斗获胜携带者存活，你将获得一个暗黑机械之心。"
+		"DOTA_Tooltip_ability_item_weixiuqiju_Note0"		"如果（3）（6）工匠棋子存活，暗黑机械之心会被升级为机械之心或者金色机械之心。"
+
+		
+
+		"item_minjiedatiaodao"		"迅疾闪光"
+		"DOTA_Tooltip_ability_item_minjiedatiaodao"	"<font color=\"#e4ae39\">迅疾闪光</font>"
+		"DOTA_Tooltip_ability_item_minjiedatiaodao_Description"	"攻击速度+20%%，闪避+25%%，快速移动。\n<h1>主动技能：立即激活</h1>瞬间移动到范围内能攻击到敌人的最远的格子，并获得30点法力值，以及攻击速度+25%%的可叠加效果。<br><br>最远距离：%max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
+
+		"item_zhilidatiaodao"		"秘奥闪光"
+		"DOTA_Tooltip_ability_item_zhilidatiaodao"	"<font color=\"#e4ae39\">秘奥闪光</font>"
+		"DOTA_Tooltip_ability_item_zhilidatiaodao_Description"	"魔法伤害+60%%，快速移动。\n<h1>主动技能：立即激活</h1>瞬间移动到范围内能攻击到敌人的最远的格子，并获得30点法力值，以及魔法伤害+40%%的可叠加效果。<br><br>最远距离：%max_blink_distance%<br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 10"
+
+		"DOTA_Tooltip_ability_vs_swap_Description"	"<h1>战吼技能：战斗回合开始前激活</h1>与一个星级不高于（移行换位技能等级）的敌方棋子交换位置，使其护甲降低，并且受到伤害不能回复法力值。"
+		"DOTA_Tooltip_ability_vs_swap_Note0"			"移形换位不能作用于星级过高的目标。"
+		"DOTA_Tooltip_ability_vs_swap_Note1"			"如果没有同星的敌方棋子，则会选取低于此星级的目标；如果有多个同星的敌方棋子，复仇之魂会倾向于选择生命值较低的目标。"
+	
+		"DOTA_Tooltip_ability_is_god_Note0"		"独尊并不会减少被动物品的冷却时间。"
+
+		"text_legendary_box_tips_desc"	"每局比赛会将随机的10种$5棋子洗入传说棋子池，你可以通过招募棋子招募到它们。<br><font color='#888'>（特殊的$5棋子精灵守卫每局都有机会出现，不会被洗入棋子池）</font>"
+
+		"DOTA_Tooltip_ability_sb_julizhongji_Lore"			"巴拉森幽灵般链球的标志性一击。"
+		"DOTA_Tooltip_ability_gs_moji_Note0"				"缚魂并不会影响物品的效果。"
+		"DOTA_Tooltip_ability_clinkz_searing_arrows_datadriven_Lore"	"克林克兹用他的灼热精华点燃弓箭，造成毁灭性打击。"
+
+		
+		
+		
+		"item_malefic_rapture"						"灾难狂欢"
+		"DOTA_Tooltip_ability_item_malefic_rapture"		"<font color=\"#ade55c\">灾难狂欢</font>"
+		
+		"DOTA_Tooltip_ability_item_malefic_rapture_Lore"			"来自：圣物宝箱"
+
+		"StatusHealth"			"最大生命值"
+		"StatusMana"			"最大法力值"
+		"AttackDamage"			"攻击力"
+		"AttackRate"			"攻击间隔"
+		"AttackRange"			"攻击范围"
+		"ArmorPhysical"			"物理护甲"
+		"MagicalResistance"		"魔法抗性"
+		"ChessAbility"			"棋子技能"
+
+		"chess_tiny"	"山岭巨人★"
+		"chess_tiny1"	"山岭巨人★★"
+		"chess_tiny11"	"山岭巨人★★★"
+
+		"chess_puck"	"仙女龙★"
+		"chess_puck1"	"仙女龙★★"
+		"chess_puck11"	"仙女龙★★★"
+
+		"chess_pb"		"原始巨兽★"
+		"chess_pb1"		"原始巨兽★★"
+		"chess_pb11"	"原始巨兽★★★"
+
+		"DOTA_Tooltip_modifier_is_centaur_buff_plus"		"奔袭冲撞"
+		"DOTA_Tooltip_modifier_is_centaur_buff_plus"		"近战棋子的每次移动都是奔袭冲撞。"
+
+		"DOTA_Tooltip_ability_leshrac_pulse_nova"					"脉冲新星"
+		"DOTA_Tooltip_ability_leshrac_pulse_nova_Description"		"<h1>主动技能：满法力值时激活</h1>在周围创造破坏性的能量波，持续对附近的敌方棋子造成<font color=\"#5a91cd\">魔法伤害</font>并消耗拉席克的法力值，直到法力值耗尽。"
+		"DOTA_Tooltip_ability_leshrac_pulse_nova_Lore"		"必要时，受折磨的灵魂能操纵时空本身，毁灭弱小的存在。"
+		"DOTA_Tooltip_ability_leshrac_pulse_nova_mana_cost_per_second"	"每秒法力消耗："
+		"DOTA_Tooltip_ability_leshrac_pulse_nova_radius"				"影响范围："
+		"DOTA_Tooltip_ability_leshrac_pulse_nova_damage"				"每秒伤害："
+
+		"DOTA_Tooltip_ability_item_jufengchangji_Description"	"魔法伤害+20%%，生命回复+10，生命值+20%%，攻击速度+10%%。\n远程携带者的攻击距离+200。\n<h1>主动技能：有近身敌方棋子时激活</h1>将近身敌人击退到远离自己方向最远的格子，并将自己反向击退到最远的格子，同时会偷取目标20点的法力值。远程携带者还会立即对目标进行4次无视距离的攻击。<br><br><img src='s2r://panorama/images/status_icons/ability_cooldown_icon_psd.vtex'> 15"
+
+		"DOTA_Tooltip_ability_is_ogre_Description"	"<h1>种族技能：高丽亚铁腕</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（2）食人魔：所有食人魔棋子获得效果：开始战斗前吞食上下左右四个格子的等级不高于自己的友方棋子，获得它们80%%的生命值和攻击力。"
+
+		"DOTA_Tooltip_ability_is_goblin_Description"	"<h1>种族技能：活体装甲</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）地精：使一个随机友军的护甲+10，生命回复+15。<br>（6）地精：使所有友军护甲+10，生命回复+15。"
+
+		"DOTA_Tooltip_ability_item_baojunwangpao_Description"	"闪避+25%%，攻击力+45%%，魔法抗性+30%%。\n携带者在准备回合时隐藏自己的位置，并在开始战斗时获得友军已激活的种族/职业技能的全部增益效果。"
+
+		"join_the_game"			"加入了棋库。"
+
+		"DOTA_Tooltip_ability_item_kuanrongzhixue_Description"	"快速移动，生命回复+10，闪避+25%%，魔法抗性+30%%。\n携带者在准备回合时隐藏自己的位置。\n<h1>光环效果</h1>周围范围内的友军获得效果：每秒获得25点治疗，并免疫变形和精神控制。<br><br>作用范围：%max_distance%"
+		"DOTA_Tooltip_ability_item_jingmixie_Description"	"快速移动，生命回复+10。\n<h1>光环效果</h1>周围范围内的友军获得效果：每秒获得25点治疗。<br><br>作用范围：%max_distance%"
+	
+		"h157" 		"粒粒♦寿"
+		"h292" 		"粒粒♦禄"
+		"h389" 		"粒粒♦喜"
+		"h485" 		"粒粒♦福"
+
+		
+		"DOTA_Tooltip_ability_item_shrink_meister_Description"		"你的招募棋子有60%概率仅花费1金币，并使用-2等级信使的招募概率。"
+		"b208"		"格格玛"
+
+		"season_s23"			"S23 粒粒迎春"
+		"badge_title_s23"		"徽章：S23粒粒迎春"
+		"badge_text_s23"		"在《刀塔自走棋》S23粒粒迎春赛季中表现优异的棋手！"
+		
+		"season_s24"			"S24 猫执事赛季"
+		"badge_title_s24"		"徽章：S24猫执事赛季"
+		"badge_text_s24"		"在《刀塔自走棋》S24猫执事赛季中表现优异的棋手！"
+
+		"DOTA_Tooltip_ability_sven_gods_strength_damage_per_demon"			"每层攻击力提升%："
+		"DOTA_Tooltip_ability_sven_gods_strength_gods_strength_damage"		"自身攻击力加成%："
+		"DOTA_Tooltip_ability_zeus_thunder_damage_per"						"对棋子伤害%："
+		"DOTA_Tooltip_ability_zeus_thunder_damage_courier_per"				"对信使伤害%："
+		"DOTA_Tooltip_ability_dk_dragon_form_splash_percent"	"溅射%："
+		"DOTA_Tooltip_ability_dk_dragon_form_slow_percent"		"减速%："
+		"DOTA_Tooltip_ability_dk_dragon_form_poison_percent"	"魔法伤害%："
+		"DOTA_Tooltip_ability_puck_illusory_orb_datadriven_blind_miss_per"	"致盲攻击丢失概率%："
+		"DOTA_Tooltip_ability_lc_qianggong_fanji_per"	"反击概率%："
+		"DOTA_Tooltip_ability_smoke_screen_trigger_miss_rate"	"攻击丢失概率%："
+		"DOTA_Tooltip_ability_wl_inferno_another_inferno_per"	"召唤另一只地狱火的概率%："
+		"text_ability_damage"				"技能伤害："
+		"is_dota2_original_ability"			"此技能为DOTA2原版技能，可能会因为DOTA2的更新而改变效果或者产生bug。"
+
+		"chess_muerta"		"琼英碧灵★"
+		"chess_muerta1"		"琼英碧灵★★"
+		"chess_muerta11"	"琼英碧灵★★★"
+		"real_name_chess_muerta" 		"慕尔塔"
+
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil"		"越界"
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil_Description"		"琼英碧灵攻击时有几率对另一个目标再射一枪。\n<h1>主动技能：满法力值时激活</h1>琼英碧灵进入虚无形态，免疫所有<font color=\"#a02d27\">物理伤害</font>，获得攻击力加成并且她的所有攻击伤害均为<font color=\"#5a91cd\">魔法伤害</font>。"
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil_double_shot_chance"		"再射一枪概率%："
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil_duration"					"虚无形态持续时间："
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil_transform_duration"		"转换形态时间："
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil_bonus_damage"				"虚无形态攻击力加成："
+
+		"DOTA_Tooltip_ability_muerta_pierce_the_veil_Lore"		"慕尔塔脱去她的实体形态，穿过生死之界，利用恶灵的愤怒打击她的敌人。"
+
+		"DOTA_Tooltip_ability_is_warrior_Description"	"战士棋子在生命值低于50%%的时候铜皮铁甲的效果翻倍。\n<h1>职业技能：铜皮铁甲</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此职业的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）战士：所有友方战士的护甲+3。<br>（6）战士：所有友方战士的护甲+9。<br>（9）战士：所有友军获得效果：受到物理或魔法伤害时会反弹（当前护甲×2）点纯粹伤害。"
+
+		"DOTA_Tooltip_ability_nec_scythe"						"死神镰刀"
+		"DOTA_Tooltip_ability_nec_scythe_Description"			"<h1>主动技能：满法力值时激活</h1>对一个敌方棋子造成<font color=\"#5cb85c\">眩晕</font>和<font color=\"#d8af54\">纯粹伤害</font>，随后以目标为中心产生一个<font color=\"#ffffff\">死亡脉冲</font>，对周围的敌方棋子造成<font color=\"#5a91cd\">魔法伤害</font>或者<font color=\"#5cb85c\">治疗</font>周围的友方棋子。目标已损失的生命值越高，<font color=\"#d8af54\">纯粹伤害</font>伤害越高。"
+		"DOTA_Tooltip_ability_nec_scythe_Note0"					"死神会优先眷顾能直接斩杀的敌方棋子。"
+		"DOTA_Tooltip_ability_nec_scythe_hp_xishu"				"每点损失生命值纯粹伤害系数："
+		"DOTA_Tooltip_ability_nec_scythe_base_damage"			"基础纯粹伤害："
+		"DOTA_Tooltip_ability_nec_scythe_stun_duration"			"眩晕时间："
+		"DOTA_Tooltip_ability_nec_scythe_pulse_damage"			"脉冲魔法伤害或治疗："
+		"DOTA_Tooltip_ability_nec_scythe_area_of_effect"		"脉冲影响范围："
+		
+		"DOTA_Tooltip_ability_nec_scythe_Lore"					"空气中充斥的死亡和苦难增强了瘟疫法师的瘟疫魔法。"
+
+		"DOTA_Tooltip_ability_chen_fuhuo_Description"		"<h1>主动技能：满法力值并有符合条件目标时激活</h1>召唤一个在本回合阵亡的等级最高的棋子，并使其星级相当于神圣劝化的技能等级。"
+
+		"DOTA_Tooltip_ability_item_malefic_rapture_Description"		"当你的信使受到伤害时，立即获得（受到的伤害×0.75）点经验值。"
+
+		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Description"	"<h1>主动技能：满法力值时激活</h1>向一个距离最远的敌方棋子射出血腥的肉钩，将它拖到屠夫身边并造成<font color=\"#d8af54\">纯粹伤害</font>，并且友方棋子会优先攻击此目标。"
+		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Note0"		"钩中敌方棋子后将打断它的持续施法类技能。"
+		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Note1"		"肉钩可以穿越其他棋子。"
+		"DOTA_Tooltip_ability_pudge_meat_hook_lua_Note2"		""
+
+		"DOTA_Tooltip_ability_is_undead_Note1"			"近战棋子会被复活为骷髅王✪，远程棋子会被复活为骷髅射手✪，星级相当于（阵亡棋子星级-1，至少为1），骷髅兵持续10秒。"
+		"DOTA_Tooltip_modifier_vs_swap_debuff_Description"		"护甲降低，并且受到伤害不能回复法力值。"
+
+		"DOTA_Tooltip_ability_item_more_creep_Description"		"你在战利品回合迎战的野怪数量×2，它们的最大生命值和造成的伤害-20%。如果将它们全部击败，你将获得2个战利品宝箱。"
+		"DOTA_Tooltip_ability_is_undead_Description"			"<h1>种族技能：瘟疫</h1><font color=\"#656585\">需要己方场上有至少（N）个不同的此种族的棋子来触发效果（触发的多层效果可以叠加）。</font><br><br>（3）亡灵：战斗双方所有非亡灵棋子获得瘟疫效果：最大生命值-25%%。<br>（6）亡灵：战斗双方所有非亡灵棋子获得瘟疫效果：最大生命值-25%%。<br>（9）亡灵：感染瘟疫的棋子阵亡后会被复活为骷髅兵为敌方战斗。"
 	}
 }

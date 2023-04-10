@@ -886,4 +886,6 @@ return {
 	"particles/econ/items/warlock/warlock_lost_ores/golem_lores_hulk_swipe_left.vpcf",
 	"models/nanguashenshi/nanguashenshi.vmdl",
 	"models/items/courier/mei_nei_rabbit/mei_nei_rabbit.vmdl",
+	"models/pandalili/pandalili02.vmdl",
+	"models/pandalili/pandanlili.vmdl",
 } 
